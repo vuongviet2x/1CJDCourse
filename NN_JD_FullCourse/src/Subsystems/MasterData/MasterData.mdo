@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4655661-6744-4fc7-8672-5d103662f1c8">
+  <name>MasterData</name>
+  <synonym>
+    <key>en</key>
+    <value>Master data</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Countries</content>
+  <content>Catalog.Products</content>
+  <content>Enum.ProductsTypes</content>
+  <content>CommonForm.TestCollections</content>
+  <content>CommonForm.FormForDebugTest</content>
+  <content>Catalog.Companies</content>
+  <content>CommonForm.GoodsSettings</content>
+  <content>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</content>
+  <content>InformationRegister.ObjectsCharacteristicValues</content>
+  <content>Catalog.ObjectsPropertiesValues</content>
+  <content>Enum.CharacteristicsObjectTypes</content>
+  <content>FunctionalOption.CompanyPrefix</content>
+  <content>Constant.UseCharacteristics</content>
+  <content>FunctionalOption.UseCharacteristics</content>
+  <content>FunctionalOption.ContolBalanceOfGoods</content>
+  <content>InformationRegister.CompanyAccountingSettings</content>
+  <content>CommonForm.ApplicationSettings</content>
+</mdclass:Subsystem>

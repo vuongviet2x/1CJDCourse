@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b89ff569-048e-4854-9bf3-1dbfd57ab566">
+  <producedTypes>
+    <objectType typeId="f69a7eaf-72d0-4823-8198-305b31ded4e8" valueTypeId="36946e61-40cc-4e98-9d78-16ff2c9ca9ae"/>
+    <refType typeId="799d1331-87be-4714-b643-99bfbc38b6db" valueTypeId="12e7f8bc-bb1b-4da3-9f80-b317fb6aff3e"/>
+    <selectionType typeId="90f99e51-9552-4784-b8c7-a1f70fba47ac" valueTypeId="710ede6f-a158-4217-8ebc-27fdb729984e"/>
+    <listType typeId="40ec8eb8-e8dd-4a67-89c1-90c54bed7010" valueTypeId="14cee6e2-bd07-4135-9be1-32b8146706f5"/>
+    <managerType typeId="24eadce9-948c-46f8-b5c1-262ae9bd5238" valueTypeId="e519c323-557b-43b2-b41a-457f751c1448"/>
+  </producedTypes>
+  <name>Countries</name>
+  <synonym>
+    <key>en</key>
+    <value>Countries</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Countries.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Countries.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="410b7678-0dbb-432a-8bf9-37864e3fff7e">
+      <name>Vietnam</name>
+      <description>Vietnam</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

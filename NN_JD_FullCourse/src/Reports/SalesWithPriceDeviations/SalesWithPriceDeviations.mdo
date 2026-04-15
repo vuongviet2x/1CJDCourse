@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4baec00d-dca9-4966-b890-5c6037dfdbb0">
+  <producedTypes>
+    <objectType typeId="e23b9cc4-5e74-441d-99fb-126a52d81f76" valueTypeId="221cd78b-f905-446a-9afd-cca8017024bd"/>
+    <managerType typeId="7b9bae42-1269-47ee-a299-52fe57b29d18" valueTypeId="0c338136-b4ce-4326-8a94-50722408c7ff"/>
+  </producedTypes>
+  <name>SalesWithPriceDeviations</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales with price deviations</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.SalesWithPriceDeviations.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="7cc19ba9-e76a-4707-a77c-3c8cf9ef2f6f">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

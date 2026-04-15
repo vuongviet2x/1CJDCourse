@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b3d9da5-95a0-45ed-a759-6b35c8d36f25">
+  <name>Sales</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.SalesInvoice</content>
+  <content>Catalog.Counterparties</content>
+  <content>Catalog.CounterpartyContracts</content>
+  <content>AccumulationRegister.Sales</content>
+  <content>Document.ReturnOfGoodsFromCustomer</content>
+  <content>Catalog.Banks</content>
+  <content>Catalog.BankAccounts</content>
+  <content>InformationRegister.SalesInvoiceStates</content>
+  <content>DocumentJournal.SalesDocuments</content>
+  <content>Report.SalesByCustomers</content>
+  <content>Report.SalesWithPriceDeviations</content>
+  <subsystems>Prices</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="616b5edc-8ce1-4adc-88fa-577d4f154242">
+  <producedTypes>
+    <refType typeId="d41794f3-f6e4-4015-9a12-c2c147db831e" valueTypeId="3afa0045-2dac-4382-bc3d-520f35d0e252"/>
+    <listType typeId="924365ae-9c01-4eae-bdea-daf19d294c46" valueTypeId="3f21e820-1ac3-4700-b2d5-08b9438de556"/>
+    <managerType typeId="13385ee1-a7c6-41a6-b0e2-c9dec41ff934" valueTypeId="776e8400-8a6a-4345-9367-f6b8067228b5"/>
+  </producedTypes>
+  <name>WriteOffMethods</name>
+  <synonym>
+    <key>en</key>
+    <value>Write-off methods</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="973a3e3f-92eb-4eec-bad0-1846da036591">
+    <name>FIFO</name>
+    <synonym>
+      <key>en</key>
+      <value>FIFO</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9658e89e-0708-406b-92a6-0dbb25482237">
+    <name>LIFO</name>
+    <synonym>
+      <key>en</key>
+      <value>LIFO</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15cb7ab7-899d-4133-9856-a8836c4fc9ca">
+    <name>Manually</name>
+    <synonym>
+      <key>en</key>
+      <value>Manually</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

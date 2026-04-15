@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e10289cf-9fa0-4ffc-bfbc-c5d9b3683564">
+  <name>WriteOffOrder</name>
+  <synonym>
+    <key>en</key>
+    <value>Write off order</value>
+  </synonym>
+  <location>Constant.WriteOffOrder</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ecbbb6f-cbfd-4eb8-8cf5-9fd385e36803">
+  <producedTypes>
+    <refType typeId="0585a8ca-961b-4f85-a732-64cd1d4489d5" valueTypeId="406b0fbe-9fb1-4ac6-be41-34ec939c16b6"/>
+    <listType typeId="10f65e66-33fb-4bf2-83d8-ef7298f73214" valueTypeId="285be594-1737-49e9-be9b-ba8d8e704eb2"/>
+    <managerType typeId="03767968-bfd5-4d6d-989f-a11cc13abdd5" valueTypeId="c9845877-eec5-4f6e-998a-18b757fd559c"/>
+  </producedTypes>
+  <name>SalesInvoiceStates</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales invoice states</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2202b856-d929-4b11-ba87-6f757e373f2d">
+    <name>Planned</name>
+    <synonym>
+      <key>en</key>
+      <value>Planned</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ce712bf3-7197-4e60-8a1c-cb4b2b52f788">
+    <name>InDelivery</name>
+    <synonym>
+      <key>en</key>
+      <value>In delivery</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7daaecca-7a46-4255-8641-3ed7b03c66f3">
+    <name>Completed</name>
+    <synonym>
+      <key>en</key>
+      <value>Completed</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

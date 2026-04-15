@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="956173a8-f9b0-4c26-99c9-645dd002b1c9">
+  <name>Warehouse</name>
+  <synonym>
+    <key>en</key>
+    <value>Warehouse</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Warehouses</content>
+  <content>Document.InventoryTransfer</content>
+  <content>AccumulationRegister.GoodsInWarehouses</content>
+  <content>Report.GoodsMovement</content>
+</mdclass:Subsystem>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd8a6c81-6a33-4dd2-949f-cd081b6e4c5c">
+  <producedTypes>
+    <selectionType typeId="e0b45b84-ef79-4549-93c0-a4cbefe86ba5" valueTypeId="baf3c29d-9ff4-4738-aaeb-07294a50f9da"/>
+    <listType typeId="ba10aea6-f126-4875-941b-5af4bb4d1bf8" valueTypeId="8d8388f1-2847-422c-84e2-d79956537b4c"/>
+    <managerType typeId="77e87d05-1a35-4e5b-b40a-cd97c01ab270" valueTypeId="a8c36ed2-4def-4d7c-bba7-04c2091b2d34"/>
+    <recordSetType typeId="f45313c0-f324-4a8b-934b-5dc629199d4b" valueTypeId="c5bc28e5-988f-47f1-9f02-b6a1b853a38f"/>
+    <recordKeyType typeId="b4ee0a60-7369-47cb-960a-ff331c91d36f" valueTypeId="a004a3a8-69a7-41f5-8fba-f3280f21e8a6"/>
+    <recordType typeId="c23b2010-d534-4122-89e6-10ca2945888d" valueTypeId="a500b842-c6c5-4965-a5a6-24568e8dd253"/>
+    <recordManagerType typeId="7ce8df92-b096-474a-be48-5f72d213909c" valueTypeId="fd6c0eea-63a5-4fca-b821-5f0ddbdba04f"/>
+  </producedTypes>
+  <name>ObjectsCharacteristicValues</name>
+  <synonym>
+    <key>en</key>
+    <value>Objects characteristic values</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ObjectsCharacteristicValues.Form.RecordForm</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Object characteristic value</value>
+  </recordPresentation>
+  <resources uuid="143a22c2-08aa-4204-93bf-586ac7e65852">
+    <name>CharacteristicValue</name>
+    <synonym>
+      <key>en</key>
+      <value>Characteristic value</value>
+    </synonym>
+    <type>
+      <types>Characteristic.AdditionalAttributesAndProperties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1f992b22-22d5-4449-b113-7e2648024d11">
+    <name>Object</name>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+      <types>CatalogRef.Warehouses</types>
+      <types>CatalogRef.Products</types>
+      <types>CatalogRef.Counterparties</types>
+      <types>CatalogRef.CounterpartyContracts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f89f5fa8-e934-42bf-a367-4b1b9a77c797">
+    <name>CharacteristicType</name>
+    <synonym>
+      <key>en</key>
+      <value>Characteristic type</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.AdditionalAttributesAndProperties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="82685b28-1345-4a59-86c1-5c0e1901cae7">
+    <name>RecordForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

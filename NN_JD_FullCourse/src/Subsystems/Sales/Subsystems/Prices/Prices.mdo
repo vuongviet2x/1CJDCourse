@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5fa11a8-6b49-4771-bc66-bbe374b8d2e4">
+  <name>Prices</name>
+  <synonym>
+    <key>en</key>
+    <value>Prices</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.PriceSetup</content>
+  <content>InformationRegister.ProductPrices</content>
+  <content>DataProcessor.ImportPricesFromExcel</content>
+  <parentSubsystem>Subsystem.Sales</parentSubsystem>
+</mdclass:Subsystem>

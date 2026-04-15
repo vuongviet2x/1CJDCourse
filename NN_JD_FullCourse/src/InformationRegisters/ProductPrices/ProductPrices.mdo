@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e126979-5450-4f86-a9d8-2a32b2b51981">
+  <producedTypes>
+    <selectionType typeId="c96150d1-42e8-4299-b2aa-48ab876aa5d2" valueTypeId="cd19eb3b-b824-4712-9b95-887d0db49936"/>
+    <listType typeId="7817c9ec-d5b3-4336-a951-517743970627" valueTypeId="68664c75-fc7a-453f-ba61-3a6bb4412339"/>
+    <managerType typeId="c1d3a2cf-9b75-45c7-967d-a5a11b9ad8bd" valueTypeId="50c52eb0-d1a3-48f7-bdaa-17498bb2346f"/>
+    <recordSetType typeId="507b6550-1bbf-4e9e-842c-3ddec457cee2" valueTypeId="42671190-ed44-47f6-8496-2524b6b48f00"/>
+    <recordKeyType typeId="d4cda3bb-c34d-46a8-8456-1748bdf0000f" valueTypeId="2a8acef3-279a-4533-97a7-2678e95fc390"/>
+    <recordType typeId="d37631a1-c641-409b-a88f-d791ba9b9990" valueTypeId="40df369b-a873-4114-98b5-f6b5bf395028"/>
+    <recordManagerType typeId="023cc4aa-34aa-419c-b9e6-977d59c795cf" valueTypeId="52b03ace-2959-47d2-99ff-76e6bc6949b7"/>
+  </producedTypes>
+  <name>ProductPrices</name>
+  <synonym>
+    <key>en</key>
+    <value>Product prices</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6d5d7223-6cb8-4a97-98d7-7755efd825e1">
+    <name>Price</name>
+    <synonym>
+      <key>en</key>
+      <value>Price</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="47b20bda-bffa-4b7c-8580-92b4d7a7d33a">
+    <name>Product</name>
+    <synonym>
+      <key>en</key>
+      <value>Product</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Products</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

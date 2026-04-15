@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b06a4b55-b9a0-44c9-b56f-548e8e45f793">
+  <producedTypes>
+    <objectType typeId="4c4186d7-3ff0-4645-b2d9-366f2543589a" valueTypeId="853d6d3c-601e-452b-9746-0eac0044e361"/>
+    <managerType typeId="c67e773e-7ce3-42e7-a92d-e80f226b443f" valueTypeId="d0bef99a-0062-4282-b0b7-15ce3073e978"/>
+  </producedTypes>
+  <name>SalesByCustomers</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales by customers</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.SalesByCustomers.Form.ReportForm</defaultForm>
+  <forms uuid="cee7013f-08a4-4876-a0cc-ec4d200c7886">
+    <name>ReportForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Report form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1d01d505-190d-4cbe-b0c3-8c5827bbae97">
+    <name>Sales</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

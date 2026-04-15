@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82dcdd96-c21d-42c2-b43c-cee2c1f6e1b5">
+  <name>InteractiveOpenExtReportsAndDataProcessors</name>
+  <synonym>
+    <key>en</key>
+    <value>Interactive open ext reports and data processors</value>
+  </synonym>
+</mdclass:Role>

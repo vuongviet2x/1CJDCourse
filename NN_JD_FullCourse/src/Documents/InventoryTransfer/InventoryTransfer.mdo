@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd4b272a-0a29-47a0-bf6f-7728db681b59">
+  <producedTypes>
+    <objectType typeId="c10523e5-5005-4bb7-abbe-20158223208f" valueTypeId="5eb2de79-d891-4524-ad5f-26d526c11e65"/>
+    <refType typeId="a60eb391-4cf6-43a8-a074-ea592a4ad5a4" valueTypeId="d589a299-e882-4e47-baf9-c8ce3806e37c"/>
+    <selectionType typeId="131713a2-e19e-4769-8b18-52f8cef46d92" valueTypeId="d0cb11e7-63bb-4825-88d1-757e21fc0803"/>
+    <listType typeId="7bf1ccd8-82c7-4cf9-b71e-46ec798840f8" valueTypeId="77c59b7b-9ddd-4fdc-8369-34558c9acee5"/>
+    <managerType typeId="a2b95b6e-1ff8-4138-a668-7aba95846c85" valueTypeId="c8fedf8d-2e5c-4308-bf0e-46a1dcbe15e2"/>
+  </producedTypes>
+  <name>InventoryTransfer</name>
+  <synonym>
+    <key>en</key>
+    <value>Inventory transfer</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.InventoryTransfer.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Inventory transfers</value>
+  </extendedObjectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.InventoryTransfer.Form.DocumentForm</defaultObjectForm>
+  <registerRecords>AccumulationRegister.GoodsInWarehouses</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="02bd99f2-17f3-4bf8-9c17-c99bdc6c84bc">
+    <name>WarehouseSender</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse sender</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Warehouses</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa4c55cd-7ff2-4338-89a8-1e3f591a05aa">
+    <name>WarehouseRecipient</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse recipient</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Warehouses</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5df39841-579b-4e30-8e7d-b2ebd621e954">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="35a25e20-1163-4c0b-9fc1-4b8f511e6ab5">
+    <producedTypes>
+      <objectType typeId="ede2e772-55bd-489d-964d-fb63f6db7522" valueTypeId="bdf5c816-25c0-4de1-ae5e-315868e049a5"/>
+      <rowType typeId="5829d2ab-2bda-4b95-9c0e-e933c8f18f67" valueTypeId="1751fa2e-c831-455a-9b44-979092614ea5"/>
+    </producedTypes>
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Products</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b33130b4-eb69-4e0a-8e57-4fbba236db6f">
+      <name>Product</name>
+      <synonym>
+        <key>en</key>
+        <value>Product</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Products</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Filter.ProductType</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ProductsTypes.EnumValue.InventoryItem</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8b8be76f-f48e-40ac-a1cc-1a48e38fad2c">
+      <name>Quantity</name>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b9421cf2-10b6-48a5-9f36-35c386b7b00f">
+      <name>Amount</name>
+      <synonym>
+        <key>en</key>
+        <value>Amount</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d2f4ba55-3501-43f9-9905-5b77b95c68f5">
+      <name>Batch</name>
+      <synonym>
+        <key>en</key>
+        <value>Batch</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.PurchaseInvoice</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="4277da96-77cc-43f0-b5da-dc0ae823ca14">
+    <name>ListOfGoodsMovement</name>
+  </templates>
+  <commands uuid="97dd314c-c60f-46e8-b51c-d9a05bd6ff4a">
+    <name>ListOfGoodsMovement</name>
+    <synonym>
+      <key>en</key>
+      <value>List of goods movement</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.InventoryTransfer</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

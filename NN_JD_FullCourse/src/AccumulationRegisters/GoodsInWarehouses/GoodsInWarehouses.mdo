@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="492c7b5f-ada2-42ce-8742-3b52c1910506">
+  <producedTypes>
+    <selectionType typeId="27c7bab6-ef2d-441b-96c6-aa883f7a022b" valueTypeId="1d732b3c-7e5e-419f-888f-852a92b2c0df"/>
+    <listType typeId="b8b8c640-8044-4ceb-931f-36110208f0ec" valueTypeId="e13c0159-b88d-48e6-a24e-04e41d351850"/>
+    <managerType typeId="75f6332e-21ac-432c-a1fe-edeb745e59eb" valueTypeId="31922260-0ca6-469c-8bc8-9721920f6695"/>
+    <recordSetType typeId="126807fc-e3d9-4c3d-a50f-2730f2b585c3" valueTypeId="ab3d9ffc-bb4c-4552-a295-0498c41ef369"/>
+    <recordKeyType typeId="3c19d27b-67a6-4e52-8b92-4456e8c3b364" valueTypeId="fe346063-5524-4d81-9e12-b176d6325502"/>
+    <recordType typeId="9da2deba-6163-4512-b981-5b82993195eb" valueTypeId="a09b1443-06c0-41c4-a8a0-205fecb4b385"/>
+  </producedTypes>
+  <name>GoodsInWarehouses</name>
+  <synonym>
+    <key>en</key>
+    <value>Goods in warehouses</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="2d7f66ec-d7bd-40e1-aa3f-1e5d3ff7833a">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b401f7d8-24bf-454a-8377-93268bbbdfd5">
+    <name>Amount</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="268c575f-a869-4e00-a088-17a3615cbc2a">
+    <name>Product</name>
+    <synonym>
+      <key>en</key>
+      <value>Product</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Products</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="40307b2c-219b-49c0-8510-449c0e62e66b">
+    <name>Warehouse</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Warehouses</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e68aeec1-8e5d-4f72-a9e4-075d8dbaed52">
+    <name>Batch</name>
+    <synonym>
+      <key>en</key>
+      <value>Batch</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.PurchaseInvoice</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

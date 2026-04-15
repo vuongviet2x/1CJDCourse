@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3fc0fc3e-d2ba-4116-97b1-90a0e5393812">
+  <name>MasterDataSpecialist</name>
+  <synonym>
+    <key>en</key>
+    <value>Master data specialist</value>
+  </synonym>
+</mdclass:Role>

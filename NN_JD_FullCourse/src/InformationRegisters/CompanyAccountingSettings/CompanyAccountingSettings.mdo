@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ed59cc6-d0fa-41e9-b5bf-c11d35c55735">
+  <producedTypes>
+    <selectionType typeId="b1ff93de-96b4-4ce9-9ec2-fb37fa21632b" valueTypeId="cff86366-b78c-4233-b0a7-be8df3aa56f9"/>
+    <listType typeId="e8510075-b33e-4d8b-85f3-593e4240f1a4" valueTypeId="edf9c4e7-76fa-4764-84a2-cef205a64c41"/>
+    <managerType typeId="f486ee01-de5b-4b7c-8bc1-45b99ffb5ca5" valueTypeId="f5a28203-54a6-4683-9d17-eb36c6b78748"/>
+    <recordSetType typeId="abb43177-a966-4af6-9121-533aa1d1e2f3" valueTypeId="7f734abd-c8ff-4cde-828f-fe72c625bb18"/>
+    <recordKeyType typeId="cc06f296-9d7d-4734-aa29-75e038823069" valueTypeId="5f340709-cceb-49ee-ae51-fdfd04a7ed12"/>
+    <recordType typeId="62b28ef5-8418-4240-8693-a2ae8ef2d16a" valueTypeId="e6f99af6-c22b-43b5-b57e-6b91cbe9fa24"/>
+    <recordManagerType typeId="df969774-453e-4761-9417-b9fb5f7ea2bc" valueTypeId="faca6af0-7bb8-4611-ae50-932bcb52b19f"/>
+  </producedTypes>
+  <name>CompanyAccountingSettings</name>
+  <synonym>
+    <key>en</key>
+    <value>Company accounting settings</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f580945c-0b54-433a-b8c0-3fcaad72507b">
+    <name>ContolBalanceOfGoods</name>
+    <synonym>
+      <key>en</key>
+      <value>Contol balance of goods</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9f6a4f85-3a4a-411e-b99c-3a6f5b4579eb">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

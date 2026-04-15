@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOptionsParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="880de52f-abee-403a-8b96-8769d045fc09">
+  <name>Company</name>
+  <synonym>
+    <key>en</key>
+    <value>Company</value>
+  </synonym>
+  <use>Catalog.Companies</use>
+  <use>InformationRegister.CompanyAccountingSettings.Dimension.Company</use>
+</mdclass:FunctionalOptionsParameter>

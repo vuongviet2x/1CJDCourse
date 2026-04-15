@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73e63418-1155-4e1f-9a96-7c8ff1bfd42c">
+  <producedTypes>
+    <managerType typeId="90889e30-35c5-40d1-9395-08e88b902e03" valueTypeId="1e5a35a6-1f68-439f-9605-056afa251272"/>
+    <valueManagerType typeId="6023fc70-0f9d-469b-89a0-0ed0ec5a49e4" valueTypeId="573c921b-a298-40d4-aa6a-c58cff57d324"/>
+    <valueKeyType typeId="2a5a230c-1c3c-4f47-9b91-2ccbb19d154b" valueTypeId="6da92ec2-172e-4a78-a441-b05ab5e80557"/>
+  </producedTypes>
+  <name>ContolBalanceOfGoods</name>
+  <synonym>
+    <key>en</key>
+    <value>Contol balance of goods</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

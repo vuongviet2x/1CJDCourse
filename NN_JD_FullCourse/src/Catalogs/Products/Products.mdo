@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42ecd2be-216e-40aa-bae7-ab49137d15d3">
+  <producedTypes>
+    <objectType typeId="bf06b61a-6632-46ba-baa6-3d5adf460042" valueTypeId="4b3ab08c-2a7a-43e4-b383-1f2d281836d7"/>
+    <refType typeId="d770d3da-2782-46aa-a98d-8a056ab144af" valueTypeId="d833caaa-914b-4157-bfde-5b04241e0306"/>
+    <selectionType typeId="54406853-2761-4c61-b5cb-6926a9945772" valueTypeId="30534ad8-09dd-4a00-a5b5-a4e60ec5f8fc"/>
+    <listType typeId="ce4685b8-59a5-449c-a448-97c5e416b33a" valueTypeId="9e01fbe3-fc86-44fd-b957-6e17db25d87f"/>
+    <managerType typeId="6d11c87c-ca3b-447a-bd76-8a5e0d317170" valueTypeId="8e14053a-eb36-44a3-8061-0f6267d4d797"/>
+  </producedTypes>
+  <name>Products</name>
+  <synonym>
+    <key>en</key>
+    <value>Products</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Products.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Products.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>en</key>
+      <value>Group</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Products.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</characteristicTypes>
+    <keyField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</keyField>
+    <typesFilterField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.Attribute.CharacteristicsObjectType</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Enum.CharacteristicsObjectTypes.EnumValue.Products</value>
+    </typesFilterValue>
+    <dataPathField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ObjectsCharacteristicValues</characteristicValues>
+    <objectField>InformationRegister.ObjectsCharacteristicValues.Dimension.Object</objectField>
+    <typeField>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</typeField>
+    <valueField>InformationRegister.ObjectsCharacteristicValues.Resource.CharacteristicValue</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Product</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Product/Service</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Products</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Products list</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>5</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Products.Form.ItemForm</defaultObjectForm>
+  <defaultChoiceForm>Catalog.Products.Form.ChoiceForm</defaultChoiceForm>
+  <attributes uuid="7cd368e2-ab8d-446b-aefb-ebef70d0e878">
+    <name>Weight</name>
+    <synonym>
+      <key>en</key>
+      <value>Weight</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c341cf9-cb18-4641-8576-66160a77f7cb">
+    <name>FullDescription</name>
+    <synonym>
+      <key>en</key>
+      <value>Full description</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41eefde9-cb03-442f-92ea-7498d187ee66">
+    <name>CountryOfOrigin</name>
+    <synonym>
+      <key>en</key>
+      <value>Country of origin</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Countries</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25c8563b-89fb-4887-9d32-cdebb1ff57c5">
+    <name>ProductType</name>
+    <synonym>
+      <key>en</key>
+      <value>Product type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ProductsTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ProductsTypes.EnumValue.InventoryItem</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9f82c590-a5ba-4393-8032-d9cd3ab36c4a">
+    <name>MinimumSalePrice</name>
+    <synonym>
+      <key>en</key>
+      <value>Minimum sale price</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0d8ab407-5010-4800-a3e4-143cba13cf82">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="14e79381-f9e8-4678-ab90-50024a55934d">
+    <name>ChoiceForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Choice form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

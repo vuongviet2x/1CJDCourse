@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aba7d685-f9d2-4e79-86de-e1e889ed7c78">
+  <name>SalesManager</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales manager</value>
+  </synonym>
+</mdclass:Role>

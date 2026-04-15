@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77809d80-a109-4a57-8dab-eecae11a889c">
+  <name>SalesAndRetail</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales and retail</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="3d474d8c-d21a-4161-911f-3adb3720434e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="49b236fb-b821-4b9c-9aca-38ad06cbcd45"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="82420579-8973-4475-84d0-0cb4588c0451"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="db8423b2-042b-46e2-9fa4-d014f6b880ca"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="e34120c7-2735-46d2-9acd-1a740b927527"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="99f0129e-781c-48c1-8dda-582dba50417b"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="dd1c5d2a-e10e-4633-89e7-8b83fe4f7862"/>
+  <configurationExtensionCompatibilityMode>8.3.26</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.English</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
+  <languages uuid="55ecedfd-1328-4e4c-add3-7b771aa64519">
+    <name>English</name>
+    <synonym>
+      <key>en</key>
+      <value>English</value>
+    </synonym>
+    <languageCode>en</languageCode>
+  </languages>
+  <subsystems>Subsystem.Purchases</subsystems>
+  <subsystems>Subsystem.Sales</subsystems>
+  <subsystems>Subsystem.Warehouse</subsystems>
+  <subsystems>Subsystem.MasterData</subsystems>
+  <roles>Role.Administration</roles>
+  <roles>Role.FullAccess</roles>
+  <roles>Role.InteractiveOpenExtReportsAndDataProcessors</roles>
+  <roles>Role.CEO</roles>
+  <roles>Role.SalesManager</roles>
+  <roles>Role.PurchaseManager</roles>
+  <roles>Role.StoreKeeper</roles>
+  <roles>Role.MasterDataSpecialist</roles>
+  <commonModules>CommonModule.ProductsInDocuments</commonModules>
+  <commonModules>CommonModule.ProductsInDocumentsServerCall</commonModules>
+  <commonModules>CommonModule.ProductsInDocumentsClientServer</commonModules>
+  <commonModules>CommonModule.DocumentFilling</commonModules>
+  <commonModules>CommonModule.IntegrationWithWarehouseManagementSystem</commonModules>
+  <eventSubscriptions>EventSubscription.FillCompanyInDocuments</eventSubscriptions>
+  <functionalOptions>FunctionalOption.CompanyPrefix</functionalOptions>
+  <functionalOptions>FunctionalOption.WriteOffOrder</functionalOptions>
+  <functionalOptions>FunctionalOption.UseCharacteristics</functionalOptions>
+  <functionalOptions>FunctionalOption.ContolBalanceOfGoods</functionalOptions>
+  <functionalOptionsParameters>FunctionalOptionsParameter.Company</functionalOptionsParameters>
+  <constants>Constant.ContolBalanceOfGoods</constants>
+  <constants>Constant.WriteOffOrder</constants>
+  <constants>Constant.UseCharacteristics</constants>
+  <commonForms>CommonForm.TestCollections</commonForms>
+  <commonForms>CommonForm.FormForDebugTest</commonForms>
+  <commonForms>CommonForm.GoodsSettings</commonForms>
+  <commonForms>CommonForm.ApplicationSettings</commonForms>
+  <catalogs>Catalog.Banks</catalogs>
+  <catalogs>Catalog.BankAccounts</catalogs>
+  <catalogs>Catalog.Companies</catalogs>
+  <catalogs>Catalog.Counterparties</catalogs>
+  <catalogs>Catalog.CounterpartyContracts</catalogs>
+  <catalogs>Catalog.Countries</catalogs>
+  <catalogs>Catalog.Products</catalogs>
+  <catalogs>Catalog.Warehouses</catalogs>
+  <catalogs>Catalog.ObjectsPropertiesValues</catalogs>
+  <documents>Document.InventoryTransfer</documents>
+  <documents>Document.PriceSetup</documents>
+  <documents>Document.PurchaseInvoice</documents>
+  <documents>Document.ReturnOfGoodsFromCustomer</documents>
+  <documents>Document.SalesInvoice</documents>
+  <documentJournals>DocumentJournal.SalesDocuments</documentJournals>
+  <enums>Enum.ProductsTypes</enums>
+  <enums>Enum.SalesInvoiceStates</enums>
+  <enums>Enum.CharacteristicsObjectTypes</enums>
+  <enums>Enum.WriteOffMethods</enums>
+  <reports>Report.SalesByCustomers</reports>
+  <reports>Report.SalesWithPriceDeviations</reports>
+  <reports>Report.GoodsMovement</reports>
+  <dataProcessors>DataProcessor.ImportPricesFromExcel</dataProcessors>
+  <informationRegisters>InformationRegister.SalesInvoiceStates</informationRegisters>
+  <informationRegisters>InformationRegister.ProductPrices</informationRegisters>
+  <informationRegisters>InformationRegister.ObjectsCharacteristicValues</informationRegisters>
+  <informationRegisters>InformationRegister.CompanyAccountingSettings</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.GoodsInWarehouses</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Sales</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</chartsOfCharacteristicTypes>
+</mdclass:Configuration>

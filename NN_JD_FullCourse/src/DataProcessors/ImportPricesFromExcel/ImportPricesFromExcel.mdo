@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="018db8f9-5cfd-4d23-90b7-0088bd1d0d80">
+  <producedTypes>
+    <objectType typeId="3499485a-09c3-4372-a7ef-1ed28d87939f" valueTypeId="52104687-8ef4-4f71-8aee-2aa9b991312b"/>
+    <managerType typeId="b30780b2-4ecb-4e12-bd00-b5db55d3d700" valueTypeId="f310a01a-291c-49a2-8b2a-09357c848960"/>
+  </producedTypes>
+  <name>ImportPricesFromExcel</name>
+  <synonym>
+    <key>en</key>
+    <value>Import prices from excel</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ImportPricesFromExcel.Form.Form</defaultForm>
+  <forms uuid="c9dc4b38-e7b4-4f33-a918-06f7d5ba9f7a">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

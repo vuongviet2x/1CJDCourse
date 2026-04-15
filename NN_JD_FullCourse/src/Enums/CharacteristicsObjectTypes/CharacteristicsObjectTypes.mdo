@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd075e47-4bc1-435e-8630-44c1e83a05a1">
+  <producedTypes>
+    <refType typeId="20045f8a-c34e-4de1-bfc3-405fffea97ad" valueTypeId="7b5cb54c-dfaa-429d-9969-3645d197d1f1"/>
+    <listType typeId="4268f378-1711-4d06-95a5-8d52b735cd09" valueTypeId="87946a18-6463-44bb-b2f6-1364541e7666"/>
+    <managerType typeId="4cf38d4c-700a-43c1-a02c-880254ad6ed3" valueTypeId="4ad04aff-f96f-44e2-8067-0ca6de3a3242"/>
+  </producedTypes>
+  <name>CharacteristicsObjectTypes</name>
+  <synonym>
+    <key>en</key>
+    <value>Characteristics object types</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9337ddf0-9598-4453-8203-3ba83a21c12e">
+    <name>Companies</name>
+    <synonym>
+      <key>en</key>
+      <value>Catalog &quot;Companies&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25f300ad-31c2-4c9c-8197-730c8cfb4cae">
+    <name>Counterparties</name>
+    <synonym>
+      <key>en</key>
+      <value>Catalog &quot;Counterparties&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="891a0536-1388-4b19-a556-12ffe3b842b0">
+    <name>Contracts</name>
+    <synonym>
+      <key>en</key>
+      <value>Catalog &quot;Counterparties contracts&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a079a39d-632c-45d0-a19a-cfbd6df4ff3e">
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Catalog &quot;Products&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f85cee84-3c9d-4dd7-964a-eb6b31b0d460">
+    <name>Warehouses</name>
+    <synonym>
+      <key>en</key>
+      <value>Catalog &quot;Warehouses&quot;</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="995788e1-ea6c-4892-ac1e-6c479ceaf4e8">
+  <producedTypes>
+    <objectType typeId="8c948109-d5d6-494b-98fb-ed324281b301" valueTypeId="756a90a3-f7fb-46e1-b6dd-b5a1161d0372"/>
+    <refType typeId="e8497907-95ca-47a6-a1da-55b348d845ac" valueTypeId="7d5f7532-7c15-4eb0-8810-f4aeb215a7a9"/>
+    <selectionType typeId="508ff030-a455-42e6-93a8-d55d1eceff64" valueTypeId="3b24f306-75c2-4d96-b634-350aba9d2ebd"/>
+    <listType typeId="d63a7b09-8031-4a14-8dde-e89d8df72eaa" valueTypeId="7ff6fe61-667f-4b2a-b3bc-131cd2703ea5"/>
+    <managerType typeId="a76a8c4c-1d44-4b53-9033-fdcd7e0b73e0" valueTypeId="159de129-be7c-4c87-98b3-50bf327d2c06"/>
+  </producedTypes>
+  <name>Banks</name>
+  <synonym>
+    <key>en</key>
+    <value>Banks</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Banks.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Banks.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Bank</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

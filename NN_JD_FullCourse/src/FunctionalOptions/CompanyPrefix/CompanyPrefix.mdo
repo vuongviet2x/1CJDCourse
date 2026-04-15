@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d990c6c-8ca6-4691-a513-7f2ae42a5166">
+  <name>CompanyPrefix</name>
+  <synonym>
+    <key>en</key>
+    <value>Company prefix</value>
+  </synonym>
+  <location>Catalog.Companies.Attribute.Prefix</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

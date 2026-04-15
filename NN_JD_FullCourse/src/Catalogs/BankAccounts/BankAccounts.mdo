@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3789a7f5-e6c3-4fa0-bdfc-e46f4ac785cb">
+  <producedTypes>
+    <objectType typeId="ec536834-918e-4e91-a672-6cf46f97ad99" valueTypeId="5c2223c5-d6c7-4b1c-9ceb-b922beb8f781"/>
+    <refType typeId="74f9e1d0-e3c3-4347-a57e-efb7a9db2ba6" valueTypeId="9b5d1d93-173f-44a8-8d65-c82d09b7b9f5"/>
+    <selectionType typeId="3efe2ea3-9a60-4030-b55d-9015914b0d8e" valueTypeId="c7fb6dd2-e78d-4f80-b7a5-f084d711afb0"/>
+    <listType typeId="b33b4533-bf9c-4e2d-9044-fb23b943716a" valueTypeId="71f0d581-c56a-4d6b-9457-5881d3b63baa"/>
+    <managerType typeId="e8ae5e44-5e56-41a2-bdd1-5f87e7820f0a" valueTypeId="4c66bca7-f7c0-4ac2-8015-d016046b7d72"/>
+  </producedTypes>
+  <name>BankAccounts</name>
+  <synonym>
+    <key>en</key>
+    <value>Bank accounts</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.BankAccounts.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.BankAccounts.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Bank account</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Companies</owners>
+  <owners>Catalog.Counterparties</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="654ae2a4-7bcf-415e-9dbe-02a211cd0e8d">
+    <name>Bank</name>
+    <synonym>
+      <key>en</key>
+      <value>Bank</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Banks</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

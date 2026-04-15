@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c208b7f0-74bc-4d8f-bdb1-77f7fe905de7">
+  <producedTypes>
+    <objectType typeId="8a0b7056-f33a-4174-b1f5-39ef5193b1f8" valueTypeId="06bbf2a8-8265-4d76-adf1-61018bd3562b"/>
+    <refType typeId="9eb08823-6b19-4cbb-bda3-38def47c7a3e" valueTypeId="20458b0b-e7ab-48d4-8758-ab3bc549e6cc"/>
+    <selectionType typeId="166425c5-6b66-4b3f-8ac4-4edb755c79cb" valueTypeId="f79a8f97-77e1-4542-9fc4-74ac542ed17b"/>
+    <listType typeId="b65a4726-838e-4a01-862d-20b14831423e" valueTypeId="8d00879f-54d2-4827-90e4-6655ab60f615"/>
+    <managerType typeId="85587e2b-b9ab-4938-a60d-1c4da1675350" valueTypeId="19d44d3e-7441-41b8-9be7-be9347233349"/>
+  </producedTypes>
+  <name>Warehouses</name>
+  <synonym>
+    <key>en</key>
+    <value>Warehouses</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Warehouses.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Warehouses.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</characteristicTypes>
+    <keyField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</keyField>
+    <typesFilterField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.Attribute.CharacteristicsObjectType</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Enum.CharacteristicsObjectTypes.EnumValue.Warehouses</value>
+    </typesFilterValue>
+    <dataPathField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ObjectsCharacteristicValues</characteristicValues>
+    <objectField>InformationRegister.ObjectsCharacteristicValues.Dimension.Object</objectField>
+    <typeField>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</typeField>
+    <valueField>InformationRegister.ObjectsCharacteristicValues.Resource.CharacteristicValue</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Warehouse</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9209567-7c10-4b1d-98dd-664172a349f6">
+  <producedTypes>
+    <managerType typeId="c05a17b4-a145-4c45-a17a-1174e9f28ebf" valueTypeId="a925d1d8-65ed-48a1-b5e0-4fbfc190cdac"/>
+    <valueManagerType typeId="915768b8-e0c4-466c-a35a-3b456a96f13c" valueTypeId="46b14c7a-e55b-43c4-a8c1-52756d8199f7"/>
+    <valueKeyType typeId="6a19e78c-389e-4876-8ab5-3f26f9d2ec9c" valueTypeId="b4bdb9ea-74cf-4ff2-a2f5-fa0bfa94383f"/>
+  </producedTypes>
+  <name>UseCharacteristics</name>
+  <synonym>
+    <key>en</key>
+    <value>Use characteristics</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

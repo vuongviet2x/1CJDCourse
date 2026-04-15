@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30dfeae3-f160-4b27-a695-2b0467e0a20f">
+  <producedTypes>
+    <objectType typeId="cfa07e5d-a73f-4e25-8837-c09f14897df8" valueTypeId="71028880-220a-4d68-a218-2a176a0de5db"/>
+    <refType typeId="ea50bfa6-6240-4d0a-ba00-b09516117a39" valueTypeId="bab8d2bf-08be-4098-950f-7f75730c7c0a"/>
+    <selectionType typeId="066bc732-f417-4b5d-a2f1-ff50c9be2907" valueTypeId="859c3981-eb02-4510-9f9f-56a5d447391f"/>
+    <listType typeId="e2fc58a6-c31d-4171-bc73-fc301e720100" valueTypeId="6dfc74a3-6647-4e8b-8c7c-554774a9d7e0"/>
+    <managerType typeId="fc1fc5ed-5dd3-4538-bea2-0b83fe1882d5" valueTypeId="92991331-c738-4663-9dbe-37bdde001025"/>
+  </producedTypes>
+  <name>Counterparties</name>
+  <synonym>
+    <key>en</key>
+    <value>Counterparties</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Counterparties.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Counterparties.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</characteristicTypes>
+    <keyField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</keyField>
+    <typesFilterField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.Attribute.CharacteristicsObjectType</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Enum.CharacteristicsObjectTypes.EnumValue.Counterparties</value>
+    </typesFilterValue>
+    <dataPathField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ObjectsCharacteristicValues</characteristicValues>
+    <objectField>InformationRegister.ObjectsCharacteristicValues.Dimension.Object</objectField>
+    <typeField>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</typeField>
+    <valueField>InformationRegister.ObjectsCharacteristicValues.Resource.CharacteristicValue</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Counterparty</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Counterparties.Form.ItemForm</defaultObjectForm>
+  <attributes uuid="6e1f1d7a-4aa6-45ef-85f5-ec7594940d15">
+    <name>TIN</name>
+    <synonym>
+      <key>en</key>
+      <value>TIN</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3517f8d1-f7fe-462b-97d0-7878aab3638c">
+    <name>RegistrationCountry</name>
+    <synonym>
+      <key>en</key>
+      <value>Registration country</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Countries</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Countries.Vietnam</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d961b9b8-f53e-4463-add1-3404edb76cd0">
+    <name>Vendor</name>
+    <synonym>
+      <key>en</key>
+      <value>Vendor</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a743287-b9e4-46ad-a186-43ce4f803f23">
+    <name>Customer</name>
+    <synonym>
+      <key>en</key>
+      <value>Customer</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef112f43-b236-463f-9d40-57afaca60bc5">
+    <name>Other</name>
+    <synonym>
+      <key>en</key>
+      <value>Other</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="87f945ba-d920-4b0f-af98-c72d2d85e9fe">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

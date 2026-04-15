@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="588cc0ec-d441-45c6-95c5-d69b2d8c1a72">
+  <producedTypes>
+    <selectionType typeId="5ba0ea1a-216c-40cf-920d-bba33249f179" valueTypeId="949911a7-4f35-41ad-adfa-285b377fb36f"/>
+    <listType typeId="bb514fdc-0ee0-4550-9935-c3ad9cf0b7cb" valueTypeId="fb9b2640-963a-4f53-9c58-692cc74634b7"/>
+    <managerType typeId="ec6ef090-0719-4871-94aa-59f34512def7" valueTypeId="d70ba01f-f86e-4155-803f-d201834217fa"/>
+  </producedTypes>
+  <name>SalesDocuments</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales documents</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ReturnOfGoodsFromCustomer</registeredDocuments>
+  <registeredDocuments>Document.SalesInvoice</registeredDocuments>
+  <columns uuid="5003ea62-8260-4ac7-826c-36cac6173a34">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.Company</references>
+    <references>Document.SalesInvoice.Attribute.Company</references>
+  </columns>
+  <columns uuid="b1765bbc-3ad2-4ac3-a79f-cfc0f9fbb55d">
+    <name>Customer</name>
+    <synonym>
+      <key>en</key>
+      <value>Customer</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.Customer</references>
+    <references>Document.SalesInvoice.Attribute.Customer</references>
+  </columns>
+  <columns uuid="ec4d0c41-eeed-40cb-8596-fd6ee1e9351b">
+    <name>Contract</name>
+    <synonym>
+      <key>en</key>
+      <value>Contract</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.Contract</references>
+    <references>Document.SalesInvoice.Attribute.Contract</references>
+  </columns>
+  <columns uuid="976d7543-a68e-4d3d-a169-e9059a2a5447">
+    <name>Warehouse</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.Warehouse</references>
+    <references>Document.SalesInvoice.Attribute.Warehouse</references>
+  </columns>
+  <columns uuid="52dbcb2d-0681-4443-80eb-ef691059ec34">
+    <name>BankAccount</name>
+    <synonym>
+      <key>en</key>
+      <value>Bank account</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.BankAccount</references>
+    <references>Document.SalesInvoice.Attribute.BankAccount</references>
+  </columns>
+  <columns uuid="8b5e2c5e-9393-42e1-8d10-ee9f40ad4978">
+    <name>DocumentTotal</name>
+    <synonym>
+      <key>en</key>
+      <value>Document total</value>
+    </synonym>
+    <references>Document.ReturnOfGoodsFromCustomer.Attribute.DocumentTotal</references>
+    <references>Document.SalesInvoice.Attribute.DocumentTotal</references>
+  </columns>
+</mdclass:DocumentJournal>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abc3bd8e-66de-412b-974a-5053e2c5c2df">
+  <producedTypes>
+    <objectType typeId="f886dca5-4e5a-4f0f-abe3-3d0374d6ddaf" valueTypeId="591dbb1c-eb4c-482a-b8cd-0fc4a56adcd6"/>
+    <refType typeId="5d5a88cf-db7e-4194-bb2a-01aa0932bb6d" valueTypeId="d8988365-d8f7-43d0-b677-d77ca3b5e3d9"/>
+    <selectionType typeId="6cb8f023-05f6-4190-8f34-6985671efee1" valueTypeId="f517fba9-55f6-458d-a728-cad45102b7e0"/>
+    <listType typeId="91666478-d26c-4be8-bbfe-b912cc4d62f1" valueTypeId="4d7ed8bf-7f00-47cf-a329-b73043c55718"/>
+    <managerType typeId="41d55d51-83ee-4741-b31d-9a119bb611af" valueTypeId="97006527-9f05-4070-86a8-90e249bfe762"/>
+  </producedTypes>
+  <name>PriceSetup</name>
+  <synonym>
+    <key>en</key>
+    <value>Price setup</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.PriceSetup.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.PriceSetup.Form.DocumentForm</defaultObjectForm>
+  <registerRecords>InformationRegister.ProductPrices</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="adfaac9d-1253-410d-8cb2-a43508e29786">
+    <name>LoadedFromFile</name>
+    <synonym>
+      <key>en</key>
+      <value>Loaded from file</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bf76e3bd-92ab-431c-be7a-6febac88b6b9">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="21793b00-f6b1-4821-bc6f-c5b3253927df">
+    <producedTypes>
+      <objectType typeId="08858d04-49eb-4051-8b4c-b4f6c90ebd91" valueTypeId="51474d96-f2d5-41a0-a0a6-f0472f57d146"/>
+      <rowType typeId="a6c45a62-4df7-4871-926e-c9d96c3814f3" valueTypeId="db8653a4-1f07-4cc3-b0d2-180d61d02add"/>
+    </producedTypes>
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Products</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bffc1ff1-525f-438a-940e-8005a359852c">
+      <name>Product</name>
+      <synonym>
+        <key>en</key>
+        <value>Product</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Products</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="29aae142-a858-4ac6-bb1d-a1c038f38710">
+      <name>Price</name>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="02515c1c-955d-47f8-a431-362162671b6c">
+    <name>SetPrice</name>
+    <synonym>
+      <key>en</key>
+      <value>Set price</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Products</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

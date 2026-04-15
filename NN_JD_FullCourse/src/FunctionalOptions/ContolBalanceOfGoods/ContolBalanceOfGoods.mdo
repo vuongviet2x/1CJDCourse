@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f2d7da6-23c2-40fe-a57a-b7dc12208d42">
+  <name>ContolBalanceOfGoods</name>
+  <synonym>
+    <key>en</key>
+    <value>Contol balance of goods</value>
+  </synonym>
+  <location>InformationRegister.CompanyAccountingSettings.Resource.ContolBalanceOfGoods</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

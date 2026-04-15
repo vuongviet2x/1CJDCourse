@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1616d57-e3ea-4939-aa83-8d680b7d585a">
+  <producedTypes>
+    <objectType typeId="31bb0839-a7ba-43a2-9b65-f19cb9114c9e" valueTypeId="d1177017-0882-44c2-b374-c476814efb73"/>
+    <refType typeId="72b34f46-5edf-4979-83a8-dffce1f54ad9" valueTypeId="b4a2de46-f6ae-40b1-94e5-acc3299c18a0"/>
+    <selectionType typeId="b0ddbdaf-007b-403f-ac8e-25269eefdf87" valueTypeId="28271513-b3a7-4f5a-b56f-11449e806e4b"/>
+    <listType typeId="62fe8efb-5c31-4e9d-98e8-807e0bc460d2" valueTypeId="a888b78f-5bd9-4c73-a47a-275d24a0a5c9"/>
+    <managerType typeId="970f357f-8b24-4316-a80d-ed6c8833fc3a" valueTypeId="9de26f75-e3d7-4568-b03c-3563d72c615d"/>
+  </producedTypes>
+  <name>Companies</name>
+  <synonym>
+    <key>en</key>
+    <value>Companies</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Companies.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Companies.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</characteristicTypes>
+    <keyField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</keyField>
+    <typesFilterField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.Attribute.CharacteristicsObjectType</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Enum.CharacteristicsObjectTypes.EnumValue.Companies</value>
+    </typesFilterValue>
+    <dataPathField>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties.StandardAttribute.Ref</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ObjectsCharacteristicValues</characteristicValues>
+    <objectField>InformationRegister.ObjectsCharacteristicValues.Dimension.Object</objectField>
+    <typeField>InformationRegister.ObjectsCharacteristicValues.Dimension.CharacteristicType</typeField>
+    <valueField>InformationRegister.ObjectsCharacteristicValues.Resource.CharacteristicValue</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Company</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c42a28dc-2974-4a76-8e2d-fc7d50452427">
+    <name>Prefix</name>
+    <synonym>
+      <key>en</key>
+      <value>Prefix</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

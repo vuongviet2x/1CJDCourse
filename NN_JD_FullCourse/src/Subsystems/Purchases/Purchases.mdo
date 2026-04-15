@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97951a0a-f161-4253-88ba-95cf4a48e3eb">
+  <name>Purchases</name>
+  <synonym>
+    <key>en</key>
+    <value>Purchases</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.PurchaseInvoice</content>
+</mdclass:Subsystem>
