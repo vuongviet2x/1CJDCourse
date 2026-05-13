@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Header" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="2"/>
+			<ChildItems>
+				<UsualGroup name="LeftColumn" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Left column</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="LeftColumnExtendedTooltip" id="4"/>
+					<ChildItems>
+						<InputField name="Number" id="5">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="NumberContextMenu" id="6"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="7"/>
+						</InputField>
+						<InputField name="Date" id="8">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DateContextMenu" id="9"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="10"/>
+						</InputField>
+						<InputField name="Company" id="13">
+							<DataPath>Object.Company</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CompanyContextMenu" id="14"/>
+							<ExtendedTooltip name="CompanyExtendedTooltip" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="RightColumn" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right column</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="RightColumnExtendedTooltip" id="12"/>
+					<ChildItems>
+						<InputField name="OperationKind" id="16">
+							<DataPath>Object.OperationKind</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="OperationKindContextMenu" id="17"/>
+							<ExtendedTooltip name="OperationKindExtendedTooltip" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Changes" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.Changes</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ChangesContextMenu" id="20"/>
+			<AutoCommandBar name="ChangesCommandBar" id="21"/>
+			<ExtendedTooltip name="ChangesExtendedTooltip" id="22"/>
+			<SearchStringAddition name="ChangesSearchString" id="23">
+				<AdditionSource>
+					<Item>Changes</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ChangesSearchStringContextMenu" id="24"/>
+				<ExtendedTooltip name="ChangesSearchStringExtendedTooltip" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ChangesViewStatus" id="26">
+				<AdditionSource>
+					<Item>Changes</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ChangesViewStatusContextMenu" id="27"/>
+				<ExtendedTooltip name="ChangesViewStatusExtendedTooltip" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ChangesSearchControl" id="29">
+				<AdditionSource>
+					<Item>Changes</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ChangesSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="ChangesSearchControlExtendedTooltip" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ChangesLineNumber" id="32">
+					<DataPath>Object.Changes.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChangesLineNumberContextMenu" id="33"/>
+					<ExtendedTooltip name="ChangesLineNumberExtendedTooltip" id="34"/>
+				</LabelField>
+				<InputField name="ChangesEmployee" id="35">
+					<DataPath>Object.Changes.Employee</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChangesEmployeeContextMenu" id="36"/>
+					<ExtendedTooltip name="ChangesEmployeeExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="ChangesPosition" id="38">
+					<DataPath>Object.Changes.Position</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChangesPositionContextMenu" id="39"/>
+					<ExtendedTooltip name="ChangesPositionExtendedTooltip" id="40"/>
+				</InputField>
+				<InputField name="ChangesStartDate" id="41">
+					<DataPath>Object.Changes.StartDate</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChangesStartDateContextMenu" id="42"/>
+					<ExtendedTooltip name="ChangesStartDateExtendedTooltip" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.PersonnelChange</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

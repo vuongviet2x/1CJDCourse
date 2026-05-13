@@ -1,25 +1,45 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.19">
 	<ConfigVersions>
-		<Metadata name="Catalog.CatalogWithCodeAndDescription" id="ff78eb9e-8979-400d-8986-f5fdedf6e3e0" configVersion="38a461716f266c4f98e97eb0b21b75f700000000"/>
-		<Metadata name="Catalog.CatalogWithCodePresentation" id="521d6740-a5f0-4449-a40e-e3180b40c1f9" configVersion="bf6913f379dbdc438f5fcc24853e9fd100000000"/>
-		<Metadata name="Configuration.Configuration" id="61990771-3926-46fc-abb8-603b44e3c9f4" configVersion="b13f1ecdfbe3b949a0499f33e0a6222d00000000"/>
-		<Metadata name="Document.WorkWithRefsAndPrimitiveTypes" id="350efbf8-37a8-4391-80bd-acfa0866cd48" configVersion="523b64c5f9ef684f89d26eda22cb3b5c00000000">
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.NonnegativeInteger" id="0367e53b-f9a8-4b9d-b46c-5c6f5b8626af"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.UnlimitedString" id="06326d69-e74c-4378-85df-0e76904ae5ec"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.Float" id="0bee2fdc-a4b1-4bc7-a917-4730b7ca13fd"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.CatalogWithCodeAndDescription" id="3e2e6aa5-0f3c-4267-a6d6-4bae676a067f"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.CatalogWithCodePresentation" id="bf49e251-7d6f-4f94-ad64-b8ed1dc73393"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.OnlyDate" id="c8ed548e-aa86-4966-8ff9-6bb73a8baaf0"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.VariableString" id="cc702c64-738a-4700-8502-9e63277fff20"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.FixedString" id="d8ca25a9-e6be-44f8-9d6d-9b9c1cdd6ee2"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.Boolean" id="ddafee6c-e8e9-408c-a009-40e8a81fd302"/>
-			<Metadata name="Document.WorkWithRefsAndPrimitiveTypes.Attribute.OnlyTime" id="fcdeac39-4d45-4ad4-a4a6-c383cd1fe28a"/>
+		<Metadata name="Catalog.BankAccounts" id="614a59ee-0270-43a1-a292-063791f1a6f1" configVersion="aa78fe1c936aa34aa1e2d9243744eb5a00000000"/>
+		<Metadata name="Catalog.Banks" id="303696b6-df3b-4f2a-b7fd-cb99246a8e25" configVersion="ab256fbe2ecf2446805074d328fada2300000000"/>
+		<Metadata name="Catalog.Cities" id="85839743-9cfe-41af-8db8-0742881330b6" configVersion="3dd78cf3ed03e64286fe82859226095e00000000"/>
+		<Metadata name="Catalog.Companies" id="1b40cec3-79d7-44c8-9a84-ba13e3f56e98" configVersion="88267b7138f373448db71d7969044c5600000000"/>
+		<Metadata name="Catalog.Employees" id="4d4a41f0-e239-4419-851a-87710166a5cc" configVersion="0ea55ceae1f0304b97bce812ef93b09e00000000">
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.Gender" id="15795ec6-1d51-4539-a5f8-6a825d0d77a6"/>
+			<Metadata name="Catalog.Employees.Attribute.DateOfBirth" id="4d562dbf-5a0e-4e14-a87b-e2c3d13f0dfb"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.DateOfBirth" id="4f2444c8-1cef-4be6-8932-a71845a79c15"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children" id="5c3edebb-8d8a-41f0-857f-204099cbefe6"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.Name" id="84cc8950-ad80-42a3-83d9-341fe0ad0063"/>
+			<Metadata name="Catalog.Employees.Attribute.Gender" id="b6877723-9803-49bc-82d7-562359265a4d"/>
+			<Metadata name="Catalog.Employees.Attribute.PlaceOfBirth" id="bbb3d549-60ba-4cb0-bba0-56acf08667f6"/>
 		</Metadata>
-		<Metadata name="Language.English" id="9a5bdd32-b231-4f7a-9138-1a99f634e29b" configVersion="ba6835fd67d916479a720ad802a82b7f00000000"/>
-		<Metadata name="Role.FullRights" id="52aade0e-9371-411b-a2bd-f248128e41e1" configVersion="c7b0359c79652a49a8ee3bf6f7f897ab00000000"/>
-		<Metadata name="Role.FullRights.Rights" id="52aade0e-9371-411b-a2bd-f248128e41e1.0" configVersion="c1c9e0b56f21314a99cf9ebc9dbed49e00000000"/>
-		<Metadata name="Role.TestRole" id="7863d38c-92a2-4915-8ad1-d713acecb2e5" configVersion="549a726fdbad174e8c2c0e35c1b24dbd00000000"/>
-		<Metadata name="Role.TestRole.Rights" id="7863d38c-92a2-4915-8ad1-d713acecb2e5.0" configVersion="d660a7b06bb44741aed657d6e145a51f00000000"/>
+		<Metadata name="Catalog.Employees.ManagerModule" id="4d4a41f0-e239-4419-851a-87710166a5cc.3" configVersion="6a4300c9995b2e4dbbbade102b2cb96f00000000"/>
+		<Metadata name="Catalog.Positions" id="1d79da37-68d7-47c1-ae6c-5888bd6226f1" configVersion="af1a3e2cffc403458afdf8476bce85ee00000000"/>
+		<Metadata name="Configuration.Configuration" id="e6c5ce7d-090f-4f3f-bd27-655f4468e81d" configVersion="8afb1619d176ee42916a45db90b02b7300000000"/>
+		<Metadata name="Document.PersonnelChange" id="8d14239f-8cbc-4a9e-8899-54988f943b5c" configVersion="8e73b788fe25eb4591cc5cfb3864daf000000000">
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.Employee" id="0c624170-6b94-4349-90b6-c29b4174c7f8"/>
+			<Metadata name="Document.PersonnelChange.Attribute.Company" id="52145173-c1cd-4ce9-98ea-ab68581ddfc0"/>
+			<Metadata name="Document.PersonnelChange.Attribute.OperationKind" id="8be02dbf-4095-4719-901d-cf3d66be56de"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.StartDate" id="ba23845a-f549-4014-a048-2a27eb53052b"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes" id="c8bcb107-3285-431b-a882-3cb70b5a04f8"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.Position" id="f93076af-f5d2-4f4a-bec1-c020b10bfdff"/>
+		</Metadata>
+		<Metadata name="Document.PersonnelChange.Form.DocumentForm" id="0af83aa2-c7de-4450-8242-3768031a2dd7" configVersion="94b4d5b05b5b33458c93995704dcd2c300000000"/>
+		<Metadata name="Document.PersonnelChange.Form.DocumentForm.Form" id="0af83aa2-c7de-4450-8242-3768031a2dd7.0" configVersion="1a5399944b68a74292c77b50238d98fa00000000"/>
+		<Metadata name="Document.PersonnelChange.Help" id="8d14239f-8cbc-4a9e-8899-54988f943b5c.1" configVersion="bac64d8cc2bce046ad563f6d2f61bbf200000000"/>
+		<Metadata name="Document.PersonnelChange.ObjectModule" id="8d14239f-8cbc-4a9e-8899-54988f943b5c.0" configVersion="6a9ce7b9f61d6849bfd96526be19bf5000000000"/>
+		<Metadata name="Enum.Gender" id="b1a8fd37-924f-492a-843e-cd2460baee7c" configVersion="c048a23401744c4fb4d4a04fc5c1af8f00000000">
+			<Metadata name="Enum.Gender.EnumValue.Female" id="169683d4-3db4-445f-9efc-21d99e22ae17"/>
+			<Metadata name="Enum.Gender.EnumValue.Male" id="31803a54-74be-4594-8197-641d7e06d888"/>
+		</Metadata>
+		<Metadata name="Enum.OperationKindsPersonnelChange" id="8d3597b5-fd5c-4805-9e17-6701297056da" configVersion="7d78929365da0d4fa4a4e6487bb4ba5b00000000">
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.Hiring" id="2bad3dba-2d40-47e0-830d-dd61410b91f0"/>
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.Dismissal" id="d458c9bf-8418-401e-82ce-5f7693658643"/>
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.PositionChanging" id="d563e31b-f5d4-4740-a6f1-053801ee5df5"/>
+		</Metadata>
+		<Metadata name="Language.English" id="5cf006a6-4d43-4fd3-8835-c54cf4a0eda0" configVersion="422572650167e44a9185247cf763a2ef00000000"/>
+		<Metadata name="Subsystem.Bank" id="fdf54e99-6a6d-451b-bbf9-62bfcd43954a" configVersion="b1bd805a5a11e441890f68ea4e56cdae00000000"/>
+		<Metadata name="Subsystem.HRM" id="22c0b316-8e5f-4b1f-9d1c-2e096de62488" configVersion="ce6f398a2bb4d348b94fd66c2a67305d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
