@@ -1,121 +1,73 @@
 ﻿
-&AtClientAtServerNoContext
-Procedure CalculateAmountAtRow(ProductsRow, Discount)
+&AtClient
+Procedure CustomerOnChange(Item)
 	
-	ProductsRow.Amount = ProductsRow.Quantity * ProductsRow.Price * (1 - Discount / 100);
+	FillMainContractAtServer();
 	
+EndProcedure
+
+&AtServer
+Procedure FillMainContractAtServer()
+
+	DocumentObject = FormAttributeToValue("Object");
+	DocumentObject.FillMainContract();
+	
+	ValueToFormAttribute(DocumentObject, "Object");
+
 EndProcedure
 
 &AtClient
 Procedure ProductsQuantityOnChange(Item)
 	
-	CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
+	FillAmountInProductsRow();
+	OnProductOrQuantityChange();
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsPriceOnChange(Item)
-	
-	ControlMinimumSalesPrice();
-	CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
-	
+	FillAmountInProductsRow();
 EndProcedure
 
 &AtClient
-Procedure ProductsOnChange(Item)
-
-	RecalculateAmountOfProductsAtServer();
-	
-EndProcedure
-
-&AtClient
-Procedure ProductsProductOnChange(Item)
-	ControlMinimumSalesPrice();
-EndProcedure
-
-&AtClient
-Procedure ControlMinimumSalesPrice()
+Procedure FillAmountInProductsRow()
 
 	CurrentData = Items.Products.CurrentData;
 	If CurrentData = Undefined Then
 		Return;
 	EndIf;
 	
-	MinimumPrice = MinimumSalePriceOfProduct(CurrentData.Product);
-	If CurrentData.Price < MinimumPrice Then
-		
-		CurrentData.Price = MinimumPrice;
-		Message("Minimum sale price for " + CurrentData.Product + " is " + MinimumPrice);
-		
-	EndIf;
-
-EndProcedure
-
-&AtServerNoContext
-Function MinimumSalePriceOfProduct(Product)
-	
-	Return Product.MinimumSalePrice;
-	
-EndFunction
-
-&AtClient
-Procedure DateOnChange(Item)
-	
-	CheckContractValidity();
-
-EndProcedure
-
-&AtClient
-Procedure ContractOnChange(Item)
-	
-	OnChangeContractAtServer();
-
-	CheckContractValidity();
+	CurrentData.Amount = CurrentData.Price * CurrentData.Quantity;
 	
 EndProcedure
 
 &AtClient
-Procedure CheckContractValidity()
-
-	ContractValidUntil = ContractValidUntil(Object.Contract);
-	
-	If ValueIsFilled(ContractValidUntil) And ContractValidUntil < BegOfDay(Object.Date) Then
-		Message("This contract is invalid on " + Format(Object.Date, "DLF=D"));
-	EndIf;
-
+Procedure ProductsProductOnChange(Item)
+	OnProductOrQuantityChange();
 EndProcedure
 
-&AtServerNoContext
-Function ContractValidUntil(Contract)
+&AtClient
+Procedure OnProductOrQuantityChange()
 
-	Return Contract.ValidUntil;
-
-EndFunction
-
-&AtServer
-Procedure OnChangeContractAtServer()
-
-	DocumentObject = FormAttributeToValue("Object");
-	DocumentObject.FillDiscount();
-	
-	ValueToFormAttribute(DocumentObject, "Object");
-	
-	RecalculateAmountOfProductsAtServer();
+	CalculateWeightAtServer();
 
 EndProcedure
 
 &AtServer
-Procedure RecalculateAmountOfProductsAtServer()
+Procedure CalculateWeightAtServer()
 
-	DocumentTotal = 0;
+	TotalWeight = 0;
 	For Each ProductsRow In Object.Products Do
 	
-		CalculateAmountAtRow(ProductsRow, Object.Discount);	
-		DocumentTotal = DocumentTotal + ProductsRow.Amount;
+		TotalWeight = TotalWeight + WeightOfProduct(ProductsRow.Product) * ProductsRow.Quantity;
 	
 	EndDo;
 
-	Object.DocumentTotal = DocumentTotal;
-	
 EndProcedure
 
+&AtServerNoContext
+Function WeightOfProduct(Product)
+
+	Return Product.Weight;
+
+EndFunction

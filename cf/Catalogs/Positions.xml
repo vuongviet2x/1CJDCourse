@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="da448e45-47af-4134-8c13-6687bd2c9299">
+	<Catalog uuid="1d79da37-68d7-47c1-ae6c-5888bd6226f1">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Counterparties" category="Object">
-				<xr:TypeId>0ba6f29d-dc25-48fa-b7dc-74cda673f16d</xr:TypeId>
-				<xr:ValueId>519ebe81-5366-4025-9e11-e34d5aa1bc76</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Positions" category="Object">
+				<xr:TypeId>13d369b2-1cef-430b-a630-e937394f7ace</xr:TypeId>
+				<xr:ValueId>e9668aa6-f6b2-4f13-b8d6-e283bd7e80bc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Counterparties" category="Ref">
-				<xr:TypeId>c8797bff-ca13-44f8-89c4-9d1d014b3306</xr:TypeId>
-				<xr:ValueId>de78c0ea-8b81-4771-8eb1-5e4d928b43ff</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Positions" category="Ref">
+				<xr:TypeId>b3f500c2-9b42-412b-8dff-a78b27deafc3</xr:TypeId>
+				<xr:ValueId>47383596-a238-4c41-b9e4-0e6bcfe17d32</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Counterparties" category="Selection">
-				<xr:TypeId>b540ad2e-6b70-496a-9eb3-a85f785783e9</xr:TypeId>
-				<xr:ValueId>fea3a5b9-a013-40df-96d0-a80ac0e7110c</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Positions" category="Selection">
+				<xr:TypeId>c699973b-6aa9-4dd9-82db-b98cafe83323</xr:TypeId>
+				<xr:ValueId>e53d624b-6544-42b8-989d-02c33eed4862</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Counterparties" category="List">
-				<xr:TypeId>a712a512-ab3d-4f5e-87f1-0a85607c9442</xr:TypeId>
-				<xr:ValueId>2937153a-5f2b-4c6e-b2a5-659f3494a835</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Positions" category="List">
+				<xr:TypeId>f5faa293-5277-43a0-9830-9402bcccdf46</xr:TypeId>
+				<xr:ValueId>a5895611-46d5-4e58-add3-08f6dc615703</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Counterparties" category="Manager">
-				<xr:TypeId>001ff0da-5449-4f03-b086-b34473aa9dca</xr:TypeId>
-				<xr:ValueId>e934f720-1fe6-4450-8050-8a8348e505d6</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Positions" category="Manager">
+				<xr:TypeId>9a9c9e21-a353-4129-bffb-1aa4809f89ea</xr:TypeId>
+				<xr:ValueId>939ae141-04f2-481f-a32b-6d0eb7305817</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Counterparties</Name>
+			<Name>Positions</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Counterparties</v8:content>
+					<v8:content>Positions</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Counterparties.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Counterparties.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Positions.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Positions.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -86,47 +86,6 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects>
-			<Attribute uuid="82e8da7f-9e89-46d7-878c-6a7b160d13b6">
-				<Properties>
-					<Name>MainContract</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Main contract</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.CounterpartyContracts</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>
