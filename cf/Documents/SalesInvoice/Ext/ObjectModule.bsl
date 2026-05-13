@@ -1,10 +1,6 @@
 ﻿
-Procedure FillMainContract() Export
+Procedure FillDiscount() Export
 
-	If ValueIsFilled(Customer) Then
-		Contract = Customer.MainContract;
-	Else	
-		Contract = Undefined;
-	EndIf;
-	
+	Discount = Contract.Discount;
+
 EndProcedure

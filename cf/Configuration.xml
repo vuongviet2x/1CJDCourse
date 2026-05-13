@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Configuration uuid="e6c5ce7d-090f-4f3f-bd27-655f4468e81d">
+	<Configuration uuid="77809d80-a109-4a57-8dab-eecae11a889c">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>24f47be1-af23-4412-999c-17a2231e59f0</xr:ObjectId>
+				<xr:ObjectId>3d474d8c-d21a-4161-911f-3adb3720434e</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>0a0b370c-8b6e-4929-af65-55ecf5f55eec</xr:ObjectId>
+				<xr:ObjectId>49b236fb-b821-4b9c-9aca-38ad06cbcd45</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>b43c92d9-51ef-4961-831f-f4f8c0a8059a</xr:ObjectId>
+				<xr:ObjectId>82420579-8973-4475-84d0-0cb4588c0451</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>c7034c6d-ead1-4e98-9508-6a74c3f28964</xr:ObjectId>
+				<xr:ObjectId>db8423b2-042b-46e2-9fa4-d014f6b880ca</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>709c05d9-8b1e-4751-bf81-79d0db472df4</xr:ObjectId>
+				<xr:ObjectId>e34120c7-2735-46d2-9acd-1a740b927527</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>6f6b2286-1ee1-4eb7-b3f1-c67fb6927b77</xr:ObjectId>
+				<xr:ObjectId>99f0129e-781c-48c1-8dda-582dba50417b</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>305d10cb-e363-4688-840c-05236203cd40</xr:ObjectId>
+				<xr:ObjectId>dd1c5d2a-e10e-4633-89e7-8b83fe4f7862</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -245,43 +245,21 @@
 		</Properties>
 		<ChildObjects>
 			<Language>English</Language>
-			<Subsystem>HRM</Subsystem>
-			<Subsystem>Bank</Subsystem>
-			<Subsystem>Purchases</Subsystem>
+			<Subsystem>MasterData</Subsystem>
 			<Subsystem>Sales</Subsystem>
-			<Subsystem>Administration</Subsystem>
-			<CommonPicture>HrmSubsystem</CommonPicture>
-			<CommonPicture>BankSubsystem</CommonPicture>
-			<CommonPicture>SalesSubsystem</CommonPicture>
-			<CommonPicture>SettingsSubsystem</CommonPicture>
-			<CommonPicture>PurchasesSubsystem</CommonPicture>
-			<Role>Accountant</Role>
-			<Role>SalesManager</Role>
-			<CommonModule>CommonClient</CommonModule>
-			<CommonModule>CommonServer</CommonModule>
-			<CommonModule>CommonClientServer</CommonModule>
-			<CommonModule>CommonServerCall</CommonModule>
-			<CommonForm>WelcomeForm</CommonForm>
-			<Catalog>BankAccounts</Catalog>
-			<Catalog>Banks</Catalog>
-			<Catalog>Carriers</Catalog>
-			<Catalog>Cities</Catalog>
-			<Catalog>Companies</Catalog>
-			<Catalog>Contacts</Catalog>
+			<Subsystem>Purchases</Subsystem>
+			<Subsystem>Warehouse</Subsystem>
+			<CommonForm>TestCollections</CommonForm>
+			<CommonForm>FormForDebugTest</CommonForm>
 			<Catalog>Counterparties</Catalog>
 			<Catalog>CounterpartyContracts</Catalog>
-			<Catalog>Employees</Catalog>
-			<Catalog>Positions</Catalog>
+			<Catalog>Countries</Catalog>
 			<Catalog>Products</Catalog>
-			<Catalog>StructuralUnits</Catalog>
-			<Catalog>Users</Catalog>
-			<Document>PersonnelChange</Document>
+			<Catalog>Warehouses</Catalog>
 			<Document>PurchaseInvoice</Document>
 			<Document>SalesInvoice</Document>
-			<Enum>Gender</Enum>
-			<Enum>OperationKindsPersonnelChange</Enum>
-			<Enum>ProductTypes</Enum>
-			<Enum>SalesInvoiceStates</Enum>
+			<Document>InventoryTransfer</Document>
+			<Enum>ProductsTypes</Enum>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
