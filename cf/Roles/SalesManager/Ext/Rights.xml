@@ -4,28 +4,154 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Subsystem.HRM.Subsystem.Company</name>
+		<name>DataProcessor.ImportPricesFromExcel</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Constant.UseCharacteristics</name>
+		<name>InformationRegister.CompanyAccountingSettings</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Document.PurchaseInvoice.TabularSection.Products.Attribute.Quantity</name>
+		<name>InformationRegister.CompanyAccountingSettings.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</name>
+		<name>InformationRegister.CompanyAccountingSettings.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.CompanyAccountingSettings.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.CompanyAccountingSettings.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ReturnOfGoodsFromCustomer</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.Attribute.ProductType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.PurchaseInvoice</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Counterparties</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -64,7 +190,92 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Companies</name>
+		<name>Catalog.CounterpartyContracts</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.BankAccounts</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.Attribute.CountryOfOrigin</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -79,7 +290,77 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Positions</name>
+		<name>Catalog.Products.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.Dimension.Product</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.GoodsInWarehouses</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -88,8 +369,186 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>Report.SalesWithPriceDeviations</name>
 		<right>
-			<name>InputByString</name>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ApplicationSettings</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.Type</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.Date</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.Posted</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DocumentJournal.SalesDocuments.StandardAttribute.Number</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.Attribute.FullDescription</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ProductPrices.Resource.Price</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ContolBalanceOfGoods</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.SalesAndRetail</name>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MobileClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -157,29 +616,21 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.HRM</name>
+		<name>Subsystem.Sales</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.StructuralUnits</name>
+		<name>Catalog.Products.Attribute.Weight</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.PriceTypes</name>
+		<name>Catalog.ObjectsPropertiesValues</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -218,7 +669,124 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ReturnOfGoodsFromCustomer</name>
+		<name>ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Purchases</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Banks</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.GoodsSettings</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.CompanyAccountingSettings.Dimension.Company</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Products.Attribute.MinimumSalePrice</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Sales.Subsystem.Prices</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.PriceSetup</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -281,129 +849,31 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Banks</name>
+		<name>Report.SalesByCustomers</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.GoodsMovement</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.SalesInvoiceStates</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.TabularSection.Products.Attribute.Amount</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.WelcomeForm</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Employees</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.StandardAttribute.Posted</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.StandardAttribute.Ref</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.StandardAttribute.Date</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.StandardAttribute.Number</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.Sales</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.BankAccounts</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Contacts</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -415,19 +885,18 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries</name>
 		<right>
-			<name>InteractiveSetDeletionMark</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveClearDeletionMark</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -436,39 +905,66 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.GoodsInWarehouses</name>
+		<name>Catalog.Countries.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Report.Sales</name>
+		<name>Catalog.Countries.StandardAttribute.Predefined</name>
 		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Constant.DefaultCompany</name>
+		<name>Catalog.Countries.StandardAttribute.Ref</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.ApplicationSettings</name>
+		<name>Catalog.Countries.StandardAttribute.DeletionMark</name>
 		<right>
-			<name>View</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Countries.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -487,25 +983,84 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.DefaultBankAccount</name>
+		<name>Catalog.Warehouses.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Report.GoodsMovement</name>
+		<name>Catalog.Warehouses.StandardAttribute.Predefined</name>
 		<right>
-			<name>Use</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Warehouses.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.Attribute.Prefix</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.MasterData</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Cities</name>
+		<name>Document.InventoryTransfer</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -520,37 +1075,13 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ObjectsPropertiesValues</name>
+		<name>Catalog.Companies</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -559,103 +1090,96 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Products</name>
+		<name>Catalog.Companies.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Companies.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.UseCharacteristics</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Document.PurchaseInvoice.TabularSection.Products</name>
+		<name>InformationRegister.CompanyAccountingSettings.Resource.ContolBalanceOfGoods</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>DocumentJournal.PurchasesAndSales</name>
+		<name>Constant.WriteOffOrder</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.Attribute.Contract</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.CompaniesResponsiblePersons</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.Attribute.Vendor</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.Attribute.Company</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.Purchases</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.Sales.Subsystem.Prices</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -673,29 +1197,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.PurchaseInvoice.TabularSection.Products.Attribute.Product</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Carriers</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ProductPrices</name>
+		<name>InformationRegister.ObjectsCharacteristicValues</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -710,189 +1212,6 @@
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.CounterpartyContracts</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Counterparties</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMark</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.Attribute.Responsible</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Configuration.Configuration</name>
-		<right>
-			<name>ThinClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>WebClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MobileClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>SaveUserData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Output</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Users</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.SalesTemplate</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.TabularSection.Products.Attribute.Price</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.PurchaseInvoice.Attribute.Warehouse</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ImportPricesFromExcel</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

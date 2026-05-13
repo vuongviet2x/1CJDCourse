@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<DataProcessor uuid="fbb34055-b7d2-4a8f-9e65-957b1de8e3a5">
+	<DataProcessor uuid="018db8f9-5cfd-4d23-90b7-0088bd1d0d80">
 		<InternalInfo>
 			<xr:GeneratedType name="DataProcessorObject.ImportPricesFromExcel" category="Object">
-				<xr:TypeId>8d8f899a-17f7-4b2c-b73b-34aa42817368</xr:TypeId>
-				<xr:ValueId>84c196cf-3fdb-46f8-b0a8-1093f597ac39</xr:ValueId>
+				<xr:TypeId>3499485a-09c3-4372-a7ef-1ed28d87939f</xr:TypeId>
+				<xr:ValueId>52104687-8ef4-4f71-8aee-2aa9b991312b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.ImportPricesFromExcel" category="Manager">
-				<xr:TypeId>e9c21bc2-8a3f-4ad5-817a-3cddb36c6117</xr:TypeId>
-				<xr:ValueId>b2f9c5ac-9409-4bc3-bade-d477ce960c45</xr:ValueId>
+				<xr:TypeId>b30780b2-4ecb-4e12-bd00-b5db55d3d700</xr:TypeId>
+				<xr:ValueId>f310a01a-291c-49a2-8b2a-09357c848960</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -16,7 +16,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Import prices from Excel</v8:content>
+					<v8:content>Import prices from excel</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

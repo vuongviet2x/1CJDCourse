@@ -3,9 +3,6 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
-	<Events>
-		<Event name="OnOpen">OnOpen</Event>
-	</Events>
 	<ChildItems>
 		<InputField name="Code" id="1">
 			<DataPath>Object.Code</DataPath>
@@ -19,34 +16,62 @@
 			<ContextMenu name="DescriptionContextMenu" id="5"/>
 			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
 		</InputField>
-		<InputField name="Type" id="10">
-			<DataPath>Object.Type</DataPath>
-			<ContextMenu name="TypeContextMenu" id="11"/>
-			<ExtendedTooltip name="TypeExtendedTooltip" id="12"/>
-			<Events>
-				<Event name="OnChange">TypeOnChange</Event>
-			</Events>
+		<InputField name="FullDescription" id="13">
+			<DataPath>Object.FullDescription</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="FullDescriptionContextMenu" id="14"/>
+			<ExtendedTooltip name="FullDescriptionExtendedTooltip" id="15"/>
 		</InputField>
-		<UsualGroup name="GroupWeightPromotional" id="13">
+		<InputField name="ProductType" id="19">
+			<DataPath>Object.ProductType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ProductTypeContextMenu" id="20"/>
+			<ExtendedTooltip name="ProductTypeExtendedTooltip" id="21"/>
+		</InputField>
+		<UsualGroup name="GroupCountryWeight" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group country weight</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group country weight</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>33</Width>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="GroupWeightPromotionalExtendedTooltip" id="14"/>
+			<ExtendedTooltip name="GroupCountryWeightExtendedTooltip" id="26"/>
 			<ChildItems>
-				<InputField name="Weight" id="7">
+				<InputField name="CountryOfOrigin" id="16">
+					<DataPath>Object.CountryOfOrigin</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CountryOfOriginContextMenu" id="17"/>
+					<ExtendedTooltip name="CountryOfOriginExtendedTooltip" id="18"/>
+				</InputField>
+				<InputField name="Weight" id="10">
 					<DataPath>Object.Weight</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="WeightContextMenu" id="8"/>
-					<ExtendedTooltip name="WeightExtendedTooltip" id="9"/>
+					<ContextMenu name="WeightContextMenu" id="11"/>
+					<ExtendedTooltip name="WeightExtendedTooltip" id="12"/>
 				</InputField>
-				<CheckBoxField name="Promotional" id="15">
-					<DataPath>Object.Promotional</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="PromotionalContextMenu" id="16"/>
-					<ExtendedTooltip name="PromotionalExtendedTooltip" id="17"/>
-				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Parent" id="7">
+			<DataPath>Object.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ParentContextMenu" id="8"/>
+			<ExtendedTooltip name="ParentExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="MinimumSalePrice" id="22">
+			<DataPath>Object.MinimumSalePrice</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="MinimumSalePriceContextMenu" id="23"/>
+			<ExtendedTooltip name="MinimumSalePriceExtendedTooltip" id="24"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Object" id="1">
