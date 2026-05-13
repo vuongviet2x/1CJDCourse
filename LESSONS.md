@@ -41,6 +41,8 @@ Mỗi bài có hai branch: `theory` (lý thuyết) và `practice` (thực hành)
 
 **`master-edt-archive`** = commit gốc trước khi chuyển format (chứa snapshot EDT của configuration `NN_JD_FullCourse`).
 
+**[`lesson/university-summary`](../../tree/lesson/university-summary)** = snapshot riêng từ `FullProgram_University_Study_Program`. Base này có Language với tên chứa `:` (không hợp lệ trong tên file Windows) nên không dump được XML — được lưu dạng `.cf` binary. Thực ra chỉ có 3 đối tượng (Catalog.Products, Document.Purchases, Document.Sales), không phải "tổng kết toàn khóa".
+
 ## Cách sử dụng
 
 ### Xem code một bài cụ thể
