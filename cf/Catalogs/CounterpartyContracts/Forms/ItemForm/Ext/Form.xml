@@ -31,29 +31,11 @@
 			<ContextMenu name="ParentContextMenu" id="11"/>
 			<ExtendedTooltip name="ParentExtendedTooltip" id="12"/>
 		</InputField>
-		<UsualGroup name="GroupDiscount" id="24">
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="GroupDiscountExtendedTooltip" id="25"/>
-			<ChildItems>
-				<InputField name="Discount" id="21">
-					<DataPath>Object.Discount</DataPath>
-					<ContextMenu name="DiscountContextMenu" id="22"/>
-					<ExtendedTooltip name="DiscountExtendedTooltip" id="23"/>
-				</InputField>
-				<InputField name="RequiredSalesAmount" id="26">
-					<DataPath>Object.RequiredSalesAmount</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>after amount in previous month</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="RequiredSalesAmountContextMenu" id="27"/>
-					<ExtendedTooltip name="RequiredSalesAmountExtendedTooltip" id="28"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
+		<InputField name="Discount" id="21">
+			<DataPath>Object.Discount</DataPath>
+			<ContextMenu name="DiscountContextMenu" id="22"/>
+			<ExtendedTooltip name="DiscountExtendedTooltip" id="23"/>
+		</InputField>
 		<UsualGroup name="GroupPeriod" id="19">
 			<Group>Vertical</Group>
 			<Representation>None</Representation>

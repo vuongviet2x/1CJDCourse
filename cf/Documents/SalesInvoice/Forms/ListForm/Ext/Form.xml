@@ -79,11 +79,6 @@
 					<ContextMenu name="NumberContextMenu" id="20"/>
 					<ExtendedTooltip name="NumberExtendedTooltip" id="21"/>
 				</LabelField>
-				<LabelField name="Company" id="31">
-					<DataPath>List.Company</DataPath>
-					<ContextMenu name="CompanyContextMenu" id="32"/>
-					<ExtendedTooltip name="CompanyExtendedTooltip" id="33"/>
-				</LabelField>
 				<LabelField name="Customer" id="22">
 					<DataPath>List.Customer</DataPath>
 					<ContextMenu name="CustomerContextMenu" id="23"/>

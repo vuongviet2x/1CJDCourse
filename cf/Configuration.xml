@@ -32,13 +32,8 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>SalesAndRetail</Name>
-			<Synonym>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Sales and retail</v8:content>
-				</v8:item>
-			</Synonym>
+			<Name>Configuration</Name>
+			<Synonym/>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_26</ConfigurationExtensionCompatibilityMode>
@@ -250,66 +245,18 @@
 		</Properties>
 		<ChildObjects>
 			<Language>English</Language>
-			<Subsystem>Purchases</Subsystem>
-			<Subsystem>Sales</Subsystem>
-			<Subsystem>Warehouse</Subsystem>
 			<Subsystem>MasterData</Subsystem>
-			<Role>Administration</Role>
-			<Role>FullAccess</Role>
-			<Role>InteractiveOpenExtReportsAndDataProcessors</Role>
-			<Role>CEO</Role>
-			<Role>SalesManager</Role>
-			<Role>PurchaseManager</Role>
-			<Role>StoreKeeper</Role>
-			<Role>MasterDataSpecialist</Role>
-			<CommonModule>ProductsInDocuments</CommonModule>
-			<CommonModule>ProductsInDocumentsServerCall</CommonModule>
-			<CommonModule>ProductsInDocumentsClientServer</CommonModule>
-			<CommonModule>DocumentFilling</CommonModule>
-			<CommonModule>IntegrationWithWarehouseManagementSystem</CommonModule>
-			<EventSubscription>FillCompanyInDocuments</EventSubscription>
-			<FunctionalOption>CompanyPrefix</FunctionalOption>
-			<FunctionalOption>WriteOffOrder</FunctionalOption>
-			<FunctionalOption>UseCharacteristics</FunctionalOption>
-			<FunctionalOption>ContolBalanceOfGoods</FunctionalOption>
-			<FunctionalOptionsParameter>Company</FunctionalOptionsParameter>
-			<Constant>ContolBalanceOfGoods</Constant>
-			<Constant>WriteOffOrder</Constant>
-			<Constant>UseCharacteristics</Constant>
+			<Subsystem>Sales</Subsystem>
+			<Subsystem>Purchases</Subsystem>
 			<CommonForm>TestCollections</CommonForm>
 			<CommonForm>FormForDebugTest</CommonForm>
-			<CommonForm>GoodsSettings</CommonForm>
-			<CommonForm>ApplicationSettings</CommonForm>
-			<Catalog>Banks</Catalog>
-			<Catalog>BankAccounts</Catalog>
-			<Catalog>Companies</Catalog>
 			<Catalog>Counterparties</Catalog>
 			<Catalog>CounterpartyContracts</Catalog>
 			<Catalog>Countries</Catalog>
 			<Catalog>Products</Catalog>
-			<Catalog>Warehouses</Catalog>
-			<Catalog>ObjectsPropertiesValues</Catalog>
-			<Document>InventoryTransfer</Document>
-			<Document>PriceSetup</Document>
 			<Document>PurchaseInvoice</Document>
-			<Document>ReturnOfGoodsFromCustomer</Document>
 			<Document>SalesInvoice</Document>
-			<DocumentJournal>SalesDocuments</DocumentJournal>
 			<Enum>ProductsTypes</Enum>
-			<Enum>SalesInvoiceStates</Enum>
-			<Enum>CharacteristicsObjectTypes</Enum>
-			<Enum>WriteOffMethods</Enum>
-			<Report>SalesByCustomers</Report>
-			<Report>SalesWithPriceDeviations</Report>
-			<Report>GoodsMovement</Report>
-			<DataProcessor>ImportPricesFromExcel</DataProcessor>
-			<InformationRegister>SalesInvoiceStates</InformationRegister>
-			<InformationRegister>ProductPrices</InformationRegister>
-			<InformationRegister>ObjectsCharacteristicValues</InformationRegister>
-			<InformationRegister>CompanyAccountingSettings</InformationRegister>
-			<AccumulationRegister>GoodsInWarehouses</AccumulationRegister>
-			<AccumulationRegister>Sales</AccumulationRegister>
-			<ChartOfCharacteristicTypes>AdditionalAttributesAndProperties</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

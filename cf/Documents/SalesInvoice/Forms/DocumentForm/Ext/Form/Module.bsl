@@ -1,26 +1,32 @@
 ﻿
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
+&AtClient
+Procedure ProductsQuantityOnChange(Item)
 	
-	BatchesVisibility = Constants.WriteOffOrder.Get() = Enums.WriteOffMethods.Manually;
-	
-	Items.ProductsBatch.Visible 	= BatchesVisibility;
-	Items.ProductsPickBatch.Visible = BatchesVisibility;
+	CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
 	
 EndProcedure
 
 &AtClient
-Procedure ProductsQuantityOnChange(Item)
+Procedure ProductsPriceOnChange(Item)
 	
-	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
+	ControlMinimumSalesPrice(Items.Products.CurrentData);
+	CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
 	
 EndProcedure
 
 &AtClient
 Procedure ServicesQuantityOnChange(Item)
 
-	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Services.CurrentData, Object.Discount);
+	CalculateAmountAtRow(Items.Services.CurrentData, Object.Discount);
 
+EndProcedure
+
+&AtClient
+Procedure ServicesPriceOnChange(Item)
+	
+	ControlMinimumSalesPrice(Items.Services.CurrentData);
+	CalculateAmountAtRow(Items.Services.CurrentData, Object.Discount);
+	
 EndProcedure
 
 &AtClient
@@ -39,16 +45,12 @@ EndProcedure
 
 &AtClient
 Procedure ProductsProductOnChange(Item)
-	
-	OnChangeProduct(Items.Products.CurrentData);
-
+	ControlMinimumSalesPrice(Items.Products.CurrentData);
 EndProcedure
 
 &AtClient
 Procedure ServicesProductOnChange(Item)
-	
-	OnChangeProduct(Items.Services.CurrentData);
-
+	ControlMinimumSalesPrice(Items.Services.CurrentData);
 EndProcedure
 
 &AtClient
@@ -121,19 +123,26 @@ Procedure OnChangeContractAtServer()
 
 EndProcedure
 
+&AtClientAtServerNoContext
+Procedure CalculateAmountAtRow(ProductsRow, Discount)
+	
+	ProductsRow.Amount = ProductsRow.Quantity * ProductsRow.Price * (1 - Discount / 100);
+	
+EndProcedure
+
 &AtServer
 Procedure RecalculateDocumentTotalAtServer()
 
 	DocumentTotal = 0;
 	For Each ProductsRow In Object.Products Do
 	
-		ProductsInDocumentsClientServer.CalculateAmountAtRow(ProductsRow, Object.Discount);	
+		CalculateAmountAtRow(ProductsRow, Object.Discount);	
 		DocumentTotal = DocumentTotal + ProductsRow.Amount;
 	
 	EndDo;
 	For Each ServicesRow In Object.Services Do
 	
-		ProductsInDocumentsClientServer.CalculateAmountAtRow(ServicesRow, Object.Discount);	
+		CalculateAmountAtRow(ServicesRow, Object.Discount);	
 		DocumentTotal = DocumentTotal + ServicesRow.Amount;
 	
 	EndDo;
@@ -157,7 +166,7 @@ Procedure PickProductsToTable(TableItem, ProductType)
 
 	OpenForm(
 		"Catalog.Products.ChoiceForm",
-		New Structure("MultipleChoice, CloseOnChoice, Filter", False, False, New Structure("ProductType", ProductType)),
+		New Structure("MultipleChoice, CloseOnChoise, Filter", False, False, New Structure("ProductType", ProductType)),
 		TableItem
 	);
 
@@ -171,9 +180,7 @@ Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Products.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
-
-		OnChangeProduct(NewRow);
-	EndIf;	
+	EndIf;
 	
 EndProcedure
 
@@ -185,84 +192,7 @@ Procedure ServicesChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Services.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
-
-		OnChangeProduct(NewRow);
-	EndIf;	
-	
-EndProcedure
-
-&AtClient
-Procedure OnChangeProduct(CurrentData)
-
-	CurrentData.Price = ProductsInDocumentsServerCall.ProductPrice(CurrentData.Product, Object.Date);
-	ControlMinimumSalesPrice(CurrentData);
-	ProductsInDocumentsClientServer.CalculateAmountAtRow(CurrentData, Object.Discount);
-
-EndProcedure
-
-&AtClient
-Procedure ProductsBatchStartChoice(Item, ChoiceData, StandardProcessing)
-	
-	//StandardProcessing = False;
-
-	//CurrentData = Items.Products.CurrentData;
-	//If CurrentData = Undefined Or Not ValueIsFilled(CurrentData.Product) Then
-	//
-	//	Message("You should select a product to start batch choice");
-	//	Return;
-	//	
-	//EndIf;	
-	//
-	//OpenFormParameters = New Structure;
-	//OpenFormParameters.Insert("Date", Object.Date);
-	//OpenFormParameters.Insert("Product", CurrentData.Product);
-	//OpenFormParameters.Insert("Warehouse", Object.Warehouse);
-	//
-	//OpenForm(
-	//	"Document.PurchaseInvoice.Form.BatchChoiceForm",
-	//	OpenFormParameters,
-	//	Items.ProductsBatch,,,,,
-	//	FormWindowOpeningMode.LockOwnerWindow
-	//);
-	
-EndProcedure
-
-&AtClient
-Procedure PickBatch(Command)
-
-	CurrentData = Items.Products.CurrentData;
-	If CurrentData = Undefined Or Not ValueIsFilled(CurrentData.Product) Then
-	
-		Message("You should select a product to start batch choice");
-		Return;
-		
-	EndIf;	
-	
-	OpenFormParameters = New Structure;
-	OpenFormParameters.Insert("Date", Object.Date);
-	OpenFormParameters.Insert("Product", CurrentData.Product);
-	OpenFormParameters.Insert("Warehouse", Object.Warehouse);
-	OpenFormParameters.Insert("ChoiceMode", True);
-	
-	OpenForm(
-		"Document.PurchaseInvoice.Form.BatchChoiceForm",
-		OpenFormParameters,
-		Items.ProductsBatch,,,,
-		New CallbackDescription("PickBatchOnSelection", ThisObject),
-		FormWindowOpeningMode.LockOwnerWindow
-	);
-	
-EndProcedure
-
-&AtClient
-Procedure PickBatchOnSelection(Result, AdditionalParameters) Export
-
-	CurrentData = Items.Products.CurrentData;
-	If CurrentData = Undefined Or Result = Undefined Then
-		Return;
 	EndIf;
-	
-	CurrentData.Batch = Result;
 	
 EndProcedure
 

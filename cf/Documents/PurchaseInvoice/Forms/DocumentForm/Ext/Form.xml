@@ -6,80 +6,45 @@
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="GroupHeader" id="78">
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="GroupHeaderExtendedTooltip" id="79"/>
 			<ChildItems>
-				<UsualGroup name="GroupLeft" id="85">
-					<Group>Vertical</Group>
+				<UsualGroup name="GroupNumberDate" id="80">
+					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="GroupLeftExtendedTooltip" id="86"/>
+					<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="81"/>
 					<ChildItems>
-						<UsualGroup name="GroupNumberDate" id="80">
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="81"/>
-							<ChildItems>
-								<InputField name="Number" id="1">
-									<DataPath>Object.Number</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="NumberContextMenu" id="2"/>
-									<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
-								</InputField>
-								<InputField name="Date" id="4">
-									<DataPath>Object.Date</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="DateContextMenu" id="5"/>
-									<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
-						<InputField name="Company" id="93">
-							<DataPath>Object.Company</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>32</MaxWidth>
-							<ContextMenu name="CompanyContextMenu" id="94"/>
-							<ExtendedTooltip name="CompanyExtendedTooltip" id="95"/>
-						</InputField>
-						<InputField name="Warehouse" id="82">
-							<DataPath>Object.Warehouse</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>32</MaxWidth>
-							<ContextMenu name="WarehouseContextMenu" id="83"/>
-							<ExtendedTooltip name="WarehouseExtendedTooltip" id="84"/>
-						</InputField>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="GroupRight" id="87">
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="GroupRightExtendedTooltip" id="88"/>
-					<ChildItems>
-						<InputField name="Vendor" id="7">
-							<DataPath>Object.Vendor</DataPath>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="VendorContextMenu" id="8"/>
-							<ExtendedTooltip name="VendorExtendedTooltip" id="9"/>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
 						</InputField>
-						<InputField name="Contract" id="10">
-							<DataPath>Object.Contract</DataPath>
+						<InputField name="Date" id="4">
+							<DataPath>Object.Date</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ContractContextMenu" id="11"/>
-							<ExtendedTooltip name="ContractExtendedTooltip" id="12"/>
-						</InputField>
-						<InputField name="BankAccount" id="99">
-							<DataPath>Object.BankAccount</DataPath>
-							<ContextMenu name="BankAccountContextMenu" id="100"/>
-							<ExtendedTooltip name="BankAccountExtendedTooltip" id="101"/>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Vendor" id="7">
+			<DataPath>Object.Vendor</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="VendorContextMenu" id="8"/>
+			<ExtendedTooltip name="VendorExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Contract" id="10">
+			<DataPath>Object.Contract</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ContractContextMenu" id="11"/>
+			<ExtendedTooltip name="ContractExtendedTooltip" id="12"/>
+		</InputField>
 		<Pages name="Pages" id="16">
 			<Title>
 				<v8:item>
@@ -107,15 +72,7 @@
 							<DataPath>Object.Products</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ProductsContextMenu" id="21"/>
-							<AutoCommandBar name="ProductsCommandBar" id="22">
-								<ChildItems>
-									<Button name="ProductsPickProducts" id="89">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.PickProducts</CommandName>
-										<ExtendedTooltip name="ProductsPickProductsExtendedTooltip" id="90"/>
-									</Button>
-								</ChildItems>
-							</AutoCommandBar>
+							<AutoCommandBar name="ProductsCommandBar" id="22"/>
 							<ExtendedTooltip name="ProductsExtendedTooltip" id="23"/>
 							<SearchStringAddition name="ProductsSearchString" id="24">
 								<AdditionSource>
@@ -141,10 +98,6 @@
 								<ContextMenu name="ProductsSearchControlContextMenu" id="31"/>
 								<ExtendedTooltip name="ProductsSearchControlExtendedTooltip" id="32"/>
 							</SearchControlAddition>
-							<Events>
-								<Event name="ChoiceProcessing">ProductsChoiceProcessing</Event>
-								<Event name="OnChange">ProductsOnChange</Event>
-							</Events>
 							<ChildItems>
 								<LabelField name="ProductsLineNumber" id="33">
 									<DataPath>Object.Products.LineNumber</DataPath>
@@ -163,18 +116,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ProductsQuantityContextMenu" id="40"/>
 									<ExtendedTooltip name="ProductsQuantityExtendedTooltip" id="41"/>
-									<Events>
-										<Event name="OnChange">ProductsQuantityOnChange</Event>
-									</Events>
 								</InputField>
 								<InputField name="ProductsPrice" id="42">
 									<DataPath>Object.Products.Price</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ProductsPriceContextMenu" id="43"/>
 									<ExtendedTooltip name="ProductsPriceExtendedTooltip" id="44"/>
-									<Events>
-										<Event name="OnChange">ProductsPriceOnChange</Event>
-									</Events>
 								</InputField>
 								<InputField name="ProductsAmount" id="45">
 									<DataPath>Object.Products.Amount</DataPath>
@@ -204,15 +151,7 @@
 							<DataPath>Object.Services</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ServicesContextMenu" id="51"/>
-							<AutoCommandBar name="ServicesCommandBar" id="52">
-								<ChildItems>
-									<Button name="ServicesPickServices" id="91">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.PickServices</CommandName>
-										<ExtendedTooltip name="ServicesPickServicesExtendedTooltip" id="92"/>
-									</Button>
-								</ChildItems>
-							</AutoCommandBar>
+							<AutoCommandBar name="ServicesCommandBar" id="52"/>
 							<ExtendedTooltip name="ServicesExtendedTooltip" id="53"/>
 							<SearchStringAddition name="ServicesSearchString" id="54">
 								<AdditionSource>
@@ -238,10 +177,6 @@
 								<ContextMenu name="ServicesSearchControlContextMenu" id="61"/>
 								<ExtendedTooltip name="ServicesSearchControlExtendedTooltip" id="62"/>
 							</SearchControlAddition>
-							<Events>
-								<Event name="ChoiceProcessing">ServicesChoiceProcessing</Event>
-								<Event name="OnChange">ServicesOnChange</Event>
-							</Events>
 							<ChildItems>
 								<LabelField name="ServicesLineNumber" id="63">
 									<DataPath>Object.Services.LineNumber</DataPath>
@@ -260,18 +195,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ServicesQuantityContextMenu" id="70"/>
 									<ExtendedTooltip name="ServicesQuantityExtendedTooltip" id="71"/>
-									<Events>
-										<Event name="OnChange">ServicesQuantityOnChange</Event>
-									</Events>
 								</InputField>
 								<InputField name="ServicesPrice" id="72">
 									<DataPath>Object.Services.Price</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ServicesPriceContextMenu" id="73"/>
 									<ExtendedTooltip name="ServicesPriceExtendedTooltip" id="74"/>
-									<Events>
-										<Event name="OnChange">ServicesPriceOnChange</Event>
-									</Events>
 								</InputField>
 								<InputField name="ServicesAmount" id="75">
 									<DataPath>Object.Services.Amount</DataPath>
@@ -305,36 +234,4 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="PickProducts" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Pick</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Pick products</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>PickProducts</Action>
-		</Command>
-		<Command name="PickServices" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Pick</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Pick services</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>PickServices</Action>
-		</Command>
-	</Commands>
 </Form>
