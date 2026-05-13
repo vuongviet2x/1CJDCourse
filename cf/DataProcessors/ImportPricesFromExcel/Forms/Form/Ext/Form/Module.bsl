@@ -1,26 +1,21 @@
 ﻿
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-	Period = CurrentSessionDate();
-EndProcedure
-
 &AtClient
-Procedure ReadFile(Command)
-	
+Procedure SelectFile(Command)
+		
 	Dialog = New FileDialog(FileDialogMode.Open);
 	Dialog.Title = "Choose a file with prices for import";
 	Dialog.Filter = 
-		"Tables (*.xls,*.xlsx,*.xlsm)|*.xls;*.xlsx;*.xlsm;
+		"Tables (*.xls,*.xlsx)|*.xls;*.xlsx;
 		||Microsoft Excel 1997-2003 (*.xls)|*.xls
-		||Microsoft Excel (*.xlsx,*.xlsm)|*.xlsx;*.xlsm";
+		||Microsoft Excel (*.xlsx)|*.xlsx";
 
 	Dialog.Show(New CallbackDescription("FileFinishChoice", ThisObject));
-
+	
 EndProcedure
 
 &AtClient
 Procedure FileFinishChoice(SelectedFiles, AdditionalParameters) Export
-
+	
 	If SelectedFiles <> Undefined Then
 		PathToFile = SelectedFiles[0];
 				
@@ -29,7 +24,7 @@ Procedure FileFinishChoice(SelectedFiles, AdditionalParameters) Export
 			PathToFile,
 			UUID
 		);	
-	EndIf;	
+	EndIf;
 
 EndProcedure
 
@@ -40,12 +35,12 @@ Procedure ReadFinishPuttingFile(PlacedFileDescription, AdditionalParameters) Exp
 		Return;
 	EndIf;
 	
-	ReadOnServer(PlacedFileDescription.Address, PlacedFileDescription.FileRef.Extension);	
+	ReadFileAtServer(PlacedFileDescription.Address, PlacedFileDescription.FileRef.Extension);	
 
 EndProcedure
 
 &AtServer
-Procedure ReadOnServer(AddressAtTempStorage, FileExtension)
+Procedure ReadFileAtServer(AddressAtTempStorage, FileExtension)
 	
 	BinaryData = GetFromTempStorage(AddressAtTempStorage);
 	
@@ -65,7 +60,7 @@ Procedure ReadOnServer(AddressAtTempStorage, FileExtension)
 			DetailErrorDescription(ErrorInfo())
 		);
 	EndTry;
-	
+
 EndProcedure
 
 &AtClient
@@ -76,21 +71,18 @@ EndProcedure
 &AtServer
 Procedure LoadPricesAtServer()
 	
-	If Not CheckFilling() Then
-		Return;
-	EndIf;
-	
 	// TableWidth contains number of table columns.
 	ColumnsCount = SpreadsheetDocument.TableWidth; 
 	// TableHeight contains number of table rows.
 	RowsCount 	 = SpreadsheetDocument.TableHeight;
 	
-	If ColumnsCount < 2 Or RowsCount < 2 Then
-		Message("Table should contain at least 2 rows (1 is for column titles) and 2 columns");
+	If ColumnsCount < 3 Or RowsCount < 2 Then
+		Message("Table should contain at least 2 rows (1 is for column titles) and 3 columns");
 		Return;
 	EndIf;
 	
 	ColumnNumbers = New Structure;
+	ColumnNumbers.Insert("Date");
 	ColumnNumbers.Insert("Product");
 	ColumnNumbers.Insert("Price");
 	
@@ -117,27 +109,134 @@ Procedure LoadPricesAtServer()
 	If ColumnsError Then
 		Return;
 	EndIf;
+
+	Prices = New ValueTable;
+	Prices.Columns.Add("Date", New TypeDescription("Date"));
+	Prices.Columns.Add("Product", New TypeDescription("CatalogRef.Products"));
+	Prices.Columns.Add("Price", New TypeDescription("Number"));
 	
+	UnsuccessfulDates = New Array;
+	UniqueDates = New Array;
 	For i = 2 To RowsCount Do
+		Date 				= SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Date).Value;
 		ProductDescription 	= TrimAll(SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Product).Text);
-		ProductPrice 		= TrimAll(SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Price).Text);
+		ProductPrice 		= SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Price).Value;
+		
+		If Not ValueIsFilled(Date) Then
+			Message(StrTemplate("There is an empty date at %1 row, it is skipped", i));
+			Continue;
+		EndIf;
 		
 		Product = Catalogs.Products.FindByDescription(ProductDescription, True);
 		If ValueIsFilled(Product) Then
-			NewRecord = InformationRegisters.ProductPrices.CreateRecordManager();
+			NewRow = Prices.Add();
+			NewRow.Date 	= Date;
+			NewRow.Product 	= Product;
+			NewRow.Price 	= ProductPrice;
 			
-			NewRecord.Period 	= Period;
-			NewRecord.Product 	= Product;
-			NewRecord.PriceType = PriceType;
-			NewRecord.Price 	= ProductPrice;
-			
-			NewRecord.Write(True);
+			If UniqueDates.Find(Date) = Undefined Then
+				UniqueDates.Add(Date);
+			EndIf;
 		Else
 			Message(StrTemplate("Unable to find a product by description %1", ProductDescription));
+			
+			UnsuccessfulDates.Add(Date);
 		EndIf;
 		
 	EndDo;
 	
+	ExistingDocuments = ExistingDocumentsByDates(UniqueDates);
+	If ValueIsFilled(Prices) Then
+		
+		For Each Date In UniqueDates Do
+			DocumentWasUpdated = False;
+			DocumentShouldBeSaved = False;
+			
+			FoundRow = ExistingDocuments.Find(Date, "Date");
+			If FoundRow = Undefined Then
+				DocumentObject = Documents.PriceSetup.CreateDocument();
+				DocumentObject.Date = Date;
+				DocumentObject.LoadedFromFile = True;
+			Else
+				DocumentObject = FoundRow.Ref.GetObject();
+				
+				DocumentWasUpdated = True;
+			EndIf;
+			
+			ProductsOnDate = Prices.FindRows(New Structure("Date", Date));
+			For Each ProductsRow In ProductsOnDate Do
+			
+				FoundRow = DocumentObject.Products.Find(ProductsRow.Product, "Product");
+				If FoundRow = Undefined Then
+					DocumentProductsRow = DocumentObject.Products.Add();
+					DocumentProductsRow.Product = ProductsRow.Product;
+				ElsIf FoundRow.Price <> ProductsRow.Price Then
+					DocumentProductsRow = FoundRow;
+				Else
+					Continue;
+				EndIf;
+				
+				DocumentProductsRow.Price = ProductsRow.Price;
+				DocumentShouldBeSaved = True;
+			EndDo;
+			
+			If DocumentShouldBeSaved Then
+				Try
+					DocumentObject.Write(DocumentWriteMode.Posting);
+					
+					If DocumentWasUpdated Then
+						DocumentState = "updated";
+					Else
+						DocumentState = "created";
+					EndIf;
+					
+					Message(StrTemplate("Document %1 was %2", DocumentObject.Ref, DocumentState));
+
+				Except
+					WriteLogEvent(
+						"Data.Import prices from Excel",
+						EventLogLevel.Error,,,
+						DetailErrorDescription(ErrorInfo())
+					);
+				EndTry;
+			Else	
+				Message(
+					StrTemplate("Prices for %1 were not loaded", Format(Date, "DLF=D"))
+				);
+			EndIf;
+			
+		EndDo;
+		
+	ElsIf ValueIsFilled(UnsuccessfulDates) Then
+		ProcessedDates = New Array;
+		For Each Date In UnsuccessfulDates Do
+			If ProcessedDates.Find(Date) = Undefined Then
+				Message(
+					StrTemplate("Prices for %1 were not loaded", Format(Date, "DLF=D"))
+				);
+				ProcessedDates.Add(Date);		
+			EndIf;
+		EndDo;
+	EndIf;
+	
 EndProcedure
 
+&AtServerNoContext
+Function ExistingDocumentsByDates(Dates)
 
+	Query = New Query;
+	Query.Text =
+	"SELECT DISTINCT
+	|	PriceSetup.Ref AS Ref,
+	|	PriceSetup.Date AS Date
+	|FROM
+	|	Document.PriceSetup AS PriceSetup
+	|WHERE
+	|	PriceSetup.LoadedFromFile
+	|	AND BEGINOFPERIOD(PriceSetup.Date, DAY) IN (&Dates)";
+
+	Query.SetParameter("Dates", Dates);
+	
+	Return Query.Execute().Unload();
+	
+EndFunction
