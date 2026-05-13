@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="DateOfBirth" id="7">
+			<DataPath>Object.DateOfBirth</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DateOfBirthContextMenu" id="8"/>
+			<ExtendedTooltip name="DateOfBirthExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="PlaceOfBirth" id="10">
+			<DataPath>Object.PlaceOfBirth</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="PlaceOfBirthContextMenu" id="11"/>
+			<ExtendedTooltip name="PlaceOfBirthExtendedTooltip" id="12"/>
+		</InputField>
+		<InputField name="Gender" id="13">
+			<DataPath>Object.Gender</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="GenderContextMenu" id="14"/>
+			<ExtendedTooltip name="GenderExtendedTooltip" id="15"/>
+		</InputField>
+		<Table name="Children" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.Children</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ChildrenContextMenu" id="17"/>
+			<AutoCommandBar name="ChildrenCommandBar" id="18"/>
+			<ExtendedTooltip name="ChildrenExtendedTooltip" id="19"/>
+			<SearchStringAddition name="ChildrenSearchString" id="20">
+				<AdditionSource>
+					<Item>Children</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ChildrenSearchStringContextMenu" id="21"/>
+				<ExtendedTooltip name="ChildrenSearchStringExtendedTooltip" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ChildrenViewStatus" id="23">
+				<AdditionSource>
+					<Item>Children</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ChildrenViewStatusContextMenu" id="24"/>
+				<ExtendedTooltip name="ChildrenViewStatusExtendedTooltip" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ChildrenSearchControl" id="26">
+				<AdditionSource>
+					<Item>Children</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ChildrenSearchControlContextMenu" id="27"/>
+				<ExtendedTooltip name="ChildrenSearchControlExtendedTooltip" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ChildrenLineNumber" id="29">
+					<DataPath>Object.Children.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChildrenLineNumberContextMenu" id="30"/>
+					<ExtendedTooltip name="ChildrenLineNumberExtendedTooltip" id="31"/>
+				</LabelField>
+				<InputField name="ChildrenName" id="32">
+					<DataPath>Object.Children.Name</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChildrenNameContextMenu" id="33"/>
+					<ExtendedTooltip name="ChildrenNameExtendedTooltip" id="34"/>
+				</InputField>
+				<InputField name="ChildrenDateOfBirth" id="35">
+					<DataPath>Object.Children.DateOfBirth</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChildrenDateOfBirthContextMenu" id="36"/>
+					<ExtendedTooltip name="ChildrenDateOfBirthExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="ChildrenGender" id="38">
+					<DataPath>Object.Children.Gender</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ChildrenGenderContextMenu" id="39"/>
+					<ExtendedTooltip name="ChildrenGenderExtendedTooltip" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Employees</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
