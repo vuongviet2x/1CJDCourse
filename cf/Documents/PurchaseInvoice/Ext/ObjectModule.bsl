@@ -1,38 +1,20 @@
 ﻿
-Procedure FillMainContract() Export
+Procedure Posting(Cancel, Mode)
+	//{{__REGISTER_REGISTERRECORDS_WIZARD
+	// This fragment was built by the wizard.
+	// Warning! All manually made changes will be lost next time you use the wizard.
 
-	If ValueIsFilled(Vendor) Then
-		Contract = Vendor.MainContract;
-	Else	
-		Contract = Undefined;
-	EndIf;
-	
-EndProcedure
-
-Procedure BeforeWrite(Cancel, WriteMode, PostingMode)
-	AdditionalProperties.Insert("IsNew", IsNew());
-EndProcedure
-
-Procedure Posting(Cancel, PostingMode)
-	
-	If AdditionalProperties.IsNew Then
-	
-		// Some code execution	
-	
-	EndIf;
-	
-	GoodsInWarehouses = RegisterRecords.GoodsInWarehouses;
-	GoodsInWarehouses.Write = True;
-	
-	For Each ProductsRow In Products Do
-	
-		NewRecord = GoodsInWarehouses.AddReceipt();
-		NewRecord.Period 	= Date;
-		NewRecord.Warehouse = Warehouse;
-		NewRecord.Product 	= ProductsRow.Product;
-		NewRecord.Quantity 	= ProductsRow.Quantity;
-		NewRecord.Amount 	= ProductsRow.Amount;
-	
+	// register GoodsInWarehouses Receipt
+	RegisterRecords.GoodsInWarehouses.Write = True;
+	For Each CurRowProducts In Products Do
+		Record = RegisterRecords.GoodsInWarehouses.Add();
+		Record.RecordType = AccumulationRecordType.Receipt;
+		Record.Period = Date;
+		Record.Product = CurRowProducts.Product;
+		Record.Warehouse = Warehouse;
+		Record.Quantity = CurRowProducts.Quantity;
+		Record.Amount = CurRowProducts.Amount;
 	EndDo;
-	
+
+	//}}__REGISTER_REGISTERRECORDS_WIZARD
 EndProcedure

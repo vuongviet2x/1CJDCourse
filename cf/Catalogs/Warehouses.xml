@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="769256b3-15b1-4818-b18f-1de72b83c125">
+	<Catalog uuid="c208b7f0-74bc-4d8f-bdb1-77f7fe905de7">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Warehouses" category="Object">
-				<xr:TypeId>14280fc7-0c19-45c2-8dda-440cf3180dbc</xr:TypeId>
-				<xr:ValueId>77c055bc-0f6a-4267-91b4-d49f6a312a9f</xr:ValueId>
+				<xr:TypeId>8a0b7056-f33a-4174-b1f5-39ef5193b1f8</xr:TypeId>
+				<xr:ValueId>06bbf2a8-8265-4d76-adf1-61018bd3562b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Warehouses" category="Ref">
-				<xr:TypeId>256dea63-8420-4920-997f-14a8cb53387e</xr:TypeId>
-				<xr:ValueId>1eedbae0-9fab-41ef-8920-5144f06be541</xr:ValueId>
+				<xr:TypeId>9eb08823-6b19-4cbb-bda3-38def47c7a3e</xr:TypeId>
+				<xr:ValueId>20458b0b-e7ab-48d4-8758-ab3bc549e6cc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Warehouses" category="Selection">
-				<xr:TypeId>1b6ea651-39bd-4ce6-b1a9-6e74abb7be42</xr:TypeId>
-				<xr:ValueId>839e540a-000b-403d-bd9a-0d9e5d9b9a81</xr:ValueId>
+				<xr:TypeId>166425c5-6b66-4b3f-8ac4-4edb755c79cb</xr:TypeId>
+				<xr:ValueId>f79a8f97-77e1-4542-9fc4-74ac542ed17b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Warehouses" category="List">
-				<xr:TypeId>925cdd3d-290a-444c-88ef-6f56db47f5f0</xr:TypeId>
-				<xr:ValueId>c948252b-b135-42f5-ae66-2aac8359e129</xr:ValueId>
+				<xr:TypeId>b65a4726-838e-4a01-862d-20b14831423e</xr:TypeId>
+				<xr:ValueId>8d00879f-54d2-4827-90e4-6655ab60f615</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Warehouses" category="Manager">
-				<xr:TypeId>a67c1aae-d242-438c-937f-4e084559ce78</xr:TypeId>
-				<xr:ValueId>0740fb5e-c8bc-4f54-8aef-c58bdc0bbbcd</xr:ValueId>
+				<xr:TypeId>85587e2b-b9ab-4938-a60d-1c4da1675350</xr:TypeId>
+				<xr:ValueId>19d44d3e-7441-41b8-9be7-be9347233349</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -75,7 +75,12 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Warehouse</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
