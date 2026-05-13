@@ -1,87 +1,162 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.19">
 	<ConfigVersions>
-		<Metadata name="Catalog.Counterparties" id="30dfeae3-f160-4b27-a695-2b0467e0a20f" configVersion="dc9ecf6208d3a4488280d36010c5d6a800000000">
-			<Metadata name="Catalog.Counterparties.Attribute.RegistrationCountry" id="3517f8d1-f7fe-462b-97d0-7878aab3638c"/>
-			<Metadata name="Catalog.Counterparties.Attribute.Customer" id="6a743287-b9e4-46ad-a186-43ce4f803f23"/>
-			<Metadata name="Catalog.Counterparties.Attribute.TIN" id="6e1f1d7a-4aa6-45ef-85f5-ec7594940d15"/>
-			<Metadata name="Catalog.Counterparties.Attribute.Vendor" id="d961b9b8-f53e-4463-add1-3404edb76cd0"/>
-			<Metadata name="Catalog.Counterparties.Attribute.Other" id="ef112f43-b236-463f-9d40-57afaca60bc5"/>
+		<Metadata name="Catalog.BankAccounts" id="614a59ee-0270-43a1-a292-063791f1a6f1" configVersion="f40b3da5492b6141b763a0bde7b7cf6200000000"/>
+		<Metadata name="Catalog.Banks" id="303696b6-df3b-4f2a-b7fd-cb99246a8e25" configVersion="cdb3dcb142e54d47a138f260bdf6983000000000"/>
+		<Metadata name="Catalog.Carriers" id="c9d67c96-57a9-475f-9d54-dfbe62936347" configVersion="40500ee3e9dc0244b597ae95e294ff8700000000"/>
+		<Metadata name="Catalog.Carriers.Form.ItemForm" id="918e034f-d2ce-46f3-841f-1bb77d3acca4" configVersion="2be7f9786944cc43a51d4daaf8e0fd3a00000000"/>
+		<Metadata name="Catalog.Carriers.Form.ItemForm.Form" id="918e034f-d2ce-46f3-841f-1bb77d3acca4.0" configVersion="14e5644dffde524c9832bcc9e2c23b2100000000"/>
+		<Metadata name="Catalog.Carriers.ObjectModule" id="c9d67c96-57a9-475f-9d54-dfbe62936347.0" configVersion="0791dc533cb0b1449eb654f52e86dddc00000000"/>
+		<Metadata name="Catalog.Carriers.Predefined" id="c9d67c96-57a9-475f-9d54-dfbe62936347.1c" configVersion="d8663682e92bc34c919974cf975df84f00000000"/>
+		<Metadata name="Catalog.Cities" id="85839743-9cfe-41af-8db8-0742881330b6" configVersion="6ff93bb6805058469e68c3a501188ab800000000"/>
+		<Metadata name="Catalog.Cities.ObjectModule" id="85839743-9cfe-41af-8db8-0742881330b6.0" configVersion="aeffa1f721484543ac109940bc239a1800000000"/>
+		<Metadata name="Catalog.Cities.Predefined" id="85839743-9cfe-41af-8db8-0742881330b6.1c" configVersion="f3c1d526d14b8547b385f01b27d262dc00000000"/>
+		<Metadata name="Catalog.Companies" id="1b40cec3-79d7-44c8-9a84-ba13e3f56e98" configVersion="88267b7138f373448db71d7969044c5600000000"/>
+		<Metadata name="Catalog.Contacts" id="63ea67a1-00ae-4b2c-b836-c2315bbf8906" configVersion="a0e677c70fdf5b43a3ef5af619f71e4000000000"/>
+		<Metadata name="Catalog.Counterparties" id="da448e45-47af-4134-8c13-6687bd2c9299" configVersion="c089dd4945d1194db604e0a9bd2fca0d00000000">
+			<Metadata name="Catalog.Counterparties.Attribute.Contact" id="27776760-facb-4b29-a592-77dcafeb7951"/>
+			<Metadata name="Catalog.Counterparties.Attribute.IsOther" id="429a94bb-fb7f-4af9-ba61-933d083b8bc3"/>
+			<Metadata name="Catalog.Counterparties.Attribute.MainContract" id="82e8da7f-9e89-46d7-878c-6a7b160d13b6"/>
+			<Metadata name="Catalog.Counterparties.Attribute.IsVendor" id="a1ac0902-a476-4211-bb3c-5898e2f286f1"/>
+			<Metadata name="Catalog.Counterparties.Attribute.IsCustomer" id="d995c1db-76cc-4fee-a54c-0ed7d8200013"/>
 		</Metadata>
-		<Metadata name="Catalog.Counterparties.Form.ItemForm" id="87f945ba-d920-4b0f-af98-c72d2d85e9fe" configVersion="abad90675d03424cb75a4d97da32fab400000000"/>
-		<Metadata name="Catalog.Counterparties.Form.ItemForm.Form" id="87f945ba-d920-4b0f-af98-c72d2d85e9fe.0" configVersion="69b71d473cc0ce4c913315ba6c414f5500000000"/>
-		<Metadata name="Catalog.Counterparties.Predefined" id="30dfeae3-f160-4b27-a695-2b0467e0a20f.1c" configVersion="d75664af4bcd5a45901134f1fa0e107e00000000"/>
-		<Metadata name="Catalog.CounterpartyContracts" id="36cba9d5-e5d0-43fa-aaa5-7fd2f708851b" configVersion="1d9bca088c144c4fb523e3267aa4a45800000000">
-			<Metadata name="Catalog.CounterpartyContracts.Attribute.Discount" id="13311911-6cdf-4d77-bd49-8d1b3edf5ce8"/>
-			<Metadata name="Catalog.CounterpartyContracts.Attribute.ValidUntil" id="4bd76d93-85a3-420e-8e70-945cbf967af3"/>
+		<Metadata name="Catalog.CounterpartyContracts" id="d8fc2d3e-27dc-4797-90d7-530df5c91ca0" configVersion="83bef9014327f7498fc9cda5dd305b9c00000000">
+			<Metadata name="Catalog.CounterpartyContracts.Attribute.BankAccount" id="1e49948f-3619-414c-b382-9e65d27ab19f"/>
+			<Metadata name="Catalog.CounterpartyContracts.Attribute.Sum" id="201e947e-d4db-43b7-bf6f-7745d46a7f85"/>
+			<Metadata name="Catalog.CounterpartyContracts.Attribute.Number" id="408fffd1-a8d8-4680-add9-28cfc77c617b"/>
+			<Metadata name="Catalog.CounterpartyContracts.Attribute.EndDate" id="6afa473f-661f-4389-8c3d-2a6e69f4a0a6"/>
+			<Metadata name="Catalog.CounterpartyContracts.Attribute.StartDate" id="c14fbc52-4c92-40de-8cc3-d4e7ff4df4ed"/>
 		</Metadata>
-		<Metadata name="Catalog.CounterpartyContracts.Form.ItemForm" id="e95aeeea-b998-4936-923f-2e86c0dee44a" configVersion="407a5851c4c7624ba915ba4315cdae6200000000"/>
-		<Metadata name="Catalog.CounterpartyContracts.Form.ItemForm.Form" id="e95aeeea-b998-4936-923f-2e86c0dee44a.0" configVersion="3652854a77faa348a39aa900677763c700000000"/>
-		<Metadata name="Catalog.Countries" id="b89ff569-048e-4854-9bf3-1dbfd57ab566" configVersion="459cbfb085b36a478e13a50c2e4cbe1300000000"/>
-		<Metadata name="Catalog.Countries.Predefined" id="b89ff569-048e-4854-9bf3-1dbfd57ab566.1c" configVersion="5eeff7307ee85f4a966324886e2b421700000000"/>
-		<Metadata name="Catalog.Products" id="42ecd2be-216e-40aa-bae7-ab49137d15d3" configVersion="305243a97571ca4fb8c3576043e1cb9000000000">
-			<Metadata name="Catalog.Products.Attribute.ProductType" id="25c8563b-89fb-4887-9d32-cdebb1ff57c5"/>
-			<Metadata name="Catalog.Products.Attribute.CountryOfOrigin" id="41eefde9-cb03-442f-92ea-7498d187ee66"/>
-			<Metadata name="Catalog.Products.Attribute.FullDescription" id="6c341cf9-cb18-4641-8576-66160a77f7cb"/>
-			<Metadata name="Catalog.Products.Attribute.Weight" id="7cd368e2-ab8d-446b-aefb-ebef70d0e878"/>
-			<Metadata name="Catalog.Products.Attribute.MinimumSalePrice" id="9f82c590-a5ba-4393-8032-d9cd3ab36c4a"/>
+		<Metadata name="Catalog.Employees" id="4d4a41f0-e239-4419-851a-87710166a5cc" configVersion="0ea55ceae1f0304b97bce812ef93b09e00000000">
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.Gender" id="15795ec6-1d51-4539-a5f8-6a825d0d77a6"/>
+			<Metadata name="Catalog.Employees.Attribute.DateOfBirth" id="4d562dbf-5a0e-4e14-a87b-e2c3d13f0dfb"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.DateOfBirth" id="4f2444c8-1cef-4be6-8932-a71845a79c15"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children" id="5c3edebb-8d8a-41f0-857f-204099cbefe6"/>
+			<Metadata name="Catalog.Employees.TabularSection.Children.Attribute.Name" id="84cc8950-ad80-42a3-83d9-341fe0ad0063"/>
+			<Metadata name="Catalog.Employees.Attribute.Gender" id="b6877723-9803-49bc-82d7-562359265a4d"/>
+			<Metadata name="Catalog.Employees.Attribute.PlaceOfBirth" id="bbb3d549-60ba-4cb0-bba0-56acf08667f6"/>
 		</Metadata>
-		<Metadata name="Catalog.Products.Form.ChoiceForm" id="14e79381-f9e8-4678-ab90-50024a55934d" configVersion="96089e387ee39f4c81a97fcc89127fb500000000"/>
-		<Metadata name="Catalog.Products.Form.ChoiceForm.Form" id="14e79381-f9e8-4678-ab90-50024a55934d.0" configVersion="57b8fb89b096644fbee6cf9bdc41173700000000"/>
-		<Metadata name="CommonForm.FormForDebugTest" id="d8423a2b-60fc-405d-956d-2c26ca9fbf02" configVersion="e30e256cda73274fa933b857276705bc00000000"/>
-		<Metadata name="CommonForm.FormForDebugTest.Form" id="d8423a2b-60fc-405d-956d-2c26ca9fbf02.0" configVersion="93f4e182c7b91f4185c860c395b2fe0500000000"/>
-		<Metadata name="CommonForm.TestCollections" id="bfe4a3ca-5d92-4982-9572-7a1eff11e375" configVersion="bcbe48d7d28a984f962cb21828929ad400000000"/>
-		<Metadata name="CommonForm.TestCollections.Form" id="bfe4a3ca-5d92-4982-9572-7a1eff11e375.0" configVersion="6f3f13e5fcb98c448df6c943ae7d8a5e00000000"/>
-		<Metadata name="Configuration.Configuration" id="77809d80-a109-4a57-8dab-eecae11a889c" configVersion="a1299a027c602046803fed935ec8bebc00000000"/>
-		<Metadata name="Configuration.Configuration.HomePageWorkArea" id="3d474d8c-d21a-4161-911f-3adb3720434e.8" configVersion="d899dc22a259d84ea7749ec6ce616eb200000000"/>
-		<Metadata name="Document.PurchaseInvoice" id="2660c218-cab5-4fa2-9feb-971ba0509c73" configVersion="dddf26d88df3434d87e9477e6f48173b00000000">
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Services" id="1987bc44-e1f8-4e97-8a84-947c3ebefa5c"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Amount" id="3208faa1-d6ba-4875-bf03-105421a8bf2e"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Services.Attribute.Quantity" id="36cb6d73-c9e0-44b0-b90e-6e7c3c9ad83b"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Services.Attribute.Price" id="3e96a018-71ba-4ab6-99d0-6ac87f93ed85"/>
-			<Metadata name="Document.PurchaseInvoice.Attribute.Contract" id="57c812fe-8830-4e2c-a5dd-67ec41b88fb8"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Services.Attribute.Amount" id="86061300-1f0e-456a-a93d-936b2898b04c"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Services.Attribute.Product" id="8b5041f1-ef70-4791-9f57-90fde1de6e60"/>
-			<Metadata name="Document.PurchaseInvoice.Attribute.Vendor" id="abc76b61-9000-4020-8193-91d2b736d8e2"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Quantity" id="ad29bb6e-0e56-447d-83ba-656c1445707c"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Product" id="bd6c7f38-4ffd-4678-a6c9-fad5c9b46feb"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Price" id="c67e424a-459e-408d-aec7-4bd3170c2e1a"/>
-			<Metadata name="Document.PurchaseInvoice.Attribute.DocumentTotal" id="dabc2675-580a-4f29-bb0c-190d5929b25f"/>
-			<Metadata name="Document.PurchaseInvoice.TabularSection.Products" id="eec9a862-6d34-446c-824c-f3fd50dc3f7f"/>
+		<Metadata name="Catalog.Employees.ManagerModule" id="4d4a41f0-e239-4419-851a-87710166a5cc.3" configVersion="6a4300c9995b2e4dbbbade102b2cb96f00000000"/>
+		<Metadata name="Catalog.Positions" id="1d79da37-68d7-47c1-ae6c-5888bd6226f1" configVersion="af1a3e2cffc403458afdf8476bce85ee00000000"/>
+		<Metadata name="Catalog.Products" id="8d2b6505-0380-4e36-8031-9c662ec26de3" configVersion="b0f805f733493645b0dbbeefab5bda7d00000000">
+			<Metadata name="Catalog.Products.Attribute.Weight" id="12a39ebe-b245-404e-9e23-2332236ee047"/>
+			<Metadata name="Catalog.Products.Attribute.Type" id="2c885928-b8d2-4e91-801b-3fda126e4298"/>
 		</Metadata>
-		<Metadata name="Document.PurchaseInvoice.Form.DocumentForm" id="3429d14d-2021-47c2-b304-3de5435bb581" configVersion="e69eb16aa65cf54d9f88e8c0217f7a6d00000000"/>
-		<Metadata name="Document.PurchaseInvoice.Form.DocumentForm.Form" id="3429d14d-2021-47c2-b304-3de5435bb581.0" configVersion="7a671e352bcf614889784a18337b673000000000"/>
-		<Metadata name="Document.PurchaseInvoice.Form.ListForm" id="e59e4c80-502e-4121-878e-82d705948f29" configVersion="558cca4f542b354a841c9d79cb23e05f00000000"/>
-		<Metadata name="Document.PurchaseInvoice.Form.ListForm.Form" id="e59e4c80-502e-4121-878e-82d705948f29.0" configVersion="7feaed5cc4a145448b78c4f1a46633ff00000000"/>
-		<Metadata name="Document.SalesInvoice" id="79169150-cc73-4091-b630-36fa69029228" configVersion="a3c5dae505352545bce5dcf609c5624f00000000">
-			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Quantity" id="29e10545-3289-4ce2-a39a-460e0e392342"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Product" id="2d7bd281-f8f7-4e9c-9948-b3a4d6be4d89"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Amount" id="41caafce-a5fb-4966-881c-5b27250ab363"/>
-			<Metadata name="Document.SalesInvoice.Attribute.DocumentTotal" id="46abff62-e688-42ad-89ef-ab87b542255c"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Price" id="4dcb6987-048a-4570-b69e-89bd62191147"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Price" id="57f839ac-d366-4714-8921-a4d707b78368"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Product" id="88f51e95-ddad-4f89-81db-6472a80b31fc"/>
-			<Metadata name="Document.SalesInvoice.Attribute.Customer" id="9a301379-b6f7-41ca-ac60-278cb6f3a5b3"/>
-			<Metadata name="Document.SalesInvoice.Attribute.Contract" id="a0445df2-2922-4881-99af-a78e61f93805"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Quantity" id="b3cf06f8-c3e7-496c-8233-c239718e7352"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Services" id="c5b56c26-3f06-4fb6-8e07-994e18990764"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Amount" id="ee90dce0-a45d-42fc-9c0c-6528671a0abc"/>
-			<Metadata name="Document.SalesInvoice.TabularSection.Products" id="ef0980e2-6db3-439a-8951-0ed6689fa199"/>
-			<Metadata name="Document.SalesInvoice.Attribute.Discount" id="f0e0a52e-69dc-49d2-a2d9-85bebb69d489"/>
+		<Metadata name="Catalog.Products.Form.ChoiceForm" id="5a3694fa-3db9-466f-9ed4-b62477f396f2" configVersion="bf2b52bda9f18d41a6e0198c2d74f43d00000000"/>
+		<Metadata name="Catalog.Products.Form.ChoiceForm.Form" id="5a3694fa-3db9-466f-9ed4-b62477f396f2.0" configVersion="2eab9d02a787a244ad558d966287941100000000"/>
+		<Metadata name="Catalog.Products.Form.ItemForm" id="6100c290-5433-4ffb-9758-70abab356da5" configVersion="5aaab3f4f6021148a6c76d323fde061c00000000"/>
+		<Metadata name="Catalog.Products.Form.ItemForm.Form" id="6100c290-5433-4ffb-9758-70abab356da5.0" configVersion="4a1b4901eb622f41a8a64bd299f3041e00000000"/>
+		<Metadata name="Catalog.StructuralUnits" id="23d04803-3ff8-48d8-8e85-e4796b47a8b7" configVersion="9a0152aad03aa5449c60069e8fb1bb3d00000000"/>
+		<Metadata name="Catalog.StructuralUnits.ObjectModule" id="23d04803-3ff8-48d8-8e85-e4796b47a8b7.0" configVersion="55dbf521720d284e9f0d65a2decafc8d00000000"/>
+		<Metadata name="Catalog.Users" id="f124c4c2-33f1-4f0a-a8b9-8af2868ba534" configVersion="5663955cec52be4585d1ed1a882a03a900000000"/>
+		<Metadata name="CommonForm.WelcomeForm" id="3a1c0808-d595-4da3-996b-a5db436fc3ca" configVersion="a98369ef6d277840a49d50b4e16a66c600000000"/>
+		<Metadata name="CommonForm.WelcomeForm.Form" id="3a1c0808-d595-4da3-996b-a5db436fc3ca.0" configVersion="e7d75f1a1ffd484b97b3459dcfe3c1b400000000"/>
+		<Metadata name="CommonModule.CommonClient" id="bddf15a8-0f69-4b0b-b9ee-90812cb95660" configVersion="7934abd90546fb418b8f6095bb172dd700000000"/>
+		<Metadata name="CommonModule.CommonClient.Module" id="bddf15a8-0f69-4b0b-b9ee-90812cb95660.0" configVersion="2acd00f6ecd69a4e99ed7dde7b8d067f00000000"/>
+		<Metadata name="CommonModule.CommonClientServer" id="d23df228-f777-413b-8ed7-a8e9763278b7" configVersion="036f9e34325dcd4787e6f42bcfb7a48b00000000"/>
+		<Metadata name="CommonModule.CommonServer" id="cdc5a707-4947-4aad-824f-827ab4855f42" configVersion="eccd04ff3b012c4ebf17b6975b7f37bc00000000"/>
+		<Metadata name="CommonModule.CommonServer.Module" id="cdc5a707-4947-4aad-824f-827ab4855f42.0" configVersion="5eee2a684d06fa48bada7d3dd1d4a5f700000000"/>
+		<Metadata name="CommonModule.CommonServerCall" id="c16548a7-a769-4716-a8ae-6ad6106b69d5" configVersion="7b2c10499d28504f8768dcbb08002e4d00000000"/>
+		<Metadata name="CommonPicture.BankSubsystem" id="32ee6cdc-7c11-4e7f-b019-9cfb7f878e1e" configVersion="9a108d2dee6f7b44b5f0c0a37c0f51b700000000"/>
+		<Metadata name="CommonPicture.BankSubsystem.Picture" id="32ee6cdc-7c11-4e7f-b019-9cfb7f878e1e.0" configVersion="d0ba91ca7f3f604981a42c8ea214a39d00000000"/>
+		<Metadata name="CommonPicture.HrmSubsystem" id="ac9f5c0e-2bcc-425f-94ad-7ffd8cff2bdc" configVersion="361986cb1f29e44aad1d458dec64d4b000000000"/>
+		<Metadata name="CommonPicture.HrmSubsystem.Picture" id="ac9f5c0e-2bcc-425f-94ad-7ffd8cff2bdc.0" configVersion="d94a51f58296324d9e6a45cc7a4dd37700000000"/>
+		<Metadata name="CommonPicture.PurchasesSubsystem" id="576aea0d-6919-4952-a03c-8d8988dfc597" configVersion="ce80e76c89de814198fe0f05ad448d4f00000000"/>
+		<Metadata name="CommonPicture.PurchasesSubsystem.Picture" id="576aea0d-6919-4952-a03c-8d8988dfc597.0" configVersion="ed16c1ddb1805545b971eed3cfcaa31400000000"/>
+		<Metadata name="CommonPicture.SalesSubsystem" id="e443ab48-f42e-49a8-bf17-1be4f4c5737e" configVersion="2670030b2929704bae0a73e31a093a9600000000"/>
+		<Metadata name="CommonPicture.SalesSubsystem.Picture" id="e443ab48-f42e-49a8-bf17-1be4f4c5737e.0" configVersion="3805e59f13f5cb40b8777c0703bbf2b900000000"/>
+		<Metadata name="CommonPicture.SettingsSubsystem" id="b11d8ec4-47dd-4d18-9a00-a523877691c8" configVersion="f6d5675aaa80ba48adb6df500c5ab01700000000"/>
+		<Metadata name="CommonPicture.SettingsSubsystem.Picture" id="b11d8ec4-47dd-4d18-9a00-a523877691c8.0" configVersion="5396e3a64ce74440a2aca28dbc43f3ee00000000"/>
+		<Metadata name="Configuration.Configuration" id="e6c5ce7d-090f-4f3f-bd27-655f4468e81d" configVersion="7305e46eb9231e4b8b3e3b2fe36ebb5a00000000"/>
+		<Metadata name="Configuration.Configuration.CommandInterface" id="24f47be1-af23-4412-999c-17a2231e59f0.a" configVersion="0022c5de25a2074d8a798401f0fc66b600000000"/>
+		<Metadata name="Configuration.Configuration.HomePageWorkArea" id="24f47be1-af23-4412-999c-17a2231e59f0.8" configVersion="e6e9e0dc23c8af49b1ce28c7182ced4500000000"/>
+		<Metadata name="Document.PersonnelChange" id="8d14239f-8cbc-4a9e-8899-54988f943b5c" configVersion="f224f19df26f13488a7a535217cc3a1400000000">
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.Employee" id="0c624170-6b94-4349-90b6-c29b4174c7f8"/>
+			<Metadata name="Document.PersonnelChange.Attribute.Company" id="52145173-c1cd-4ce9-98ea-ab68581ddfc0"/>
+			<Metadata name="Document.PersonnelChange.Attribute.OperationKind" id="8be02dbf-4095-4719-901d-cf3d66be56de"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.StartDate" id="ba23845a-f549-4014-a048-2a27eb53052b"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes" id="c8bcb107-3285-431b-a882-3cb70b5a04f8"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.Position" id="f93076af-f5d2-4f4a-bec1-c020b10bfdff"/>
+			<Metadata name="Document.PersonnelChange.TabularSection.Changes.Attribute.StructuralUnit" id="fe55d504-cd9a-4f6e-8e26-60f8d9a5d91d"/>
 		</Metadata>
-		<Metadata name="Document.SalesInvoice.Form.DocumentForm" id="e9368acd-f4bf-4a9b-a035-4163766a7dba" configVersion="b766efbb8faa2042bbba2d8bafde4f6800000000"/>
-		<Metadata name="Document.SalesInvoice.Form.DocumentForm.Form" id="e9368acd-f4bf-4a9b-a035-4163766a7dba.0" configVersion="bfe5e47ea9614e42bf0411036c993a4b00000000"/>
-		<Metadata name="Document.SalesInvoice.Form.ListForm" id="c750e9bf-a6f8-4c4a-bb95-848b5f87f1b6" configVersion="a3eee7736f2aa441a5df56ead57c746000000000"/>
-		<Metadata name="Document.SalesInvoice.Form.ListForm.Form" id="c750e9bf-a6f8-4c4a-bb95-848b5f87f1b6.0" configVersion="e0f528fb39c6594b8d1c7f53b702402a00000000"/>
-		<Metadata name="Document.SalesInvoice.ObjectModule" id="79169150-cc73-4091-b630-36fa69029228.0" configVersion="5574dc3e9b83bc4885905e65327e00ae00000000"/>
-		<Metadata name="Enum.ProductsTypes" id="9a21d8e2-b575-43eb-8dd0-12a9df0fadbf" configVersion="be8a6aad9e54514fbd6121a20a7ad20d00000000">
-			<Metadata name="Enum.ProductsTypes.EnumValue.ContractWork" id="09664ad1-6a35-4bf8-a907-bd3f0259e51c"/>
-			<Metadata name="Enum.ProductsTypes.EnumValue.InventoryItem" id="2fdf371d-19f7-4323-93c7-575d10b5992b"/>
-			<Metadata name="Enum.ProductsTypes.EnumValue.Service" id="c6a49857-df5a-4114-a35f-42fb177894ca"/>
+		<Metadata name="Document.PersonnelChange.Form.DocumentForm" id="0af83aa2-c7de-4450-8242-3768031a2dd7" configVersion="fa7891b38c32a74d9570d6f17d112d2a00000000"/>
+		<Metadata name="Document.PersonnelChange.Form.DocumentForm.Form" id="0af83aa2-c7de-4450-8242-3768031a2dd7.0" configVersion="082500a9e75838499f5813e5fbcbe2ff00000000"/>
+		<Metadata name="Document.PersonnelChange.Help" id="8d14239f-8cbc-4a9e-8899-54988f943b5c.1" configVersion="bac64d8cc2bce046ad563f6d2f61bbf200000000"/>
+		<Metadata name="Document.PersonnelChange.ObjectModule" id="8d14239f-8cbc-4a9e-8899-54988f943b5c.0" configVersion="ff61735d2d271a4890185a6decea75d300000000"/>
+		<Metadata name="Document.PurchaseInvoice" id="5053c65c-b710-4db4-a136-28319cece085" configVersion="9b809349e7239a4ca686c0988e723f3000000000">
+			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Quantity" id="04414d3c-c869-4a89-ba22-5baa80be42f4"/>
+			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Amount" id="3729d0c2-27fb-473d-a8ad-6e9b75644aad"/>
+			<Metadata name="Document.PurchaseInvoice.TabularSection.Products" id="9566aa81-d80e-4130-9ac1-aa9e2ae87b3f"/>
+			<Metadata name="Document.PurchaseInvoice.Attribute.Contract" id="a0da97d1-1b76-44fd-bee3-8b6fb75802f5"/>
+			<Metadata name="Document.PurchaseInvoice.Attribute.Vendor" id="a3af9a48-8f88-4ddc-9c69-71976ef119f2"/>
+			<Metadata name="Document.PurchaseInvoice.Attribute.Company" id="acca6246-65ba-4399-9395-49631abfe380"/>
+			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Product" id="c5262180-f4c2-443c-9b08-cf112ac1253a"/>
+			<Metadata name="Document.PurchaseInvoice.Attribute.Responsible" id="db20083c-cb94-4b95-a356-1eaa539e303a"/>
+			<Metadata name="Document.PurchaseInvoice.TabularSection.Products.Attribute.Price" id="f468f9d3-2424-462f-a940-8397db2568b8"/>
 		</Metadata>
-		<Metadata name="Language.English" id="55ecedfd-1328-4e4c-add3-7b771aa64519" configVersion="fa410ba9b7318546b3a58e232fe5e38600000000"/>
-		<Metadata name="Subsystem.MasterData" id="c4655661-6744-4fc7-8672-5d103662f1c8" configVersion="f0b6e3264470aa4e84acb439854c073d00000000"/>
-		<Metadata name="Subsystem.Purchases" id="97951a0a-f161-4253-88ba-95cf4a48e3eb" configVersion="09828b06f02a334a9c4f30d24dcdb2f000000000"/>
-		<Metadata name="Subsystem.Sales" id="7b3d9da5-95a0-45ed-a759-6b35c8d36f25" configVersion="2d0b2085a28fec498814900f0f93e92200000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.DocumentForm" id="04f727ec-f4da-430c-89f4-32205ce078cf" configVersion="aee5c19aa73abd46ae48e058758c98b700000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.DocumentForm.Form" id="04f727ec-f4da-430c-89f4-32205ce078cf.0" configVersion="3e6e40459b57b14494d66cde78fa7f8700000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.DocumentForm.Help" id="04f727ec-f4da-430c-89f4-32205ce078cf.1" configVersion="2a4ddfef44697641a041e8191482ee3e00000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.ListForm" id="e3bef1d3-f34a-4399-ac1b-ee0443ea9bc3" configVersion="d7cd82b255e16a48ab920812d8b27e0c00000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.ListForm.Form" id="e3bef1d3-f34a-4399-ac1b-ee0443ea9bc3.0" configVersion="419ea25073103d449fd80554f724979800000000"/>
+		<Metadata name="Document.PurchaseInvoice.Form.ListForm.Help" id="e3bef1d3-f34a-4399-ac1b-ee0443ea9bc3.1" configVersion="8ed67cf65be1b544bbfeecac9e01d2a800000000"/>
+		<Metadata name="Document.PurchaseInvoice.Help" id="5053c65c-b710-4db4-a136-28319cece085.1" configVersion="617474128b5e9a478036f75c62c8713e00000000"/>
+		<Metadata name="Document.PurchaseInvoice.ManagerModule" id="5053c65c-b710-4db4-a136-28319cece085.2" configVersion="7839cec765016343a735c9987c2dbff600000000"/>
+		<Metadata name="Document.PurchaseInvoice.ObjectModule" id="5053c65c-b710-4db4-a136-28319cece085.0" configVersion="c4de5fa44ef51248b383e45ca6d67b4300000000"/>
+		<Metadata name="Document.SalesInvoice" id="1f054a81-c1fa-44fc-8112-80ef4c2ccb23" configVersion="48a0a2a93f74ca4aae328c0ca1f65bf100000000">
+			<Metadata name="Document.SalesInvoice.Attribute.DeliveryDate" id="04fbbdf9-c39a-4ae2-8e40-f7e20f0b8695"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Quantity" id="0754b756-be85-46a0-9f46-8aef0a3d4979"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Product" id="317dee51-a243-4c2a-9873-97fa1aedb902"/>
+			<Metadata name="Document.SalesInvoice.Attribute.Carrier" id="3e0fd776-7fba-4c4f-83b8-1fd4de6ef9dc"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Price" id="44361367-8dcc-4a6a-b66c-599256527a68"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Service" id="476c19d4-04a7-418a-bd84-a9174560deb3"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Amount" id="4bc6b16d-e672-4794-9e0c-838d0a983493"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Amount" id="4c2ff3ef-5238-4402-b68d-6d2ce479315a"/>
+			<Metadata name="Document.SalesInvoice.Attribute.Contract" id="4ef32282-7687-4889-ba27-8c07b4dc971f"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Products" id="69258a2e-cb12-4872-a322-72afa73e1e6b"/>
+			<Metadata name="Document.SalesInvoice.Attribute.Responsible" id="7826c503-29ae-4548-8f0b-4d181ed97b2d"/>
+			<Metadata name="Document.SalesInvoice.Attribute.Company" id="94e7c2ff-6761-464b-8391-a84fcc5faec4"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Services.Attribute.Price" id="9631bc05-6078-473a-b4ac-659f760f2edf"/>
+			<Metadata name="Document.SalesInvoice.Attribute.StateDate" id="c8a3cabf-bf0e-4fbc-b600-642847eff597"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Services" id="d08016d7-b932-4d58-9c42-0d36ae538928"/>
+			<Metadata name="Document.SalesInvoice.TabularSection.Products.Attribute.Quantity" id="d16ed5ef-ec50-4754-a08f-f2fb917b389a"/>
+			<Metadata name="Document.SalesInvoice.Attribute.Customer" id="e7b9d0d8-1e16-467b-9924-9f350cdb99f9"/>
+			<Metadata name="Document.SalesInvoice.Attribute.State" id="f1d1c7cf-d2b5-4ec8-8421-145db4bd9af3"/>
+		</Metadata>
+		<Metadata name="Document.SalesInvoice.Form.DocumentForm" id="770f475b-e5ac-48fb-9711-e1ecccc43cb7" configVersion="1dc94287a61c104d87ac70cf2b3e839700000000"/>
+		<Metadata name="Document.SalesInvoice.Form.DocumentForm.Form" id="770f475b-e5ac-48fb-9711-e1ecccc43cb7.0" configVersion="524c5cabce9d09489c1da62c379d839700000000"/>
+		<Metadata name="Document.SalesInvoice.Form.ListForm" id="124b55f9-e8cd-4a59-9382-ee49f2d17c3b" configVersion="208a2ff89dc2274abfb2cf373be5e8c700000000"/>
+		<Metadata name="Document.SalesInvoice.Form.ListForm.Form" id="124b55f9-e8cd-4a59-9382-ee49f2d17c3b.0" configVersion="56825640edfab14a83276521ad8e1af600000000"/>
+		<Metadata name="Document.SalesInvoice.ObjectModule" id="1f054a81-c1fa-44fc-8112-80ef4c2ccb23.0" configVersion="02fc4d9019e6764a9f14e1007706921600000000"/>
+		<Metadata name="Enum.Gender" id="b1a8fd37-924f-492a-843e-cd2460baee7c" configVersion="c048a23401744c4fb4d4a04fc5c1af8f00000000">
+			<Metadata name="Enum.Gender.EnumValue.Female" id="169683d4-3db4-445f-9efc-21d99e22ae17"/>
+			<Metadata name="Enum.Gender.EnumValue.Male" id="31803a54-74be-4594-8197-641d7e06d888"/>
+		</Metadata>
+		<Metadata name="Enum.OperationKindsPersonnelChange" id="8d3597b5-fd5c-4805-9e17-6701297056da" configVersion="7d78929365da0d4fa4a4e6487bb4ba5b00000000">
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.Hiring" id="2bad3dba-2d40-47e0-830d-dd61410b91f0"/>
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.Dismissal" id="d458c9bf-8418-401e-82ce-5f7693658643"/>
+			<Metadata name="Enum.OperationKindsPersonnelChange.EnumValue.PositionChanging" id="d563e31b-f5d4-4740-a6f1-053801ee5df5"/>
+		</Metadata>
+		<Metadata name="Enum.ProductTypes" id="8849b2a8-0b58-4ba1-a8bd-a9c31cc885be" configVersion="25c0622617f31546b9a75a55a4037de900000000">
+			<Metadata name="Enum.ProductTypes.EnumValue.Product" id="aec9b877-af7d-4ff0-90b8-bfe11ae12dbd"/>
+			<Metadata name="Enum.ProductTypes.EnumValue.Service" id="fd2cd781-0885-40dd-bee6-faf04d1dd7c4"/>
+		</Metadata>
+		<Metadata name="Enum.SalesInvoiceStates" id="f0fc1448-358b-45b6-b140-8b9ab3b9538f" configVersion="c0815b521a5c794f93fd97044a5730f600000000">
+			<Metadata name="Enum.SalesInvoiceStates.EnumValue.Finished" id="602880d7-14ba-4a31-ad88-dac53c267faf"/>
+			<Metadata name="Enum.SalesInvoiceStates.EnumValue.Planned" id="71853b5b-3b43-40d9-8f86-d3850274811f"/>
+			<Metadata name="Enum.SalesInvoiceStates.EnumValue.InDelivery" id="8079a4a4-eaa5-4ee8-ac92-5bf83489d966"/>
+		</Metadata>
+		<Metadata name="Language.English" id="5cf006a6-4d43-4fd3-8835-c54cf4a0eda0" configVersion="422572650167e44a9185247cf763a2ef00000000"/>
+		<Metadata name="Role.Accountant" id="8962c1be-718f-4dde-8e4c-6e163e20b349" configVersion="405ce965850fbb4b84ed253310eb94e600000000"/>
+		<Metadata name="Role.Accountant.Rights" id="8962c1be-718f-4dde-8e4c-6e163e20b349.0" configVersion="f1cd51dda0a4a44ba06219637e75d59400000000"/>
+		<Metadata name="Role.SalesManager" id="fe1af8f6-d6fc-455d-b205-ea2198a1eab3" configVersion="a01772942134df4eb10af3ad6021d7f600000000"/>
+		<Metadata name="Role.SalesManager.Rights" id="fe1af8f6-d6fc-455d-b205-ea2198a1eab3.0" configVersion="5a217146c5b5fe4a96ebcd54a8af9b1300000000"/>
+		<Metadata name="Subsystem.Administration" id="5f769756-5def-4c5b-81c4-3778b3f26bd6" configVersion="e2121005ed90254392e4db88e2e36d5d00000000"/>
+		<Metadata name="Subsystem.Bank" id="fdf54e99-6a6d-451b-bbf9-62bfcd43954a" configVersion="59fe530705e6c046ba17982d858ec53f00000000"/>
+		<Metadata name="Subsystem.Bank.CommandInterface" id="fdf54e99-6a6d-451b-bbf9-62bfcd43954a.1" configVersion="5ca5171975e19747a608db56619d11d200000000"/>
+		<Metadata name="Subsystem.HRM" id="22c0b316-8e5f-4b1f-9d1c-2e096de62488" configVersion="e7f048dee254084db1304198adba6a1f00000000"/>
+		<Metadata name="Subsystem.HRM.Subsystem.Company" id="00743332-4085-4792-b207-551a81917b11" configVersion="597afaef3cf751468fae6da5353f927600000000"/>
+		<Metadata name="Subsystem.Purchases" id="ae089658-3463-4c0e-b84e-539c557e70e0" configVersion="f4addd528f340443b57317df8222197b00000000"/>
+		<Metadata name="Subsystem.Sales" id="58bbbf89-acb2-45b2-b2f4-2f52a79005d4" configVersion="e5d614c476020543914d5ac18c24815a00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

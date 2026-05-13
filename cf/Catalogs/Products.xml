@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="42ecd2be-216e-40aa-bae7-ab49137d15d3">
+	<Catalog uuid="8d2b6505-0380-4e36-8031-9c662ec26de3">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Products" category="Object">
-				<xr:TypeId>bf06b61a-6632-46ba-baa6-3d5adf460042</xr:TypeId>
-				<xr:ValueId>4b3ab08c-2a7a-43e4-b383-1f2d281836d7</xr:ValueId>
+				<xr:TypeId>cc2cbc19-6cc6-41ac-bfd1-96fffc01439b</xr:TypeId>
+				<xr:ValueId>a271b4db-7d2d-41cb-b48e-eaa14086e8ba</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Products" category="Ref">
-				<xr:TypeId>d770d3da-2782-46aa-a98d-8a056ab144af</xr:TypeId>
-				<xr:ValueId>d833caaa-914b-4157-bfde-5b04241e0306</xr:ValueId>
+				<xr:TypeId>e7433b37-12e6-4fcc-a90a-8c8c37adba59</xr:TypeId>
+				<xr:ValueId>3ab9d823-373d-4e0a-948d-1b24fc24e175</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Products" category="Selection">
-				<xr:TypeId>54406853-2761-4c61-b5cb-6926a9945772</xr:TypeId>
-				<xr:ValueId>30534ad8-09dd-4a00-a5b5-a4e60ec5f8fc</xr:ValueId>
+				<xr:TypeId>3452e7f2-83e5-451a-bcfb-1ccff05d5d4d</xr:TypeId>
+				<xr:ValueId>af3139aa-4df9-44b4-962d-c1f643b6975a</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Products" category="List">
-				<xr:TypeId>ce4685b8-59a5-449c-a448-97c5e416b33a</xr:TypeId>
-				<xr:ValueId>9e01fbe3-fc86-44fd-b957-6e17db25d87f</xr:ValueId>
+				<xr:TypeId>6970acfd-688e-4c23-affd-8167bb720e07</xr:TypeId>
+				<xr:ValueId>f0d0babf-126b-4454-ae9c-4fbb6975cd04</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Products" category="Manager">
-				<xr:TypeId>6d11c87c-ca3b-447a-bd76-8a5e0d317170</xr:TypeId>
-				<xr:ValueId>8e14053a-eb36-44a3-8061-0f6267d4d797</xr:ValueId>
+				<xr:TypeId>d04a75dd-ed3c-4857-8169-c44356077580</xr:TypeId>
+				<xr:ValueId>2df3a6a8-1e12-45d3-82fc-6f3c0614f392</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -34,8 +34,8 @@
 			<Comment/>
 			<Hierarchical>true</Hierarchical>
 			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
-			<LimitLevelCount>true</LimitLevelCount>
-			<LevelCount>5</LevelCount>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
@@ -60,7 +60,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Catalog.Products.Form.ItemForm</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm>Catalog.Products.Form.ChoiceForm</DefaultChoiceForm>
@@ -75,30 +75,10 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Product</v8:content>
-				</v8:item>
-			</ObjectPresentation>
-			<ExtendedObjectPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Product/Service</v8:content>
-				</v8:item>
-			</ExtendedObjectPresentation>
-			<ListPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Products</v8:content>
-				</v8:item>
-			</ListPresentation>
-			<ExtendedListPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Products list</v8:content>
-				</v8:item>
-			</ExtendedListPresentation>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
@@ -107,23 +87,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="7cd368e2-ab8d-446b-aefb-ebef70d0e878">
+			<Attribute uuid="2c885928-b8d2-4e91-801b-3fda126e4298">
 				<Properties>
-					<Name>Weight</Name>
+					<Name>Type</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Weight</v8:content>
+							<v8:content>Type</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>3</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
+						<v8:Type>cfg:EnumRef.ProductTypes</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -137,130 +112,6 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="6c341cf9-cb18-4641-8576-66160a77f7cb">
-				<Properties>
-					<Name>FullDescription</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Full description</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>500</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="41eefde9-cb03-442f-92ea-7498d187ee66">
-				<Properties>
-					<Name>CountryOfOrigin</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Country of origin</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Countries</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="25c8563b-89fb-4887-9d32-cdebb1ff57c5">
-				<Properties>
-					<Name>ProductType</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Product type</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.ProductsTypes</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">Enum.ProductsTypes.EnumValue.InventoryItem</FillValue>
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -276,21 +127,21 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="9f82c590-a5ba-4393-8032-d9cd3ab36c4a">
+			<Attribute uuid="12a39ebe-b245-404e-9e23-2332236ee047">
 				<Properties>
-					<Name>MinimumSalePrice</Name>
+					<Name>Weight</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Minimum sale price</v8:content>
+							<v8:content>Weight</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
@@ -321,6 +172,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ItemForm</Form>
 			<Form>ChoiceForm</Form>
 		</ChildObjects>
 	</Catalog>
