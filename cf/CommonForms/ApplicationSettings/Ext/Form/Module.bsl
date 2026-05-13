@@ -6,14 +6,11 @@ Procedure UseCharacteristicsOnChange(Item)
 	
 EndProcedure
 
-
 &AtClient
 Procedure AfterWrite(WriteParameters)
 	
 	If RefreshInterface Then
-	
 		RefreshInterface();
-	
 	EndIf;
 	
 EndProcedure

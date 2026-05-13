@@ -5,13 +5,11 @@ Procedure Filling(FillingData, StandardProcessing)
 	// Warning! All manually made changes will be lost next time you use the wizard.
 	If TypeOf(FillingData) = Type("DocumentRef.SalesInvoice") Then
 		// Filling the headline
-		Company = FillingData.Company;
-		Contract = FillingData.Contract;
-		Customer = FillingData.Customer;
-		DocumentTotal = FillingData.DocumentTotal;
-		SalesDocument = FillingData.Ref;
-		Warehouse = FillingData.Warehouse;
-		Discount = FillingData.Discount;
+		SalesDocument 	= FillingData;
+		Company 		= FillingData.Company;
+		Contract 		= FillingData.Contract;
+		Customer 		= FillingData.Customer;
+		Warehouse 		= FillingData.Warehouse;
 		For Each CurRowProducts In FillingData.Products Do
 			NewRow = Products.Add();
 			NewRow.Amount = CurRowProducts.Amount;
@@ -23,17 +21,18 @@ Procedure Filling(FillingData, StandardProcessing)
 			NewRow = Services.Add();
 			NewRow.Amount = CurRowServices.Amount;
 			NewRow.Price = CurRowServices.Price;
-			NewRow.Product = CurRowServices.Product;
 			NewRow.Quantity = CurRowServices.Quantity;
+			NewRow.Service = CurRowServices.Service;
 		EndDo;
 	EndIf;
 	//}}__CREATE_BASED_ON_WIZARD
 EndProcedure
 
-Procedure Posting(Cancel, Mode)
+Procedure Posting(Cancel, PostingMode)
 
 	RegisterRecords.GoodsInWarehouses.Write = True;
 	RegisterRecords.Sales.Write = True;
+	
 	For Each CurRowProducts In Products Do
 		Record = RegisterRecords.GoodsInWarehouses.Add();
 		Record.RecordType = AccumulationRecordType.Receipt;
@@ -42,25 +41,46 @@ Procedure Posting(Cancel, Mode)
 		Record.Warehouse = Warehouse;
 		Record.Quantity = CurRowProducts.Quantity;
 		Record.Amount = CurRowProducts.Amount;
-		
+
 		Record = RegisterRecords.Sales.Add();
 		Record.Period = Date;
 		Record.Product = CurRowProducts.Product;
 		Record.Customer = Customer;
-		Record.Contract = Contract;
-		Record.Quantity = -CurRowProducts.Quantity;
-		Record.Amount = -CurRowProducts.Amount;
+		Record.Amount = CurRowProducts.Amount;
 	EndDo;
 
 	For Each CurRowServices In Services Do
 		Record = RegisterRecords.Sales.Add();
 		Record.Period = Date;
-		Record.Product = CurRowServices.Product;
-		Record.Company = Company;
+		Record.Product = CurRowServices.Service;
 		Record.Customer = Customer;
-		Record.Contract = Contract;
-		Record.Quantity = -CurRowServices.Quantity;
-		Record.Amount = -CurRowServices.Amount;
+		Record.Amount = CurRowServices.Amount;
 	EndDo;
+	
+EndProcedure
+
+Procedure FillCheckProcessing(Cancel, CheckedAttributes)
+	
+	If Products.Count() > 0 Then
+		DeleteAttributeFromChecking(CheckedAttributes, "Services");
+	ElsIf Services.Count() > 0 Then	
+		DeleteAttributeFromChecking(CheckedAttributes, "Products");
+	EndIf;
+
+	// Turn off checking by the platform
+	DeleteAttributeFromChecking(CheckedAttributes, "Products.Amount");
+
+	Sales.CheckAmountOfProducts(Products, Cancel);
+	
+EndProcedure
+
+Procedure DeleteAttributeFromChecking(CheckedAttributes, AttributeToDelete)
+
+	IndexOfAttribute = CheckedAttributes.Find(AttributeToDelete);
+	If IndexOfAttribute <> Undefined Then
+	
+		CheckedAttributes.Delete(IndexOfAttribute);
+	
+	EndIf;
 
 EndProcedure

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="995788e1-ea6c-4892-ac1e-6c479ceaf4e8">
+	<Catalog uuid="303696b6-df3b-4f2a-b7fd-cb99246a8e25">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Banks" category="Object">
-				<xr:TypeId>8c948109-d5d6-494b-98fb-ed324281b301</xr:TypeId>
-				<xr:ValueId>756a90a3-f7fb-46e1-b6dd-b5a1161d0372</xr:ValueId>
+				<xr:TypeId>092d0f81-eb1a-4c40-80a6-c5c631a2c0da</xr:TypeId>
+				<xr:ValueId>0347450c-c1ac-4492-9669-41a17d253448</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Banks" category="Ref">
-				<xr:TypeId>e8497907-95ca-47a6-a1da-55b348d845ac</xr:TypeId>
-				<xr:ValueId>7d5f7532-7c15-4eb0-8810-f4aeb215a7a9</xr:ValueId>
+				<xr:TypeId>0a7a72e4-2ae2-4616-b29f-3eb28728b98a</xr:TypeId>
+				<xr:ValueId>5b2d010b-d32a-4d4a-a390-a5a4628d28a5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Banks" category="Selection">
-				<xr:TypeId>508ff030-a455-42e6-93a8-d55d1eceff64</xr:TypeId>
-				<xr:ValueId>3b24f306-75c2-4d96-b634-350aba9d2ebd</xr:ValueId>
+				<xr:TypeId>9c2dccb8-9c6f-46c8-8a0e-8c1ddd70d757</xr:TypeId>
+				<xr:ValueId>537c6e03-0703-458d-97e0-21313ddb19bf</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Banks" category="List">
-				<xr:TypeId>d63a7b09-8031-4a14-8dde-e89d8df72eaa</xr:TypeId>
-				<xr:ValueId>7ff6fe61-667f-4b2a-b3bc-131cd2703ea5</xr:ValueId>
+				<xr:TypeId>589c4cdf-f544-4f3d-ac68-d060d816c100</xr:TypeId>
+				<xr:ValueId>45b76413-a5f3-46f0-960a-4a2ea3e8aa7b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Banks" category="Manager">
-				<xr:TypeId>a76a8c4c-1d44-4b53-9033-fdcd7e0b73e0</xr:TypeId>
-				<xr:ValueId>159de129-be7c-4c87-98b3-50bf327d2c06</xr:ValueId>
+				<xr:TypeId>4299411a-48d5-42dd-b1fc-d5b7ee6b4a04</xr:TypeId>
+				<xr:ValueId>ab46a63f-614d-4dbc-ab8b-691fbe5d7053</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>100</DescriptionLength>
+			<DescriptionLength>50</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -82,7 +82,12 @@
 				</v8:item>
 			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Banks</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
