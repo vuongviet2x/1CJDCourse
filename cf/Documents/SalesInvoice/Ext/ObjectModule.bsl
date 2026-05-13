@@ -1,118 +1,103 @@
 ﻿
-Procedure FillMainContract() Export
+Procedure FillDiscount() Export
 
-	If ValueIsFilled(Customer) Then
-		Contract = Customer.MainContract;
-	Else	
-		Contract = Undefined;
-	EndIf;
-	
-EndProcedure
-
-Procedure Posting(Cancel, PostingMode)
-
-	RegisterRecords.GoodsInWarehouses.Write = True;
-	RegisterRecords.Sales.Write = True;
-	
-	For Each CurRowProducts In Products Do
-		Record = RegisterRecords.GoodsInWarehouses.Add();
-		Record.RecordType = AccumulationRecordType.Receipt;
-		Record.Period = Date;
-		Record.Product = CurRowProducts.Product;
-		Record.Warehouse = Warehouse;
-		Record.Quantity = CurRowProducts.Quantity;
-		Record.Amount = CurRowProducts.Amount;
-
-		Record = RegisterRecords.Sales.Add();
-		Record.Period = Date;
-		Record.Product = CurRowProducts.Product;
-		Record.Customer = Customer;
-		Record.Amount = CurRowProducts.Amount;
-	EndDo;
-
-	For Each CurRowServices In Services Do
-		Record = RegisterRecords.Sales.Add();
-		Record.Period = Date;
-		Record.Product = CurRowServices.Service;
-		Record.Customer = Customer;
-		Record.Amount = CurRowServices.Amount;
-	EndDo;
-	
-EndProcedure
-
-Procedure FillCheckProcessing(Cancel, CheckedAttributes)
-
-	If Products.Count() > 0 Then
-		DeleteAttributeFromChecking(CheckedAttributes, "Services");
-	ElsIf Services.Count() > 0 Then	
-		DeleteAttributeFromChecking(CheckedAttributes, "Products");
-	EndIf;
-
-	// Turn off checking by the platform
-	DeleteAttributeFromChecking(CheckedAttributes, "Products.Amount");
-	
-	Sales.CheckAmountOfProducts(Products, Cancel);
-	
-EndProcedure
-
-Procedure DeleteAttributeFromChecking(CheckedAttributes, AttributeToDelete)
-
-	IndexOfAttribute = CheckedAttributes.Find(AttributeToDelete);
-	If IndexOfAttribute <> Undefined Then
-	
-		CheckedAttributes.Delete(IndexOfAttribute);
-	
-	EndIf;
-
-EndProcedure
-
-Procedure Filling(FillingData, FillingText, StandardProcessing)
-	
-	Company 	= Constants.DefaultCompany.Get();
-	BankAccount = Constants.DefaultBankAccount.Get();
-	
-	If TypeOf(FillingData) = Type("Structure") Then
+	DiscountPercent = Contract.Discount;
+	RequiredSalesAmount = Contract.RequiredSalesAmount;
+	If RequiredSalesAmount > 0 Then
 		
-		If FillingData.Property("Products") Then
-			
-			FillProductAndServices(FillingData.Products);
-			
+		Query = New Query;
+		Query.Text =
+		"SELECT
+		|	1 AS Check
+		|FROM
+		|	AccumulationRegister.Sales.Turnovers(&BeginOfPeriod, &EndOfPeriod, Month, Customer = &Customer) AS SalesTurnovers
+		|WHERE
+		|	SalesTurnovers.AmountTurnover >= &RequiredAmount";
+		
+		PreviousMonth = AddMonth(Date, -1);
+		
+		Query.SetParameter("BeginOfPeriod", BegOfMonth(PreviousMonth));
+		Query.SetParameter("EndOfPeriod", EndOfMonth(PreviousMonth));
+		Query.SetParameter("Customer", Customer);
+		Query.SetParameter("RequiredAmount", RequiredSalesAmount);
+		
+		QueryResult = Query.Execute();
+		If QueryResult.IsEmpty() Then
+			Discount = 0;
+		Else
+			Discount = DiscountPercent;
 		EndIf;
-	
+	Else
+		Discount = DiscountPercent;
 	EndIf;
 	
 EndProcedure
 
-Procedure FillProductAndServices(ProductsAndServices)
+Procedure BeforeWrite(Cancel, WriteMode, PostingMode)
 	
-	Query = New Query;
-	Query.Text = 
-	"SELECT
-	|	Products.Ref AS Product,
-	|	1 AS Quantity
-	|FROM
-	|	Catalog.Products AS Products
-	|WHERE
-	|	Products.Ref IN(&ProductsAndServices)
-	|	AND Products.Type = &Product
-	|;
-	|
-	|////////////////////////////////////////////////////////////////////////////////
-	|SELECT
-	|	Products.Ref AS Service,
-	|	1 AS Quantity
-	|FROM
-	|	Catalog.Products AS Products
-	|WHERE
-	|	Products.Ref IN(&ProductsAndServices)
-	|	AND Products.Type = &Service";
-	
-	Query.SetParameter("ProductsAndServices", 	ProductsAndServices);
-	Query.SetParameter("Product", 				Enums.ProductTypes.Product);
-	Query.SetParameter("Service", 				Enums.ProductTypes.Service);
-	
-	Results = Query.ExecuteBatch();
-	Products.Load(Results[0].Unload());
-	Services.Load(Results[1].Unload());
+	AdditionalProperties.Insert("PreviousState", Ref.State);
 	
 EndProcedure
+
+Procedure OnWrite(Cancel)
+	
+	PreviousState = AdditionalProperties.PreviousState;
+	If State <> PreviousState Then
+		NewRecord = InformationRegisters.SalesInvoiceStates.CreateRecordManager();
+		
+		NewRecord.Period = CurrentSessionDate();
+		NewRecord.SalesInvoice = Ref;
+		NewRecord.State = State;
+		
+		NewRecord.Write(True);
+	EndIf;
+	
+EndProcedure
+
+Procedure Posting(Cancel, Mode)
+	
+	If State <> Enums.SalesInvoiceStates.Planned Then
+	
+		RegisterRecords.Sales.Write = True;
+		For Each CurRowProducts In Products Do
+			Record = RegisterRecords.GoodsInWarehouses.Add();
+			Record.RecordType = AccumulationRecordType.Expense;
+			Record.Period = Date;
+			Record.Product = CurRowProducts.Product;
+			Record.Warehouse = Warehouse;
+			Record.Quantity = CurRowProducts.Quantity;
+			Record.Amount = CurRowProducts.Amount;
+			
+			Record = RegisterRecords.Sales.Add();
+			Record.Period = Date;
+			Record.Product = CurRowProducts.Product;
+			Record.Customer = Customer;
+			Record.Contract = Contract;
+			Record.Quantity = CurRowProducts.Quantity;
+			Record.Amount = CurRowProducts.Amount;
+		EndDo;
+		RegisterRecords.GoodsInWarehouses.Write();
+		
+		ProductsInDocuments.CheckGoodsInWarehouseBalance(
+			Products.UnloadColumn("Product"),
+			Warehouse,
+			PointInTime(),
+			Cancel
+		);
+		
+		For Each CurRowServices In Services Do
+			Record = RegisterRecords.Sales.Add();
+			Record.Period = Date;
+			Record.Product = CurRowServices.Product;
+			Record.Company = Company;
+			Record.Customer = Customer;
+			Record.Contract = Contract;
+			Record.Quantity = CurRowServices.Quantity;
+			Record.Amount = CurRowServices.Amount;
+		EndDo;
+		
+	EndIf;
+	
+EndProcedure
+
+
