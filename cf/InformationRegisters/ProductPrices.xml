@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<InformationRegister uuid="4e126979-5450-4f86-a9d8-2a32b2b51981">
+	<InformationRegister uuid="d7085490-8ce3-45d8-acc0-8404a898ba1c">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ProductPrices" category="Record">
-				<xr:TypeId>d37631a1-c641-409b-a88f-d791ba9b9990</xr:TypeId>
-				<xr:ValueId>40df369b-a873-4114-98b5-f6b5bf395028</xr:ValueId>
+				<xr:TypeId>fe00015f-4bb8-45f7-baf7-987ec4f8d47a</xr:TypeId>
+				<xr:ValueId>57440893-bca9-4c57-ab7a-acd3c230d710</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ProductPrices" category="Manager">
-				<xr:TypeId>c1d3a2cf-9b75-45c7-967d-a5a11b9ad8bd</xr:TypeId>
-				<xr:ValueId>50c52eb0-d1a3-48f7-bdaa-17498bb2346f</xr:ValueId>
+				<xr:TypeId>c2bd709d-67da-42f6-9e0e-3244c64bd960</xr:TypeId>
+				<xr:ValueId>fceb7cf8-57aa-4a7a-b9f0-220d48a49d3d</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ProductPrices" category="Selection">
-				<xr:TypeId>c96150d1-42e8-4299-b2aa-48ab876aa5d2</xr:TypeId>
-				<xr:ValueId>cd19eb3b-b824-4712-9b95-887d0db49936</xr:ValueId>
+				<xr:TypeId>93aa0292-68ce-42d4-b7e0-6f585b1a58ac</xr:TypeId>
+				<xr:ValueId>ad1e5da0-f61f-4e62-b905-4aabb8fcb223</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ProductPrices" category="List">
-				<xr:TypeId>7817c9ec-d5b3-4336-a951-517743970627</xr:TypeId>
-				<xr:ValueId>68664c75-fc7a-453f-ba61-3a6bb4412339</xr:ValueId>
+				<xr:TypeId>b61d6ab6-d6b0-4e96-b753-848ee2a670c0</xr:TypeId>
+				<xr:ValueId>747f2cb1-4b98-4841-95d3-83b20a6ada7b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ProductPrices" category="RecordSet">
-				<xr:TypeId>507b6550-1bbf-4e9e-842c-3ddec457cee2</xr:TypeId>
-				<xr:ValueId>42671190-ed44-47f6-8496-2524b6b48f00</xr:ValueId>
+				<xr:TypeId>58c1b6d4-66a3-4bb7-91a7-444aaf2c7170</xr:TypeId>
+				<xr:ValueId>161c1058-b47e-4795-bc27-b6ce7f8dccfc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ProductPrices" category="RecordKey">
-				<xr:TypeId>d4cda3bb-c34d-46a8-8456-1748bdf0000f</xr:TypeId>
-				<xr:ValueId>2a8acef3-279a-4533-97a7-2678e95fc390</xr:ValueId>
+				<xr:TypeId>166b6e70-0786-4354-ac7c-19989fd530aa</xr:TypeId>
+				<xr:ValueId>ddd3890e-f27e-49f8-a95b-ace57ad732b7</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ProductPrices" category="RecordManager">
-				<xr:TypeId>023cc4aa-34aa-419c-b9e6-977d59c795cf</xr:TypeId>
-				<xr:ValueId>52b03ace-2959-47d2-99ff-76e6bc6949b7</xr:ValueId>
+				<xr:TypeId>85681164-53ba-42a9-b442-2f4aeaa46a1f</xr:TypeId>
+				<xr:ValueId>42ca4810-9e3c-40fa-8be8-cdccf3689e7c</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -47,8 +47,8 @@
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
-			<WriteMode>RecorderSubordinate</WriteMode>
-			<MainFilterOnPeriod>false</MainFilterOnPeriod>
+			<WriteMode>Independent</WriteMode>
+			<MainFilterOnPeriod>true</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>DontUse</FullTextSearch>
@@ -64,7 +64,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="6d5d7223-6cb8-4a97-98d7-7755efd825e1">
+			<Resource uuid="e2161359-ed0c-48af-9e40-27c55908650e">
 				<Properties>
 					<Name>Price</Name>
 					<Synonym>
@@ -77,7 +77,7 @@
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
+							<v8:Digits>15</v8:Digits>
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
@@ -108,7 +108,50 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="47b20bda-bffa-4b7c-8580-92b4d7a7d33a">
+			<Dimension uuid="923b7b67-9c8e-4980-aef2-525070efdff9">
+				<Properties>
+					<Name>PriceType</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price type</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.PriceTypes</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>true</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="6b5a5926-7a6a-4293-bab0-a6b03874a5cf">
 				<Properties>
 					<Name>Product</Name>
 					<Synonym>
