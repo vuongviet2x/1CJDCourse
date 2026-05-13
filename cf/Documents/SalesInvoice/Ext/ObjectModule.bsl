@@ -1,68 +1,105 @@
 ﻿
-Procedure FillDiscount() Export
+Procedure FillMainContract() Export
 
-	DiscountPercent = Contract.Discount;
-	RequiredSalesAmount = Contract.RequiredSalesAmount;
-	If RequiredSalesAmount > 0 Then
-		
-		Query = New Query;
-		Query.Text =
-		"SELECT
-		|	1 AS Check
-		|FROM
-		|	AccumulationRegister.Sales.Turnovers(&BeginOfPeriod, &EndOfPeriod, Month, Customer = &Customer) AS SalesTurnovers
-		|WHERE
-		|	SalesTurnovers.AmountTurnover >= &RequierdAmount";
-		
-		PreviousMonth = AddMonth(Date, -1);
-		
-		Query.SetParameter("BeginOfPeriod", BegOfMonth(PreviousMonth));
-		Query.SetParameter("EndOfPeriod", EndOfMonth(PreviousMonth));
-		Query.SetParameter("Customer", Customer);
-		Query.SetParameter("RequierdAmount", RequiredSalesAmount);
-		
-		QueryResult = Query.Execute();
-		If QueryResult.IsEmpty() Then
-			Discount = 0;
-		Else
-			Discount = DiscountPercent;
-		EndIf;
-	Else
-		Discount = DiscountPercent;
+	If ValueIsFilled(Customer) Then
+		Contract = Customer.MainContract;
+	Else	
+		Contract = Undefined;
 	EndIf;
 	
 EndProcedure
 
-Procedure Posting(Cancel, Mode)
+Procedure Posting(Cancel, PostingMode)
 
 	RegisterRecords.GoodsInWarehouses.Write = True;
 	RegisterRecords.Sales.Write = True;
+	
 	For Each CurRowProducts In Products Do
 		Record = RegisterRecords.GoodsInWarehouses.Add();
-		Record.RecordType = AccumulationRecordType.Expense;
+		Record.RecordType = AccumulationRecordType.Receipt;
 		Record.Period = Date;
 		Record.Product = CurRowProducts.Product;
 		Record.Warehouse = Warehouse;
 		Record.Quantity = CurRowProducts.Quantity;
 		Record.Amount = CurRowProducts.Amount;
-		
+
 		Record = RegisterRecords.Sales.Add();
 		Record.Period = Date;
 		Record.Product = CurRowProducts.Product;
 		Record.Customer = Customer;
-		Record.Contract = Contract;
-		Record.Quantity = CurRowProducts.Quantity;
 		Record.Amount = CurRowProducts.Amount;
 	EndDo;
 
 	For Each CurRowServices In Services Do
 		Record = RegisterRecords.Sales.Add();
 		Record.Period = Date;
-		Record.Product = CurRowServices.Product;
+		Record.Product = CurRowServices.Service;
 		Record.Customer = Customer;
-		Record.Contract = Contract;
-		Record.Quantity = CurRowServices.Quantity;
 		Record.Amount = CurRowServices.Amount;
 	EndDo;
+	
+EndProcedure
+
+Procedure FillCheckProcessing(Cancel, CheckedAttributes)
+
+	If Products.Count() > 0 Then
+		DeleteAttributeFromChecking(CheckedAttributes, "Services");
+	ElsIf Services.Count() > 0 Then	
+		DeleteAttributeFromChecking(CheckedAttributes, "Products");
+	EndIf;
+
+	// Turn off checking by the platform
+	DeleteAttributeFromChecking(CheckedAttributes, "Products.Amount");
+	
+	Query = New Query;
+	Query.Text = 
+	"SELECT
+	|	Products.LineNumber AS LineNumber,
+	|	Products.Product AS Product,
+	|	Products.Amount AS Amount
+	|INTO TempTableProducts
+	|FROM
+	|	&Products AS Products
+	|;
+	|
+	|////////////////////////////////////////////////////////////////////////////////
+	|SELECT
+	|	TempTableProducts.LineNumber AS LineNumber,
+	|	TempTableProducts.Product AS Product,
+	|	TempTableProducts.Amount AS Amount
+	|FROM
+	|	TempTableProducts AS TempTableProducts
+	|		INNER JOIN Catalog.Products AS Products
+	|		ON TempTableProducts.Product = Products.Ref
+	|WHERE
+	|	NOT Products.Promotional
+	|	AND TempTableProducts.Amount = 0";
+	
+	Query.SetParameter("Products", Products);
+	
+	// Execute query and select data from the query result
+	Selection = Query.Execute().Select();
+	While Selection.Next() Do
+		
+		MessageText = StrTemplate(
+			"The ""Amount"" is required on line %1 of the ""Products"" list.",
+			Selection.LineNumber
+		);
+		Message(MessageText);
+		Cancel = True;
+		
+	EndDo;
+	
+EndProcedure
+
+Procedure DeleteAttributeFromChecking(CheckedAttributes, AttributeToDelete)
+
+	IndexOfAttribute = CheckedAttributes.Find(AttributeToDelete);
+	If IndexOfAttribute <> Undefined Then
+	
+		CheckedAttributes.Delete(IndexOfAttribute);
+	
+	EndIf;
 
 EndProcedure
+
