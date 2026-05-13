@@ -1,109 +1,152 @@
 ﻿
 &AtServer
 Procedure OnCreateAtServer(Cancel, StandardProcessing)
-
-	SetFunctionalOptionParameters();
 	
-EndProcedure
-
-&AtClient
-Procedure CompanyOnChange(Item)
+	Items.ProductsBatch.Visible = Constants.WriteOffOrder.Get() = Enums.WriteOffMethods.Manually;
 	
-	OnCompanyChangeAtServer();
-	
-EndProcedure
-
-&AtServer
-Procedure OnCompanyChangeAtServer()
-
-	SetFunctionalOptionParameters();
-
-EndProcedure
-
-&AtClient
-Procedure CustomerOnChange(Item)
-	
-	FillMainContractAtServer();
-
-EndProcedure
-
-&AtServer
-Procedure FillMainContractAtServer()
-
-	DocumentObject = FormAttributeToValue("Object");
-	DocumentObject.FillMainContract();
-	
-	ValueToFormAttribute(DocumentObject, "Object");
-
 EndProcedure
 
 &AtClient
 Procedure ProductsQuantityOnChange(Item)
 	
-	FillAmountInProductsRow();
-
-	OnProductOrQuantityChangeAtServer();
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
 	
 EndProcedure
 
 &AtClient
-Procedure ProductsPriceOnChange(Item)
-	FillAmountInProductsRow();
+Procedure ServicesQuantityOnChange(Item)
+
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Services.CurrentData, Object.Discount);
+
 EndProcedure
 
 &AtClient
-Procedure FillAmountInProductsRow()
+Procedure ProductsOnChange(Item)
 
-	CurrentData = Items.Products.CurrentData;
-	If CurrentData = Undefined Then
-		Return;
-	EndIf;
+	RecalculateDocumentTotalAtServer();
 	
-	CurrentData.Amount = CurrentData.Price * CurrentData.Quantity;
+EndProcedure
+
+&AtClient
+Procedure ServicesOnChange(Item)
+
+	RecalculateDocumentTotalAtServer();
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsProductOnChange(Item)
-		
-	OnProductOrQuantityChangeAtServer();
 	
+	OnChangeProduct(Items.Products.CurrentData);
+
 EndProcedure
 
-&AtServer
-Procedure OnProductOrQuantityChangeAtServer()
+&AtClient
+Procedure ServicesProductOnChange(Item)
+	
+	OnChangeProduct(Items.Services.CurrentData);
 
-	CalculateWeightAtServer();
-		
 EndProcedure
 
-&AtServer
-Procedure CalculateWeightAtServer()
+&AtClient
+Procedure ControlMinimumSalesPrice(CurrentData)
 
-	TotalWeight = 0;
-	For Each ProductsRow In Object.Products Do
+	If CurrentData = Undefined Then
+		Return;
+	EndIf;
 	
-		TotalWeight = TotalWeight + WeightOfProduct(ProductsRow.Product) * ProductsRow.Quantity;
-	
-	EndDo;
+	MinimumPrice = MinimumSalePriceOfProduct(CurrentData.Product);
+	If CurrentData.Price < MinimumPrice Then
+		
+		CurrentData.Price = MinimumPrice;
+		Message("Minimum sale price for " + CurrentData.Product + " is " + MinimumPrice);
+		
+	EndIf;
 
 EndProcedure
 
 &AtServerNoContext
-Function WeightOfProduct(Product)
-
-	Return Product.Weight;
-
+Function MinimumSalePriceOfProduct(Product)
+	
+	Return Product.MinimumSalePrice;
+	
 EndFunction
 
 &AtClient
+Procedure DateOnChange(Item)
+	
+	CheckContractValidity();
+
+EndProcedure
+
+&AtClient
+Procedure ContractOnChange(Item)
+	
+	OnChangeContractAtServer();
+
+	CheckContractValidity();
+	
+EndProcedure
+
+&AtClient
+Procedure CheckContractValidity()
+
+	ContractValidUntil = ContractValidUntil(Object.Contract);
+	
+	If ValueIsFilled(ContractValidUntil) And ContractValidUntil < BegOfDay(Object.Date) Then
+		Message("This contract is invalid on " + Format(Object.Date, "DLF=D"));
+	EndIf;
+
+EndProcedure
+
+&AtServerNoContext
+Function ContractValidUntil(Contract)
+
+	Return Contract.ValidUntil;
+
+EndFunction
+
+&AtServer
+Procedure OnChangeContractAtServer()
+
+	DocumentObject = FormAttributeToValue("Object");
+	DocumentObject.FillDiscount();
+	
+	ValueToFormAttribute(DocumentObject, "Object");
+	
+	RecalculateDocumentTotalAtServer();
+
+EndProcedure
+
+&AtServer
+Procedure RecalculateDocumentTotalAtServer()
+
+	DocumentTotal = 0;
+	For Each ProductsRow In Object.Products Do
+	
+		ProductsInDocumentsClientServer.CalculateAmountAtRow(ProductsRow, Object.Discount);	
+		DocumentTotal = DocumentTotal + ProductsRow.Amount;
+	
+	EndDo;
+	For Each ServicesRow In Object.Services Do
+	
+		ProductsInDocumentsClientServer.CalculateAmountAtRow(ServicesRow, Object.Discount);	
+		DocumentTotal = DocumentTotal + ServicesRow.Amount;
+	
+	EndDo;
+	
+	Object.DocumentTotal = DocumentTotal;
+	
+EndProcedure
+
+&AtClient
 Procedure PickProducts(Command)
-	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductTypes.Product"));
+	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductsTypes.InventoryItem"));
 EndProcedure
 
 &AtClient
 Procedure PickServices(Command)
-	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductTypes.Service"));
+	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductsTypes.Service"));
 EndProcedure
 
 &AtClient
@@ -111,7 +154,7 @@ Procedure PickProductsToTable(TableItem, ProductType)
 
 	OpenForm(
 		"Catalog.Products.ChoiceForm",
-		New Structure("MultipleChoice, CloseOnChoise, Filter", False, False, New Structure("Type", ProductType)),
+		New Structure("MultipleChoice, CloseOnChoice, Filter", False, False, New Structure("ProductType", ProductType)),
 		TableItem
 	);
 
@@ -125,7 +168,9 @@ Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Products.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
-	EndIf;
+
+		OnChangeProduct(NewRow);
+	EndIf;	
 	
 EndProcedure
 
@@ -137,17 +182,86 @@ Procedure ServicesChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Services.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
+
+		OnChangeProduct(NewRow);
+	EndIf;	
+	
+EndProcedure
+
+&AtClient
+Procedure OnChangeProduct(CurrentData)
+
+	CurrentData.Price = ProductsInDocumentsServerCall.ProductPrice(CurrentData.Product, Object.Date);
+	ControlMinimumSalesPrice(CurrentData);
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(CurrentData, Object.Discount);
+
+EndProcedure
+
+&AtClient
+Procedure ProductsBatchStartChoice(Item, ChoiceData, StandardProcessing)
+	
+	//StandardProcessing = False;
+
+	//CurrentData = Items.Products.CurrentData;
+	//If CurrentData = Undefined Or Not ValueIsFilled(CurrentData.Product) Then
+	//
+	//	Message("You should select a product to start batch choice");
+	//	Return;
+	//	
+	//EndIf;	
+	//
+	//OpenFormParameters = New Structure;
+	//OpenFormParameters.Insert("Date", Object.Date);
+	//OpenFormParameters.Insert("Product", CurrentData.Product);
+	//OpenFormParameters.Insert("Warehouse", Object.Warehouse);
+	//OpenFormParameters.Insert("ChoiceMode", True);
+	//
+	//OpenForm(
+	//	"Document.PurchaseInvoice.Form.BatchChoiceForm",
+	//	OpenFormParameters,
+	//	Items.ProductsBatch,,,,,
+	//	FormWindowOpeningMode.LockOwnerWindow
+	//);
+	
+EndProcedure
+
+
+&AtClient
+Procedure PickBatch(Command)
+
+	CurrentData = Items.Products.CurrentData;
+	If CurrentData = Undefined Or Not ValueIsFilled(CurrentData.Product) Then
+	
+		Message("You should select a product to start batch choice");
+		Return;
+		
+	EndIf;	
+	
+	OpenFormParameters = New Structure;
+	OpenFormParameters.Insert("Date", Object.Date);
+	OpenFormParameters.Insert("Product", CurrentData.Product);
+	OpenFormParameters.Insert("Warehouse", Object.Warehouse);
+	OpenFormParameters.Insert("ChoiceMode", True);
+	
+	OpenForm(
+		"Document.PurchaseInvoice.Form.BatchChoiceForm",
+		OpenFormParameters,
+		Items.ProductsBatch,,,,
+		New CallbackDescription("PickBatchOnSelection", ThisObject),
+		FormWindowOpeningMode.LockOwnerWindow
+	);
+	
+EndProcedure
+
+&AtClient
+Procedure PickBatchOnSelection(Result, AdditionalParameters) Export
+
+	CurrentData = Items.Products.CurrentData;
+	If CurrentData = Undefined Or Result = Undefined Then
+		Return;
 	EndIf;
 	
-EndProcedure
-
-
-
-&AtServer
-Procedure SetFunctionalOptionParameters()
-	
-	FunctionalOptionParatemets = New Structure("Company", Object.Company);
-	
-	SetFormFunctionalOptionParameters(FunctionalOptionParatemets);
+	CurrentData.Batch = Result;
 	
 EndProcedure
+

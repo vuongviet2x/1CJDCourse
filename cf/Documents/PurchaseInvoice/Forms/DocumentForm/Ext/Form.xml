@@ -1,33 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<CommandSet>
-		<ExcludedCommand>Delete</ExcludedCommand>
-		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
-	</CommandSet>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
-	<Events>
-		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
-	</Events>
 	<ChildItems>
-		<UsualGroup name="GroupHeader" id="46">
+		<UsualGroup name="GroupHeader" id="78">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="GroupHeaderExtendedTooltip" id="47"/>
+			<ExtendedTooltip name="GroupHeaderExtendedTooltip" id="79"/>
 			<ChildItems>
-				<UsualGroup name="GroupLeft" id="48">
+				<UsualGroup name="GroupLeft" id="85">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="GroupLeftExtendedTooltip" id="49"/>
+					<ExtendedTooltip name="GroupLeftExtendedTooltip" id="86"/>
 					<ChildItems>
-						<UsualGroup name="GroupNumberDate" id="44">
+						<UsualGroup name="GroupNumberDate" id="80">
+							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="45"/>
+							<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="81"/>
 							<ChildItems>
 								<InputField name="Number" id="1">
 									<DataPath>Object.Number</DataPath>
@@ -38,222 +32,266 @@
 								<InputField name="Date" id="4">
 									<DataPath>Object.Date</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="DateContextMenu" id="5"/>
 									<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Company" id="7">
+						<InputField name="Company" id="93">
 							<DataPath>Object.Company</DataPath>
-							<EditMode>EnterOnInput</EditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>32</MaxWidth>
-							<ContextMenu name="CompanyContextMenu" id="8"/>
-							<ExtendedTooltip name="CompanyExtendedTooltip" id="9"/>
+							<ContextMenu name="CompanyContextMenu" id="94"/>
+							<ExtendedTooltip name="CompanyExtendedTooltip" id="95"/>
 						</InputField>
-						<InputField name="Warehouse" id="125">
+						<InputField name="Warehouse" id="82">
 							<DataPath>Object.Warehouse</DataPath>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>32</MaxWidth>
-							<ContextMenu name="WarehouseContextMenu" id="126"/>
-							<ExtendedTooltip name="WarehouseExtendedTooltip" id="127"/>
+							<ContextMenu name="WarehouseContextMenu" id="83"/>
+							<ExtendedTooltip name="WarehouseExtendedTooltip" id="84"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="GroupRight" id="50">
+				<UsualGroup name="GroupRight" id="87">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="GroupRightExtendedTooltip" id="51"/>
+					<ExtendedTooltip name="GroupRightExtendedTooltip" id="88"/>
 					<ChildItems>
-						<InputField name="Customer" id="10">
+						<InputField name="Vendor" id="7">
 							<DataPath>Object.Vendor</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>30</MaxWidth>
-							<ContextMenu name="CustomerContextMenu" id="11"/>
-							<ExtendedTooltip name="CustomerExtendedTooltip" id="12"/>
-							<Events>
-								<Event name="OnChange">CustomerOnChange</Event>
-							</Events>
+							<ContextMenu name="VendorContextMenu" id="8"/>
+							<ExtendedTooltip name="VendorExtendedTooltip" id="9"/>
 						</InputField>
-						<InputField name="Contract" id="13">
+						<InputField name="Contract" id="10">
 							<DataPath>Object.Contract</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>30</MaxWidth>
-							<ChoiceParameterLinks>
-								<xr:Link>
-									<xr:Name>Filter.Owner</xr:Name>
-									<xr:DataPath xsi:type="xs:string">Object.Vendor</xr:DataPath>
-									<xr:ValueChange>Clear</xr:ValueChange>
-								</xr:Link>
-							</ChoiceParameterLinks>
-							<ContextMenu name="ContractContextMenu" id="14"/>
-							<ExtendedTooltip name="ContractExtendedTooltip" id="15"/>
+							<ContextMenu name="ContractContextMenu" id="11"/>
+							<ExtendedTooltip name="ContractExtendedTooltip" id="12"/>
+						</InputField>
+						<InputField name="BankAccount" id="99">
+							<DataPath>Object.BankAccount</DataPath>
+							<ContextMenu name="BankAccountContextMenu" id="100"/>
+							<ExtendedTooltip name="BankAccountExtendedTooltip" id="101"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="GroupDelivery" id="114">
+		<Pages name="Pages" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Delivery</v8:content>
+					<v8:content>Pages</v8:content>
 				</v8:item>
 			</Title>
-			<Behavior>Collapsible</Behavior>
-			<CollapsedRepresentationTitle>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Delivery (click to expand)</v8:content>
-				</v8:item>
-			</CollapsedRepresentationTitle>
-			<Collapsed>true</Collapsed>
-			<ControlRepresentation>Picture</ControlRepresentation>
-			<Representation>None</Representation>
-			<ExtendedTooltip name="GroupDeliveryExtendedTooltip" id="115"/>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="17"/>
 			<ChildItems>
-				<InputField name="Carrier" id="116">
-					<DataPath>1/0:25a4de2b-5fab-406a-9db8-557f44ef4ad3</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>35</MaxWidth>
-					<ContextMenu name="CarrierContextMenu" id="117"/>
-					<ExtendedTooltip name="CarrierExtendedTooltip" id="118"/>
-				</InputField>
-				<InputField name="DeliveryDate" id="119">
-					<DataPath>1/0:855983fb-75bb-491b-bb2f-e45c4bec62b7</DataPath>
-					<ContextMenu name="DeliveryDateContextMenu" id="120"/>
-					<ExtendedTooltip name="DeliveryDateExtendedTooltip" id="121"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="GroupProducts" id="82">
-			<Title>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Products</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Group products</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<ExtendedTooltip name="GroupProductsExtendedTooltip" id="83"/>
-			<ChildItems>
-				<Table name="Products" id="16">
-					<Representation>List</Representation>
-					<Footer>true</Footer>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Object.Products</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ProductsContextMenu" id="17"/>
-					<AutoCommandBar name="ProductsCommandBar" id="18">
-						<ChildItems>
-							<Button name="ProductsPick" id="52">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.Pick</CommandName>
-								<ExtendedTooltip name="ProductsPickExtendedTooltip" id="53"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ProductsExtendedTooltip" id="19"/>
-					<SearchStringAddition name="ProductsSearchString" id="20">
-						<AdditionSource>
-							<Item>Products</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ProductsSearchStringContextMenu" id="21"/>
-						<ExtendedTooltip name="ProductsSearchStringExtendedTooltip" id="22"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ProductsViewStatus" id="23">
-						<AdditionSource>
-							<Item>Products</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ProductsViewStatusContextMenu" id="24"/>
-						<ExtendedTooltip name="ProductsViewStatusExtendedTooltip" id="25"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ProductsSearchControl" id="26">
-						<AdditionSource>
-							<Item>Products</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ProductsSearchControlContextMenu" id="27"/>
-						<ExtendedTooltip name="ProductsSearchControlExtendedTooltip" id="28"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="ChoiceProcessing">ProductsChoiceProcessing</Event>
-					</Events>
+				<Page name="GroupProducts" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Products</v8:content>
+						</v8:item>
+					</Title>
+					<TitleDataPath>Object.Products.RowsCount</TitleDataPath>
+					<ExtendedTooltip name="GroupProductsExtendedTooltip" id="19"/>
 					<ChildItems>
-						<LabelField name="ProductsLineNumber" id="29">
-							<DataPath>Object.Products.LineNumber</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ProductsLineNumberContextMenu" id="30"/>
-							<ExtendedTooltip name="ProductsLineNumberExtendedTooltip" id="31"/>
-						</LabelField>
-						<InputField name="ProductsProduct" id="32">
-							<DataPath>Object.Products.Product</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ProductsProductContextMenu" id="33"/>
-							<ExtendedTooltip name="ProductsProductExtendedTooltip" id="34"/>
+						<Table name="Products" id="20">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Products</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ProductsContextMenu" id="21"/>
+							<AutoCommandBar name="ProductsCommandBar" id="22">
+								<ChildItems>
+									<Button name="ProductsPickProducts" id="89">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.PickProducts</CommandName>
+										<ExtendedTooltip name="ProductsPickProductsExtendedTooltip" id="90"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ProductsExtendedTooltip" id="23"/>
+							<SearchStringAddition name="ProductsSearchString" id="24">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsSearchStringContextMenu" id="25"/>
+								<ExtendedTooltip name="ProductsSearchStringExtendedTooltip" id="26"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ProductsViewStatus" id="27">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsViewStatusContextMenu" id="28"/>
+								<ExtendedTooltip name="ProductsViewStatusExtendedTooltip" id="29"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ProductsSearchControl" id="30">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsSearchControlContextMenu" id="31"/>
+								<ExtendedTooltip name="ProductsSearchControlExtendedTooltip" id="32"/>
+							</SearchControlAddition>
 							<Events>
-								<Event name="OnChange">ProductsProductOnChange</Event>
+								<Event name="ChoiceProcessing">ProductsChoiceProcessing</Event>
+								<Event name="OnChange">ProductsOnChange</Event>
 							</Events>
-						</InputField>
-						<InputField name="ProductsQuantity" id="35">
-							<DataPath>Object.Products.Quantity</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterDataPath>Object.Products.TotalQuantity</FooterDataPath>
-							<ContextMenu name="ProductsQuantityContextMenu" id="36"/>
-							<ExtendedTooltip name="ProductsQuantityExtendedTooltip" id="37"/>
-							<Events>
-								<Event name="OnChange">ProductsQuantityOnChange</Event>
-							</Events>
-						</InputField>
-						<InputField name="ProductsPrice" id="38">
-							<DataPath>Object.Products.Price</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ProductsPriceContextMenu" id="39"/>
-							<ExtendedTooltip name="ProductsPriceExtendedTooltip" id="40"/>
-							<Events>
-								<Event name="OnChange">ProductsPriceOnChange</Event>
-							</Events>
-						</InputField>
-						<InputField name="ProductsAmount" id="41">
-							<DataPath>Object.Products.Amount</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ProductsAmountContextMenu" id="42"/>
-							<ExtendedTooltip name="ProductsAmountExtendedTooltip" id="43"/>
-						</InputField>
+							<ChildItems>
+								<LabelField name="ProductsLineNumber" id="33">
+									<DataPath>Object.Products.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsLineNumberContextMenu" id="34"/>
+									<ExtendedTooltip name="ProductsLineNumberExtendedTooltip" id="35"/>
+								</LabelField>
+								<InputField name="ProductsProduct" id="36">
+									<DataPath>Object.Products.Product</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsProductContextMenu" id="37"/>
+									<ExtendedTooltip name="ProductsProductExtendedTooltip" id="38"/>
+								</InputField>
+								<InputField name="ProductsQuantity" id="39">
+									<DataPath>Object.Products.Quantity</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsQuantityContextMenu" id="40"/>
+									<ExtendedTooltip name="ProductsQuantityExtendedTooltip" id="41"/>
+									<Events>
+										<Event name="OnChange">ProductsQuantityOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ProductsPrice" id="42">
+									<DataPath>Object.Products.Price</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsPriceContextMenu" id="43"/>
+									<ExtendedTooltip name="ProductsPriceExtendedTooltip" id="44"/>
+									<Events>
+										<Event name="OnChange">ProductsPriceOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ProductsAmount" id="45">
+									<DataPath>Object.Products.Amount</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsAmountContextMenu" id="46"/>
+									<ExtendedTooltip name="ProductsAmountExtendedTooltip" id="47"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</Table>
+				</Page>
+				<Page name="GroupServices" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Services</v8:content>
+						</v8:item>
+					</Title>
+					<TitleDataPath>Object.Services.RowsCount</TitleDataPath>
+					<ExtendedTooltip name="GroupServicesExtendedTooltip" id="49"/>
+					<ChildItems>
+						<Table name="Services" id="50">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Services</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ServicesContextMenu" id="51"/>
+							<AutoCommandBar name="ServicesCommandBar" id="52">
+								<ChildItems>
+									<Button name="ServicesPickServices" id="91">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.PickServices</CommandName>
+										<ExtendedTooltip name="ServicesPickServicesExtendedTooltip" id="92"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ServicesExtendedTooltip" id="53"/>
+							<SearchStringAddition name="ServicesSearchString" id="54">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesSearchStringContextMenu" id="55"/>
+								<ExtendedTooltip name="ServicesSearchStringExtendedTooltip" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ServicesViewStatus" id="57">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesViewStatusContextMenu" id="58"/>
+								<ExtendedTooltip name="ServicesViewStatusExtendedTooltip" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ServicesSearchControl" id="60">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesSearchControlContextMenu" id="61"/>
+								<ExtendedTooltip name="ServicesSearchControlExtendedTooltip" id="62"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ChoiceProcessing">ServicesChoiceProcessing</Event>
+								<Event name="OnChange">ServicesOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ServicesLineNumber" id="63">
+									<DataPath>Object.Services.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesLineNumberContextMenu" id="64"/>
+									<ExtendedTooltip name="ServicesLineNumberExtendedTooltip" id="65"/>
+								</LabelField>
+								<InputField name="ServicesProduct" id="66">
+									<DataPath>Object.Services.Product</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesProductContextMenu" id="67"/>
+									<ExtendedTooltip name="ServicesProductExtendedTooltip" id="68"/>
+								</InputField>
+								<InputField name="ServicesQuantity" id="69">
+									<DataPath>Object.Services.Quantity</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesQuantityContextMenu" id="70"/>
+									<ExtendedTooltip name="ServicesQuantityExtendedTooltip" id="71"/>
+									<Events>
+										<Event name="OnChange">ServicesQuantityOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ServicesPrice" id="72">
+									<DataPath>Object.Services.Price</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesPriceContextMenu" id="73"/>
+									<ExtendedTooltip name="ServicesPriceExtendedTooltip" id="74"/>
+									<Events>
+										<Event name="OnChange">ServicesPriceOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ServicesAmount" id="75">
+									<DataPath>Object.Services.Amount</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesAmountContextMenu" id="76"/>
+									<ExtendedTooltip name="ServicesAmountExtendedTooltip" id="77"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Footer" id="63">
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="FooterExtendedTooltip" id="64"/>
-			<ChildItems>
-				<InputField name="TotalAmount" id="60">
-					<DataPath>Object.Products.TotalAmount</DataPath>
-					<ContextMenu name="TotalAmountContextMenu" id="61"/>
-					<ExtendedTooltip name="TotalAmountExtendedTooltip" id="62"/>
-				</InputField>
-				<InputField name="Responsible" id="122">
-					<DataPath>Object.Responsible</DataPath>
-					<ContextMenu name="ResponsibleContextMenu" id="123"/>
-					<ExtendedTooltip name="ResponsibleExtendedTooltip" id="124"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
+		</Pages>
+		<LabelField name="DocumentTotal" id="13">
+			<DataPath>Object.DocumentTotal</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DocumentTotalContextMenu" id="14"/>
+			<ExtendedTooltip name="DocumentTotalExtendedTooltip" id="15"/>
+		</LabelField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Object" id="1">
@@ -265,57 +303,10 @@
 			<UseAlways>
 				<Field>Object.RegisterRecords</Field>
 			</UseAlways>
-			<Columns>
-				<AdditionalColumns table="Object.Products"/>
-			</Columns>
 		</Attribute>
-		<Attribute name="DiscountsCalculated" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Discounts calculated</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="CardOfDocument" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Card of document</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
-			</Type>
-		</Attribute>
-		<ConditionalAppearance>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>Products</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Object.Products.Amount</dcsset:left>
-						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:decimal">1000000</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>TextColor</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#4BB859</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
-		<Command name="Pick" id="1">
+		<Command name="PickProducts" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -325,20 +316,25 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Pick</v8:content>
+					<v8:content>Pick products</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Pick</Action>
-			<ModifiesSavedData>true</ModifiesSavedData>
+			<Action>PickProducts</Action>
+		</Command>
+		<Command name="PickServices" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pick</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pick services</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PickServices</Action>
 		</Command>
 	</Commands>
-	<CommandInterface>
-		<NavigationPanel>
-			<Item>
-				<Command>AccumulationRegister.GoodsInWarehouses.StandardCommand.OpenByRecorder</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-			</Item>
-		</NavigationPanel>
-	</CommandInterface>
 </Form>
