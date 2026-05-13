@@ -21,6 +21,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ProductsTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.TestCollections</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.FormForDebugTest</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Companies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.GoodsSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.AdditionalAttributesAndProperties</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ObjectsCharacteristicValues</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ObjectsPropertiesValues</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.CharacteristicsObjectTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.CompanyPrefix</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseCharacteristics</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseCharacteristics</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ContolBalanceOfGoods</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.CompanyAccountingSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ApplicationSettings</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

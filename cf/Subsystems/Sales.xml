@@ -19,8 +19,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesInvoice</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Counterparties</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CounterpartyContracts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Sales</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ReturnOfGoodsFromCustomer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Banks</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.BankAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.SalesInvoiceStates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.SalesDocuments</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.SalesByCustomers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.SalesWithPriceDeviations</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>Prices</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

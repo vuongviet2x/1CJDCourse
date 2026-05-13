@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormFillBySalesDocument" id="104">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.FillBySalesDocument</CommandName>
+				<ExtendedTooltip name="FormFillBySalesDocumentExtendedTooltip" id="105"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Header" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="2"/>
+			<ChildItems>
+				<UsualGroup name="LeftColumn" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Left column</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="LeftColumnExtendedTooltip" id="4"/>
+					<ChildItems>
+						<UsualGroup name="GroupNumberDate" id="90">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="91"/>
+							<ChildItems>
+								<InputField name="Number" id="5">
+									<DataPath>Object.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="NumberContextMenu" id="6"/>
+									<ExtendedTooltip name="NumberExtendedTooltip" id="7"/>
+								</InputField>
+								<InputField name="Date" id="8">
+									<DataPath>Object.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DateContextMenu" id="9"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="10"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Company" id="95">
+							<DataPath>Object.Company</DataPath>
+							<ContextMenu name="CompanyContextMenu" id="96"/>
+							<ExtendedTooltip name="CompanyExtendedTooltip" id="97"/>
+						</InputField>
+						<InputField name="Warehouse" id="19">
+							<DataPath>Object.Warehouse</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="WarehouseContextMenu" id="20"/>
+							<ExtendedTooltip name="WarehouseExtendedTooltip" id="21"/>
+						</InputField>
+						<InputField name="BankAccount" id="98">
+							<DataPath>Object.BankAccount</DataPath>
+							<ContextMenu name="BankAccountContextMenu" id="99"/>
+							<ExtendedTooltip name="BankAccountExtendedTooltip" id="100"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="RightColumn" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right column</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="RightColumnExtendedTooltip" id="18"/>
+					<ChildItems>
+						<LabelField name="SalesDocument" id="22">
+							<DataPath>Object.SalesDocument</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="SalesDocumentContextMenu" id="23"/>
+							<ExtendedTooltip name="SalesDocumentExtendedTooltip" id="24"/>
+						</LabelField>
+						<InputField name="Customer" id="11">
+							<DataPath>Object.Customer</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CustomerContextMenu" id="12"/>
+							<ExtendedTooltip name="CustomerExtendedTooltip" id="13"/>
+						</InputField>
+						<InputField name="Contract" id="14">
+							<DataPath>Object.Contract</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ContractContextMenu" id="15"/>
+							<ExtendedTooltip name="ContractExtendedTooltip" id="16"/>
+						</InputField>
+						<InputField name="Discount" id="92">
+							<DataPath>Object.Discount</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="DiscountContextMenu" id="93"/>
+							<ExtendedTooltip name="DiscountExtendedTooltip" id="94"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Pages" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="29"/>
+			<ChildItems>
+				<Page name="GroupProducts" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Products</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupProductsExtendedTooltip" id="31"/>
+					<ChildItems>
+						<Table name="Products" id="32">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Products</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ProductsContextMenu" id="33"/>
+							<AutoCommandBar name="ProductsCommandBar" id="34"/>
+							<ExtendedTooltip name="ProductsExtendedTooltip" id="35"/>
+							<SearchStringAddition name="ProductsSearchString" id="36">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsSearchStringContextMenu" id="37"/>
+								<ExtendedTooltip name="ProductsSearchStringExtendedTooltip" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ProductsViewStatus" id="39">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsViewStatusContextMenu" id="40"/>
+								<ExtendedTooltip name="ProductsViewStatusExtendedTooltip" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ProductsSearchControl" id="42">
+								<AdditionSource>
+									<Item>Products</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsSearchControlContextMenu" id="43"/>
+								<ExtendedTooltip name="ProductsSearchControlExtendedTooltip" id="44"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ProductsBeforeAddRow</Event>
+								<Event name="OnChange">ProductsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ProductsLineNumber" id="45">
+									<DataPath>Object.Products.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsLineNumberContextMenu" id="46"/>
+									<ExtendedTooltip name="ProductsLineNumberExtendedTooltip" id="47"/>
+								</LabelField>
+								<InputField name="ProductsProduct" id="48">
+									<DataPath>Object.Products.Product</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsProductContextMenu" id="49"/>
+									<ExtendedTooltip name="ProductsProductExtendedTooltip" id="50"/>
+								</InputField>
+								<InputField name="ProductsQuantity" id="51">
+									<DataPath>Object.Products.Quantity</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsQuantityContextMenu" id="52"/>
+									<ExtendedTooltip name="ProductsQuantityExtendedTooltip" id="53"/>
+									<Events>
+										<Event name="OnChange">ProductsQuantityOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ProductsPrice" id="54">
+									<DataPath>Object.Products.Price</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsPriceContextMenu" id="55"/>
+									<ExtendedTooltip name="ProductsPriceExtendedTooltip" id="56"/>
+								</InputField>
+								<InputField name="ProductsAmount" id="57">
+									<DataPath>Object.Products.Amount</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProductsAmountContextMenu" id="58"/>
+									<ExtendedTooltip name="ProductsAmountExtendedTooltip" id="59"/>
+								</InputField>
+								<InputField name="ProductsBatch" id="101">
+									<DataPath>Object.Products.Batch</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ProductsBatchContextMenu" id="102"/>
+									<ExtendedTooltip name="ProductsBatchExtendedTooltip" id="103"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupServices" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Services</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupServicesExtendedTooltip" id="61"/>
+					<ChildItems>
+						<Table name="Services" id="62">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Services</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ServicesContextMenu" id="63"/>
+							<AutoCommandBar name="ServicesCommandBar" id="64"/>
+							<ExtendedTooltip name="ServicesExtendedTooltip" id="65"/>
+							<SearchStringAddition name="ServicesSearchString" id="66">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesSearchStringContextMenu" id="67"/>
+								<ExtendedTooltip name="ServicesSearchStringExtendedTooltip" id="68"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ServicesViewStatus" id="69">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesViewStatusContextMenu" id="70"/>
+								<ExtendedTooltip name="ServicesViewStatusExtendedTooltip" id="71"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ServicesSearchControl" id="72">
+								<AdditionSource>
+									<Item>Services</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ServicesSearchControlContextMenu" id="73"/>
+								<ExtendedTooltip name="ServicesSearchControlExtendedTooltip" id="74"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ServicesQuantityOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ServicesLineNumber" id="75">
+									<DataPath>Object.Services.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesLineNumberContextMenu" id="76"/>
+									<ExtendedTooltip name="ServicesLineNumberExtendedTooltip" id="77"/>
+								</LabelField>
+								<InputField name="ServicesProduct" id="78">
+									<DataPath>Object.Services.Product</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesProductContextMenu" id="79"/>
+									<ExtendedTooltip name="ServicesProductExtendedTooltip" id="80"/>
+								</InputField>
+								<InputField name="ServicesQuantity" id="81">
+									<DataPath>Object.Services.Quantity</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesQuantityContextMenu" id="82"/>
+									<ExtendedTooltip name="ServicesQuantityExtendedTooltip" id="83"/>
+									<Events>
+										<Event name="OnChange">ServicesQuantityOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ServicesPrice" id="84">
+									<DataPath>Object.Services.Price</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesPriceContextMenu" id="85"/>
+									<ExtendedTooltip name="ServicesPriceExtendedTooltip" id="86"/>
+								</InputField>
+								<InputField name="ServicesAmount" id="87">
+									<DataPath>Object.Services.Amount</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServicesAmountContextMenu" id="88"/>
+									<ExtendedTooltip name="ServicesAmountExtendedTooltip" id="89"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelField name="DocumentTotal" id="25">
+			<DataPath>Object.DocumentTotal</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DocumentTotalContextMenu" id="26"/>
+			<ExtendedTooltip name="DocumentTotalExtendedTooltip" id="27"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ReturnOfGoodsFromCustomer</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="FillBySalesDocument" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill by sales document</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill by sales document</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FillBySalesDocument</Action>
+		</Command>
+	</Commands>
+</Form>
