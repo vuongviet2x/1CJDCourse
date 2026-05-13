@@ -1,71 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<WorkingAreaTemplate>TwoColumnsVariableWidth</WorkingAreaTemplate>
+	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
 	<LeftColumn>
 		<Item>
-			<Form>Task.PerformerTask.Form.MyTasksForDesktop</Form>
+			<Form>CommonForm.WelcomeForm</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>DocumentJournal.Interactions.Form.ListForm</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>DataProcessor.AvailableQuestionnaires.Form.Form</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>CommonForm.DataSyncSettings</Form>
-			<Height>20</Height>
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>Catalog.Users.Form.ListForm</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>DataProcessor.ActiveUsers.Form.ActiveUsers</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Item>
 	</LeftColumn>
-	<RightColumn>
-		<Item>
-			<Form>DataProcessor.FullTextSearchInData.Form.Search</Form>
-			<Height>4</Height>
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>DataProcessor.ToDoList.Form.Form</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>Catalog.Notes.Form.MyNotes</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Item>
-	</RightColumn>
+	<RightColumn/>
 </HomePageWorkArea>

@@ -4,7 +4,26 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Configuration.StandardSubsystemsLibrary_Demo</name>
+		<name>Document.PersonnelChange</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.Configuration</name>
 		<right>
 			<name>Administration</name>
 			<value>true</value>
@@ -14,7 +33,35 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>UpdateDataBaseConfiguration</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ActiveUsers</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EventLog</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MobileClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ThickClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>CollaborationSystemInfoBaseRegistration</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -38,11 +85,11 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>AnalyticsSystemClient</name>
+			<name>ConfigurationExtensionsAdministration</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>ConfigurationExtensionsAdministration</name>
+			<name>Output</name>
 			<value>true</value>
 		</right>
 	</object>

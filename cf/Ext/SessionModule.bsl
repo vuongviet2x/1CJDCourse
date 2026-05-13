@@ -1,25 +1,12 @@
-﻿///////////////////////////////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2024, OOO 1C-Soft
-// All rights reserved. This software and the related materials 
-// are licensed under a Creative Commons Attribution 4.0 International license (CC BY 4.0).
-// To view the license terms, follow the link:
-// https://creativecommons.org/licenses/by/4.0/legalcode
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-
-#If Server Or ThickClientOrdinaryApplication Or ExternalConnection Then
-
-#Region EventHandlers
-
-Procedure SessionParametersSetting(SessionParametersNames)
+﻿
+Procedure SessionParametersSetting(RequiredParameters)
 	
-	// StandardSubsystems
-	StandardSubsystemsServer.SessionParametersSetting(SessionParametersNames);
-	// End StandardSubsystems
-	
+	CurrentSession = GetCurrentInfoBaseSession();
+	BackgroundJob = CurrentSession.GetBackgroundJob();
+	If BackgroundJob <> Undefined Then
+		// This session is started in a background job
+	Else
+		// This session is started not in a backgroung job
+	EndIf;
+
 EndProcedure
-
-#EndRegion
-
-#EndIf
