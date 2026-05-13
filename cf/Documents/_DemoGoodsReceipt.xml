@@ -1485,11 +1485,6 @@ information on a VAT rate. It is populated with the default value upon data sync
 				</ChildObjects>
 			</TabularSection>
 			<Template>ObjectTemplate</Template>
-			<Template>PF_MXL_GoodsReceipt</Template>
-			<Template>PF_MXL_WarehouseReceipt</Template>
-			<Template>PF_MXL_GoodsReceipt1</Template>
-			<Template>PF_MXL_GoodsReceipt2</Template>
-			<Template>PF_MXL_GoodsReceipt3</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

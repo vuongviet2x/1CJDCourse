@@ -37,10 +37,10 @@
 				<v8:Type>cfg:CatalogRef._DemoPartners</v8:Type>
 				<v8:Type>cfg:DocumentRef.SMSMessage</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoCompanies</v8:Type>
+				<v8:Type>cfg:CatalogRef._DemoStorageLocations</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoProjects</v8:Type>
 				<v8:Type>cfg:BusinessProcessRef._DemoJobWithRoleAddressing</v8:Type>
 				<v8:Type>cfg:CatalogRef.MetadataObjectIDs</v8:Type>
-				<v8:Type>cfg:DocumentRef.InventoryRecount</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

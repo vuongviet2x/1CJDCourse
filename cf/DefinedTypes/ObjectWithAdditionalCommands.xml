@@ -22,10 +22,10 @@
 			<Comment/>
 			<Type>
 				<v8:Type>cfg:DocumentRef._DemoCustomerProformaInvoice</v8:Type>
-				<v8:Type>cfg:DocumentRef._DemoInventoryTransfer</v8:Type>
 				<v8:Type>cfg:DocumentRef.Questionnaire</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoCounterparties</v8:Type>
 				<v8:Type>cfg:DocumentRef._DemoReceivedGoodsRecording</v8:Type>
+				<v8:Type>cfg:DocumentRef._DemoGoodsSales</v8:Type>
 				<v8:Type>cfg:DocumentRef._DemoGoodsWriteOff</v8:Type>
 				<v8:Type>cfg:BusinessProcessRef._DemoJobWithRoleAddressing</v8:Type>
 				<v8:Type>cfg:CatalogRef.MetadataObjectIDs</v8:Type>

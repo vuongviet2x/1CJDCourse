@@ -2606,6 +2606,9 @@
 				</ChildObjects>
 			</TabularSection>
 			<Template>MessagesTemplateData</Template>
+			<Template>PF_MXL_SalesOrder</Template>
+			<Template>PF_MXL_DeliveryOrder</Template>
+			<Template>PF_MXL_SalesOrderDetails</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

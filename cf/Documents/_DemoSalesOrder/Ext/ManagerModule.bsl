@@ -274,6 +274,143 @@ EndFunction
 
 // End StandardSubsystems.AttachableCommands
 
+// StandardSubsystems.Print
+
+// Overrides object's print settings.
+//
+// Parameters:
+//  Settings - See PrintManagement.ObjectPrintingSettings.
+//
+Procedure OnDefinePrintSettings(Settings) Export
+	
+	Settings.OnAddPrintCommands = True;
+	
+EndProcedure
+
+// Populates a list of print commands.
+// 
+// Parameters:
+//  PrintCommands - See PrintManagement.CreatePrintCommandsCollection
+//
+Procedure AddPrintCommands(PrintCommands) Export
+	
+	PrintCommand = PrintCommands.Add();
+	PrintCommand.Id = "SalesOrder";
+	PrintCommand.Presentation = NStr("en = 'Sales order';");
+	PrintCommand.CheckPostingBeforePrint = True;
+	PrintCommand.PrintManager = "DataProcessor.PrintSalesOrder";	
+	PrintCommand.Order = 1;
+
+	PrintCommand = PrintCommands.Add();
+	PrintCommand.Id = "DeliveryOrder";
+	PrintCommand.Presentation = NStr("en = 'Delivery order';");
+	PrintCommand.CheckPostingBeforePrint = True;	
+	StartDate = Date(2025, 1, 1);
+	
+	PrintManagement.AddCommandVisibilityCondition(
+		PrintCommand,
+		"Date",
+		StartDate,
+		ComparisonType.GreaterOrEqual
+	);
+	
+	PrintCommand = PrintCommands.Add();
+	PrintCommand.Id = "DataProcessor.PrintSalesOrder.SalesOrder,DataProcessor.PrintSalesOrder.SalesOrder,DeliveryOrder";
+	PrintCommand.Presentation = NStr("en = 'Document set';");
+	PrintCommand.CheckPostingBeforePrint = True;
+	PrintCommand.Order = 90;
+	
+	PrintCommand = PrintCommands.Add();
+	PrintCommand.Id = "Document._DemoSalesOrder.PF_MXL_SalesOrderDetails";
+	PrintCommand.Presentation = NStr("en = 'Sales order details';");
+	PrintCommand.CheckPostingBeforePrint = True;
+	PrintCommand.PrintManager = "PrintManagement";
+		
+EndProcedure
+
+// Generates print forms.
+//
+// Parameters:
+//  ObjectsArray - See PrintManagementOverridable.OnPrint.ObjectsArray
+//  PrintParameters - See PrintManagementOverridable.OnPrint.PrintParameters
+//  PrintFormsCollection - See PrintManagementOverridable.OnPrint.PrintFormsCollection
+//  PrintObjects - See PrintManagementOverridable.OnPrint.PrintObjects
+//  OutputParameters - See PrintManagementOverridable.OnPrint.OutputParameters
+//
+Procedure Print(ObjectsArray, PrintParameters, PrintFormsCollection, PrintObjects, OutputParameters) Export
+	
+	// Print a sales order
+	PrintForm = PrintManagement.PrintFormInfo(PrintFormsCollection, "DeliveryOrder");
+	If PrintForm <> Undefined Then
+		PrintForm.SpreadsheetDocument = PrintDeliveryOrder(ObjectsArray, PrintObjects);
+		PrintForm.TemplateSynonym = NStr("en = 'Delivery order'");
+		PrintForm.FullTemplatePath = "Document._DemoSalesOrder.PF_MXL_DeliveryOrder";
+	EndIf;
+	
+EndProcedure
+
+Function PrintDeliveryOrder(RefsToObjects, PrintObjects) Export
+
+	Spreadsheet = New SpreadsheetDocument;
+	Spreadsheet.PrintParametersKey = "PrintForm_DocumentSalesOrderDeliveryOrder";
+	
+	Template = PrintManagement.PrintFormTemplate("Document._DemoSalesOrder.PF_MXL_DeliveryOrder");
+	
+	Query = New Query;
+	Query.Text =
+	"SELECT
+	|	_DemoSalesOrder.Ref AS Ref,
+	|	_DemoSalesOrder.ContactPerson,
+	|	_DemoSalesOrder.Date,
+	|	_DemoSalesOrder.DeliveryAddress,
+	|	_DemoSalesOrder.DeliveryAddressString,
+	|	_DemoSalesOrder.DeliveryCountry,
+	|	_DemoSalesOrder.DeliveryDate,
+	|	_DemoSalesOrder.DeliveryState,
+	|	_DemoSalesOrder.DestinationCity,
+	|	_DemoSalesOrder.EmployeeResponsible,
+	|	_DemoSalesOrder.Number
+	|FROM
+	|	Document._DemoSalesOrder AS _DemoSalesOrder
+	|WHERE
+	|	_DemoSalesOrder.Ref IN (&Ref)";
+	Query.Parameters.Insert("Ref", RefsToObjects);
+	
+	Selection = Query.Execute().Select();
+
+	AreaCaption = Template.GetArea("Caption");
+	Header = Template.GetArea("Header");
+	Footer = Template.GetArea("Footer");
+
+	Spreadsheet.Clear();
+
+	InsertPageBreak = False;
+	While Selection.Next() Do
+		If InsertPageBreak Then
+			Spreadsheet.PutHorizontalPageBreak();
+		EndIf;
+		RowNumberStart = Spreadsheet.TableHeight + 1;
+
+		AreaCaption.Parameters.Fill(Selection);
+		Spreadsheet.Put(AreaCaption);
+
+		Header.Parameters.Fill(Selection);
+		Spreadsheet.Put(Header, Selection.Level());
+
+		Footer.Parameters.Fill(Selection);
+		Spreadsheet.Put(Footer);
+
+		InsertPageBreak = True;
+
+		PrintManagement.SetDocumentPrintArea(Spreadsheet, RowNumberStart, PrintObjects, Selection.Ref);
+	EndDo;
+
+	Return Spreadsheet;
+	
+EndFunction
+
+// End StandardSubsystems.Print
+
 #EndRegion
 
 #EndRegion

@@ -101,6 +101,26 @@
 				<Event name="OnActivateRow">ListOnActivateRow</Event>
 			</Events>
 			<ChildItems>
+				<PictureField name="HasFiles" id="47">
+					<DataPath>List.HasFiles</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Attachments</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Clip</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ClipCollection</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="HasFilesContextMenu" id="48"/>
+					<ExtendedTooltip name="HasFilesExtendedTooltip" id="49"/>
+				</PictureField>
 				<InputField name="ListDescription" id="11">
 					<DataPath>List.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -198,8 +218,80 @@
 				<Field>List.Ref</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	Catalog_DemoStorageLocations.Ref,
+	Catalog_DemoStorageLocations.DeletionMark,
+	Catalog_DemoStorageLocations.Parent,
+	Catalog_DemoStorageLocations.IsFolder,
+	Catalog_DemoStorageLocations.Code,
+	Catalog_DemoStorageLocations.Description,
+	Catalog_DemoStorageLocations.FinanciallyLiablePerson,
+	Catalog_DemoStorageLocations.PicturesFile,
+	Catalog_DemoStorageLocations.Predefined,
+	Catalog_DemoStorageLocations.PredefinedDataName,
+	CASE
+		WHEN FilesExist.HasFiles IS NULL
+			THEN 0
+		WHEN FilesExist.HasFiles
+			THEN 1
+		ELSE 0
+	END AS HasFiles
+FROM
+	Catalog._DemoStorageLocations AS Catalog_DemoStorageLocations
+	LEFT JOIN InformationRegister.FilesExist AS FilesExist
+		ON Catalog_DemoStorageLocations.Ref = FilesExist.ObjectWithFiles</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ref</dcssch:dataPath>
+					<dcssch:field>Ref</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DeletionMark</dcssch:dataPath>
+					<dcssch:field>DeletionMark</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Code</dcssch:dataPath>
+					<dcssch:field>Code</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FinanciallyLiablePerson</dcssch:dataPath>
+					<dcssch:field>FinanciallyLiablePerson</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Parent</dcssch:dataPath>
+					<dcssch:field>Parent</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>IsFolder</dcssch:dataPath>
+					<dcssch:field>IsFolder</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Description</dcssch:dataPath>
+					<dcssch:field>Description</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>PicturesFile</dcssch:dataPath>
+					<dcssch:field>PicturesFile</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Predefined</dcssch:dataPath>
+					<dcssch:field>Predefined</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>PredefinedDataName</dcssch:dataPath>
+					<dcssch:field>PredefinedDataName</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>HasFiles</dcssch:dataPath>
+					<dcssch:field>HasFiles</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Has files</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
 				<MainTable>Catalog._DemoStorageLocations</MainTable>
 				<ListSettings>
 					<dcsset:filter>

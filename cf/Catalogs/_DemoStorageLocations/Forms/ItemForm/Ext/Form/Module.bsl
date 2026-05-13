@@ -17,6 +17,24 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	AttachableCommands.OnCreateAtServer(ThisObject);
 	// End StandardSubsystems.AttachableCommands
 
+	// StandardSubsystems.StoredFiles
+	HyperlinkParameters = FilesOperations.FilesHyperlink();
+	HyperlinkParameters.Location = "CommandBar";
+
+	FieldParameters = FilesOperations.FileField();
+	FieldParameters.Location  = "GroupPicture";
+	FieldParameters.DataPath = "Object.PicturesFile";
+	FieldParameters.PathToPictureData = "PictureAddress";
+
+	ItemsToAdd1 = New Array;
+	ItemsToAdd1.Add(HyperlinkParameters);
+	ItemsToAdd1.Add(FieldParameters);
+
+	SettingsOfFileManagementInForm = FilesOperations.SettingsOfFileManagementInForm();
+	SettingsOfFileManagementInForm.DuplicateAttachedFiles = True;
+	FilesOperations.OnCreateAtServer(ThisObject, ItemsToAdd1, SettingsOfFileManagementInForm);
+	// End StandardSubsystems.StoredFiles
+	
 EndProcedure
 
 &AtServer
@@ -41,7 +59,29 @@ Procedure OnOpen(Cancel)
 	// StandardSubsystems.AttachableCommands
 	AttachableCommandsClient.StartCommandUpdate(ThisObject);
 	// End StandardSubsystems.AttachableCommands
+	
+	// StandardSubsystems.StoredFiles
+	FilesOperationsClient.OnOpen(ThisObject, Cancel);
+	// End StandardSubsystems.StoredFiles
+	
+EndProcedure
 
+&AtClient
+Procedure NotificationProcessing(EventName, Parameter, Source)
+	
+	// StandardSubsystems.StoredFiles
+	FilesOperationsClient.NotificationProcessing(ThisObject, EventName);
+	// End StandardSubsystems.StoredFiles
+
+EndProcedure
+
+&AtServer
+Procedure OnWriteAtServer(Cancel, CurrentObject, WriteParameters)
+		
+	// StandardSubsystems.StoredFiles
+	FilesOperations.OnWriteAtServer(Cancel, CurrentObject, WriteParameters, ThisObject);
+	// End StandardSubsystems.StoredFiles
+	
 EndProcedure
 
 &AtServer
@@ -59,6 +99,48 @@ Procedure AfterWrite(WriteParameters)
 	AttachableCommandsClient.AfterWrite(ThisObject, Object, WriteParameters);
 
 EndProcedure
+
+#EndRegion
+
+#Region FormHeaderItemsEventHandlers
+
+// StandardSubsystems.StoredFiles
+&AtClient
+Procedure Attachable_PreviewFieldClick(Item, StandardProcessing)
+
+	FilesOperationsClient.PreviewFieldClick(ThisObject, Item, StandardProcessing);
+
+EndProcedure
+
+&AtClient
+Procedure Attachable_PreviewFieldCheckDragging(Item, DragParameters, StandardProcessing)
+
+	FilesOperationsClient.PreviewFieldCheckDragging(ThisObject, Item, DragParameters,
+		StandardProcessing);
+
+EndProcedure
+
+&AtClient
+Procedure Attachable_PreviewFieldDrag(Item, DragParameters, StandardProcessing)
+
+	FilesOperationsClient.PreviewFieldDrag(ThisObject, Item, DragParameters,
+		StandardProcessing);
+
+EndProcedure
+// End StandardSubsystems.StoredFiles
+
+#EndRegion
+
+#Region FormCommandsEventHandlers
+
+// StandardSubsystems.StoredFiles
+&AtClient
+Procedure Attachable_AttachedFilesPanelCommand(Command)
+
+	FilesOperationsClient.AttachmentsControlCommand(ThisObject, Command);
+
+EndProcedure
+// End StandardSubsystems.StoredFiles
 
 #EndRegion
 
@@ -84,6 +166,7 @@ EndProcedure
 Procedure Attachable_UpdateCommands()
 	AttachableCommandsClientServer.UpdateCommands(ThisObject, Object);
 EndProcedure
+
 // End StandardSubsystems.AttachableCommands
 
 #EndRegion

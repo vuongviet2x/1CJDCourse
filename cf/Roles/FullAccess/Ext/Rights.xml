@@ -1530,13 +1530,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.InventoryRecount</name>
-		<right>
-			<name>InteractiveDelete</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.DataAreaMessages</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -7471,17 +7464,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.InventoryRecountAttachedFiles</name>
-		<right>
-			<name>InteractiveDelete</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ExportImportDataXML</name>
 		<right>
 			<name>Use</name>
@@ -10129,6 +10111,17 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog._DemoStorageLocationsAttachedFiles</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>

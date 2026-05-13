@@ -323,7 +323,7 @@
 			<Subsystem>OnlineUserSupport</Subsystem>
 			<Subsystem>ServiceAdministration</Subsystem>
 			<Subsystem>StandardSubsystems</Subsystem>
-			<Subsystem>Training</Subsystem>
+			<Subsystem>MyProjects</Subsystem>
 			<StyleItem>ActionInListColumnFont</StyleItem>
 			<StyleItem>AddedAttribute_SSLym</StyleItem>
 			<StyleItem>AddedAttributeBackground</StyleItem>
@@ -2512,7 +2512,7 @@
 			<CommonCommand>TimeInApp</CommonCommand>
 			<CommonCommand>UserInfo</CommonCommand>
 			<CommonCommand>DeleteSynchronizationSetting</CommonCommand>
-			<CommonCommand>AdditionalDataProcessorsSales</CommonCommand>
+			<CommonCommand>AdditionalDataProcessorsMyProjects</CommonCommand>
 			<CommandGroup>_DemoSetUpDataSynchronization</CommandGroup>
 			<CommandGroup>DataSynchronization</CommandGroup>
 			<CommandGroup>DataSyncParameters</CommandGroup>
@@ -2884,6 +2884,7 @@
 			<Catalog>_DemoProjects</Catalog>
 			<Catalog>_DemoProjectsAttachedFiles</Catalog>
 			<Catalog>_DemoStorageLocations</Catalog>
+			<Catalog>_DemoStorageLocationsAttachedFiles</Catalog>
 			<Catalog>_DemoVATRates</Catalog>
 			<Catalog>AccessGroupProfiles</Catalog>
 			<Catalog>AccessGroups</Catalog>
@@ -2970,7 +2971,6 @@
 			<Catalog>WorldCountries</Catalog>
 			<Catalog>Delete_DemoCommonInfoRecords</Catalog>
 			<Catalog>DeleteJobsQueue</Catalog>
-			<Catalog>InventoryRecountAttachedFiles</Catalog>
 			<Document>_DemoCashVoucher</Document>
 			<Document>_DemoCustomerProformaInvoice</Document>
 			<Document>_DemoDebitingFromAccount</Document>
@@ -2993,7 +2993,6 @@
 			<Document>PollPurpose</Document>
 			<Document>Questionnaire</Document>
 			<Document>SMSMessage</Document>
-			<Document>InventoryRecount</Document>
 			<Sequence>_DemoGoodsMovement</Sequence>
 			<DocumentJournal>_DemoAllDocumentsJournal</DocumentJournal>
 			<DocumentJournal>_DemoWarehouseDocuments</DocumentJournal>
@@ -3290,8 +3289,7 @@
 			<DataProcessor>UpdateToCorrectiveVersionSSL</DataProcessor>
 			<DataProcessor>UsersSettings</DataProcessor>
 			<DataProcessor>WizardOfTransitionToCloud</DataProcessor>
-			<DataProcessor>PrintGoodsReceipt1</DataProcessor>
-			<DataProcessor>PrintGoodsReceipt2</DataProcessor>
+			<DataProcessor>PrintSalesOrder</DataProcessor>
 			<InformationRegister>_DemoCommonInfoRecords</InformationRegister>
 			<InformationRegister>_DemoCompaniesEmployees</InformationRegister>
 			<InformationRegister>_DemoDocumentsRegistry</InformationRegister>

@@ -33,9 +33,9 @@
 				<v8:Type>cfg:CatalogObject.Files</v8:Type>
 				<v8:Type>cfg:CatalogObject.OutgoingEmailAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogObject.PlannedInteractionAttachedFiles</v8:Type>
+				<v8:Type>cfg:CatalogObject._DemoStorageLocationsAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogObject.IncomingEmailAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogObject._DemoProductsAttachedFiles</v8:Type>
-				<v8:Type>cfg:CatalogObject.InventoryRecountAttachedFiles</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

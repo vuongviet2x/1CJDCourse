@@ -15,10 +15,10 @@
 			</Synonym>
 			<Comment>APK: 256-handler in the server module</Comment>
 			<Source>
-				<v8:Type>cfg:CatalogManager.InventoryRecountAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogManager._DemoCompaniesAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogManager._DemoCustomerProformaInvoiceAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogManager._DemoProductsAttachedFiles</v8:Type>
+				<v8:Type>cfg:CatalogManager._DemoStorageLocationsAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogManager._DemoProjectsAttachedFiles</v8:Type>
 			</Source>
 			<Event>FormGetProcessing</Event>

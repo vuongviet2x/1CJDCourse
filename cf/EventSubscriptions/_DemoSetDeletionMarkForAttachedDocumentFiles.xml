@@ -16,7 +16,6 @@
 			<Comment/>
 			<Source>
 				<v8:Type>cfg:DocumentObject._DemoCustomerProformaInvoice</v8:Type>
-				<v8:Type>cfg:DocumentObject.InventoryRecount</v8:Type>
 				<v8:Type>cfg:DocumentObject._DemoSalesOrder</v8:Type>
 			</Source>
 			<Event>BeforeWrite</Event>

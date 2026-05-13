@@ -43,9 +43,9 @@ Procedure OnDefinePrintSettings(Settings) Export
 	Settings.PrintObjects.Add(Documents._DemoCustomerProformaInvoice);
 	Settings.PrintObjects.Add(Documents._DemoCashVoucher);
 	// _Demo Example End
-	
-	Settings.PrintObjects.Add(Documents._DemoGoodsReceipt);
 
+	Settings.PrintObjects.Add(Documents._DemoSalesOrder);
+	
 EndProcedure
 
 // Allows to override a list of print commands in an arbitrary form.

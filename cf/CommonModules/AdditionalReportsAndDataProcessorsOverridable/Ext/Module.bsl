@@ -24,7 +24,7 @@ Procedure GetSectionsWithAdditionalDataProcessors(Sections) Export
 	// _Demo Example Start
 	Sections.Add(AdditionalReportsAndDataProcessorsClientServer.StartPageName());
 	Sections.Add(Metadata.Subsystems._DemoIntegratedSubsystemsPart);
-	Sections.Add(Metadata.Subsystems.Sales);
+	Sections.Add(Metadata.Subsystems.MyProjects);
 	// _Demo Example End
 	
 EndProcedure

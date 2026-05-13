@@ -27,8 +27,8 @@
 				<v8:Type>cfg:CatalogRef.PlannedInteractionAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoProductsAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef.Files</v8:Type>
-				<v8:Type>cfg:CatalogRef.InventoryRecountAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoProjectsAttachedFiles</v8:Type>
+				<v8:Type>cfg:CatalogRef._DemoStorageLocationsAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef.SMSMessageAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef._DemoCustomerProformaInvoiceAttachedFiles</v8:Type>
 				<v8:Type>cfg:CatalogRef.DataCheckAndAdjustmentHistoryAttachedFiles</v8:Type>

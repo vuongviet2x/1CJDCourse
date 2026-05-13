@@ -27,7 +27,6 @@
 				<xr:Object>Enum.AdditionalReportsAndDataProcessorsPermissionCompatibilityModes</xr:Object>
 				<xr:Object>CommonCommand.AdditionalDataProcessorsAdministration</xr:Object>
 				<xr:Object>CommonCommand.AdditionalReportsAdministration</xr:Object>
-				<xr:Object>CommonCommand.AdditionalDataProcessorsSales</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

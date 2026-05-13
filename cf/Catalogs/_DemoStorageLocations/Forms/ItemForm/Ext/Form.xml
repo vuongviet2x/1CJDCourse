@@ -6,81 +6,114 @@
 	<Events>
 		<Event name="AfterWrite">AfterWrite</Event>
 		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
 		<Event name="OnReadAtServer">OnReadAtServer</Event>
 		<Event name="OnOpen">OnOpen</Event>
 		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="CodeDescriptionGroup" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Код наименование</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Code description</v8:content>
-				</v8:item>
-			</Title>
-			<Behavior>Usual</Behavior>
+		<UsualGroup name="GroupColumns" id="19">
+			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
-			<United>false</United>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="CodeDescriptionGroupExtendedTooltip" id="15"/>
+			<ExtendedTooltip name="GroupColumnsExtendedTooltip" id="20"/>
 			<ChildItems>
-				<InputField name="Description" id="3">
-					<DataPath>Object.Description</DataPath>
-					<Width>30</Width>
-					<Wrap>false</Wrap>
-					<ContextMenu name="DescriptionContextMenu" id="4"/>
-					<ExtendedTooltip name="DescriptionExtendedTooltip" id="16"/>
-				</InputField>
-				<InputField name="Code" id="1">
-					<DataPath>Object.Code</DataPath>
-					<Enabled>false</Enabled>
-					<SkipOnInput>true</SkipOnInput>
-					<Width>9</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<Wrap>false</Wrap>
-					<ContextMenu name="CodeContextMenu" id="2"/>
-					<ExtendedTooltip name="CodeExtendedTooltip" id="17"/>
-				</InputField>
+				<UsualGroup name="GroupLeft" id="21">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupLeftExtendedTooltip" id="22"/>
+					<ChildItems>
+						<UsualGroup name="GroupPicture" id="25">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupPictureExtendedTooltip" id="26"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupRight" id="23">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupRightExtendedTooltip" id="24"/>
+					<ChildItems>
+						<UsualGroup name="CodeDescriptionGroup" id="13">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код наименование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Code description</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="CodeDescriptionGroupExtendedTooltip" id="15"/>
+							<ChildItems>
+								<InputField name="Code" id="1">
+									<DataPath>Object.Code</DataPath>
+									<Enabled>false</Enabled>
+									<SkipOnInput>true</SkipOnInput>
+									<Width>9</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ContextMenu name="CodeContextMenu" id="2"/>
+									<ExtendedTooltip name="CodeExtendedTooltip" id="17"/>
+								</InputField>
+								<InputField name="Description" id="3">
+									<DataPath>Object.Description</DataPath>
+									<Width>30</Width>
+									<Wrap>false</Wrap>
+									<ContextMenu name="DescriptionContextMenu" id="4"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="16"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="FinanciallyLiablePerson" id="11">
+							<DataPath>Object.FinanciallyLiablePerson</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ответственное лицо</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Person responsible</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<Wrap>false</Wrap>
+							<ContextMenu name="FinanciallyLiablePersonContextMenu" id="12"/>
+							<ExtendedTooltip name="FinanciallyLiablePersonExtendedTooltip" id="18"/>
+						</InputField>
+						<InputField name="Parent" id="5">
+							<DataPath>Object.Parent</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ParentContextMenu" id="6"/>
+							<ExtendedTooltip name="ParentExtendedTooltip" id="14"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="FinanciallyLiablePerson" id="11">
-			<DataPath>Object.FinanciallyLiablePerson</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ответственное лицо</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Person responsible</v8:content>
-				</v8:item>
-			</Title>
-			<Width>30</Width>
-			<Wrap>false</Wrap>
-			<ContextMenu name="FinanciallyLiablePersonContextMenu" id="12"/>
-			<ExtendedTooltip name="FinanciallyLiablePersonExtendedTooltip" id="18"/>
-		</InputField>
-		<InputField name="Parent" id="5">
-			<DataPath>Object.Parent</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Group</v8:content>
-				</v8:item>
-			</Title>
-			<Width>30</Width>
-			<Wrap>false</Wrap>
-			<ContextMenu name="ParentContextMenu" id="6"/>
-			<ExtendedTooltip name="ParentExtendedTooltip" id="14"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Object" id="1">

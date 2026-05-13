@@ -1385,10 +1385,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Catalog.InventoryRecountAttachedFiles</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>Constant.MaxDataAreaFileSize</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1858,6 +1854,10 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.ExchangeMessageArchiveSettings</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog._DemoStorageLocationsAttachedFiles</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
