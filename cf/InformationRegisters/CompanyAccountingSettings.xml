@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<InformationRegister uuid="2911d31c-b40c-4323-bdaa-7fc328e312f6">
+	<InformationRegister uuid="1ed59cc6-d0fa-41e9-b5bf-c11d35c55735">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.CompanyAccountingSettings" category="Record">
-				<xr:TypeId>69df2dc8-6c6c-45aa-be57-ca01c09747ad</xr:TypeId>
-				<xr:ValueId>679d80f7-b2c9-44b0-bc06-8f1a9857d865</xr:ValueId>
+				<xr:TypeId>62b28ef5-8418-4240-8693-a2ae8ef2d16a</xr:TypeId>
+				<xr:ValueId>e6f99af6-c22b-43b5-b57e-6b91cbe9fa24</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.CompanyAccountingSettings" category="Manager">
-				<xr:TypeId>c136b3ef-85c5-48e9-ac24-ae523f4dc3c2</xr:TypeId>
-				<xr:ValueId>c6a4d719-05f5-4fcc-a74f-9db328310e6a</xr:ValueId>
+				<xr:TypeId>f486ee01-de5b-4b7c-8bc1-45b99ffb5ca5</xr:TypeId>
+				<xr:ValueId>f5a28203-54a6-4683-9d17-eb36c6b78748</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.CompanyAccountingSettings" category="Selection">
-				<xr:TypeId>92d5161d-0ff9-4268-89f3-96030a037b4e</xr:TypeId>
-				<xr:ValueId>bda68726-ae3f-4208-a687-1581220a84f7</xr:ValueId>
+				<xr:TypeId>b1ff93de-96b4-4ce9-9ec2-fb37fa21632b</xr:TypeId>
+				<xr:ValueId>cff86366-b78c-4233-b0a7-be8df3aa56f9</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.CompanyAccountingSettings" category="List">
-				<xr:TypeId>9e5e93aa-4325-4ee1-aa23-2321b67f1e16</xr:TypeId>
-				<xr:ValueId>f7aac748-852d-4cdf-bb4f-d7501a98d83a</xr:ValueId>
+				<xr:TypeId>e8510075-b33e-4d8b-85f3-593e4240f1a4</xr:TypeId>
+				<xr:ValueId>edf9c4e7-76fa-4764-84a2-cef205a64c41</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.CompanyAccountingSettings" category="RecordSet">
-				<xr:TypeId>175e29d8-3b82-4806-a5b2-d0f3369399a2</xr:TypeId>
-				<xr:ValueId>16de794d-36cb-4d18-a421-c89c1099d15c</xr:ValueId>
+				<xr:TypeId>abb43177-a966-4af6-9121-533aa1d1e2f3</xr:TypeId>
+				<xr:ValueId>7f734abd-c8ff-4cde-828f-fe72c625bb18</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.CompanyAccountingSettings" category="RecordKey">
-				<xr:TypeId>c47436e1-e784-4cf6-a5cc-e5a124c73fd5</xr:TypeId>
-				<xr:ValueId>4ca3ce29-0df6-414a-9ca0-eddf6a1ee8ff</xr:ValueId>
+				<xr:TypeId>cc06f296-9d7d-4734-aa29-75e038823069</xr:TypeId>
+				<xr:ValueId>5f340709-cceb-49ee-ae51-fdfd04a7ed12</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.CompanyAccountingSettings" category="RecordManager">
-				<xr:TypeId>7b13ebb2-3664-469c-9db4-55f06b8eb448</xr:TypeId>
-				<xr:ValueId>62529bcf-0359-40b5-a54d-e05716b85b8a</xr:ValueId>
+				<xr:TypeId>df969774-453e-4761-9417-b9fb5f7ea2bc</xr:TypeId>
+				<xr:ValueId>faca6af0-7bb8-4611-ae50-932bcb52b19f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -42,7 +42,7 @@
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm>InformationRegister.CompanyAccountingSettings.Form.RecordForm</DefaultRecordForm>
+			<DefaultRecordForm/>
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
@@ -64,13 +64,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="26583339-13a1-45aa-ab96-e16e308f5ac5">
+			<Resource uuid="f580945c-0b54-433a-b8c0-3fcaad72507b">
 				<Properties>
-					<Name>UseContracts</Name>
+					<Name>ContolBalanceOfGoods</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Use contracts</v8:content>
+							<v8:content>Contol balance of goods</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -103,46 +103,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="845a2e6b-c09b-40ec-9020-92fc1bc83ddd">
-				<Properties>
-					<Name>UseTaxes</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Use taxes</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Dimension uuid="d2b6c074-4e67-42ef-8352-5409f47bf38a">
+			<Dimension uuid="9f6a4f85-3a4a-411e-b99c-3a6f5b4579eb">
 				<Properties>
 					<Name>Company</Name>
 					<Synonym>
@@ -165,7 +126,7 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
@@ -176,7 +137,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
+					<Master>true</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
@@ -185,7 +146,6 @@
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
 			</Dimension>
-			<Form>RecordForm</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

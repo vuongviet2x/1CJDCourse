@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Report uuid="7a7c908a-f0c2-4c63-8e72-11c43cdd3d7b">
+	<Report uuid="b0d6a521-070d-4df3-993d-6a0c429f283e">
 		<InternalInfo>
 			<xr:GeneratedType name="ReportObject.GoodsMovement" category="Object">
-				<xr:TypeId>bcf12cce-8603-4f50-a4c4-e6da250832d2</xr:TypeId>
-				<xr:ValueId>3c7b75b6-bd5e-4075-b03a-af4d52903b46</xr:ValueId>
+				<xr:TypeId>0195db52-0ed4-4f94-8f78-e50c7fa4cdab</xr:TypeId>
+				<xr:ValueId>6e34551a-1c4f-4c4e-ab29-dafd67db8f6e</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ReportManager.GoodsMovement" category="Manager">
-				<xr:TypeId>48b0e668-ebc6-41dc-8870-05da08c2a8fc</xr:TypeId>
-				<xr:ValueId>481b9649-db15-4b23-b7f8-731590ab934d</xr:ValueId>
+				<xr:TypeId>fd9a1624-3edf-4028-ac39-23dc7815ab4e</xr:TypeId>
+				<xr:ValueId>af49a205-4f76-43e4-b54f-730b0a518b82</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
