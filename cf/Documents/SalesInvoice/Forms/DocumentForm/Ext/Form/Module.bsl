@@ -1,93 +1,152 @@
 ﻿
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-
-EndProcedure
-
-&AtClient
-Procedure CustomerOnChange(Item)
-	
-	FillMainContractAtServer();
-	
-EndProcedure
-
-&AtServer
-Procedure FillMainContractAtServer()
-
-	DocumentObject = FormAttributeToValue("Object");
-	DocumentObject.FillMainContract();
-	
-	ValueToFormAttribute(DocumentObject, "Object");
-
-EndProcedure
-
 &AtClient
 Procedure ProductsQuantityOnChange(Item)
 	
-	FillAmountInProductsRow();
-
-	OnProductOrQuantityChangeAtServer();
+	CalculateAmountAtRow(Items.Products.CurrentData, Object.Discount);
 	
 EndProcedure
 
 &AtClient
-Procedure ProductsPriceOnChange(Item)
-	FillAmountInProductsRow();
+Procedure ServicesQuantityOnChange(Item)
+
+	CalculateAmountAtRow(Items.Services.CurrentData, Object.Discount);
+
 EndProcedure
 
 &AtClient
-Procedure FillAmountInProductsRow()
+Procedure ProductsOnChange(Item)
 
-	CurrentData = Items.Products.CurrentData;
-	If CurrentData = Undefined Then
-		Return;
-	EndIf;
+	RecalculateDocumentTotalAtServer();
 	
-	CurrentData.Amount = CurrentData.Price * CurrentData.Quantity;
+EndProcedure
+
+&AtClient
+Procedure ServicesOnChange(Item)
+
+	RecalculateDocumentTotalAtServer();
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsProductOnChange(Item)
-		
-	OnProductOrQuantityChangeAtServer();
 	
+	OnChangeProduct(Items.Products.CurrentData);
+
 EndProcedure
 
-&AtServer
-Procedure OnProductOrQuantityChangeAtServer()
+&AtClient
+Procedure ServicesProductOnChange(Item)
+	
+	OnChangeProduct(Items.Services.CurrentData);
 
-	CalculateWeightAtServer();
-		
 EndProcedure
 
-&AtServer
-Procedure CalculateWeightAtServer()
+&AtClient
+Procedure ControlMinimumSalesPrice(CurrentData)
 
-	TotalWeight = 0;
-	For Each ProductsRow In Object.Products Do
+	If CurrentData = Undefined Then
+		Return;
+	EndIf;
 	
-		TotalWeight = TotalWeight + WeightOfProduct(ProductsRow.Product) * ProductsRow.Quantity;
-	
-	EndDo;
+	MinimumPrice = MinimumSalePriceOfProduct(CurrentData.Product);
+	If CurrentData.Price < MinimumPrice Then
+		
+		CurrentData.Price = MinimumPrice;
+		Message("Minimum sale price for " + CurrentData.Product + " is " + MinimumPrice);
+		
+	EndIf;
 
 EndProcedure
 
 &AtServerNoContext
-Function WeightOfProduct(Product)
-
-	Return Product.Weight;
-
+Function MinimumSalePriceOfProduct(Product)
+	
+	Return Product.MinimumSalePrice;
+	
 EndFunction
 
 &AtClient
+Procedure DateOnChange(Item)
+	
+	CheckContractValidity();
+
+EndProcedure
+
+&AtClient
+Procedure ContractOnChange(Item)
+	
+	OnChangeContractAtServer();
+
+	CheckContractValidity();
+	
+EndProcedure
+
+&AtClient
+Procedure CheckContractValidity()
+
+	ContractValidUntil = ContractValidUntil(Object.Contract);
+	
+	If ValueIsFilled(ContractValidUntil) And ContractValidUntil < BegOfDay(Object.Date) Then
+		Message("This contract is invalid on " + Format(Object.Date, "DLF=D"));
+	EndIf;
+
+EndProcedure
+
+&AtServerNoContext
+Function ContractValidUntil(Contract)
+
+	Return Contract.ValidUntil;
+
+EndFunction
+
+&AtServer
+Procedure OnChangeContractAtServer()
+
+	DocumentObject = FormAttributeToValue("Object");
+	DocumentObject.FillDiscount();
+	
+	ValueToFormAttribute(DocumentObject, "Object");
+	
+	RecalculateDocumentTotalAtServer();
+
+EndProcedure
+
+&AtClientAtServerNoContext
+Procedure CalculateAmountAtRow(ProductsRow, Discount)
+	
+	ProductsRow.Amount = ProductsRow.Quantity * ProductsRow.Price * (1 - Discount / 100);
+	
+EndProcedure
+
+&AtServer
+Procedure RecalculateDocumentTotalAtServer()
+
+	DocumentTotal = 0;
+	For Each ProductsRow In Object.Products Do
+	
+		CalculateAmountAtRow(ProductsRow, Object.Discount);	
+		DocumentTotal = DocumentTotal + ProductsRow.Amount;
+	
+	EndDo;
+	For Each ServicesRow In Object.Services Do
+	
+		CalculateAmountAtRow(ServicesRow, Object.Discount);	
+		DocumentTotal = DocumentTotal + ServicesRow.Amount;
+	
+	EndDo;
+	
+	Object.DocumentTotal = DocumentTotal;
+	
+EndProcedure
+
+&AtClient
 Procedure PickProducts(Command)
-	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductTypes.Product"));
+	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductsTypes.InventoryItem"));
 EndProcedure
 
 &AtClient
 Procedure PickServices(Command)
-	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductTypes.Service"));
+	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductsTypes.Service"));
 EndProcedure
 
 &AtClient
@@ -95,7 +154,7 @@ Procedure PickProductsToTable(TableItem, ProductType)
 
 	OpenForm(
 		"Catalog.Products.ChoiceForm",
-		New Structure("MultipleChoice, CloseOnChoise, Filter", False, False, New Structure("Type", ProductType)),
+		New Structure("MultipleChoice, CloseOnChoice, Filter", False, False, New Structure("ProductType", ProductType)),
 		TableItem
 	);
 
@@ -109,7 +168,9 @@ Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Products.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
-	EndIf;
+
+		OnChangeProduct(NewRow);
+	EndIf;	
 	
 EndProcedure
 
@@ -121,6 +182,24 @@ Procedure ServicesChoiceProcessing(Item, SelectedValue, StandardProcessing)
 		NewRow = Object.Services.Add();
 		NewRow.Product = SelectedValue;
 		NewRow.Quantity = 1;
-	EndIf;
+
+		OnChangeProduct(NewRow);
+	EndIf;	
 	
 EndProcedure
+
+&AtClient
+Procedure OnChangeProduct(CurrentData)
+
+	CurrentData.Price = ProductPrice(CurrentData.Product, Object.Date);
+	ControlMinimumSalesPrice(CurrentData);
+	CalculateAmountAtRow(CurrentData, Object.Discount);
+
+EndProcedure
+
+&AtServerNoContext
+Function ProductPrice(Product, Date)
+
+	Return InformationRegisters.ProductPrices.ProductPrice(Product, Date);	
+
+EndFunction

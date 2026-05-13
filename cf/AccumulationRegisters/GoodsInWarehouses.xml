@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<AccumulationRegister uuid="65358a6b-d9af-4c49-bf2b-fbcd9ff0bec8">
+	<AccumulationRegister uuid="492c7b5f-ada2-42ce-8742-3b52c1910506">
 		<InternalInfo>
 			<xr:GeneratedType name="AccumulationRegisterRecord.GoodsInWarehouses" category="Record">
-				<xr:TypeId>1fc6f523-7872-4bab-b2db-0e90a6f46ae2</xr:TypeId>
-				<xr:ValueId>72ffb040-7b1c-455d-a6c6-71e7868fbfd9</xr:ValueId>
+				<xr:TypeId>9da2deba-6163-4512-b981-5b82993195eb</xr:TypeId>
+				<xr:ValueId>a09b1443-06c0-41c4-a8a0-205fecb4b385</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="AccumulationRegisterManager.GoodsInWarehouses" category="Manager">
-				<xr:TypeId>8c0e7f91-c12e-4557-b9c5-22d380217072</xr:TypeId>
-				<xr:ValueId>cc3a1afb-f1bd-4e45-8420-a51641fb787e</xr:ValueId>
+				<xr:TypeId>75f6332e-21ac-432c-a1fe-edeb745e59eb</xr:TypeId>
+				<xr:ValueId>31922260-0ca6-469c-8bc8-9721920f6695</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="AccumulationRegisterSelection.GoodsInWarehouses" category="Selection">
-				<xr:TypeId>0c89a743-cb96-4108-b6ae-acce42b43f19</xr:TypeId>
-				<xr:ValueId>4a11d6e3-9c35-44a0-b4f2-3bf811bd8cd6</xr:ValueId>
+				<xr:TypeId>27c7bab6-ef2d-441b-96c6-aa883f7a022b</xr:TypeId>
+				<xr:ValueId>1d732b3c-7e5e-419f-888f-852a92b2c0df</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="AccumulationRegisterList.GoodsInWarehouses" category="List">
-				<xr:TypeId>683bec7f-843b-455d-acc4-3f39ab1c9668</xr:TypeId>
-				<xr:ValueId>74dbad9a-7718-4a51-a27a-6ebb52fb7a0e</xr:ValueId>
+				<xr:TypeId>b8b8c640-8044-4ceb-931f-36110208f0ec</xr:TypeId>
+				<xr:ValueId>e13c0159-b88d-48e6-a24e-04e41d351850</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="AccumulationRegisterRecordSet.GoodsInWarehouses" category="RecordSet">
-				<xr:TypeId>d1d947b8-a7a1-48fa-801e-ffd848b95334</xr:TypeId>
-				<xr:ValueId>e65daf8d-d53b-4dc6-84b9-033d2cbdecb9</xr:ValueId>
+				<xr:TypeId>126807fc-e3d9-4c3d-a50f-2730f2b585c3</xr:TypeId>
+				<xr:ValueId>ab3d9ffc-bb4c-4552-a295-0498c41ef369</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="AccumulationRegisterRecordKey.GoodsInWarehouses" category="RecordKey">
-				<xr:TypeId>c46dc06c-249f-41cd-805f-d8d50c5aaa10</xr:TypeId>
-				<xr:ValueId>16b4816d-eca6-4f60-a83d-e4c4730e72c1</xr:ValueId>
+				<xr:TypeId>3c19d27b-67a6-4e52-8b92-4456e8c3b364</xr:TypeId>
+				<xr:ValueId>fe346063-5524-4d81-9e12-b176d6325502</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -49,7 +49,7 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="df119681-260b-4b72-9775-642c6d720a1d">
+			<Resource uuid="2d7f66ec-d7bd-40e1-aa3f-1e5d3ff7833a">
 				<Properties>
 					<Name>Quantity</Name>
 					<Synonym>
@@ -64,7 +64,7 @@
 						<v8:NumberQualifiers>
 							<v8:Digits>10</v8:Digits>
 							<v8:FractionDigits>3</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -89,7 +89,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Resource uuid="e185b16d-7952-41fe-afd5-cdfb3638adc8">
+			<Resource uuid="b401f7d8-24bf-454a-8377-93268bbbdfd5">
 				<Properties>
 					<Name>Amount</Name>
 					<Synonym>
@@ -103,8 +103,8 @@
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
 							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -129,7 +129,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Dimension uuid="25eadd78-6617-418c-983e-e2f9233ba219">
+			<Dimension uuid="268c575f-a869-4e00-a088-17a3615cbc2a">
 				<Properties>
 					<Name>Product</Name>
 					<Synonym>
@@ -161,13 +161,13 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<UseInTotals>true</UseInTotals>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="b3230353-adfa-43e5-abf1-1ec3df8dcdbc">
+			<Dimension uuid="40307b2c-219b-49c0-8510-449c0e62e66b">
 				<Properties>
 					<Name>Warehouse</Name>
 					<Synonym>
@@ -199,7 +199,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<UseInTotals>true</UseInTotals>

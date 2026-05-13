@@ -28,11 +28,10 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="LeftColumnExtendedTooltip" id="4"/>
 					<ChildItems>
-						<UsualGroup name="GroupDateNumber" id="90">
-							<Group>AlwaysHorizontal</Group>
+						<UsualGroup name="GroupNumberDate" id="90">
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="GroupDateNumberExtendedTooltip" id="91"/>
+							<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="91"/>
 							<ChildItems>
 								<InputField name="Number" id="5">
 									<DataPath>Object.Number</DataPath>
@@ -48,17 +47,21 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Company" id="11">
+						<InputField name="Company" id="95">
 							<DataPath>Object.Company</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="CompanyContextMenu" id="12"/>
-							<ExtendedTooltip name="CompanyExtendedTooltip" id="13"/>
+							<ContextMenu name="CompanyContextMenu" id="96"/>
+							<ExtendedTooltip name="CompanyExtendedTooltip" id="97"/>
 						</InputField>
-						<InputField name="Warehouse" id="22">
+						<InputField name="Warehouse" id="19">
 							<DataPath>Object.Warehouse</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="WarehouseContextMenu" id="23"/>
-							<ExtendedTooltip name="WarehouseExtendedTooltip" id="24"/>
+							<ContextMenu name="WarehouseContextMenu" id="20"/>
+							<ExtendedTooltip name="WarehouseExtendedTooltip" id="21"/>
+						</InputField>
+						<InputField name="BankAccount" id="98">
+							<DataPath>Object.BankAccount</DataPath>
+							<ContextMenu name="BankAccountContextMenu" id="99"/>
+							<ExtendedTooltip name="BankAccountExtendedTooltip" id="100"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -73,24 +76,30 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="RightColumnExtendedTooltip" id="18"/>
 					<ChildItems>
-						<LabelField name="SalesDocument" id="25">
+						<LabelField name="SalesDocument" id="22">
 							<DataPath>Object.SalesDocument</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<Hiperlink>true</Hiperlink>
-							<ContextMenu name="SalesDocumentContextMenu" id="26"/>
-							<ExtendedTooltip name="SalesDocumentExtendedTooltip" id="27"/>
+							<ContextMenu name="SalesDocumentContextMenu" id="23"/>
+							<ExtendedTooltip name="SalesDocumentExtendedTooltip" id="24"/>
 						</LabelField>
-						<InputField name="Customer" id="14">
+						<InputField name="Customer" id="11">
 							<DataPath>Object.Customer</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="CustomerContextMenu" id="15"/>
-							<ExtendedTooltip name="CustomerExtendedTooltip" id="16"/>
+							<ContextMenu name="CustomerContextMenu" id="12"/>
+							<ExtendedTooltip name="CustomerExtendedTooltip" id="13"/>
 						</InputField>
-						<InputField name="Contract" id="19">
+						<InputField name="Contract" id="14">
 							<DataPath>Object.Contract</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ContractContextMenu" id="20"/>
-							<ExtendedTooltip name="ContractExtendedTooltip" id="21"/>
+							<ContextMenu name="ContractContextMenu" id="15"/>
+							<ExtendedTooltip name="ContractExtendedTooltip" id="16"/>
+						</InputField>
+						<InputField name="Discount" id="92">
+							<DataPath>Object.Discount</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="DiscountContextMenu" id="93"/>
+							<ExtendedTooltip name="DiscountExtendedTooltip" id="94"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -148,6 +157,9 @@
 								<ContextMenu name="ProductsSearchControlContextMenu" id="43"/>
 								<ExtendedTooltip name="ProductsSearchControlExtendedTooltip" id="44"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ProductsOnChange</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ProductsLineNumber" id="45">
 									<DataPath>Object.Products.LineNumber</DataPath>
@@ -166,15 +178,20 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ProductsQuantityContextMenu" id="52"/>
 									<ExtendedTooltip name="ProductsQuantityExtendedTooltip" id="53"/>
+									<Events>
+										<Event name="OnChange">ProductsQuantityOnChange</Event>
+									</Events>
 								</InputField>
 								<InputField name="ProductsPrice" id="54">
 									<DataPath>Object.Products.Price</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ProductsPriceContextMenu" id="55"/>
 									<ExtendedTooltip name="ProductsPriceExtendedTooltip" id="56"/>
 								</InputField>
 								<InputField name="ProductsAmount" id="57">
 									<DataPath>Object.Products.Amount</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ProductsAmountContextMenu" id="58"/>
 									<ExtendedTooltip name="ProductsAmountExtendedTooltip" id="59"/>
@@ -226,6 +243,9 @@
 								<ContextMenu name="ServicesSearchControlContextMenu" id="73"/>
 								<ExtendedTooltip name="ServicesSearchControlExtendedTooltip" id="74"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ServicesQuantityOnChange</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ServicesLineNumber" id="75">
 									<DataPath>Object.Services.LineNumber</DataPath>
@@ -233,26 +253,31 @@
 									<ContextMenu name="ServicesLineNumberContextMenu" id="76"/>
 									<ExtendedTooltip name="ServicesLineNumberExtendedTooltip" id="77"/>
 								</LabelField>
-								<InputField name="ServicesService" id="78">
-									<DataPath>Object.Services.Service</DataPath>
+								<InputField name="ServicesProduct" id="78">
+									<DataPath>Object.Services.Product</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ServicesServiceContextMenu" id="79"/>
-									<ExtendedTooltip name="ServicesServiceExtendedTooltip" id="80"/>
+									<ContextMenu name="ServicesProductContextMenu" id="79"/>
+									<ExtendedTooltip name="ServicesProductExtendedTooltip" id="80"/>
 								</InputField>
 								<InputField name="ServicesQuantity" id="81">
 									<DataPath>Object.Services.Quantity</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ServicesQuantityContextMenu" id="82"/>
 									<ExtendedTooltip name="ServicesQuantityExtendedTooltip" id="83"/>
+									<Events>
+										<Event name="OnChange">ServicesQuantityOnChange</Event>
+									</Events>
 								</InputField>
 								<InputField name="ServicesPrice" id="84">
 									<DataPath>Object.Services.Price</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ServicesPriceContextMenu" id="85"/>
 									<ExtendedTooltip name="ServicesPriceExtendedTooltip" id="86"/>
 								</InputField>
 								<InputField name="ServicesAmount" id="87">
 									<DataPath>Object.Services.Amount</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ServicesAmountContextMenu" id="88"/>
 									<ExtendedTooltip name="ServicesAmountExtendedTooltip" id="89"/>
@@ -263,6 +288,12 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<LabelField name="DocumentTotal" id="25">
+			<DataPath>Object.DocumentTotal</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DocumentTotalContextMenu" id="26"/>
+			<ExtendedTooltip name="DocumentTotalExtendedTooltip" id="27"/>
+		</LabelField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Object" id="1">
