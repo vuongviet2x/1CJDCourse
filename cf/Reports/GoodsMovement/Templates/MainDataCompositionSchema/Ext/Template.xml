@@ -5,7 +5,26 @@
 		<dataSourceType>Local</dataSourceType>
 	</dataSource>
 	<dataSet xsi:type="DataSetQuery">
-		<name>DataSet1</name>
+		<name>GoodsBalanceAndTurnovers</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Warehouse</dataPath>
+			<field>Warehouse</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Expense.Quantity</dataPath>
+			<field>QuantityExpense</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SecondPeriod</dataPath>
+			<field>SecondPeriod</field>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>OpeningBalance.Amount</dataPath>
 			<field>AmountOpeningBalance</field>
@@ -24,24 +43,8 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ClosingBalance.Amount</dataPath>
-			<field>AmountClosingBalance</field>
-			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>Amount</dcscom:balanceGroupName>
-				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Product</dataPath>
 			<field>Product</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Warehouse</dataPath>
-			<field>Warehouse</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -56,19 +59,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ClosingBalance.Quantity</dataPath>
-			<field>QuantityClosingBalance</field>
-			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>Quantity</dcscom:balanceGroupName>
-				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Expense.Quantity</dataPath>
-			<field>QuantityExpense</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Receipt.Quantity</dataPath>
 			<field>QuantityReceipt</field>
 		</field>
@@ -81,15 +71,30 @@
 			<field>AmountExpense</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>SecondPeriod</dataPath>
-			<field>SecondPeriod</field>
+			<dataPath>ClosingBalance.Quantity</dataPath>
+			<field>QuantityClosingBalance</field>
 			<role>
-				<dcscom:periodNumber>2</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Quantity</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
 			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ClosingBalance.Amount</dataPath>
+			<field>AmountClosingBalance</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Amount</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Batch</dataPath>
+			<field>Batch</field>
 		</field>
 		<dataSource>DataSource1</dataSource>
 		<query>SELECT
+	GoodsInWarehousesBalanceAndTurnovers.SecondPeriod AS SecondPeriod,
 	GoodsInWarehousesBalanceAndTurnovers.Recorder AS Recorder,
 	GoodsInWarehousesBalanceAndTurnovers.Product AS Product,
 	GoodsInWarehousesBalanceAndTurnovers.Warehouse AS Warehouse,
@@ -100,42 +105,108 @@
 	GoodsInWarehousesBalanceAndTurnovers.QuantityExpense AS QuantityExpense,
 	GoodsInWarehousesBalanceAndTurnovers.AmountExpense AS AmountExpense,
 	GoodsInWarehousesBalanceAndTurnovers.QuantityClosingBalance AS QuantityClosingBalance,
-	GoodsInWarehousesBalanceAndTurnovers.AmountClosingBalance AS AmountClosingBalance,
-	GoodsInWarehousesBalanceAndTurnovers.SecondPeriod AS SecondPeriod
+	GoodsInWarehousesBalanceAndTurnovers.AmountClosingBalance AS AmountClosingBalance
 FROM
 	AccumulationRegister.GoodsInWarehouses.BalanceAndTurnovers(, , Auto, , ) AS GoodsInWarehousesBalanceAndTurnovers</query>
 	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>RequiredBalance</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Warehouse</dataPath>
+			<field>Warehouse</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Warehouse</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Warehouses</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Product</dataPath>
+			<field>Product</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Product</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Products</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>RequiredBalance</dataPath>
+			<field>RequiredBalance</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Required balance</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<objectName>GoodsRequiredBalance</objectName>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>GoodsBalanceAndTurnovers</sourceDataSet>
+		<destinationDataSet>RequiredBalance</destinationDataSet>
+		<sourceExpression>Warehouse</sourceExpression>
+		<destinationExpression>Warehouse</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>GoodsBalanceAndTurnovers</sourceDataSet>
+		<destinationDataSet>RequiredBalance</destinationDataSet>
+		<sourceExpression>Product</sourceExpression>
+		<destinationExpression>Product</destinationExpression>
+	</dataSetLink>
 	<totalField>
 		<dataPath>ClosingBalance.Amount</dataPath>
 		<expression>Sum(ClosingBalance.Amount)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Expense.Amount</dataPath>
-		<expression>Sum(Expense.Amount)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>OpeningBalance.Amount</dataPath>
-		<expression>Sum(OpeningBalance.Amount)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Receipt.Amount</dataPath>
-		<expression>Sum(Receipt.Amount)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>ClosingBalance.Quantity</dataPath>
 		<expression>Sum(ClosingBalance.Quantity)</expression>
 	</totalField>
 	<totalField>
+		<dataPath>Expense.Amount</dataPath>
+		<expression>Sum(Expense.Amount)</expression>
+	</totalField>
+	<totalField>
 		<dataPath>Expense.Quantity</dataPath>
 		<expression>Sum(Expense.Quantity)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>OpeningBalance.Amount</dataPath>
+		<expression>Sum(OpeningBalance.Amount)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>OpeningBalance.Quantity</dataPath>
 		<expression>Sum(OpeningBalance.Quantity)</expression>
 	</totalField>
 	<totalField>
+		<dataPath>Receipt.Amount</dataPath>
+		<expression>Sum(Receipt.Amount)</expression>
+	</totalField>
+	<totalField>
 		<dataPath>Receipt.Quantity</dataPath>
 		<expression>Sum(Receipt.Quantity)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>RequiredBalance</dataPath>
+		<expression>Sum(RequiredBalance)</expression>
+		<group>Product</group>
+		<group>Product Hierarchy</group>
 	</totalField>
 	<parameter>
 		<name>BeginOfPeriod</name>
@@ -152,7 +223,8 @@ FROM
 			</v8:DateQualifiers>
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period.StartDate</expression>
 	</parameter>
 	<parameter>
 		<name>EndOfPeriod</name>
@@ -169,37 +241,50 @@ FROM
 			</v8:DateQualifiers>
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period.EndDate</expression>
+	</parameter>
+	<parameter>
+		<name>Period</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
 		<useRestriction>false</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<settingsVariant>
-		<dcsset:name>Default</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Default</dcsset:presentation>
+		<dcsset:name>GoodsMovement</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Goods movement</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
 					<dcsset:lwsTitle>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Beginning of period</v8:content>
+							<v8:content>Opening balance</v8:content>
 						</v8:item>
 					</dcsset:lwsTitle>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>OpeningBalance.Quantity</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Quantity</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>OpeningBalance.Amount</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Amount</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
@@ -212,43 +297,9 @@ FROM
 					</dcsset:lwsTitle>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>Receipt.Quantity</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Quantity</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>Receipt.Amount</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Amount</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:placement>Auto</dcsset:placement>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:field>Expense</dcsset:field>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Expense.Quantity</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Quantity</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Expense.Amount</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Amount</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
@@ -256,30 +307,209 @@ FROM
 					<dcsset:lwsTitle>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>End of period</v8:content>
+							<v8:content>Expense</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Expense.Quantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Expense.Amount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Closing balance</v8:content>
 						</v8:item>
 					</dcsset:lwsTitle>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ClosingBalance.Quantity</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Quantity</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ClosingBalance.Amount</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>en</v8:lang>
-								<v8:content>Amount</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
 					</dcsset:item>
 					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Warehouse</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0d6aa921-58cb-41f3-9249-1c173b3f002f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Product</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>a54436f1-1e5b-4ed8-9a31-81f58e8bdb3e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Period</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>ce544c21-8db0-444e-bd34-e8676a9fd2d0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Antique</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Warehouse</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Product</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>GoodsMovementWithMinimumBalance</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Goods movement with minimum balance</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Opening balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>OpeningBalance.Quantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>OpeningBalance.Amount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Receipt</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Receipt.Quantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Receipt.Amount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Expense</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Expense.Quantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Expense.Amount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Closing balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ClosingBalance.Quantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ClosingBalance.Amount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>RequiredBalance</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Warehouse</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0d6aa921-58cb-41f3-9249-1c173b3f002f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Product</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>a54436f1-1e5b-4ed8-9a31-81f58e8bdb3e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Period</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>ce544c21-8db0-444e-bd34-e8676a9fd2d0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
@@ -322,93 +552,24 @@ FROM
 						<dcsset:item>
 							<dcsset:selection>
 								<dcsset:item>
-									<dcsset:field>ClosingBalance.Amount</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
 									<dcsset:field>ClosingBalance.Quantity</dcsset:field>
 								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>Expense.Amount</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>Expense.Quantity</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>OpeningBalance.Amount</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>OpeningBalance.Quantity</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>Receipt.Amount</dcsset:field>
-								</dcsset:item>
-								<dcsset:item>
-									<dcsset:field>Receipt.Quantity</dcsset:field>
-								</dcsset:item>
 							</dcsset:selection>
-							<dcsset:filter/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ClosingBalance.Quantity</dcsset:left>
+									<dcsset:comparisonType>Less</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:Field">RequiredBalance</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>MarkNegatives</dcscor:parameter>
-									<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+									<dcscor:parameter>BackColor</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF9696</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
 					</dcsset:conditionalAppearance>
-					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:groupItems>
-							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Recorder</dcsset:field>
-								<dcsset:groupType>Items</dcsset:groupType>
-								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-							</dcsset:item>
-						</dcsset:groupItems>
-						<dcsset:order>
-							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-						</dcsset:order>
-						<dcsset:selection>
-							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-						</dcsset:selection>
-						<dcsset:conditionalAppearance>
-							<dcsset:item>
-								<dcsset:selection>
-									<dcsset:item>
-										<dcsset:field>ClosingBalance.Amount</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>ClosingBalance.Quantity</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>Expense.Amount</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>Expense.Quantity</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>OpeningBalance.Amount</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>OpeningBalance.Quantity</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>Receipt.Amount</dcsset:field>
-									</dcsset:item>
-									<dcsset:item>
-										<dcsset:field>Receipt.Quantity</dcsset:field>
-									</dcsset:item>
-								</dcsset:selection>
-								<dcsset:filter/>
-								<dcsset:appearance>
-									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-										<dcscor:parameter>MarkNegatives</dcscor:parameter>
-										<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-									</dcscor:item>
-								</dcsset:appearance>
-							</dcsset:item>
-						</dcsset:conditionalAppearance>
-					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

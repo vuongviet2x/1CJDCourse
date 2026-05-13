@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Document uuid="2c881a41-8093-457e-9783-e4bce5a669b9">
+	<Document uuid="2386be98-1160-4eb0-8579-3cd3e9aaaac1">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.ReturnOfGoodsFromCustomer" category="Object">
-				<xr:TypeId>5d1338dc-da5c-4212-ad1e-e9e0c335dd9f</xr:TypeId>
-				<xr:ValueId>add3b089-90f8-485f-a2b2-860b4de2169b</xr:ValueId>
+				<xr:TypeId>b7319a6a-5f13-42ab-a472-41a52eb93efd</xr:TypeId>
+				<xr:ValueId>a701a39f-4d7a-49c4-b9e8-f02696adfa6a</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentRef.ReturnOfGoodsFromCustomer" category="Ref">
-				<xr:TypeId>1141180f-8763-4351-bbcd-d5daf4b6136b</xr:TypeId>
-				<xr:ValueId>e1f6201b-43be-4478-adc8-4589a57da2db</xr:ValueId>
+				<xr:TypeId>42b1aa8f-1b0c-480e-906a-5ac57dc2e4ea</xr:TypeId>
+				<xr:ValueId>15319365-00a1-4efa-ae0d-38e6694f7a7f</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentSelection.ReturnOfGoodsFromCustomer" category="Selection">
-				<xr:TypeId>abf13d67-add9-47da-a869-ead47563916a</xr:TypeId>
-				<xr:ValueId>b7b3a303-3424-4e20-856a-6b274d23abaa</xr:ValueId>
+				<xr:TypeId>40895fd9-fc33-4799-9d98-379148d91659</xr:TypeId>
+				<xr:ValueId>2dd1e3c3-bb27-45a1-aefa-c7e7b060f6bd</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentList.ReturnOfGoodsFromCustomer" category="List">
-				<xr:TypeId>1fa18b7e-ba23-4f40-ba56-e7e230954308</xr:TypeId>
-				<xr:ValueId>63132ed8-3983-4913-9d2b-2ce9b256646f</xr:ValueId>
+				<xr:TypeId>8d05f5f5-f7e5-4110-8764-d6a107487646</xr:TypeId>
+				<xr:ValueId>9ac8a126-72ef-47e7-8243-34bd2caada49</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentManager.ReturnOfGoodsFromCustomer" category="Manager">
-				<xr:TypeId>38c114a4-9a26-4dfa-a80a-6ed0d5bf1d35</xr:TypeId>
-				<xr:ValueId>5fd9c9b0-6b5c-4fb0-8987-ccff4478a175</xr:ValueId>
+				<xr:TypeId>9b16679f-473f-4627-863c-d4044237c177</xr:TypeId>
+				<xr:ValueId>96af1157-5f3d-4720-a917-cd975e97d646</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -59,7 +59,7 @@
 			<AuxiliaryChoiceForm/>
 			<Posting>Allow</Posting>
 			<RealTimePosting>Allow</RealTimePosting>
-			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
+			<RegisterRecordsDeletion>AutoDelete</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
@@ -83,7 +83,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="3c10810e-08e8-4024-94c5-3245a94acda8">
+			<Attribute uuid="aa9043cb-2538-4984-9f6d-7c2a601e631b">
 				<Properties>
 					<Name>Company</Name>
 					<Synonym>
@@ -122,7 +122,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="81d83884-c2dc-4eb1-95dd-a3b5cdaed0c4">
+			<Attribute uuid="6a963f8a-5fb3-499a-bd09-48bd983afd45">
 				<Properties>
 					<Name>Customer</Name>
 					<Synonym>
@@ -150,7 +150,11 @@
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
+					<ChoiceParameters>
+						<app:item name="Filter.Customer">
+							<app:value xsi:type="xs:boolean">true</app:value>
+						</app:item>
+					</ChoiceParameters>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
@@ -161,7 +165,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b9d1a0ca-98f1-43c6-932f-6486935ebfaf">
+			<Attribute uuid="5aecd184-856b-4cb8-bb9c-9e2516d9b2a1">
 				<Properties>
 					<Name>Contract</Name>
 					<Synonym>
@@ -188,7 +192,13 @@
 					<FillValue xsi:nil="true"/>
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Filter.Owner</xr:Name>
+							<xr:DataPath xsi:type="xs:string">0:9a301379-b6f7-41ca-ac60-278cb6f3a5b3</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
 					<ChoiceParameters/>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
@@ -200,7 +210,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="0ce1d9f6-4741-479d-adf1-037c9f2f99a0">
+			<Attribute uuid="9d6db99c-fa22-43c7-9d02-e0ea65dece73">
 				<Properties>
 					<Name>Warehouse</Name>
 					<Synonym>
@@ -239,7 +249,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="bb0314e3-10d0-4eb0-844e-da71d06cb896">
+			<Attribute uuid="1984ecc2-319c-4e2e-a213-14d3b83a13a2">
 				<Properties>
 					<Name>SalesDocument</Name>
 					<Synonym>
@@ -278,16 +288,149 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="3db755f8-214f-4fcd-86df-44f4b332bf45">
+				<Properties>
+					<Name>BankAccount</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Bank account</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.BankAccounts</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Filter.Owner</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.ReturnOfGoodsFromCustomer.Attribute.Company</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="54c5b40e-0603-44ff-9327-54db811eb99d">
+				<Properties>
+					<Name>DocumentTotal</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Document total</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="025c9efc-9362-44d5-be82-949005e444a1">
+				<Properties>
+					<Name>Discount</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Discount</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<Form>DocumentForm</Form>
-			<TabularSection uuid="a168b70f-8b98-4c8f-9d5a-d4f764f01b1b">
+			<TabularSection uuid="2c39de6b-ced7-4b1a-a86a-b56469c41d48">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ReturnOfGoodsFromCustomer.Products" category="TabularSection">
-						<xr:TypeId>1e599c99-8725-41a5-866f-009de421c011</xr:TypeId>
-						<xr:ValueId>eadccdcb-19e3-4af4-95f0-9dbfaf802129</xr:ValueId>
+						<xr:TypeId>e8994e0f-8e88-41a3-8456-576b5e7658bc</xr:TypeId>
+						<xr:ValueId>027cffd6-2707-4a64-9aa1-ff9f76b625c6</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="DocumentTabularSectionRow.ReturnOfGoodsFromCustomer.Products" category="TabularSectionRow">
-						<xr:TypeId>ad92fd90-9109-49fd-8e47-b1c042808c24</xr:TypeId>
-						<xr:ValueId>e4bf83b7-be1c-4eca-b6be-720aea074945</xr:ValueId>
+						<xr:TypeId>5e290c63-4282-45ea-9ca3-0f82dcbb423e</xr:TypeId>
+						<xr:ValueId>f9d644b8-0819-4707-ac38-5eafd06acded</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -300,7 +443,7 @@
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<StandardAttributes>
 						<xr:StandardAttribute name="LineNumber">
 							<xr:LinkByType/>
@@ -332,7 +475,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="4ab68476-0c94-4395-9172-aec0ac77ff8c">
+					<Attribute uuid="79ca0108-26b1-4a65-b408-c8d617978d3f">
 						<Properties>
 							<Name>Product</Name>
 							<Synonym>
@@ -359,8 +502,8 @@
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters>
-								<app:item name="Filter.Type">
-									<app:value xsi:type="xr:DesignTimeRef">Enum.ProductTypes.EnumValue.Product</app:value>
+								<app:item name="Filter.ProductType">
+									<app:value xsi:type="xr:DesignTimeRef">Enum.ProductsTypes.EnumValue.InventoryItem</app:value>
 								</app:item>
 							</ChoiceParameters>
 							<QuickChoice>Auto</QuickChoice>
@@ -373,7 +516,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="397ef490-ec2d-4ca9-8d83-56a0f736add6">
+					<Attribute uuid="6ef96306-3dc4-4980-a31e-f0d0d8dad2a5">
 						<Properties>
 							<Name>Quantity</Name>
 							<Synonym>
@@ -415,7 +558,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="89ab5f39-0a11-4667-ad68-0616ad301259">
+					<Attribute uuid="e8cbc01c-04b5-4bc4-95c0-5adf724f0311">
 						<Properties>
 							<Name>Price</Name>
 							<Synonym>
@@ -428,7 +571,49 @@
 							<Type>
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
-									<v8:Digits>10</v8:Digits>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="cb069fe0-f0ae-4829-8eed-63a75c8cb4f9">
+						<Properties>
+							<Name>Amount</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Amount</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
 									<v8:FractionDigits>0</v8:FractionDigits>
 									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 								</v8:NumberQualifiers>
@@ -457,23 +642,18 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="810653dd-0cef-47b8-a5ba-635126d79a99">
+					<Attribute uuid="7a9697a3-03e9-4d81-85fd-f2bb92adb53d">
 						<Properties>
-							<Name>Amount</Name>
+							<Name>Batch</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Amount</v8:content>
+									<v8:content>Batch</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>15</v8:Digits>
-									<v8:FractionDigits>3</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-								</v8:NumberQualifiers>
+								<v8:Type>cfg:DocumentRef.PurchaseInvoice</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -501,15 +681,15 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="ce84ef2a-7f80-4b65-a569-25869188ff9c">
+			<TabularSection uuid="85ecd647-8c63-4eda-ad0d-d3f2a9938ec9">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ReturnOfGoodsFromCustomer.Services" category="TabularSection">
-						<xr:TypeId>c3ba3f4c-8e78-4a04-8980-d0435f6896ba</xr:TypeId>
-						<xr:ValueId>6c849994-d776-4763-a97b-fa62c59b0229</xr:ValueId>
+						<xr:TypeId>6bbddffa-5975-4f48-8692-ae6d3e77e829</xr:TypeId>
+						<xr:ValueId>588277a0-920e-46b2-8fff-f861302a3e47</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="DocumentTabularSectionRow.ReturnOfGoodsFromCustomer.Services" category="TabularSectionRow">
-						<xr:TypeId>7d252dff-0252-42fe-bdad-f7589789511d</xr:TypeId>
-						<xr:ValueId>6d6dbdf3-fcec-4833-81f6-42adf2b896a4</xr:ValueId>
+						<xr:TypeId>668fd551-a774-4654-abe0-fbe8c8854800</xr:TypeId>
+						<xr:ValueId>30623008-48bf-4fb3-88d8-857bbe026520</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -554,13 +734,13 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="2cce6f16-d043-46e9-a475-630b259d4fbb">
+					<Attribute uuid="49e1c6b2-0c4e-4839-9a21-017d8f0d6b5c">
 						<Properties>
-							<Name>Service</Name>
+							<Name>Product</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Service</v8:content>
+									<v8:content>Product</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -581,8 +761,8 @@
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters>
-								<app:item name="Filter.Type">
-									<app:value xsi:type="xr:DesignTimeRef">Enum.ProductTypes.EnumValue.Service</app:value>
+								<app:item name="Filter.ProductType">
+									<app:value xsi:type="xr:DesignTimeRef">Enum.ProductsTypes.EnumValue.Service</app:value>
 								</app:item>
 							</ChoiceParameters>
 							<QuickChoice>Auto</QuickChoice>
@@ -595,7 +775,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="3b5b42fe-6273-4271-9f93-ae791a574c13">
+					<Attribute uuid="8beaffa7-e443-4277-a622-c467c5a03f84">
 						<Properties>
 							<Name>Quantity</Name>
 							<Synonym>
@@ -637,7 +817,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="d9d52c2f-fcf1-4d56-9f35-b0ecc5573501">
+					<Attribute uuid="b90dbcf6-de1e-490f-8c13-64eac62fdc1a">
 						<Properties>
 							<Name>Price</Name>
 							<Synonym>
@@ -650,7 +830,49 @@
 							<Type>
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
-									<v8:Digits>10</v8:Digits>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="5a50bf7f-34ee-483f-87c7-0f6a93ba6d36">
+						<Properties>
+							<Name>Amount</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Amount</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
 									<v8:FractionDigits>0</v8:FractionDigits>
 									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 								</v8:NumberQualifiers>
@@ -666,48 +888,6 @@
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>Use</FullTextSearch>
-							<DataHistory>Use</DataHistory>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="605b687f-e126-4126-9dfb-023dbe8c2dc1">
-						<Properties>
-							<Name>Amount</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>Amount</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>15</v8:Digits>
-									<v8:FractionDigits>3</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-								</v8:NumberQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillChecking>ShowError</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>
