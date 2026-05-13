@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="SettingsComposerUserSettingsList" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User settings group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="SettingsComposerUserSettingsListExtendedTooltip" id="2"/>
+		</UsualGroup>
+		<Table name="List" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>List</DataPath>
+			<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List</v8:content>
+				</v8:item>
+			</Title>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>SettingsComposerUserSettingsList</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ListContextMenu" id="4"/>
+			<AutoCommandBar name="ListCommandBar" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ListExtendedTooltip" id="6"/>
+			<SearchStringAddition name="ListSearchString" id="7">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchStringContextMenu" id="10"/>
+				<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ListViewStatus" id="12">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListViewStatusContextMenu" id="15"/>
+				<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ListSearchControl" id="17">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchControlContextMenu" id="20"/>
+				<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="21"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ListOnActivateRow</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="NumberDate" id="54" DisplayImportance="VeryHigh">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Number date</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="NumberDateExtendedTooltip" id="55"/>
+					<ChildItems>
+						<LabelField name="Date" id="22" DisplayImportance="VeryHigh">
+							<DataPath>List.Date</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<Width>9</Width>
+							<ContextMenu name="DateContextMenu" id="23"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="24"/>
+						</LabelField>
+						<LabelField name="Number" id="25" DisplayImportance="VeryHigh">
+							<DataPath>List.Number</DataPath>
+							<ContextMenu name="NumberContextMenu" id="26"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="27"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="PostedByBankGroup" id="28" DisplayImportance="VeryLow">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведено банком</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Processed by bank</v8:content>
+						</v8:item>
+					</Title>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="PostedByBankGroupExtendedTooltip" id="29"/>
+					<ChildItems>
+						<CheckBoxField name="ProcessedByBank" id="33">
+							<DataPath>List.ProcessedByBank</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ProcessedByBankContextMenu" id="34"/>
+							<ExtendedTooltip name="ProcessedByBankExtendedTooltip" id="35"/>
+						</CheckBoxField>
+						<LabelField name="BankPostingDate" id="30">
+							<DataPath>List.BankPostingDate</DataPath>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="BankPostingDateContextMenu" id="31"/>
+							<ExtendedTooltip name="BankPostingDateExtendedTooltip" id="32"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="DocumentAmount" id="36" DisplayImportance="VeryLow">
+					<DataPath>List.DocumentAmount</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="DocumentAmountContextMenu" id="37"/>
+					<ExtendedTooltip name="DocumentAmountExtendedTooltip" id="38"/>
+				</LabelField>
+				<LabelField name="CounterpartyBankAccountCurrency" id="42" DisplayImportance="VeryLow">
+					<ContextMenu name="CounterpartyBankAccountCurrencyContextMenu" id="43"/>
+					<ExtendedTooltip name="CounterpartyBankAccountCurrencyExtendedTooltip" id="44"/>
+				</LabelField>
+				<LabelField name="Counterparty" id="39" DisplayImportance="VeryLow">
+					<DataPath>List.PaymentPurposes</DataPath>
+					<ContextMenu name="CounterpartyContextMenu" id="40"/>
+					<ExtendedTooltip name="CounterpartyExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="Organization" id="45" DisplayImportance="VeryLow">
+					<DataPath>List.Organization</DataPath>
+					<ContextMenu name="OrganizationContextMenu" id="46"/>
+					<ExtendedTooltip name="OrganizationExtendedTooltip" id="47"/>
+				</LabelField>
+				<LabelField name="BankAccount" id="48" DisplayImportance="VeryLow">
+					<DataPath>List.BankAccount</DataPath>
+					<ContextMenu name="BankAccountContextMenu" id="49"/>
+					<ExtendedTooltip name="BankAccountExtendedTooltip" id="50"/>
+				</LabelField>
+				<LabelField name="Ref" id="51">
+					<DataPath>List.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="RefContextMenu" id="52"/>
+					<ExtendedTooltip name="RefExtendedTooltip" id="53"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>List.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document._DemoDebitingFromAccount</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

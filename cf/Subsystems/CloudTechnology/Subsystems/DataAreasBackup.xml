@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="17d71114-7042-4600-8fc7-2833dc6914b8">
+		<Properties>
+			<Name>DataAreasBackup</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование областей данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data area backup</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataAreasBackup</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.BackupSupported</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.BackupSupported</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupControlInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupManagementMessageHandler_1_0_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupManagementInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupManagementImplementation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.BackUpDataArea</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.LastClientSessionStartDate</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupControlTranslationHandler_1_0_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesBackupManagementMessageHandler_1_0_3_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataAreasBackupClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.CreateBackup</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseDifferentialBackup</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="9b372ec2-d0dd-4dd2-987c-1f8b0af41ccb">
+		<Properties>
+			<Name>_DemoObjectsPrefixes</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префиксация объектов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Object prefixes</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoSetCompanyPrefixToDocumentNumber</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoCheckBusinessProcessNumberByDate</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoCheckDocumentNumberByDateAndCompany</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoSetInfobaseAndCompanyPrefixToDocumentNumber</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoSetInfobasePrefixToCatalogCode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoSetInfobasePrefixToBusinessProcessNumber</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoSetInfobasePrefixToDocumentNumber</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._DemoCheckCompanyCatalogCode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._DemoUseMultipleCompanies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._DemoNeverUseMultipleCompanies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._DemoCompanyPrefixes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCompanies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOptionsParameter._DemoCompany</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._DemoUseMultipleCompanies</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Use</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

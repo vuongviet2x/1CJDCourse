@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="NumberDateGroup" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Number date</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="NumberDateGroupExtendedTooltip" id="14"/>
+			<ChildItems>
+				<InputField name="Number" id="1">
+					<DataPath>Object.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="NumberContextMenu" id="2"/>
+					<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+				</InputField>
+				<InputField name="Date" id="4">
+					<DataPath>Object.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>dated</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DateContextMenu" id="5"/>
+					<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="RegisterRecords_DemoAvailableStockInStorageLocations" id="17">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движения демо остатки товаров в местах хранения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Register records demo available stock in storage locations</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsContextMenu" id="18"/>
+			<AutoCommandBar name="RegisterRecords_DemoAvailableStockInStorageLocationsCommandBar" id="19"/>
+			<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsExtendedTooltip" id="20"/>
+			<SearchStringAddition name="RegisterRecords_DemoAvailableStockInStorageLocationsSearchString" id="21">
+				<AdditionSource>
+					<Item>RegisterRecords_DemoAvailableStockInStorageLocations</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsSearchBarContextMenu" id="22"/>
+				<ExtendedTooltip name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsSearchBarExtendedTooltip" id="23"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="RegisterRecords_DemoAvailableStockInStorageLocationsViewStatus" id="24">
+				<AdditionSource>
+					<Item>RegisterRecords_DemoAvailableStockInStorageLocations</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsViewingStatusContextMenu" id="25"/>
+				<ExtendedTooltip name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsViewingStatusExtendedTooltip" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="RegisterRecords_DemoAvailableStockInStorageLocationsSearchControl" id="27">
+				<AdditionSource>
+					<Item>RegisterRecords_DemoAvailableStockInStorageLocations</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsSearchManagementContextMenu" id="28"/>
+				<ExtendedTooltip name="RegisteredRecordsDemoRemnantsOfGoodsInStorageLocationsSearchManagementExtendedTooltip" id="29"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">RegisterRecords_DemoAvailableStockInStorageLocationsOnStartEdit</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="RegisterRecords_DemoAvailableStockInStorageLocationsRowNumber" id="30">
+					<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsRowNumberContextMenu" id="31"/>
+					<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsRowNumberExtendedTooltip" id="32"/>
+				</LabelField>
+				<ColumnGroup name="DateKindGroup" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата вид</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date kind</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="DateKindGroupExtendedTooltip" id="52"/>
+					<ChildItems>
+						<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsPeriod" id="33">
+							<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.Period</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsPeriodContextMenu" id="34"/>
+							<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsPeriodExtendedTooltip" id="35"/>
+						</InputField>
+						<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsRegisterRecordKind" id="36">
+							<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.RecordType</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsRegisterRecordKindContextMenu" id="37"/>
+							<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsRegisterRecordKindExtendedTooltip" id="38"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="LocationGroup" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Location</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="LocationGroupExtendedTooltip" id="54"/>
+					<ChildItems>
+						<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsCompany" id="39">
+							<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.Organization</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsCompanyContextMenu" id="40"/>
+							<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsCompanyExtendedTooltip" id="41"/>
+						</InputField>
+						<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsStorageLocation" id="42">
+							<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.StorageLocation</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsStorageLocationContextMenu" id="43"/>
+							<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsStorageLocationExtendedTooltip" id="44"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsProducts" id="45">
+					<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.Products</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsProductsContextMenu" id="46"/>
+					<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsProductsExtendedTooltip" id="47"/>
+				</InputField>
+				<InputField name="RegisterRecords_DemoAvailableStockInStorageLocationsQuantity" id="48">
+					<DataPath>Object.RegisterRecords._DemoGoodsBalancesInStorageLocations.Count</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="RegisterRecords_DemoAvailableStockInStorageLocationsQuantityContextMenu" id="49"/>
+					<ExtendedTooltip name="RegisterRecords_DemoAvailableStockInStorageLocationsQuantityExtendedTooltip" id="50"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="EmployeeResponsibleAndComment" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный и комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Person responsible and comment</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="EmployeeResponsibleAndCommentExtendedTooltip" id="16"/>
+			<ChildItems>
+				<InputField name="Comment" id="7">
+					<DataPath>Object.Comment</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CommentContextMenu" id="8"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="9"/>
+				</InputField>
+				<InputField name="EmployeeResponsible" id="10">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="11"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._DemoStockAdjustmentInStorageLocations</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

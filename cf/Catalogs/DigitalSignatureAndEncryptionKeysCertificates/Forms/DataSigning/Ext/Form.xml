@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подписание данных</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Data signing</v8:content>
+		</v8:item>
+	</Title>
+	<Width>56</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnClose">OnClose</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="DataPresentationGroup" id="450">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data presentation</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="DataPresentationGroupExtendedTooltip" id="451"/>
+			<ChildItems>
+				<LabelField name="DataPresentation" id="18">
+					<DataPath>DataPresentation</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="DataPresentationContextMenu" id="19"/>
+					<ExtendedTooltip name="DataPresentationExtendedTooltip" id="20"/>
+					<Events>
+						<Event name="Click">DataPresentationClick</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupSignatureType" id="475">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип подписи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Signature type</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupSignatureTypeExtendedTooltip" id="476"/>
+			<ChildItems>
+				<InputField name="SignatureType" id="477">
+					<DataPath>SignatureType</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип подписи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Signature type</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="SignatureTypeContextMenu" id="478"/>
+					<ExtendedTooltip name="SignatureTypeExtendedTooltip" id="479"/>
+					<Events>
+						<Event name="Clearing">SignatureTypeClearing</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="SignAndCommentGroup" id="452">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписание и комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Signing and comment</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="SignAndCommentGroupExtendedTooltip" id="453"/>
+			<ChildItems>
+				<UsualGroup name="SignGroup" id="378">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите пароль закрытого ключа сертификата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Enter the password of certificate private key</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="SignGroupExtendedTooltip" id="379"/>
+					<ChildItems>
+						<UsualGroup name="GroupWithFields" id="433">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Fields</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupWithFieldsExtendedTooltip" id="434"/>
+							<ChildItems>
+								<InputField name="Certificate" id="313">
+									<DataPath>Certificate</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate</v8:content>
+										</v8:item>
+									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<OpenButton>true</OpenButton>
+									<CreateButton>false</CreateButton>
+									<QuickChoice>false</QuickChoice>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="CertificateContextMenu" id="314"/>
+									<ExtendedTooltip name="CertificateExtendedTooltip" id="315"/>
+									<Events>
+										<Event name="OnChange">CertificateOnChange</Event>
+										<Event name="AutoComplete">CertificateAutoComplete</Event>
+										<Event name="StartChoice">CertificateStartChoice</Event>
+										<Event name="Opening">CertificateOpening</Event>
+										<Event name="TextEditEnd">CertificateTextEditEnd</Event>
+										<Event name="ChoiceProcessing">CertificateChoiceProcessing</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="AdditionalDataGroup" id="488">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные сведения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Additional information</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="AdditionalDataGroupExtendedTooltip" id="489"/>
+									<ChildItems>
+										<LabelDecoration name="DecorationAdditionalInformation" id="493">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Неквалифицированный сертификат: выпущен удостоверяющим центром, не аккредитованным на момент выпуска сертификата.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Unqualified certificate: it was issued by a certificate authority that was non-accredited at that moment.</v8:content>
+												</v8:item>
+											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
+											<ContextMenu name="DecorationAdditionalInformationContextMenu" id="494"/>
+											<ExtendedTooltip name="DecorationAdditionalInformationExtendedTooltip" id="495"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupRecalled" id="483">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отозван</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Revoked</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupRecalledExtendedTooltip" id="484"/>
+									<ChildItems>
+										<PictureDecoration name="DecorationRecalled" id="480">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация отозван</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decoration revoked</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.Warning</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="DecorationRecalledContextMenu" id="481"/>
+											<ExtendedTooltip name="DecorationRecalledExtendedTooltip" id="482"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationRecalledLabel" id="485">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат помечен в приложении как отозванный. Выберите другой сертификат.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>The certificate is marked as revoked. Please select another certificate.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DecorationRecalledLabelContextMenu" id="486"/>
+											<ExtendedTooltip name="DecorationRecalledLabelExtendedTooltip" id="487"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="PasswordGroup" id="454">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Password</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="PasswordGroupExtendedTooltip" id="455"/>
+									<ChildItems>
+										<InputField name="Password" id="316">
+											<DataPath>Password</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Password</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<PasswordMode>true</PasswordMode>
+											<ChoiceButton>true</ChoiceButton>
+											<EditTextUpdate>OnValueChange</EditTextUpdate>
+											<ChoiceButtonPicture>
+												<xr:Ref>CommonPicture.CharsBeingTypedShown</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ChoiceButtonPicture>
+											<ContextMenu name="PasswordContextMenu" id="317"/>
+											<ExtendedTooltip name="PasswordExtendedTooltip" id="318"/>
+											<Events>
+												<Event name="OnChange">PasswordOnChange</Event>
+												<Event name="StartChoice">PasswordStartChoice</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="RememberPassword" id="324">
+											<DataPath>RememberPassword</DataPath>
+											<SkipOnInput>true</SkipOnInput>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запомнить на время сеанса</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Remember for session</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запомнить пароль сертификата до закрытия приложения. При снятии флажка пароль стирается из памяти, если запоминался ранее.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Remember the certificate password before closing the app. When the check box is cleared, the stored password will be forgotten.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="RememberPasswordContextMenu" id="325"/>
+											<ExtendedTooltip name="RememberPasswordExtendedTooltip" id="326"/>
+											<Events>
+												<Event name="OnChange">RememberPasswordOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="Pages" id="416">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Pages</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="PagesExtendedTooltip" id="417"/>
+									<ChildItems>
+										<Page name="EnhancedPasswordNotePage" id="438">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница пояснение усиленного пароля</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Enhanced password explanation page</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="EnhancedPasswordNotePageExtendedTooltip" id="439"/>
+											<ChildItems>
+												<LabelDecoration name="AdvancedPasswordNote" id="440">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нажмите Подписать, чтобы перейти к вводу пароля.
+</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Click "Sign" to start entering the password.
+</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="AdvancedPasswordNoteContextMenu" id="441"/>
+													<ExtendedTooltip name="AdvancedPasswordNoteExtendedTooltip" id="442"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="SpecifiedPasswordNotePage" id="443">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница пояснение установленного пароля</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Set password explanation page</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="SpecifiedPasswordNotePageExtendedTooltip" id="444"/>
+											<ChildItems>
+												<LabelDecoration name="SpecifiedPasswordNote" id="445">
+													<TextColor>style:NoteText</TextColor>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="SpecifiedPasswordNoteContextMenu" id="446"/>
+													<ExtendedTooltip name="SpecifiedPasswordNoteExtendedTooltip" id="447">
+														<Events>
+															<Event name="URLProcessing">SpecifiedPasswordNoteExtendedTooltipURLProcessing</Event>
+														</Events>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">SpecifiedPasswordNoteClick</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="PowerOfAttorneyGroup" id="496">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доверенность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Letter of authority</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PowerOfAttorneyGroupExtendedTooltip" id="497"/>
+							<ChildItems>
+								<Pages name="GroupPages" id="504">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Pages</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="GroupPagesExtendedTooltip" id="505"/>
+									<ChildItems>
+										<Page name="PageWithoutLetterOfAuthority" id="510">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница выбор доверенности</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Page Select letter of authority</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="PageWithoutLetterOfAuthorityExtendedTooltip" id="511"/>
+											<ChildItems>
+												<CheckBoxField name="ByLetterOfAuthority1" id="515">
+													<DataPath>ByLetterOfAuthority</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По доверенности</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Under letter of authority</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ByLetterOfAuthority1ContextMenu" id="516"/>
+													<ExtendedTooltip name="ByLetterOfAuthority1ExtendedTooltip" id="517"/>
+													<Events>
+														<Event name="OnChange">SelectLetterOfAuthorityOnChange</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</Page>
+										<Page name="PageSelectLetterOfAuthority" id="508">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница выбор доверенности</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Page Select letter of authority</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница без доверенности</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Page Without letter of authority</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="PageSelectLetterOfAuthorityExtendedTooltip" id="509"/>
+											<ChildItems>
+												<CheckBoxField name="ByLetterOfAuthority" id="498">
+													<DataPath>ByLetterOfAuthority</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По доверенности:</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Under letter of authority:</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ByLetterOfAuthorityContextMenu" id="499"/>
+													<ExtendedTooltip name="ByLetterOfAuthorityExtendedTooltip" id="500"/>
+													<Events>
+														<Event name="OnChange">SelectLetterOfAuthorityOnChange</Event>
+													</Events>
+												</CheckBoxField>
+												<InputField name="MachineReadableLetterOfAuthority" id="501">
+													<DataPath>MachineReadableLetterOfAuthority</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Машиночитаемая доверенность</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Machine-readable letter of authority</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<DropListButton>true</DropListButton>
+													<ChooseType>false</ChooseType>
+													<ChoiceParameterLinks>
+														<xr:Link>
+															<xr:Name>AgentCertificate</xr:Name>
+															<xr:DataPath xsi:type="xs:string">Certificate</xr:DataPath>
+															<xr:ValueChange>Clear</xr:ValueChange>
+														</xr:Link>
+													</ChoiceParameterLinks>
+													<ChoiceParameters>
+														<app:item name="OnlyValidOnes">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+													<ContextMenu name="MachineReadableLetterOfAuthorityContextMenu" id="502"/>
+													<ExtendedTooltip name="MachineReadableLetterOfAuthorityExtendedTooltip" id="503"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupContainer" id="468">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контейнер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Container</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupContainerExtendedTooltip" id="469"/>
+				</UsualGroup>
+				<InputField name="Comment" id="408">
+					<DataPath>Comment</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий к подписи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Free text about the signature.</v8:content>
+						</v8:item>
+					</Title>
+					<TitleHeight>2</TitleHeight>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<ContextMenu name="CommentContextMenu" id="409"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="410"/>
+				</InputField>
+				<UsualGroup name="GroupContainer1" id="470">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контейнер1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Container1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupContainer1ExtendedTooltip" id="471"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="CommandGroup" id="456">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Commands</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="CommandGroupExtendedTooltip" id="457"/>
+			<ChildItems>
+				<UsualGroup name="ConfirmationCommandsGroup" id="458">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды подтверждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Confirmation commands</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ConfirmationCommandsGroupExtendedTooltip" id="459"/>
+				</UsualGroup>
+				<CommandBar name="BasicCommandsGroup" id="460">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Basic commands</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ExtendedTooltip name="BasicCommandsGroupExtendedTooltip" id="461"/>
+					<ChildItems>
+						<Button name="Sign" id="462">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.Sign</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписать</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Sign</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SignExtendedTooltip" id="463"/>
+						</Button>
+						<Button name="Cancel" id="464">
+							<Type>CommandBarButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отмена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Cancel</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CancelExtendedTooltip" id="465"/>
+						</Button>
+						<Button name="FormHelp" id="466">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="FormHelpExtendedTooltip" id="467"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="DataPresentation" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data presentation</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Certificate" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Certificate</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.DigitalSignatureAndEncryptionKeysCertificates</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Password" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Password</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="RememberPassword" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remember password</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Comment" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ThumbprintOfCertificate" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificatePicklist" id="7">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="CertificatesFilter" id="1">
+			<Type/>
+		</Attribute>
+		<Attribute name="AdditionalActionsOutputParameters" id="8">
+			<Type/>
+		</Attribute>
+		<Attribute name="CertificateApp" id="9">
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.DigitalSignatureApplication</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="NoConfirmation" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="NotifyOfCertificateAboutToExpire" id="11">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateExpiresOn" id="15">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateAtServerErrorDescription" id="6">
+			<Type/>
+		</Attribute>
+		<Attribute name="CryptographyManagerOnServerErrorDescription" id="16">
+			<Type/>
+		</Attribute>
+		<Attribute name="ThumbprintsFilter" id="17">
+			<Type/>
+		</Attribute>
+		<Attribute name="CertificateEnterPasswordInElectronicSignatureProgram" id="18">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ExecuteAtServer" id="19">
+			<Type/>
+		</Attribute>
+		<Attribute name="AddressOfCertificate" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExecuteInSaaS" id="20">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateCompany" id="21">
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.Organization</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="DefaultFieldNameToActivate" id="22">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CloudPasswordConfirmed" id="23">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SignatureType" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип подписи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Signature type</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.CryptographySignatureTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateRevoked" id="25">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificationAuthorityAuditResult" id="26">
+			<Type/>
+		</Attribute>
+		<Attribute name="ByLetterOfAuthority" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По доверенности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Under letter of authority</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="MachineReadableLetterOfAuthority" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Машиночитаемая доверенность</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Machine-readable letter of authority</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="MachineReadableSigningLOACheckResult" id="29">
+			<Type/>
+		</Attribute>
+		<Attribute name="VerifyCertificate" id="30">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Sign" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Sign</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Sign</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Operation">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="DataTitle">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="DataPresentation">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ShowComment">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="OpenDataList">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="CertificatesFilter">
+			<Type/>
+		</Parameter>
+		<Parameter name="AdditionalActionParameters">
+			<Type/>
+		</Parameter>
+		<Parameter name="NoConfirmation">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="CertificatesThumbprintsAtClient">
+			<Type/>
+		</Parameter>
+		<Parameter name="ExecuteAtServer">
+			<Type/>
+		</Parameter>
+		<Parameter name="NotifyOfCertificateAboutToExpire">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="SignatureType">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

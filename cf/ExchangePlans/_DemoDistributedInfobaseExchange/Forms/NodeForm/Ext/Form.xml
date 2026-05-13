@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CreateInitialImage</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>ReadChanges</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>ShowInList</ExcludedCommand>
+		<ExcludedCommand>WriteChanges</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+		<Event name="OnClose">OnClose</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Description" id="3">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="DescriptionContextMenu" id="4"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="52"/>
+		</InputField>
+		<UsualGroup name="RegistrationFiltersSetup" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила синхронизации данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data synchronization rules</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="RegistrationFiltersSetupExtendedTooltip" id="55"/>
+			<ChildItems>
+				<InputField name="DocumentsExportStartDate" id="9">
+					<DataPath>Object.DocumentsExportStartDate</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синхронизировать документы, начиная с даты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Synchronize documents starting from the date</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DocumentsExportStartDateContextMenu" id="10"/>
+					<ExtendedTooltip name="DocumentsExportStartDateExtendedTooltip" id="56"/>
+				</InputField>
+				<UsualGroup name="FiltersUsageFlagsGroup" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружать данные только в разрезе указанных объектов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Export data only by specified objects</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="FiltersUsageFlagsGroupExtendedTooltip" id="57"/>
+					<ChildItems>
+						<CheckBoxField name="UseFilterByCompanies" id="11">
+							<DataPath>Object.UseFilterByCompanies</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организаций</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Companies</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseFilterByCompaniesContextMenu" id="12"/>
+							<ExtendedTooltip name="UseFilterByCompaniesExtendedTooltip" id="58"/>
+						</CheckBoxField>
+						<CheckBoxField name="UseFilterByWarehouses" id="13">
+							<DataPath>Object.UseFilterByWarehouses</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Складов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Warehouses</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseFilterByWarehousesContextMenu" id="14"/>
+							<ExtendedTooltip name="UseFilterByWarehousesExtendedTooltip" id="59"/>
+						</CheckBoxField>
+						<CheckBoxField name="UseFilterByDepartments" id="15">
+							<DataPath>Object.UseFilterByDepartments</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Departments</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseFilterByDepartmentsContextMenu" id="16"/>
+							<ExtendedTooltip name="UseFilterByDepartmentsExtendedTooltip" id="60"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="TabularSections" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличные части</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Tables</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="TabularSectionsExtendedTooltip" id="61"/>
+					<ChildItems>
+						<Page name="CompaniesPage" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Companies</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CompaniesPageExtendedTooltip" id="62"/>
+							<ChildItems>
+								<Table name="Companies" id="27">
+									<SkipOnInput>false</SkipOnInput>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Object.Companies</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Companies</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="CompaniesContextMenu" id="28"/>
+									<AutoCommandBar name="CompaniesCommandBar" id="29"/>
+									<ExtendedTooltip name="CompaniesExtendedTooltip" id="63"/>
+									<SearchStringAddition name="CompaniesSearchString" id="79">
+										<AdditionSource>
+											<Item>Companies</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="CompaniesSearchStringContextMenu" id="80"/>
+										<ExtendedTooltip name="CompaniesSearchStringExtendedTooltip" id="81"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="CompanyViewStatus" id="82">
+										<AdditionSource>
+											<Item>Companies</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="CompanyViewStatusContextMenu" id="83"/>
+										<ExtendedTooltip name="CompanyViewStatusExtendedTooltip" id="84"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="CompaniesSearchControl" id="85">
+										<AdditionSource>
+											<Item>Companies</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="CompaniesSearchControlContextMenu" id="86"/>
+										<ExtendedTooltip name="CompaniesSearchControlExtendedTooltip" id="87"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="CompaniesRowNumber" id="30">
+											<DataPath>Object.Companies.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="CompaniesRowNumberContextMenu" id="31"/>
+											<ExtendedTooltip name="CompaniesRowNumberExtendedTooltip" id="64"/>
+										</LabelField>
+										<InputField name="CompaniesOrganization" id="32">
+											<DataPath>Object.Companies.Organization</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="CompaniesOrganizationContextMenu" id="33"/>
+											<ExtendedTooltip name="CompaniesOrganizationExtendedTooltip" id="65"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="WarehousesPage" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Склады</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Warehouses</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="WarehousesPageExtendedTooltip" id="66"/>
+							<ChildItems>
+								<Table name="Warehouses" id="34">
+									<SkipOnInput>false</SkipOnInput>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Object.Warehouses</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Склады</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Warehouses</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="WarehousesContextMenu" id="35"/>
+									<AutoCommandBar name="WarehousesCommandBar" id="36"/>
+									<ExtendedTooltip name="WarehousesExtendedTooltip" id="67"/>
+									<SearchStringAddition name="WarehousesSearchString" id="88">
+										<AdditionSource>
+											<Item>Warehouses</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="WarehousesSearchStringContextMenu" id="89"/>
+										<ExtendedTooltip name="WarehousesSearchStringExtendedTooltip" id="90"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="WarehousesViewStatus" id="91">
+										<AdditionSource>
+											<Item>Warehouses</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="WarehousesViewStatusContextMenu" id="92"/>
+										<ExtendedTooltip name="WarehousesViewStatusExtendedTooltip" id="93"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="WarehousesSearchControl" id="94">
+										<AdditionSource>
+											<Item>Warehouses</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="WarehousesSearchControlContextMenu" id="95"/>
+										<ExtendedTooltip name="WarehousesSearchControlExtendedTooltip" id="96"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="WarehousesRowNumber" id="37">
+											<DataPath>Object.Warehouses.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="WarehousesRowNumberContextMenu" id="38"/>
+											<ExtendedTooltip name="WarehousesRowNumberExtendedTooltip" id="68"/>
+										</LabelField>
+										<InputField name="WarehousesSourceWarehouse" id="39">
+											<DataPath>Object.Warehouses.SourceWarehouse</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="WarehousesSourceWarehouseContextMenu" id="40"/>
+											<ExtendedTooltip name="WarehousesSourceWarehouseExtendedTooltip" id="69"/>
+										</InputField>
+										<InputField name="WarehousesDestinationWarehouse" id="41">
+											<DataPath>Object.Warehouses.DestinationWarehouse</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="WarehousesDestinationWarehouseContextMenu" id="42"/>
+											<ExtendedTooltip name="WarehousesDestinationWarehouseExtendedTooltip" id="70"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="DepartmentsPage" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Departments</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="DepartmentsPageExtendedTooltip" id="71"/>
+							<ChildItems>
+								<Table name="Departments" id="43">
+									<SkipOnInput>false</SkipOnInput>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Object.Departments</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подразделения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Departments</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="DepartmentsContextMenu" id="44"/>
+									<AutoCommandBar name="DepartmentsCommandBar" id="45"/>
+									<ExtendedTooltip name="DepartmentsExtendedTooltip" id="72"/>
+									<SearchStringAddition name="DepartmentsSearchString" id="97">
+										<AdditionSource>
+											<Item>Departments</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DepartmentsSearchStringContextMenu" id="98"/>
+										<ExtendedTooltip name="DepartmentsSearchStringExtendedTooltip" id="99"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="DepartmentsViewStatus" id="100">
+										<AdditionSource>
+											<Item>Departments</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DepartmentsViewStatusContextMenu" id="101"/>
+										<ExtendedTooltip name="DepartmentsViewStatusExtendedTooltip" id="102"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="DepartmentsSearchControl" id="103">
+										<AdditionSource>
+											<Item>Departments</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="DepartmentsSearchControlContextMenu" id="104"/>
+										<ExtendedTooltip name="DepartmentsSearchControlExtendedTooltip" id="105"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="DepartmentsRowNumber" id="46">
+											<DataPath>Object.Departments.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="DepartmentsRowNumberContextMenu" id="47"/>
+											<ExtendedTooltip name="DepartmentsRowNumberExtendedTooltip" id="73"/>
+										</LabelField>
+										<InputField name="DepartmentsDepartment" id="48">
+											<DataPath>Object.Departments.Department</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="DepartmentsDepartmentContextMenu" id="49"/>
+											<ExtendedTooltip name="DepartmentsDepartmentExtendedTooltip" id="74"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Utilities" id="18">
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебная информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Internal information</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="UtilitiesExtendedTooltip" id="75"/>
+			<ChildItems>
+				<InputField name="Code" id="1">
+					<DataPath>Object.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>2</Width>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="CodeContextMenu" id="2"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="53"/>
+				</InputField>
+				<UsualGroup name="MessagesNumbers" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номера сообщений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Message numbers</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="MessagesNumbersExtendedTooltip" id="76"/>
+					<ChildItems>
+						<InputField name="ReceivedNo" id="7">
+							<DataPath>Object.ReceivedNo</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>5</Width>
+							<ContextMenu name="ReceivedNoContextMenu" id="8"/>
+							<ExtendedTooltip name="ReceivedNoExtendedTooltip" id="77"/>
+						</InputField>
+						<InputField name="SentNo" id="5">
+							<DataPath>Object.SentNo</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>5</Width>
+							<ContextMenu name="SentNoContextMenu" id="6"/>
+							<ExtendedTooltip name="SentNoExtendedTooltip" id="78"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject._DemoDistributedInfobaseExchange</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.CreateInitialImageWithFiles</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ответственные лица организаций</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Persons responsible and companies</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">FormWriteAndClose</xr:Value>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">PersonsResponsibleAndCompaniesFind</xr:Value>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">PersonsResponsibleAndCompaniesCancelSearch</xr:Value>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">PersonsResponsibleAndCompaniesShowMultipleSelection</xr:Value>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">PersonsResponsibleAndCompaniesOutputList</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="BeforeClose">BeforeClose</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Table name="PersonsResponsibleAndCompanies" id="2">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>PersonsResponsibleAndCompanies</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственные лица организаций</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Persons responsible and companies</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="PersonsResponsibleAndCompaniesContextMenu" id="3"/>
+			<AutoCommandBar name="PersonsResponsibleAndCompaniesCommandBar" id="4">
+				<ChildItems>
+					<Button name="FormWriteAndClose" id="1">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.WriteAndClose</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Записать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Save</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="FormWriteAndCloseExtendedTooltip" id="9"/>
+					</Button>
+					<Button name="PersonsResponsibleAndCompaniesFind" id="22">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.PersonsResponsibleAndCompanies.StandardCommand.Find</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ResponsiblePersonsOfCompaniesToFindExtendedTooltip" id="23"/>
+					</Button>
+					<Button name="PersonsResponsibleAndCompaniesCancelSearch" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.PersonsResponsibleAndCompanies.StandardCommand.CancelSearch</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ResponsiblePersonsOfCompaniesCancelTheSearchExtendedTooltip" id="25"/>
+					</Button>
+					<Button name="PersonsResponsibleAndCompaniesShowMultipleSelection" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.PersonsResponsibleAndCompanies.StandardCommand.ShowMultipleSelection</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ResponsiblePersonsOfCompaniesShowMultipleSelectionExtendedTooltip" id="27"/>
+					</Button>
+					<Button name="PersonsResponsibleAndCompaniesOutputList" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.PersonsResponsibleAndCompanies.StandardCommand.OutputList</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ResponsiblePersonsOfCompaniesDisplayAListExtendedTooltip" id="29"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="PersonsResponsibleAndCompaniesExtendedTooltip" id="10"/>
+			<SearchStringAddition name="PersonsResponsibleAndCompaniesSearchString" id="13">
+				<AdditionSource>
+					<Item>PersonsResponsibleAndCompanies</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ResponsiblePersonsOfCompaniesSearchBarContextMenu" id="14"/>
+				<ExtendedTooltip name="ResponsiblePersonsOfCompaniesSearchBarExtendedTooltip" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="PersonsResponsibleAndCompaniesViewStatus" id="16">
+				<AdditionSource>
+					<Item>PersonsResponsibleAndCompanies</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ResponsiblePersonsOfCompaniesViewingStatusContextMenu" id="17"/>
+				<ExtendedTooltip name="ResponsiblePersonsOfCompaniesViewingStatusExtendedTooltip" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="PersonsResponsibleAndCompaniesSearchControl" id="19">
+				<AdditionSource>
+					<Item>PersonsResponsibleAndCompanies</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ResponsiblePersonsOfCompaniesSearchManagementContextMenu" id="20"/>
+				<ExtendedTooltip name="ResponsiblePersonsOfCompaniesSearchManagementExtendedTooltip" id="21"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="PersonsResponsibleAndCompaniesOrganization" id="5">
+					<DataPath>PersonsResponsibleAndCompanies.Organization</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Company</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="PersonsResponsibleAndCompaniesOrganizationContextMenu" id="6"/>
+					<ExtendedTooltip name="PersonsResponsibleAndCompaniesOrganizationExtendedTooltip" id="11"/>
+				</InputField>
+				<InputField name="PersonsResponsibleAndCompaniesEmployeeResponsible" id="7">
+					<DataPath>PersonsResponsibleAndCompanies.EmployeeResponsible</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Person responsible</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="PersonsResponsibleAndCompaniesEmployeeResponsibleContextMenu" id="8"/>
+					<ExtendedTooltip name="PersonsResponsibleAndCompaniesEmployeeResponsibleExtendedTooltip" id="12"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="PersonsResponsibleAndCompanies" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственные лица организаций</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Persons responsible and companies</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Organization" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Company</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef._DemoCompanies</v8:Type>
+					</Type>
+				</Column>
+				<Column name="EmployeeResponsible" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Person responsible</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef._DemoIndividuals</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="WriteAndClose" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save and close</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>WriteAndClose</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Filter">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

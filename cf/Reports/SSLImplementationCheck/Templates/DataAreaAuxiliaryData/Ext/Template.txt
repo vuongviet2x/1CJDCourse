@@ -1,0 +1,16 @@
+﻿<Array xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Array">
+	<Value xsi:type="xs:string">InformationRegister.UseSuppliedAdditionalReportsAndProcessorsInDataAreas</Value>
+	<Value xsi:type="xs:string">InformationRegister.UpdateProgress</Value>
+	<Value xsi:type="xs:string">InformationRegister.UpdateHandlers</Value>
+	<Value xsi:type="xs:string">Constant.DeferredUpdateCompletedSuccessfully</Value>
+	<Value xsi:type="xs:string">InformationRegister.TextExtractionQueue</Value>
+	<Value xsi:type="xs:string">InformationRegister.UpdateThreads</Value>
+	<Value xsi:type="xs:string">Constant.LockedObjectsInfo</Value>
+	<Value xsi:type="xs:string">InformationRegister.PeriodicServerNotifications</Value>
+	<Value xsi:type="xs:string">InformationRegister.SuppliedAdditionalReportAndDataProcessorInstallationQueueInDataArea</Value>
+	<Value xsi:type="xs:string">InformationRegister.SentServerNotifications</Value>
+	<Value xsi:type="xs:string">Constant.IBUpdateInfo</Value>
+	<Value xsi:type="xs:string">InformationRegister.DataAreasSubsystemsVersions</Value>
+	<Value xsi:type="xs:string">InformationRegister.DataAreaSessionLocks</Value>
+	<Value xsi:type="xs:string">InformationRegister.ExtensionProperties</Value>
+</Array>

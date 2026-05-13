@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Description" id="13">
+			<DataPath>Record.Description</DataPath>
+			<ContextMenu name="DescriptionContextMenu" id="14"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Id" id="1">
+			<DataPath>Record.Id</DataPath>
+			<ContextMenu name="IdContextMenu" id="2"/>
+			<ExtendedTooltip name="IdExtendedTooltip" id="3"/>
+		</InputField>
+		<UsualGroup name="DataVersionGroup" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата версия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group date version</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="DataVersionGroupExtendedTooltip" id="29"/>
+			<ChildItems>
+				<InputField name="UpdateDate" id="30">
+					<DataPath>Record.UpdateDate</DataPath>
+					<ContextMenu name="UpdateDateContextMenu" id="31"/>
+					<ExtendedTooltip name="UpdateDateExtendedTooltip" id="32"/>
+				</InputField>
+				<InputField name="Version" id="4">
+					<DataPath>Record.Version</DataPath>
+					<ContextMenu name="VersionContextMenu" id="5"/>
+					<ExtendedTooltip name="VersionExtendedTooltip" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="SettingsGroup1" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="SettingsGroup1ExtendedTooltip" id="23"/>
+			<ChildItems>
+				<UsualGroup name="SettingsGroupLeftColumn" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки левая колонка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Settings group left column</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="SettingsGroupLeftColumnExtendedTooltip" id="25"/>
+					<ChildItems>
+						<CheckBoxField name="UpdateAutomatically" id="7">
+							<DataPath>Record.AutoUpdate</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UpdateAutomaticallyContextMenu" id="8"/>
+							<ExtendedTooltip name="UpdateAutomaticallyExtendedTooltip" id="9"/>
+						</CheckBoxField>
+						<CheckBoxField name="SharedData" id="10">
+							<DataPath>Record.SharedData</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SharedDataContextMenu" id="11"/>
+							<ExtendedTooltip name="SharedDataExtendedTooltip" id="12"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="SettingsGroupRighColumn" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки правая колонка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Settings group right column</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="SettingsGroupRighColumnExtendedTooltip" id="27"/>
+					<ChildItems>
+						<CheckBoxField name="SaveFileToCache" id="16">
+							<DataPath>Record.SaveFileToCache</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SaveFileToCacheContextMenu" id="17"/>
+							<ExtendedTooltip name="SaveFileToCacheExtendedTooltip" id="18"/>
+						</CheckBoxField>
+						<CheckBoxField name="SharedDataProcessing" id="19">
+							<DataPath>Record.SharedDataProcessing</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SharedDataProcessingContextMenu" id="20"/>
+							<ExtendedTooltip name="SharedDataProcessingExtendedTooltip" id="21"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Record" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ClassifiersVersions</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

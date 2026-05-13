@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="DescriptionGroup" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="DescriptionGroupExtendedTooltip" id="86"/>
+			<ChildItems>
+				<InputField name="Description" id="3">
+					<DataPath>Object.Description</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="DescriptionContextMenu" id="4"/>
+					<ExtendedTooltip name="DescriptionExtendedTooltip" id="39"/>
+				</InputField>
+				<Button name="Declensions" id="87">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.Declensions</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склонения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Declensions</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="DeclensionsExtendedTooltip" id="88"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="NameForPrinting" id="107">
+			<DataPath>Object.NameForPrinting</DataPath>
+			<ContextMenu name="NameForPrintingContextMenu" id="108"/>
+			<ExtendedTooltip name="NameForPrintingExtendedTooltip" id="109"/>
+		</InputField>
+		<UsualGroup name="ParentCodeGroup" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и родитель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Code and parent</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ParentCodeGroupExtendedTooltip" id="95"/>
+			<ChildItems>
+				<InputField name="SKU" id="67">
+					<DataPath>Object.SKU</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="SKUContextMenu" id="68"/>
+					<ExtendedTooltip name="SKUExtendedTooltip" id="69"/>
+				</InputField>
+				<InputField name="Code" id="1">
+					<DataPath>Object.Code</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="CodeContextMenu" id="2"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="37"/>
+				</InputField>
+				<UsualGroup name="GroupLabels" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Labels</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>AlwaysHorizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupLabelsExtendedTooltip" id="111"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Parent" id="22">
+			<DataPath>Object.Parent</DataPath>
+			<ContextMenu name="ParentContextMenu" id="23"/>
+			<ExtendedTooltip name="ParentExtendedTooltip" id="38"/>
+		</InputField>
+		<Pages name="DataPagesGroup" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="DataPagesGroupExtendedTooltip" id="71"/>
+			<ChildItems>
+				<Page name="AllFieldsPage" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AllFieldsPageExtendedTooltip" id="73"/>
+					<ChildItems>
+						<UsualGroup name="AllFieldsGroup" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все поля</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>All fields</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ChildItemsWidth>LeftNarrow</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="AllFieldsGroupExtendedTooltip" id="40"/>
+							<ChildItems>
+								<UsualGroup name="GroupPicture" id="24">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Picture</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupPictureExtendedTooltip" id="41"/>
+									<ChildItems>
+										<CommandBar name="CommandBarGroupPicture" id="114">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Панель команд группа картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Command bar Group Picture</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="CommandBarGroupPictureExtendedTooltip" id="115"/>
+											<ChildItems>
+												<Button name="ImageAlbumToPDF" id="112">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ImageAlbumToPDF</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Альбом изображений в PDF</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>PDF image album</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ImageAlbumToPDFExtendedTooltip" id="113"/>
+												</Button>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="AttributesGroup" id="30">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизиты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Attributes</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="AttributesGroupExtendedTooltip" id="44"/>
+									<ChildItems>
+										<CheckBoxField name="InMainWarehouse" id="20">
+											<DataPath>Object.InMainWarehouse</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="InMainWarehouseContextMenu" id="21"/>
+											<ExtendedTooltip name="InMainWarehouseExtendedTooltip" id="45"/>
+										</CheckBoxField>
+										<InputField name="ProductKind" id="5">
+											<DataPath>Object.ProductKind</DataPath>
+											<Wrap>false</Wrap>
+											<ChoiceParameters>
+												<app:item name="Filter.DeletionMark">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+												<app:item name="Filter.Predefined">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ProductKindContextMenu" id="6"/>
+											<ExtendedTooltip name="ProductKindExtendedTooltip" id="46"/>
+											<Events>
+												<Event name="OnChange">ProductKindOnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="OriginCountry" id="35">
+											<DataPath>Object.OriginCountry</DataPath>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<ContextMenu name="OriginCountryContextMenu" id="36"/>
+											<ExtendedTooltip name="OriginCountryExtendedTooltip" id="48"/>
+											<Events>
+												<Event name="ChoiceProcessing">OriginCountryChoiceProcessing</Event>
+											</Events>
+										</InputField>
+										<InputField name="Barcode" id="64">
+											<DataPath>Object.Barcode</DataPath>
+											<ContextMenu name="BarcodeContextMenu" id="65"/>
+											<ExtendedTooltip name="BarcodeExtendedTooltip" id="66"/>
+										</InputField>
+										<InputField name="Price" id="33">
+											<DataPath>Object.Price</DataPath>
+											<ContextMenu name="PriceContextMenu" id="34"/>
+											<ExtendedTooltip name="PriceExtendedTooltip" id="50"/>
+										</InputField>
+										<UsualGroup name="GroupAdditionalAttributes" id="18">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительные реквизиты</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Additional attributes</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="GroupAdditionalAttributesExtendedTooltip" id="51"/>
+										</UsualGroup>
+										<InputField name="AccessGroup" id="31">
+											<DataPath>Object.AccessGroup</DataPath>
+											<ContextMenu name="AccessGroupContextMenu" id="32"/>
+											<ExtendedTooltip name="AccessGroupExtendedTooltip" id="49"/>
+										</InputField>
+										<UsualGroup name="Classifiers" id="99">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Классификаторы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Classifiers</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Коды классификации номенклатуры</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Product classification codes</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ClassifiersExtendedTooltip" id="100"/>
+											<ChildItems>
+												<InputField name="FEACNCode" id="104">
+													<DataPath>Object.FEACNCode</DataPath>
+													<ContextMenu name="FEACNCodeContextMenu" id="105"/>
+													<ExtendedTooltip name="FEACNCodeExtendedTooltip" id="106"/>
+												</InputField>
+												<InputField name="BusinessActivityClassifierCode" id="101">
+													<DataPath>Object.BusinessActivityClassifierCode</DataPath>
+													<ContextMenu name="BusinessActivityClassifierCodeContextMenu" id="102"/>
+													<ExtendedTooltip name="BusinessActivityClassifierCodeExtendedTooltip" id="103"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="Comment" id="116">
+											<DataPath>Object.Comment</DataPath>
+											<ContextMenu name="CommentContextMenu" id="117"/>
+											<ExtendedTooltip name="CommentExtendedTooltip" id="118"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="AnalogsPage" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналоги</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Substitutes</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AnalogsPageExtendedTooltip" id="75"/>
+					<ChildItems>
+						<UsualGroup name="AnalogsGroup" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аналоги</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Substitutes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="AnalogsGroupExtendedTooltip" id="63"/>
+							<ChildItems>
+								<Table name="Substitutes" id="52">
+									<Height>4</Height>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Object.Substitutes</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аналоги</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Substitutes</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="SubstitutesContextMenu" id="53"/>
+									<AutoCommandBar name="SubstitutesCommandBar" id="54">
+										<ChildItems>
+											<Button name="SubstitutesLoadingFromFile" id="92">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.LoadingFromFile</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Загрузка из файла...</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Import from file…</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="AnalogsLoadingFromAFileExtendedTooltip" id="93"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="SubstitutesExtendedTooltip" id="55"/>
+									<SearchStringAddition name="SubstitutesSearchString" id="76">
+										<AdditionSource>
+											<Item>Substitutes</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SubstitutesSearchStringContextMenu" id="77"/>
+										<ExtendedTooltip name="SubstitutesSearchStringExtendedTooltip" id="78"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="SubstitutesViewStatus" id="79">
+										<AdditionSource>
+											<Item>Substitutes</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SubstitutesViewStatusContextMenu" id="80"/>
+										<ExtendedTooltip name="SubstitutesViewStatusExtendedTooltip" id="81"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="SubstitutesSearchControl" id="82">
+										<AdditionSource>
+											<Item>Substitutes</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="SubstitutesSearchControlContextMenu" id="83"/>
+										<ExtendedTooltip name="SubstitutesSearchControlExtendedTooltip" id="84"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="AnalogsRowNumber" id="56">
+											<DataPath>Object.Substitutes.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>2</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="AnalogsRowNumberContextMenu" id="57"/>
+											<ExtendedTooltip name="AnalogsRowNumberExtendedTooltip" id="58"/>
+										</LabelField>
+										<InputField name="SubstitutesSubstitute" id="59">
+											<DataPath>Object.Substitutes.Substitute</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>30</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="SubstitutesSubstituteContextMenu" id="60"/>
+											<ExtendedTooltip name="SubstitutesSubstituteExtendedTooltip" id="61"/>
+										</InputField>
+										<InputField name="SubstitutesCompatibility" id="89">
+											<DataPath>Object.Substitutes.Compatibility</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>12</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="SubstitutesCompatibilityContextMenu" id="90"/>
+											<ExtendedTooltip name="SubstitutesCompatibilityExtendedTooltip" id="91"/>
+										</InputField>
+										<InputField name="SubstitutesIndent" id="96">
+											<DataPath>Object.Substitutes.Indent</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="SubstitutesIndentContextMenu" id="97"/>
+											<ExtendedTooltip name="SubstitutesIndentExtendedTooltip" id="98"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._DemoProducts</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Object.Substitutes">
+					<Column name="Indent" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отступ</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Indent</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>1</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="PictureAddress" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="RecordedProductKind" id="3">
+			<Type>
+				<v8:Type>cfg:CatalogRef._DemoProductsKinds</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Declensions" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Declensions</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Declensions</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="LoadingFromFile" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка из файла...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import from file…</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import from file</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>LoadingFromFile</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ImageAlbumToPDF" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Альбом изображений ВPDF</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>PDF image album</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ImageAlbumToPDF</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.AttachedFiles</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

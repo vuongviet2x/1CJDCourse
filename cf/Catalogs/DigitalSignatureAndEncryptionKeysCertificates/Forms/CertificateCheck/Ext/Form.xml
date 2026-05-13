@@ -1,0 +1,3340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="FormValidate" id="9">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Validate</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Verify</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTipRepresentation>None</ToolTipRepresentation>
+				<ExtendedTooltip name="FormValidateExtendedTooltip" id="10"/>
+			</Button>
+			<Button name="FormClose" id="11">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ToolTipRepresentation>None</ToolTipRepresentation>
+				<ExtendedTooltip name="FormCloseExtendedTooltip" id="12"/>
+			</Button>
+			<Button name="Help" id="168">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="HelpExtendedTooltip" id="169"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupPages" id="445">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="446"/>
+			<ChildItems>
+				<Page name="VerificationPage" id="447">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница проверки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page Checks</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="VerificationPageExtendedTooltip" id="448"/>
+					<ChildItems>
+						<UsualGroup name="HeaderGroup" id="333">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Header</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="HeaderGroupExtendedTooltip" id="334"/>
+							<ChildItems>
+								<PictureDecoration name="ChecksOnClientPicture" id="338">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка на клиенте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Check on the client</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверки на клиентском компьютере</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Checks on the client computer</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Picture>
+										<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ChecksOnClientPictureContextMenu" id="339"/>
+									<ExtendedTooltip name="ChecksOnClientPictureExtendedTooltip" id="340"/>
+								</PictureDecoration>
+								<PictureDecoration name="ChecksOnServerPicture" id="341">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверки на сервере</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Checks on the server</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверки на сервере</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Checks on the server</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Picture>
+										<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ChecksOnServerPictureContextMenu" id="342"/>
+									<ExtendedTooltip name="ChecksOnServerPictureExtendedTooltip" id="343"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GeneralChecksGroup" id="149">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общие проверки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>General checks</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GeneralChecksGroupExtendedTooltip" id="150"/>
+							<ChildItems>
+								<UsualGroup name="LegalCertificateGroup" id="1">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Законный сертификат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Verified certificate</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="LegalCertificateGroupExtendedTooltip" id="2"/>
+									<ChildItems>
+										<PictureDecoration name="LegalCertificateAtClientPicture" id="32">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Законный сертификат на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Verified certificate on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="LegalCertificateAtClientPictureContextMenu" id="33"/>
+											<ExtendedTooltip name="LegalCertificateAtClientPictureExtendedTooltip" id="34"/>
+										</PictureDecoration>
+										<PictureDecoration name="LegalCertificateAtServerPicture" id="3">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Законный сертификат на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Verified certificate on server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="LegalCertificateAtServerPictureContextMenu" id="4"/>
+											<ExtendedTooltip name="LegalCertificateAtServerPictureExtendedTooltip" id="5"/>
+										</PictureDecoration>
+										<UsualGroup name="LegalCertificateResultAndDecision" id="206">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Законный сертификат результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Verified certificate result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="LegalCertificateResultAndDecisionExtendedTooltip" id="207"/>
+											<ChildItems>
+												<LabelDecoration name="LegalCertificateLabel" id="6">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Соответствие законодательству Российской Федерации</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Compliance with legislation of the Russian Federation</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="LegalCertificateLabelContextMenu" id="7"/>
+													<ExtendedTooltip name="LegalCertificateLabelExtendedTooltip" id="8">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает соответствие федеральному закону Российской Федерации от 6 апреля 2011 г. N 63-ФЗ "Об электронной подписи".
+Рекомендуется использовать квалифицированные сертификаты ключа подписи (КСКП) по 63-ФЗ.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows the compliance with Federal Law of the Russian Federation No. 63-FZ "On electronic signatures" as of April 6, 2011.
+It is recommended that you use signature key qualified certificates (SKQS) that comply with 63-FZ.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</LabelDecoration>
+												<UsualGroup name="LegalCertificateErrorClient" id="390">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Законный сертификат ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Verified certificate error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="LegalCertificateErrorClientExtendedTooltip" id="391"/>
+													<ChildItems>
+														<PictureDecoration name="LegalCertificateErrorClientPicture" id="210">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Законный сертификат ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Verified certificate error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="LegalCertificateErrorClientPictureContextMenu" id="211"/>
+															<ExtendedTooltip name="LegalCertificateErrorClientPictureExtendedTooltip" id="212"/>
+														</PictureDecoration>
+														<LabelDecoration name="LegalCertificateErrorClientLabel" id="394">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Законный сертификат - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Verified certificate - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="LegalCertificateErrorClientLabelContextMenu" id="395"/>
+															<ExtendedTooltip name="LegalCertificateErrorClientLabelExtendedTooltip" id="396"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="LegalCertificateDecisionClientLabel" id="213">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Законный сертификат решение клиент надпись</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Verified certificate solution client label</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="LegalCertificateDecisionClientLabelContextMenu" id="214"/>
+													<ExtendedTooltip name="LegalCertificateDecisionClientLabelExtendedTooltip" id="215"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="LegalCertificateErrorServer" id="392">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="LegalCertificateErrorServerExtendedTooltip" id="393"/>
+													<ChildItems>
+														<PictureDecoration name="LegalCertificateErrorServerPicture" id="218">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Законный сертификат ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Verified certificate error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="LegalCertificateErrorServerPictureContextMenu" id="219"/>
+															<ExtendedTooltip name="LegalCertificateErrorServerPictureExtendedTooltip" id="220"/>
+														</PictureDecoration>
+														<LabelDecoration name="LegalCertificateErrorServerLabel" id="397">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Законный сертификат - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Verified certificate - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="LegalCertificateErrorServerLabelContextMenu" id="398"/>
+															<ExtendedTooltip name="LegalCertificateErrorServerLabelExtendedTooltip" id="399"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="LegalCertificateDecisionServerLabel" id="221">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Законный сертификат решение сервер надпись</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Verified certificate solution server label</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="LegalCertificateDecisionServerLabelContextMenu" id="222"/>
+													<ExtendedTooltip name="LegalCertificateDecisionServerLabelExtendedTooltip" id="223"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="CertificateExistsGroup" id="38">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наличие сертификата</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate availability</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CertificateExistsGroupExtendedTooltip" id="39"/>
+									<ChildItems>
+										<PictureDecoration name="CertificateExistsAtClientPicture" id="40">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие сертификата на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate availability on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CertificateExistsAtClientPictureContextMenu" id="41"/>
+											<ExtendedTooltip name="CertificateExistsAtClientPictureExtendedTooltip" id="42"/>
+										</PictureDecoration>
+										<PictureDecoration name="CertificateExistsAtServerPicture" id="43">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие сертификата на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Existence of certificate on the server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CertificateExistsAtServerPictureContextMenu" id="44"/>
+											<ExtendedTooltip name="CertificateExistsAtServerPictureExtendedTooltip" id="45"/>
+										</PictureDecoration>
+										<UsualGroup name="ResultAndDecision" id="170">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие сертификата результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate availability result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ResultAndDecisionExtendedTooltip" id="171"/>
+											<ChildItems>
+												<LabelDecoration name="CertificateExistsLabel" id="46">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата в личном списке</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate is available in the Personal list</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateExistsLabelContextMenu" id="47"/>
+													<ExtendedTooltip name="CertificateExistsLabelExtendedTooltip" id="48">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает установлен ли сертификат в личный список (личное хранилище) на компьютере. Для подписания и расшифровки требуется, чтобы сертификат был установлен в личный список на компьютере и был связан с закрытым ключом.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether the certificate is added to the Personal store on the computer. For signing and decryption to be possible, the certificate must be installed in the Personal store and associated with the private key.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CertificateExistsErrorClient" id="350">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CertificateExistsErrorClientExtendedTooltip" id="351"/>
+													<ChildItems>
+														<PictureDecoration name="CertificateExistsErrorClientPicture" id="176">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие сертификата ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate availability error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CertificateExistsErrorClientPictureContextMenu" id="177"/>
+															<ExtendedTooltip name="CertificateExistsErrorClientPictureExtendedTooltip" id="178"/>
+														</PictureDecoration>
+														<LabelDecoration name="CertificateExistsErrorClientLabel" id="347">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие сертификата - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate availability - text error (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CertificateExistsErrorClientLabelContextMenu" id="348"/>
+															<ExtendedTooltip name="CertificateExistsErrorClientLabelExtendedTooltip" id="349"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CertificateExistsDecisionClientLabel" id="179">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата решение (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability solution (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateExistsDecisionClientLabelContextMenu" id="180"/>
+													<ExtendedTooltip name="CertificateExistsDecisionClientLabelExtendedTooltip" id="181"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CertificateExistsErrorServer" id="352">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (server)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CertificateExistsErrorServerExtendedTooltip" id="353"/>
+													<ChildItems>
+														<PictureDecoration name="CertificateExistsErrorServerPicture" id="182">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие сертификата ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate availability error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CertificateExistsErrorServerPictureContextMenu" id="183"/>
+															<ExtendedTooltip name="CertificateExistsErrorServerPictureExtendedTooltip" id="184"/>
+														</PictureDecoration>
+														<LabelDecoration name="CertificateExistsErrorServerLabel" id="363">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие сертификата - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate availability - text error (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CertificateExistsErrorServerLabelContextMenu" id="364"/>
+															<ExtendedTooltip name="CertificateExistsErrorServerLabelExtendedTooltip" id="365"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CertificateExistsDecisionServerLabel" id="185">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата решение (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability solution (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateExistsDecisionServerLabelContextMenu" id="186"/>
+													<ExtendedTooltip name="CertificateExistsDecisionServerLabelExtendedTooltip" id="187"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="CertificateDataGroup" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные сертификата</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate data</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CertificateDataGroupExtendedTooltip" id="50"/>
+									<ChildItems>
+										<PictureDecoration name="CertificateDataAtClientPicture" id="51">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные сертификата на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate data on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CertificateDataAtClientPictureContextMenu" id="52"/>
+											<ExtendedTooltip name="CertificateDataAtClientPictureExtendedTooltip" id="53"/>
+										</PictureDecoration>
+										<PictureDecoration name="CertificateDataAtServerPicture" id="54">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные сертификата на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate data on server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CertificateDataAtServerPictureContextMenu" id="55"/>
+											<ExtendedTooltip name="CertificateDataAtServerPictureExtendedTooltip" id="56"/>
+										</PictureDecoration>
+										<UsualGroup name="CertificateDataResultAndDecision" id="188">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные сертификата результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate data result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="CertificateDataResultAndDecisionExtendedTooltip" id="189"/>
+											<ChildItems>
+												<LabelDecoration name="CertificateDataLabel" id="57">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Корректность данных сертификата</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate validity</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateDataLabelContextMenu" id="58"/>
+													<ExtendedTooltip name="CertificateDataLabelExtendedTooltip" id="59">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает результат проверки данных сертификата с помощью приложения электронной подписи и шифрования.
+
+Данные сертификата, загруженные из файла сертификата или другим путем, могут быть некорректны по разным причинам, например:
+- закончился срок действия сертификата;
+- сертификат в списке отозванных.
+</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows the result of the certificate data check using a digital signing and encryption app.
+
+Certificate data imported from a certificate file or using another method might be incorrect due to several reasons. These are the most frequent ones:
+- The certificate has expired.
+- The certificate is in the list of revoked certificates.
+</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CertificateDataErrorClient" id="366">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Данные сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate data error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CertificateDataErrorClientExtendedTooltip" id="367"/>
+													<ChildItems>
+														<PictureDecoration name="CertificateDataErrorClientPicture" id="194">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Данные сертификата ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate data error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CertificateDataErrorClientPictureContextMenu" id="195"/>
+															<ExtendedTooltip name="CertificateDataErrorClientPictureExtendedTooltip" id="196"/>
+														</PictureDecoration>
+														<LabelDecoration name="CertificateDataErrorClientLabel" id="400">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Данные сертификата - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate data - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CertificateDataErrorClientLabelContextMenu" id="401"/>
+															<ExtendedTooltip name="CertificateDataErrorClientLabelExtendedTooltip" id="402"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CertificateDataDecisionClientLabel" id="197">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Корректность данных сертификата (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate validity (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateDataDecisionClientLabelContextMenu" id="198"/>
+													<ExtendedTooltip name="CertificateDataDecisionClientLabelExtendedTooltip" id="199"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CertificateDataErrorServer" id="368">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CertificateDataErrorServerExtendedTooltip" id="369"/>
+													<ChildItems>
+														<PictureDecoration name="CertificateDataErrorServerPicture" id="200">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Данные сертификата ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate data error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CertificateDataErrorServerPictureContextMenu" id="201"/>
+															<ExtendedTooltip name="CertificateDataErrorServerPictureExtendedTooltip" id="202"/>
+														</PictureDecoration>
+														<LabelDecoration name="CertificateDataErrorServerLabel" id="403">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Корректность данных сертификата - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Certificate validity - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CertificateDataErrorServerLabelContextMenu" id="404"/>
+															<ExtendedTooltip name="CertificateDataErrorServerLabelExtendedTooltip" id="405"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CertificateDataDecisionServerLabel" id="203">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Корректность данных сертификата (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate validity (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CertificateDataDecisionServerLabelContextMenu" id="204"/>
+													<ExtendedTooltip name="CertificateDataDecisionServerLabelExtendedTooltip" id="205"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupAvailabilityOfProgram" id="16">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наличие приложения сертификата</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>App certificate presence</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupAvailabilityOfProgramExtendedTooltip" id="17"/>
+									<ChildItems>
+										<PictureDecoration name="ProgramExistsAtClientPicture" id="18">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие приложения на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Picture "App present on client"</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ProgramExistsAtClientPictureContextMenu" id="19"/>
+											<ExtendedTooltip name="ProgramExistsAtClientPictureExtendedTooltip" id="20"/>
+										</PictureDecoration>
+										<PictureDecoration name="ProgramExistsAtServerPicture" id="35">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие приложения на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Picture "App present on server"</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ProgramExistsAtServerPictureContextMenu" id="36"/>
+											<ExtendedTooltip name="ProgramExistsAtServerPictureExtendedTooltip" id="37"/>
+										</PictureDecoration>
+										<UsualGroup name="ProgramExistsResultAndDecision" id="224">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличие приложения результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>App presence result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ProgramExistsResultAndDecisionExtendedTooltip" id="225"/>
+											<ChildItems>
+												<LabelDecoration name="ProgramExistsLabel" id="21">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие приложения для подписания и расшифровки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Presence of a signing and decryption app</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ProgramExistsLabelContextMenu" id="22"/>
+													<ExtendedTooltip name="ProgramExistsLabelExtendedTooltip" id="23">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает, установлено ли на компьютере приложение, указанное в сертификате для закрытого ключа, которое позволяет подписывать и расшифровывать данные.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether the app specified in the certificate for the private key is installed on the computer. The app allows you to sign and decrypt data.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="ProgramExistsErrorClient" id="370">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ProgramExistsErrorClientExtendedTooltip" id="371"/>
+													<ChildItems>
+														<PictureDecoration name="ProgramExistsErrorClientPicture" id="228">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие приложения ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>App presence error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ProgramExistsErrorClientPictureContextMenu" id="229"/>
+															<ExtendedTooltip name="ProgramExistsErrorClientPictureExtendedTooltip" id="230"/>
+														</PictureDecoration>
+														<LabelDecoration name="ProgramExistsErrorClientLabel" id="406">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие приложения - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>App presence - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ProgramExistsErrorClientLabelContextMenu" id="407"/>
+															<ExtendedTooltip name="ProgramExistsErrorClientLabelExtendedTooltip" id="408"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ProgramExistsDecisionClientLabel" id="231">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие приложения (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>App presence (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ProgramExistsDecisionClientLabelContextMenu" id="232"/>
+													<ExtendedTooltip name="ProgramExistsDecisionClientLabelExtendedTooltip" id="233"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="ProgramExistsErrorServer" id="372">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ProgramExistsErrorServerExtendedTooltip" id="373"/>
+													<ChildItems>
+														<PictureDecoration name="ProgramExistsErrorServerPicture" id="239">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие приложения ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>App presence error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ProgramExistsErrorServerPictureContextMenu" id="240"/>
+															<ExtendedTooltip name="ProgramExistsErrorServerPictureExtendedTooltip" id="241"/>
+														</PictureDecoration>
+														<LabelDecoration name="ProgramExistsErrorServerLabel" id="409">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наличие приложения - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>App presence - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ProgramExistsErrorServerLabelContextMenu" id="410"/>
+															<ExtendedTooltip name="ProgramExistsErrorServerLabelExtendedTooltip" id="411"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ProgramExistsDecisionServerLabel" id="236">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие приложения (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>App presence (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ProgramExistsDecisionServerLabelContextMenu" id="237"/>
+													<ExtendedTooltip name="ProgramExistsDecisionServerLabelExtendedTooltip" id="238"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="OperationsCheckGroup" id="127">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверки операций</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Transaction checks</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="OperationsCheckGroupExtendedTooltip" id="128"/>
+							<ChildItems>
+								<UsualGroup name="SignGroup" id="85">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписание данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data signing</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="SignGroupExtendedTooltip" id="86"/>
+									<ChildItems>
+										<PictureDecoration name="SigningAtClientPicture" id="87">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подписание на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Signing on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="SigningAtClientPictureContextMenu" id="88"/>
+											<ExtendedTooltip name="SigningAtClientPictureExtendedTooltip" id="89"/>
+										</PictureDecoration>
+										<PictureDecoration name="SigningAtServerPicture" id="90">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подписание на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Signing on server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="SigningAtServerPictureContextMenu" id="91"/>
+											<ExtendedTooltip name="SigningAtServerPictureExtendedTooltip" id="92"/>
+										</PictureDecoration>
+										<UsualGroup name="DataSigningResultAndDecision" id="242">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подписание данных результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Data signing result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="DataSigningResultAndDecisionExtendedTooltip" id="243"/>
+											<ChildItems>
+												<LabelDecoration name="SigningLabel" id="93">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подписание данных</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data signing</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="SigningLabelContextMenu" id="94"/>
+													<ExtendedTooltip name="SigningLabelExtendedTooltip" id="95">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает возможность подписания данных закрытым ключом сертификата с помощью приложения электронной подписи и шифрования. Требуется пароль.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether it is possible to sign data with the certificate private key using a digital signing and encryption app. Password required.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="SigningErrorClient" id="374">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подписание ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Signing error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="SigningErrorClientExtendedTooltip" id="375"/>
+													<ChildItems>
+														<PictureDecoration name="SigningErrorClientPicture" id="246">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подписание ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signing error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="SigningErrorClientPictureContextMenu" id="247"/>
+															<ExtendedTooltip name="SigningErrorClientPictureExtendedTooltip" id="248"/>
+														</PictureDecoration>
+														<LabelDecoration name="SigningErrorClientLabel" id="412">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подписание данных - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Data signing - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="SigningErrorClientLabelContextMenu" id="413"/>
+															<ExtendedTooltip name="SigningErrorClientLabelExtendedTooltip" id="414"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="SigningDecisionClientLabel" id="249">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подписание данных (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data signing (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="SigningDecisionClientLabelContextMenu" id="250"/>
+													<ExtendedTooltip name="SigningDecisionClientLabelExtendedTooltip" id="251"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="SigningErrorServer" id="376">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (server)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="SigningErrorServerExtendedTooltip" id="377"/>
+													<ChildItems>
+														<PictureDecoration name="SigningErrorServerImage" id="257">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подписание ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signing error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="SigningErrorServerImageContextMenu" id="258"/>
+															<ExtendedTooltip name="SigningErrorServerImageExtendedTooltip" id="259"/>
+														</PictureDecoration>
+														<LabelDecoration name="SigningErrorServerLabel" id="415">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подписание данных - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Data signing - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="SigningErrorServerLabelContextMenu" id="416"/>
+															<ExtendedTooltip name="SigningErrorServerLabelExtendedTooltip" id="417"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="SigningDecisionServerLabel" id="254">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подписание данных (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data signing (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="SigningDecisionServerLabelContextMenu" id="255"/>
+													<ExtendedTooltip name="SigningDecisionServerLabelExtendedTooltip" id="256"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="SignatureVerificationGroup" id="96">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка подписи данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data signing check</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="SignatureVerificationGroupExtendedTooltip" id="97"/>
+									<ChildItems>
+										<PictureDecoration name="CheckSignatureAtClientPicture" id="98">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка подписи на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Check signature on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CheckSignatureAtClientPictureContextMenu" id="99"/>
+											<ExtendedTooltip name="CheckSignatureAtClientPictureExtendedTooltip" id="100"/>
+										</PictureDecoration>
+										<PictureDecoration name="CheckSignatureAtServerPicture" id="101">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка подписи на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Check signature on server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="CheckSignatureAtServerPictureContextMenu" id="102"/>
+											<ExtendedTooltip name="CheckSignatureAtServerPictureExtendedTooltip" id="103"/>
+										</PictureDecoration>
+										<UsualGroup name="CheckSignatureResultAndDecision" id="260">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка подписи результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Signature check result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="CheckSignatureResultAndDecisionExtendedTooltip" id="261"/>
+											<ChildItems>
+												<LabelDecoration name="CheckSignatureLabel" id="104">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка созданной подписи</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Check created signature</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CheckSignatureLabelContextMenu" id="105"/>
+													<ExtendedTooltip name="CheckSignatureLabelExtendedTooltip" id="106">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает возможность проверки имеющейся подписи открытым ключом сертификата с помощью приложения электронной подписи и шифрования.
+</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether the signature can be checked with the certificate public key using a digital signing and encryption app.
+</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CheckSignatureErrorClient" id="378">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка подписи ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Signature check error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CheckSignatureErrorClientExtendedTooltip" id="379"/>
+													<ChildItems>
+														<PictureDecoration name="CheckSignatureErrorClientPicture" id="264">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Проверка подписи ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signature check error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CheckSignatureErrorClientPictureContextMenu" id="265"/>
+															<ExtendedTooltip name="CheckSignatureErrorClientPictureExtendedTooltip" id="266"/>
+														</PictureDecoration>
+														<LabelDecoration name="CheckSignatureErrorClientSignature" id="418">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Проверка подписи - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signature check - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CheckSignatureErrorClientSignatureContextMenu" id="419"/>
+															<ExtendedTooltip name="CheckSignatureErrorClientSignatureExtendedTooltip" id="420"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CheckSignatureDecisionClientLabel" id="267">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка подписи (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Signature check (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CheckSignatureDecisionClientLabelContextMenu" id="268"/>
+													<ExtendedTooltip name="CheckSignatureDecisionClientLabelExtendedTooltip" id="269"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="CheckSignatureErrorServer" id="380">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка подписи  ошибка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Signature check error (server)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="CheckSignatureErrorServerExtendedTooltip" id="381"/>
+													<ChildItems>
+														<PictureDecoration name="CheckSignatureErrorServerPicture" id="275">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Проверка подписи ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signature check error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="CheckSignatureErrorServerPictureContextMenu" id="276"/>
+															<ExtendedTooltip name="CheckSignatureErrorServerPictureExtendedTooltip" id="277"/>
+														</PictureDecoration>
+														<LabelDecoration name="CheckSignatureErrorServerSignature" id="421">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Проверка подписи - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Signature check - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="CheckSignatureErrorServerSignatureContextMenu" id="422"/>
+															<ExtendedTooltip name="CheckSignatureErrorServerSignatureExtendedTooltip" id="423"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="CheckSignatureDecisionServerLabel" id="272">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка подписи (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Signature check (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="CheckSignatureDecisionServerLabelContextMenu" id="273"/>
+													<ExtendedTooltip name="CheckSignatureDecisionServerLabelExtendedTooltip" id="274"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<LabelDecoration name="DecorationTimestampCertificate" id="442">
+													<Visible>false</Visible>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация сертификат метки времени</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Decoration Timestamp certificate</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="DecorationTimestampCertificateContextMenu" id="443"/>
+													<ExtendedTooltip name="DecorationTimestampCertificateExtendedTooltip" id="444"/>
+													<Events>
+														<Event name="URLProcessing">DecorationTimestampCertificateURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="EncryptionGroup" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шифрование данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data encryption</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="EncryptionGroupExtendedTooltip" id="61"/>
+									<ChildItems>
+										<PictureDecoration name="EncryptionAtClientPicture" id="62">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шифрование на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Client-side encryption picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="EncryptionAtClientPictureContextMenu" id="63"/>
+											<ExtendedTooltip name="EncryptionAtClientPictureExtendedTooltip" id="64"/>
+										</PictureDecoration>
+										<PictureDecoration name="EncryptionAtServerPicture" id="65">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шифрование на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Server side encryption image</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="EncryptionAtServerPictureContextMenu" id="66"/>
+											<ExtendedTooltip name="EncryptionAtServerPictureExtendedTooltip" id="67"/>
+										</PictureDecoration>
+										<UsualGroup name="EncryptionResultAndDecision" id="278">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шифрование результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Encryption result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="EncryptionResultAndDecisionExtendedTooltip" id="279"/>
+											<ChildItems>
+												<LabelDecoration name="EncryptionLabel" id="68">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифрование данных</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data encryption</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="EncryptionLabelContextMenu" id="69"/>
+													<ExtendedTooltip name="EncryptionLabelExtendedTooltip" id="70">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает возможность шифрования данных открытым ключом сертификата с помощью приложения электронной подписи и шифрования.
+</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether data can be encrypted with the certificate public key using a digital signing and encryption app.
+</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="EncryptionErrorClient" id="382">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифрование ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Encryption error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="EncryptionErrorClientExtendedTooltip" id="383"/>
+													<ChildItems>
+														<PictureDecoration name="EncryptionErrorClientPicture" id="282">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шифрование ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Encryption error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="EncryptionErrorClientPictureContextMenu" id="283"/>
+															<ExtendedTooltip name="EncryptionErrorClientPictureExtendedTooltip" id="284"/>
+														</PictureDecoration>
+														<LabelDecoration name="EncryptionErrorClientLabel" id="424">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шифрование - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Encryption - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="EncryptionErrorClientLabelContextMenu" id="425"/>
+															<ExtendedTooltip name="EncryptionErrorClientLabelExtendedTooltip" id="426"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="EncryptionDecisionClientLabel" id="285">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифрование (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Encryption (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="EncryptionDecisionClientLabelContextMenu" id="286"/>
+													<ExtendedTooltip name="EncryptionDecisionClientLabelExtendedTooltip" id="287"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="EncryptionErrorServer" id="384">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифрование сертификата ошибка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate encryption error (server)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="EncryptionErrorServerExtendedTooltip" id="385"/>
+													<ChildItems>
+														<PictureDecoration name="EncryptionErrorServerPicture" id="293">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шифрование ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Encryption error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="EncryptionErrorServerPictureContextMenu" id="294"/>
+															<ExtendedTooltip name="EncryptionErrorServerPictureExtendedTooltip" id="295"/>
+														</PictureDecoration>
+														<LabelDecoration name="EncryptionErrorServerLabel" id="427">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шифрование- текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Encryption - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="EncryptionErrorServerLabelContextMenu" id="428"/>
+															<ExtendedTooltip name="EncryptionErrorServerLabelExtendedTooltip" id="429"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="EncryptionDecisionServerLabel" id="290">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифрование (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Encryption (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="EncryptionDecisionServerLabelContextMenu" id="291"/>
+													<ExtendedTooltip name="EncryptionDecisionServerLabelExtendedTooltip" id="292"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="DetailsGroup2" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расшифровка данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data decryption</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="DetailsGroup2ExtendedTooltip" id="72"/>
+									<ChildItems>
+										<PictureDecoration name="DetailsAtClientPicture" id="73">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расшифровка на клиенте картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decryption on client picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="DetailsAtClientPictureContextMenu" id="74"/>
+											<ExtendedTooltip name="DetailsAtClientPictureExtendedTooltip" id="75"/>
+										</PictureDecoration>
+										<PictureDecoration name="DetailsAtServerPicture" id="76">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расшифровка на сервере картинка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decryption on server picture</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверка не выполнялась.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No check was performed.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>AutoSize</PictureSize>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="DetailsAtServerPictureContextMenu" id="77"/>
+											<ExtendedTooltip name="DetailsAtServerPictureExtendedTooltip" id="78"/>
+										</PictureDecoration>
+										<UsualGroup name="DetailsResultAndDecision" id="296">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расшифровка результат и решение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decryption result and solution</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="DetailsResultAndDecisionExtendedTooltip" id="297"/>
+											<ChildItems>
+												<LabelDecoration name="DetailsLabel" id="79">
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расшифровка данных</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data decryption</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="DetailsLabelContextMenu" id="80"/>
+													<ExtendedTooltip name="DetailsLabelExtendedTooltip" id="81">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывает возможность расшифровки данных закрытым ключом сертификата с помощью приложения электронной подписи и шифрования. Требуется пароль.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Shows whether it is possible to sign data with the certificate private key using a digital signing and encryption app. Password required.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+													<Events>
+														<Event name="Click">Attachable_LabelClick</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="DetailsErrorClient" id="386">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расшифровка ошибка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Decryption error (client)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="DetailsErrorClientExtendedTooltip" id="387"/>
+													<ChildItems>
+														<PictureDecoration name="DetailsErrorClientPicture" id="300">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расшифровка ошибка клиент картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Decryption error client picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="DetailsErrorClientPictureContextMenu" id="301"/>
+															<ExtendedTooltip name="DetailsErrorClientPictureExtendedTooltip" id="302"/>
+														</PictureDecoration>
+														<LabelDecoration name="DetailsErrorClientLabel" id="430">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расшифровка - текст ошибки (клиент)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Decryption - error text (client)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="DetailsErrorClientLabelContextMenu" id="431"/>
+															<ExtendedTooltip name="DetailsErrorClientLabelExtendedTooltip" id="432"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="DetailsDecisionClientLabel" id="303">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расшифровка (клиент)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Decryption (client)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="DetailsDecisionClientLabelContextMenu" id="304"/>
+													<ExtendedTooltip name="DetailsDecisionClientLabelExtendedTooltip" id="305"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+												<UsualGroup name="DetailsErrorServer" id="388">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наличие сертификата ошибка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Certificate availability error (server)</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="DetailsErrorServerExtendedTooltip" id="389"/>
+													<ChildItems>
+														<PictureDecoration name="DetailsErrorServerPicture" id="311">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расшифровка ошибка сервер картинка</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Decryption error server picture</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="DetailsErrorServerPictureContextMenu" id="312"/>
+															<ExtendedTooltip name="DetailsErrorServerPictureExtendedTooltip" id="313"/>
+														</PictureDecoration>
+														<LabelDecoration name="DetailsErrorServerLabel" id="433">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>70</MaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расшифровка - текст ошибки (сервер)</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Decryption - error text (server)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="DetailsErrorServerLabelContextMenu" id="434"/>
+															<ExtendedTooltip name="DetailsErrorServerLabelExtendedTooltip" id="435"/>
+															<Events>
+																<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="DetailsDecisionServerLabel" id="308">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>70</MaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расшифровка (сервер)</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Decryption (server)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="DetailsDecisionServerLabelContextMenu" id="309"/>
+													<ExtendedTooltip name="DetailsDecisionServerLabelExtendedTooltip" id="310"/>
+													<Events>
+														<Event name="URLProcessing">Attachable_LabelURLProcessing</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="AdditionalChecksGroup" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные проверки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Additional checks</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="AdditionalChecksGroupExtendedTooltip" id="148"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="VerificationPageIsSuccessful" id="449">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница проверки успешны</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page Checks passed</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="VerificationPageIsSuccessfulExtendedTooltip" id="450"/>
+					<ChildItems>
+						<PictureDecoration name="SceneryPictureChecksAreSuccessful" id="462">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация картинка выполняется проверка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Decoration picture verification in progress</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.Success32</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="SceneryPictureChecksAreSuccessfulContextMenu" id="463"/>
+							<ExtendedTooltip name="SceneryPictureChecksAreSuccessfulExtendedTooltip" id="464"/>
+						</PictureDecoration>
+						<LabelDecoration name="BackgroundChecksAreSuccessful" id="451">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка пройдена успешно</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Verified successfully</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="BackgroundChecksAreSuccessfulContextMenu" id="452"/>
+							<ExtendedTooltip name="BackgroundChecksAreSuccessfulExtendedTooltip" id="453"/>
+							<Events>
+								<Event name="Click">BackgroundChecksAreSuccessfulClick</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="PageIsBeingChecked" id="454">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполняется проверка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page Verification in progress</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="PageIsBeingCheckedExtendedTooltip" id="455"/>
+					<ChildItems>
+						<PictureDecoration name="DecorationPictureIsBeingChecked" id="459">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация картинка выполняется проверка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Decoration picture verification in progress</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.TimeConsumingOperation16</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="DecorationPictureIsBeingCheckedContextMenu" id="460"/>
+							<ExtendedTooltip name="DecorationPictureIsBeingCheckedExtendedTooltip" id="461"/>
+						</PictureDecoration>
+						<LabelDecoration name="DecorationIsBeingChecked" id="456">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется проверка сертификата...</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Validating certificate…</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationIsBeingCheckedContextMenu" id="457"/>
+							<ExtendedTooltip name="DecorationIsBeingCheckedExtendedTooltip" id="458"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="SeparatorDecoration" id="330">
+			<ContextMenu name="SeparatorDecorationContextMenu" id="331"/>
+			<ExtendedTooltip name="SeparatorDecorationExtendedTooltip" id="332"/>
+		</LabelDecoration>
+		<UsualGroup name="PasswordEntryGroup" id="142">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для выполнения проверок введите пароль, если он задан</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>To perform checks, enter the password (if it is set)</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:NoteText</TitleTextColor>
+			<VerticalStretch>true</VerticalStretch>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="PasswordEntryGroupExtendedTooltip" id="143"/>
+			<ChildItems>
+				<UsualGroup name="GroupWithFields" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fields</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupWithFieldsExtendedTooltip" id="141"/>
+					<ChildItems>
+						<UsualGroup name="PasswordGroup" id="154">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Password</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PasswordGroupExtendedTooltip" id="155"/>
+							<ChildItems>
+								<InputField name="Password" id="107">
+									<DataPath>Password</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Password</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<PasswordMode>true</PasswordMode>
+									<ChoiceButton>true</ChoiceButton>
+									<EditTextUpdate>OnValueChange</EditTextUpdate>
+									<ChoiceButtonPicture>
+										<xr:Ref>CommonPicture.CharsBeingTypedShown</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ChoiceButtonPicture>
+									<ContextMenu name="PasswordContextMenu" id="108"/>
+									<ExtendedTooltip name="PasswordExtendedTooltip" id="109"/>
+									<Events>
+										<Event name="OnChange">PasswordOnChange</Event>
+										<Event name="StartChoice">PasswordStartChoice</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="RememberPassword" id="114">
+									<DataPath>RememberPassword</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запомнить на время сеанса</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Remember for session</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запомнить пароль сертификата до закрытия приложения. При снятии флажка пароль стирается из памяти, если запоминался ранее.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Remember the certificate password before closing the app. When the check box is cleared, the stored password will be forgotten.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="RememberPasswordContextMenu" id="115"/>
+									<ExtendedTooltip name="RememberPasswordExtendedTooltip" id="116"/>
+									<Events>
+										<Event name="OnChange">RememberPasswordOnChange</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="Pages" id="110">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Pages</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="PagesExtendedTooltip" id="111"/>
+							<ChildItems>
+								<Page name="EnhancedPasswordNotePage" id="117">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница пояснение усиленного пароля</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Enhanced password explanation page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="EnhancedPasswordNotePageExtendedTooltip" id="118"/>
+									<ChildItems>
+										<LabelDecoration name="AdvancedPasswordNote" id="119">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:NoteText</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Нажмите Проверить, чтобы перейти к вводу пароля.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Click Check to start entering the password.
+</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="AdvancedPasswordNoteContextMenu" id="120"/>
+											<ExtendedTooltip name="AdvancedPasswordNoteExtendedTooltip" id="121"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="SpecifiedPasswordNotePage" id="122">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница пояснение установленного пароля</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Set password explanation page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="SpecifiedPasswordNotePageExtendedTooltip" id="123"/>
+									<ChildItems>
+										<LabelDecoration name="SpecifiedPasswordNote" id="124">
+											<TextColor>style:NoteText</TextColor>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="SpecifiedPasswordNoteContextMenu" id="125"/>
+											<ExtendedTooltip name="SpecifiedPasswordNoteExtendedTooltip" id="126">
+												<Events>
+													<Event name="URLProcessing">SpecifiedPasswordNoteExtendedTooltipURLProcessing</Event>
+												</Events>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="Click">SpecifiedPasswordNoteClick</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="FooterGroup" id="156">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Footer</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="FooterGroupExtendedTooltip" id="157"/>
+			<ChildItems>
+				<UsualGroup name="AssistanceRequiredGroup" id="158" DisplayImportance="Low">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется помощь?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Need help?</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>PopUp</Behavior>
+					<ExtendedTooltip name="AssistanceRequiredGroupExtendedTooltip" id="159"/>
+					<ChildItems>
+						<LabelDecoration name="SupportInformation" id="439">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link %1&gt;типичных проблем при работе с приложениями электронной подписи и их решений&lt;/&gt;.
+
+В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link %2&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Facing issues? Learn how to &lt;link %1&gt;troubleshoot digital signing apps&lt;/&gt; (in Russian).
+
+If you didn't find a solution, contact the 1C support team and provide &lt;link %2&gt;technical information&lt;/&gt; about the issue.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="SupportInformationContextMenu" id="440"/>
+							<ExtendedTooltip name="SupportInformationExtendedTooltip" id="441"/>
+							<Events>
+								<Event name="URLProcessing">SupportInformationURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<UsualGroup name="GroupDownloadTechnicalInformation" id="475">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скачать техническую информацию</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Download technical information</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupDownloadTechnicalInformationExtendedTooltip" id="476"/>
+							<ChildItems>
+								<Button name="DownloadTechnicalInformation" id="465">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.DownloadTechnicalInformation</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Download</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скачать техническую информацию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Download technical information</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="DownloadTechnicalInformationExtendedTooltip" id="466"/>
+								</Button>
+								<UsualGroup name="GroupGeneratesTechnicalInformation" id="467">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется техническая информация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Gathering technical information</v8:content>
+										</v8:item>
+									</Title>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupGeneratesTechnicalInformationExtendedTooltip" id="468"/>
+									<ChildItems>
+										<PictureDecoration name="SceneryPictureTechnicalInformationIsBeingGenerated" id="469">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка формируется техническая информация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decoration picture Gathering technical information</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.TimeConsumingOperation16</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="SceneryPictureTechnicalInformationIsBeingGeneratedContextMenu" id="470"/>
+											<ExtendedTooltip name="SceneryPictureTechnicalInformationIsBeingGeneratedExtendedTooltip" id="471"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationInscriptionTechnicalInformationIsBeingFormed" id="472">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Формируется техническая информация...</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Gathering technical information…</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DecorationInscriptionTechnicalInformationIsBeingFormedContextMenu" id="473"/>
+											<ExtendedTooltip name="DecorationInscriptionTechnicalInformationIsBeingFormedExtendedTooltip" id="474"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Password" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Password</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Certificate" id="2">
+			<Type>
+				<v8:Type>cfg:CatalogRef.DigitalSignatureAndEncryptionKeysCertificates</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateAddress" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Application" id="4">
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.DigitalSignatureApplication</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="RememberPassword" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запомнить пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remember password</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Thumbprint" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateEnterPasswordInElectronicSignatureProgram" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="AdditionalChecks" id="8">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ToolTip" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="OperationsAtServer" id="9">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CheckOnSelection" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ChecksAtClient" id="11">
+			<Type/>
+		</Attribute>
+		<Attribute name="ChecksAtServer" id="12">
+			<Type/>
+		</Attribute>
+		<Attribute name="PasswordAccepted" id="13">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="FirstCheckName" id="14">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="StandardChecks" id="15">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="IsBuiltInCryptoProvider" id="16">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="EnterPassword" id="17">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ItemsTitles" id="18">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="MergeResults" id="19">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CheckCompleted" id="20">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ServerName" id="21">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ThisServiceAccount" id="22">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="HasBuiltinCryptoprovider" id="23">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="HaveServiceAccount" id="24">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="VerifyDigitalSignaturesOnTheServer" id="25">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Revoked" id="26">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="AdditionalDataChecksOnClient" id="27">
+			<Type/>
+		</Attribute>
+		<Attribute name="AdditionalDataChecksOnServer" id="28">
+			<Type/>
+		</Attribute>
+		<Attribute name="AppAutoAtClient" id="29">
+			<Type/>
+		</Attribute>
+		<Attribute name="AppAutoAtServer" id="30">
+			<Type/>
+		</Attribute>
+		<Attribute name="CheckCertificateInClientLocalStore" id="33">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SignatureType" id="34">
+			<Type>
+				<v8:Type>cfg:EnumRef.CryptographySignatureTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificatesToVerifySignature" id="36">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Thumbprint" id="37">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Server" id="38">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Client" id="39">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="CertificateAddress" id="40">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="TimestampCertificates" id="42">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Thumbprint" id="43">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsObtainedAtServer" id="44">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="CertificateAddress" id="45">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsObtainedAtClient" id="46">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="47">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="IgnoreCertificateRevocationStatus" id="48">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="PerformCAVerification" id="49">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ChecksAreSuccessful" id="31">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Validate" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Validate</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="DownloadTechnicalInformation" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать техническую информацию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download technical information</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать техническую информацию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download technical information</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DownloadTechnicalInformation</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Certificate">
+			<Type>
+				<v8:Type>cfg:CatalogRef.DigitalSignatureAndEncryptionKeysCertificates</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="FormCaption">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="CheckOnSelection">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="AdditionalChecksParameters">
+			<Type/>
+		</Parameter>
+		<Parameter name="CheckResult">
+			<Type/>
+		</Parameter>
+		<Parameter name="MergeResults">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="SignatureType">
+			<Type>
+				<v8:Type>cfg:EnumRef.CryptographySignatureTypes</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="PerformCAVerification">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="IgnoreCertificateRevocationStatus">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

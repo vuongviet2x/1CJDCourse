@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="9bd1ab8f-7b04-4ef4-b172-e556b1e9f31c">
+		<Properties>
+			<Name>JobsQueue</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очередь заданий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Job queue</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.JobsQueue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.JobsQueueOverridable</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.MaxActiveBackgroundJobExecutionTime</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.MaxActiveBackgroundJobCount</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.JobsStates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.JobsProcessingPlanning</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.QueueJobTemplates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DeleteJobsQueue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.DeleteJobsQueueProcessingCTL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.JobsQueueHandlers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.DataAreasScheduledJobsQueueProcessing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ScheduledJobsQueueProcessing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.JobsQueue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.JobsQueueInternal</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.JobsQueueInternalDataSeparation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.JobsProcessingStart</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.RunningJobsQueueHandlers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.LogLaunchesJobsInQueue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.HistoryOfStartsOfJobsInQueue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.JobsQueueDataSeparation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.StoragePeriodForHistoryOfQueueJobLaunchesHours</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.LogLaunchesJobsInQueue</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор обслуживающей организации</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Service provider selection</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="SearchErrorGroup" id="75">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group1</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:WarningBackColor</BackColor>
+			<ExtendedTooltip name="SearchErrorGroupExtendedTooltip" id="76"/>
+			<ChildItems>
+				<LabelDecoration name="ErrorText" id="77">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ErrorTextContextMenu" id="78"/>
+					<ExtendedTooltip name="ErrorTextExtendedTooltip" id="79"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="SearchBar_3" id="37">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="SearchBar_3ExtendedTooltip" id="38"/>
+			<ChildItems>
+				<InputField name="SearchCriteria" id="29">
+					<DataPath>SearchCriteria</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>14</MaxWidth>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="SearchCriteriaContextMenu" id="30"/>
+					<ExtendedTooltip name="SearchCriteriaExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="OnChange">SearchCriteriaOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="SearchValue" id="32">
+					<DataPath>SearchValue</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>14</MaxWidth>
+					<ContextMenu name="SearchValueContextMenu" id="33"/>
+					<ExtendedTooltip name="SearchValueExtendedTooltip" id="34"/>
+				</InputField>
+				<Button name="FindOrganizations" id="35">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.FindOrganizations</CommandName>
+					<ExtendedTooltip name="FindOrganizationsExtendedTooltip" id="36"/>
+				</Button>
+				<CommandBar name="OOCommandPanel" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель ОО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Service provider command bar</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="OOCommandPanelExtendedTooltip" id="54"/>
+					<ChildItems>
+						<Button name="Find" id="61">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ServiceCompanies.StandardCommand.Find</CommandName>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="FindExtendedTooltip" id="62"/>
+						</Button>
+						<Button name="CancelSearch" id="63">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ServiceCompanies.StandardCommand.CancelSearch</CommandName>
+							<ExtendedTooltip name="CancelSearchExtendedTooltip" id="64"/>
+						</Button>
+						<Button name="SortListAsc" id="55">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ServiceCompanies.StandardCommand.SortListAsc</CommandName>
+							<ExtendedTooltip name="SortListAscExtendedTooltip" id="56"/>
+						</Button>
+						<Button name="SortListDesc" id="57">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ServiceCompanies.StandardCommand.SortListDesc</CommandName>
+							<ExtendedTooltip name="SortListDescExtendedTooltip" id="58"/>
+						</Button>
+						<Button name="OutputList" id="59">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.ServiceCompanies.StandardCommand.OutputList</CommandName>
+							<ExtendedTooltip name="OutputListExtendedTooltip" id="60"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Pages" id="39">
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="40"/>
+			<ChildItems>
+				<Page name="PageWait" id="41">
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<ExtendedTooltip name="PageWaitExtendedTooltip" id="42"/>
+					<ChildItems>
+						<UsualGroup name="WaitGroup" id="51">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="WaitGroupExtendedTooltip" id="52"/>
+							<ChildItems>
+								<PictureDecoration name="WaitPicture" id="45">
+									<Width>2</Width>
+									<Height>1</Height>
+									<PictureSize>Stretch</PictureSize>
+									<Picture>
+										<xr:Abs>Picture.gif</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="WaitPictureContextMenu" id="46"/>
+									<ExtendedTooltip name="WaitPictureExtendedTooltip" id="47"/>
+								</PictureDecoration>
+								<LabelDecoration name="TheWaitingLabel" id="48">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>1</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск обслуживающих организаций...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Searching for service providers…</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="TheWaitingLabelContextMenu" id="49"/>
+									<ExtendedTooltip name="TheWaitingLabelExtendedTooltip" id="50"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ListPage" id="43">
+					<ExtendedTooltip name="ListPageExtendedTooltip" id="44"/>
+					<ChildItems>
+						<Table name="ServiceCompanies" id="1">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ServiceCompanies</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ServiceCompaniesContextMenu" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ServiceCompaniesContextMenuFind" id="65">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ServiceCompanies.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="ServiceCompaniesContextMenuFindExtendedTooltip" id="66"/>
+									</Button>
+									<Button name="ServiceCompaniesContextMenuCancelSearch" id="67">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ServiceCompanies.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="ServiceCompaniesContextMenuCancelSearchExtendedTooltip" id="68"/>
+									</Button>
+									<Button name="ServiceCompaniesContextMenuSortListAsc" id="69">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ServiceCompanies.StandardCommand.SortListAsc</CommandName>
+										<ExtendedTooltip name="ServiceCompaniesContextMenuSortListAscExtendedTooltip" id="70"/>
+									</Button>
+									<Button name="ServiceCompaniesContextMenuSortListDesc" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ServiceCompanies.StandardCommand.SortListDesc</CommandName>
+										<ExtendedTooltip name="ServiceCompaniesContextMenuSortListDescExtendedTooltip" id="72"/>
+									</Button>
+									<Button name="ServiceCompaniesContextMenuOutputList" id="73">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ServiceCompanies.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="ServiceCompaniesContextMenuOutputListExtendedTooltip" id="74"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ServiceCompaniesCommandBar" id="3"/>
+							<ExtendedTooltip name="ServiceCompaniesExtendedTooltip" id="4"/>
+							<SearchStringAddition name="ServiceCompaniesSearchString" id="5">
+								<AdditionSource>
+									<Item>ServiceCompanies</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ServiceCompaniesSearchStringContextMenu" id="6"/>
+								<ExtendedTooltip name="ServiceCompaniesSearchStringExtendedTooltip" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ServiceCompaniesViewStatus" id="8">
+								<AdditionSource>
+									<Item>ServiceCompanies</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="ServiceCompaniesViewStatusContextMenu" id="9"/>
+								<ExtendedTooltip name="ServiceCompaniesViewStatusExtendedTooltip" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ServiceCompaniesSearchControl" id="11">
+								<AdditionSource>
+									<Item>ServiceCompanies</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ServiceCompaniesSearchControlContextMenu" id="12"/>
+								<ExtendedTooltip name="ServiceCompaniesSearchControlExtendedTooltip" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ServiceCompaniesSelection</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ServiceCompaniesDescription" id="14">
+									<DataPath>ServiceCompanies.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServiceCompaniesDescriptionContextMenu" id="15"/>
+									<ExtendedTooltip name="ServiceCompaniesDescriptionExtendedTooltip" id="16"/>
+								</InputField>
+								<InputField name="ServiceCompaniesCity" id="17">
+									<DataPath>ServiceCompanies.City</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServiceCompaniesCityContextMenu" id="18"/>
+									<ExtendedTooltip name="ServiceCompaniesCityExtendedTooltip" id="19"/>
+								</InputField>
+								<InputField name="ServiceCompaniesPhone" id="20">
+									<DataPath>ServiceCompanies.Phone</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServiceCompaniesPhoneContextMenu" id="21"/>
+									<ExtendedTooltip name="ServiceCompaniesPhoneExtendedTooltip" id="22"/>
+								</InputField>
+								<InputField name="ServiceCompaniesMail" id="23">
+									<DataPath>ServiceCompanies.Mail</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ServiceCompaniesMailContextMenu" id="24"/>
+									<ExtendedTooltip name="ServiceCompaniesMailExtendedTooltip" id="25"/>
+								</InputField>
+								<InputField name="ServiceCompaniesWebsite1" id="26">
+									<DataPath>ServiceCompanies.Website1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<TextColor>#3366FF</TextColor>
+									<ContextMenu name="ServiceCompaniesWebsite1ContextMenu" id="27"/>
+									<ExtendedTooltip name="ServiceCompaniesWebsite1ExtendedTooltip" id="28"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.WizardOfTransitionToCloud</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ServiceCompanies" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обслуживающие организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Service providers</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Description" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Description</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="City" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>City</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Phone" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Телефон</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Phone</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Mail" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Почта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Email</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Website1" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сайт</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Website</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Code" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Code</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ServiceAddress" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сервиса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Service address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SearchValue" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение поиска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search value</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SearchCriteria" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Критерий поиска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search criterion</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="JobID" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Job ID</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="StorageAddress" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Storage address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="FindOrganizations" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Find</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Find service providers</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FindOrganizations</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<EventSubscription uuid="07ec33d4-31b9-4f05-bb5e-298797607447">
+		<Properties>
+			<Name>_DemoDistributedInfobaseExchangeRegistrationSet</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демо: Обмен в распределенной информационной базе зарегистрировать изменение набора записей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Demo: Distributed infobase exchange Register record set</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoProductsPrices</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.BusinessCalendarData</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.PrintCommandsSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.UserReminders</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.UsedAccessKinds</v8:Type>
+				<v8:Type>cfg:AccountingRegisterRecordSet._DemoAccountingEntriesJournalWithoutCorrespondence</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoPersonsResponsible</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.BusinessProcessesData</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoDocumentsRegistry</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.InteractionsContacts</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.DataProcessedInMasterDIBNode</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoWorkSchedules</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoCommonInfoRecords</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.AdditionalDataProcessorsPurposes</v8:Type>
+				<v8:Type>cfg:SequenceRecordSet._DemoGoodsMovement</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.FilesExist</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.FilesEncoding</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoNotesOnSubjectAvailable</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet._DemoGoodsBalancesInStorageLocations</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ReportOptionsSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.InteractionsFolderSubjects</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ObjectVersioningSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.EncryptionCertificates</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.FilesClearingSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.LastEmailImportDate</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.OutgoingMailNotAcceptedByMailServer</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.PeriodClosingDates</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.EmailAccountSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ExchangeRates</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.AccessValuesSets</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.AdditionalInfo</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.UserPrintTemplates</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoCompaniesEmployees</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.SourceDocumentsOriginalsStates</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet._DemoProformaInvoicesTurnovers</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.TaskPerformers</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoStorageLocationsManagers</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.CertificateUsersNotifications</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoImportedInpaymentsFromBusinessEntities</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ReadReceipts</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.CalendarSchedules</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ObjectsRightsSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.QuestionnaireQuestionAnswers</v8:Type>
+				<v8:Type>cfg:AccountingRegisterRecordSet._DemoAccountingTransactionLog</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ReceivedEmailIDs</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.DataProcessorAccessUserSettings</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.CalendarNonWorkDaysPeriods</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.DigitalSignatures</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ProcessesToStart</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.FilesInfo</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet._DemoWarehouseDocumentsRegister</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ObjectsVersions</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ObjectRightsSettingsInheritance</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ManualWorkScheduleChanges</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule._DemoDataExchangeEvents._DemoExchangeInDistributedInfobaseRecordRecordSetChange</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

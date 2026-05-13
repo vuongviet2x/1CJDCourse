@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ParentCodeGroup" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и родитель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Code and parent</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ParentCodeGroupExtendedTooltip" id="51"/>
+			<ChildItems>
+				<InputField name="Code" id="1">
+					<DataPath>Object.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CodeContextMenu" id="2"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+				</InputField>
+				<InputField name="Parent" id="7">
+					<DataPath>Object.Parent</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подчинен счету</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Subordinate to account</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ParentContextMenu" id="8"/>
+					<ExtendedTooltip name="ParentExtendedTooltip" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<RadioButtonField name="Kind" id="10">
+			<DataPath>Object.Type</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="ent:AccountType">Active</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="ent:AccountType">Passive</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="ent:AccountType">ActivePassive</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="KindContextMenu" id="11"/>
+			<ExtendedTooltip name="KindExtendedTooltip" id="12"/>
+		</RadioButtonField>
+		<UsualGroup name="PropertiesGroup" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Properties</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="PropertiesGroupExtendedTooltip" id="53"/>
+			<ChildItems>
+				<CheckBoxField name="OffBalance" id="13">
+					<DataPath>Object.OffBalance</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="OffBalanceContextMenu" id="14"/>
+					<ExtendedTooltip name="OffBalanceExtendedTooltip" id="15"/>
+				</CheckBoxField>
+				<CheckBoxField name="Currency1" id="16">
+					<DataPath>Object.Currency1</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Currency1ContextMenu" id="17"/>
+					<ExtendedTooltip name="Currency1ExtendedTooltip" id="18"/>
+				</CheckBoxField>
+				<CheckBoxField name="Quantitative" id="19">
+					<DataPath>Object.Quantitative</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="QuantitativeContextMenu" id="20"/>
+					<ExtendedTooltip name="QuantitativeExtendedTooltip" id="21"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ExtDimensionTypes" id="22">
+			<Representation>List</Representation>
+			<Height>5</Height>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.ExtDimensionTypes</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды субконто</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Extra dimension types</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ExtDimensionTypesContextMenu" id="23"/>
+			<AutoCommandBar name="ExtDimensionTypesCommandBar" id="24"/>
+			<ExtendedTooltip name="ExtDimensionTypesExtendedTooltip" id="25"/>
+			<SearchStringAddition name="ExtDimensionTypesSearchString" id="26">
+				<AdditionSource>
+					<Item>ExtDimensionTypes</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ExtDimensionTypesSearchStringContextMenu" id="27"/>
+				<ExtendedTooltip name="ExtDimensionTypesSearchStringExtendedTooltip" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ExtDimensionTypesViewStatus" id="29">
+				<AdditionSource>
+					<Item>ExtDimensionTypes</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ExtDimensionTypesViewStatusContextMenu" id="30"/>
+				<ExtendedTooltip name="ExtDimensionTypesViewStatusExtendedTooltip" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ExtDimensionTypesSearchControl" id="32">
+				<AdditionSource>
+					<Item>ExtDimensionTypes</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ExtDimensionTypesSearchControlContextMenu" id="33"/>
+				<ExtendedTooltip name="ExtDimensionTypesSearchControlExtendedTooltip" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ExtDimensionTypesExtDimensionType" id="35">
+					<DataPath>Object.ExtDimensionTypes.ExtDimensionType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ExtDimensionTypesExtDimensionTypeContextMenu" id="36"/>
+					<ExtendedTooltip name="ExtDimensionTypesExtDimensionTypeExtendedTooltip" id="37"/>
+				</InputField>
+				<CheckBoxField name="ExtDimensionTypesTurnoversOnly" id="38">
+					<DataPath>Object.ExtDimensionTypes.TurnoversOnly</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ExtDimensionTypesTurnoversOnlyContextMenu" id="39"/>
+					<ExtendedTooltip name="ExtDimensionTypesTurnoversOnlyExtendedTooltip" id="40"/>
+				</CheckBoxField>
+				<CheckBoxField name="ExtDimensionTypesCurrency1" id="41">
+					<DataPath>Object.ExtDimensionTypes.Currency1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ExtDimensionTypesCurrency1ContextMenu" id="42"/>
+					<ExtendedTooltip name="ExtDimensionTypesCurrency1ExtendedTooltip" id="43"/>
+				</CheckBoxField>
+				<CheckBoxField name="ExtDimensionTypesQuantitative" id="44">
+					<DataPath>Object.ExtDimensionTypes.Quantitative</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ExtDimensionTypesQuantitativeContextMenu" id="45"/>
+					<ExtendedTooltip name="ExtDimensionTypesQuantitativeExtendedTooltip" id="46"/>
+				</CheckBoxField>
+				<CheckBoxField name="ExtDimensionTypesAmountIsRequired" id="47">
+					<DataPath>Object.ExtDimensionTypes.AmountIsRequired</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ExtDimensionTypesAmountIsRequiredContextMenu" id="48"/>
+					<ExtendedTooltip name="ExtDimensionTypesAmountIsRequiredExtendedTooltip" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<InputField name="Comment" id="54">
+			<DataPath>Object.Comment</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Height>1</Height>
+			<MultiLine>false</MultiLine>
+			<ContextMenu name="CommentContextMenu" id="55"/>
+			<ExtendedTooltip name="CommentExtendedTooltip" id="56"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfAccountsObject._DemoMain</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

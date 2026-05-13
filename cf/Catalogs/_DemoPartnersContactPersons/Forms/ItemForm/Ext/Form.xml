@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupPartner" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Partner</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupPartnerExtendedTooltip" id="21"/>
+			<ChildItems>
+				<Page name="MainGroup1" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="MainGroup1ExtendedTooltip" id="22"/>
+					<ChildItems>
+						<InputField name="Owner" id="3">
+							<DataPath>Object.Owner</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="OwnerContextMenu" id="4"/>
+							<ExtendedTooltip name="OwnerExtendedTooltip" id="24"/>
+						</InputField>
+						<InputField name="Individual" id="7">
+							<DataPath>Object.Individual</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="IndividualContextMenu" id="8"/>
+							<ExtendedTooltip name="IndividualExtendedTooltip" id="26"/>
+							<Events>
+								<Event name="OnChange">IndividualOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="Description" id="1">
+							<DataPath>Object.Description</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="DescriptionContextMenu" id="2"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="23"/>
+						</InputField>
+						<InputField name="ContactRole" id="5">
+							<DataPath>Object.ContactRole</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ContactRoleContextMenu" id="6"/>
+							<ExtendedTooltip name="ContactRoleExtendedTooltip" id="25"/>
+						</InputField>
+						<UsualGroup name="ContactInformationGroup" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактная информация</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Contact information</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ContactInformationGroupExtendedTooltip" id="43"/>
+						</UsualGroup>
+						<UsualGroup name="DatesGroup" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Даты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Dates</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DatesGroupExtendedTooltip" id="41"/>
+							<ChildItems>
+								<InputField name="RelationRegistrationDate" id="9">
+									<DataPath>Object.RelationRegistrationDate</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="RelationRegistrationDateContextMenu" id="10"/>
+									<ExtendedTooltip name="RelationRegistrationDateExtendedTooltip" id="27"/>
+								</InputField>
+								<InputField name="RelationEndDate" id="11">
+									<DataPath>Object.RelationEndDate</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="RelationEndDateContextMenu" id="12"/>
+									<ExtendedTooltip name="RelationEndDateExtendedTooltip" id="28"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Comments" id="15">
+							<DataPath>Object.Comments</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Height>3</Height>
+							<Wrap>false</Wrap>
+							<ContextMenu name="CommentsContextMenu" id="16"/>
+							<ExtendedTooltip name="CommentsExtendedTooltip" id="30"/>
+						</InputField>
+						<InputField name="Author" id="13">
+							<DataPath>Object.Author</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="AuthorContextMenu" id="14"/>
+							<ExtendedTooltip name="AuthorExtendedTooltip" id="29"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="PersonalData" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Личные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Personal data</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="PersonalDataExtendedTooltip" id="33"/>
+					<ChildItems>
+						<InputField name="IndividualBirthDate" id="37">
+							<DataPath>Individual.BirthDate</DataPath>
+							<ContextMenu name="IndividualBirthDateContextMenu" id="38"/>
+							<ExtendedTooltip name="IndividualBirthDateExtendedTooltip" id="39"/>
+						</InputField>
+						<UsualGroup name="IndividualContactInformationGroup" id="20">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адреса, телефоны</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Addresses and phones</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="IndividualContactInformationGroupExtendedTooltip" id="31"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._DemoPartnersContactPersons</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="NotificationRequired" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="BasisObject" id="3">
+			<Type/>
+		</Attribute>
+		<Attribute name="Individual" id="4">
+			<Type>
+				<v8:Type>cfg:CatalogObject._DemoIndividuals</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ContactInformationAdditionalAttributesDetails" id="5">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="AttributeName" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Kind" id="2">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ContactInformationKinds</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Type" id="3">
+					<Type>
+						<v8:Type>cfg:EnumRef.ContactInformationTypes</v8:Type>
+					</Type>
+				</Column>
+				<Column name="FieldValues" id="4">
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Comment" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsTabularSectionAttribute" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="8">
+			<Type/>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="FormPostAndClose" id="130">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+				<ExtendedTooltip name="FormPostAndCloseExtendedTooltip" id="131"/>
+			</Button>
+			<Button name="FormWrite" id="132">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="FormWriteExtendedTooltip" id="133"/>
+			</Button>
+			<Button name="FormPost" id="134">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Post</CommandName>
+				<ExtendedTooltip name="FormPostExtendedTooltip" id="135"/>
+			</Button>
+			<ButtonGroup name="CommandBar" id="136">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Command bar</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="CommandBarExtendedTooltip" id="137"/>
+			</ButtonGroup>
+			<Button name="FormCustomizeForm" id="138">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ExtendedTooltip name="FormCustomizeFormExtendedTooltip" id="139"/>
+			</Button>
+			<Button name="FormHelp" id="140">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="FormHelpExtendedTooltip" id="141"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Header" id="105">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="106"/>
+			<ChildItems>
+				<UsualGroup name="MainGroup3" id="156" DisplayImportance="VeryHigh">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="MainGroup3ExtendedTooltip" id="157"/>
+					<ChildItems>
+						<UsualGroup name="NumberDateGroup" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Number date</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="NumberDateGroupExtendedTooltip" id="64"/>
+							<ChildItems>
+								<InputField name="Number" id="1">
+									<DataPath>Object.Number</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер документа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Document number</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="NumberContextMenu" id="2"/>
+									<ExtendedTooltip name="NumberExtendedTooltip" id="65"/>
+								</InputField>
+								<InputField name="Date" id="3">
+									<DataPath>Object.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>dated</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата документа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Document date</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="DateContextMenu" id="4"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="66"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="OrderStatus" id="45">
+							<DataPath>Object.OrderStatus</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущий статус заказа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Current order status</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ClearButton>false</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>false</OpenButton>
+							<ChoiceListButton>false</ChoiceListButton>
+							<ContextMenu name="OrderStatusContextMenu" id="46"/>
+							<ExtendedTooltip name="OrderStatusExtendedTooltip" id="67"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="HeaderGroup" id="158" DisplayImportance="Low">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партнер, контрагент, организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Partner, counterparty, company</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="HeaderGroupExtendedTooltip" id="159"/>
+					<ChildItems>
+						<UsualGroup name="HeaderLeft" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка слева</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Left header</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="HeaderLeftExtendedTooltip" id="104"/>
+							<ChildItems>
+								<InputField name="Partner" id="7">
+									<DataPath>Object.Partner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<ContextMenu name="PartnerContextMenu" id="8"/>
+									<ExtendedTooltip name="PartnerExtendedTooltip" id="71"/>
+								</InputField>
+								<InputField name="Counterparty" id="39">
+									<DataPath>Object.Counterparty</DataPath>
+									<ContextMenu name="CounterpartyContextMenu" id="40"/>
+									<ExtendedTooltip name="CounterpartyExtendedTooltip" id="73"/>
+									<Events>
+										<Event name="OnChange">CounterpartyOnChange</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="HeaderRight" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Right header</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="HeaderRightExtendedTooltip" id="108"/>
+							<ChildItems>
+								<InputField name="Organization" id="5">
+									<DataPath>Object.Organization</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<ContextMenu name="OrganizationContextMenu" id="6"/>
+									<ExtendedTooltip name="OrganizationExtendedTooltip" id="70"/>
+								</InputField>
+								<InputField name="Contract" id="41">
+									<DataPath>Object.Contract</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договор заказа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Order contract</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="ContractContextMenu" id="42"/>
+									<ExtendedTooltip name="ContractExtendedTooltip" id="74"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="HorizontalGroup" id="34" DisplayImportance="VeryLow">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Горизонтальная группа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Horizontal group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HorizontalGroupExtendedTooltip" id="76"/>
+			<ChildItems>
+				<InputField name="DocumentAmount" id="35">
+					<DataPath>Object.DocumentAmount</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма в валюте заказа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount in order currency</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="DocumentAmountContextMenu" id="36"/>
+					<ExtendedTooltip name="DocumentAmountExtendedTooltip" id="77"/>
+				</InputField>
+				<InputField name="Currency" id="37">
+					<DataPath>Object.Currency</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта заказа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Order currency</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="CurrencyContextMenu" id="38"/>
+					<ExtendedTooltip name="CurrencyExtendedTooltip" id="78"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ContactInformationGroup" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адреса, телефоны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Addresses and phones</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ContactInformationGroupExtendedTooltip" id="75"/>
+		</UsualGroup>
+		<Pages name="Pages" id="18" DisplayImportance="VeryHigh">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="88"/>
+			<ChildItems>
+				<Page name="ProformaInvoicesPage" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета на оплату</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Proforma invoices</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ProformaInvoicesPageExtendedTooltip" id="89"/>
+					<ChildItems>
+						<Table name="ProformaInvoices" id="9">
+							<Representation>List</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.ProformaInvoices</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета на оплату</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Proforma invoices</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ProformaInvoicesContextMenu" id="10"/>
+							<AutoCommandBar name="ProformaInvoicesCommandBar" id="11"/>
+							<ExtendedTooltip name="ProformaInvoicesExtendedTooltip" id="90"/>
+							<SearchStringAddition name="ProformaInvoicesSearchString" id="112">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="InvoicesForPaymentSearchBarContextMenu" id="113"/>
+								<ExtendedTooltip name="InvoicesForPaymentSearchBarExtendedTooltip" id="114"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ProformaInvoicesViewStatus" id="115">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="InvoicesForPaymentViewingStatusContextMenu" id="116"/>
+								<ExtendedTooltip name="InvoicesForPaymentViewingStatusExtendedTooltip" id="117"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ProformaInvoicesSearchControl" id="118">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="InvoicesForPaymentSearchManagementContextMenu" id="119"/>
+								<ExtendedTooltip name="InvoicesForPaymentSearchManagementExtendedTooltip" id="120"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ProformaInvoicesOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ProformaInvoicesRowNumber" id="12" DisplayImportance="VeryLow">
+									<DataPath>Object.ProformaInvoices.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ProformaInvoicesRowNumberContextMenu" id="13"/>
+									<ExtendedTooltip name="ProformaInvoicesRowNumberExtendedTooltip" id="91"/>
+								</LabelField>
+								<InputField name="ProformaInvoicesAccount" id="14" DisplayImportance="VeryHigh">
+									<DataPath>Object.ProformaInvoices.Account</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>60</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="ProformaInvoicesAccountContextMenu" id="15"/>
+									<ExtendedTooltip name="ProformaInvoicesAccountExtendedTooltip" id="92"/>
+								</InputField>
+								<InputField name="ProformaInvoicesIndent" id="142">
+									<DataPath>Object.ProformaInvoices.Indent</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ProformaInvoicesIndentContextMenu" id="143"/>
+									<ExtendedTooltip name="ProformaInvoicesIndentExtendedTooltip" id="144"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="PartnersAndContactPersonsPage" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактные лица</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contact persons</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="PartnersAndContactPersonsPageExtendedTooltip" id="93"/>
+					<ChildItems>
+						<Table name="PartnersAndContactPersons" id="21">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.PartnersAndContactPersons</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Партнеры и контактные лица</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Partners and contacts</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="PartnersAndContactPersonsContextMenu" id="22"/>
+							<AutoCommandBar name="PartnersAndContactPersonsCommandBar" id="23"/>
+							<ExtendedTooltip name="PartnersAndContactPersonsExtendedTooltip" id="94"/>
+							<SearchStringAddition name="PartnersAndContactPersonsSearchString" id="121">
+								<AdditionSource>
+									<Item>PartnersAndContactPersons</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PartnersAndContactPersonsSearchStringContextMenu" id="122"/>
+								<ExtendedTooltip name="PartnersAndContactPersonsSearchStringExtendedTooltip" id="123"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="PartnersAndContactPersonsViewStatus" id="124">
+								<AdditionSource>
+									<Item>PartnersAndContactPersons</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PartnersAndContactPersonsViewStatusContextMenu" id="125"/>
+								<ExtendedTooltip name="PartnersAndContactPersonsViewStatusExtendedTooltip" id="126"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="PartnersAndContactPersonsSearchControl" id="127">
+								<AdditionSource>
+									<Item>PartnersAndContactPersons</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="PartnersAndContactPersonsSearchControlContextMenu" id="128"/>
+								<ExtendedTooltip name="PartnersAndContactPersonsSearchControlExtendedTooltip" id="129"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">PartnersAndContactPersonsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="PartnersAndContactPersonsRowNumber" id="24">
+									<DataPath>Object.PartnersAndContactPersons.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="PartnersAndContactPersonsRowNumberContextMenu" id="25"/>
+									<ExtendedTooltip name="PartnersAndContactPersonsRowNumberExtendedTooltip" id="95"/>
+								</LabelField>
+								<InputField name="PartnersAndContactPersonsPartner" id="26" DisplayImportance="VeryHigh">
+									<DataPath>Object.PartnersAndContactPersons.Partner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="PartnersAndContactPersonsPartnerContextMenu" id="27"/>
+									<ExtendedTooltip name="PartnersAndContactPersonsPartnerExtendedTooltip" id="96"/>
+								</InputField>
+								<InputField name="PartnersAndContactPersonsContactPerson" id="28" DisplayImportance="Usual">
+									<DataPath>Object.PartnersAndContactPersons.ContactPerson</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="PartnersAndContactPersonsContactPersonContextMenu" id="29"/>
+									<ExtendedTooltip name="PartnersAndContactPersonsContactPersonExtendedTooltip" id="97"/>
+								</InputField>
+								<InputField name="PartnersAndContactPersonsComment" id="30" DisplayImportance="VeryLow">
+									<DataPath>Object.PartnersAndContactPersons.Comment</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PartnersAndContactPersonsCommentContextMenu" id="31"/>
+									<ExtendedTooltip name="PartnersAndContactPersonsCommentExtendedTooltip" id="98"/>
+								</InputField>
+								<ColumnGroup name="PartnersAndContactPersonsContactInformationGroup" id="43" DisplayImportance="VeryLow">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адреса, телефоны</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Addresses and phones</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информация о адресах и телефонах</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Information about addresses and phones</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="PartnersAndContactPersonsContactInformationGroupExtendedTooltip" id="99"/>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="DeliveryGroup" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доставка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Delivery</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="DeliveryGroupExtendedTooltip" id="79"/>
+					<ChildItems>
+						<InputField name="DeliveryDate" id="58">
+							<DataPath>Object.DeliveryDate</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доставить</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Deliver</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DeliveryDateContextMenu" id="59"/>
+							<ExtendedTooltip name="DeliveryDateExtendedTooltip" id="84"/>
+						</InputField>
+						<InputField name="ContactPerson" id="153">
+							<DataPath>Object.ContactPerson</DataPath>
+							<ContextMenu name="ContactPersonContextMenu" id="154"/>
+							<ExtendedTooltip name="ContactPersonExtendedTooltip" id="155"/>
+						</InputField>
+						<InputField name="DeliveryAddressPresentation" id="54">
+							<DataPath>DeliveryAddressPresentation</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Address</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес доставки, введенный строкой</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>A delivery address as String.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>70</MaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="DeliveryAddressPresentationContextMenu" id="55"/>
+							<ExtendedTooltip name="DeliveryAddressPresentationExtendedTooltip" id="82"/>
+							<Events>
+								<Event name="OnChange">DeliveryAddressPresentationOnChange</Event>
+								<Event name="StartChoice">DeliveryAddressPresentationStartChoice</Event>
+								<Event name="Clearing">DeliveryAddressPresentationClearing</Event>
+								<Event name="ChoiceProcessing">DeliveryAddressPresentationChoiceProcessing</Event>
+							</Events>
+						</InputField>
+						<InputField name="DeliveryAddressComment" id="56">
+							<DataPath>DeliveryAddressComment</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Comment</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий к адресу доставки, не попадающий в представление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Delivery address comment not included in the presentation.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>50</MaxWidth>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="DeliveryAddressCommentContextMenu" id="57"/>
+							<ExtendedTooltip name="DeliveryAddressCommentExtendedTooltip" id="83"/>
+							<Events>
+								<Event name="OnChange">DeliveryAddressCommentOnChange</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="EmailGroup" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Электронная почта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Email</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адреса и даты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Address and dates group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="EmailGroupExtendedTooltip" id="85"/>
+							<ChildItems>
+								<InputField name="EmailRepresentation" id="60">
+									<DataPath>EmailRepresentation</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Электронная почта</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Email</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Электронная почта, введенная строкой</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>An email address as String.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>50</MaxWidth>
+									<ContextMenu name="EmailRepresentationContextMenu" id="61"/>
+									<ExtendedTooltip name="EmailRepresentationExtendedTooltip" id="86"/>
+									<Events>
+										<Event name="OnChange">EmailRepresentationOnChange</Event>
+									</Events>
+								</InputField>
+								<Button name="WriteEmail2" id="63">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.WriteEmail2</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Написать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Write</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="WriteEmail2ExtendedTooltip" id="87"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="NotifyOnOrderStatusChangeGroup" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уведомлять об изменение статуса заказа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Notify of order status change</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="NotifyOnOrderStatusChangeGroupExtendedTooltip" id="146"/>
+							<ChildItems>
+								<CheckBoxField name="NotifyOnOrderStatusChange" id="147">
+									<DataPath>Object.NotifyOnOrderStatusChange</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="NotifyOnOrderStatusChangeContextMenu" id="148"/>
+									<ExtendedTooltip name="NotifyOnOrderStatusChangeExtendedTooltip" id="149"/>
+								</CheckBoxField>
+								<InputField name="MessageTemplate" id="150">
+									<DataPath>Object.MessageTemplate</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<OpenButton>false</OpenButton>
+									<ChoiceParameters>
+										<app:item name="Filter.InputOnBasisParameterTypeFullName">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:string">CustomerNotificationChangeOrder</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="MessageTemplateContextMenu" id="151"/>
+									<ExtendedTooltip name="MessageTemplateExtendedTooltip" id="152"/>
+									<Events>
+										<Event name="StartChoice">MessageTemplateStartChoice</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="EmployeeResponsibleComment" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="EmployeeResponsibleCommentExtendedTooltip" id="102"/>
+			<ChildItems>
+				<InputField name="Comment" id="16">
+					<DataPath>Object.Comment</DataPath>
+					<ChoiceButton>false</ChoiceButton>
+					<ContextMenu name="CommentContextMenu" id="17"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="100"/>
+				</InputField>
+				<InputField name="EmployeeResponsible" id="109">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="110"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="111"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._DemoSalesOrder</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.ProformaInvoices">
+					<Column name="Indent" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отступ</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Indent</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="NotificationRequired" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="InteractionBasis" id="3">
+			<Type>
+				<v8:Type>cfg:DocumentRef.OutgoingEmail</v8:Type>
+				<v8:Type>cfg:DocumentRef.PlannedInteraction</v8:Type>
+				<v8:Type>cfg:DocumentRef.IncomingEmail</v8:Type>
+				<v8:Type>cfg:DocumentRef.PhoneCall</v8:Type>
+				<v8:Type>cfg:DocumentRef.Meeting</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DeliveryAddressContactInformationKind" id="4">
+			<Type/>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="EmailContactInformationKind" id="5">
+			<Type/>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="DeliveryAddressComment" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="DeliveryAddressPresentation" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="EmailRepresentation" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="PreviousOrderStatus" id="9">
+			<Type>
+				<v8:Type>cfg:EnumRef._DemoCustomerOrderStatuses</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="WriteEmail2" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Write</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать электронное письмо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Create mail</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ContactInformationSendEmail</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>WriteEmail2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.AttachedFiles</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormImportDataFromFile" id="49">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ImportDataFromFile</CommandName>
+				<ExtendedTooltip name="FormImportDataFromFileExtendedTooltip" id="50"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupHeader" id="41">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group header</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupHeaderExtendedTooltip" id="42"/>
+			<ChildItems>
+				<UsualGroup name="GroupNumberDate" id="43">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="44"/>
+					<ChildItems>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Date" id="4">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>15</MaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="StorageLocation" id="7">
+					<DataPath>Object.StorageLocation</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="StorageLocationContextMenu" id="8"/>
+					<ExtendedTooltip name="StorageLocationExtendedTooltip" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupGoods" id="47">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupGoodsExtendedTooltip" id="48"/>
+			<ChildItems>
+				<Table name="Goods" id="16">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Object.Goods</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="GoodsContextMenu" id="17"/>
+					<AutoCommandBar name="GoodsCommandBar" id="18"/>
+					<ExtendedTooltip name="GoodsExtendedTooltip" id="19"/>
+					<SearchStringAddition name="GoodsSearchString" id="20">
+						<AdditionSource>
+							<Item>Goods</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="GoodsSearchStringContextMenu" id="21"/>
+						<ExtendedTooltip name="GoodsSearchStringExtendedTooltip" id="22"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="GoodsViewStatus" id="23">
+						<AdditionSource>
+							<Item>Goods</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="GoodsViewStatusContextMenu" id="24"/>
+						<ExtendedTooltip name="GoodsViewStatusExtendedTooltip" id="25"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="GoodsSearchControl" id="26">
+						<AdditionSource>
+							<Item>Goods</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="GoodsSearchControlContextMenu" id="27"/>
+						<ExtendedTooltip name="GoodsSearchControlExtendedTooltip" id="28"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="GoodsLineNumber" id="29">
+							<DataPath>Object.Goods.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="GoodsLineNumberContextMenu" id="30"/>
+							<ExtendedTooltip name="GoodsLineNumberExtendedTooltip" id="31"/>
+						</LabelField>
+						<InputField name="GoodsProduct" id="32">
+							<DataPath>Object.Goods.Product</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="GoodsProductContextMenu" id="33"/>
+							<ExtendedTooltip name="GoodsProductExtendedTooltip" id="34"/>
+						</InputField>
+						<InputField name="GoodsQuantity" id="35">
+							<DataPath>Object.Goods.Quantity</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="GoodsQuantityContextMenu" id="36"/>
+							<ExtendedTooltip name="GoodsQuantityExtendedTooltip" id="37"/>
+						</InputField>
+						<InputField name="GoodsQuantityFact" id="38">
+							<DataPath>Object.Goods.QuantityFact</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="GoodsQuantityFactContextMenu" id="39"/>
+							<ExtendedTooltip name="GoodsQuantityFactExtendedTooltip" id="40"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupResponsibleComment" id="45">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupResponsibleCommentExtendedTooltip" id="46"/>
+			<ChildItems>
+				<InputField name="EmployeeResponsible" id="10">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Responsible</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="11"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="12"/>
+				</InputField>
+				<InputField name="Comment" id="13">
+					<DataPath>Object.Comment</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="CommentContextMenu" id="14"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.InventoryRecount</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ImportDataFromFile" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import data from file...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import data from file</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ImportDataFromFile</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.AttachedFiles</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

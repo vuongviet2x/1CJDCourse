@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.19">
+	<Item id="5c46ad77-17f0-4ff0-a122-35b8828d1323">
+		<Name>Auxiliary</Name>
+		<Code>00</Code>
+		<Description>Auxiliary</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>00</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="3edbc2e5-47e9-4ab1-ae9c-a833095dc6fd">
+		<Name>VATOnPurchasedCommodities</Name>
+		<Code>19</Code>
+		<Description>VAT on purchased valuables</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>19</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+		<ChildItems>
+			<Item id="55f1a9e4-c136-491f-b6f2-0c8f180951a3">
+				<Name>VATOnPurchasedInventory</Name>
+				<Code>19.03</Code>
+				<Description>VAT on purchased inventory</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>19.03</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="eef9627a-c79d-44c2-bbfd-f71060bf0356">
+		<Name>Goods</Name>
+		<Code>41</Code>
+		<Description>Goods</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>41</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+		<ChildItems>
+			<Item id="c9caa8ec-c20a-4524-8359-1685da2f8b2c">
+				<Name>ProductStock</Name>
+				<Code>41.01</Code>
+				<Description>Goods in warehouses</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>41.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Products">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Warehouses">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="835e26aa-00b4-4709-bf5e-4588781a6c4c">
+		<Name>SettlementsWithSuppliersAndContractors</Name>
+		<Code>60</Code>
+		<Description>Settlements with suppliers and contractors</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>60</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="615a14fa-69a9-4362-bc1e-e1fc80b9dda1">
+				<Name>VendorsARAPAccounting</Name>
+				<Code>60.01</Code>
+				<Description>Settlements with suppliers and contractors</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>60.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="f7a43647-457e-4948-a0e0-104e268872de">
+				<Name>SettlementsWithSuppliersCurr</Name>
+				<Code>60.21</Code>
+				<Description>Settlements with suppliers and contractors (in foreign currency)</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>60.21</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="228f4812-d367-408d-a188-e860c4ee8323">
+		<Name>SettlementsWithCustomersAndClients</Name>
+		<Code>62</Code>
+		<Description>Settlements with buyers and customers</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>62</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="6a75dde7-4443-4d03-abcc-302d9ce845dc">
+				<Name>SettlementsWithCustomers</Name>
+				<Code>62.01</Code>
+				<Description>Settlements with customers</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>62.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="f271939c-7914-409f-9bc9-ee6382a6148a">
+				<Name>SettlementsWithCustomersCurr</Name>
+				<Code>62.21</Code>
+				<Description>Settlements with buyers and customers (in foreign currency)</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>62.21</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Counterparties">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.Contracts">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5ede723f-cfe8-4e82-ac05-851208d86a9b">
+		<Name>FiscalSettlements</Name>
+		<Code>68</Code>
+		<Description>Calculations for taxes and fees</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>68</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.PaymentsToBudgetTypes">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="5ea6ae86-5dba-4ebd-9a1f-36445c9d3b7e">
+				<Name>VAT</Name>
+				<Code>68.02</Code>
+				<Description>Value added tax</Description>
+				<AccountType>ActivePassive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>68.02</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.PaymentsToBudgetTypes">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="54841ff5-5e67-4474-bc9e-cae0ca4c1651">
+		<Name>Sales</Name>
+		<Code>90</Code>
+		<Description>Sales</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>90</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+			<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.ProductRangeGroups">
+				<Turnover>true</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="7ec4f501-b11e-4c74-b5e4-1ee8bbe8b8e1">
+				<Name>Revenue</Name>
+				<Code>90.01</Code>
+				<Description>Revenue</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>90.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.ProductRangeGroups">
+						<Turnover>true</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.VATRates">
+						<Turnover>true</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="900f2e88-6599-4d63-924c-6417bfc64bf1">
+				<Name>SaleCost</Name>
+				<Code>90.02</Code>
+				<Description>Cost of sales</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>90.02</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.ProductRangeGroups">
+						<Turnover>true</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="438cfae3-fe91-4f53-bc21-1191fc8cfb90">
+				<Name>Sales_VAT</Name>
+				<Code>90.03</Code>
+				<Description>VAT sales</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>90.03</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Currency1">false</Flag>
+					<Flag ref="ChartOfAccounts._DemoMain.AccountingFlag.Quantitative">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.ProductRangeGroups">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes._DemoExtDimensionTypes.VATRates">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Currency1">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.Quantitative">true</Flag>
+							<Flag ref="ChartOfAccounts._DemoMain.ExtDimensionAccountingFlag.AmountIsRequired">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

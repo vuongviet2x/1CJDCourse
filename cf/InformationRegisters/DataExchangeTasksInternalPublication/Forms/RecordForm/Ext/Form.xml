@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<InputField name="CreationDate" id="28">
+			<DataPath>Record.CreationDate</DataPath>
+			<ContextMenu name="CreationDateContextMenu" id="29"/>
+			<ExtendedTooltip name="CreationDateExtendedTooltip" id="30"/>
+		</InputField>
+		<InputField name="TaskNumber" id="10">
+			<DataPath>Record.TaskNumber</DataPath>
+			<ContextMenu name="TaskNumberContextMenu" id="11"/>
+			<ExtendedTooltip name="TaskNumberExtendedTooltip" id="12"/>
+		</InputField>
+		<InputField name="Scenario" id="4">
+			<ContextMenu name="ScenarioContextMenu" id="5"/>
+			<ExtendedTooltip name="ScenarioExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Node" id="7">
+			<DataPath>Record.InfobaseNode</DataPath>
+			<ContextMenu name="NodeContextMenu" id="8"/>
+			<ExtendedTooltip name="NodeExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="ExchangeID" id="31">
+			<DataPath>Record.ExchangeID</DataPath>
+			<ContextMenu name="ExchangeIDContextMenu" id="32"/>
+			<ExtendedTooltip name="ExchangeIDExtendedTooltip" id="33"/>
+		</InputField>
+		<InputField name="TaskID__" id="13">
+			<DataPath>Record.TaskID__</DataPath>
+			<ContextMenu name="TaskID__ContextMenu" id="14"/>
+			<ExtendedTooltip name="TaskID__ExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Action" id="16">
+			<DataPath>Record.Action</DataPath>
+			<ContextMenu name="ActionContextMenu" id="17"/>
+			<ExtendedTooltip name="ActionExtendedTooltip" id="18"/>
+		</InputField>
+		<InputField name="TaskCheckTime" id="34">
+			<DataPath>Record.TaskCheckTime</DataPath>
+			<ContextMenu name="TaskCheckTimeContextMenu" id="35"/>
+			<ExtendedTooltip name="TaskCheckTimeExtendedTooltip" id="36"/>
+		</InputField>
+		<CheckBoxField name="OperationSuccessful" id="19">
+			<DataPath>Record.OperationSuccessful</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="OperationSuccessfulContextMenu" id="20"/>
+			<ExtendedTooltip name="OperationSuccessfulExtendedTooltip" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="OperationFailed" id="22">
+			<DataPath>Record.OperationFailed</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="OperationFailedContextMenu" id="23"/>
+			<ExtendedTooltip name="OperationFailedExtendedTooltip" id="24"/>
+		</CheckBoxField>
+		<InputField name="Mode" id="37">
+			<DataPath>Record.Mode</DataPath>
+			<ContextMenu name="ModeContextMenu" id="38"/>
+			<ExtendedTooltip name="ModeExtendedTooltip" id="39"/>
+		</InputField>
+		<InputField name="CorrespondentDataArea" id="40">
+			<DataPath>Record.CorrespondentDataArea</DataPath>
+			<ContextMenu name="CorrespondentDataAreaContextMenu" id="41"/>
+			<ExtendedTooltip name="CorrespondentDataAreaExtendedTooltip" id="42"/>
+		</InputField>
+		<InputField name="Error" id="25">
+			<DataPath>Record.Error</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ErrorContextMenu" id="26"/>
+			<ExtendedTooltip name="ErrorExtendedTooltip" id="27"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Record" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.DataExchangeTasksInternalPublication</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

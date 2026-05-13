@@ -1,0 +1,2315 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ChoiceProcessing</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnClose">OnClose</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="WarningsPanel" id="1235">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель предупреждений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Warning panel</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="WarningsPanelExtendedTooltip" id="1236"/>
+			<ChildItems>
+				<PictureDecoration name="WarningPic" id="1168">
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка предупреждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Warning picture</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="WarningPicContextMenu" id="1169"/>
+					<ExtendedTooltip name="WarningPicExtendedTooltip" id="1170"/>
+				</PictureDecoration>
+				<UsualGroup name="WarningColumn" id="1166">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка предупреждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Warning column</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="WarningColumnExtendedTooltip" id="1167"/>
+					<ChildItems>
+						<LabelDecoration name="LabelUnfinishedHandlers" id="1247">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В приложении есть незавершенные дополнительные процедуры обработки данных, рекомендуется дождаться их
+выполнения до обновления.
+&lt;link Ref&gt;Перейти к результатам обновления&lt;/&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Some of the additional data processors are running.
+Wait till they finish before starting the update.
+&lt;link Ref&gt;View update result&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="LabelUnfinishedHandlersContextMenu" id="1248"/>
+							<ExtendedTooltip name="LabelUnfinishedHandlersExtendedTooltip" id="1249">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>При обновлении приложения на новый исправительный релиз (изменилась 4-я цифра версии, например, 3.1.1.ХХ) можно не дожидаться завершения дополнительных процедур обработки данных и продолжить обновление.
+
+Если же выполняется обновление на новый функциональный релиз (изменилась 1-я, 2-я или 3-я цифра номера версии), то рекомендуется дождаться полного завершения процедур обработки данных. В новых функциональных релизах состав данных процедур может измениться и некоторые из них могут быть удалены, из-за чего они не будут выполнены и может произойти потеря некоторых данных.
+
+Если какие-то дополнительные процедуры обработки данных завершились с ошибкой, то рекомендуется обратиться в службу технической поддержки и после исправления ошибки выполнить обновление на новый исправительный релиз.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>When updating to a new patch release (that is, the 4th version number has changed), you can continue the update while additional data processors are running.
+
+For other releases (1st, 2d, or 3d version number has changed), we recommend waiting until additional data processors are finished. Otherwise, you might lose some data as such releases could update the datasets.
+
+If a data processor fails, contact technical support and after fixing the error, restart the update.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="URLProcessing">DeferredHandlersLabelURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="IssuesDiscoveredLabel" id="1175">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В приложении выявлены проблемы ведения учета, которые рекомендуется устранить до обновления.
+&lt;link Go to the problem report&gt;Перейти к отчету по проблемам&lt;/&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Data integrity issues have been identified in the application. It is recommended that you resolve them before the update.
+&lt;link View the report&gt;View the report&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="IssuesDiscoveredLabelContextMenu" id="1176"/>
+							<ExtendedTooltip name="IssuesDiscoveredLabelExtendedTooltip" id="1177">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Одна из частых причин различных блокирующих ошибок при обновлении на новую версию приложения - это проблемы ведения учета, такие как, битые ссылки на несуществующие объекты, незаполненные обязательные реквизиты документов и другие. В таком случае рекомендуется устранять их перед началом обновления, для этого перейти к отчету и следовать приведенным в нем рекомендациям.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>One of the common reasons for critical errors to occur during updates is data integrity issues, such as references to non-existing objects and empty required attributes. In this case, we recommend that you fix the issues before the update. To do so, open the report and follow the recommendations that it provides.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="URLProcessing">IssuesDiscoveredLabelURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ExtensionsAvailableLabel" id="1218">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перед началом обновления убедитесь, что установленные расширения совместимы с новой версией конфигурации. 
+Рекомендуем предварительно выполнить обновление на резервной копии.
+&lt;link Go to the list of extensions&gt;Перейти к списку расширений&lt;/&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Before updating, make sure that the installed extensions are compatible with the new configuration version. 
+It is recommended that you test the update on a backup.
+&lt;link Go to the list of extensions&gt;View extensions&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ExtensionsAvailableLabelContextMenu" id="1219"/>
+							<ExtendedTooltip name="ExtensionsAvailableLabelExtendedTooltip" id="1220"/>
+							<Events>
+								<Event name="URLProcessing">ExtensionsAvailableLabelURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="InformationPanel" id="1227">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель информации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Information panel</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="InformationPanelExtendedTooltip" id="1228"/>
+			<ChildItems>
+				<PictureDecoration name="PictureInformation" id="1229">
+					<Width>3</Width>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="PictureInformationContextMenu" id="1230"/>
+					<ExtendedTooltip name="PictureInformationExtendedTooltip" id="1231"/>
+				</PictureDecoration>
+				<LabelDecoration name="InformationLabel" id="1232">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка ведения учета в приложении давно не выполнялась. Рекомендуется &lt;link PereitiKSpiskuProverok&gt;выполнить системные проверки&lt;/&gt; до обновления.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data integrity has not been checked for a while. It is recommended that you &lt;link PereitiKSpiskuProverok&gt;run system checks&lt;/&gt; before the update.</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="InformationLabelContextMenu" id="1233"/>
+					<ExtendedTooltip name="InformationLabelExtendedTooltip" id="1234">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Одна из частых причин различных блокирующих ошибок при обновлении на новую версию приложения - это проблемы ведения учета, такие как, битые ссылки на несуществующие объекты, незаполненные обязательные реквизиты документов и другие. В таком случае рекомендуется устранять их перед началом обновления.</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>One of the common reasons for critical errors to occur during updates is data integrity issues, such as references to non-existing objects and empty required attributes. In this case, we recommend that you fix the issues before the update.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="URLProcessing">InformationLabelURLProcessing</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="WizardPages" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы помощника</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Wizard pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="WizardPagesExtendedTooltip" id="657"/>
+			<ChildItems>
+				<Page name="UpdateFile" id="283">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл обновления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Update file</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="UpdateFileExtendedTooltip" id="745"/>
+					<ChildItems>
+						<UsualGroup name="GroupUpdateFile" id="1026">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приступить к обновлению</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Start updating</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="GroupUpdateFileExtendedTooltip" id="1027"/>
+							<ChildItems>
+								<RadioButtonField name="UpdateFileRequiredRadioButtons" id="286">
+									<DataPath>UpdateFileRequired</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нужен файл обновления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Update file is required</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Файл обновления не требуется, так как он уже загружен в основную конфигурацию</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Update file is not required as it is already imported into the main configuration</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Укажите файл обновления или исправлений:</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Specify an update or patch file:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="UpdateFileRequiredRadioButtonsContextMenu" id="287"/>
+									<ExtendedTooltip name="UpdateFileRequiredRadioButtonsExtendedTooltip" id="747"/>
+									<Events>
+										<Event name="OnChange">UpdateFileRequiredRadioButtonsOnChange</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="UpdateFileField" id="296">
+									<DataPath>SelectedFiles</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбранные файлы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Selected files</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="UpdateFileFieldContextMenu" id="297"/>
+									<ExtendedTooltip name="UpdateFileFieldExtendedTooltip" id="749"/>
+									<Events>
+										<Event name="StartChoice">UpdateFileFieldStartChoice</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="UpdateFromMainConfigurationPanel" id="288">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Панель обновление из основной конфигурации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Panel update from main configuration</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="UpdateFromMainConfigurationPanelExtendedTooltip" id="750"/>
+									<ChildItems>
+										<Pages name="PagesUpdateFile" id="477">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы файл обновления</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Pages update file</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="PagesUpdateFileExtendedTooltip" id="752"/>
+											<ChildItems>
+												<Page name="HasChanges" id="478">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть изменения</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>There are changes</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="HasChangesExtendedTooltip" id="753"/>
+													<ChildItems>
+														<LabelDecoration name="ConfigurationModifiedLabel" id="291">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<SkipOnInput>false</SkipOnInput>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Основная конфигурация отличается от конфигурации информационной базы данных.
+Рекомендуется провести обновление из основной конфигурации.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>The main configuration differs from the database configuration.
+It is recommended that you perform an update from the main configuration.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ConfigurationModifiedLabelContextMenu" id="292"/>
+															<ExtendedTooltip name="ConfigurationModifiedLabelExtendedTooltip" id="754"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="NoChanges" id="479">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нет изменений</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>No changes</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="NoChangesExtendedTooltip" id="755"/>
+													<ChildItems>
+														<LabelDecoration name="NoChangesLabel" id="480">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>2</Height>
+															<SkipOnInput>false</SkipOnInput>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Обновление не требуется, т.к. конфигурация базы данных не отличается от основной конфигурации</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Update is not required as the infobase configuration is identical to the main configuration.</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Center</VerticalAlign>
+															<ContextMenu name="NoChangesLabelContextMenu" id="481"/>
+															<ExtendedTooltip name="NoChangesLabelExtendedTooltip" id="756"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="WaitForFileChoice" id="1239">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ожидание выбора файлов</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Waiting for file selection</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<ExtendedTooltip name="WaitForFileChoiceExtendedTooltip" id="1240"/>
+													<ChildItems>
+														<PictureDecoration name="PictureWaitForFileChoice" id="1244">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка ожидание выбора файла</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Waiting for file selection picture</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<Picture>
+																<xr:Ref>CommonPicture.ExpectedTimeConsumingOperation16</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="PictureWaitForFileChoiceContextMenu" id="1245"/>
+															<ExtendedTooltip name="PictureWaitForFileChoiceExtendedTooltip" id="1246"/>
+														</PictureDecoration>
+														<LabelDecoration name="LabelWaitForFileChoice" id="1241">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>2</Height>
+															<SkipOnInput>false</SkipOnInput>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется открытие выбранных файлов. Пожалуйста, подождите...</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Opening selected files. Please wait…</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Center</VerticalAlign>
+															<ContextMenu name="LabelWaitForFileChoiceContextMenu" id="1242"/>
+															<ExtendedTooltip name="LabelWaitForFileChoiceExtendedTooltip" id="1243"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="FindAndInstallUpdatesGroup" id="1154">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поиск и установка обновлений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Find and install updates</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalStretch>true</VerticalStretch>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="FindAndInstallUpdatesGroupExtendedTooltip" id="1155"/>
+							<ChildItems>
+								<Button name="FindAndInstallUpdates" id="1152">
+									<Type>Hyperlink</Type>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<CommandName>Form.Command.FindAndInstallUpdates</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск и установка обновлений</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Find and install updates</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+									<ExtendedTooltip name="FindAndInstallUpdatesExtendedTooltip" id="1153">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>с портала 1C:Обновление программ.</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>from the 1C:Application update portal.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="SelectUpdateModeFile" id="160">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор режима обновления файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Select update mode file</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="SelectUpdateModeFileExtendedTooltip" id="842"/>
+					<ChildItems>
+						<UsualGroup name="GroupSelectUpdateModeFile" id="1034">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все готово для установки обновления</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Ready to install</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="GroupSelectUpdateModeFileExtendedTooltip" id="1035"/>
+							<ChildItems>
+								<Pages name="UpdateMethodFilePages" id="1042">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы способ обновления файл</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Pages update method file</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="UpdateMethodFilePagesExtendedTooltip" id="1043"/>
+									<ChildItems>
+										<Page name="UpdateRadioButtonsFilePage" id="1044">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница переключатель обновления файл</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Update method selection file pages</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="UpdateRadioButtonsFilePageExtendedTooltip" id="1045"/>
+											<ChildItems>
+												<RadioButtonField name="UpdateRadioButtonsFile" id="612">
+													<DataPath>Object.UpdateMode</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Выберите способ установки обновления приложения</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Select update installation method</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Установить обновление прямо сейчас (потребуется перезапуск)</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Install the update now (requires restarting the application)</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Напомнить при завершении работы</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Remind me when I exit the application</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="UpdateRadioButtonsFileContextMenu" id="613"/>
+													<ExtendedTooltip name="UpdateRadioButtonsFileExtendedTooltip" id="853"/>
+													<Events>
+														<Event name="OnChange">UpdateRadioButtonsOnChange</Event>
+													</Events>
+												</RadioButtonField>
+												<LabelDecoration name="ClickNextLabel" id="1095">
+													<Visible>false</Visible>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нажмите "Далее" для установки обновления.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Click "Next" to install the update.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ClickNextLabelContextMenu" id="1096"/>
+													<ExtendedTooltip name="ClickNextLabelExtendedTooltip" id="1097"/>
+												</LabelDecoration>
+												<LabelDecoration name="UpdateCanTakeTimeLabel" id="177">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<SkipOnInput>false</SkipOnInput>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установка обновления может занять длительное время. Не выключайте питание компьютера до завершения установки.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The update might take a long time. Do not turn off your computer until the update is completed.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="UpdateCanTakeTimeLabelContextMenu" id="178"/>
+													<ExtendedTooltip name="UpdateCanTakeTimeLabelExtendedTooltip" id="866"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="UpdateReceivedFromApplicationFilePage" id="1046">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница получено обновление из приложения файл</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Update received from application file page</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="UpdateReceivedFromApplicationFilePageExtendedTooltip" id="1047"/>
+											<ChildItems>
+												<LabelDecoration name="UpdateReceivedFromApplicationFileLabel" id="652">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Получено обновление из приложения в Интернете. Для установки потребуется
+перезапуск приложения. Процесс обновления может занять длительное время.
+Не выключайте питание компьютера до завершения установки обновления.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The update is received from the online application. To install it restart the application. 
+The update might take a long time.
+Do not turn off your computer until the update is completed.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="UpdateReceivedFromApplicationFileLabelContextMenu" id="653"/>
+													<ExtendedTooltip name="UpdateReceivedFromApplicationFileLabelExtendedTooltip" id="852"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<UsualGroup name="ConnectionsGroup" id="179">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соединений</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Connections</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalStretch>true</VerticalStretch>
+									<VerticalAlign>Center</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ConnectionsGroupExtendedTooltip" id="854"/>
+									<ChildItems>
+										<UsualGroup name="ImportantGroup" id="1237">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Важно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Important</v8:content>
+												</v8:item>
+											</Title>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>style:ToolTipBackColor</BackColor>
+											<ExtendedTooltip name="ImportantGroupExtendedTooltip" id="1238"/>
+											<ChildItems>
+												<PictureDecoration name="Picture1" id="180">
+													<SkipOnInput>false</SkipOnInput>
+													<Picture>
+														<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Picture1ContextMenu" id="181"/>
+													<ExtendedTooltip name="Picture1ExtendedTooltip" id="855"/>
+												</PictureDecoration>
+												<Pages name="ActiveUsersPanel" id="187">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Панель активные пользователи</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Active users panel</v8:content>
+														</v8:item>
+													</Title>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="ActiveUsersPanelExtendedTooltip" id="856"/>
+													<ChildItems>
+														<Page name="ActiveUsers" id="188">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Активные пользователи</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Active users</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ActiveUsersExtendedTooltip" id="857"/>
+															<ChildItems>
+																<LabelDecoration name="Label43" id="183">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С приложением сейчас работают другие пользователи. Для установки обновления необходимо завершить их работу.</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Other users are currently working with the application. Close their sessions to update the application.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Label43ContextMenu" id="184"/>
+																	<ExtendedTooltip name="Label43ExtendedTooltip" id="858"/>
+																</LabelDecoration>
+																<LabelDecoration name="ActionsListLabel" id="185">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Посмотреть список активных пользователей</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>View the list of active users</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ActionsListLabelContextMenu" id="186"/>
+																	<ExtendedTooltip name="ActionsListLabelExtendedTooltip" id="859"/>
+																	<Events>
+																		<Event name="Click">ActionsListLabelClick</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+														<Page name="ActiveConnections" id="189">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Активные соединения</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Active connections</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ActiveConnectionsExtendedTooltip" id="860"/>
+															<ChildItems>
+																<LabelDecoration name="Label42" id="190">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С приложением сейчас работают внешние приложения. Для установки обновления необходимо завершить их работу.</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>External applications are currently working with the application. Close them to update the application.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Label42ContextMenu" id="191"/>
+																	<ExtendedTooltip name="Label42ExtendedTooltip" id="861"/>
+																</LabelDecoration>
+																<LabelDecoration name="ActionsListLabel1" id="192">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Посмотреть список активных подключений</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>View the list of active connections</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ActionsListLabel1ContextMenu" id="193"/>
+																	<ExtendedTooltip name="ActionsListLabel1ExtendedTooltip" id="862"/>
+																	<Events>
+																		<Event name="Click">ActionsListLabel1Click</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+														<Page name="DesignerConnection" id="194">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Соединение конфигуратора</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Designer connection</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="DesignerConnectionExtendedTooltip" id="863"/>
+															<ChildItems>
+																<LabelDecoration name="Label45" id="195">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Открыт конфигуратор. Для установки обновления необходимо завершить его работу.</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Designer is running. Please close Designer to update the application.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<ContextMenu name="Label45ContextMenu" id="196"/>
+																	<ExtendedTooltip name="Label45ExtendedTooltip" id="864"/>
+																</LabelDecoration>
+																<LabelDecoration name="ActionsListLabel3" id="197">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<SkipOnInput>false</SkipOnInput>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Посмотреть список активных пользователей</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>View the list of active users</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<ContextMenu name="ActionsListLabel3ContextMenu" id="198"/>
+																	<ExtendedTooltip name="ActionsListLabel3ExtendedTooltip" id="865"/>
+																	<Events>
+																		<Event name="Click">ActionsListLabel3Click</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="BackupGroup" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Резервная копия</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Backup</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalStretch>true</VerticalStretch>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="BackupGroupExtendedTooltip" id="868"/>
+									<ChildItems>
+										<LabelDecoration name="Label46" id="202">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Резервная копия:</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Backup:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Label46ContextMenu" id="203"/>
+											<ExtendedTooltip name="Label46ExtendedTooltip" id="869"/>
+										</LabelDecoration>
+										<LabelDecoration name="BackupFileLabel" id="205">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создавать временную резервную копию ИБ и выполнять откат при нештатной ситуации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Create a temporary infobase backup and roll back if any issues occur</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ContextMenu name="BackupFileLabelContextMenu" id="206"/>
+											<ExtendedTooltip name="BackupFileLabelExtendedTooltip" id="870"/>
+											<Events>
+												<Event name="Click">BackupLabelClick</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="UpdateModeSelectionServer" id="209">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор режима обновления сервер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Select update mode server</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="UpdateModeSelectionServerExtendedTooltip" id="880"/>
+					<ChildItems>
+						<UsualGroup name="UpdateModeSelectionGroupServer" id="1036">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все готово для установки обновления</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Ready to install</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="UpdateModeSelectionGroupServerExtendedTooltip" id="1037"/>
+							<ChildItems>
+								<UsualGroup name="IndentFour" id="458">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отступ четыре</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Indent four</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="IndentFourExtendedTooltip" id="890"/>
+									<ChildItems>
+										<RadioButtonField name="UpdateRadioButtonsServer" id="214">
+											<DataPath>Object.UpdateMode</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите способ установки обновления приложения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Select update installation method</v8:content>
+												</v8:item>
+											</Title>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Установить обновление прямо сейчас (потребуется перезапуск)</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Install the update now (requires restarting the application)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Напомнить при завершении работы</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Remind me when I exit the application</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Запланировать установку обновления на указанное время</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Schedule update installation</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="UpdateRadioButtonsServerContextMenu" id="215"/>
+											<ExtendedTooltip name="UpdateRadioButtonsServerExtendedTooltip" id="891"/>
+											<Events>
+												<Event name="OnChange">UpdateRadioButtonsOnChange</Event>
+											</Events>
+										</RadioButtonField>
+										<InputField name="UpdateDateTimeField" id="242">
+											<DataPath>Object.UpdateDateTime</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата и время</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Date and time</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+											<ContextMenu name="UpdateDateTimeFieldContextMenu" id="243"/>
+											<ExtendedTooltip name="UpdateDateTimeFieldExtendedTooltip" id="894"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="RestartInformationPages" id="216">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы информации перезагрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Restart information pages</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="RestartInformationPagesExtendedTooltip" id="892"/>
+									<ChildItems>
+										<Page name="ScheduledRestartPage" id="239">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница запланированной перезагрузки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Scheduled restart page</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ScheduledRestartPageExtendedTooltip" id="893"/>
+											<ChildItems>
+												<LabelDecoration name="Label51" id="240">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<SkipOnInput>false</SkipOnInput>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установка обновления будет выполнена с этого компьютера в фоновом режиме.
+Питание компьютера должно быть включено в указанные дату и время.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The update will be installed from this computer in background.
+Ensure that the computer will be turned on at the scheduled time.</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="Label51ContextMenu" id="241"/>
+													<ExtendedTooltip name="Label51ExtendedTooltip" id="895"/>
+												</LabelDecoration>
+												<UsualGroup name="PanelNotifyUsers" id="1250">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Панель уведомлять пользователей</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>"Notify users" panel</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalSpacing>Half</HorizontalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="PanelNotifyUsersExtendedTooltip" id="1251"/>
+													<ChildItems>
+														<CheckBoxField name="ShouldNotifyUsers" id="1252">
+															<DataPath>ShouldNotifyUsers</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Уведомлять пользователей</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Notfiy users</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ShouldNotifyUsersContextMenu" id="1253"/>
+															<ExtendedTooltip name="ShouldNotifyUsersExtendedTooltip" id="1254"/>
+															<Events>
+																<Event name="OnChange">ShouldNotifyUsersOnChange</Event>
+															</Events>
+														</CheckBoxField>
+														<LabelDecoration name="DecorationNotifyUsers" id="1255">
+															<Enabled>false</Enabled>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Уведомлять пользователей о планируемом обновлении за &lt;link Ref&gt;5 минут&lt;/&gt;</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Notify users &lt;link Ref&gt;5 minutes&lt;/&gt; before update</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="DecorationNotifyUsersContextMenu" id="1256"/>
+															<ExtendedTooltip name="DecorationNotifyUsersExtendedTooltip" id="1257"/>
+															<Events>
+																<Event name="URLProcessing">DecorationNotifyUsersURLProcessing</Event>
+															</Events>
+														</LabelDecoration>
+														<LabelDecoration name="DecorationForSubmenu" id="1258">
+															<ContextMenu name="DecorationForSubmenuContextMenu" id="1259"/>
+															<ExtendedTooltip name="DecorationForSubmenuExtendedTooltip" id="1260"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="EmailPanel" id="248">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Панель почта</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Email panel</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="EmailPanelExtendedTooltip" id="896"/>
+													<ChildItems>
+														<CheckBoxField name="EmailReport" id="244">
+															<DataPath>Object.EmailReport</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выслать отчет на почту:</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Email report to:</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="EmailReportContextMenu" id="245"/>
+															<ExtendedTooltip name="EmailReportExtendedTooltip" id="897"/>
+															<Events>
+																<Event name="OnChange">EmailReportOnChange</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="Email" id="246">
+															<DataPath>Object.Email</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="EmailContextMenu" id="247"/>
+															<ExtendedTooltip name="EmailExtendedTooltip" id="898"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="RestartNowPage" id="217">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница перезагрузки сейчас</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restart now page</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="RestartNowPageExtendedTooltip" id="899"/>
+											<ChildItems>
+												<LabelDecoration name="UpdateWillBeInstalledServerLabel" id="218">
+													<SkipOnInput>false</SkipOnInput>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Процесс обновления может занять длительное время. Не выключайте питание компьютера до завершения процесса.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The update might take a long time. Do not turn off your computer until the update is completed.</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="UpdateWillBeInstalledServerLabelContextMenu" id="219"/>
+													<ExtendedTooltip name="UpdateWillBeInstalledServerLabelExtendedTooltip" id="900"/>
+												</LabelDecoration>
+												<UsualGroup name="ConnectionsGroup1" id="220">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Соединений 1</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Connections 1</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ConnectionsGroup1ExtendedTooltip" id="901"/>
+													<ChildItems>
+														<PictureDecoration name="Picture2" id="221">
+															<SkipOnInput>false</SkipOnInput>
+															<Picture>
+																<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="Picture2ContextMenu" id="222"/>
+															<ExtendedTooltip name="Picture2ExtendedTooltip" id="902"/>
+														</PictureDecoration>
+														<Pages name="ActiveUsersPanel1" id="223">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Панель активные пользователи 1</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Active users panel 1</v8:content>
+																</v8:item>
+															</Title>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="ActiveUsersPanel1ExtendedTooltip" id="903"/>
+															<ChildItems>
+																<Page name="ActiveUsers1" id="224">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Активные пользователи</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Active users</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ActiveUsers1ExtendedTooltip" id="904"/>
+																	<ChildItems>
+																		<LabelDecoration name="Label48" id="225">
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<SkipOnInput>false</SkipOnInput>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>С приложением сейчас работают другие пользователи. Их работа будет завершена автоматически.</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Other users are working with the application. Their sessions will be terminated automatically.</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Top</VerticalAlign>
+																			<ContextMenu name="Label48ContextMenu" id="226"/>
+																			<ExtendedTooltip name="Label48ExtendedTooltip" id="905"/>
+																		</LabelDecoration>
+																		<LabelDecoration name="ActionsListLabel2" id="227">
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<SkipOnInput>false</SkipOnInput>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Посмотреть список активных пользователей</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>View the list of active users</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Hyperlink>true</Hyperlink>
+																			<ContextMenu name="ActionsListLabel2ContextMenu" id="228"/>
+																			<ExtendedTooltip name="ActionsListLabel2ExtendedTooltip" id="906"/>
+																			<Events>
+																				<Event name="Click">ActionsListLabelClick</Event>
+																			</Events>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+																<Page name="ActiveConnections1" id="229">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Активные соединения</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Active connections</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ActiveConnections1ExtendedTooltip" id="907"/>
+																	<ChildItems>
+																		<LabelDecoration name="Label49" id="230">
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<SkipOnInput>false</SkipOnInput>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>С информационной базой сейчас работают другие пользователи, а также внешние приложения.
+Их работа будет завершена автоматически.</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Other users and external applications are connected to the infobase.
+Their sessions will be terminated automatically.</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ContextMenu name="Label49ContextMenu" id="231"/>
+																			<ExtendedTooltip name="Label49ExtendedTooltip" id="908"/>
+																		</LabelDecoration>
+																		<LabelDecoration name="ActionsListLabel4" id="232">
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<SkipOnInput>false</SkipOnInput>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Посмотреть список активных подключений</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>View the list of active connections</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Hyperlink>true</Hyperlink>
+																			<ContextMenu name="ActionsListLabel4ContextMenu" id="233"/>
+																			<ExtendedTooltip name="ActionsListLabel4ExtendedTooltip" id="909"/>
+																			<Events>
+																				<Event name="Click">ActionsListLabel1Click</Event>
+																			</Events>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<UsualGroup name="BackupGroupServer" id="539">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Резервная копия сервер</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Backup server</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="BackupGroupServerExtendedTooltip" id="911"/>
+									<ChildItems>
+										<PictureDecoration name="Decoration13" id="540">
+											<SkipOnInput>false</SkipOnInput>
+											<Picture>
+												<xr:Ref>StdPicture.Information</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="Decoration13ContextMenu" id="541"/>
+											<ExtendedTooltip name="Decoration13ExtendedTooltip" id="912"/>
+										</PictureDecoration>
+										<UsualGroup name="AdditionalInformationGroup" id="1090">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительная информация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Additional information</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="AdditionalInformationGroupExtendedTooltip" id="1091"/>
+											<ChildItems>
+												<LabelDecoration name="BackupServerLabel" id="537">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<SkipOnInput>false</SkipOnInput>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Перед установкой обновления рекомендуется выполнить резервное копирование информационной базы.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>It is recommended that you back up the infobase before installing an update.</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="BackupServerLabelContextMenu" id="538"/>
+													<ExtendedTooltip name="BackupServerLabelExtendedTooltip" id="913"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="AfterInstallUpdates" id="1178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После установки исправлений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>After patch installation</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AfterInstallUpdatesExtendedTooltip" id="1179"/>
+					<ChildItems>
+						<UsualGroup name="PatchInstallationError" id="1200">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ошибка установки исправлений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Patch installation error</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PatchInstallationErrorExtendedTooltip" id="1201"/>
+							<ChildItems>
+								<UsualGroup name="MessageGroup" id="1208">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сообщение</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Message</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="MessageGroupExtendedTooltip" id="1209"/>
+									<ChildItems>
+										<PictureDecoration name="PatchInstallationErrorDecoration" id="1202">
+											<Picture>
+												<xr:Ref>StdPicture.DialogStop</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="PatchInstallationErrorDecorationContextMenu" id="1203"/>
+											<ExtendedTooltip name="PatchInstallationErrorDecorationExtendedTooltip" id="1204"/>
+										</PictureDecoration>
+										<LabelDecoration name="PatchInstallationErrorLabel" id="1205">
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При установке исправлений возникли ошибки.
+Подробнее см. в &lt;link EventLog&gt;Журнале регистрации&lt;/&gt;</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>An error occurred during the patch installation.
+See the &lt;link EventLog&gt;event log&lt;/&gt; for details.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="PatchInstallationErrorLabelContextMenu" id="1206"/>
+											<ExtendedTooltip name="PatchInstallationErrorLabelExtendedTooltip" id="1207"/>
+											<Events>
+												<Event name="URLProcessing">PatchInstallationErrorLabelURLProcessing</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="PatchesInstalledDecoration" id="1210">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установлено исправлений: %1 из %2, изменения вступят в силу после перезапуска приложения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Patches installed: %1 out of %2. The changes will be applied after you restart the application.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="PatchesInstalledDecorationContextMenu" id="1211"/>
+									<ExtendedTooltip name="PatchesInstalledDecorationExtendedTooltip" id="1212"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="PatchesInstalled" id="1180">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исправления установлены</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Patches installed</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PatchesInstalledExtendedTooltip" id="1181"/>
+							<ChildItems>
+								<LabelDecoration name="DecorationPatchesInstalled" id="1182">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исправления установлены и вступят в силу после перезапуска приложения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>The patches are installed. They will be applied after you restart the application.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecorationPatchesInstalledContextMenu" id="1183"/>
+									<ExtendedTooltip name="DecorationPatchesInstalledExtendedTooltip" id="1184"/>
+								</LabelDecoration>
+								<UsualGroup name="RestartIndentGroup" id="1185">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перезапустить отступ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Restart indent</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="RestartIndentGroupExtendedTooltip" id="1186"/>
+									<ChildItems>
+										<LabelDecoration name="IndentDecoration" id="1187">
+											<ContextMenu name="IndentDecorationContextMenu" id="1188"/>
+											<ExtendedTooltip name="IndentDecorationExtendedTooltip" id="1189"/>
+										</LabelDecoration>
+										<CheckBoxField name="RestartApplication" id="1190">
+											<DataPath>RestartApplication</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перезапустить приложение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restart application</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="RestartApplicationContextMenu" id="1191"/>
+											<ExtendedTooltip name="RestartApplicationExtendedTooltip" id="1192"/>
+											<Events>
+												<Event name="OnChange">RestartApplicationOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupActiveUsers" id="1193">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Активные пользователи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Active users</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupActiveUsersExtendedTooltip" id="1194"/>
+									<ChildItems>
+										<LabelDecoration name="ActiveUsersDecoration" id="1195">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>71</MaxWidth>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Также с приложением работают &lt;link 1&gt;другие пользователи&lt;/&gt;.
+Для них исправления вступят в силу при следующем входе в приложение.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>&lt;link 1&gt;Other users&lt;/&gt; are working with the application.
+They will see the patches applied the next time they log in.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ActiveUsersDecorationContextMenu" id="1196"/>
+											<ExtendedTooltip name="ActiveUsersDecorationExtendedTooltip" id="1197"/>
+											<Events>
+												<Event name="URLProcessing">ActiveUsersDecorationURLProcessing</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="NoUpdatesFound" id="1098">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновления не обнаружено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Update is not found</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="NoUpdatesFoundExtendedTooltip" id="1099"/>
+					<ChildItems>
+						<UsualGroup name="GroupNoUpdatesFound" id="1100">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление не требуется</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>No update required</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="GroupNoUpdatesFoundExtendedTooltip" id="1101"/>
+							<ChildItems>
+								<UsualGroup name="UpdateSearchResultGroup" id="1102">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат поиска обновления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Update search result</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="UpdateSearchResultGroupExtendedTooltip" id="1103"/>
+									<ChildItems>
+										<UsualGroup name="UpdateInMainNode" id="1130">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обновление производится в главном узле</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Updated in the master node</v8:content>
+												</v8:item>
+											</Title>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="UpdateInMainNodeExtendedTooltip" id="1131"/>
+											<ChildItems>
+												<PictureDecoration name="Picture27" id="1132">
+													<SkipOnInput>false</SkipOnInput>
+													<Picture>
+														<xr:Ref>StdPicture.DialogInformation</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Picture27ContextMenu" id="1133"/>
+													<ExtendedTooltip name="Picture27ExtendedTooltip" id="1134"/>
+												</PictureDecoration>
+												<LabelDecoration name="ConfigurationIsUpdatedDuringDataExchangeWithMainNodeLabel" id="1135">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>2</Height>
+													<SkipOnInput>false</SkipOnInput>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обновление приложения выполняется при синхронизации данных с "%1".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The application is updated every time it synchronizes its data with "%1."</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ConfigurationIsUpdatedDuringDataExchangeWithMainNodeLabelContextMenu" id="1136"/>
+													<ExtendedTooltip name="ConfigurationIsUpdatedDuringDataExchangeWithMainNodeLabelExtendedTooltip" id="1137"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<LabelField name="CurrentConfigurationVersion" id="1224">
+											<DataPath>CurrentConfigurationVersion</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущая версия приложения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Current application version</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="CurrentConfigurationVersionContextMenu" id="1225"/>
+											<ExtendedTooltip name="CurrentConfigurationVersionExtendedTooltip" id="1226"/>
+										</LabelField>
+										<LabelField name="CurrentConfigurationDetails" id="1221">
+											<DataPath>CurrentConfigurationDetails</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="CurrentConfigurationDetailsContextMenu" id="1222"/>
+											<ExtendedTooltip name="CurrentConfigurationDetailsExtendedTooltip" id="1223"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="CommandBar" id="1003">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Command bar</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>true</VerticalStretch>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="CommandBarExtendedTooltip" id="1004"/>
+			<ChildItems>
+				<CommandBar name="LeftSideCommandBar" id="1005">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель слева</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command bar left</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="LeftSideCommandBarExtendedTooltip" id="1006"/>
+					<ChildItems>
+						<Button name="BackButton" id="19">
+							<Type>CommandBarButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.Back</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt; Назад</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>&lt; Back</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="BackButtonExtendedTooltip" id="654"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<CommandBar name="RightSideCommandBar" id="1010">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель справа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command bar right</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="RightSideCommandBarExtendedTooltip" id="1011"/>
+					<ChildItems>
+						<Button name="NextButton" id="20">
+							<Type>CommandBarButton</Type>
+							<Representation>Text</Representation>
+							<DefaultButton>true</DefaultButton>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.Next</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ShieldIcon</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Далее &gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Next &gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="NextButtonExtendedTooltip" id="655"/>
+						</Button>
+						<Button name="CloseButton" id="364">
+							<Type>CommandBarButton</Type>
+							<Representation>Text</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отмена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Cancel</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CloseButtonExtendedTooltip" id="656"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.InstallUpdates</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Object.CreateDataBackup</Field>
+				<Field>Object.Email</Field>
+				<Field>Object.EmailReport</Field>
+				<Field>Object.IBBackupDirectoryName</Field>
+				<Field>Object.SchedulerTaskCode</Field>
+				<Field>Object.UpdateDateTime</Field>
+				<Field>Object.UpdateFileName</Field>
+				<Field>Object.UpdateMode</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ConfigurationChanged" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ScriptDirectory" id="15">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExtensionsInstalled" id="26">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="IsFileInfobase" id="28">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="UpdateFileRequired" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нужен файл обновления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update file is required</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExecuteDeferredHandlers" id="30">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="IsSubordinateDIBNode" id="31">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="RestartApplication" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить приложение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Restart app</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SelectedFiles" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные файлы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selected files</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IsBaseVersion" id="34">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="PatchesFilesAsString" id="35">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SourceConfigurations" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrentConfigurationVersion" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая версия приложения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current application version</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrentConfigurationDetails" id="4">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PatchesInstallationAvailableInBaseVersion" id="6">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="LoadExtensions" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ShowInstalledPatches" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ShouldNotifyUsers" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомлять пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Notfiy users</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="NotificationInterval" id="37">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Back" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt; Назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>&lt; Back</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Back</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>BackButtonClick</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Next" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Next &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Next</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>NextButtonClick</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="FindAndInstallUpdates" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и установка обновлений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Find and install updates</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и установка обновлений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Find and install updates</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FindAndInstallUpdates</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ShouldExitApp">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="RunUpdate">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="IsConfigurationUpdateReceived">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="SelectedFiles">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

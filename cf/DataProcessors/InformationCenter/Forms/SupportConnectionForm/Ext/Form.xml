@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupPages" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="35"/>
+			<ChildItems>
+				<Page name="PageDataInput" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page data input</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввод данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page data input</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageDataInputExtendedTooltip" id="37"/>
+					<ChildItems>
+						<LabelDecoration name="InformationDecoration" id="11">
+							<Font ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информационная база не подключена к службе поддержки.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Infobase is not connected to technical support.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="InformationDecorationContextMenu" id="12"/>
+							<ExtendedTooltip name="InformationDecorationExtendedTooltip" id="13"/>
+						</LabelDecoration>
+						<LabelDecoration name="DecorationInscriptionConnectDatabase" id="62">
+							<Width>33</Width>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подключить базу</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Connect base</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationInscriptionConnectDatabaseContextMenu" id="63"/>
+							<ExtendedTooltip name="DecorationInscriptionConnectDatabaseExtendedTooltip" id="64"/>
+						</LabelDecoration>
+						<LabelDecoration name="DecorationInscriptionWithHelpOfCode" id="106">
+							<Width>33</Width>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>при помощи кода регистрации:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>using registration code:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationInscriptionWithHelpOfCodeContextMenu" id="107"/>
+							<ExtendedTooltip name="DecorationInscriptionWithHelpOfCodeExtendedTooltip" id="108"/>
+						</LabelDecoration>
+						<InputField name="USPAddress" id="14">
+							<DataPath>USPAddress</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес службы поддержки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Technical support address</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес внешнего анонимного интерфейса службы поддержки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Address of external anonymous interface of the technical support</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>http://server/base/hs/ext_sd</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>http://server/base/hs/ext_sd</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="USPAddressContextMenu" id="15"/>
+							<ExtendedTooltip name="USPAddressExtendedTooltip" id="16"/>
+						</InputField>
+						<InputField name="Email" id="1">
+							<DataPath>Email</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>E-mail пользователя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User email</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>E-mail пользователя. В базе службы поддержки должен быть пользователь сервиса с таким адресом. У текущего пользователя этой базы также должен быть заполнен указан этот e-mail.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User email. The technical support infobase must have a service user with this email address. This email also must be specified for the current infobase user.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="EmailContextMenu" id="2"/>
+							<ExtendedTooltip name="EmailExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="RegistrationCode" id="4">
+							<DataPath>RegistrationCode</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если у вас нет кода регистрации, перейдите на страницу регистрации по ссылке ниже.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>If you do not have a registration code, go to the registration page by following the link below.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="RegistrationCodeContextMenu" id="5"/>
+							<ExtendedTooltip name="RegistrationCodeExtendedTooltip" id="6"/>
+						</InputField>
+						<UsualGroup name="ConnectionStatusGroup" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние подключения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Connection status group</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ConnectionStatusGroupExtendedTooltip" id="46"/>
+							<ChildItems>
+								<PictureDecoration name="ConnectionStateIcon" id="47">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значок состояние подключения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Connection status icon</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ConnectionStateIconContextMenu" id="48"/>
+									<ExtendedTooltip name="ConnectionStateIconExtendedTooltip" id="49"/>
+								</PictureDecoration>
+								<LabelDecoration name="ConnectionStateLabel" id="50">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определение статуса подключения...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Defining connection status…</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ConnectionStateLabelContextMenu" id="51"/>
+									<ExtendedTooltip name="ConnectionStateLabelExtendedTooltip" id="52"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="EnterRegistrationCode_SSLyf" id="9">
+							<Type>UsualButton</Type>
+							<Width>33</Width>
+							<Height>1</Height>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.EnterRegistrationCode_SSLyf</CommandName>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ввести код регистрации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Enter registration code</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="EnterRegistrationCode_SSLyfExtendedTooltip" id="10"/>
+						</Button>
+						<Button name="GoToRegistrationPage" id="7">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.GoToRegistrationPage</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="GoToRegistrationPageExtendedTooltip" id="8"/>
+						</Button>
+						<Button name="CancelConnection" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.CancelConnection</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="CancelConnectionExtendedTooltip" id="54"/>
+						</Button>
+						<UsualGroup name="SeparatorGroup" id="101">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа разделитель абоненты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group separator subscribers</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>33</Width>
+							<Height>3</Height>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="SeparatorGroupExtendedTooltip" id="102"/>
+							<ChildItems>
+								<LabelDecoration name="SubscribersSeparator" id="103">
+									<TextColor>style:NoteText</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>––––––––––––––––––––  или  –––––––––––––––––––––</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>––––––––––––––––––––  or  –––––––––––––––––––––</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="SubscribersSeparatorContextMenu" id="104"/>
+									<ExtendedTooltip name="SubscribersSeparatorExtendedTooltip" id="105"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupEnteringTokenForActivation" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ввод токена для подключения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group enter connection token</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ввод токена для подключения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group enter connection token</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupEnteringTokenForActivationExtendedTooltip" id="56"/>
+							<ChildItems>
+								<LabelDecoration name="DecorationUsingToken" id="65">
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>при помощи токена для регистрации:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>using registration token:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecorationUsingTokenContextMenu" id="66"/>
+									<ExtendedTooltip name="DecorationUsingTokenExtendedTooltip" id="67"/>
+								</LabelDecoration>
+								<InputField name="TokenForRegistration" id="57">
+									<DataPath>TokenForRegistration</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="TokenForRegistrationContextMenu" id="58"/>
+									<ExtendedTooltip name="TokenForRegistrationExtendedTooltip" id="59">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Токен для регистрации можно получить в письме - приглашении для регистрации, отправленном из службы поддержки.</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>You can receive a registration token by email. You will get a registration invitation from the technical support.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
+								<Button name="EnterTokenForRegistration" id="60">
+									<Type>UsualButton</Type>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.EnterTokenForRegistration</CommandName>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ввести токен</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Enter token</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="EnterTokenForRegistrationExtendedTooltip" id="61"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="GoToPageRequestingUserCodes" id="99">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.GoToPageRequestingUserCodes</CommandName>
+							<ExtendedTooltip name="GoToPageRequestingUserCodesExtendedTooltip" id="100"/>
+						</Button>
+						<LabelDecoration name="DecorationUserEmailNotFilledIn" id="112">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Требуется заполнить Email пользователя (в справочнике "Пользователи").</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Fill the user email address in the "Users" catalog.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationUserEmailNotFilledInContextMenu" id="113"/>
+							<ExtendedTooltip name="DecorationUserEmailNotFilledInExtendedTooltip" id="114"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="SuccessfulConnectionPage" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница успешное подключение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page successful connection</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница успешное подключение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page successful connection</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="SuccessfulConnectionPageExtendedTooltip" id="39"/>
+					<ChildItems>
+						<LabelDecoration name="DecorationSuccessfulConnection" id="40">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информационная база подключена к службе поддержки.
+На адрес [Email] отправлен код для работы с обращениями.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>The infobase is connected to the technical support.
+A code for request management is sent to the address [Email].</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationSuccessfulConnectionContextMenu" id="41"/>
+							<ExtendedTooltip name="DecorationSuccessfulConnectionExtendedTooltip" id="42"/>
+						</LabelDecoration>
+						<Button name="GoToRequests" id="43">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.GoToRequests</CommandName>
+							<ExtendedTooltip name="GoToRequestsExtendedTooltip" id="44"/>
+						</Button>
+						<LabelDecoration name="DecorationLabelOtherUsers" id="94">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если другие пользователи информационной базы будут работать с обращениями, им также понадобится код для работы с обращениями.
+
+Пользователи могут запросить этот код самостоятельно. Также запросить код для пользователей можно по следующей ссылке:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>If other infobase users plan to manage tickets, they will also need a code to manage tickets.
+
+Users can request this code on their own. You can also request a code for users using the link:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationLabelOtherUsersContextMenu" id="95"/>
+							<ExtendedTooltip name="DecorationLabelOtherUsersExtendedTooltip" id="96"/>
+						</LabelDecoration>
+						<Button name="RequestCodesForUsers" id="92">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.GoToPageRequestingUserCodes</CommandName>
+							<ExtendedTooltip name="RequestCodesForUsersExtendedTooltip" id="93"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="RequestUserCodePage" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запросить код пользователей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page request user code</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запросить код пользователей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page request user code</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="RequestUserCodePageExtendedTooltip" id="69"/>
+					<ChildItems>
+						<LabelDecoration name="HeaderRequestCodes" id="109">
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запросить коды для работы с обращениями:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Request codes to manage tickets:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="HeaderRequestCodesContextMenu" id="110"/>
+							<ExtendedTooltip name="HeaderRequestCodesExtendedTooltip" id="111"/>
+						</LabelDecoration>
+						<Table name="UsersToRequestCodes" id="70">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>UsersToRequestCodes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="UsersToRequestCodesContextMenu" id="71"/>
+							<AutoCommandBar name="UsersToRequestCodesCommandBar" id="72"/>
+							<ExtendedTooltip name="UsersToRequestCodesExtendedTooltip" id="73"/>
+							<SearchStringAddition name="UsersToRequestCodesSearchString" id="74">
+								<AdditionSource>
+									<Item>UsersToRequestCodes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="UsersToRequestCodesSearchStringContextMenu" id="75"/>
+								<ExtendedTooltip name="UsersToRequestCodesSearchStringExtendedTooltip" id="76"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="UsersToRequestCodesViewStatus" id="77">
+								<AdditionSource>
+									<Item>UsersToRequestCodes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="UsersToRequestCodesViewStatusContextMenu" id="78"/>
+								<ExtendedTooltip name="UsersToRequestCodesViewStatusExtendedTooltip" id="79"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="UsersToRequestCodesSearchControl" id="80">
+								<AdditionSource>
+									<Item>UsersToRequestCodes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="UsersToRequestCodesSearchControlContextMenu" id="81"/>
+								<ExtendedTooltip name="UsersToRequestCodesSearchControlExtendedTooltip" id="82"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="UsersToRequestCodesRequestCode" id="89">
+									<DataPath>UsersToRequestCodes.RequestCode</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="UsersToRequestCodesRequestCodeContextMenu" id="90"/>
+									<ExtendedTooltip name="UsersToRequestCodesRequestCodeExtendedTooltip" id="91"/>
+								</CheckBoxField>
+								<InputField name="UsersToRequestCodesUser" id="83">
+									<DataPath>UsersToRequestCodes.User</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="UsersToRequestCodesUserContextMenu" id="84"/>
+									<ExtendedTooltip name="UsersToRequestCodesUserExtendedTooltip" id="85"/>
+								</InputField>
+								<InputField name="UsersToRequestCodesEmail" id="86">
+									<DataPath>UsersToRequestCodes.Email</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="UsersToRequestCodesEmailContextMenu" id="87"/>
+									<ExtendedTooltip name="UsersToRequestCodesEmailExtendedTooltip" id="88"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Button name="RequestUserCodes" id="97">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.RequestUserCodes</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправить запросы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Send requests</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="RequestUserCodesExtendedTooltip" id="98"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.InformationCenter</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Email" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="RegistrationCode" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Registration code</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="USPAddress" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес УСП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>1C:Support Management address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ConfigurationName" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configuration name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ConfigurationVersion" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configuration version</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PlatformVersion" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Platform version</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ClientID" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор клиента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Client ID</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="InformationSecurityID" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор ИБ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Infobase ID</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AddressOfInformationCenter" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес информационного центра</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Information center address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DatabaseEnabled" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База подключена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Infobase is connected</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="JobParameters" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Job parameters</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="TokenForRegistration" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен для регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Token for registration</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="UsersToRequestCodes" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи для запроса кодов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Users to request codes</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="User" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>User</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Users</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Email" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Email</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Email</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="RequestCode" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="GoToRegistrationPage" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на страницу регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to registration page</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на страницу регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to registration page</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GoToRegistrationPage</Action>
+		</Command>
+		<Command name="EnterRegistrationCode_SSLyf" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести код регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enter registration code</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести код регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enter registration code</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>EnterRegistrationCode_SSLyf</Action>
+		</Command>
+		<Command name="GoToRequests" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к обращениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to requests</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к обращениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to requests</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GoToRequests</Action>
+		</Command>
+		<Command name="CancelConnection" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить подключение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel connection</v8:content>
+				</v8:item>
+			</Title>
+			<Action>CancelConnection</Action>
+		</Command>
+		<Command name="EnterTokenForRegistration" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести токен для регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enter token for registration</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести токен для регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enter a token for registration</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>EnterTokenForRegistration</Action>
+		</Command>
+		<Command name="GoToPageRequestingUserCodes" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на страницу запроса кодов пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to user code request page</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на страницу запроса кодов пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to the user code request page</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GoToPageRequestingUserCodes</Action>
+		</Command>
+		<Command name="RequestUserCodes" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросить коды пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Request user codes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросить коды пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Request user codes</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RequestUserCodes</Action>
+		</Command>
+	</Commands>
+</Form>

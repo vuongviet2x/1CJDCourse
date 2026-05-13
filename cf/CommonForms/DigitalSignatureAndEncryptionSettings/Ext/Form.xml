@@ -1,0 +1,2609 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoURL>false</AutoURL>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormClose" id="295">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="FormCloseExtendedTooltip" id="296"/>
+			</Button>
+			<Button name="FormRefresh" id="232">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Refresh</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Refresh</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormRefreshExtendedTooltip" id="233"/>
+			</Button>
+			<Button name="FormShowVersionComponentsExtraCryptoAPI" id="424">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowVersionComponentsExtraCryptoAPI</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Показать версию компоненты ExtraCryptoAPI</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Show ExtraCryptoAPI add-in version</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowVersionComponentsExtraCryptoAPIExtendedTooltip" id="425"/>
+			</Button>
+			<Button name="FormSetComponentExtraCryptoAPI" id="430">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.SetComponentExtraCryptoAPI</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Установить компоненту ExtraCryptoAPI</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Install ExtraCryptoAPI add-in</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormSetComponentExtraCryptoAPIExtendedTooltip" id="431"/>
+			</Button>
+			<Button name="FormInstallExtension" id="450">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.InstallExtension</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Установить расширение для работы с 1С:Предприятием</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Install 1C:Enterprise Extension</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormInstallExtensionExtendedTooltip" id="451"/>
+			</Button>
+			<Button name="FormTechnicalInformation" id="432">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.TechnicalInformation</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Техническая информация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Technical information</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormTechnicalInformationExtendedTooltip" id="433"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnReopen">OnReopen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="41"/>
+			<Events>
+				<Event name="OnCurrentPageChange">PagesOnCurrentPageChange</Event>
+			</Events>
+			<ChildItems>
+				<Page name="CertificatesPage" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификаты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Certificates</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="CertificatesPageExtendedTooltip" id="43"/>
+					<ChildItems>
+						<UsualGroup name="CertificatesGroupFilter" id="332">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификаты отбор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificates filter</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="CertificatesGroupFilterExtendedTooltip" id="333"/>
+							<ChildItems>
+								<InputField name="CertificatesShow" id="290">
+									<DataPath>CertificatesShow</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Show</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Все сертификаты</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>All certificates</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">AllCertificates</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Мои сертификаты</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>My certificates</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">MyCertificates</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Мои сертификаты с истекающим сроком действия</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>My expiring certificates</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">MyCertificatesWithexpiringValidity</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<BackColor>style:MasterFieldBackground</BackColor>
+									<ContextMenu name="CertificatesShowContextMenu" id="291"/>
+									<ExtendedTooltip name="CertificatesShowExtendedTooltip" id="292"/>
+									<Events>
+										<Event name="OnChange">CertificatesShowOnChange</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="CertificatesOnlyValid" id="421">
+									<DataPath>CertificatesOnlyValid</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Только действующие</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Only valid certificates</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Только действующие сертификаты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Only valid certificates</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="CertificatesOnlyValidContextMenu" id="422"/>
+									<ExtendedTooltip name="CertificatesOnlyValidExtendedTooltip" id="423"/>
+									<Events>
+										<Event name="OnChange">CertificatesOnlyValidOnChange</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="UserSelect" id="376">
+									<DataPath>UserSelect</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использует</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Used by</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="UserSelectContextMenu" id="377"/>
+									<ExtendedTooltip name="UserSelectExtendedTooltip" id="378"/>
+									<Events>
+										<Event name="OnChange">UserSelectOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="CertificatesShowRequests" id="334">
+									<DataPath>CertificatesShowRequests</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние заявления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Application status</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="CertificatesShowRequestsContextMenu" id="335"/>
+									<ExtendedTooltip name="CertificatesShowRequestsExtendedTooltip" id="336"/>
+									<Events>
+										<Event name="OnChange">CertificatesShowRequestsOnChange</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="CustomSettingsFolder" id="293">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательских настроек</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User settings group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="CustomSettingsFolderExtendedTooltip" id="294"/>
+						</UsualGroup>
+						<CommandBar name="CertificatesListCommandBar" id="266">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификаты командная панель списка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificates list command bar</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CertificatesListCommandBarExtendedTooltip" id="267"/>
+							<ChildItems>
+								<Popup name="GroupAddCertificates" id="463">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Add…</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="GroupAddCertificatesExtendedTooltip" id="464"/>
+									<ChildItems>
+										<Button name="AddToSignAndEncrypt" id="348">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.AddToSignAndEncrypt</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Для подписания и шифрования...</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>To sign and encrypt…</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+											<ExtendedTooltip name="AddToSignAndEncryptExtendedTooltip" id="349"/>
+										</Button>
+										<ButtonGroup name="GroupForEncryptionOnly" id="455">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Добавить только для шифрования</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Add only to encrypt</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="GroupForEncryptionOnlyExtendedTooltip" id="456"/>
+											<ChildItems>
+												<Button name="AddToEncryptOnly" id="457">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.AddToEncryptOnly</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Только для шифрования из личного хранилища...</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Only to encrypt from Personal store…</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="AddToEncryptOnlyExtendedTooltip" id="458"/>
+												</Button>
+												<Button name="AddFromFiles" id="459">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.AddFromFiles</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Только для шифрования из файлов...</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Only to encrypt from files…</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="AddFromFilesExtendedTooltip" id="460"/>
+												</Button>
+												<Button name="AddFromDirectory" id="461">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.AddFromDirectory</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Только для шифрования из каталога...</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Only to encrypt from directory…</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="AddFromDirectoryExtendedTooltip" id="462"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<Button name="Create" id="465">
+											<Type>CommandBarButton</Type>
+											<Visible>false</Visible>
+											<CommandName>Form.Item.Certificates.StandardCommand.Create</CommandName>
+											<ExtendedTooltip name="CreateExtendedTooltip" id="466"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Button name="AddCertificateIssueRequest" id="346">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.AddCertificateIssueRequest</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оформить заявление...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Submit application…</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="AddCertificateIssueRequestExtendedTooltip" id="347"/>
+								</Button>
+								<Button name="ReissueCertificate" id="353">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Item.Certificates.StandardCommand.Copy</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перевыпустить...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Reissue…</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ReissueCertificateExtendedTooltip" id="354">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Перевыпустить сертификат, у которого закончился срок действия</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Reissue expired certificate</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Popup name="ReportsSubmenu" id="478">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчеты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Reports</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Reports</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ReportsSubmenuExtendedTooltip" id="479"/>
+								</Popup>
+								<ButtonGroup name="CertificatesStandardCommands" id="98">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификаты стандартные команды</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificates standard commands</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSource>Item.Certificates</CommandSource>
+									<ExtendedTooltip name="CertificatesStandardCommandsExtendedTooltip" id="99"/>
+								</ButtonGroup>
+								<SearchStringAddition name="CertificatesSearch" id="364">
+									<AdditionSource>
+										<Item>Certificates</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификаты поиск</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificates search</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="CertificatesSearchContextMenu" id="365"/>
+									<ExtendedTooltip name="CertificatesSearchExtendedTooltip" id="366"/>
+								</SearchStringAddition>
+								<SearchControlAddition name="CertificatesSearchManagement" id="373">
+									<AdditionSource>
+										<Item>Certificates</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификаты поиск управление</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificates search management</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="CertificatesSearchManagementContextMenu" id="374"/>
+									<ExtendedTooltip name="CertificatesSearchManagementExtendedTooltip" id="375"/>
+								</SearchControlAddition>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="GroupRefreshCertificateList" id="483">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление списка сертификатов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Refresh certificate list</v8:content>
+								</v8:item>
+							</Title>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupRefreshCertificateListExtendedTooltip" id="484"/>
+							<ChildItems>
+								<PictureDecoration name="PictureRefreshCertificateList" id="485">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка обновление списка сертификатов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Picture: Refresh certificate list</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.TimeConsumingOperation16</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="PictureRefreshCertificateListContextMenu" id="486"/>
+									<ExtendedTooltip name="PictureRefreshCertificateListExtendedTooltip" id="487"/>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationRefreshCertificateList" id="480">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск сертификатов в личном хранилище...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Searching for certificates in personal storage…</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecorationRefreshCertificateListContextMenu" id="481"/>
+									<ExtendedTooltip name="DecorationRefreshCertificateListExtendedTooltip" id="482"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Certificates" id="46">
+							<DefaultItem>true</DefaultItem>
+							<HeightInTableRows>4</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Certificates</DataPath>
+							<RowPictureDataPath>Certificates.CertificateStatusInPersonalStorage</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.CertificatesStates</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификаты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificates</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>CustomSettingsFolder</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+							<ContextMenu name="CertificatesContextMenu" id="47">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="CertificatesContextMenuCreate" id="340">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Certificates.StandardCommand.Create</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Добавить...</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Add…</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="CertificatesContextMenuCreateExtendedTooltip" id="341"/>
+									</Button>
+									<ButtonGroup name="CertificatesContextMenuStandardCommands" id="342">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сертификаты контекстное меню стандартные команды</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Certificates context menu standard commands</v8:content>
+											</v8:item>
+										</Title>
+										<CommandSource>Item.Certificates</CommandSource>
+										<ExtendedTooltip name="CertificatesContextMenuStandardCommandsExtendedTooltip" id="343"/>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="CertificatesCommandBar" id="48">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="CertificatesExtendedTooltip" id="49"/>
+							<SearchStringAddition name="CertificatesSearchString" id="299">
+								<AdditionSource>
+									<Item>Certificates</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="CertificatesSearchStringContextMenu" id="300"/>
+								<ExtendedTooltip name="CertificatesSearchStringExtendedTooltip" id="301"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="CertificatesViewStatus" id="302">
+								<AdditionSource>
+									<Item>Certificates</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="CertificatesViewStatusContextMenu" id="303"/>
+								<ExtendedTooltip name="CertificatesViewStatusExtendedTooltip" id="304"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="CertificatesSearchControl" id="305">
+								<AdditionSource>
+									<Item>Certificates</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="CertificatesSearchControlContextMenu" id="306"/>
+								<ExtendedTooltip name="CertificatesSearchControlExtendedTooltip" id="307"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">CertificatesBeforeAddRow</Event>
+								<Event name="OnGetDataAtServer">CertificatesOnGetDataAtServer</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="CertificatesDescription" id="53">
+									<DataPath>Certificates.Description</DataPath>
+									<Width>35</Width>
+									<ContextMenu name="CertificatesDescriptionContextMenu" id="54"/>
+									<ExtendedTooltip name="CertificatesDescriptionExtendedTooltip" id="55"/>
+								</LabelField>
+								<LabelField name="CertificatesIssuedBy" id="80">
+									<DataPath>Certificates.IssuedBy</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="CertificatesIssuedByContextMenu" id="81"/>
+									<ExtendedTooltip name="CertificatesIssuedByExtendedTooltip" id="82"/>
+								</LabelField>
+								<LabelField name="CertificatesValidBefore" id="65">
+									<DataPath>Certificates.ValidBefore</DataPath>
+									<Width>13</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="CertificatesValidBeforeContextMenu" id="66"/>
+									<ExtendedTooltip name="CertificatesValidBeforeExtendedTooltip" id="67"/>
+								</LabelField>
+								<LabelField name="CertificatesUser" id="260">
+									<DataPath>Certificates.User</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Используют</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Used by</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="CertificatesUserContextMenu" id="261"/>
+									<ExtendedTooltip name="CertificatesUserExtendedTooltip" id="262"/>
+								</LabelField>
+								<LabelField name="CertificatesRequestStatus" id="337">
+									<DataPath>Certificates.RequestStatus</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние заявления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Application status</v8:content>
+										</v8:item>
+									</Title>
+									<Width>16</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="CertificatesRequestStatusContextMenu" id="338"/>
+									<ExtendedTooltip name="CertificatesRequestStatusExtendedTooltip" id="339"/>
+								</LabelField>
+								<LabelField name="CertificatesRef" id="142">
+									<DataPath>Certificates.Ref</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Width>1</Width>
+									<ContextMenu name="CertificatesRefContextMenu" id="143"/>
+									<ExtendedTooltip name="CertificatesRefExtendedTooltip" id="144"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<LabelDecoration name="DecorationToOpenMachineReadablePowerOfAttorney" id="490">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть машиночитаемые доверенности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Open machine-readable letters of authority</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationToOpenMachineReadablePowerOfAttorneyContextMenu" id="491"/>
+							<ExtendedTooltip name="DecorationToOpenMachineReadablePowerOfAttorneyExtendedTooltip" id="492"/>
+							<Events>
+								<Event name="URLProcessing">DecorationToOpenMachineReadablePowerOfAttorneyURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<UsualGroup name="LegendGroup" id="379">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Легенда</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Legend</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="LegendGroupExtendedTooltip" id="380"/>
+							<ChildItems>
+								<UsualGroup name="GroupCertificateInPersonalStorage" id="393">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификат в личном хранилище</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate in Personal store</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCertificateInPersonalStorageExtendedTooltip" id="394"/>
+									<ChildItems>
+										<PictureDecoration name="DecorationPictureCertificateInPersonalStorage" id="381">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат в личном хранилище</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate in Personal store</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.CertificatePersonalStorage</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="DecorationPictureCertificateInPersonalStorageContextMenu" id="382"/>
+											<ExtendedTooltip name="DecorationPictureCertificateInPersonalStorageExtendedTooltip" id="383"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationLabelCertificateInPersonalStorage" id="401">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат находится в личном хранилище на компьютере или доступен к использованию на сервере</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate is kept in the Personal store on the computer or available on the server</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="DecorationLabelCertificateInPersonalStorageContextMenu" id="402"/>
+											<ExtendedTooltip name="DecorationLabelCertificateInPersonalStorageExtendedTooltip" id="403"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupCertificateValidityExpires" id="395">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок действия сертификата заканчивается</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate is expiring</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCertificateValidityExpiresExtendedTooltip" id="396"/>
+									<ChildItems>
+										<PictureDecoration name="DecorationPictureCertificateExpiryDateExpires" id="387">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат в личном хранилище</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate in Personal store</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.CertificateExpiring</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="DecorationPictureCertificateExpiryDateExpiresContextMenu" id="388"/>
+											<ExtendedTooltip name="DecorationPictureCertificateExpiryDateExpiresExtendedTooltip" id="389"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationLabelCertificateValidityExpires" id="404">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>До истечения срока действия сертификата осталось менее 30 календарных дней</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate expires in less than 30 days</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="DecorationLabelCertificateValidityExpiresContextMenu" id="405"/>
+											<ExtendedTooltip name="DecorationLabelCertificateValidityExpiresExtendedTooltip" id="406"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupCertificateExpired" id="397">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификат просрочен</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Certificate has expired</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCertificateExpiredExtendedTooltip" id="398"/>
+									<ChildItems>
+										<PictureDecoration name="DecorationPictureCertificateExpired" id="384">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка сертификат просрочен</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate expired decoration picture</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.CertificateOverdue</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="DecorationPictureCertificateExpiredContextMenu" id="385"/>
+											<ExtendedTooltip name="DecorationPictureCertificateExpiredExtendedTooltip" id="386"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationLabelCertificateExpired" id="407">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат просрочен</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate is expired</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DecorationLabelCertificateExpiredContextMenu" id="408"/>
+											<ExtendedTooltip name="DecorationLabelCertificateExpiredExtendedTooltip" id="409"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupCertificateForEncryptionOnly" id="413">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификат только для шифрования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Encryption-only certificate</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCertificateForEncryptionOnlyExtendedTooltip" id="414"/>
+									<ChildItems>
+										<PictureDecoration name="DecorationPictureCertificateForEncryptionOnly" id="418">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка сертификат только для шифрования</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Encryption-only certificate decoration picture</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>StdPicture.Attribute</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="DecorationPictureCertificateForEncryptionOnlyContextMenu" id="419"/>
+											<ExtendedTooltip name="DecorationPictureCertificateForEncryptionOnlyExtendedTooltip" id="420"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationLetteringCertificateForEncryptionOnly" id="415">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат может использоваться только для шифрования и расшифровки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Certificate can be used only for encryption and decryption</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DecorationLetteringCertificateForEncryptionOnlyContextMenu" id="416"/>
+											<ExtendedTooltip name="DecorationLetteringCertificateForEncryptionOnlyExtendedTooltip" id="417"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ApplicationPage" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложения и токены</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Apps and tokens</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ApplicationPageExtendedTooltip" id="104"/>
+					<ChildItems>
+						<LabelDecoration name="SettingInCentralNodeLabel" id="355">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка приложений электронной подписи и шифрования выполнена в корневом узле</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>The digital signature and encryption applications are set up in the root node</v8:content>
+								</v8:item>
+							</Title>
+							<BackColor>style:ToolTipBackColor</BackColor>
+							<ContextMenu name="SettingInCentralNodeLabelContextMenu" id="356"/>
+							<ExtendedTooltip name="SettingInCentralNodeLabelExtendedTooltip" id="357"/>
+						</LabelDecoration>
+						<UsualGroup name="GroupApplicationsRefresh" id="488">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Программы обновление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>App update</v8:content>
+								</v8:item>
+							</Title>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupApplicationsRefreshExtendedTooltip" id="489"/>
+							<ChildItems>
+								<PictureDecoration name="ApplicationsRefreshDecoration" id="329">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Программы декорация обновления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Applications update decoration</v8:content>
+										</v8:item>
+									</Title>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.TimeConsumingOperation16</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ApplicationsRefreshDecorationContextMenu" id="330"/>
+									<ExtendedTooltip name="ApplicationsRefreshDecorationExtendedTooltip" id="331"/>
+								</PictureDecoration>
+								<LabelDecoration name="ApplicationsRefreshing" id="326">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определение приложений, установленных на компьютере. Пожалуйста, подождите ...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Determining installed applications. Please wait…</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ApplicationsRefreshingContextMenu" id="327"/>
+									<ExtendedTooltip name="ApplicationsRefreshingExtendedTooltip" id="328"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupCryptoProvidersHint" id="436">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсказка о криптопровайдерах</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Cryptographic service provider tooltip</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupCryptoProvidersHintExtendedTooltip" id="437"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationInfoCryptoProviders" id="438">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация информация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decoration information</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>StdPicture.Information</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationInfoCryptoProvidersContextMenu" id="439"/>
+									<ExtendedTooltip name="DecorationInfoCryptoProvidersExtendedTooltip" id="440"/>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationCheckCryptoProviderInstallation" id="447">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;link CheckCryptographyAppsInstallation&gt;Нажмите здесь&lt;/&gt;, чтобы увидеть все приложения для работы с электронной подписью, установленные на компьютере. </v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>&lt;link CheckCryptographyAppsInstallation&gt;Click here&lt;/&gt; to view all installed digital signing apps.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecorationCheckCryptoProviderInstallationContextMenu" id="448"/>
+									<ExtendedTooltip name="DecorationCheckCryptoProviderInstallationExtendedTooltip" id="449"/>
+									<Events>
+										<Event name="URLProcessing">DecorationCheckCryptoProviderInstallationURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="ApplicationsOwnCommandBar" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Программы командная панель отдельно</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Applications command bar separately</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ApplicationsOwnCommandBarExtendedTooltip" id="182"/>
+							<ChildItems>
+								<Button name="ApplicationsAdd" id="280">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.Programs.StandardCommand.Add</CommandName>
+									<ExtendedTooltip name="ApplicationsAddExtendedTooltip" id="281"/>
+								</Button>
+								<Button name="ApplicationsChange" id="282">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.Programs.StandardCommand.Change</CommandName>
+									<ExtendedTooltip name="ApplicationsChangeExtendedTooltip" id="283"/>
+								</Button>
+								<Button name="ApplicationsMarkForDeletion" id="276">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ApplicationsMarkForDeletion</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пометить на удаление / Снять пометку</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Toggle deletion mark</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ApplicationsMarkForDeletionExtendedTooltip" id="277"/>
+								</Button>
+								<Button name="ApplicationsRefresh" id="230">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Refresh</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Refresh</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ApplicationsRefreshExtendedTooltip" id="231"/>
+								</Button>
+								<Button name="ApplicationsOutputList" id="255">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.Programs.StandardCommand.OutputList</CommandName>
+									<ExtendedTooltip name="ApplicationsOutputListExtendedTooltip" id="256"/>
+								</Button>
+								<SearchStringAddition name="AppsSearch" id="467">
+									<AdditionSource>
+										<Item>Programs</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Программы поиск</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Applications search</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="AppsSearchContextMenu" id="468"/>
+									<ExtendedTooltip name="AppsSearchExtendedTooltip" id="469"/>
+								</SearchStringAddition>
+								<SearchControlAddition name="AppsSearchManagement" id="470">
+									<AdditionSource>
+										<Item>Programs</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Программы поиск управление</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Applications search management</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="AppsSearchManagementContextMenu" id="471"/>
+									<ExtendedTooltip name="AppsSearchManagementExtendedTooltip" id="472"/>
+								</SearchControlAddition>
+							</ChildItems>
+						</CommandBar>
+						<Table name="Programs" id="203">
+							<TitleLocation>Top</TitleLocation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<HeightInTableRows>1</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Programs</DataPath>
+							<RowPictureDataPath>Programs.LocationType</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.TypesOfCertificates</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки приложений электронной подписи и шифрования, которые пользователи могут применять на своих компьютерах</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Settings of applications of digital signature and encryption which can be applied by users on their computers</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ProgramsContextMenu" id="204">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ProgramsContextMenuAdd" id="284">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Programs.StandardCommand.Add</CommandName>
+										<ExtendedTooltip name="ProgramsContextMenuAddExtendedTooltip" id="285"/>
+									</Button>
+									<Button name="ProgramsContextMenuChange" id="286">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Programs.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="ProgramsContextMenuChangeExtendedTooltip" id="287"/>
+									</Button>
+									<Button name="ProgramsContextMenuApplicationsMarkForDeletion" id="278">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ApplicationsMarkForDeletion</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пометить на удаление / Снять пометку</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Toggle deletion mark</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ProgramsContextMenuApplicationsMarkForDeletionExtendedTooltip" id="279"/>
+									</Button>
+									<Button name="ProgramsContextMenuRefresh" id="247">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Refresh</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Refresh</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ProgramsContextMenuRefreshExtendedTooltip" id="248"/>
+									</Button>
+									<Button name="ProgramsContextMenuOutputList" id="249">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Programs.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="ProgramsContextMenuOutputListExtendedTooltip" id="250"/>
+									</Button>
+									<Button name="ProgramsContextMenuCopyToClipboard" id="251">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Programs.StandardCommand.CopyToClipboard</CommandName>
+										<ExtendedTooltip name="ProgramsContextMenuCopyToClipboardExtendedTooltip" id="252"/>
+									</Button>
+									<Button name="ProgramsContextMenuSelectAll" id="253">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Programs.StandardCommand.SelectAll</CommandName>
+										<ExtendedTooltip name="ProgramsContextMenuSelectAllExtendedTooltip" id="254"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ProgramsCommandBar" id="205">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ProgramsExtendedTooltip" id="206"/>
+							<SearchStringAddition name="ProgramsSearchString" id="308">
+								<AdditionSource>
+									<Item>Programs</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProgramsSearchStringContextMenu" id="309"/>
+								<ExtendedTooltip name="ProgramsSearchStringExtendedTooltip" id="310"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ProgramsViewStatus" id="311">
+								<AdditionSource>
+									<Item>Programs</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProgramsViewStatusContextMenu" id="312"/>
+								<ExtendedTooltip name="ProgramsViewStatusExtendedTooltip" id="313"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ProgramsSearchControl" id="314">
+								<AdditionSource>
+									<Item>Programs</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ProgramsSearchControlContextMenu" id="315"/>
+								<ExtendedTooltip name="ProgramsSearchControlExtendedTooltip" id="316"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ProgramsSelection</Event>
+								<Event name="BeforeAddRow">ProgramsBeforeAddRow</Event>
+								<Event name="BeforeDeleteRow">ProgramsBeforeDeleteRow</Event>
+								<Event name="OnActivateRow">ProgramsOnActivateRow</Event>
+								<Event name="BeforeRowChange">ProgramsBeforeRowChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ProgramsDescription" id="213">
+									<DataPath>Programs.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложение</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Application</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoCellHeight>true</AutoCellHeight>
+									<Width>15</Width>
+									<ContextMenu name="ProgramsDescriptionContextMenu" id="214"/>
+									<ExtendedTooltip name="ProgramsDescriptionExtendedTooltip" id="215"/>
+								</InputField>
+								<PictureField name="ProgramsPictureUsageMode" id="452">
+									<DataPath>Programs.PictureUsageMode</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим использования картинка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Usage mode picture</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.Change</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>StdPicture.Change</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ProgramsPictureUsageModeContextMenu" id="453"/>
+									<ExtendedTooltip name="ProgramsPictureUsageModeExtendedTooltip" id="454"/>
+								</PictureField>
+								<ColumnGroup name="AppsGroupCheckResult" id="445">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат проверки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Check result</v8:content>
+										</v8:item>
+									</Title>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="AppsGroupCheckResultExtendedTooltip" id="446"/>
+									<ChildItems>
+										<InputField name="ProgramsCheckResult" id="223">
+											<DataPath>Programs.CheckResult</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На компьютере</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>On computer</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoCellHeight>true</AutoCellHeight>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>40</Width>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ProgramsCheckResultContextMenu" id="224"/>
+											<ExtendedTooltip name="ProgramsCheckResultExtendedTooltip" id="225"/>
+										</InputField>
+										<InputField name="ProgramsCheckResultAtServer" id="442">
+											<DataPath>Programs.CheckResultAtServer</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На сервере</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>On server</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="AppsCheckResultAtServerContextMenu" id="443"/>
+											<ExtendedTooltip name="AppsCheckResultAtServerExtendedTooltip" id="444"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ProgramsMoreDetails" id="358">
+									<DataPath>Programs.MoreDetails</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подробнее</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Details</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<AutoCellHeight>true</AutoCellHeight>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:HyperlinkColor</TextColor>
+									<ContextMenu name="ProgramsMoreDetailsContextMenu" id="359"/>
+									<ExtendedTooltip name="ProgramsMoreDetailsExtendedTooltip" id="360"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ApplicationsLinuxPathToApplicationGroup" id="228">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь к приложению, если установлено по нестандартному пути</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<TitleDataPath>Items.Programs.CurrentData.Description</TitleDataPath>
+							<ExtendedTooltip name="ApplicationsLinuxPathToApplicationGroupExtendedTooltip" id="229"/>
+							<ChildItems>
+								<InputField name="ApplicationsLinuxPathToApplication" id="216">
+									<DataPath>Items.Programs.CurrentData.LinuxApplicationPath</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Путь к приложению на компьютере ОС Linux и macOS</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Path to the application on a computer running Linux OS or macOS</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Путь к приложению, который требуется на компьютерах с операционной системой Linux и macOS</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Path to the application required on computers running Linux OS or macOS</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>1</Height>
+									<DropListButton>true</DropListButton>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ApplicationsLinuxPathToApplicationContextMenu" id="217"/>
+									<ExtendedTooltip name="ApplicationsLinuxPathToApplicationExtendedTooltip" id="218"/>
+									<Events>
+										<Event name="OnChange">ApplicationsLinuxPathToApplicationOnChange</Event>
+										<Event name="StartChoice">ApplicationsLinuxPathToApplicationStartChoice</Event>
+										<Event name="ChoiceProcessing">ApplicationsLinuxPathToApplicationChoiceProcessing</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Instruction" id="270">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкции по работе с приложениями электронной подписи и шифрования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>How to work with digital signature and encryption applications</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="InstructionContextMenu" id="271"/>
+							<ExtendedTooltip name="InstructionExtendedTooltip" id="272"/>
+							<Events>
+								<Event name="Click">InstructionClick</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="SettingsPage" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>More</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="SettingsPageExtendedTooltip" id="45"/>
+					<ChildItems>
+						<InputField name="EncryptedFilesExtension" id="9">
+							<DataPath>EncryptedFilesExtension</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расширение для зашифрованных файлов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Encrypted file extension</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="EncryptedFilesExtensionContextMenu" id="10"/>
+							<ExtendedTooltip name="EncryptedFilesExtensionExtendedTooltip" id="19"/>
+							<Events>
+								<Event name="OnChange">EncryptedFilesExtensionOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="SignatureFilesExtension" id="13">
+							<DataPath>SignatureFilesExtension</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расширение для файлов подписи</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Signature file extension</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="SignatureFilesExtensionContextMenu" id="14"/>
+							<ExtendedTooltip name="SignatureFilesExtensionExtendedTooltip" id="20"/>
+							<Events>
+								<Event name="OnChange">SignatureFilesExtensionOnChange</Event>
+							</Events>
+						</InputField>
+						<RadioButtonField name="ActionsOnSaveSignedData" id="3">
+							<DataPath>ActionsOnSavingWithDS</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При сохранении данных в файл вместе с электронной подписью</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>On saving data to the file with digital signature</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сохранять все подписи</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Save all signatures</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">SaveAllSignatures</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Спрашивать</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Prompt</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Prompt</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ActionsOnSaveSignedDataContextMenu" id="4"/>
+							<ExtendedTooltip name="ActionsOnSaveSignedDataExtendedTooltip" id="18"/>
+							<Events>
+								<Event name="OnChange">ActionsOnSaveSignedDataOnChange</Event>
+							</Events>
+						</RadioButtonField>
+						<CheckBoxField name="SaveCertificateWithSignature" id="350">
+							<DataPath>SaveCertificateWithSignature</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сохранять сертификат</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Save certificate</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SaveCertificateWithSignatureContextMenu" id="351"/>
+							<ExtendedTooltip name="SaveCertificateWithSignatureExtendedTooltip" id="352"/>
+							<Events>
+								<Event name="OnChange">SaveCertificateWithSignatureOnChange</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ActionsOnSavingWithDS" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действия при сохранении с ЭП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Actions on saving with DS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="EncryptedFilesExtension" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение для зашифрованных файлов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Encrypted file extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="SignatureFilesExtension" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение для файлов подписи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Signature file extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ErrorText" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Certificates" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификаты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Certificates</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>Certificates.Ref</Field>
+				<Field>Certificates.Revoked</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	CertificatesOverridable.Ref AS Ref,
+	CertificatesOverridable.DeletionMark AS DeletionMark,
+	CertificatesOverridable.Description AS Description,
+	CertificatesOverridable.IssuedTo AS IssuedTo,
+	CertificatesOverridable.Firm AS Firm,
+	CertificatesOverridable.LastName AS LastName,
+	CertificatesOverridable.Name AS Name,
+	CertificatesOverridable.MiddleName AS MiddleName,
+	CertificatesOverridable.JobTitle AS JobTitle,
+	CertificatesOverridable.IssuedBy AS IssuedBy,
+	CertificatesOverridable.ValidBefore AS ValidBefore,
+	CertificatesOverridable.Signing AS Signing,
+	CertificatesOverridable.Encryption AS Encryption,
+	CertificatesOverridable.Thumbprint AS Thumbprint,
+	CertificatesOverridable.CertificateData AS CertificateData,
+	CertificatesOverridable.Application AS Application,
+	CertificatesOverridable.Revoked AS Revoked,
+	CertificatesOverridable.EnterPasswordInDigitalSignatureApplication AS EnterPasswordInDigitalSignatureApplication,
+	CertificatesOverridable.Organization AS Organization,
+	CASE
+		WHEN CertificatesOverridable.User = VALUE(Catalog.Users.EmptyRef)
+			THEN "                                                                                                   "
+		ELSE CertificatesOverridable.User
+	END AS User,
+	CertificatesOverridable.Added AS Added,
+	&amp;AdditionalField AS RequestStatus,
+	CertificatesOverridable.Predefined AS Predefined,
+	CertificatesOverridable.PredefinedDataName AS PredefinedDataName,
+	CASE
+		WHEN CertificatesOverridable.DeletionMark
+			THEN 1
+		WHEN &amp;IsRequest
+			THEN 5
+		ELSE CASE
+			WHEN CertificatesOverridable.Thumbprint IN (&amp;CertificatesInPersonalStorage)
+				THEN CASE
+					WHEN CertificatesOverridable.ValidBefore &lt; &amp;CurrentDate
+						THEN 4
+					WHEN CertificatesOverridable.ValidBefore &lt; DATEADD(&amp;CurrentDate, DAY, 30)
+						THEN 3
+					ELSE 2
+				END
+			ELSE 0
+		END
+	END AS CertificateStatusInPersonalStorage,
+	CASE
+		WHEN NOT CertificatesOverridable.DeletionMark
+		AND NOT CertificatesOverridable.Revoked
+		AND CertificatesOverridable.ValidBefore &gt;= &amp;CurrentDate
+		AND CertificatesOverridable.ValidBefore &lt;= DATEADD(&amp;CurrentDate, DAY, 30)
+			THEN TRUE
+		ELSE FALSE
+	END AS DeadlineEndsSoon,
+	CASE
+		WHEN NOT CertificatesOverridable.Revoked
+		AND CertificatesOverridable.ValidBefore &gt; &amp;CurrentDate
+			THEN TRUE
+		ELSE FALSE
+	END AS Valid_SSLyf,
+	CASE
+		WHEN ProgramsOverridable.IsBuiltInCryptoProvider
+			THEN 4
+		WHEN CertificatesOverridable.Application = UNDEFINED
+		OR CertificatesOverridable.Application = VALUE(Catalog.DigitalSignatureAndEncryptionApplications.EmptyRef)
+		OR NOT ProgramsOverridable.Ref IS NULL
+			THEN 1
+		ELSE 3
+	END + CASE
+		WHEN CertificatesOverridable.DeletionMark
+			THEN 4
+		ELSE 0
+	END AS LocationType
+FROM
+	Catalog.DigitalSignatureAndEncryptionKeysCertificates AS CertificatesOverridable
+		LEFT JOIN Catalog.DigitalSignatureAndEncryptionApplications AS ProgramsOverridable
+		ON CertificatesOverridable.Application = ProgramsOverridable.Ref
+		AND &amp;OptionalConnection
+WHERE
+	(&amp;CertificateUser = UNDEFINED
+	OR CertificatesOverridable.User = &amp;CertificateUser
+	OR CertificatesOverridable.Ref IN
+		(SELECT DISTINCT
+			ElectronicSignatureAndEncryptionKeyCertificatesUsersOverridable.Ref AS Ref
+		FROM
+			Catalog.DigitalSignatureAndEncryptionKeysCertificates.Users AS
+				ElectronicSignatureAndEncryptionKeyCertificatesUsersOverridable
+		WHERE
+			ElectronicSignatureAndEncryptionKeyCertificatesUsersOverridable.User = &amp;CertificateUser))</QueryText>
+				<MainTable>Catalog.DigitalSignatureAndEncryptionKeysCertificates</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Revoked</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ValidBefore</dcsset:left>
+							<dcsset:comparisonType>Greater</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Description</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Programs" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Applications</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ref" id="1">
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.DigitalSignatureApplication</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="LinuxApplicationPath" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Linux путь к приложению</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>App path on Linux</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CheckResult" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат проверки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Check result</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ApplicationName" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ApplicationType" id="5">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SignAlgorithm" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="HashAlgorithm" id="7">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="EncryptAlgorithm" id="8">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Description" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Description</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Use" id="11">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DeletionMark" id="12">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsBuiltInCryptoProvider" id="13">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="MoreDetails" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подробнее</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="LocationType" id="15">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CheckResultAtServer" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат проверки на сервере</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Check result on server</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PathToAppAuto" id="26">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AppPathAtServerAuto" id="27">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsInstalledOnServer" id="29">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UsageMode" id="31">
+					<Type>
+						<v8:Type>cfg:EnumRef.DigitalSignatureAppUsageModes</v8:Type>
+					</Type>
+				</Column>
+				<Column name="AutoDetect" id="33">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="PictureUsageMode" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим использования картинка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Usage mode picture</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsToken" id="40">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Slot" id="10">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CertificatesShow" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IsFullUser" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificatesShowRequests" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние заявления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Application status</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="NoRightToSaveUserData" id="12">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="LinuxPathToCurrentApplication" id="13">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SaveCertificateWithSignature" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранять сертификат вместе с подписью</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save certificate with signature</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DefaultApplicationsPaths" id="16">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Application" id="2">
+					<Type>
+						<v8:Type>cfg:CatalogRef.DigitalSignatureAndEncryptionApplications</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Path" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CertificatesInPersonalStorage" id="17">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="UserSelect" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Users</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificateIssueRequestAvailable" id="19">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CertificatesOnlyValid" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только действующие</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only valid</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="StatusApplicationIsNotInOperation" id="22">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="HasRightToAddCertificates" id="36">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="PurposeToSignAndEncrypt" id="38">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HasAppsToCheck" id="39">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="5">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Refresh" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройки и список приложений с результатами их проверки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update settings and app list with their check results</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Refresh</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ApplicationsMarkForDeletion" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Toggle deletion mark</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить текущий элемент на удаление / Снять пометку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Toggle deletion mark</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ApplicationsMarkForDeletion</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="InstallExtension" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение для работы с 1С:Предприятием</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install 1C:Enterprise Extension</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install extension</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>InstallExtension</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="AddCertificateIssueRequest" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить заявление...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Submit application...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить заявление на выпуск сертификата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Submit an application for certificate issuance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ApplicationForKeyCertificateIssue</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>AddCertificateIssueRequest</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="AddToSignAndEncrypt" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для подписания и шифрования...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>To sign and encrypt...</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.CertificatePersonalStorage</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>AddToSignAndEncrypt</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ShowVersionComponentsExtraCryptoAPI" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать версию компоненты ExtraCryptoAPI</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show ExtraCryptoAPI add-in version</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать версию установленной компоненты с предложением установки, если она не установлена или если загружена более новая компонента.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show a version of the installed add-in and prompt to install or update to a newer version.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ShowVersionComponentsExtraCryptoAPI</Action>
+		</Command>
+		<Command name="SetComponentExtraCryptoAPI" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить компоненту ExtraCryptoAPI</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install ExtraCryptoAPI add-in</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить и подключить последнюю версию компоненты с предложением загрузки из интернета свежей версии, если она существует.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install and apply the latest add-in version and prompt to update to a newer version.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SetComponentExtraCryptoAPI</Action>
+		</Command>
+		<Command name="TechnicalInformation" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техническая информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Technical details</v8:content>
+				</v8:item>
+			</Title>
+			<Action>TechnicalInformation</Action>
+		</Command>
+		<Command name="AddFromDirectory" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только для шифрования из каталога...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only to encrypt from directory...</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.KeyCertificate</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>AddFromDirectory</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="AddFromFiles" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только для шифрования из файлов...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only to encrypt from files...</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.KeyCertificate</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>AddFromFiles</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="AddToEncryptOnly" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только для шифрования из личного хранилища...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only to encrypt from Personal store...</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.CertificatePersonalStorage</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>AddToEncryptOnly</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="CertificatesShow">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ShowPage">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

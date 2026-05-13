@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Width>55</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ErrorClient" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка клиент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error client</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ErrorClientExtendedTooltip" id="23"/>
+			<ChildItems>
+				<UsualGroup name="TitleClient" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок клиент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Title client</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="TitleClientExtendedTooltip" id="2"/>
+					<ChildItems>
+						<PictureDecoration name="TitleClientPicture" id="3">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок клиент картинка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Title client picture</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ComputerClient</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="TitleClientPictureContextMenu" id="4"/>
+							<ExtendedTooltip name="TitleClientPictureExtendedTooltip" id="5"/>
+						</PictureDecoration>
+						<LabelDecoration name="TitleClientLabel" id="6">
+							<Font ref="style:ImportantLabelFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>На клиентском компьютере:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>On the client computer:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="TitleClientLabelContextMenu" id="7"/>
+							<ExtendedTooltip name="TitleClientLabelExtendedTooltip" id="8"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="PossibleReasonsAndSolutionsClient" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможные причины и решения клиент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Possible reasons and solutions client</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="PossibleReasonsAndSolutionsClientExtendedTooltip" id="54"/>
+					<ChildItems>
+						<UsualGroup name="PossibleSolutionsClient" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Recommendations</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleSolutionsClientExtendedTooltip" id="18"/>
+							<ChildItems>
+								<LabelDecoration name="DecisionsClientText" id="19">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные способы устранения (клиент)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Possible methods to fix the error (client)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecisionsClientTextContextMenu" id="20"/>
+									<ExtendedTooltip name="DecisionsClientTextExtendedTooltip" id="21"/>
+									<Events>
+										<Event name="URLProcessing">DecisionsClientTextURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="PossibleReasonsClient" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможные причины</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Possible reasons</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleReasonsClientExtendedTooltip" id="13"/>
+							<ChildItems>
+								<LabelDecoration name="ReasonsClientText" id="14">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные причины (клиент)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Possible reasons (client)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ReasonsClientTextContextMenu" id="15"/>
+									<ExtendedTooltip name="ReasonsClientTextExtendedTooltip" id="16"/>
+									<Events>
+										<Event name="URLProcessing">ReasonsClientTextURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ErrorTextClient" id="9">
+					<DataPath>ErrorTextClient</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические подробности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Technical details</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:AccentColor</TitleTextColor>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="ErrorTextClientContextMenu" id="10"/>
+					<ExtendedTooltip name="ErrorTextClientExtendedTooltip" id="11"/>
+				</InputField>
+				<LabelDecoration name="InstructionClient" id="24">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типичные проблемы при работе с приложениями электронной подписи и шифрования</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Common issues with digital signature and encryption applications</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="InstructionClientContextMenu" id="25"/>
+					<ExtendedTooltip name="InstructionClientExtendedTooltip" id="26"/>
+					<Events>
+						<Event name="Click">InstructionClick</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="SeparatorDecoration" id="57">
+			<Font ref="style:NormalTextFont" kind="StyleItem" scale="10"/>
+			<ContextMenu name="SeparatorDecorationContextMenu" id="58"/>
+			<ExtendedTooltip name="SeparatorDecorationExtendedTooltip" id="59"/>
+		</LabelDecoration>
+		<UsualGroup name="ErrorServer" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка сервер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error server</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ErrorServerExtendedTooltip" id="28"/>
+			<ChildItems>
+				<UsualGroup name="TitleServer" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок сервер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Title server</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="TitleServerExtendedTooltip" id="30"/>
+					<ChildItems>
+						<PictureDecoration name="TitleServerPicture" id="31">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок сервер картинка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Title server picture</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ComputerServer</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="TitleServerPictureContextMenu" id="32"/>
+							<ExtendedTooltip name="TitleServerPictureExtendedTooltip" id="33"/>
+						</PictureDecoration>
+						<LabelDecoration name="TitleServerLabel" id="34">
+							<Font ref="style:ImportantLabelFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>На серверном компьютере:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>On the server computer:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="TitleServerLabelContextMenu" id="35"/>
+							<ExtendedTooltip name="TitleServerLabelExtendedTooltip" id="36"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="PossibleReasonsAndSolutionsServer" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможные причины и решения сервер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Possible reasons and solutions server</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="PossibleReasonsAndSolutionsServerExtendedTooltip" id="56"/>
+					<ChildItems>
+						<UsualGroup name="PossibleSolutionsServer" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Recommendations</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleSolutionsServerExtendedTooltip" id="46"/>
+							<ChildItems>
+								<LabelDecoration name="DecisionsServerText" id="47">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные способы устранения (сервер)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Possible methods to fix the error (server)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DecisionsServerTextContextMenu" id="48"/>
+									<ExtendedTooltip name="DecisionsServerTextExtendedTooltip" id="49"/>
+									<Events>
+										<Event name="URLProcessing">DecisionsServerTextURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="PossibleReasonsServer" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможные причины</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Possible reasons</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleReasonsServerExtendedTooltip" id="41"/>
+							<ChildItems>
+								<LabelDecoration name="ReasonsServerText" id="42">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные причины (сервер)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Possible reasons (server)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ReasonsServerTextContextMenu" id="43"/>
+									<ExtendedTooltip name="ReasonsServerTextExtendedTooltip" id="44"/>
+									<Events>
+										<Event name="URLProcessing">ReasonsServerTextURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ErrorTextServer" id="37">
+					<DataPath>ErrorTextServer</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические подробности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Technical details</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:AccentColor</TitleTextColor>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="ErrorTextServerContextMenu" id="38"/>
+					<ExtendedTooltip name="ErrorTextServerExtendedTooltip" id="39"/>
+				</InputField>
+				<LabelDecoration name="InstructionServer" id="50">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типичные проблемы при работе с приложениями электронной подписи и шифрования</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Common issues with digital signature and encryption applications</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="InstructionServerContextMenu" id="51"/>
+					<ExtendedTooltip name="InstructionServerExtendedTooltip" id="52"/>
+					<Events>
+						<Event name="Click">InstructionClick</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Error" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ErrorExtendedTooltip" id="82"/>
+			<ChildItems>
+				<UsualGroup name="PossibleReasonsAndSolutions" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможные причины и решения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Possible reasons and solutions</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="PossibleReasonsAndSolutionsExtendedTooltip" id="100"/>
+					<ChildItems>
+						<UsualGroup name="PossibleSolutions" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Recommendations</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleSolutionsExtendedTooltip" id="92"/>
+							<ChildItems>
+								<LabelDecoration name="SolutionsText" id="93">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные способы устранения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Possible methods to fix the error</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="SolutionsTextContextMenu" id="94"/>
+									<ExtendedTooltip name="SolutionsTextExtendedTooltip" id="95"/>
+									<Events>
+										<Event name="URLProcessing">DecisionsClientTextURLProcessing</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="PossibleReasons" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможные причины</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Possible reasons</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="PossibleReasonsExtendedTooltip" id="87"/>
+							<ChildItems>
+								<InputField name="ReasonsText" id="101">
+									<DataPath>ReasonsText</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Причины текст</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Reasons text</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ReasonsTextContextMenu" id="102"/>
+									<ExtendedTooltip name="ReasonsTextExtendedTooltip" id="103"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ErrorText" id="83">
+					<DataPath>ErrorText</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<SkipOnInput>true</SkipOnInput>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические подробности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Technical details</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:AccentColor</TitleTextColor>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="ErrorTextContextMenu" id="84"/>
+					<ExtendedTooltip name="ErrorTextExtendedTooltip" id="85"/>
+				</InputField>
+				<LabelDecoration name="Instruction" id="96">
+					<Visible>false</Visible>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типичные проблемы при работе с приложениями</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Common issues</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="InstructionContextMenu" id="97"/>
+					<ExtendedTooltip name="InstructionExtendedTooltip" id="98"/>
+					<Events>
+						<Event name="Click">InstructionClick</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="SeparatorDecoration2" id="78">
+			<Font ref="style:NormalTextFont" kind="StyleItem" scale="10"/>
+			<ContextMenu name="SeparatorDecoration2ContextMenu" id="79"/>
+			<ExtendedTooltip name="SeparatorDecoration2ExtendedTooltip" id="80"/>
+		</LabelDecoration>
+		<LabelDecoration name="AdditionalLink" id="116">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительная ссылка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Additional reference</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="AdditionalLinkContextMenu" id="117"/>
+			<ExtendedTooltip name="AdditionalLinkExtendedTooltip" id="118"/>
+			<Events>
+				<Event name="URLProcessing">AdditionalLinkURLProcessing</Event>
+			</Events>
+		</LabelDecoration>
+		<UsualGroup name="FooterGroup" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Footer</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="FooterGroupExtendedTooltip" id="61"/>
+			<ChildItems>
+				<UsualGroup name="Help" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется помощь?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Need help?</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>PopUp</Behavior>
+					<ExtendedTooltip name="HelpExtendedTooltip" id="63"/>
+					<ChildItems>
+						<LabelDecoration name="SupportInformation" id="67">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link %1&gt;типичных проблем при работе с приложениями электронной подписи и их решений&lt;/&gt;.
+
+В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link %2&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Facing issues? Learn how to &lt;link %1&gt;troubleshoot digital signing apps&lt;/&gt; (in Russian).
+
+If you didn't find a solution, contact the 1C support team and provide &lt;link %2&gt;technical information&lt;/&gt; about the issue.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="SupportInformationContextMenu" id="68"/>
+							<ExtendedTooltip name="SupportInformationExtendedTooltip" id="69"/>
+							<Events>
+								<Event name="URLProcessing">SupportInformationURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<UsualGroup name="GroupDownloadTechnicalInformation" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скачать техническую информацию</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Download technical information</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupDownloadTechnicalInformationExtendedTooltip" id="115"/>
+							<ChildItems>
+								<Button name="DownloadTechnicalInformation" id="104">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.DownloadTechnicalInformation</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Download</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скачать техническую информацию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Download technical information</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="DownloadTechnicalInformationExtendedTooltip" id="105"/>
+								</Button>
+								<UsualGroup name="GroupGeneratesTechnicalInformation" id="106">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формируется техническая информация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Gathering technical information</v8:content>
+										</v8:item>
+									</Title>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupGeneratesTechnicalInformationExtendedTooltip" id="107"/>
+									<ChildItems>
+										<PictureDecoration name="SceneryPictureTechnicalInformationIsBeingGenerated" id="108">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка формируется техническая информация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decoration picture Gathering technical information</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.TimeConsumingOperation16</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="SceneryPictureTechnicalInformationIsBeingGeneratedContextMenu" id="109"/>
+											<ExtendedTooltip name="SceneryPictureTechnicalInformationIsBeingGeneratedExtendedTooltip" id="110"/>
+										</PictureDecoration>
+										<LabelDecoration name="DecorationInscriptionTechnicalInformationIsBeingFormed" id="111">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Формируется техническая информация...</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Gathering technical information…</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DecorationInscriptionTechnicalInformationIsBeingFormedContextMenu" id="112"/>
+											<ExtendedTooltip name="DecorationInscriptionTechnicalInformationIsBeingFormedExtendedTooltip" id="113"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="CommandBar" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command bar</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="CommandBarExtendedTooltip" id="71"/>
+					<ChildItems>
+						<Button name="FormInstallExtension" id="72">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.InstallExtension</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить расширение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Install extension</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="FormInstallExtensionExtendedTooltip" id="73"/>
+						</Button>
+						<Button name="FormOpenApplicationsSettings" id="74">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.OpenApplicationsSettings</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перейти к настройке приложений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Configure apps</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="FormOpenApplicationsSettingsExtendedTooltip" id="75"/>
+						</Button>
+						<Button name="FormClose" id="76">
+							<Type>CommandBarButton</Type>
+							<Representation>Text</Representation>
+							<DefaultButton>true</DefaultButton>
+							<DefaultItem>true</DefaultItem>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрыть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Close</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="FormCloseExtendedTooltip" id="77"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ErrorTextClient" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки клиент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error text client</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorTextServer" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки сервер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error text server</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorAnchorClient" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorAnchorServer" id="4">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorDescription" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AdditionalData" id="6">
+			<Type/>
+		</Attribute>
+		<Attribute name="ErrorText" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error text</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorAnchor" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ReasonsText" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причины текст</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reasons text</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SignatureVerificationError" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ClassifierErrorSolutionTextSupplementOptions" id="11">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="OpenApplicationsSettings" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к настройке приложений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configure apps</v8:content>
+				</v8:item>
+			</Title>
+			<Action>OpenApplicationsSettings</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="InstallExtension" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install extension</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install extension</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>InstallExtension</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="DownloadTechnicalInformation" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать техническую информацию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download technical information</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачать техническую информацию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download technical information</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DownloadTechnicalInformation</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="WarningTitle">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ErrorTextClient">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ErrorTextServer">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ShowInstruction">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ShowOpenApplicationsSettings">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ShowExtensionInstallation">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ShowNeedHelp">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ErrorDescription">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="AdditionalData">
+			<Type/>
+		</Parameter>
+		<Parameter name="SupportInformation">
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ErrorText">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="TextOfAdditionalLink">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="AdditionalLinkHandler">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ParameterOfAdditionalLinkHandler">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

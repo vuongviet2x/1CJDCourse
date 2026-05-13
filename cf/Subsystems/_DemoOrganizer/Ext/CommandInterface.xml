@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandsOrder>
+		<Command name="CommonCommand._DemoReportPanelOrganizer">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ReportMailings.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoInteractions</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoUserNotes</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoUserReminders</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoReportsOptions</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoSendSMS</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoTextTranslation</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoEmailOperations</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer.Subsystem._DemoFilesOperations</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

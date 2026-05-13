@@ -1,0 +1,8 @@
+﻿<RecordRules>
+	<FormatVersion>2.01</FormatVersion>
+	<ID_SSLy>0a8faa86-df4f-11e8-80bf-4cedfb6826eb</ID_SSLy>
+	<Description>Demo: Distributed infobase</Description>
+	<CreationDateTime>2018-11-03T13:15:15</CreationDateTime>
+	<ExchangePlan Name="DemoDistributedInfobaseExchange">ExchangePlanRef.DemoDistributedInfobaseExchange</ExchangePlan>
+	<Configuration PlatformVersion="8.2" ConfigurationVersion="3.1.4.155" ConfigurationSynonym="Standard Subsystems Library (demo configuration), version 3.1">StandardSubsystemsLibraryDemo</Configuration>
+</RecordRules>

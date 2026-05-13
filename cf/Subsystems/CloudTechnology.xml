@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="8c5faa39-61de-4737-b0ae-5b97c00a6691">
+		<Properties>
+			<Name>CloudTechnology</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технология сервиса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cloud technology</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.CurrentSubscriptionColor</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.InfoCenterGreen</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.InfoCenterRed</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.InfoCenterUnderlined10</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.InfoCenterSemibold10</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.InfoCenterSemibold8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceFutureSubscriptionsColor</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceFutureAdditionalTariffBackground</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.AddedAttribute_SSLym</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ServicePaymentExpiringSubscriptionColor</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceLargeBold</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceLargePrint</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceBold</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceRecommendedSubscriptionsColor</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.PaymentForServiceCurrentSubscriptionsColor</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.AdministrationPanelCTL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.SetPriorityOfDataProcessingInSpecifiedTimeInterval</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.BeginningOfDataProcessingPriorityTimeInterval</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EndOfDataProcessingPriorityTimeInterval</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ProcessAutomation</Subsystem>
+			<Subsystem>AsyncDataReceipt</Subsystem>
+			<Subsystem>Core</Subsystem>
+			<Subsystem>ExternalAPI</Subsystem>
+			<Subsystem>ExportImportData</Subsystem>
+			<Subsystem>ExportImportDataAreas</Subsystem>
+			<Subsystem>DataAreasObjectsIntegration</Subsystem>
+			<Subsystem>IntegrationWithCollaborationSystem</Subsystem>
+			<Subsystem>InformationCenter</Subsystem>
+			<Subsystem>ApplicationsMigration</Subsystem>
+			<Subsystem>MessagesExchange</Subsystem>
+			<Subsystem>ServicePayment</Subsystem>
+			<Subsystem>UsersNotificationCTL</Subsystem>
+			<Subsystem>JobsQueue</Subsystem>
+			<Subsystem>JobsQueueExternalInterface</Subsystem>
+			<Subsystem>DataTransfer</Subsystem>
+			<Subsystem>ServiceUsers</Subsystem>
+			<Subsystem>SuppliedData</Subsystem>
+			<Subsystem>SuppliedSubscribersData</Subsystem>
+			<Subsystem>CheckingAndCorrectingData</Subsystem>
+			<Subsystem>ApplicationsSize</Subsystem>
+			<Subsystem>ExtensionsSaaS</Subsystem>
+			<Subsystem>DataAreasBackup</Subsystem>
+			<Subsystem>SummaryApplications</Subsystem>
+			<Subsystem>RemoteAdministration</Subsystem>
+			<Subsystem>UniversalIntegration</Subsystem>
+			<Subsystem>TariffsManagement</Subsystem>
+			<Subsystem>FileTemporaryStorage</Subsystem>
+			<Subsystem>DataAreasFiles</Subsystem>
+			<Subsystem>QualityControlCenter</Subsystem>
+			<Subsystem>DigitalSignatureSaaS</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

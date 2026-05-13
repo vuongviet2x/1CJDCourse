@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Включить обновление классификаторов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Enable classifier update</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>AlwaysHorizontal</Group>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="FormEnable" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Enable</CommandName>
+				<ExtendedTooltip name="FormEnableExtendedTooltip" id="8"/>
+			</Button>
+			<Button name="FormRemindLater" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.RemindLater</CommandName>
+				<ExtendedTooltip name="FormRemindLaterExtendedTooltip" id="10"/>
+			</Button>
+			<Button name="FormDontShowAgain" id="11">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.DontShowAgain</CommandName>
+				<ExtendedTooltip name="FormDontShowAgainExtendedTooltip" id="12"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<PictureDecoration name="PictureInformation" id="4">
+			<Width>5</Width>
+			<Height>2</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Decoration1</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.InternetSupportAttention</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="PictureInformationContextMenu" id="5"/>
+			<ExtendedTooltip name="PictureInformationExtendedTooltip" id="6"/>
+		</PictureDecoration>
+		<UsualGroup name="VerticalGroup_2" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="VerticalGroup_2ExtendedTooltip" id="14"/>
+			<ChildItems>
+				<LabelDecoration name="InformationLabel" id="1">
+					<Width>52</Width>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматическое обновление позволяет оперативно получать новые версии классификаторов, не дожидаясь ручного обновления или выпуска нового релиза.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Automatic updates allow you to quickly receive new classifier versions without the need to wait for manual updates or a new release.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="InformationLabelContextMenu" id="2"/>
+					<ExtendedTooltip name="InformationLabelExtendedTooltip" id="3"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="Enable" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Enable</Action>
+		</Command>
+		<Command name="RemindLater" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить позже</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remind me later</v8:content>
+				</v8:item>
+			</Title>
+			<Action>RemindLater</Action>
+		</Command>
+		<Command name="DontShowAgain" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Больше не показывать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Do not show again</v8:content>
+				</v8:item>
+			</Title>
+			<Action>DontShowAgain</Action>
+		</Command>
+	</Commands>
+</Form>

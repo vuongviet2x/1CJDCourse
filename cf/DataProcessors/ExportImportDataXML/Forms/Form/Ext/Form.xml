@@ -1,0 +1,1306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выгрузка и загрузка данных XML</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Export and import XML data</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoFillCheck>false</AutoFillCheck>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ChoiceProcessing</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">OnLoadDataFromSettingsAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupMode" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Mode</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupModeExtendedTooltip" id="2"/>
+			<Events>
+				<Event name="OnCurrentPageChange">GroupModeOnCurrentPageChange</Event>
+			</Events>
+			<ChildItems>
+				<Page name="XMLExportGroup" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Export</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="XMLExportGroupExtendedTooltip" id="4"/>
+					<ChildItems>
+						<UsualGroup name="GroupExportPeriod" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Export period</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupExportPeriodExtendedTooltip" id="35"/>
+							<ChildItems>
+								<InputField name="ExportPeriod" id="19">
+									<DataPath>ExportPeriod</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период выгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Export period</v8:content>
+										</v8:item>
+									</Title>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ExportPeriodContextMenu" id="20"/>
+									<ExtendedTooltip name="ExportPeriodExtendedTooltip" id="21"/>
+								</InputField>
+								<CheckBoxField name="UseFilterByDateForAllObjects" id="36">
+									<DataPath>Object.UseFilterByDateForAllObjects</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор по периоду для всех объектов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Filter by period for all objects</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="UseFilterByDateForAllObjectsContextMenu" id="37"/>
+									<ExtendedTooltip name="UseFilterByDateForAllObjectsExtendedTooltip" id="38"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="PeriodicRegistersExportType" id="22">
+							<DataPath>Object.PeriodicRegistersExportType</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор для периодических регистров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Filter for periodic registers</v8:content>
+								</v8:item>
+							</Title>
+							<Width>27</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отбор за период</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Filter by period</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Срез последних на дату окончания</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Slice of last items as of the end date</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Срез первых на дату начала</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Slice of first items as of the start date</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Срез последних на дату начала + изменения за период</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Slice of first items as of the start date + changes by period</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">3</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="PeriodicRegistersExportTypeContextMenu" id="23"/>
+							<ExtendedTooltip name="PeriodicRegistersExportTypeExtendedTooltip" id="24"/>
+						</InputField>
+						<CheckBoxField name="ExportDocumentWithItsRecords" id="25">
+							<DataPath>Object.ExportDocumentWithItsRecords</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вместе с документами выгружать их движения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Export document records together with documents</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ExportDocumentWithItsRecordsContextMenu" id="26"/>
+							<ExtendedTooltip name="ExportDocumentWithItsRecordsExtendedTooltip" id="27"/>
+						</CheckBoxField>
+						<Pages name="ExportObjectsGroup" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объекты выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Export objects</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="ExportObjectsGroupExtendedTooltip" id="29"/>
+							<ChildItems>
+								<Page name="ExportSettingsGroup" id="30">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки выгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Export settings</v8:content>
+										</v8:item>
+									</Title>
+									<Group>HorizontalIfPossible</Group>
+									<ExtendedTooltip name="ExportSettingsGroupExtendedTooltip" id="31"/>
+									<ChildItems>
+										<Table name="MetadataTree" id="39">
+											<Representation>Tree</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<InitialTreeView>ExpandAllLevels</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>Object.MetadataTree</DataPath>
+											<RowPictureDataPath>Object.MetadataTree.PictureIndex</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Abs>RowsPicture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</RowsPicture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево метаданных</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Metadata tree</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="MetadataTreeContextMenu" id="40"/>
+											<AutoCommandBar name="MetadataTreeCommandBar" id="41">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="MetadataTreeRecalculateDataToExportByRef" id="61">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.RecalculateDataToExportByRef</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Определить данные, выгружаемые по ссылке</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Determine data exported by reference</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="MetadataTreeRecalculateUploadedByLinkExtendedTooltip" id="62"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="MetadataTreeExtendedTooltip" id="42"/>
+											<SearchStringAddition name="MetadataTreeSearchString" id="139">
+												<AdditionSource>
+													<Item>MetadataTree</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="MetadataTreeSearchStringContextMenu" id="140"/>
+												<ExtendedTooltip name="MetadataTreeSearchStringExtendedTooltip" id="141"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="MetadataTreeViewStatus" id="142">
+												<AdditionSource>
+													<Item>MetadataTree</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="MetadataTreeViewStatusContextMenu" id="143"/>
+												<ExtendedTooltip name="MetadataTreeViewStatusExtendedTooltip" id="144"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="MetadataTreeSearchControl" id="145">
+												<AdditionSource>
+													<Item>MetadataTree</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="MetadataTreeSearchControlContextMenu" id="146"/>
+												<ExtendedTooltip name="MetadataTreeSearchControlExtendedTooltip" id="147"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<ColumnGroup name="ObjectsSelectionGroup" id="59">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Выбора объектов</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Select objects</v8:content>
+														</v8:item>
+													</Title>
+													<Group>InCell</Group>
+													<ExtendedTooltip name="ObjectsSelectionGroupExtendedTooltip" id="60"/>
+													<ChildItems>
+														<CheckBoxField name="MetadataTreeExport" id="53">
+															<DataPath>Object.MetadataTree.Export</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ShowInHeader>false</ShowInHeader>
+															<ThreeState>true</ThreeState>
+															<ContextMenu name="MetadataTreeExportContextMenu" id="54"/>
+															<ExtendedTooltip name="MetadataTreeExportExtendedTooltip" id="55"/>
+															<Events>
+																<Event name="OnChange">MetadataTreeExportOnChange</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="MetadataTreeFullMetadataName" id="50">
+															<DataPath>Object.MetadataTree.FullMetadataName</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<TextEdit>false</TextEdit>
+															<ContextMenu name="MetadataTreeFullMetadataNameContextMenu" id="51"/>
+															<ExtendedTooltip name="MetadataTreeFullMetadataNameExtendedTooltip" id="52"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+												<CheckBoxField name="MetadataTreeExportIfNecessary" id="56">
+													<DataPath>Object.MetadataTree.ExportIfNecessary</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="MetadataTreeExportIfNecessaryContextMenu" id="57"/>
+													<ExtendedTooltip name="MetadataTreeExportIfNecessaryExtendedTooltip" id="58"/>
+													<Events>
+														<Event name="OnChange">MetadataTreeExportIfNecessaryOnChange</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="AdditionalObjectsGroup" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные объекты для выгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Additional objects to export</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="AdditionalObjectsGroupExtendedTooltip" id="33"/>
+									<ChildItems>
+										<InputField name="ObjectsTypeToExport" id="84">
+											<DataPath>ObjectsTypeToExport</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Data</v8:content>
+												</v8:item>
+											</Title>
+											<ClearButton>true</ClearButton>
+											<ContextMenu name="ObjectsTypeToExportContextMenu" id="85"/>
+											<ExtendedTooltip name="ObjectsTypeToExportExtendedTooltip" id="86"/>
+										</InputField>
+										<Table name="AdditionalObjectsToExport" id="63">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>Object.AdditionalObjectsToExport</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительные объекты для выгрузки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Additional objects to export</v8:content>
+												</v8:item>
+											</Title>
+											<CommandSet>
+												<ExcludedCommand>Copy</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AdditionalObjectsToExportContextMenu" id="64"/>
+											<AutoCommandBar name="AdditionalObjectsToExportCommandBar" id="65">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="AdditionalObjectsToExportAdd" id="124">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.AdditionalObjectsToExport.StandardCommand.Add</CommandName>
+														<ExtendedTooltip name="AddAdditionalObjectsToUploadExtendedTooltip" id="125"/>
+													</Button>
+													<Button name="AdditionalObjectsToExportAddFromQuery" id="87">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<CommandName>Form.Command.AddFromQuery</CommandName>
+														<Picture>
+															<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Добавить запросом...</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Add using query…</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="AddAdditionalObjectsToUploadFromTheRequestExtendedTooltip" id="88"/>
+													</Button>
+													<Button name="AdditionalObjectsToExportQueryConsoleSettings" id="130">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.QueryConsoleSettings</CommandName>
+														<Picture>
+															<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Настройки консоли запросов</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Query console settings</v8:content>
+															</v8:item>
+														</Title>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="AdditionalObjectsForUploadingQueryConsoleSettingsExtendedTooltip" id="131"/>
+													</Button>
+													<ButtonGroup name="AdditionalObjectsToExportGroup1" id="126">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Дополнительные объекты для выгрузки группа 1</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Additional objects to export group 1</v8:content>
+															</v8:item>
+														</Title>
+														<CommandSource>Item.AdditionalObjectsToExport</CommandSource>
+														<ExtendedTooltip name="AdditionalObjectsToExportGroup1ExtendedTooltip" id="127"/>
+													</ButtonGroup>
+													<Button name="AdditionalObjectsToExportClearAdditionalObjectsToExport" id="73">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ClearAdditionalObjectsToExport</CommandName>
+														<Picture>
+															<xr:Ref>StdPicture.InputFieldClear</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Удалить все</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Remove all</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="AdditionalObjectsToUnloadClearAdditionalObjectsToUnloadExtendedTooltip" id="74"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AdditionalObjectsToExportExtendedTooltip" id="66"/>
+											<SearchStringAddition name="AdditionalObjectsToExportSearchString" id="148">
+												<AdditionSource>
+													<Item>AdditionalObjectsToExport</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AdditionalObjectsToUploadSearchStringContextMenu" id="149"/>
+												<ExtendedTooltip name="AdditionalObjectsToUploadSearchStringExtendedTooltip" id="150"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AdditionalObjectsToExportViewStatus" id="151">
+												<AdditionSource>
+													<Item>AdditionalObjectsToExport</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AdditionalObjectsToUploadViewStateContextMenu" id="152"/>
+												<ExtendedTooltip name="AdditionalObjectsToUploadViewStateExtendedTooltip" id="153"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AdditionalObjectsToExportSearchControl" id="154">
+												<AdditionSource>
+													<Item>AdditionalObjectsToExport</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AdditionalObjectsToUploadSearchManagementContextMenu" id="155"/>
+												<ExtendedTooltip name="AdditionalObjectsToUploadSearchManagementExtendedTooltip" id="156"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">AdditionalObjectsToExportBeforeAddRow</Event>
+												<Event name="OnChange">AdditionalObjectsToExportOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AdditionalObjectsToExportObject" id="70">
+													<DataPath>Object.AdditionalObjectsToExport.Object</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="AdditionalObjectsToExportObjectContextMenu" id="71"/>
+													<ExtendedTooltip name="AdditionalObjectsToExportObjectExtendedTooltip" id="72"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="GroupExportCommand" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Export command</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда выгрузка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Export command</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupExportCommandExtendedTooltip" id="117"/>
+							<ChildItems>
+								<Button name="ExportData" id="111">
+									<Type>UsualButton</Type>
+									<Height>1</Height>
+									<CommandName>Form.Command.ExportData</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выгрузить данные</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Export data</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ExportDataExtendedTooltip" id="112"/>
+								</Button>
+								<UsualGroup name="ExportClarificationGroup" id="122">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уточнение выгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Export refinement</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уточнение выгрузка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Export refinement</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ExportClarificationGroupExtendedTooltip" id="123"/>
+									<ChildItems>
+										<UsualGroup name="ExportLocationGroup" id="118">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выгрузки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export location</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место для выгрузки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export place</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ExportLocationGroupExtendedTooltip" id="119"/>
+											<ChildItems>
+												<RadioButtonField name="ExportAtClientOrAtServer" id="113">
+													<DataPath>OperatingModeAtClientOrAtServer</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Режим работы на клиенте или на сервере</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Operation mode on client or on server</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>На клиентский компьютер</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>To client computer</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>В файл на сервере:</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>To file on the server:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ExportAtClientOrAtServerContextMenu" id="114"/>
+													<ExtendedTooltip name="ExportAtClientOrAtServerExtendedTooltip" id="115"/>
+													<Events>
+														<Event name="OnChange">ExportAtClientOrAtServerOnChange</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="UploadFileName" id="7">
+													<DataPath>UploadFileName</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя файла выгрузки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Export file name</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<ChoiceButton>true</ChoiceButton>
+													<OpenButton>true</OpenButton>
+													<ContextMenu name="UploadFileNameContextMenu" id="8"/>
+													<ExtendedTooltip name="UploadFileNameExtendedTooltip" id="9"/>
+													<Events>
+														<Event name="OnChange">UploadFileNameOnChange</Event>
+														<Event name="StartChoice">UploadFileNameStartChoice</Event>
+														<Event name="Opening">UploadFileNameOpening</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="UseFastInfoSetFormat" id="16">
+											<DataPath>Object.UseFastInfoSetFormat</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В формате FastInfoSet</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>In FastInfoSet format</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="UseFastInfoSetFormatContextMenu" id="17"/>
+											<ExtendedTooltip name="UseFastInfoSetFormatExtendedTooltip" id="18"/>
+											<Events>
+												<Event name="OnChange">UseFastInfoSetFormatOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="GroupImport" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Import</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupImportExtendedTooltip" id="6"/>
+					<ChildItems>
+						<CheckBoxField name="UseDataExchangeModeOnImport" id="75">
+							<DataPath>Object.UseDataExchangeModeOnImport</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загружать данные в режиме обмена (ОбменДанными.Загрузка = Истина)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Import data in exchange mode (DataExchange.Import = True)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseDataExchangeModeOnImportContextMenu" id="76"/>
+							<ExtendedTooltip name="UseDataExchangeModeOnImportExtendedTooltip" id="77"/>
+						</CheckBoxField>
+						<CheckBoxField name="ContinueImportOnError" id="78">
+							<DataPath>Object.ContinueImportOnError</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продолжить загрузку объектов в случае возникновения ошибки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Continue importing on error</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ContinueImportOnErrorContextMenu" id="79"/>
+							<ExtendedTooltip name="ContinueImportOnErrorExtendedTooltip" id="80"/>
+						</CheckBoxField>
+						<UsualGroup name="ImportCommandGroup" id="132">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда загрузка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Import command</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда загрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Import command</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ImportCommandGroupExtendedTooltip" id="133"/>
+							<ChildItems>
+								<Button name="ImportData" id="109">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ImportData</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить данные</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Import data</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ImportDataExtendedTooltip" id="110"/>
+								</Button>
+								<RadioButtonField name="ImportAtClientOrAtServer" id="136">
+									<DataPath>OperatingModeAtClientOrAtServer</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим работы на клиенте или на сервере</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Operation mode on client or on server</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>С клиентского компьютера</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>From client computer</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Из файла на сервере:</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>From file on the server:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ImportAtClientOrAtServerContextMenu" id="137"/>
+									<ExtendedTooltip name="ImportAtClientOrAtServerExtendedTooltip" id="138"/>
+									<Events>
+										<Event name="OnChange">ImportAtClientOrAtServerOnChange</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="ImportFileName" id="10">
+									<DataPath>ImportFileName</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя файла загрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Import file name</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="ImportFileNameContextMenu" id="11"/>
+									<ExtendedTooltip name="ImportFileNameExtendedTooltip" id="12"/>
+									<Events>
+										<Event name="StartChoice">ImportFileNameStartChoice</Event>
+										<Event name="Opening">ImportFileNameOpening</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ExportImportDataXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Columns>
+				<AdditionalColumns table="Object.MetadataTree">
+					<Column name="FullMetadataName" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данные для выгрузки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Data to export</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Export" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгружать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Export</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ExportIfNecessary" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгружать при необходимости</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Export when needed</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="PictureIndex" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Индекс картинки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Picture index</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>2</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Expanded" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Развернут</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Expanded</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="UploadFileName" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла выгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export file name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>UploadFileName</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ExportPeriod" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период выгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export period</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<Save>
+				<Field>ExportPeriod</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ExportMode" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ExportMode</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ObjectsTypeToExport" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объектов для выгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type of objects to export</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:TypeDescription</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ImportFileName" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла загрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import file name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ImportFileName</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="QueryConsoleUsageOption" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>QueryConsoleUsageOption</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="PathToExternalQueryConsole" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>PathToExternalQueryConsole</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="OperatingModeAtClientOrAtServer" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы на клиенте или на сервере</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Operation mode on the client or on the server</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>OperatingModeAtClientOrAtServer</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="OperatingModeAtClient" id="5">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ExportData" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export data</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export data</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ExportData</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ImportData" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import data</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import data</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ImportData</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="RecalculateDataToExportByRef" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать выгружаемые по ссылке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Recalculate objects exported by reference</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать выгружаемые по ссылке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Recalculate objects exported by reference</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>RecalculateDataToExportByRef</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ClearAdditionalObjectsToExport" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить дополнительные объекты выгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear additional export objects</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить дополнительные объекты выгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear additional export objects</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ClearAdditionalObjectsToExport</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="AddFromQuery" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить из запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add from query</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить из запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add from query</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddFromQuery</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="QueryConsoleSettings" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки консоли запросов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Query console settings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки консоли запросов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Query console settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>QueryConsoleSettings</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

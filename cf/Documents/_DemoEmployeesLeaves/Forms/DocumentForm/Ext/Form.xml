@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Header" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="51"/>
+			<ChildItems>
+				<UsualGroup name="LeftHeader" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка левая</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Left header</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="LeftHeaderExtendedTooltip" id="53"/>
+					<ChildItems>
+						<InputField name="Organization" id="7">
+							<DataPath>Object.Organization</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="OrganizationContextMenu" id="8"/>
+							<ExtendedTooltip name="OrganizationExtendedTooltip" id="9"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="RightHeader" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка правая</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right header</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="RightHeaderExtendedTooltip" id="55"/>
+					<ChildItems>
+						<UsualGroup name="DateTime" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата время</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Date time</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DateTimeExtendedTooltip" id="79"/>
+							<ChildItems>
+								<InputField name="Date" id="4">
+									<DataPath>Object.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="DateContextMenu" id="5"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+								</InputField>
+								<InputField name="Number" id="1">
+									<DataPath>Object.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="NumberContextMenu" id="2"/>
+									<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="AllCommands" id="141">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все команды</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All commands</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="AllCommandsExtendedTooltip" id="142"/>
+			<ChildItems>
+				<CommandBar name="TeamsEmployees" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды сотрудники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Commands employees</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSource>Item.Employees_</CommandSource>
+					<ExtendedTooltip name="TeamsEmployeesExtendedTooltip" id="148"/>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Employees_" id="16">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<MultipleChoice>true</MultipleChoice>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.Employees_</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Employees</v8:content>
+				</v8:item>
+			</Title>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="Employees_ContextMenu" id="17"/>
+			<AutoCommandBar name="Employees_CommandBar" id="18"/>
+			<ExtendedTooltip name="Employees_ExtendedTooltip" id="19"/>
+			<SearchStringAddition name="Employees_SearchString" id="132">
+				<AdditionSource>
+					<Item>Employees_</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Employees_SearchStringContextMenu" id="133"/>
+				<ExtendedTooltip name="Employees_SearchStringExtendedTooltip" id="134"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Employees_ViewStatus" id="135">
+				<AdditionSource>
+					<Item>Employees_</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Employees_ViewStatusContextMenu" id="136"/>
+				<ExtendedTooltip name="Employees_ViewStatusExtendedTooltip" id="137"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="Employees_SearchControl" id="138">
+				<AdditionSource>
+					<Item>Employees_</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="Employees_SearchControlContextMenu" id="139"/>
+				<ExtendedTooltip name="Employees_SearchControlExtendedTooltip" id="140"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="EmployeesLineNumber" id="20">
+					<DataPath>Object.Employees_.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<Width>2</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="EmployeesLineNumberContextMenu" id="21"/>
+					<ExtendedTooltip name="EmployeesLineNumberExtendedTooltip" id="22"/>
+				</LabelField>
+				<InputField name="Employees_Employee" id="23">
+					<DataPath>Object.Employees_.Employee</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="Employees_EmployeeContextMenu" id="24"/>
+					<ExtendedTooltip name="Employees_EmployeeExtendedTooltip" id="25"/>
+					<Events>
+						<Event name="OnChange">Employees_EmployeeOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Employees_StartDate" id="32">
+					<DataPath>Object.Employees_.StartDate</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Start</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="EmployeesStartDateContextMenu" id="33"/>
+					<ExtendedTooltip name="EmployeesStartDateExtendedTooltip" id="34"/>
+					<Events>
+						<Event name="OnChange">EmployeesStartDateOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Employees_EndDate" id="35">
+					<DataPath>Object.Employees_.EndDate</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>End</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="EmployeesEndDateContextMenu" id="36"/>
+					<ExtendedTooltip name="EmployeesEndDateExtendedTooltip" id="37"/>
+					<Events>
+						<Event name="OnChange">EmployeesEndDateOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Employees_DaysCount" id="60">
+					<DataPath>Object.Employees_.DaysCount</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во
+дн.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Number of
+days</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="EmployeesNumberOfDaysContextMenu" id="61"/>
+					<ExtendedTooltip name="EmployeesNumberOfDaysExtendedTooltip" id="62"/>
+				</InputField>
+				<CheckBoxField name="Employees_ProvideOneTimeLeavePayment" id="152">
+					<DataPath>Object.Employees_.ProvideOneTimeLeavePayment</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единовременная выплата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>One-time payment</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="EmployeesProvideAOneTimePaymentForVacationContextMenu" id="153"/>
+					<ExtendedTooltip name="EmployeesProvideAOneTimePaymentForVacationExtendedTooltip" id="154"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="GroupCommentResponsible" id="121">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий ответственный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment responsible person</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftWide</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupCommentResponsibleExtendedTooltip" id="122"/>
+			<ChildItems>
+				<InputField name="Manager" id="155">
+					<DataPath>Object.Manager</DataPath>
+					<ContextMenu name="ManagerContextMenu" id="156"/>
+					<ExtendedTooltip name="ManagerExtendedTooltip" id="157"/>
+				</InputField>
+				<InputField name="Comment" id="13">
+					<DataPath>Object.Comment</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<Height>1</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="CommentContextMenu" id="14"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="15"/>
+				</InputField>
+				<InputField name="EmployeeResponsible" id="10">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="11"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._DemoEmployeesLeaves</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.Employees_"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="16">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.ChangeHistory</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.TasksBySubject</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.AttachedFiles</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

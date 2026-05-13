@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">CommandBar</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
+	<CollapseItemsByImportanceVariant>Use</CollapseItemsByImportanceVariant>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">BeforeLoadDataFromSettingsAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="HeaderGroup" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Filters</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderGroupExtendedTooltip" id="95"/>
+			<ChildItems>
+				<UsualGroup name="Filter" id="63" DisplayImportance="VeryLow">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Filter</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="FilterExtendedTooltip" id="64"/>
+					<ChildItems>
+						<InputField name="FilterByCompany" id="70" DisplayImportance="VeryLow">
+							<DataPath>Organization</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Company</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ClearButton>true</ClearButton>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="FilterByCompanyContextMenu" id="71"/>
+							<ExtendedTooltip name="FilterByCompanyExtendedTooltip" id="72"/>
+							<Events>
+								<Event name="OnChange">FilterByCompanyOnChange</Event>
+								<Event name="Clearing">FilterByCompanyClearing</Event>
+							</Events>
+						</InputField>
+						<InputField name="FilterByOrderStatus" id="65" DisplayImportance="VeryLow">
+							<DataPath>OrderStatus</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус заказа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Order status</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="FilterByOrderStatusContextMenu" id="66"/>
+							<ExtendedTooltip name="FilterByOrderStatusExtendedTooltip" id="67"/>
+							<Events>
+								<Event name="OnChange">FilterByOrderStatusOnChange</Event>
+								<Event name="Clearing">FilterByOrderStatusClearing</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="CustomSettingsFolder" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользовательских настроек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>User settings group</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="CustomSettingsFolderExtendedTooltip" id="74"/>
+				</UsualGroup>
+				<CommandBar name="CommandBar" id="75" DisplayImportance="Usual">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command bar</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="CommandBarExtendedTooltip" id="76"/>
+					<ChildItems>
+						<Button name="FormChangeSelectedItems" id="56">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ChangeSelectedItems</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменить выделенные...</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Edit selected…</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="FormChangeSelectedItemsExtendedTooltip" id="57"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="List" id="1" DisplayImportance="VeryHigh">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<Height>10</Height>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>List</DataPath>
+			<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List</v8:content>
+				</v8:item>
+			</Title>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>CustomSettingsFolder</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ListContextMenu" id="2"/>
+			<AutoCommandBar name="ListCommandBar" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ListExtendedTooltip" id="38"/>
+			<SearchStringAddition name="ListSearchString" id="85">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchStringContextMenu" id="86"/>
+				<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="87"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ListViewStatus" id="88">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListViewStatusContextMenu" id="89"/>
+				<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="90"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ListSearchControl" id="91">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchControlContextMenu" id="92"/>
+				<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="93"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="DragCheck">ListDragCheck</Event>
+				<Event name="OnActivateRow">ListOnActivateRow</Event>
+				<Event name="Drag">ListDrag</Event>
+				<Event name="OnGetDataAtServer">ListOnGetDataAtServer</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="HasFiles" id="96">
+					<DataPath>List.HasFiles</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прикрепленные файлы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Attachments</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Clip</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<Width>2</Width>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ClipCollection</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="HasFilesContextMenu" id="97"/>
+					<ExtendedTooltip name="HasFilesExtendedTooltip" id="98"/>
+				</PictureField>
+				<ColumnGroup name="DateNumber" id="79" DisplayImportance="VeryHigh">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата номер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date number</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="DateNumberExtendedTooltip" id="80"/>
+					<ChildItems>
+						<LabelField name="Date" id="4">
+							<DataPath>List.Date</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<Width>9</Width>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="39"/>
+						</LabelField>
+						<LabelField name="Number" id="6">
+							<DataPath>List.Number</DataPath>
+							<Width>12</Width>
+							<ContextMenu name="NumberContextMenu" id="7"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="40"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="CompanyCounterparty" id="81" DisplayImportance="VeryHigh">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация контрагент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Company counterparty</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="CompanyCounterpartyExtendedTooltip" id="82"/>
+					<ChildItems>
+						<LabelField name="Organization" id="18">
+							<DataPath>List.Organization</DataPath>
+							<Width>23</Width>
+							<ContextMenu name="OrganizationContextMenu" id="19"/>
+							<ExtendedTooltip name="OrganizationExtendedTooltip" id="45"/>
+						</LabelField>
+						<LabelField name="Partner" id="16">
+							<DataPath>List.Partner</DataPath>
+							<ContextMenu name="PartnerContextMenu" id="17"/>
+							<ExtendedTooltip name="PartnerExtendedTooltip" id="44"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="AmountStatusComment" id="83">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма статус комментарий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount status comment</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AmountStatusCommentExtendedTooltip" id="84"/>
+					<ChildItems>
+						<ColumnGroup name="Sum" id="77" DisplayImportance="Usual">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Amount</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="SumExtendedTooltip" id="78"/>
+							<ChildItems>
+								<LabelField name="DocumentAmount" id="22">
+									<DataPath>List.DocumentAmount</DataPath>
+									<Width>13</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="DocumentAmountContextMenu" id="23"/>
+									<ExtendedTooltip name="DocumentAmountExtendedTooltip" id="47"/>
+								</LabelField>
+								<LabelField name="Currency" id="8">
+									<DataPath>List.Currency</DataPath>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="CurrencyContextMenu" id="9"/>
+									<ExtendedTooltip name="CurrencyExtendedTooltip" id="41"/>
+								</LabelField>
+								<LabelField name="OrderStatus" id="12">
+									<DataPath>List.OrderStatus</DataPath>
+									<ContextMenu name="OrderStatusContextMenu" id="13"/>
+									<ExtendedTooltip name="OrderStatusExtendedTooltip" id="48"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="Comment" id="14" DisplayImportance="VeryLow">
+							<DataPath>List.Comment</DataPath>
+							<AutoCellHeight>true</AutoCellHeight>
+							<ContextMenu name="CommentContextMenu" id="15"/>
+							<ExtendedTooltip name="CommentExtendedTooltip" id="43"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Contract" id="10" DisplayImportance="VeryLow">
+					<DataPath>List.Contract</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ContractContextMenu" id="11"/>
+					<ExtendedTooltip name="ContractExtendedTooltip" id="42"/>
+				</LabelField>
+				<LabelField name="Counterparty" id="20" DisplayImportance="VeryLow">
+					<DataPath>List.Counterparty</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="CounterpartyContextMenu" id="21"/>
+					<ExtendedTooltip name="CounterpartyExtendedTooltip" id="46"/>
+				</LabelField>
+				<LabelField name="DeliveryAddress" id="24" DisplayImportance="VeryLow">
+					<DataPath>List.DeliveryAddress</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес доставки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Delivery address</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="DeliveryAddressContextMenu" id="25"/>
+					<ExtendedTooltip name="DeliveryAddressExtendedTooltip" id="49"/>
+				</LabelField>
+				<LabelField name="DeliveryCountry" id="32" DisplayImportance="VeryLow">
+					<DataPath>List.DeliveryCountry</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="DeliveryCountryContextMenu" id="33"/>
+					<ExtendedTooltip name="DeliveryCountryExtendedTooltip" id="50"/>
+				</LabelField>
+				<LabelField name="DeliveryState" id="34" DisplayImportance="VeryLow">
+					<DataPath>List.DeliveryState</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="DeliveryStateContextMenu" id="35"/>
+					<ExtendedTooltip name="DeliveryStateExtendedTooltip" id="51"/>
+				</LabelField>
+				<LabelField name="DestinationCity" id="26" DisplayImportance="VeryLow">
+					<DataPath>List.DestinationCity</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="DestinationCityContextMenu" id="27"/>
+					<ExtendedTooltip name="DestinationCityExtendedTooltip" id="52"/>
+				</LabelField>
+				<LabelField name="DeliveryDate" id="28" DisplayImportance="VeryLow">
+					<DataPath>List.DeliveryDate</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="DeliveryDateContextMenu" id="29"/>
+					<ExtendedTooltip name="DeliveryDateExtendedTooltip" id="53"/>
+				</LabelField>
+				<LabelField name="Email" id="36" DisplayImportance="VeryLow">
+					<DataPath>List.Email</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Электронная почта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Email</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="EmailContextMenu" id="37"/>
+					<ExtendedTooltip name="EmailExtendedTooltip" id="54"/>
+				</LabelField>
+				<LabelField name="ServerDomainName" id="30" DisplayImportance="VeryLow">
+					<DataPath>List.ServerDomainName</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ServerDomainNameContextMenu" id="31"/>
+					<ExtendedTooltip name="ServerDomainNameExtendedTooltip" id="55"/>
+				</LabelField>
+				<LabelField name="Ref" id="58" DisplayImportance="VeryLow">
+					<DataPath>List.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Width>1</Width>
+					<ContextMenu name="RefContextMenu" id="59"/>
+					<ExtendedTooltip name="RefExtendedTooltip" id="60"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>List.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	Document_DemoSalesOrder.Ref AS Ref,
+	Document_DemoSalesOrder.DeletionMark AS DeletionMark,
+	Document_DemoSalesOrder.Number AS Number,
+	Document_DemoSalesOrder.Date AS Date,
+	Document_DemoSalesOrder.Posted AS Posted,
+	Document_DemoSalesOrder.Organization,
+	Document_DemoSalesOrder.Partner,
+	Document_DemoSalesOrder.Counterparty,
+	Document_DemoSalesOrder.Contract,
+	Document_DemoSalesOrder.Currency,
+	Document_DemoSalesOrder.OrderStatus,
+	Document_DemoSalesOrder.DocumentAmount,
+	Document_DemoSalesOrder.DeliveryAddressString AS DeliveryAddress,
+	Document_DemoSalesOrder.DeliveryCountry,
+	Document_DemoSalesOrder.DeliveryState,
+	Document_DemoSalesOrder.DestinationCity,
+	Document_DemoSalesOrder.EmailString AS Email,
+	Document_DemoSalesOrder.DeliveryDate,
+	Document_DemoSalesOrder.ServerDomainName,
+	Document_DemoSalesOrder.DeleteOrderClosed,
+	Document_DemoSalesOrder.Comment,
+	Document_DemoSalesOrder.EmployeeResponsible,
+	Document_DemoSalesOrder.ProformaInvoices,
+	Document_DemoSalesOrder.PartnersAndContactPersons,
+	Document_DemoSalesOrder.ContactInformation,
+	Document_DemoSalesOrder.PointInTime AS PointInTime,
+	CASE
+		WHEN FilesExist.HasFiles IS NULL THEN
+			0
+		WHEN FilesExist.HasFiles THEN
+			1
+		ELSE
+			0
+	END AS HasFiles
+FROM
+	Document._DemoSalesOrder AS Document_DemoSalesOrder
+	LEFT JOIN InformationRegister.FilesExist AS FilesExist
+		ON Document_DemoSalesOrder.Ref = FilesExist.ObjectWithFiles
+</QueryText>
+				<MainTable>Document._DemoSalesOrder</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="EmptyRef" id="2">
+			<Type>
+				<v8:Type>cfg:EnumRef._DemoCustomerOrderStatuses</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="OrderStatus" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус заказа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Order status</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef._DemoCustomerOrderStatuses</v8:Type>
+			</Type>
+			<Save>
+				<Field>OrderStatus</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Organization" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Company</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef._DemoCompanies</v8:Type>
+			</Type>
+			<Save>
+				<Field>Organization</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption._DemoUseMultipleCompanies</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="QuickFilter" id="5">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ChangeSelectedItems" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit selected…</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit the selected items.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ChangeSelectedItems</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

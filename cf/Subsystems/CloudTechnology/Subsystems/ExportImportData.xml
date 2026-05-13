@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="4bd401b9-7e40-4847-85df-ab45fba08d40">
+		<Properties>
+			<Name>ExportImportData</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка загрузка данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data export and import</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportValueStoragesData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataInternal</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataContainerManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataInternalEvents</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataArtefacts_ValueStorages_1_0_0_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportSequencesBoundaryData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportCommonSeparatedData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportSharedData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportPredefinedData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportInfobaseUsers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataOverridable</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataInfobaseDataReadingStream</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataInfobaseDataWritingStream</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataReferenceReplacementStream</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataReferenceMapDictionariesDependencyGraph</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportValueStoragesDataCached</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportSharedDataCached</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportPredefinedDataCached</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportCommonSeparatedDataCached</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataInfobaseDataExportManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataRegeneratedReferencesWritingStream</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataMappedReferencesWritingStream</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataInfobaseDataImportManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataReferenceRegenerationManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataReferenceMappingManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportSharedPredefinedData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataDataExportHandlersManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataDataImportHandlersManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataTotalsManagement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataUserSettingsExportManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ExportImportDataUserSettingsImportManager</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportUserFavorites</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataArtefacts_UserWorkFavorites_1_0_0_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportExchangePlansNodes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ZipArchives</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ConfigurationSchema</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.WizardOfTransitionToCloud</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataClientServer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.InformationAboutImportProcedure</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ParametersForLaunchingInteractiveImportProcedure</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.AnalyzeConfigurationSchemas</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ExportImportDataOfAdditionalReportsAndDataProcessors</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ExportImportDataAreasStates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ExportImportMetadataObjects</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ApplicationMaximumSizeForExportWithoutFilesExtension</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

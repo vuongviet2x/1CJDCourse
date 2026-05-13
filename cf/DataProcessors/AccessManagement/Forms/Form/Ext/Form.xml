@@ -1,0 +1,2758 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">OnLoadDataFromSettingsAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Tools" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Tools</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ToolsExtendedTooltip" id="29"/>
+			<ChildItems>
+				<Page name="AccessRestrictionDevelopment" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разработка ограничения доступа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Access restriction development</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AccessRestrictionDevelopmentExtendedTooltip" id="75"/>
+					<ChildItems>
+						<UsualGroup name="GroupList" id="262">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>List</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupListExtendedTooltip" id="263"/>
+							<ChildItems>
+								<InputField name="List" id="76">
+									<DataPath>List</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>List</v8:content>
+										</v8:item>
+									</Title>
+									<Width>60</Width>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<EditTextUpdate>DontUse</EditTextUpdate>
+									<AutoCorrectionOnTextInput>DontUse</AutoCorrectionOnTextInput>
+									<ContextMenu name="ListContextMenu" id="77"/>
+									<ExtendedTooltip name="ListExtendedTooltip" id="78">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Полное имя основной таблицы объекта метаданных
+(совпадает с полным именем объекта метаданных).</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>A full name of the main metadata object table 
+(it matches the full metadata object name).</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">ListOnChange</Event>
+										<Event name="EditTextChange">ListEditTextChange</Event>
+										<Event name="StartChoice">ListStartChoice</Event>
+										<Event name="Opening">ListOpening</Event>
+									</Events>
+								</InputField>
+								<Button name="UpdateAccess" id="260">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.UpdateAccess</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить доступ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Update access</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="UpdateAccessExtendedTooltip" id="261"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="NoteList" id="109">
+							<DataPath>NoteList</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>List</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>style:FormBackColor</TitleTextColor>
+							<VerticalAlign>Top</VerticalAlign>
+							<Width>60</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:NoteText</TextColor>
+							<ContextMenu name="NoteListContextMenu" id="110"/>
+							<ExtendedTooltip name="NoteListExtendedTooltip" id="111"/>
+						</LabelField>
+						<CommandBar name="CommandRestrictionsDevelopment" id="141">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разработка ограничений команды</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command restrictions development</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CommandRestrictionsDevelopmentExtendedTooltip" id="142"/>
+						</CommandBar>
+						<Pages name="AccessRestriction" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ограничение доступа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Access restriction</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="AccessRestrictionExtendedTooltip" id="80"/>
+							<ChildItems>
+								<Page name="ForUsers" id="81">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для пользователей</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>For users</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ForUsersExtendedTooltip" id="82"/>
+									<ChildItems>
+										<UsualGroup name="RestrictionTextHeaderAndCommands" id="145">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текст ограничения заголовок и команды</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction text title and commands</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="RestrictionTextHeaderAndCommandsExtendedTooltip" id="146"/>
+											<ChildItems>
+												<LabelDecoration name="RestrictionTextHeader" id="147">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ограничение в модуле:</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Restriction in module:</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Bottom</VerticalAlign>
+													<ContextMenu name="RestrictionTextHeaderContextMenu" id="148"/>
+													<ExtendedTooltip name="RestrictionTextHeaderExtendedTooltip" id="149"/>
+												</LabelDecoration>
+												<Button name="CheckRestrictionText" id="122">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.CheckRestriction</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверить</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Verify</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="CheckRestrictionTextExtendedTooltip" id="123"/>
+												</Button>
+												<Button name="ShowTextToInsert" id="143">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ShowTextToInsert</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текст для вставки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Text to insert</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ShowTextToInsertExtendedTooltip" id="144"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="RestrictionText" id="85">
+											<DataPath>UserKindsProperties[0].RestrictionText</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ограничение в модуле</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction in module</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>50</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>7</Height>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<EditTextUpdate>OnValueChange</EditTextUpdate>
+											<ContextMenu name="RestrictionTextContextMenu" id="86"/>
+											<ExtendedTooltip name="RestrictionTextExtendedTooltip" id="87"/>
+											<Events>
+												<Event name="EditTextChange">RestrictionTextEditTextChange</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="RestrictionInRole" id="94">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ограничение в роли</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction in role</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="RestrictionInRoleExtendedTooltip" id="95"/>
+											<ChildItems>
+												<Pages name="RestrictionInRoleHeaders" id="112">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ограничение в роли заголовки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Restriction in role titles</v8:content>
+														</v8:item>
+													</Title>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="RestrictionInRoleHeadersExtendedTooltip" id="113"/>
+													<ChildItems>
+														<Page name="RestrictionInRoleHeaderWithoutCalculation" id="102">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ограничение в роли заголовок без расчета</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Restriction in role title without calculation</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<ExtendedTooltip name="RestrictionInRoleHeaderWithoutCalculationExtendedTooltip" id="103"/>
+															<ChildItems>
+																<LabelDecoration name="RestrictionInRoleHeaderWithoutCalculationLabel" id="116">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение в роли (для прав Чтение, Добавление, Изменение):</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Restriction in role (for Read, Insert, and Update rights):</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Bottom</VerticalAlign>
+																	<ContextMenu name="RestrictionInRoleHeaderWithoutCalculationLabelContextMenu" id="117"/>
+																	<ExtendedTooltip name="RestrictionInRoleHeaderWithoutCalculationLabelExtendedTooltip" id="118"/>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+														<Page name="RestrictionInRoleHeaderWithCalculation" id="114">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ограничение в роли заголовок с расчетом</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Restriction in role title with calculation</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<ExtendedTooltip name="RestrictionInRoleHeaderWithCalculationExtendedTooltip" id="115"/>
+															<ChildItems>
+																<UsualGroup name="RestrictionInRoleHeaderWithCalculationHeaderWithButton" id="282">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение в роли заголовок с расчетом заголовок с кнопкой</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Restriction in role title with calculation title with button</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>AlwaysHorizontal</Group>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="RestrictionInRoleHeaderWithCalculationHeaderWithButtonExtendedTooltip" id="283"/>
+																</UsualGroup>
+																<LabelDecoration name="RestrictionInRoleHeaderWithCalculationLabel" id="96">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение в роли (для прав Чтение, Добавление, Изменение) с учетом зависимостей:</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Restriction in role (for Read, Insert, and Update rights) considering dependencies:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Bottom</VerticalAlign>
+																	<ContextMenu name="RestrictionInRoleHeaderWithCalculationLabelContextMenu" id="97"/>
+																	<ExtendedTooltip name="RestrictionInRoleHeaderWithCalculationLabelExtendedTooltip" id="98"/>
+																</LabelDecoration>
+																<Button name="CalculateRestrictionInRole" id="104">
+																	<Type>Hyperlink</Type>
+																	<CommandName>Form.Command.CalculateRestrictionInRole</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Рассчитать</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Calculate</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="CalculateRestrictionInRoleExtendedTooltip" id="105"/>
+																</Button>
+																<Pages name="RestrictionByOwner" id="264">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение по владельцу</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Owner restriction</v8:content>
+																		</v8:item>
+																	</Title>
+																	<PagesRepresentation>None</PagesRepresentation>
+																	<ExtendedTooltip name="RestrictionByOwnerExtendedTooltip" id="265"/>
+																	<ChildItems>
+																		<Page name="RestrictionByOwnerNotCalculated" id="290">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу не рассчитано</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction not calculated</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerNotCalculatedExtendedTooltip" id="291"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerNotCalculatedIndent" id="292">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу не рассчитано отступ</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction not calculated indent</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerNotCalculatedIndentContextMenu" id="293"/>
+																					<ExtendedTooltip name="RestrictionByOwnerNotCalculatedIndentExtendedTooltip" id="294"/>
+																				</PictureDecoration>
+																			</ChildItems>
+																		</Page>
+																		<Page name="RestrictionByOwnerWithOptimization" id="266">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу с оптимизацией</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction with optimization</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>AlwaysHorizontal</Group>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerWithOptimizationExtendedTooltip" id="267"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerWithOptimizationIndent" id="279">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу с оптимизацией отступ</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction with optimization indent</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationIndentContextMenu" id="280"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationIndentExtendedTooltip" id="281"/>
+																				</PictureDecoration>
+																				<PictureDecoration name="RestrictionByOwnerWithOptimizationPicture" id="276">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу с оптимизацией картинка</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction with optimization picture</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Picture>
+																						<xr:Ref>StdPicture.Information</xr:Ref>
+																						<xr:LoadTransparent>true</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationPictureContextMenu" id="277"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationPictureExtendedTooltip" id="278"/>
+																				</PictureDecoration>
+																				<LabelDecoration name="RestrictionByOwnerWithOptimizationLabel" id="270">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>С оптимизацией</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>With optimization</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTipRepresentation>Button</ToolTipRepresentation>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationLabelContextMenu" id="271"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationLabelExtendedTooltip" id="272"/>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
+																		<Page name="RestrictionByOwnerWithoutOptimization" id="268">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу без оптимизации</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction without optimization</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>AlwaysHorizontal</Group>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationExtendedTooltip" id="269"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerWithoutOptimizationIndent" id="284">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу без оптимизации отступ</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction without optimization indent</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationIndentContextMenu" id="285"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationIndentExtendedTooltip" id="286"/>
+																				</PictureDecoration>
+																				<PictureDecoration name="RestrictionByOwnerWithoutOptimizationPicture" id="287">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу без оптимизации картинка</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction without optimization picture</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Picture>
+																						<xr:Ref>StdPicture.Information</xr:Ref>
+																						<xr:LoadTransparent>true</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationPictureContextMenu" id="288"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationPictureExtendedTooltip" id="289"/>
+																				</PictureDecoration>
+																				<LabelDecoration name="RestrictionByOwnerWithoutOptimizationLabel" id="273">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Без оптимизации</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>No optimization</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTipRepresentation>Button</ToolTipRepresentation>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationLabelContextMenu" id="274"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationLabelExtendedTooltip" id="275"/>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
+																	</ChildItems>
+																</Pages>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+												<InputField name="RestrictionTextInRole" id="91">
+													<DataPath>UserKindsProperties[0].RestrictionTextInRole</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>2</Height>
+													<MultiLine>true</MultiLine>
+													<ExtendedEdit>true</ExtendedEdit>
+													<ContextMenu name="RestrictionTextInRoleContextMenu" id="92"/>
+													<ExtendedTooltip name="RestrictionTextInRoleExtendedTooltip" id="93"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="ForUsersErrors" id="126">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(ошибки)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>(errors)</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ForUsersErrorsExtendedTooltip" id="127"/>
+									<ChildItems>
+										<InputField name="RestrictionErrorsText" id="128">
+											<DataPath>UserKindsProperties[0].RestrictionErrorsText</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<ContextMenu name="RestrictionErrorsTextContextMenu" id="129"/>
+											<ExtendedTooltip name="RestrictionErrorsTextExtendedTooltip" id="130"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ForExternalUsers" id="150">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для внешних пользователей</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>For external users</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ForExternalUsersExtendedTooltip" id="151"/>
+									<ChildItems>
+										<UsualGroup name="RestrictionTextHeaderAndCommandsForExternalUsers" id="152">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текст ограничения заголовок и команды для внешних пользователей</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction text title and commands for external users</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="RestrictionTextHeaderAndCommandsForExternalUsersExtendedTooltip" id="153"/>
+											<ChildItems>
+												<LabelDecoration name="RestrictionTextHeaderForExternalUsers" id="154">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ограничение в модуле:</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Restriction in module:</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Bottom</VerticalAlign>
+													<ContextMenu name="RestrictionTextHeaderForExternalUsersContextMenu" id="155"/>
+													<ExtendedTooltip name="RestrictionTextHeaderForExternalUsersExtendedTooltip" id="156"/>
+												</LabelDecoration>
+												<Button name="CheckRestrictionTextForExternalUsers" id="157">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.CheckRestriction</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверить</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Verify</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="CheckRestrictionTextForExternalUsersExtendedTooltip" id="158"/>
+												</Button>
+												<Button name="ShowTextToInsertForExternalUsers" id="159">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ShowTextToInsert</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текст для вставки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Text to insert</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ShowTextToInsertForExternalUsersExtendedTooltip" id="160"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="RestrictionTextForExternalUsers" id="161">
+											<DataPath>UserKindsProperties[1].RestrictionText</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ограничение в модуле</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction in module</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>50</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>7</Height>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<EditTextUpdate>OnValueChange</EditTextUpdate>
+											<ContextMenu name="RestrictionTextForExternalUsersContextMenu" id="162"/>
+											<ExtendedTooltip name="RestrictionTextForExternalUsersExtendedTooltip" id="163"/>
+											<Events>
+												<Event name="EditTextChange">RestrictionTextForExternalUsersEditTextChange</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="RestrictionInRoleForExternalUsers" id="164">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ограничение в роли для внешних пользователей</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Restriction in role for external users</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="RestrictionInRoleForExternalUsersExtendedTooltip" id="165"/>
+											<ChildItems>
+												<Pages name="RestrictionInRoleHeadersForExternalUsers" id="166">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ограничение в роли заголовки для внешних пользователей</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Restriction in role titles for external users</v8:content>
+														</v8:item>
+													</Title>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="RestrictionInRoleHeadersForExternalUsersExtendedTooltip" id="167"/>
+													<ChildItems>
+														<Page name="RestrictionInRoleHeaderWithoutCalculationForExternalUsers" id="168">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ограничение в роли заголовок без расчета для внешних пользователей</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Restriction in role title without calculation external users</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<ExtendedTooltip name="RestrictionInRoleHeaderWithoutCalculationForExternalUsersExtendedTooltip" id="169"/>
+															<ChildItems>
+																<LabelDecoration name="RestrictionInRoleHeaderWithoutCalculationLabelForExternalUsers" id="170">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение в роли (для прав Чтение, Добавление, Изменение):</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Restriction in role (for Read, Insert, and Update rights):</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Bottom</VerticalAlign>
+																	<ContextMenu name="RestrictionInRoleHeaderWithoutCalculationLabelForExternalUsersContextMenu" id="171"/>
+																	<ExtendedTooltip name="RestrictionInRoleHeaderWithoutCalculationLabelForExternalUsersExtendedTooltip" id="172"/>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+														<Page name="RestrictionInRoleHeaderWithCalculationForExternalUsers" id="173">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ограничение в роли заголовок с расчетом для внешних пользователей</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Restriction in role title without calculation external users</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<ExtendedTooltip name="RestrictionInRoleHeaderWithCalculationForExternalUsersExtendedTooltip" id="174"/>
+															<ChildItems>
+																<LabelDecoration name="RestrictionInRoleHeaderWithCalculationLabelForExternalUsers" id="175">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение в роли (для прав Чтение, Добавление, Изменение) с учетом зависимостей:</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Restriction in role (for Read, Insert, and Update rights) considering dependencies:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Bottom</VerticalAlign>
+																	<ContextMenu name="RestrictionInRoleHeaderWithCalculationLabelForExternalUsersContextMenu" id="176"/>
+																	<ExtendedTooltip name="RestrictionInRoleHeaderWithCalculationLabelForExternalUsersExtendedTooltip" id="177"/>
+																</LabelDecoration>
+																<Button name="CalculateRestrictionInRoleForExternalUsers" id="178">
+																	<Type>Hyperlink</Type>
+																	<CommandName>Form.Command.CalculateRestrictionInRole</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Рассчитать</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Calculate</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="CalculateRestrictionInRoleForExternalUsersExtendedTooltip" id="179"/>
+																</Button>
+																<Pages name="RestrictionByOwnerForExternalUsers" id="295">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Ограничение по владельцу для внешних пользователей</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Owner restriction for external users</v8:content>
+																		</v8:item>
+																	</Title>
+																	<PagesRepresentation>None</PagesRepresentation>
+																	<ExtendedTooltip name="RestrictionByOwnerForExternalUsersExtendedTooltip" id="296"/>
+																	<ChildItems>
+																		<Page name="RestrictionByOwnerNotCalculatedForExternalUsers" id="297">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу не рассчитано для внешних пользователей</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction not calculated for external users</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerNotCalculatedForExternalUsersExtendedTooltip" id="298"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerNotCalculatedIndentForExternalUsers" id="299">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу не рассчитано отступ для внешних пользователей</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction not calculated indent for external users</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerNotCalculatedIndentForExternalUsersContextMenu" id="300"/>
+																					<ExtendedTooltip name="RestrictionByOwnerNotCalculatedIndentForExternalUsersExtendedTooltip" id="301"/>
+																				</PictureDecoration>
+																			</ChildItems>
+																		</Page>
+																		<Page name="RestrictionByOwnerWithOptimizationForExternalUsers" id="302">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу с оптимизацией для внешних пользователей</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction with optimization for external users</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>AlwaysHorizontal</Group>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerWithOptimizationForExternalUsersExtendedTooltip" id="303"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerWithOptimizationIndentForExternalUsers" id="304">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу с оптимизацией отступ для внешних пользователей</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction with optimization indent for external users</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationIndentForExternalUsersContextMenu" id="305"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationIndentForExternalUsersExtendedTooltip" id="306"/>
+																				</PictureDecoration>
+																				<PictureDecoration name="RestrictionByOwnerWithOptimizationPictureForExternalUsers" id="307">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу с оптимизацией картинка для внешних пользователей</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction with optimization picture for external users</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Picture>
+																						<xr:Ref>StdPicture.Information</xr:Ref>
+																						<xr:LoadTransparent>true</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationPictureForExternalUsersContextMenu" id="308"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationPictureForExternalUsersExtendedTooltip" id="309"/>
+																				</PictureDecoration>
+																				<LabelDecoration name="RestrictionByOwnerWithOptimizationLabelForExternalUsers" id="310">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>С оптимизацией</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>With optimization</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTipRepresentation>Button</ToolTipRepresentation>
+																					<ContextMenu name="RestrictionByOwnerWithOptimizationLabelForExternalUsersContextMenu" id="311"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithOptimizationLabelForExternalUsersExtendedTooltip" id="312"/>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
+																		<Page name="RestrictionByOwnerWithoutOptimizationForExternalUsers" id="313">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Ограничение по владельцу без оптимизации для внешних пользователей</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Owner restriction without optimization for external users</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>AlwaysHorizontal</Group>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationForExternalUsersExtendedTooltip" id="314"/>
+																			<ChildItems>
+																				<PictureDecoration name="RestrictionByOwnerWithoutOptimizationIndentForExternalUsers" id="315">
+																					<Width>1</Width>
+																					<Height>1</Height>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу без оптимизации отступ для внешних пользователей</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction without optimization indent for external users</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationIndentForExternalUsersContextMenu" id="316"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationIndentForExternalUsersExtendedTooltip" id="317"/>
+																				</PictureDecoration>
+																				<PictureDecoration name="RestrictionByOwnerWithoutOptimizationPictureForExternalUsers" id="318">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Ограничение по владельцу без оптимизации картинка для внешних пользователей</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>Owner restriction without optimization picture for external users</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Picture>
+																						<xr:Ref>StdPicture.Information</xr:Ref>
+																						<xr:LoadTransparent>true</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationPictureForExternalUsersContextMenu" id="319"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationPictureForExternalUsersExtendedTooltip" id="320"/>
+																				</PictureDecoration>
+																				<LabelDecoration name="RestrictionByOwnerWithoutOptimizationLabelForExternalUsers" id="321">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Без оптимизации</v8:content>
+																						</v8:item>
+																						<v8:item>
+																							<v8:lang>en</v8:lang>
+																							<v8:content>No optimization</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTipRepresentation>Button</ToolTipRepresentation>
+																					<ContextMenu name="RestrictionByOwnerWithoutOptimizationLabelForExternalUsersContextMenu" id="322"/>
+																					<ExtendedTooltip name="RestrictionByOwnerWithoutOptimizationLabelForExternalUsersExtendedTooltip" id="323"/>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
+																	</ChildItems>
+																</Pages>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+												<InputField name="RestrictionTextInRoleForExternalUsers" id="180">
+													<DataPath>UserKindsProperties[1].RestrictionTextInRole</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>2</Height>
+													<MultiLine>true</MultiLine>
+													<ExtendedEdit>true</ExtendedEdit>
+													<ContextMenu name="RestrictionTextInRoleForExternalUsersContextMenu" id="181"/>
+													<ExtendedTooltip name="RestrictionTextInRoleForExternalUsersExtendedTooltip" id="182"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="ForExternalUsersErrors" id="131">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>(ошибки)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>(errors)</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ForExternalUsersErrorsExtendedTooltip" id="132"/>
+									<ChildItems>
+										<InputField name="RestrictionErrorsTextForExternalUsers" id="183">
+											<DataPath>UserKindsProperties[1].RestrictionErrorsText</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<ContextMenu name="RestrictionErrorsTextForExternalUsersContextMenu" id="184"/>
+											<ExtendedTooltip name="RestrictionErrorsTextForExternalUsersExtendedTooltip" id="185"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="InitialProfilesFilling" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальное заполнение профилей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Initial profile population</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="InitialProfilesFillingExtendedTooltip" id="30"/>
+					<ChildItems>
+						<UsualGroup name="GenerateCommandAndProfile" id="72">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда сформировать и профиль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate command and profile</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GenerateCommandAndProfileExtendedTooltip" id="73"/>
+							<ChildItems>
+								<Button name="GenerateProfilesDetails" id="1">
+									<Type>UsualButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.GenerateProfilesDetails</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сформировать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Generate</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GenerateProfilesDetailsExtendedTooltip" id="31"/>
+								</Button>
+								<InputField name="SpecificProfile" id="69">
+									<DataPath>SpecificProfile</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Профиль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Profile</v8:content>
+										</v8:item>
+									</Title>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ClearButton>true</ClearButton>
+									<CreateButton>false</CreateButton>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;Сформировать для всех профилей, если не указан&gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>&lt;Generate for all users if not specified&gt;</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="SpecificProfileContextMenu" id="70"/>
+									<ExtendedTooltip name="SpecificProfileExtendedTooltip" id="71"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Explanation3" id="2">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формирование фрагмента кода для начального заполнения профилей групп доступа, на основе профилей,
+имеющихся в этой информационной базе. 
+
+Фрагмент кода используется для вставки в процедуру %1
+общего модуля %2.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate a code snippet for initial population of access group profiles based on profiles
+from this infobase. 
+
+The code snippet is inserted in the %1 procedure
+of the %2 common module.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Explanation3ContextMenu" id="3"/>
+							<ExtendedTooltip name="Explanation3ExtendedTooltip" id="32"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="AccessRestrictionKinds" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды ограничений прав</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right restriction kinds</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AccessRestrictionKindsExtendedTooltip" id="33"/>
+					<ChildItems>
+						<LabelDecoration name="Explanation" id="66">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формирование фрагмента кода, содержащего виды доступа используемые в ограничении каждого права каждого объекта метаданных.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generating a code snippet containing access kinds used in restriction of each right to each metadata object.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ExplanationContextMenu" id="67"/>
+							<ExtendedTooltip name="ExplanationExtendedTooltip" id="68"/>
+						</LabelDecoration>
+						<RadioButtonField name="RestrictionsSource" id="57">
+							<DataPath>RestrictionsSource</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получить ограничения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Get restrictions</v8:content>
+								</v8:item>
+							</Title>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Из табличного документа</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>From spreadsheet document</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">FromSpreadsheetDocument</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Из выгрузки конфигурации в файлы</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>From configuration export to files</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">FromConfigurationDumpToFiles</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="RestrictionsSourceContextMenu" id="58"/>
+							<ExtendedTooltip name="RestrictionsSourceExtendedTooltip" id="59"/>
+							<Events>
+								<Event name="OnChange">RestrictionsSourceOnChange</Event>
+							</Events>
+						</RadioButtonField>
+						<Pages name="GetRestrictions" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получение ограничений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Get restrictions</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="GetRestrictionsExtendedTooltip" id="49"/>
+							<ChildItems>
+								<Page name="RestrictionsFromList" id="52">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ограничения из списка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Restrictions from list</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="RestrictionsFromListExtendedTooltip" id="53"/>
+									<ChildItems>
+										<LabelDecoration name="Instruction" id="25">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>1. Открыть "Все ограничения доступа" через корень дерева объектов метаданных конфигуратора.
+2. "Вывести список" всех колонок в табличный документ, выделить все, скопировать в буфер обмена.
+3. В табличном документе, расположенном ниже выделить все и вставить из буфера обмена.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>1. Open "All access restrictions" using the root of the Designer metadata objects tree.
+2. Output the list of all columns into a spreadsheet document, select all, and copy to the clipboard.
+3. In the spreadsheet document below, select all and paste from the clipboard.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="InstructionContextMenu" id="26"/>
+											<ExtendedTooltip name="InstructionExtendedTooltip" id="34"/>
+										</LabelDecoration>
+										<SpreadSheetDocumentField name="AllAccessRestrictions" id="10">
+											<DataPath>AllAccessRestrictions</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Все ограничения доступа</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>All access restrictions</v8:content>
+												</v8:item>
+											</Title>
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>4</Height>
+											<ShowGrid>true</ShowGrid>
+											<ShowHeaders>true</ShowHeaders>
+											<VerticalScrollBar>true</VerticalScrollBar>
+											<HorizontalScrollBar>true</HorizontalScrollBar>
+											<Edit>true</Edit>
+											<ContextMenu name="AllAccessRestrictionsContextMenu" id="11"/>
+											<ExtendedTooltip name="AllAccessRestrictionsExtendedTooltip" id="35"/>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="RestrictionsFromExport" id="50">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ограничения из выгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Restrictions from export</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="RestrictionsFromExportExtendedTooltip" id="51"/>
+									<ChildItems>
+										<CheckBoxField name="ExportToTemporaryFolder" id="63">
+											<DataPath>ExportToTemporaryFolder</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнять выгрузку во временную папку</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export to temporary folder</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ExportToTemporaryFolderContextMenu" id="64"/>
+											<ExtendedTooltip name="ExportToTemporaryFolderExtendedTooltip" id="65"/>
+											<Events>
+												<Event name="OnChange">ExportToTemporaryFolderOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ReadyConfigurationFileDumpFolder" id="60">
+											<DataPath>ReadyConfigurationFileDumpFolder</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Папка готовой выгрузки конфигурации в файлы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Folder of ready configuration export to files</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Содержит подготовленную выгрузку конфигурации в файлы.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Contains prepared configuration export to files.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<ContextMenu name="ReadyConfigurationFileDumpFolderContextMenu" id="61"/>
+											<ExtendedTooltip name="ReadyConfigurationFileDumpFolderExtendedTooltip" id="62"/>
+											<Events>
+												<Event name="StartChoice">ReadyConfigurationFileDumpFolderStartChoice</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="Buttons" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Buttons</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ButtonsExtendedTooltip" id="36"/>
+							<ChildItems>
+								<Button name="GenerateDifferencesForAccessKindsDetailsByRights" id="27">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.GenerateDifferencesForAccessKindsDetailsByRights</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сформировать различия описаний</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Generate details differences</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GenerateDifferencesForAccessKindsDetailsByRightsExtendedTooltip" id="38"/>
+								</Button>
+								<Button name="GenerateAccessKindsDetailsByRights" id="22">
+									<Type>UsualButton</Type>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<CommandName>Form.Command.GenerateAccessKindsDetailsByRights</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сформировать полное описание</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Generate full details</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GenerateAccessKindsDetailsByRightsExtendedTooltip" id="37"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Explanation4" id="23">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сформировать фрагмент кода для получения видов доступа, используемых в ограничениях прав доступа в объектах метаданных.
+Кроме того, сообщить об ошибках найденных в текстах ограничений.
+
+Фрагмент кода используется для вставки в процедуру %1
+общего модуля %2.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate a code snippet to get access kinds used in access right restrictions of metadata objects.
+Also notify of errors found in restriction texts.
+
+The code snippet is used for pasting into the %1 procedure
+of the %2 common module.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Explanation4ContextMenu" id="24"/>
+							<ExtendedTooltip name="Explanation4ExtendedTooltip" id="39"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="RLSTextModificationControl" id="186">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль изменения текстов RLS</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Control of RLS text change</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="RLSTextModificationControlExtendedTooltip" id="187"/>
+					<ChildItems>
+						<CommandBar name="RLSTextModificationControlCommandBar" id="251">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль изменения текстов RLS командная панель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Control of RLS text change command bar</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="RLSTextModificationControlCommandBarExtendedTooltip" id="252"/>
+							<ChildItems>
+								<Button name="CompareRLSTexts" id="253">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ExportDetails</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сравнить тексты RLS</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Compare RLS texts</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CompareRLSTextsExtendedTooltip" id="254"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<LabelDecoration name="RLSTextModificationControlDetails" id="257">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:NoteText</TextColor>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сравнение выполняется для контроля непредусмотренных расхождений логики ограничения в старом и в новом RLS.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Comparison is carried out to control unexpected restriction logic discrepancies in old and new RLS.</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="RLSTextModificationControlDetailsContextMenu" id="258"/>
+							<ExtendedTooltip name="RLSTextModificationControlDetailsExtendedTooltip" id="259">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>1. Перед сравнением все тексты ограничений выгружаются в файлы (отдельный файл на каждый объект).
+Полученные файлы сравнивается с файлами предыдущей выгрузки текстов ограничений.
+
+2. Вместо папки с файлами предыдущей выгрузки можно указать файл конфигурации ".cf".
+В этом случае будет сделана аналогичная выгрузка текстов ограничений из указанной конфигурации.
+
+3. Оценка правильности обнаруженных изменений выполняется вручную.
+</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>1. Before comparison all restriction texts are exported to files (a separate file for every object).
+Received files are compared with files of previous export restriction texts.
+
+2. Instead of a folder with previous export files, you can specify configuration file ".cf".
+ In this case, similar restriction texts will be exported from the specified configuration.
+
+3. You can estimate the found changes accuracy manually.
+</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<UsualGroup name="SettingsGroup1" id="188">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Settings</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="SettingsGroup1ExtendedTooltip" id="189"/>
+							<ChildItems>
+								<UsualGroup name="CompareToWhatGroup" id="190">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>С чем сравнивать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>What to compare</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CompareToWhatGroupExtendedTooltip" id="191"/>
+									<ChildItems>
+										<RadioButtonField name="ComparisonSource" id="192">
+											<DataPath>ComparisonSource</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сравнить тексты RLS конфигурации этой ИБ с текстами</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Compare RLS configuration texts of this infobase with texts</v8:content>
+												</v8:item>
+											</Title>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>предыдущей версии конфигурации (.cf)</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>of previous configuration version (.cf)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">File</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>предыдущей выгрузки текстов RLS в папке</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>previous RLS text export in folder</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Folder</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ComparisonSourceContextMenu" id="193"/>
+											<ExtendedTooltip name="ComparisonSourceExtendedTooltip" id="194"/>
+											<Events>
+												<Event name="OnChange">ComparisonSourceOnChange</Event>
+											</Events>
+										</RadioButtonField>
+										<InputField name="FolderForPreviousRLSTextExport" id="195">
+											<DataPath>FolderForPreviousRLSTextExport</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Папка с предыдущей выгрузкой текстов RLS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Folder with previous RLS text export</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите папку с ранее выгруженными описаниями RLS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Select a folder with RLS details exported earlier</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="FolderForPreviousRLSTextExportContextMenu" id="196"/>
+											<ExtendedTooltip name="FolderForPreviousRLSTextExportExtendedTooltip" id="197"/>
+											<Events>
+												<Event name="OnChange">FolderChoiceFieldOnChange</Event>
+												<Event name="StartChoice">FolderChoiceFieldStartChoice</Event>
+												<Event name="Opening">FolderChoiceFieldOpen</Event>
+											</Events>
+										</InputField>
+										<InputField name="PathToPreviousConfigurationVersionFile" id="198">
+											<DataPath>PathToPreviousConfigurationVersionFile</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Путь к файлу предыдущей версии конфигурации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Path to previous configuration version file</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="PathToPreviousConfigurationVersionFileContextMenu" id="199"/>
+											<ExtendedTooltip name="PathToPreviousConfigurationVersionFileExtendedTooltip" id="200"/>
+											<Events>
+												<Event name="StartChoice">PathToPreviousConfigurationVersionFileStartChoice</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="TextsExportFolderGroup" id="201">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Папка выгрузки текстов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Text export folder</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="TextsExportFolderGroupExtendedTooltip" id="202"/>
+									<ChildItems>
+										<CheckBoxField name="ExportRLSTexts" id="203">
+											<DataPath>ExportRLSTexts</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выгружать тексты RLS в папку:</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export RLS texts to folder:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ExportRLSTextsContextMenu" id="204"/>
+											<ExtendedTooltip name="ExportRLSTextsExtendedTooltip" id="205"/>
+											<Events>
+												<Event name="OnChange">ExportRLSTextsOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="FolderForRLSTextExportFromThisConfiguration" id="206">
+											<DataPath>FolderForRLSTextExportFromThisConfiguration</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выгрузить тексты RLS из этой ИБ в папку</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export RLS texts from this infobase to folder</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите папку для выгрузки текущего описания RLS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Select a folder to export the current RLS details</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="FolderForRLSTextExportFromThisConfigurationContextMenu" id="207"/>
+											<ExtendedTooltip name="FolderForRLSTextExportFromThisConfigurationExtendedTooltip" id="208"/>
+											<Events>
+												<Event name="OnChange">FolderChoiceFieldOnChange</Event>
+												<Event name="StartChoice">FolderChoiceFieldStartChoice</Event>
+												<Event name="Opening">FolderChoiceFieldOpen</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ConfigurationExportFolderGroup" id="209">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Папка выгрузки конфигурации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Configuration export folder</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ConfigurationExportFolderGroupExtendedTooltip" id="210"/>
+									<ChildItems>
+										<CheckBoxField name="ConfigurationFilesExported" id="211">
+											<DataPath>ConfigurationFilesExported</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файлы конфигурации этой ИБ уже выгружены в папку:</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>This infobase configuration files are exported to folder:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ConfigurationFilesExportedContextMenu" id="212"/>
+											<ExtendedTooltip name="ConfigurationFilesExportedExtendedTooltip" id="213"/>
+											<Events>
+												<Event name="OnChange">ConfigurationFilesExportedOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="FolderWithDumpedConfigurationFiles" id="214">
+											<DataPath>FolderWithDumpedConfigurationFiles</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выгруженные файлы конфигурации этой ИБ в папке</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Exported configuration files of this infobase in folder</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите папку с файлами выгрузки конфигурации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Select a folder with configuration export files</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="FolderWithDumpedConfigurationFilesContextMenu" id="215"/>
+											<ExtendedTooltip name="FolderWithDumpedConfigurationFilesExtendedTooltip" id="216"/>
+											<Events>
+												<Event name="OnChange">FolderChoiceFieldOnChange</Event>
+												<Event name="StartChoice">FolderChoiceFieldStartChoice</Event>
+												<Event name="Opening">FolderChoiceFieldOpen</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ComparisonResult" id="217">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат сравнения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Comparison result</v8:content>
+								</v8:item>
+							</Title>
+							<Height>10</Height>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ComparisonResultExtendedTooltip" id="218"/>
+							<ChildItems>
+								<Table name="DifferencesFound" id="219">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<ReadOnly>true</ReadOnly>
+									<Width>20</Width>
+									<Header>false</Header>
+									<HorizontalScrollBar>UseAlways</HorizontalScrollBar>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>DifferencesFound</DataPath>
+									<RowPictureDataPath>DifferencesFound.Picture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Найденные различия</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Found differences</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>CheckAll</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Pickup</ExcludedCommand>
+										<ExcludedCommand>UncheckAll</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>CommandBar</SearchStringLocation>
+									<ContextMenu name="DifferencesFoundContextMenu" id="220"/>
+									<AutoCommandBar name="DifferencesFoundCommandBar" id="221"/>
+									<ExtendedTooltip name="DifferencesFoundExtendedTooltip" id="222"/>
+									<SearchStringAddition name="DifferencesFoundSearchString" id="223">
+										<AdditionSource>
+											<Item>DifferencesFound</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DifferencesFoundSearchBarContextMenu" id="224"/>
+										<ExtendedTooltip name="DifferencesFoundSearchBarExtendedTooltip" id="225"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="DifferencesFoundViewStatus" id="226">
+										<AdditionSource>
+											<Item>DifferencesFound</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DifferencesFoundViewingStatusContextMenu" id="227"/>
+										<ExtendedTooltip name="DifferencesFoundViewingStatusExtendedTooltip" id="228"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="DifferencesFoundSearchControl" id="229">
+										<AdditionSource>
+											<Item>DifferencesFound</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="DifferencesFoundSearchManagementContextMenu" id="230"/>
+										<ExtendedTooltip name="DifferencesFoundSearchManagementExtendedTooltip" id="231"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">DifferencesFoundOnActivateRow</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="DifferencesFoundValue" id="248">
+											<DataPath>DifferencesFound.Value</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Значение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Value</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="DifferencesFoundValueContextMenu" id="249"/>
+											<ExtendedTooltip name="DifferencesFoundValueExtendedTooltip" id="250"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<TextDocumentField name="PreviousText" id="235">
+									<DataPath>PreviousText</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Было</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Previous value</v8:content>
+										</v8:item>
+									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="PreviousTextContextMenu" id="236"/>
+									<ExtendedTooltip name="PreviousTextExtendedTooltip" id="237"/>
+								</TextDocumentField>
+								<TextDocumentField name="CurrentText" id="238">
+									<DataPath>CurrentText</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стало</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Current value</v8:content>
+										</v8:item>
+									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="CurrentTextContextMenu" id="239"/>
+									<ExtendedTooltip name="CurrentTextExtendedTooltip" id="240"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="FileComparisonInExternalApplication" id="241">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сравнение файлов во внешнем приложении</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>File comparison in external application</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>PopUp</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="FileComparisonInExternalApplicationExtendedTooltip" id="242"/>
+							<ChildItems>
+								<InputField name="ExternalApplicationCommandLine" id="243">
+									<DataPath>ExternalApplicationCommandLine</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Строка запуска внешнего приложения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>External application command line</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Передаваемые параметры запуска:
+%1 - папка с предыдущей выгрузкой текстов RLS
+%2 - папка с выгрузкой RLS из этой ИБ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Start parameters to be passed:
+%1 is a folder with previous RLS text export.
+%2 is a folder with RLS export from this infobase.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ExternalApplicationCommandLineContextMenu" id="244"/>
+									<ExtendedTooltip name="ExternalApplicationCommandLineExtendedTooltip" id="245"/>
+								</InputField>
+								<Button name="CompareInExternalApplication" id="246">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.CompareInExternalApplication</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сравнить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Compare</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CompareInExternalApplicationExtendedTooltip" id="247"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.AccessManagement</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="AccessRestrictionKinds" id="2">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Table" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Right" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AccessKind" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="LongDesc" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectTable" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CollectionOrder" id="6">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="RightsOrder" id="7">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="AllAccessRestrictions" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все ограничения доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All access restrictions</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="RestrictionsSource" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник ограничений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Restriction source</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ReadyConfigurationFileDumpFolder" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Папка готовой выгрузки конфигурации в файлы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Folder of ready configuration export to files</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ReadyConfigurationFileDumpFolder</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ExportToTemporaryFolder" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнять выгрузку во временную папку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export to temporary folder</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ExportToTemporaryFolder</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="SpecificProfile" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profile</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.AccessGroupProfiles</v8:Type>
+			</Type>
+			<Save>
+				<Field>SpecificProfile</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="List" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>List</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="NoteList" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пояснение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List note</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="UserKindsProperties" id="18">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="RestrictionText" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ограничения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Restriction text</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="RestrictionTextInRole" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ограничения в роли</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Restriction text in role</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="RestrictionErrorsText" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибок ограничения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Restriction error text</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="RestrictionByOwnerPossible" id="4">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="TextInManagerModule" id="19">
+			<Type/>
+		</Attribute>
+		<Attribute name="FullCollectionNameList" id="20">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ImplementationSettings" id="21">
+			<Type/>
+		</Attribute>
+		<Attribute name="PreviousText" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Было</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Previous value</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExportRLSTexts" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгружать тексты RLS в папку:</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export RLS texts to folder:</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ExportRLSTexts</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="DataProcessorFileName" id="24">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ComparisonSource" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник сравнения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comparison source</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ComparisonSource</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="DifferencesFound" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найденные различия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Found differences</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="FolderForRLSTextExportFromThisConfiguration" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Папка выгрузки текстов RLS из этой конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Folder of RLS text export from this configuration</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>FolderForRLSTextExportFromThisConfiguration</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="FolderForPreviousRLSTextExport" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Папка предыдущей выгрузки текстов RLS</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Folder of previous RLS text export</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>FolderForPreviousRLSTextExport</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="FolderWithDumpedConfigurationFiles" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Папка с выгруженными файлами конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Folder with exported configuration files</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>FolderWithDumpedConfigurationFiles</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="PathToPreviousConfigurationVersionFile" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу предыдущей версии конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Path to previous configuration version file</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>PathToPreviousConfigurationVersionFile</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="CurrentText" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стало</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current value</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExternalApplicationCommandLine" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка запуска внешнего приложения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>External application command line</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ExternalApplicationCommandLine</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ConfigurationFilesExported" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы конфигурации выгружены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configuration files exported</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ConfigurationFilesExported</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ListFullName" id="34">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="GenerateProfilesDetails" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Generate</v8:content>
+				</v8:item>
+			</Title>
+			<Action>GenerateProfilesDetailsExecute</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="GenerateAccessKindsDetailsByRights" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать полное описание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Generate full details</v8:content>
+				</v8:item>
+			</Title>
+			<Action>GenerateFullDetails</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="GenerateDifferencesForAccessKindsDetailsByRights" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать различия описаний</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Generate details differences</v8:content>
+				</v8:item>
+			</Title>
+			<Action>GenerateDifferencesDetails</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CalculateRestrictionInRole" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Calculate</v8:content>
+				</v8:item>
+			</Title>
+			<Action>CalculateRestrictionInRole</Action>
+		</Command>
+		<Command name="CheckRestriction" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить ограничение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check restriction</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CheckRestriction</Action>
+		</Command>
+		<Command name="ShowTextToInsert" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст для вставки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Text to insert</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать тексты для вставки в модуль и в роли</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show texts to insert in module and roles</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ShowTextToInsert</Action>
+		</Command>
+		<Command name="ExportDetails" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить описания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export details</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить описания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export details</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ExportDetails</Action>
+		</Command>
+		<Command name="CompareInExternalApplication" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compare</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить во внешнем приложении</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compare in external application</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CompareInExternalApplication</Action>
+		</Command>
+		<Command name="UpdateAccess" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить доступ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update access</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запланировать и запустить обновление доступа списка
+(обновление ключей доступа элементов списка и
+ прав на все ключи доступа списка)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Schedule and start list access update of
+the list item access keys and
+the rights to all list access keys.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateAccess</Action>
+		</Command>
+	</Commands>
+</Form>

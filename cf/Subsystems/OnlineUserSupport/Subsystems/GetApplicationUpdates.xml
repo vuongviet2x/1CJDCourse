@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="59a3c290-b497-4926-95a4-c1f81ebf8ae9">
+		<Properties>
+			<Name>GetApplicationUpdates</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получение обновлений программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Application update</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ApplicationUpdate</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesClientServer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesGlobal</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesServerCall</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ViewAvailableApplucationUpdatesInformation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesOverridable</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.MessagePlatformVersionUpdateRequired</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GetApplicationUpdatesClientOverridable</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ImportAndInstallCorrectionsAutomatically</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.GetAndInstallConfigurationTroubleshooting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.Update1CEnterpriseVersionsInfo</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

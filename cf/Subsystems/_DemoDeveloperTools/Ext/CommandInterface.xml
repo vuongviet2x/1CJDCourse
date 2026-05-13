@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandsVisibility>
+		<Command name="DataProcessor.CheckSSLBeforeAssembly.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.QueryConsole.Command.QueryConsole">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.FormsOpeningSpeedMeasurement.Command.FormsOpeningSpeedMeasurement">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor._DemoCreateMarkedForDeletion.Command._DemoCreateMarkedForDeletion">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.QueryConsole.Command.QueryConsole">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.FormsOpeningSpeedMeasurement.Command.FormsOpeningSpeedMeasurement">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor._DemoCreateMarkedForDeletion.Command._DemoCreateMarkedForDeletion">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand._DemoReportPanelDeveloperTools">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.CheckSSLBeforeAssembly.Command.CheckSSLBeforeAssembly">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.CheckSSLBeforeAssembly.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ProgramInterfaceDetailsGeneration.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.UpdateToCorrectiveVersionSSL.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.FirstSSLDeployment.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.QueryConsole.Command.QueryConsole">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.FormsOpeningSpeedMeasurement.Command.FormsOpeningSpeedMeasurement">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor._DemoCreateMarkedForDeletion.Command._DemoCreateMarkedForDeletion">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.Core</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.ReportsOptions</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.DataExchange</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.IBVersionUpdate</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.ConfigurationUpdate</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.IBBackup</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.AccessManagement</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.TotalsAndAggregatesManagement</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.MigrationToNewVersions</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools.Subsystem.CalendarSchedules</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

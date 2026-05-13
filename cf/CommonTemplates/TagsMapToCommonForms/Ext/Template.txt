@@ -1,0 +1,5 @@
+﻿<tags>
+	<tag name='InformationCenter'>
+		<form path='DataProcessor.InformationCenter.Form.InformationCenter'/>
+	</tag>
+</tags>

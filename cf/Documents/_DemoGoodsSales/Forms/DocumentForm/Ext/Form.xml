@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormPostAndClose" id="349">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+				<ExtendedTooltip name="FormPostAndCloseExtendedTooltip" id="350"/>
+			</Button>
+			<Button name="FormWrite" id="351">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="FormWriteExtendedTooltip" id="352"/>
+			</Button>
+			<Button name="FormPost" id="353">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Post</CommandName>
+				<ExtendedTooltip name="FormPostExtendedTooltip" id="354"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Header" id="115">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="280"/>
+			<ChildItems>
+				<UsualGroup name="MainGroup3" id="364" DisplayImportance="VeryHigh">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="MainGroup3ExtendedTooltip" id="365"/>
+					<ChildItems>
+						<UsualGroup name="NumberDateGroup" id="117">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Number date</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="NumberDateGroupExtendedTooltip" id="282"/>
+							<ChildItems>
+								<InputField name="Number" id="1">
+									<DataPath>Object.Number</DataPath>
+									<Width>8</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ContextMenu name="NumberContextMenu" id="2"/>
+									<ExtendedTooltip name="NumberExtendedTooltip" id="283"/>
+								</InputField>
+								<InputField name="Date" id="3">
+									<DataPath>Object.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>dated</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ContextMenu name="DateContextMenu" id="4"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="284"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Department" id="160">
+							<DataPath>Object.Department</DataPath>
+							<Width>30</Width>
+							<Wrap>false</Wrap>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="DepartmentContextMenu" id="161"/>
+							<ExtendedTooltip name="DepartmentExtendedTooltip" id="305"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="AdvancedGroup" id="366" DisplayImportance="Low">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партнер, контрагент, организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Partner, counterparty, company</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="AdvancedGroupExtendedTooltip" id="367"/>
+					<ChildItems>
+						<UsualGroup name="AdvancedLeft" id="119">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно слева</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>More left</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="AdvancedLeftExtendedTooltip" id="288"/>
+							<ChildItems>
+								<InputField name="Partner" id="336">
+									<DataPath>Object.Partner</DataPath>
+									<Width>30</Width>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="PartnerContextMenu" id="337"/>
+									<ExtendedTooltip name="PartnerExtendedTooltip" id="338"/>
+								</InputField>
+								<InputField name="Counterparty" id="7">
+									<DataPath>Object.Counterparty</DataPath>
+									<Width>30</Width>
+									<Wrap>false</Wrap>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="CounterpartyContextMenu" id="8"/>
+									<ExtendedTooltip name="CounterpartyExtendedTooltip" id="289"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="AdvancedRight" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>More right</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="AdvancedRightExtendedTooltip" id="281"/>
+							<ChildItems>
+								<InputField name="Organization" id="5">
+									<DataPath>Object.ParentCompany</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<Wrap>false</Wrap>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="OrganizationContextMenu" id="6"/>
+									<ExtendedTooltip name="OrganizationExtendedTooltip" id="286"/>
+								</InputField>
+								<InputField name="Contract" id="9">
+									<DataPath>Object.Contract</DataPath>
+									<Width>30</Width>
+									<Wrap>false</Wrap>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="ContractContextMenu" id="10"/>
+									<ExtendedTooltip name="ContractExtendedTooltip" id="291"/>
+								</InputField>
+								<InputField name="StorageLocation" id="11">
+									<DataPath>Object.StorageLocation</DataPath>
+									<Width>30</Width>
+									<Wrap>false</Wrap>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="StorageLocationContextMenu" id="12"/>
+									<ExtendedTooltip name="StorageLocationExtendedTooltip" id="287"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Pages" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="293"/>
+			<ChildItems>
+				<Page name="GroupGoods" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Goods</v8:content>
+						</v8:item>
+					</Title>
+					<TitleDataPath>Object.Goods.RowsCount</TitleDataPath>
+					<ExtendedTooltip name="GroupGoodsExtendedTooltip" id="294"/>
+					<ChildItems>
+						<Table name="Goods" id="266">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.Goods</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товары</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Goods</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="GoodsContextMenu" id="267">
+								<ChildItems>
+									<Button name="GoodsCopyMenuRows" id="343">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.CopyRows</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Скопировать строки</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Copy rows</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="GoodsCopyMenuRowsExtendedTooltip" id="344"/>
+									</Button>
+									<Button name="GoodsInsertMenuRows" id="345">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.InsertRows</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вставить строки</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Paste rows</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="GoodsInsertMenuRowsExtendedTooltip" id="346"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="GoodsCommandBar" id="268">
+								<ChildItems>
+									<Button name="GoodsCopyRows" id="341">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.CopyRows</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Скопировать строки</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Copy rows</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="GoodsCopyRowsExtendedTooltip" id="342"/>
+									</Button>
+									<Button name="GoodsInsertRows" id="339">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.InsertRows</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вставить строки</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Paste rows</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="GoodsInsertRowsExtendedTooltip" id="340"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="GoodsExtendedTooltip" id="295"/>
+							<SearchStringAddition name="ProductsSearchString" id="316">
+								<AdditionSource>
+									<Item>Goods</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsSearchStringContextMenu" id="317"/>
+								<ExtendedTooltip name="ProductsSearchStringExtendedTooltip" id="318"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ProductsViewStatus" id="319">
+								<AdditionSource>
+									<Item>Goods</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ProductsViewStatusContextMenu" id="320"/>
+								<ExtendedTooltip name="ProductsViewStatusExtendedTooltip" id="321"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="SearchControlProducts" id="322">
+								<AdditionSource>
+									<Item>Goods</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="SearchControlProductsContextMenu" id="323"/>
+								<ExtendedTooltip name="SearchControlProductsExtendedTooltip" id="324"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="GoodsLineNumber" id="269">
+									<DataPath>Object.Goods.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="GoodsLineNumberContextMenu" id="270"/>
+									<ExtendedTooltip name="GoodsLineNumberExtendedTooltip" id="296"/>
+								</LabelField>
+								<InputField name="GoodsProducts" id="271" DisplayImportance="VeryHigh">
+									<DataPath>Object.Goods.Products</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="GoodsProductsContextMenu" id="272"/>
+									<ExtendedTooltip name="GoodsProductsExtendedTooltip" id="297"/>
+								</InputField>
+								<InputField name="GoodsCount" id="273">
+									<DataPath>Object.Goods.Count</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="GoodsCountContextMenu" id="274"/>
+									<ExtendedTooltip name="GoodsCountExtendedTooltip" id="298"/>
+								</InputField>
+								<InputField name="GoodsPrice" id="309">
+									<DataPath>Object.Goods.Price</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="GoodsPriceContextMenu" id="310"/>
+									<ExtendedTooltip name="GoodsPriceExtendedTooltip" id="311"/>
+								</InputField>
+								<InputField name="GoodsDocumentInflow" id="361" DisplayImportance="VeryLow">
+									<DataPath>Object.Goods.DocumentInflow</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="GoodsDocumentInflowContextMenu" id="362"/>
+									<ExtendedTooltip name="GoodsDocumentInflowExtendedTooltip" id="363"/>
+								</InputField>
+								<InputField name="GoodsIndent" id="355">
+									<DataPath>Object.Goods.Indent</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="GoodsIndentContextMenu" id="356"/>
+									<ExtendedTooltip name="GoodsIndentExtendedTooltip" id="357"/>
+								</InputField>
+								<InputField name="GoodsDimensionKey" id="368">
+									<DataPath>Object.Goods.DimensionKey</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="GoodsDimensionKeyContextMenu" id="369"/>
+									<ExtendedTooltip name="GoodsDimensionKeyExtendedTooltip" id="370"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupOfAccount" id="254">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета на оплату</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Proforma invoices</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupOfAccountExtendedTooltip" id="299"/>
+					<ChildItems>
+						<Table name="ProformaInvoices" id="255">
+							<SkipOnInput>false</SkipOnInput>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.ProformaInvoices</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета на оплату</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Proforma invoices</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ProformaInvoicesContextMenu" id="256"/>
+							<AutoCommandBar name="ProformaInvoicesCommandBar" id="257"/>
+							<ExtendedTooltip name="ProformaInvoicesExtendedTooltip" id="300"/>
+							<SearchStringAddition name="SearchStringInvoices" id="325">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="SearchStringInvoicesContextMenu" id="326"/>
+								<ExtendedTooltip name="SearchStringInvoicesExtendedTooltip" id="327"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="InvoicesForPaymentViewStatus" id="328">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="InvoicesForPaymentViewStatusContextMenu" id="329"/>
+								<ExtendedTooltip name="InvoicesForPaymentViewStatusExtendedTooltip" id="330"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="SearchControlInvoices" id="331">
+								<AdditionSource>
+									<Item>ProformaInvoices</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="SearchControlInvoicesContextMenu" id="332"/>
+								<ExtendedTooltip name="SearchControlInvoicesExtendedTooltip" id="333"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ProformaInvoicesRowNumber" id="258">
+									<DataPath>Object.ProformaInvoices.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ProformaInvoicesRowNumberContextMenu" id="259"/>
+									<ExtendedTooltip name="ProformaInvoicesRowNumberExtendedTooltip" id="301"/>
+								</LabelField>
+								<InputField name="ProformaInvoicesProformaInvoice" id="260">
+									<DataPath>Object.ProformaInvoices.ProformaInvoice</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>50</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="ProformaInvoicesProformaInvoiceContextMenu" id="261"/>
+									<ExtendedTooltip name="ProformaInvoicesProformaInvoiceExtendedTooltip" id="302"/>
+								</InputField>
+								<InputField name="ProformaInvoicesIndent" id="358">
+									<DataPath>Object.ProformaInvoices.Indent</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ProformaInvoicesIndentContextMenu" id="359"/>
+									<ExtendedTooltip name="ProformaInvoicesIndentExtendedTooltip" id="360"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="More" id="334">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Additional</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="MoreExtendedTooltip" id="335"/>
+					<ChildItems>
+						<InputField name="Currency" id="277">
+							<DataPath>Object.Currency</DataPath>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="CurrencyContextMenu" id="278"/>
+							<ExtendedTooltip name="CurrencyExtendedTooltip" id="292"/>
+						</InputField>
+						<InputField name="VATRate" id="275">
+							<DataPath>Object.VATRate</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="VATRateContextMenu" id="276"/>
+							<ExtendedTooltip name="VATRateExtendedTooltip" id="306"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Footer" id="314">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Footer</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="FooterExtendedTooltip" id="315"/>
+			<ChildItems>
+				<InputField name="Comment" id="29">
+					<DataPath>Object.Comment</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="CommentContextMenu" id="30"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="308"/>
+				</InputField>
+				<InputField name="EmployeeResponsible" id="27">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="28"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="307"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._DemoGoodsSales</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.ProformaInvoices">
+					<Column name="Indent" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отступ</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Indent</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>1</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.Goods">
+					<Column name="Indent" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отступ</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Indent</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>1</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="InsertRows" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Paste rows</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить строки из буфера обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Paste rows from the clipboard</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+V</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.PasteFromClipboard</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>InsertRows</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CopyRows" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy rows</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строки в буфер обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy rows to the clipboard</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+C</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.CopyToClipboard</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>CopyRows</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">CommandBar</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="CustomSettingsFolder" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User settings group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="CustomSettingsFolderExtendedTooltip" id="29"/>
+		</UsualGroup>
+		<CommandBar name="CommandBar" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Command bar</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="CommandBarExtendedTooltip" id="27"/>
+			<ChildItems>
+				<Popup name="PrintSubmenu" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подменю печать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Submenu print</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="PrintSubmenuExtendedTooltip" id="49"/>
+					<ChildItems>
+						<ButtonGroup name="SubmenuPrintImportant" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать (Важное)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Print (Important)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuPrintImportantExtendedTooltip" id="61"/>
+						</ButtonGroup>
+						<ButtonGroup name="SubmenuPrintNormal" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать (Обычное)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Print (Standard)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuPrintNormalExtendedTooltip" id="63"/>
+						</ButtonGroup>
+						<ButtonGroup name="SubmenuPrintSeeAlso" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать (См. также)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Print (See also)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuPrintSeeAlsoExtendedTooltip" id="65"/>
+						</ButtonGroup>
+					</ChildItems>
+				</Popup>
+				<Popup name="FillSubmenu" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнить</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fill</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.FillForm</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Representation>Picture</Representation>
+					<ExtendedTooltip name="FillSubmenuExtendedTooltip" id="51"/>
+					<ChildItems>
+						<ButtonGroup name="SubmenuFillImportant" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю заполнить важное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu fill in important</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuFillImportantExtendedTooltip" id="55"/>
+						</ButtonGroup>
+						<ButtonGroup name="SubmenuFillNormal" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю заполнить обычное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu fill in standard</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuFillNormalExtendedTooltip" id="57"/>
+						</ButtonGroup>
+						<ButtonGroup name="SubmenuFillSeeAlso" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю заполнить см также</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu fill in see also</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="SubmenuFillSeeAlsoExtendedTooltip" id="59"/>
+						</ButtonGroup>
+					</ChildItems>
+				</Popup>
+				<Button name="FormChangeSelectedItems" id="14">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ChangeSelectedItems</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить выделенные...</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Edit selected…</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="FormChangeSelectedItemsExtendedTooltip" id="18"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="List" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>List</DataPath>
+			<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List</v8:content>
+				</v8:item>
+			</Title>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>CustomSettingsFolder</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ListContextMenu" id="2">
+				<ChildItems>
+					<Button name="ListContextMenuChangeSelectedItems" id="15">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ChangeSelectedItems</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменить выделенные...</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Edit selected…</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ListContextMenuChangeSelectedItemsExtendedTooltip" id="19"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ListCommandBar" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ListExtendedTooltip" id="20"/>
+			<SearchStringAddition name="ListSearchString" id="30">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchStringContextMenu" id="31"/>
+				<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="32"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ListViewStatus" id="33">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListViewStatusContextMenu" id="34"/>
+				<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="35"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ListSearchControl" id="36">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchControlContextMenu" id="37"/>
+				<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="38"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ListOnActivateRow</Event>
+				<Event name="OnGetDataAtServer">ListOnGetDataAtServer</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="HasNotes" id="16">
+					<DataPath>List.HasNotes</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть заметки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Has notes</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наличие заметок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Notes</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Note</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<Width>1</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.Note</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="HasNotesContextMenu" id="17"/>
+					<ExtendedTooltip name="HasNotesExtendedTooltip" id="21"/>
+				</PictureField>
+				<ColumnGroup name="GroupLabels" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Labels</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Label</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ExtendedTooltip name="GroupLabelsExtendedTooltip" id="69"/>
+					<ChildItems>
+						<PictureField name="Label1" id="70">
+							<DataPath>List.Label1</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Первая метка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Label 1</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.PropertiesIcons</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="Label1ContextMenu" id="71"/>
+							<ExtendedTooltip name="Label1ExtendedTooltip" id="72"/>
+						</PictureField>
+						<PictureField name="Label2" id="73">
+							<DataPath>List.Label2</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вторая метка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Label 2</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.PropertiesIcons</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="Label2ContextMenu" id="74"/>
+							<ExtendedTooltip name="Label2ExtendedTooltip" id="75"/>
+						</PictureField>
+						<PictureField name="Label3" id="76">
+							<DataPath>List.Label3</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Третья метка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Label 3</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.PropertiesIcons</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="Label3ContextMenu" id="77"/>
+							<ExtendedTooltip name="Label3ExtendedTooltip" id="78"/>
+						</PictureField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Description" id="10" DisplayImportance="VeryHigh">
+					<DataPath>List.Description</DataPath>
+					<ContextMenu name="DescriptionContextMenu" id="11"/>
+					<ExtendedTooltip name="DescriptionExtendedTooltip" id="22"/>
+				</LabelField>
+				<LabelField name="TIN" id="39">
+					<DataPath>List.TIN</DataPath>
+					<ContextMenu name="TINContextMenu" id="40"/>
+					<ExtendedTooltip name="TINExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="CRTR" id="42">
+					<DataPath>List.CRTR</DataPath>
+					<ContextMenu name="CRTRContextMenu" id="43"/>
+					<ExtendedTooltip name="CRTRExtendedTooltip" id="44"/>
+				</LabelField>
+				<LabelField name="Ref" id="45">
+					<DataPath>List.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="RefContextMenu" id="46"/>
+					<ExtendedTooltip name="RefExtendedTooltip" id="47"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="GroupLegendLabels" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Легенда меток</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Label legend</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupLegendLabelsExtendedTooltip" id="67"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>List.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>SELECT
+	Catalog_DemoCounterparties.Ref,
+	Catalog_DemoCounterparties.DataVersion,
+	Catalog_DemoCounterparties.DeletionMark,
+	Catalog_DemoCounterparties.Predefined,
+	Catalog_DemoCounterparties.Parent,
+	Catalog_DemoCounterparties.IsFolder,
+	Catalog_DemoCounterparties.Code,
+	Catalog_DemoCounterparties.Description,
+	Catalog_DemoCounterparties.DefaultContract,
+	Catalog_DemoCounterparties.TIN,
+	Catalog_DemoCounterparties.NCBOCode,
+	Catalog_DemoCounterparties.CRTR,
+	Catalog_DemoCounterparties.DescriptionFull,
+	Catalog_DemoCounterparties.Partner,
+	Catalog_DemoCounterparties.CounterpartyKind,
+	Catalog_DemoCounterparties.AdditionalAttributes,
+	Catalog_DemoCounterparties.ContactInformation,
+	CASE
+		WHEN ISNULL(_DemoNotesOnSubjectAvailable.HasNotes, FALSE)
+			THEN 0
+		ELSE -1
+	END AS HasNotes,
+	0 AS Label1,
+	0 AS Label2,
+	0 AS Label3
+	
+FROM
+	Catalog._DemoCounterparties AS Catalog_DemoCounterparties
+		LEFT JOIN InformationRegister._DemoNotesOnSubjectAvailable AS _DemoNotesOnSubjectAvailable
+		ON (Catalog_DemoCounterparties.Ref = _DemoNotesOnSubjectAvailable.SubjectOf
+			AND _DemoNotesOnSubjectAvailable.Author = &amp;User)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ref</dcssch:dataPath>
+					<dcssch:field>Ref</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CRTR</dcssch:dataPath>
+					<dcssch:field>CRTR</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Description</dcssch:dataPath>
+					<dcssch:field>Description</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DataVersion</dcssch:dataPath>
+					<dcssch:field>DataVersion</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DeletionMark</dcssch:dataPath>
+					<dcssch:field>DeletionMark</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Code</dcssch:dataPath>
+					<dcssch:field>Code</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Predefined</dcssch:dataPath>
+					<dcssch:field>Predefined</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DefaultContract</dcssch:dataPath>
+					<dcssch:field>DefaultContract</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Parent</dcssch:dataPath>
+					<dcssch:field>Parent</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>IsFolder</dcssch:dataPath>
+					<dcssch:field>IsFolder</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>NCBOCode</dcssch:dataPath>
+					<dcssch:field>NCBOCode</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>TIN</dcssch:dataPath>
+					<dcssch:field>TIN</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DescriptionFull</dcssch:dataPath>
+					<dcssch:field>DescriptionFull</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Value</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Value</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>AdditionalAttributes</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Partner</dcssch:dataPath>
+					<dcssch:field>Partner</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.PhoneNumberWithoutCodes</dcssch:dataPath>
+					<dcssch:field>ContactInformation.PhoneNumberWithoutCodes</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CounterpartyKind</dcssch:dataPath>
+					<dcssch:field>CounterpartyKind</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.LineNumber</dcssch:dataPath>
+					<dcssch:field>ContactInformation.LineNumber</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>AdditionalAttributes.Ref</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes.Ref</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>AdditionalAttributes.LineNumber</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes.LineNumber</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>AdditionalAttributes.Property</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes.Property</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>AdditionalAttributes.Value</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes.Value</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Kind</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Kind</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>AdditionalAttributes.TextString</dcssch:dataPath>
+					<dcssch:field>AdditionalAttributes.TextString</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Ref</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Ref</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Type</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Type</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.KindForList</dcssch:dataPath>
+					<dcssch:field>ContactInformation.KindForList</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.City</dcssch:dataPath>
+					<dcssch:field>ContactInformation.City</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Presentation</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Presentation</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.FieldValues</dcssch:dataPath>
+					<dcssch:field>ContactInformation.FieldValues</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.Country</dcssch:dataPath>
+					<dcssch:field>ContactInformation.Country</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.State</dcssch:dataPath>
+					<dcssch:field>ContactInformation.State</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.EMAddress</dcssch:dataPath>
+					<dcssch:field>ContactInformation.EMAddress</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.ServerDomainName</dcssch:dataPath>
+					<dcssch:field>ContactInformation.ServerDomainName</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ContactInformation.PhoneNumber</dcssch:dataPath>
+					<dcssch:field>ContactInformation.PhoneNumber</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ContactInformation</dcssch:dataPath>
+					<dcssch:field>ContactInformation</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>HasNotes</dcssch:dataPath>
+					<dcssch:field>HasNotes</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть заметки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Has notes</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>IsForeignCounterparty</dcssch:dataPath>
+					<dcssch:field>IsForeignCounterparty</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Presentations</dcssch:dataPath>
+					<dcssch:field>Presentations</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RegistrationCountry</dcssch:dataPath>
+					<dcssch:field>RegistrationCountry</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>PredefinedDataName</dcssch:dataPath>
+					<dcssch:field>PredefinedDataName</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Label2</dcssch:dataPath>
+					<dcssch:field>Label2</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метка2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Label2</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Label3</dcssch:dataPath>
+					<dcssch:field>Label3</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метка3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Label3</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Label1</dcssch:dataPath>
+					<dcssch:field>Label1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метка1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Label1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>User</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>User</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Users</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog._DemoCounterparties</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="2">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ChangeSelectedItems" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit selected…</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit the selected items.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ChangeSelectedItems</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

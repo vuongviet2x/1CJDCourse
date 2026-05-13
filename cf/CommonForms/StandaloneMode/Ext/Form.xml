@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="StandaloneMode" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автономная работа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Standalone mode</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="StandaloneModeExtendedTooltip" id="68"/>
+			<ChildItems>
+				<Page name="DataSynchronization" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синхронизация данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data synchronization</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="DataSynchronizationExtendedTooltip" id="69"/>
+					<ChildItems>
+						<UsualGroup name="Group3" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group3ExtendedTooltip" id="70"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration5" id="57">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Picture>
+										<xr:Ref>StdPicture.Information</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration5ContextMenu" id="58"/>
+									<ExtendedTooltip name="Decoration5ExtendedTooltip" id="71"/>
+								</PictureDecoration>
+								<LabelDecoration name="Decoration4" id="54">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настроена синхронизация данных с приложением в Интернете.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data synchronization is set up.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Decoration4ContextMenu" id="55"/>
+									<ExtendedTooltip name="Decoration4ExtendedTooltip" id="72"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Group2" id="4">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group2ExtendedTooltip" id="73"/>
+							<ChildItems>
+								<UsualGroup name="Group7" id="5">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Group7ExtendedTooltip" id="74"/>
+									<ChildItems>
+										<Button name="PerformDataSynchronization" id="6">
+											<Type>UsualButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<DefaultItem>true</DefaultItem>
+											<CommandName>Form.Command.PerformDataSynchronization</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Синхронизировать</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Synchronize</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="PerformDataSynchronizationExtendedTooltip" id="75"/>
+										</Button>
+										<LabelDecoration name="Decoration3" id="7">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить синхронизацию данных сейчас.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Run data synchronization now.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Decoration3ContextMenu" id="8"/>
+											<ExtendedTooltip name="Decoration3ExtendedTooltip" id="76"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Group1" id="65">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Group1ExtendedTooltip" id="77"/>
+									<ChildItems>
+										<LabelDecoration name="LastSynchronizationInfo" id="50">
+											<TextColor>style:NoteText</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Последняя синхронизация: &lt;Дата&gt;.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Last synchronization date: &lt;Date&gt;.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="LastSynchronizationInfoContextMenu" id="51"/>
+											<ExtendedTooltip name="LastSynchronizationInfoExtendedTooltip" id="78"/>
+										</LabelDecoration>
+										<Button name="GoToConflicts" id="64">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.GoToConflicts</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предупреждений нет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>No warnings</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="GoToConflictsExtendedTooltip" id="79"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="DataSynchronizationSetup" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Синхронизировать данные</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Synchronize data</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="DataSynchronizationSetupExtendedTooltip" id="80"/>
+							<ChildItems>
+								<UsualGroup name="Group10" id="12">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Group10ExtendedTooltip" id="81"/>
+									<ChildItems>
+										<CheckBoxField name="SynchronizeDataOnStart" id="13">
+											<DataPath>SynchronizeDataOnStart</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При начале работы программы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Upon starting application</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="SynchronizeDataOnStartContextMenu" id="14"/>
+											<ExtendedTooltip name="SynchronizeDataOnStartExtendedTooltip" id="82"/>
+											<Events>
+												<Event name="OnChange">SynchronizeDataOnStartOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="SynchronizeDataOnExit" id="18">
+											<DataPath>SynchronizeDataOnExit</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При завершении работы программы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Upon closing application</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="SynchronizeDataOnExitContextMenu" id="19"/>
+											<ExtendedTooltip name="SynchronizeDataOnExitExtendedTooltip" id="83"/>
+											<Events>
+												<Event name="OnChange">SynchronizeDataOnExitOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="Decoration9" id="15">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:NoteText</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если ведется одновременная работа с приложением в Интернете,
+то рекомендуется получать актуальные данные каждый раз при начале работы программы
+и отправлять данные обратно при завершении работы с программой.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>If both the desktop and online applications are used,
+it is recommended that the data is synchronized
+each time a user starts or exits the desktop application.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Decoration9ContextMenu" id="16"/>
+											<ExtendedTooltip name="Decoration9ExtendedTooltip" id="84"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Group11" id="22">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Group11ExtendedTooltip" id="85"/>
+									<ChildItems>
+										<UsualGroup name="AutomaticSynchronizationSetup" id="63">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройка автоматической синхронизации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Automatic synchronization setup</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="AutomaticSynchronizationSetupExtendedTooltip" id="86"/>
+											<ChildItems>
+												<UsualGroup name="Group4" id="59">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Group</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Group4ExtendedTooltip" id="87"/>
+													<ChildItems>
+														<CheckBoxField name="SynchronizeDataBySchedule" id="23">
+															<DataPath>SynchronizeDataBySchedule</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Автоматически:</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Automatically:</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="SynchronizeDataByScheduleContextMenu" id="24"/>
+															<ExtendedTooltip name="SynchronizeDataByScheduleExtendedTooltip" id="88"/>
+															<Events>
+																<Event name="OnChange">SynchronizeDataByScheduleOnChange</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="DataSynchronizationScheduleOption" id="60">
+															<DataPath>DataSynchronizationScheduleOption</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вариант расписания синхронизации данных</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Data synchronization schedule option</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>30</Width>
+															<ListChoiceMode>true</ListChoiceMode>
+															<TextEdit>false</TextEdit>
+															<ContextMenu name="DataSynchronizationScheduleOptionContextMenu" id="61"/>
+															<ExtendedTooltip name="DataSynchronizationScheduleOptionExtendedTooltip" id="89"/>
+															<Events>
+																<Event name="OnChange">DataSynchronizationScheduleOptionOnChange</Event>
+															</Events>
+														</InputField>
+														<Button name="ChangeDataSynchronizationSchedule" id="27">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ChangeDataSynchronizationSchedule</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Изменить...</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Change…</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ChangeDataSynchronizationScheduleExtendedTooltip" id="90"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="Decoration11" id="25">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:NoteText</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>При наличии постоянного подключения к Интернету
+рекомендуется включить автоматическую синхронизацию данных.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>It is recommended that you enable automatic data synchronization 
+if there is constant Internet connection.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Decoration11ContextMenu" id="26"/>
+													<ExtendedTooltip name="Decoration11ExtendedTooltip" id="91"/>
+												</LabelDecoration>
+												<Button name="ConfigureConnection" id="62">
+													<Type>UsualButton</Type>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<CommandName>Form.Command.ConfigureConnection</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настроить подключение...</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Set up connection…</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ConfigureConnectionExtendedTooltip" id="92"/>
+												</Button>
+												<UsualGroup name="Group9" id="112">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Group</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>NormalSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Group9ExtendedTooltip" id="113"/>
+													<ChildItems>
+														<CheckBoxField name="ShowTimeConsumingSynchronizationWarning" id="109">
+															<DataPath>ShowTimeConsumingSynchronizationWarning</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Запрашивать подтверждение перед запуском синхронизации</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Ask for confirmation before data synchronization start</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>CheckBox</CheckBoxType>
+															<ContextMenu name="ShowTimeConsumingSynchronizationWarningContextMenu" id="110"/>
+															<ExtendedTooltip name="ShowTimeConsumingSynchronizationWarningExtendedTooltip" id="111"/>
+															<Events>
+																<Event name="OnChange">ShowTimeConsumingSynchronizationWarningOnChange</Event>
+															</Events>
+														</CheckBoxField>
+														<LabelDecoration name="Decoration1" id="101">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<TextColor>style:NoteText</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При синхронизации данных может быть получено обновление из приложения в Интернете.
+Получение и установка обновления может занять длительное время.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Update can be received from an online application when synchronizing data.
+Receiving and installation of the update can take a long time.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Decoration1ContextMenu" id="102"/>
+															<ExtendedTooltip name="Decoration1ExtendedTooltip" id="103"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ArchiveOfExchangeMessages" id="114">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ArchiveOfExchangeMessages</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Архив сообщений обменов...</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Exchange message archive...</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ArchiveOfExchangeMessagesExtendedTooltip" id="115"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="IsConfigurationUpdateReceived" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получено обновление конфигурации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Configuration update is received</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="IsConfigurationUpdateReceivedExtendedTooltip" id="93"/>
+					<ChildItems>
+						<UsualGroup name="Group6" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group6ExtendedTooltip" id="94"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration2" id="30">
+									<Width>5</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.Warning32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration2ContextMenu" id="31"/>
+									<ExtendedTooltip name="Decoration2ExtendedTooltip" id="95"/>
+								</PictureDecoration>
+								<LabelDecoration name="UpdateReceivedCommentLabel" id="32">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получено обновление программы из Интернета.
+Необходимо установить полученное обновление, после чего синхронизация будет продолжена.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>The application update is received from the Internet.
+Install the received update so that synchronization continues.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="UpdateReceivedCommentLabelContextMenu" id="33"/>
+									<ExtendedTooltip name="UpdateReceivedCommentLabelExtendedTooltip" id="96"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="InstallUpdate" id="34">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.InstallUpdate</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить обновление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Install update</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="InstallUpdateExtendedTooltip" id="97"/>
+						</Button>
+						<UsualGroup name="Group5" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group5ExtendedTooltip" id="98"/>
+							<ChildItems>
+								<LabelDecoration name="LastSynchronizationInfo1" id="52">
+									<TextColor>style:NoteText</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последняя синхронизация: &lt;Дата&gt;.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Last synchronization date: &lt;Date&gt;.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="LastSynchronizationInfo1ContextMenu" id="53"/>
+									<ExtendedTooltip name="LastSynchronizationInfo1ExtendedTooltip" id="99"/>
+								</LabelDecoration>
+								<Button name="GoToConflicts1" id="66">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.GoToConflicts</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предупреждений нет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>No warnings</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GoToConflicts1ExtendedTooltip" id="100"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ExtensionsAreReceived" id="116">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получены расширения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Extensions are received</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ExtensionsAreReceivedExtendedTooltip" id="117"/>
+					<ChildItems>
+						<UsualGroup name="Group8" id="118">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group8ExtendedTooltip" id="119"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration6" id="120">
+									<Width>5</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.Warning32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration6ContextMenu" id="121"/>
+									<ExtendedTooltip name="Decoration6ExtendedTooltip" id="122"/>
+								</PictureDecoration>
+								<LabelDecoration name="ExplanatoryLabelReceivedExtensions" id="123">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменены расширения конфигурации.
+Чтобы продолжить работу с учетом сделанных изменений, необходимо перезапустить программу.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Configuration extensions are changed.
+To continue with the changes made, restart the application.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ExplanatoryLabelReceivedExtensionsContextMenu" id="124"/>
+									<ExtendedTooltip name="ExplanatoryLabelReceivedExtensionsExtendedTooltip" id="125"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="RestartApplication" id="135">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.RestartApplication</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перезапустить программу</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Restart application</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="RestartApplicationExtendedTooltip" id="136"/>
+						</Button>
+						<UsualGroup name="Group12" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Group12ExtendedTooltip" id="129"/>
+							<ChildItems>
+								<LabelDecoration name="LastSynchronizationInfo2" id="130">
+									<TextColor>style:NoteText</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последняя синхронизация: &lt;Дата&gt;.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Last synchronization date: &lt;Date&gt;.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="LastSynchronizationInfo2ContextMenu" id="131"/>
+									<ExtendedTooltip name="LastSynchronizationInfo2ExtendedTooltip" id="132"/>
+								</LabelDecoration>
+								<Button name="GoToConflicts2" id="133">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.GoToConflicts</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предупреждений нет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>No warnings</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GoToConflicts2ExtendedTooltip" id="134"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="SynchronizeDataBySchedule" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически:</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Automatically:</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SynchronizeDataOnExit" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При завершении работы программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Upon closing the application</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SynchronizeDataOnStart" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При начале работы программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Upon starting the application</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ApplicationInSaaS" id="4">
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="DataSynchronizationScheduleOption" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант расписания синхронизации данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data synchronization schedule option</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DataSynchronizationSchedule" id="7">
+			<Type/>
+		</Attribute>
+		<Attribute name="DataSynchronizationUserSchedule" id="8">
+			<Type/>
+		</Attribute>
+		<Attribute name="AccountPasswordRecoveryAddress" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SaveUserPassword" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ShowTimeConsumingSynchronizationWarning" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрашивать подтверждение перед запуском синхронизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ask for a confirmation before data synchronization start</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="PerformDataSynchronization" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Synchronize</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>PerformDataSynchronization</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ChangeDataSynchronizationSchedule" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Change…</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить расписание синхронизации данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Change data synchronization schedule</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ChangeDataSynchronizationSchedule</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="InstallUpdate" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить обновление</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install update</v8:content>
+				</v8:item>
+			</Title>
+			<Action>InstallUpdate</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ConfigureConnection" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить подключение...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set up connection…</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить подключение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set up connection</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ConfigureConnection</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="GoToConflicts" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждений нет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>No warnings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к конфликтам синхронизации данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Go to data synchronization conflicts</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GoToConflicts</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ArchiveOfExchangeMessages" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив сообщений обменов...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Exchange message archive...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив сообщений обменов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Exchange message archive</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ArchiveOfExchangeMessages</Action>
+		</Command>
+		<Command name="RestartApplication" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить программу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Restart application</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить программу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Restart application</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RestartApplication</Action>
+		</Command>
+	</Commands>
+</Form>

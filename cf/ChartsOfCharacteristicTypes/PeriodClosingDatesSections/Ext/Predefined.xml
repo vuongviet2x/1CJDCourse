@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.19">
+	<Item id="4109a54a-f3ea-474c-9079-be08bf335668">
+		<Name>Delete_DemoBank</Name>
+		<Code/>
+		<Description>(not used) Demo: Bank</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.PeriodClosingDatesSections</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="100aba96-ea50-4f82-a06c-2e3fdc39a9f1">
+		<Name>Delete_DemoPayrollAccrual</Name>
+		<Code/>
+		<Description>(not used) Demo: Payroll</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.PeriodClosingDatesSections</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dc05fcce-97da-4f78-8317-d9b2b7f1388d">
+		<Name>Delete_DemoWarehouseAccounting</Name>
+		<Code/>
+		<Description>(not used) Demo: Warehouse accounting</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.PeriodClosingDatesSections</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7d63fbe5-db98-407e-89f5-c770e6a90cb2">
+		<Name>Delete_DemoTrade</Name>
+		<Code/>
+		<Description>(not used) Demo: Trading</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.PeriodClosingDatesSections</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoCore</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoBatchObjectModification</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoAccountingAudit</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoIBVersionUpdate</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoDocumentDocumentRecordsReport</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoPerformanceMonitor</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoDuplicateObjectsDetection</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoFullTextSearch</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoNetworkDownload</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoSoftwareLicenseCheck</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoReportsBulkEmails</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoMarkedObjectsDeletion</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems.Subsystem._DemoTotalsAndAggregatesManagement</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

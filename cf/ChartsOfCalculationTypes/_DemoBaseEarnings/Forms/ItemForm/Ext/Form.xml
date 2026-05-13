@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<Pages name="Pages" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="14"/>
+			<ChildItems>
+				<Page name="GroupBaseCalculationTypes" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БазовыеВидыРасчета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>BaseCalculationTypes</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupBaseCalculationTypesExtendedTooltip" id="16"/>
+					<ChildItems>
+						<Table name="BaseCalculationTypes" id="17">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.BaseCalculationTypes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="BaseCalculationTypesContextMenu" id="18"/>
+							<AutoCommandBar name="BaseCalculationTypesCommandBar" id="19"/>
+							<ExtendedTooltip name="BaseCalculationTypesExtendedTooltip" id="20"/>
+							<SearchStringAddition name="BaseCalculationTypesSearchString" id="21">
+								<AdditionSource>
+									<Item>BaseCalculationTypes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="BaseCalculationTypesSearchStringContextMenu" id="22"/>
+								<ExtendedTooltip name="BaseCalculationTypesSearchStringExtendedTooltip" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="BaseCalculationTypesViewStatus" id="24">
+								<AdditionSource>
+									<Item>BaseCalculationTypes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="BaseCalculationTypesViewStatusContextMenu" id="25"/>
+								<ExtendedTooltip name="BaseCalculationTypesViewStatusExtendedTooltip" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="BaseCalculationTypesSearchControl" id="27">
+								<AdditionSource>
+									<Item>BaseCalculationTypes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="BaseCalculationTypesSearchControlContextMenu" id="28"/>
+								<ExtendedTooltip name="BaseCalculationTypesSearchControlExtendedTooltip" id="29"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="BaseCalculationTypesCalculationType" id="30">
+									<DataPath>Object.BaseCalculationTypes.CalculationType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="BaseCalculationTypesCalculationTypeContextMenu" id="31"/>
+									<ExtendedTooltip name="BaseCalculationTypesCalculationTypeExtendedTooltip" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupLeadingCalculationTypes" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВедущиеВидыРасчета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>BaseCalculationTypes</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupLeadingCalculationTypesExtendedTooltip" id="34"/>
+					<ChildItems>
+						<Table name="LeadingCalculationTypes" id="35">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.LeadingCalculationTypes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="LeadingCalculationTypesContextMenu" id="36"/>
+							<AutoCommandBar name="LeadingCalculationTypesCommandBar" id="37"/>
+							<ExtendedTooltip name="LeadingCalculationTypesExtendedTooltip" id="38"/>
+							<SearchStringAddition name="LeadingCalculationTypesSearchString" id="39">
+								<AdditionSource>
+									<Item>LeadingCalculationTypes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="LeadingCalculationTypesSearchStringContextMenu" id="40"/>
+								<ExtendedTooltip name="LeadingCalculationTypesSearchStringExtendedTooltip" id="41"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="LeadingCalculationTypesViewStatus" id="42">
+								<AdditionSource>
+									<Item>LeadingCalculationTypes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="LeadingCalculationTypesViewStatusContextMenu" id="43"/>
+								<ExtendedTooltip name="LeadingCalculationTypesViewStatusExtendedTooltip" id="44"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="LeadingCalculationTypesSearchControl" id="45">
+								<AdditionSource>
+									<Item>LeadingCalculationTypes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="LeadingCalculationTypesSearchControlContextMenu" id="46"/>
+								<ExtendedTooltip name="LeadingCalculationTypesSearchControlExtendedTooltip" id="47"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="LeadingCalculationTypesCalculationType" id="48">
+									<DataPath>Object.LeadingCalculationTypes.CalculationType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="LeadingCalculationTypesCalculationTypeContextMenu" id="49"/>
+									<ExtendedTooltip name="LeadingCalculationTypesCalculationTypeExtendedTooltip" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupDisplacingCalculationTypes" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВытесняющиеВидыРасчета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>DisplacingCalculationTypes</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupDisplacingCalculationTypesExtendedTooltip" id="52"/>
+					<ChildItems>
+						<Table name="DisplacingCalculationTypes" id="53">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.DisplacingCalculationTypes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="DisplacingCalculationTypesContextMenu" id="54"/>
+							<AutoCommandBar name="DisplacingCalculationTypesCommandBar" id="55"/>
+							<ExtendedTooltip name="DisplacingCalculationTypesExtendedTooltip" id="56"/>
+							<SearchStringAddition name="DisplacingCalculationTypesSearchString" id="57">
+								<AdditionSource>
+									<Item>DisplacingCalculationTypes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="DisplacingCalculationTypesSearchStringContextMenu" id="58"/>
+								<ExtendedTooltip name="DisplacingCalculationTypesSearchStringExtendedTooltip" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="DisplacingCalculationTypesViewStatus" id="60">
+								<AdditionSource>
+									<Item>DisplacingCalculationTypes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="DisplacingCalculationTypesViewStatusContextMenu" id="61"/>
+								<ExtendedTooltip name="DisplacingCalculationTypesViewStatusExtendedTooltip" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="DisplacingCalculationTypesSearchControl" id="63">
+								<AdditionSource>
+									<Item>DisplacingCalculationTypes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="DisplacingCalculationTypesSearchControlContextMenu" id="64"/>
+								<ExtendedTooltip name="DisplacingCalculationTypesSearchControlExtendedTooltip" id="65"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="DisplacingCalculationTypesCalculationType" id="66">
+									<DataPath>Object.DisplacingCalculationTypes.CalculationType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DisplacingCalculationTypesCalculationTypeContextMenu" id="67"/>
+									<ExtendedTooltip name="DisplacingCalculationTypesCalculationTypeExtendedTooltip" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfCalculationTypesObject._DemoBaseEarnings</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

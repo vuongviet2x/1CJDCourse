@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormOpenEnterAreaForm" id="42">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.OpenEnterAreaForm</CommandName>
+				<ExtendedTooltip name="FormOpenEnterAreaFormExtendedTooltip" id="43"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="List" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>List</DataPath>
+			<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List</v8:content>
+				</v8:item>
+			</Title>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+			<ContextMenu name="ListContextMenu" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="EnteringExitingArea" id="66">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа1</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>List context menu group1</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="EnteringExitingAreaExtendedTooltip" id="67"/>
+						<ChildItems>
+							<Button name="ListContextMenuEnterArea" id="44">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.EnterArea</CommandName>
+								<ExtendedTooltip name="ListContextMenuEnterAreaExtendedTooltip" id="45"/>
+							</Button>
+							<Button name="ListContextMenuExitArea" id="46">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ExitArea</CommandName>
+								<ExtendedTooltip name="ListContextMenuExitAreaExtendedTooltip" id="47"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="MainCommandsOfListInContextMenu" id="68">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа1</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>List context menu group1</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="MainCommandsOfListInContextMenuExtendedTooltip" id="69"/>
+						<ChildItems>
+							<Button name="ListContextMenuCreate" id="48">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.Create</CommandName>
+								<ExtendedTooltip name="ListContextMenuCreateExtendedTooltip" id="49"/>
+							</Button>
+							<Button name="ListContextMenuCopy" id="50">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.Copy</CommandName>
+								<ExtendedTooltip name="ListContextMenuCopyExtendedTooltip" id="51"/>
+							</Button>
+							<Button name="ListContextMenuChange" id="52">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.Change</CommandName>
+								<ExtendedTooltip name="ListContextMenuChangeExtendedTooltip" id="53"/>
+							</Button>
+							<Button name="ListContextMenuDelete" id="54">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.Delete</CommandName>
+								<ExtendedTooltip name="ListContextMenuDeleteExtendedTooltip" id="55"/>
+							</Button>
+							<Button name="ListContextMenuFindByCurrentValue" id="56">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.FindByCurrentValue</CommandName>
+								<ExtendedTooltip name="ListContextMenuFindByCurrentValueExtendedTooltip" id="57"/>
+							</Button>
+							<Button name="ListContextMenuFind" id="58">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="ListContextMenuFindExtendedTooltip" id="59"/>
+							</Button>
+							<Button name="ListContextMenuCancelSearch" id="60">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.List.StandardCommand.CancelSearch</CommandName>
+								<ExtendedTooltip name="ListContextMenuCancelSearchExtendedTooltip" id="61"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="ListContextMenuCopyToClipboard" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.List.StandardCommand.CopyToClipboard</CommandName>
+						<ExtendedTooltip name="ListContextMenuCopyToClipboardExtendedTooltip" id="63"/>
+					</Button>
+					<Button name="ContextMenuListSearchEverywhere" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.List.StandardCommand.SearchEverywhere</CommandName>
+						<ExtendedTooltip name="ContextMenuListSearchEverywhereExtendedTooltip" id="65"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ListCommandBar" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ListExtendedTooltip" id="23"/>
+			<SearchStringAddition name="ListSearchString" id="24">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchStringContextMenu" id="25"/>
+				<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ListViewStatus" id="27">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="ListViewStatusContextMenu" id="28"/>
+				<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ListSearchControl" id="30">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ListSearchControlContextMenu" id="31"/>
+				<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="32"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="DataArea" id="4">
+					<DataPath>List.DataAreaAuxiliaryData</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Область данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data area</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="DataAreaContextMenu" id="5"/>
+					<ExtendedTooltip name="DataAreaExtendedTooltip" id="33"/>
+				</LabelField>
+				<LabelField name="Presentation" id="16">
+					<DataPath>List.Presentation</DataPath>
+					<ContextMenu name="PresentationContextMenu" id="17"/>
+					<ExtendedTooltip name="PresentationExtendedTooltip" id="34"/>
+				</LabelField>
+				<LabelField name="Status" id="6">
+					<DataPath>List.Status</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="StatusContextMenu" id="7"/>
+					<ExtendedTooltip name="StatusExtendedTooltip" id="35"/>
+				</LabelField>
+				<LabelField name="Repeat" id="8">
+					<DataPath>List.Repeat</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="RepeatContextMenu" id="9"/>
+					<ExtendedTooltip name="RepeatExtendedTooltip" id="36"/>
+				</LabelField>
+				<LabelField name="RetryOnAbnormalTermination" id="70">
+					<DataPath>List.RetryOnAbnormalTermination</DataPath>
+					<ContextMenu name="RetryOnAbnormalTerminationContextMenu" id="71"/>
+					<ExtendedTooltip name="RetryOnAbnormalTerminationExtendedTooltip" id="72"/>
+				</LabelField>
+				<CheckBoxField name="ProcessingError" id="12">
+					<DataPath>List.ProcessingError</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ProcessingErrorContextMenu" id="13"/>
+					<ExtendedTooltip name="ProcessingErrorExtendedTooltip" id="37"/>
+				</CheckBoxField>
+				<LabelField name="TimeZone" id="19">
+					<DataPath>List.TimeZone</DataPath>
+					<ContextMenu name="TimeZoneContextMenu" id="20"/>
+					<ExtendedTooltip name="TimeZoneExtendedTooltip" id="38"/>
+				</LabelField>
+				<LabelField name="Prefix" id="21">
+					<DataPath>List.Prefix</DataPath>
+					<ContextMenu name="PrefixContextMenu" id="22"/>
+					<ExtendedTooltip name="PrefixExtendedTooltip" id="39"/>
+				</LabelField>
+				<LabelField name="DataExportedID" id="10">
+					<DataPath>List.DataExportedID</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="DataExportedIDContextMenu" id="11"/>
+					<ExtendedTooltip name="DataExportedIDExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="Variant" id="14">
+					<DataPath>List.Variant</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="VariantContextMenu" id="15"/>
+					<ExtendedTooltip name="VariantExtendedTooltip" id="41"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>List.DataAreaAuxiliaryData</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	InformationRegisterDataAreas.DataAreaAuxiliaryData AS DataAreaAuxiliaryData,
+	InformationRegisterDataAreas.Status AS Status,
+	InformationRegisterDataAreas.Repeat AS Repeat,
+	InformationRegisterDataAreas.RetryOnAbnormalTermination AS RetryOnAbnormalTermination,
+	InformationRegisterDataAreas.DataExportedID AS DataExportedID,
+	InformationRegisterDataAreas.ProcessingError AS ProcessingError,
+	InformationRegisterDataAreas.Variant AS Variant,
+	DataAreaPresentation.Value AS Presentation,
+	DataAreaTimeZone.Value AS TimeZone,
+	DataAreaPrefix.Value AS Prefix
+FROM
+	InformationRegister.DataAreas AS InformationRegisterDataAreas
+		LEFT JOIN Constant.DataAreaPresentation AS DataAreaPresentation
+		ON InformationRegisterDataAreas.DataAreaAuxiliaryData = DataAreaPresentation.DataAreaAuxiliaryData
+		LEFT JOIN Constant.DataAreaTimeZone AS DataAreaTimeZone
+		ON InformationRegisterDataAreas.DataAreaAuxiliaryData = DataAreaTimeZone.DataAreaAuxiliaryData
+		LEFT JOIN Constant.DataAreaPrefix AS DataAreaPrefix
+		ON InformationRegisterDataAreas.DataAreaAuxiliaryData = DataAreaPrefix.DataAreaAuxiliaryData</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>TimeZone</dcssch:dataPath>
+					<dcssch:field>TimeZone</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Часовой пояс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Time zone</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RetryOnAbnormalTermination</dcssch:dataPath>
+					<dcssch:field>RetryOnAbnormalTermination</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Status</dcssch:dataPath>
+					<dcssch:field>Status</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DataAreaAuxiliaryData</dcssch:dataPath>
+					<dcssch:field>DataAreaAuxiliaryData</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Presentation</dcssch:dataPath>
+					<dcssch:field>Presentation</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Presentation</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ProcessingError</dcssch:dataPath>
+					<dcssch:field>ProcessingError</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Repeat</dcssch:dataPath>
+					<dcssch:field>Repeat</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DataExportedID</dcssch:dataPath>
+					<dcssch:field>DataExportedID</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Variant</dcssch:dataPath>
+					<dcssch:field>Variant</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Prefix</dcssch:dataPath>
+					<dcssch:field>Prefix</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Префикс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Prefix</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<MainTable>InformationRegister.DataAreas</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="OpenEnterAreaForm" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вход / выход из области данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Log in to / log out of data area</v8:content>
+				</v8:item>
+			</Title>
+			<Action>OpenEnterAreaForm</Action>
+		</Command>
+		<Command name="EnterArea" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Войти в область</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Log in to area</v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>Ctrl+E</Shortcut>
+			<Action>EnterArea</Action>
+		</Command>
+		<Command name="ExitArea" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выйти из области</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Log out of area</v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>Alt+E</Shortcut>
+			<Action>ExitArea</Action>
+		</Command>
+	</Commands>
+</Form>

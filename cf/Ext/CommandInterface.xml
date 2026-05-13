@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<SubsystemsOrder>
-		<Subsystem>Subsystem.Purchases</Subsystem>
-		<Subsystem>Subsystem.Sales</Subsystem>
-		<Subsystem>Subsystem.Warehouse</Subsystem>
-		<Subsystem>Subsystem.MasterData</Subsystem>
+		<Subsystem>Subsystem._DemoAccessManagement</Subsystem>
+		<Subsystem>Subsystem._DemoDataSynchronization</Subsystem>
+		<Subsystem>Subsystem._DemoUtilitySubsystems</Subsystem>
+		<Subsystem>Subsystem._DemoIntegratedSubsystemsPart</Subsystem>
+		<Subsystem>Subsystem._DemoIntegratedSubsystemsFollowUp</Subsystem>
+		<Subsystem>Subsystem._DemoBusinessProcessesAndTasks</Subsystem>
+		<Subsystem>Subsystem._DemoSurvey</Subsystem>
+		<Subsystem>Subsystem._DemoOrganizer</Subsystem>
+		<Subsystem>Subsystem._DemoMasterData</Subsystem>
+		<Subsystem>Subsystem._DemoDeveloperTools</Subsystem>
+		<Subsystem>Subsystem.Administration</Subsystem>
+		<Subsystem>Subsystem.ServiceAdministration</Subsystem>
 	</SubsystemsOrder>
 </CommandInterface>

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ContractHeaderGroup" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract header</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ContractHeaderGroupExtendedTooltip" id="58"/>
+			<ChildItems>
+				<UsualGroup name="HeaderLeftGroup" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Header left</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="HeaderLeftGroupExtendedTooltip" id="56"/>
+					<ChildItems>
+						<UsualGroup name="NumberDateGroup" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Number date</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="NumberDateGroupExtendedTooltip" id="45"/>
+							<ChildItems>
+								<InputField name="ContractNumber" id="37">
+									<DataPath>Object.ContractNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Number</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<Width>25</Width>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ContractNumberContextMenu" id="38"/>
+									<ExtendedTooltip name="ContractNumberExtendedTooltip" id="46"/>
+								</InputField>
+								<InputField name="ContractDate_" id="39">
+									<DataPath>Object.ContractDate_</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>   от</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>   dated</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ContractDate_ContextMenu" id="40"/>
+									<ExtendedTooltip name="ContractDate_ExtendedTooltip" id="47"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="DescriptionGroup" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Description</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DescriptionGroupExtendedTooltip" id="106"/>
+							<ChildItems>
+								<InputField name="Description" id="3">
+									<DataPath>Object.Description</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<TitleLocation>Left</TitleLocation>
+									<Wrap>false</Wrap>
+									<ContextMenu name="DescriptionContextMenu" id="4"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="50"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="HeaderRightGroup" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Header right</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="HeaderRightGroupExtendedTooltip" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ValidityPeriodGroup" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период действия</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Validity period</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ValidityPeriodGroupExtendedTooltip" id="62"/>
+							<ChildItems>
+								<InputField name="ValidityStartDate" id="21">
+									<DataPath>Object.ValidityStartDate</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период с</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Period from</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ValidityStartDateContextMenu" id="22"/>
+									<ExtendedTooltip name="ValidityStartDateExtendedTooltip" id="53"/>
+								</InputField>
+								<InputField name="ValidityEndDate" id="23">
+									<DataPath>Object.ValidityEndDate</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>to</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ValidityEndDateContextMenu" id="24"/>
+									<ExtendedTooltip name="ValidityEndDateExtendedTooltip" id="54"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ContractPartiesGroup" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стороны договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contracting parties</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ContractPartiesGroupExtendedTooltip" id="64"/>
+			<ChildItems>
+				<InputField name="Organization" id="84">
+					<DataPath>Object.Organization</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<ContextMenu name="OrganizationContextMenu" id="85"/>
+					<ExtendedTooltip name="OrganizationExtendedTooltip" id="86"/>
+				</InputField>
+				<UsualGroup name="PartnerCounterpartyGroup" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партнер контрагент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Partner counterparty</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="PartnerCounterpartyGroupExtendedTooltip" id="83"/>
+					<ChildItems>
+						<InputField name="Partner" id="87">
+							<DataPath>Object.Partner</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="PartnerContextMenu" id="88"/>
+							<ExtendedTooltip name="PartnerExtendedTooltip" id="89"/>
+						</InputField>
+						<InputField name="Owner" id="90">
+							<DataPath>Object.Owner</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="OwnerContextMenu" id="91"/>
+							<ExtendedTooltip name="OwnerExtendedTooltip" id="92"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ContractSettlementsProcedureGroup" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок расчетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Payment terms</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ContractSettlementsProcedureGroupExtendedTooltip" id="94"/>
+			<ChildItems>
+				<UsualGroup name="CurrencyPaymentProcedureGroup" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок оплаты валюта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Payment procedure currency</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="CurrencyPaymentProcedureGroupExtendedTooltip" id="101"/>
+					<ChildItems>
+						<InputField name="SettlementsCurrency" id="102">
+							<DataPath>Object.SettlementsCurrency</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="SettlementsCurrencyContextMenu" id="103"/>
+							<ExtendedTooltip name="SettlementsCurrencyExtendedTooltip" id="104"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._DemoCounterpartiesContracts</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

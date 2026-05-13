@@ -1,0 +1,1699 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeClose">BeforeClose</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnClose">OnClose</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="PanelMain" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель основная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Main panel</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="PanelMainExtendedTooltip" id="2"/>
+			<ChildItems>
+				<Page name="StartPage" id="163">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Start page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="StartPageExtendedTooltip" id="164"/>
+					<ChildItems>
+						<UsualGroup name="GroupBegin" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Start</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupBeginExtendedTooltip" id="166"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration14" id="179">
+									<Width>6</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.Warning32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration14ContextMenu" id="180"/>
+									<ExtendedTooltip name="Decoration14ExtendedTooltip" id="181"/>
+								</PictureDecoration>
+								<UsualGroup name="DataRegistrationGroup" id="228">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистрация данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Data registration</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="DataRegistrationGroupExtendedTooltip" id="229"/>
+									<ChildItems>
+										<LabelDecoration name="Decoration15" id="182">
+											<Width>50</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выгрузка данных может занять длительное время в случаях:
+ - медленного канала связи;
+ - большого объема данных в этой программе.
+
+Если операция будет отменена, можно выполнить ее позднее из формы списка настроенных синхронизаций данных.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>The data export can take a long time in the following cases:
+ - Slow connection
+ - Big data volume
+
+If you cancel the operation, you can run it again from the list of configured data synchronizations.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Decoration15ContextMenu" id="183"/>
+											<ExtendedTooltip name="Decoration15ExtendedTooltip" id="184"/>
+										</LabelDecoration>
+										<RadioButtonField name="DataExportMode" id="233">
+											<DataPath>DataExportMode</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состав выгружаемых данных</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Data to export</v8:content>
+												</v8:item>
+											</Title>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выгрузить все данные (начальная выгрузка данных)</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Export all data (initial data export)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">InitialExport</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выгрузить только зарегистрированные к обмену данные</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Export only data registered for exchange</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">StandardExport</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="DataExportModeContextMenu" id="234"/>
+											<ExtendedTooltip name="DataExportModeExtendedTooltip" id="235"/>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ConnectionSettingsPage" id="236">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки подключения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Connection settings page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ConnectionSettingsPageExtendedTooltip" id="237"/>
+					<ChildItems>
+						<UsualGroup name="GroupConnectionCheckError" id="248">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ошибка проверки подключения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Connection check error</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupConnectionCheckErrorExtendedTooltip" id="249"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration9" id="250">
+									<Width>6</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.Warning32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration9ContextMenu" id="251"/>
+									<ExtendedTooltip name="Decoration9ExtendedTooltip" id="252"/>
+								</PictureDecoration>
+								<UsualGroup name="ConnectionCheckMessageGroup" id="253">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сообщение проверка подключения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Connection check message</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ConnectionCheckMessageGroupExtendedTooltip" id="254"/>
+									<ChildItems>
+										<LabelDecoration name="Decoration22" id="255">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При проверке параметров подключения возникла ошибка.
+Выгрузка данных не выполнена.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Error checking connection parameters.
+Data export is canceled.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Decoration22ContextMenu" id="256"/>
+											<ExtendedTooltip name="Decoration22ExtendedTooltip" id="257"/>
+										</LabelDecoration>
+										<InputField name="ErrorMessage3" id="258">
+											<DataPath>ErrorMessage</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сообщение об ошибке</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Error message</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>50</Width>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ErrorMessage3ContextMenu" id="259"/>
+											<ExtendedTooltip name="ErrorMessage3ExtendedTooltip" id="260"/>
+										</InputField>
+										<Button name="ConnectionSettings" id="261">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ConnectionSettings</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройки подключения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Connection settings</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ConnectionSettingsExtendedTooltip" id="262"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="PasswordRequestPage" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запрос пароля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Password request page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="PasswordRequestPageExtendedTooltip" id="100"/>
+					<ChildItems>
+						<UsualGroup name="PromptForPasswordGroup" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запроса пароля</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Password request</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PromptForPasswordGroupExtendedTooltip" id="102"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration11" id="141">
+									<Width>1</Width>
+									<Height>2</Height>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration11ContextMenu" id="142"/>
+									<ExtendedTooltip name="Decoration11ExtendedTooltip" id="143"/>
+								</PictureDecoration>
+								<UsualGroup name="PasswordGroup" id="139">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Password</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="PasswordGroupExtendedTooltip" id="140"/>
+									<ChildItems>
+										<LabelDecoration name="PasswordLabelDecoration" id="103">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Введите пароль для доступа к "%1" через Интернет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Enter password for online access to "%1".</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="PasswordLabelDecorationContextMenu" id="104"/>
+											<ExtendedTooltip name="PasswordLabelDecorationExtendedTooltip" id="105"/>
+										</LabelDecoration>
+										<InputField name="WSPassword" id="144">
+											<DataPath>WSPassword</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Password</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="WSPasswordContextMenu" id="145"/>
+											<ExtendedTooltip name="WSPasswordExtendedTooltip" id="146"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ConnectionTestPage" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница проверка подключения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Connection check page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ConnectionTestPageExtendedTooltip" id="148"/>
+					<ChildItems>
+						<UsualGroup name="ConnectionCheckGroup" id="149">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка подключения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Connection check</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ConnectionCheckGroupExtendedTooltip" id="150"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration12" id="151">
+									<Width>6</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.TimeConsumingOperation48</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration12ContextMenu" id="152"/>
+									<ExtendedTooltip name="Decoration12ExtendedTooltip" id="153"/>
+								</PictureDecoration>
+								<LabelDecoration name="Decoration13" id="154">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполняется проверка параметров подключения.
+Пожалуйста, подождите...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Checking connection parameters.
+Please wait…</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Decoration13ContextMenu" id="155"/>
+									<ExtendedTooltip name="Decoration13ExtendedTooltip" id="156"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ChangeRecordingPage" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница регистрация изменений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Register changes page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ChangeRecordingPageExtendedTooltip" id="67"/>
+					<ChildItems>
+						<UsualGroup name="ChangesRegistrationGroup" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрация изменений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Register changes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ChangesRegistrationGroupExtendedTooltip" id="76"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration1" id="77">
+									<Width>6</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.TimeConsumingOperation48</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration1ContextMenu" id="78"/>
+									<ExtendedTooltip name="Decoration1ExtendedTooltip" id="79"/>
+								</PictureDecoration>
+								<LabelDecoration name="Decoration2" id="80">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполняется регистрация данных для выгрузки.
+Пожалуйста, подождите...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Registering data for export.
+Please wait...</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Decoration2ContextMenu" id="81"/>
+									<ExtendedTooltip name="Decoration2ExtendedTooltip" id="82"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ExportDataWithoutProgressPage" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выгрузка данных без прогресса</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data export without progress page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ExportDataWithoutProgressPageExtendedTooltip" id="74"/>
+					<ChildItems>
+						<UsualGroup name="DataExportGroupNoProgressBar" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка данных без прогресса</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Data export without progress</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DataExportGroupNoProgressBarExtendedTooltip" id="84"/>
+							<ChildItems>
+								<PictureDecoration name="Decoration3" id="85">
+									<Width>6</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.DataSyncTimeConsumingOperation48</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Decoration3ContextMenu" id="86"/>
+									<ExtendedTooltip name="Decoration3ExtendedTooltip" id="87"/>
+								</PictureDecoration>
+								<LabelDecoration name="DataExportNoProgressBarLabelDecoration" id="88">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполняется выгрузка данных для "%1".
+Пожалуйста, подождите...</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Exporting data for "%1".
+Please wait…</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="DataExportNoProgressBarLabelDecorationContextMenu" id="89"/>
+									<ExtendedTooltip name="DataExportNoProgressBarLabelDecorationExtendedTooltip" id="90"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ExportDataProgressPage" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выгрузка данных прогресс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data export progress page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ExportDataProgressPageExtendedTooltip" id="125"/>
+					<ChildItems>
+						<UsualGroup name="DataExportGroupProgressBar" id="126">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка данных прогресс</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Data export progress</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DataExportGroupProgressBarExtendedTooltip" id="127"/>
+							<ChildItems>
+								<UsualGroup name="ProgressPercentGroup" id="134">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Процент выполнения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Progress percentage</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ProgressPercentGroupExtendedTooltip" id="135"/>
+									<ChildItems>
+										<LabelDecoration name="DataExportProgressLabelDecoration" id="128">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выгрузка данных для "%1"</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Export data for "%1"</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="DataExportProgressLabelDecorationContextMenu" id="129"/>
+											<ExtendedTooltip name="DataExportProgressLabelDecorationExtendedTooltip" id="130"/>
+										</LabelDecoration>
+										<ProgressBarField name="DataExportProgressBar" id="131">
+											<DataPath>ProgressPercent</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Процент выполнения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Progress percentage</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ShowPercent>true</ShowPercent>
+											<ContextMenu name="DataExportProgressBarContextMenu" id="132"/>
+											<ExtendedTooltip name="DataExportProgressBarExtendedTooltip" id="133"/>
+										</ProgressBarField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="EndPage" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница окончание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Completion page</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="EndPageExtendedTooltip" id="6"/>
+					<ChildItems>
+						<Pages name="CompletionStatusPanel" id="157">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель состояние завершения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Completion state panel</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="CompletionStatusPanelExtendedTooltip" id="158"/>
+							<ChildItems>
+								<Page name="SuccessfulCompletionPage" id="159">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница завершение успех</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Completion success page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="SuccessfulCompletionPageExtendedTooltip" id="160"/>
+									<ChildItems>
+										<UsualGroup name="SuccessfulCompletionGroup" id="91">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершение успех</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Completion success</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<VerticalAlign>Top</VerticalAlign>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="SuccessfulCompletionGroupExtendedTooltip" id="92"/>
+											<ChildItems>
+												<PictureDecoration name="Decoration5" id="93">
+													<Width>6</Width>
+													<Height>2</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Success32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Decoration5ContextMenu" id="94"/>
+													<ExtendedTooltip name="Decoration5ExtendedTooltip" id="95"/>
+												</PictureDecoration>
+												<LabelDecoration name="ExportCompletedLabelDecoration" id="96">
+													<Width>50</Width>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Выгрузка успешно завершена.
+
+Теперь можно перейти в программу "%1" и выполнить сопоставление и загрузку полученных данных.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>The export is completed.
+
+Now you can open "%1" to map and import the exported data.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ExportCompletedLabelDecorationContextMenu" id="97"/>
+													<ExtendedTooltip name="ExportCompletedLabelDecorationExtendedTooltip" id="98"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="CompletionPageConnectionCheckError" id="263">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница завершение ошибка проверка подключения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Completion connection check error page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CompletionPageConnectionCheckErrorExtendedTooltip" id="264"/>
+									<ChildItems>
+										<UsualGroup name="CompletionCheckErrorConnectionGroup" id="265">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершение ошибка проверка подключения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Completion connection check error</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="CompletionCheckErrorConnectionGroupExtendedTooltip" id="266"/>
+											<ChildItems>
+												<PictureDecoration name="Decoration8" id="267">
+													<Width>6</Width>
+													<Height>2</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Warning32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Decoration8ContextMenu" id="268"/>
+													<ExtendedTooltip name="Decoration8ExtendedTooltip" id="269"/>
+												</PictureDecoration>
+												<UsualGroup name="ConnectionCheckMessageGroup1" id="270">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сообщение проверка подключения</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Connection check message</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ConnectionCheckMessageGroup1ExtendedTooltip" id="271"/>
+													<ChildItems>
+														<LabelDecoration name="Decoration16" id="272">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При проверке параметров подключения возникла ошибка.
+Выгрузка данных не выполнена.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Error checking connection parameters.
+Data export is canceled.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Decoration16ContextMenu" id="273"/>
+															<ExtendedTooltip name="Decoration16ExtendedTooltip" id="274"/>
+														</LabelDecoration>
+														<InputField name="ErrorMessage" id="275">
+															<DataPath>ErrorMessage</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сообщение об ошибке</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Error message</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>50</Width>
+															<MultiLine>true</MultiLine>
+															<ContextMenu name="ErrorMessageContextMenu" id="276"/>
+															<ExtendedTooltip name="ErrorMessageExtendedTooltip" id="277"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="ChangesRegistrationErrorPage" id="198">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница завершение ошибка регистрация изменений</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Completion change registration error page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ChangesRegistrationErrorPageExtendedTooltip" id="199"/>
+									<ChildItems>
+										<UsualGroup name="ChangesRegistrationErrorGroup" id="202">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершение ошибка регистрация изменений</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Completion change registration error</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ChangesRegistrationErrorGroupExtendedTooltip" id="203"/>
+											<ChildItems>
+												<PictureDecoration name="Decoration17" id="204">
+													<Width>6</Width>
+													<Height>2</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Warning32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Decoration17ContextMenu" id="205"/>
+													<ExtendedTooltip name="Decoration17ExtendedTooltip" id="206"/>
+												</PictureDecoration>
+												<UsualGroup name="ChangesRegistrationMessageGroup" id="207">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сообщение регистрация изменений</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Change registration message</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ChangesRegistrationMessageGroupExtendedTooltip" id="208"/>
+													<ChildItems>
+														<LabelDecoration name="Decoration18" id="209">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При регистрации данных произошла ошибка.
+Выгрузка данных не выполнена.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>An error occurred when registering data.
+Data export is canceled.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Decoration18ContextMenu" id="210"/>
+															<ExtendedTooltip name="Decoration18ExtendedTooltip" id="211"/>
+														</LabelDecoration>
+														<InputField name="ErrorMessage1" id="212">
+															<DataPath>ErrorMessage</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сообщение об ошибке</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Error message</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>50</Width>
+															<MultiLine>true</MultiLine>
+															<ContextMenu name="ErrorMessage1ContextMenu" id="213"/>
+															<ExtendedTooltip name="ErrorMessage1ExtendedTooltip" id="214"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="DataExportErrorPage" id="200">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница завершение ошибка выгрузка данных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Completion data export error page</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="DataExportErrorPageExtendedTooltip" id="201"/>
+									<ChildItems>
+										<UsualGroup name="DataExportErrorGroup" id="215">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершение ошибка выгрузка данных</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Completion error data export</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="DataExportErrorGroupExtendedTooltip" id="216"/>
+											<ChildItems>
+												<PictureDecoration name="Decoration19" id="217">
+													<Width>6</Width>
+													<Height>2</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Warning32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Decoration19ContextMenu" id="218"/>
+													<ExtendedTooltip name="Decoration19ExtendedTooltip" id="219"/>
+												</PictureDecoration>
+												<UsualGroup name="DataExportMessageGroup" id="220">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сообщение выгрузка данных</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Data export message</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="DataExportMessageGroupExtendedTooltip" id="221"/>
+													<ChildItems>
+														<LabelDecoration name="Decoration20" id="222">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выгрузка данных не выполнена.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Data export is canceled.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Decoration20ContextMenu" id="223"/>
+															<ExtendedTooltip name="Decoration20ExtendedTooltip" id="224"/>
+														</LabelDecoration>
+														<InputField name="ErrorMessage2" id="225">
+															<DataPath>ErrorMessage</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сообщение об ошибке</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Error message</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>50</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MultiLine>true</MultiLine>
+															<ContextMenu name="ErrorMessage2ContextMenu" id="226"/>
+															<ExtendedTooltip name="ErrorMessage2ExtendedTooltip" id="227"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Pages name="NavigationPanel" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель навигации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Navigation panel</v8:content>
+				</v8:item>
+			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="NavigationPanelExtendedTooltip" id="4"/>
+			<ChildItems>
+				<Page name="PageNavigationStart" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница навигация начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Navigation start page</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="PageNavigationStartExtendedTooltip" id="114"/>
+					<ChildItems>
+						<CommandBar name="StartNavigationRightCommandBar" id="115">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель навигация начало справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command bar navigation start right</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="StartNavigationRightCommandBarExtendedTooltip" id="116"/>
+							<ChildItems>
+								<Button name="NextCommand" id="117">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.NextCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Далее &gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Next &gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="NextCommandExtendedTooltip" id="118"/>
+								</Button>
+								<Button name="CancelCommand1" id="119">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CancelCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Cancel</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CancelCommand1ExtendedTooltip" id="120"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="PageNavigationFollowUp" id="167">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница навигация продолжение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page navigation continue</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="PageNavigationFollowUpExtendedTooltip" id="168"/>
+					<ChildItems>
+						<CommandBar name="ContinueNavigationLeftCommandBar" id="169">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель навигация продолжение слева</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command bar navigation continue left</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ContinueNavigationLeftCommandBarExtendedTooltip" id="170"/>
+							<ChildItems>
+								<Button name="BackCommand" id="177">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.BackCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt; Назад</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>&lt; Back</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="BackCommandExtendedTooltip" id="178"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<CommandBar name="ContinueNavigationRightCommandBar" id="171">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель навигация продолжение справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command bar navigation continue right</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="ContinueNavigationRightCommandBarExtendedTooltip" id="172"/>
+							<ChildItems>
+								<Button name="NextCommand1" id="173">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.NextCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Далее &gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Next &gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="NextCommand1ExtendedTooltip" id="174"/>
+								</Button>
+								<Button name="CancelCommand2" id="175">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CancelCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Cancel</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CancelCommand2ExtendedTooltip" id="176"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="PageNavigationWait" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница навигация ожидание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Navigation waiting page</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="PageNavigationWaitExtendedTooltip" id="10"/>
+					<ChildItems>
+						<CommandBar name="WaitNavigationCommandBarRight" id="13">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель навигация ожидание справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command bar navigation wait right</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="WaitNavigationCommandBarRightExtendedTooltip" id="14"/>
+							<ChildItems>
+								<Button name="CancelCommand" id="15">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CancelCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Cancel</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="CancelCommandExtendedTooltip" id="16"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="PageNavigationEnd" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница навигация окончание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Navigation completion page</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="PageNavigationEndExtendedTooltip" id="12"/>
+					<ChildItems>
+						<CommandBar name="EndNavigationRightCommandBar" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель навигация окончание справа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Command bar navigation end right</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="EndNavigationRightCommandBarExtendedTooltip" id="18"/>
+							<ChildItems>
+								<Button name="DoneCommand" id="19">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.DoneCommand</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Готово</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Finish</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="DoneCommandExtendedTooltip" id="20"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="NavigationTable" id="1">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="NavigationNumber" id="1">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MainPageName" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DecorationPageName" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="NavigationPageName" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="OnOpenHandlerName" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="OnNavigationToNextPageHandlerName" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="OnSwitchToPreviousPageHandlerName" id="7">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="TimeConsumingOperation" id="8">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="TimeConsumingOperationHandlerName" id="9">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="NavigationNumber" id="2">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExchangeNode" id="3">
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ForceCloseForm" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="WSPassword" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Password</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ProgressPercent" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент выполнения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Progress percentage</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PromptForPassword" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="UseProgress" id="9">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="TransportKind" id="10">
+			<Type>
+				<v8:Type>cfg:EnumRef.ExchangeMessagesTransportTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ConnectionCheckIdleHandlerParameters" id="11">
+			<Type/>
+		</Attribute>
+		<Attribute name="ConnectionCheckHandlerParameters" id="12">
+			<Type/>
+		</Attribute>
+		<Attribute name="ConnectionCheckCompleted" id="13">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ChangesRegistrationCompleted" id="14">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DataExportCompleted" id="15">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ErrorMessage" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение об ошибке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Error message</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DataRegistrationIdleHandlerParametersForInitialExport" id="17">
+			<Type/>
+		</Attribute>
+		<Attribute name="DataRegistrationHandlerParametersForInitialExport" id="19">
+			<Type/>
+		</Attribute>
+		<Attribute name="MappingDataExportIdleHandlerParameters" id="20">
+			<Type/>
+		</Attribute>
+		<Attribute name="MappingDataExportHandlerParameters" id="21">
+			<Type/>
+		</Attribute>
+		<Attribute name="DataExportMode" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состав выгружаемых данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data to export</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="InitialExport" id="24">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CorrespondentDataArea" id="25">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ApplicationDescription" id="26">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IsExchangeWithApplicationInService" id="27">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ConnectOverExternalConnection" id="28">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="TransportSettingAvailable" id="6">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Endpoint" id="18">
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.MessagesQueueEndpoint</v8:TypeSet>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="DoneCommand" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Finish</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда готово</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Done command</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DoneCommand</Action>
+		</Command>
+		<Command name="CancelCommand" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel command</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CancelCommand</Action>
+		</Command>
+		<Command name="NextCommand" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Next &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда далее</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Next command</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>NextCommand</Action>
+		</Command>
+		<Command name="BackCommand" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt; Назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>&lt; Back</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Back command</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>BackCommand</Action>
+		</Command>
+		<Command name="ConnectionSettings" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Connection settings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Connection settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ConnectionSettings</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="CommandBarMain" id="74">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель главное</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Command bar main</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="CommandBarMainExtendedTooltip" id="75"/>
+				<ChildItems>
+					<Button name="FormPostAndClose" id="76">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+						<ExtendedTooltip name="FormPostAndCloseExtendedTooltip" id="77"/>
+					</Button>
+					<Button name="FormWrite" id="78">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.StandardCommand.Write</CommandName>
+						<ExtendedTooltip name="FormWriteExtendedTooltip" id="79"/>
+					</Button>
+					<Button name="FormPost" id="80">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.StandardCommand.Post</CommandName>
+						<ExtendedTooltip name="FormPostExtendedTooltip" id="81"/>
+					</Button>
+					<Button name="FormUndoPosting" id="82">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.UndoPosting</CommandName>
+						<ExtendedTooltip name="FormUndoPostingExtendedTooltip" id="83"/>
+					</Button>
+					<Popup name="PrintSubmenu" id="90">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Печать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Print</v8:content>
+							</v8:item>
+						</Title>
+						<Picture>
+							<xr:Ref>StdPicture.Print</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>PictureAndText</Representation>
+						<ExtendedTooltip name="PrintSubmenuExtendedTooltip" id="91"/>
+						<ChildItems>
+							<Button name="FormDataProcessor_DemoPrintFormWriteOffGoodsMSWord" id="92">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor._DemoPrintForm.Command.GoodsWriteOffOpenOfficeXML</CommandName>
+								<DataPath>Object.Ref</DataPath>
+								<ExtendedTooltip name="FormDataProcessor_DemoPrintFormWriteOffGoodsMSWordExtendedTooltip" id="93"/>
+							</Button>
+							<ButtonGroup name="SubmenuPrintImportant" id="106">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать (Важное)</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Print (Important)</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="SubmenuPrintImportantExtendedTooltip" id="107"/>
+							</ButtonGroup>
+							<ButtonGroup name="SubmenuPrintNormal" id="108">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать (Обычное)</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Print (Standard)</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="SubmenuPrintNormalExtendedTooltip" id="109"/>
+							</ButtonGroup>
+							<ButtonGroup name="SubmenuPrintSeeAlso" id="110">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать (См. также)</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Print (See also)</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="SubmenuPrintSeeAlsoExtendedTooltip" id="111"/>
+							</ButtonGroup>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="CommandBarAdditional" id="86">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель дополнительно</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Command bar more</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="CommandBarAdditionalExtendedTooltip" id="87"/>
+			</ButtonGroup>
+			<Button name="FormHelp" id="88">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormHelpExtendedTooltip" id="89"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="NumberDateGroup" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Number date</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="NumberDateGroupExtendedTooltip" id="39"/>
+			<ChildItems>
+				<InputField name="Number" id="1">
+					<DataPath>Object.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="NumberContextMenu" id="2"/>
+					<ExtendedTooltip name="NumberExtendedTooltip" id="40"/>
+				</InputField>
+				<InputField name="Date" id="3">
+					<DataPath>Object.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>dated</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DateContextMenu" id="4"/>
+					<ExtendedTooltip name="DateExtendedTooltip" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="CompanyStorageLocation" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация место хранения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Company storage location</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="CompanyStorageLocationExtendedTooltip" id="38"/>
+			<ChildItems>
+				<InputField name="StorageLocation" id="7">
+					<DataPath>Object.StorageLocation</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="StorageLocationContextMenu" id="8"/>
+					<ExtendedTooltip name="StorageLocationExtendedTooltip" id="45"/>
+				</InputField>
+				<InputField name="Organization" id="5">
+					<DataPath>Object.Organization</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="OrganizationContextMenu" id="6"/>
+					<ExtendedTooltip name="OrganizationExtendedTooltip" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Goods" id="11">
+			<Representation>List</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.Goods</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Goods</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="GoodsContextMenu" id="12">
+				<ChildItems>
+					<Button name="GoodsCopyMenuRows" id="94">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.CopyRows</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Скопировать строки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Copy rows</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="GoodsCopyMenuRowsExtendedTooltip" id="95"/>
+					</Button>
+					<Button name="GoodsInsertMenuRows" id="96">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.InsertRows</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вставить строки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Paste rows</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="GoodsInsertMenuRowsExtendedTooltip" id="97"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="GoodsCommandBar" id="13">
+				<ChildItems>
+					<Button name="GoodsCopyRows" id="72">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.CopyRows</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Скопировать строки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Copy rows</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="GoodsCopyRowsExtendedTooltip" id="73"/>
+					</Button>
+					<Button name="GoodsInsertRows" id="70">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.InsertRows</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вставить строки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Paste rows</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="GoodsInsertRowsExtendedTooltip" id="71"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="GoodsExtendedTooltip" id="47"/>
+			<SearchStringAddition name="GoodsSearchString" id="61">
+				<AdditionSource>
+					<Item>Goods</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="GoodsSearchStringContextMenu" id="62"/>
+				<ExtendedTooltip name="GoodsSearchStringExtendedTooltip" id="63"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="GoodsViewStatus" id="64">
+				<AdditionSource>
+					<Item>Goods</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="GoodsViewStatusContextMenu" id="65"/>
+				<ExtendedTooltip name="GoodsViewStatusExtendedTooltip" id="66"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="GoodsSearchControl" id="67">
+				<AdditionSource>
+					<Item>Goods</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="GoodsSearchControlContextMenu" id="68"/>
+				<ExtendedTooltip name="GoodsSearchControlExtendedTooltip" id="69"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="GoodsLineNumber" id="14">
+					<DataPath>Object.Goods.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="GoodsLineNumberContextMenu" id="15"/>
+					<ExtendedTooltip name="GoodsLineNumberExtendedTooltip" id="48"/>
+				</LabelField>
+				<InputField name="GoodsProducts" id="16">
+					<DataPath>Object.Goods.Products</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>40</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="GoodsProductsContextMenu" id="17"/>
+					<ExtendedTooltip name="GoodsProductsExtendedTooltip" id="49"/>
+				</InputField>
+				<InputField name="GoodsCount" id="20">
+					<DataPath>Object.Goods.Count</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="GoodsCountContextMenu" id="21"/>
+					<ExtendedTooltip name="GoodsCountExtendedTooltip" id="50"/>
+				</InputField>
+				<InputField name="GoodsIndent" id="103">
+					<DataPath>Object.Goods.Indent</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<ContextMenu name="GoodsIndentContextMenu" id="104"/>
+					<ExtendedTooltip name="GoodsIndentExtendedTooltip" id="105"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="EmployeeResponsibleComment" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Person responsible comment</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="EmployeeResponsibleCommentExtendedTooltip" id="99"/>
+			<ChildItems>
+				<InputField name="Comment" id="100">
+					<DataPath>Object.Comment</DataPath>
+					<ContextMenu name="CommentContextMenu" id="101"/>
+					<ExtendedTooltip name="CommentExtendedTooltip" id="102"/>
+				</InputField>
+				<InputField name="EmployeeResponsible" id="9">
+					<DataPath>Object.EmployeeResponsible</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="EmployeeResponsibleContextMenu" id="10"/>
+					<ExtendedTooltip name="EmployeeResponsibleExtendedTooltip" id="53"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._DemoGoodsWriteOff</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.Goods">
+					<Column name="Indent" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отступ</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Indent</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="2">
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="InsertRows" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Paste rows</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить строки из буфера обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Paste rows from the clipboard</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+V</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.PasteFromClipboard</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>InsertRows</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CopyRows" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy rows</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строки в буфер обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy rows to the clipboard</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+C</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.CopyToClipboard</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>CopyRows</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>DataProcessor._DemoPrintForm.Command.GoodsWriteOffOpenOfficeXML</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Print</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

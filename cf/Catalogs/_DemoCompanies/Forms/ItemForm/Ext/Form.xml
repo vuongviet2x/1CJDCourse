@@ -1,0 +1,1108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Popup name="PrintSubmenu" id="91">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Print</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="PrintSubmenuExtendedTooltip" id="92"/>
+				<ChildItems>
+					<ButtonGroup name="SubmenuPrintImportant" id="106">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Печать (Важное)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Print (Important)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuPrintImportantExtendedTooltip" id="107"/>
+					</ButtonGroup>
+					<ButtonGroup name="SubmenuPrintNormal" id="108">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Печать (Обычное)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Print (Standard)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuPrintNormalExtendedTooltip" id="109"/>
+					</ButtonGroup>
+					<ButtonGroup name="SubmenuPrintSeeAlso" id="110">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Печать (См. также)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Print (See also)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuPrintSeeAlsoExtendedTooltip" id="111"/>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<Popup name="FillSubmenu" id="93">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнить</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Fill</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.FillForm</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="FillSubmenuExtendedTooltip" id="94"/>
+				<ChildItems>
+					<ButtonGroup name="SubmenuFillImportant" id="95">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю заполнить важное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu fill in important</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuFillImportantExtendedTooltip" id="96"/>
+					</ButtonGroup>
+					<ButtonGroup name="SubmenuFillNormal" id="97">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю заполнить обычное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu fill in standard</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuFillNormalExtendedTooltip" id="98"/>
+					</ButtonGroup>
+					<ButtonGroup name="SubmenuFillSeeAlso" id="99">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю заполнить см также</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu fill in see also</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="SubmenuFillSeeAlsoExtendedTooltip" id="100"/>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<Button name="FormAllowDenyEditing" id="135">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.AllowDenyEditing</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Запретить редактирование</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Deny editing</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="AllowProhibitEditingFormExtendedTooltip" id="136"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="MainGrouping" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование, префикс, код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description, prefix, code</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="MainGroupingExtendedTooltip" id="12"/>
+			<ChildItems>
+				<InputField name="Description" id="3" DisplayImportance="VeryHigh">
+					<DataPath>Object.Description</DataPath>
+					<Wrap>false</Wrap>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ромашка ООО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Daisy LLC</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="DescriptionContextMenu" id="4"/>
+					<ExtendedTooltip name="DescriptionExtendedTooltip" id="13"/>
+				</InputField>
+				<InputField name="Prefix" id="6" DisplayImportance="Low">
+					<DataPath>Object.Prefix</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="PrefixContextMenu" id="7"/>
+					<ExtendedTooltip name="PrefixExtendedTooltip" id="14"/>
+					<Events>
+						<Event name="OnChange">PrefixOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Code" id="1" DisplayImportance="Low">
+					<DataPath>Object.Code</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Wrap>false</Wrap>
+					<ContextMenu name="CodeContextMenu" id="2"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="11"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Pages" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="29"/>
+			<ChildItems>
+				<Page name="Main_Page" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Главное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Demo: Main</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Main_PageExtendedTooltip" id="31"/>
+					<ChildItems>
+						<UsualGroup name="IndividualEnterpreneurGroup" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Индивидуальный предприниматель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Individual entrepreneur</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="IndividualEnterpreneurGroupExtendedTooltip" id="82"/>
+							<ChildItems>
+								<RadioButtonField name="CompanyTypeIndividualEnterpreneur" id="83">
+									<DataPath>CompanyType</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company type</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Физическое лицо</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Individual</v8:content>
+										</v8:item>
+									</ToolTip>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ItemTitleHeight>2</ItemTitleHeight>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Индивидуальный предприниматель:</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Individual entrepreneur:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="CompanyTypeIndividualEnterpreneurContextMenu" id="84"/>
+									<ExtendedTooltip name="CompanyTypeIndividualEnterpreneurExtendedTooltip" id="85"/>
+									<Events>
+										<Event name="OnChange">BusinessEntityCompanyKindOnChange</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="IndividualEntrepreneur" id="19">
+									<DataPath>Object.IndividualEntrepreneur</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Индивидуальный предприниматель</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Individual entrepreneur</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="IndividualEntrepreneurContextMenu" id="20"/>
+									<ExtendedTooltip name="IndividualEntrepreneurExtendedTooltip" id="21"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="DescriptionGroup" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Description</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="DescriptionGroupExtendedTooltip" id="90"/>
+							<ChildItems>
+								<RadioButtonField name="CompanyTypeBusinessEntity" id="86">
+									<DataPath>CompanyType</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company type</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Юридическое лицо:</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Legal entity:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="CompanyTypeBusinessEntityContextMenu" id="87"/>
+									<ExtendedTooltip name="CompanyTypeBusinessEntityExtendedTooltip" id="88"/>
+									<Events>
+										<Event name="OnChange">BusinessEntityCompanyKindOnChange</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="AbbreviatedDescription" id="43">
+									<DataPath>Object.AbbreviatedDescription</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование (сокращенное)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Short name</v8:content>
+										</v8:item>
+									</Title>
+									<TitleHeight>2</TitleHeight>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Официальное сокращенное наименование по учредительным документам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Official abbreviated name according to constituent documents</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ООО "Ромашка"</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Daisy LLC</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="AbbreviatedDescriptionContextMenu" id="44"/>
+									<ExtendedTooltip name="AbbreviatedDescriptionExtendedTooltip" id="45"/>
+								</InputField>
+								<InputField name="DescriptionInternational" id="117">
+									<DataPath>Object.DescriptionInternational</DataPath>
+									<TitleHeight>2</TitleHeight>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Romashka Limited Liability Company</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Romashka Limited Liability Company</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="DescriptionInternationalContextMenu" id="118"/>
+									<ExtendedTooltip name="DescriptionInternationalExtendedTooltip" id="119"/>
+								</InputField>
+								<InputField name="DescriptionFull" id="46">
+									<DataPath>Object.DescriptionFull</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование (полное)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Full name</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<TitleHeight>2</TitleHeight>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Официальное полное наименование по учредительным документам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Official full name according to constituent documents</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>2</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<MultiLine>true</MultiLine>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общество с органиченной ответственностью "Ромашка"</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Daisy Limited Liability Company</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="DescriptionFullContextMenu" id="47"/>
+									<ExtendedTooltip name="DescriptionFullExtendedTooltip" id="48"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="CompanyDetailsGroup" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты организации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Company details</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="CompanyDetailsGroupExtendedTooltip" id="78"/>
+							<ChildItems>
+								<InputField name="ParentCompany" id="101">
+									<DataPath>Object.ParentCompany</DataPath>
+									<ContextMenu name="ParentCompanyContextMenu" id="102"/>
+									<ExtendedTooltip name="ParentCompanyExtendedTooltip" id="103"/>
+								</InputField>
+								<UsualGroup name="CodesGroup" id="104">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коды</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Codes</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CodesGroupExtendedTooltip" id="105"/>
+									<ChildItems>
+										<InputField name="TIN" id="16">
+											<DataPath>Object.TIN</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ИНН</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>TIN</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификационный номер налогоплательщика (ИНН) из "Свидетельства о постановке на учет российской организации в налоговом органе по месту ее нахождения".
+Состоит из 10 цифр.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>A taxpayer identification number (TIN) from "Certificate of registration of a Russian company with the tax authority at its location".
+ It consists of 10 digits.
+</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<Width>12</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="TINContextMenu" id="17"/>
+											<ExtendedTooltip name="TINExtendedTooltip" id="18"/>
+										</InputField>
+										<InputField name="CRTR" id="34">
+											<DataPath>Object.CRTR</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>КПП</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>KPP</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Код причины постановки на учет (КПП) из "Свидетельства о постановке на учет российской организации в налоговом органе по месту ее нахождения".
+Состоит из 9 цифр.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>A tax registration reason code (KPP) from "Certificate of registration of a Russian company with the tax authority at its location".
+ It consists of 9 digits.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<Width>9</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="CRTRContextMenu" id="35"/>
+											<ExtendedTooltip name="CRTRExtendedTooltip" id="36"/>
+											<Events>
+												<Event name="OnChange">CRTROnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="OGRN" id="37">
+											<DataPath>Object.OGRN</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ОГРН</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Registration number</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Основной государственный регистрационный номер (ОГРН) присваивается при государственной регистрации и указывается в "Свидетельстве о государственной регистрации юридического лица". Состоит из 13 цифр.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>The registration number is assigned at state registration and is specified in the Certificate of State Registration of Legal Entity. It consists of 13 digits.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="OGRNContextMenu" id="38"/>
+											<ExtendedTooltip name="OGRNExtendedTooltip" id="39"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="NumbersGroup" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номеров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Numbers</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="NumbersGroupExtendedTooltip" id="33"/>
+							<ChildItems>
+								<UsualGroup name="SettlementAccountAndBankGroup" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчетный счет и банк</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Current account and bank</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="SettlementAccountAndBankGroupExtendedTooltip" id="70"/>
+									<ChildItems>
+										<InputField name="SettlementAccount" id="57">
+											<DataPath>Object.SettlementAccount</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчетный счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Current account</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="SettlementAccountContextMenu" id="58"/>
+											<ExtendedTooltip name="SettlementAccountExtendedTooltip" id="59"/>
+										</InputField>
+										<InputField name="BIC" id="60">
+											<DataPath>Object.BIC</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>БИК</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Bank code</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Уникальный идентификатор банка состоит из 10 цифр. Первые две цифры БИК - "04"</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>The bank code consists of 10 digits. The first two digits are 04.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>9</Width>
+											<ContextMenu name="BICContextMenu" id="61"/>
+											<ExtendedTooltip name="BICExtendedTooltip" id="62"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="CorrespondentAccount" id="63">
+									<DataPath>Object.CorrespondentAccount</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корреспондентский счет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Correspondent account</v8:content>
+										</v8:item>
+									</Title>
+									<TitleHeight>2</TitleHeight>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="CorrespondentAccountContextMenu" id="64"/>
+									<ExtendedTooltip name="CorrespondentAccountExtendedTooltip" id="65"/>
+								</InputField>
+								<InputField name="RegistrationCountry" id="120">
+									<DataPath>Object.RegistrationCountry</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceParameters>
+										<app:item name="AllowClassifierData">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">true</Value>
+											</app:value>
+										</app:item>
+										<app:item name="OnlyClassifierData">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">true</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="RegistrationCountryContextMenu" id="121"/>
+									<ExtendedTooltip name="RegistrationCountryExtendedTooltip" id="122"/>
+									<Events>
+										<Event name="ChoiceProcessing">RegistrationCountryChoiceProcessing</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="CalendarGroup" id="115">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Календарь</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Calendar</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="CalendarGroupExtendedTooltip" id="116"/>
+							<ChildItems>
+								<InputField name="BusinessCalendar" id="112">
+									<DataPath>Object.BusinessCalendar</DataPath>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="BusinessCalendarContextMenu" id="113"/>
+									<ExtendedTooltip name="BusinessCalendarExtendedTooltip" id="114"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Additional" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Дополнительное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Demo: Additional</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="AdditionalExtendedTooltip" id="76"/>
+					<ChildItems>
+						<InputField name="CEO" id="22">
+							<DataPath>Object.CEO</DataPath>
+							<ContextMenu name="CEOContextMenu" id="23"/>
+							<ExtendedTooltip name="CEOExtendedTooltip" id="24"/>
+						</InputField>
+						<InputField name="ChiefAccountant" id="25">
+							<DataPath>Object.ChiefAccountant</DataPath>
+							<ContextMenu name="ChiefAccountantContextMenu" id="26"/>
+							<ExtendedTooltip name="ChiefAccountantExtendedTooltip" id="27"/>
+						</InputField>
+						<InputField name="InformationSupport" id="49">
+							<DataPath>Object.InformationSupport</DataPath>
+							<ContextMenu name="InformationSupportContextMenu" id="50"/>
+							<ExtendedTooltip name="InformationSupportExtendedTooltip" id="51"/>
+						</InputField>
+						<UsualGroup name="SignaturesAndSeals" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписи и печати</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Signatures and stamps</v8:content>
+								</v8:item>
+							</Title>
+							<Height>15</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="SignaturesAndSealsExtendedTooltip" id="130"/>
+							<ChildItems>
+								<UsualGroup name="CompanySeal" id="127">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Печать организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company stamp</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="CompanySealExtendedTooltip" id="128"/>
+								</UsualGroup>
+								<UsualGroup name="CEOSignature" id="123">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись директора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>CEO's signature</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="CEOSignatureExtendedTooltip" id="124"/>
+								</UsualGroup>
+								<UsualGroup name="ChiefAccountantSignature" id="125">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись главного бухгалтера</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Chief accountant's signature</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ChiefAccountantSignatureExtendedTooltip" id="126"/>
+								</UsualGroup>
+								<UsualGroup name="OrganizationSLogoForAnElectronicSignatureStamp" id="133">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Эмблема организации для штампа электронной подписи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company logo for digital signature stamp</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="OrganizationSLogoForAnElectronicSignatureStampExtendedTooltip" id="134"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="HyperlinkShowManualOnCreatingReplicaSignatureAndSeal" id="131">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ShowInstructionOnHowToCreateFacsimileSignatureAndSeal</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция "Как сделать факсимильную подпись и печать"</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>How to create facsimile signatures and stamps</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="HyperlinkShowManualOnCreatingReplicaSignatureAndSealExtendedTooltip" id="132"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ContactInformationGroup" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адреса, телефоны</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Addresses and phones</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ContactInformationGroupExtendedTooltip" id="15"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._DemoCompanies</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="RefreshInterface" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CompanyType" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Company type</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="AttachableCommandsParameters" id="4">
+			<Type/>
+		</Attribute>
+		<Attribute name="ContactInformationAdditionalAttributesDetails" id="6">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="AttributeName" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Kind" id="2">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ContactInformationKinds</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Type" id="3">
+					<Type>
+						<v8:Type>cfg:EnumRef.ContactInformationTypes</v8:Type>
+					</Type>
+				</Column>
+				<Column name="FieldValues" id="4">
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Comment" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsTabularSectionAttribute" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ValidFrom" id="8">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsHistoricalContactInformation" id="9">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="StoreChangeHistory" id="11">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Value" id="10">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ShowInstructionOnHowToCreateFacsimileSignatureAndSeal" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать инструкцию по созданию факсимильной подписи и печати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>How to create facsimile signatures and stamps</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать инструкцию по созданию факсимильной подписи и печати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>How to create facsimile signatures and stamps</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ShowInstructionOnHowToCreateFacsimileSignatureAndSeal</Action>
+		</Command>
+		<Command name="AllowDenyEditing" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить редактирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Deny editing</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить запретить редактирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Allow deny editing</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AllowDenyEditing</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister._DemoCompaniesEmployees.StandardCommand.OpenByValue.Organization</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog._DemoBankAccounts.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.AttachedFiles</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

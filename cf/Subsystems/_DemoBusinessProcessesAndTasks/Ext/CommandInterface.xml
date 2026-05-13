@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandsVisibility>
+		<Command name="Task.PerformerTask.Command.MyTasks">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Task.PerformerTask.Command.AllTasks">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Task.PerformerTask.Command.MyTasks">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Task.PerformerTask.Command.AllTasks">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Task.PerformerTask.Command.MyTasks">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Task.PerformerTask.Command.AllTasks">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._DemoBusinessProcessesAndTasks.Subsystem.RoleAddressingSetup</Subsystem>
+		<Subsystem>Subsystem._DemoBusinessProcessesAndTasks.Subsystem.JobsAssignment</Subsystem>
+		<Subsystem>Subsystem._DemoBusinessProcessesAndTasks.Subsystem.CompletionControl</Subsystem>
+		<Subsystem>Subsystem._DemoBusinessProcessesAndTasks.Subsystem.TasksExecution</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

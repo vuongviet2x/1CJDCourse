@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="7a114cde-3a5e-4791-b1a7-722c1bf743cd">
+		<Properties>
+			<Name>Use</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Showcase</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoReceivedGoodsRecording</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoInventoryTransfer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal._DemoWarehouseDocuments</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister._DemoGoodsBalancesInStorageLocations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoPayrollAccrual</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoCashVoucher</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Files</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProjects</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoSalesOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoGoodsWriteOff</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoBankAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProductsKinds</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProductAccessGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoPartnersAccessGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCashAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCashRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoPartnersContactPersons</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCounterparties</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoStorageLocations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProducts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProductsAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoPartners</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProjectsAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCustomerProformaInvoiceAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FilesVersions</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalUsers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalUsersGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AdditionalReportsAndDataProcessors</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PlannedInteractionAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ObjectsPropertiesValues</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ObjectPropertyValueHierarchy</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCompanies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FilesFolders</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EmailMessageFolders</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EmailProcessingRules</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SMSMessageAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PhoneCallAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EmailAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.IncomingEmailAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.OutgoingEmailAttachedFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoGoodsReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoGoodsSales</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoCustomerProformaInvoice</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoTaxInvoiceReceived</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Meeting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PlannedInteraction</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SMSMessage</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PhoneCall</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.IncomingEmail</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.OutgoingEmail</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.Interactions</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.AdditionalAttributesAndInfo</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister._DemoCompaniesEmployees</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BusinessProcessesData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.AdditionalInfo</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.TaskPerformers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.UserReminders</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ReportOptionsSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmailAccountSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataProcessorAccessUserSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.InteractionsFolderSubjects</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DeleteStoredVersionFiles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.PerformerTask</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.Job</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess._DemoJobWithRoleAddressing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCounterpartiesContracts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister._DemoWarehouseDocumentsRegister</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister._DemoProductsPrices</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._DemoForwarderInstruction</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister._DemoImportedInpaymentsFromBusinessEntities</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoDepartments</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

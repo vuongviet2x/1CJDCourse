@@ -1,0 +1,1331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="FormStandardCommands" id="65">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма стандартные команды</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Form standard commands</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="FormStandardCommandsExtendedTooltip" id="90"/>
+				<ChildItems>
+					<Button name="FormCopy" id="267">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Copy</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Скопировать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Copy</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="FormCopyExtendedTooltip" id="268"/>
+					</Button>
+					<Button name="FormDelete" id="231">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="FormDeleteExtendedTooltip" id="232"/>
+					</Button>
+					<Button name="FormCheckCertificate" id="75">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.CheckCertificate</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Проверить...</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Verify…</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="FormCheckCertificateExtendedTooltip" id="92"/>
+					</Button>
+					<Button name="FormSaveCertificateDataToFile" id="235">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.SaveCertificateDataToFile</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сохранить в файл...</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Save to file…</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="FormSaveCertificateDataToFileExtendedTooltip" id="236"/>
+					</Button>
+					<Button name="FormChangePIN" id="269">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ChangePIN</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сменить пин-код</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Change PIN</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="FormChangePINExtendedTooltip" id="270"/>
+					</Button>
+					<Button name="FormResetPassword" id="271">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ResetPassword</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сбросить пароль в памяти</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Reset password</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="FormResetPasswordExtendedTooltip" id="272"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="FormGroupRevoked" id="332">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа отозван</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Form group revoked</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="FormGroupRevokedExtendedTooltip" id="333"/>
+				<ChildItems>
+					<Button name="FormCertificateRevoked" id="63">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.CertificateRevoked</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сертификат отозван</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Certificate revoked</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="FormCertificateRevokedExtendedTooltip" id="94"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="FormShowAutoPopulatedAttributes" id="219">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowAutoPopulatedAttributes</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Показать автозаполняемые реквизиты</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Show autofilled attributes</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowAutoPopulatedAttributesExtendedTooltip" id="220"/>
+			</Button>
+			<Button name="FormShowCertificateApplication" id="265">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ShowCertificateApplication</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Показать заявление, по которому был получен сертификат</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Show application for this certificate issuance</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowCertificateApplicationExtendedTooltip" id="266"/>
+			</Button>
+			<Button name="FormCustomizeForm" id="233">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ExtendedTooltip name="FormCustomizeFormExtendedTooltip" id="234"/>
+			</Button>
+			<Button name="FormHelp" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="FormHelpExtendedTooltip" id="95"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="FillCheckProcessingAtServer">FillCheckProcessingAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Header_Group" id="325">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка группа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Header_GroupExtendedTooltip" id="326"/>
+			<ChildItems>
+				<UsualGroup name="GroupWarning" id="310">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предупреждение группа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group warning</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:AttentionBackColor</BackColor>
+					<ExtendedTooltip name="GroupWarningExtendedTooltip" id="311"/>
+					<ChildItems>
+						<PictureDecoration name="AttentionPicture" id="315">
+							<Picture>
+								<xr:Ref>CommonPicture.Warning</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="AttentionPictureContextMenu" id="316"/>
+							<ExtendedTooltip name="AttentionPictureExtendedTooltip" id="317"/>
+						</PictureDecoration>
+						<LabelDecoration name="Warning" id="312">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>70</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предупреждение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Warning</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="WarningContextMenu" id="313"/>
+							<ExtendedTooltip name="WarningExtendedTooltip" id="314"/>
+							<Events>
+								<Event name="URLProcessing">WarningURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<CheckBoxField name="SigningAllowed" id="322">
+							<DataPath>SigningAllowed</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрешить подписание</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Allow signing</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SigningAllowedContextMenu" id="323"/>
+							<ExtendedTooltip name="SigningAllowedExtendedTooltip" id="324">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Эта персональная настройка позволяет игнорировать проверку квалифицированности сертификата при создании и проверке подписи. Подпись, сделанная данным сертификатом, не будет являться юридически значимой, но может использоваться, например, для внутреннего документооборота.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>With this personal setting, you can ignore the certificate qualification check when creating and verifying a signature. The signature made by this certificate will not be legally valid, but you can use it, for example, to sign internal documents.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">SigningAllowedOnChange</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="CertificateStatusGroup" id="276">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние сертификата группа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Certificate state group</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ToolTipBackColor</BackColor>
+					<ExtendedTooltip name="CertificateStatusGroupExtendedTooltip" id="277"/>
+					<ChildItems>
+						<PictureDecoration name="CertificateImage" id="281">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка сертификата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificate picture</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.KeyCertificate</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="CertificateImageContextMenu" id="282"/>
+							<ExtendedTooltip name="CertificateImageExtendedTooltip" id="283"/>
+						</PictureDecoration>
+						<LabelDecoration name="CertificateStatus" id="290">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>70</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Состояние сертификата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificate state</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Auto</HorizontalAlign>
+							<ContextMenu name="CertificateStatusContextMenu" id="291"/>
+							<ExtendedTooltip name="CertificateStatusExtendedTooltip" id="292"/>
+						</LabelDecoration>
+						<LabelDecoration name="DecorationReissued" id="305">
+							<Visible>false</Visible>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link CertificateReissued&gt;(перевыпущен)&lt;/&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>&lt;link CertificateReissued&gt;(reissued)&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationReissuedContextMenu" id="306"/>
+							<ExtendedTooltip name="DecorationReissuedExtendedTooltip" id="307"/>
+							<Events>
+								<Event name="URLProcessing">DecorationReissuedURLProcessing</Event>
+							</Events>
+						</LabelDecoration>
+						<CheckBoxField name="RemindAboutReissue" id="278">
+							<DataPath>RemindAboutReissue</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Напомнить о перевыпуске</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Remind me to reissue</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="RemindAboutReissueContextMenu" id="279"/>
+							<ExtendedTooltip name="RemindAboutReissueExtendedTooltip" id="280"/>
+							<Events>
+								<Event name="OnChange">RemindAboutReissueOnChange</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="CertificateData" id="151">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сертификата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Certificate data</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="CertificateDataExtendedTooltip" id="152"/>
+			<ChildItems>
+				<Table name="CertificateDataDetails" id="237">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<SkipOnInput>true</SkipOnInput>
+					<HeightControlVariant>UseContentHeight</HeightControlVariant>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<Header>false</Header>
+					<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>CertificateDataDetails</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание данных сертификата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Certificate data description</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="CertificateDataDetailsContextMenu" id="238">
+						<Autofill>false</Autofill>
+					</ContextMenu>
+					<AutoCommandBar name="CertificateDataDetailsCommandBar" id="239">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="CertificateDataDetailsExtendedTooltip" id="240"/>
+					<SearchStringAddition name="CertificateDataDetailsSearchString" id="247">
+						<AdditionSource>
+							<Item>CertificateDataDetails</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CertificateDataDetailsSearchStringContextMenu" id="248"/>
+						<ExtendedTooltip name="CertificateDataDetailsSearchStringExtendedTooltip" id="249"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="CertificateDataDetailsViewStatus" id="250">
+						<AdditionSource>
+							<Item>CertificateDataDetails</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CertificateDataDetailsViewStatusContextMenu" id="251"/>
+						<ExtendedTooltip name="CertificateDataDetailsViewStatusExtendedTooltip" id="252"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="CertificateDataDetailsSearchControl" id="253">
+						<AdditionSource>
+							<Item>CertificateDataDetails</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="CertificateDataDetailsSearchControlContextMenu" id="254"/>
+						<ExtendedTooltip name="CertificateDataDetailsSearchControlExtendedTooltip" id="255"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="CertificateDataDetailsProperty" id="241">
+							<DataPath>CertificateDataDetails.Property</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Свойство</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Property</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>13</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="CertificateDataDetailsPropertyContextMenu" id="242"/>
+							<ExtendedTooltip name="CertificateDataDetailsPropertyExtendedTooltip" id="243"/>
+						</InputField>
+						<InputField name="CertificateDataDetailsValue" id="244">
+							<DataPath>CertificateDataDetails.Value</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Value</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CertificateDataDetailsValueContextMenu" id="245"/>
+							<ExtendedTooltip name="CertificateDataDetailsValueExtendedTooltip" id="246"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="GroupOpenProperties" id="327">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открытия свойств</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Open properties</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupOpenPropertiesExtendedTooltip" id="328"/>
+					<ChildItems>
+						<Button name="ShowCertificateData" id="153">
+							<Type>Hyperlink</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>true</SkipOnInput>
+							<CommandName>Form.Command.ShowCertificateData</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все свойства сертификата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>All certificate properties</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ShowCertificateDataExtendedTooltip" id="154"/>
+						</Button>
+						<Button name="ShowCertificateApplication" id="263">
+							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
+							<Representation>PictureAndText</Representation>
+							<Enabled>false</Enabled>
+							<CommandName>Form.Command.ShowCertificateApplication</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заявление, по которому получен сертификат</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Approved application</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ShowCertificateApplicationExtendedTooltip" id="264"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="HorizontalGroup1" id="210">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Горизонтальная группа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Horizontal group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HorizontalGroup1ExtendedTooltip" id="211"/>
+			<ChildItems>
+				<UsualGroup name="Fields" id="215">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fields</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="FieldsExtendedTooltip" id="216"/>
+					<ChildItems>
+						<UsualGroup name="FieldsAutoPopulatedFromCertificateData" id="193">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авто поля из данных сертификата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Auto fields from certificate data</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="FieldsAutoPopulatedFromCertificateDataExtendedTooltip" id="194"/>
+							<ChildItems>
+								<UsualGroup name="HorizontalGroup2" id="189">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Горизонтальная группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Horizontal group</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="HorizontalGroup2ExtendedTooltip" id="190"/>
+									<ChildItems>
+										<InputField name="LastName" id="174">
+											<DataPath>Object.LastName</DataPath>
+											<Width>16</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="LastNameContextMenu" id="175"/>
+											<ExtendedTooltip name="LastNameExtendedTooltip" id="176"/>
+										</InputField>
+										<InputField name="Name" id="177">
+											<DataPath>Object.Name</DataPath>
+											<Width>16</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="NameContextMenu" id="178"/>
+											<ExtendedTooltip name="NameExtendedTooltip" id="179"/>
+										</InputField>
+										<InputField name="MiddleName" id="180">
+											<DataPath>Object.MiddleName</DataPath>
+											<Width>22</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="MiddleNameContextMenu" id="181"/>
+											<ExtendedTooltip name="MiddleNameExtendedTooltip" id="182"/>
+										</InputField>
+										<Button name="EditFirstNameAndPatronymic" id="308">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.EditFirstNameAndPatronymic</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Редактировать имя и отчество</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Edit first name and middle name</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="EditFirstNameAndPatronymicExtendedTooltip" id="309"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="HorizontalGroup3" id="197">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вертикальная группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Vertical group</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="HorizontalGroup3ExtendedTooltip" id="198"/>
+									<ChildItems>
+										<InputField name="Firm" id="186">
+											<DataPath>Object.Firm</DataPath>
+											<Width>37</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="FirmContextMenu" id="187"/>
+											<ExtendedTooltip name="FirmExtendedTooltip" id="188"/>
+										</InputField>
+										<InputField name="JobTitle" id="183">
+											<DataPath>Object.JobTitle</DataPath>
+											<Width>20</Width>
+											<ContextMenu name="JobTitleContextMenu" id="184"/>
+											<ExtendedTooltip name="JobTitleExtendedTooltip" id="185"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Description" id="1">
+							<DataPath>Object.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>100</MaxWidth>
+							<ContextMenu name="DescriptionContextMenu" id="2"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="97">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Уникальное представление сертификата используется в полях выбора при подписании и
+шифровании. Оно формируется из фамилии, имени, организации, должности и срока действия.
+Например: "Иванов Иван, ООО 1С, Программист, до 03.2017".
+
+Когда у пользователя два сертификата от разных удостоверяющих центров (УЦ),
+тогда представление нужно дополнить именем УЦ.
+Например: "Иванов Иван, ООО 1С, Программист, до 03.2017, УЦ 1С".
+
+Когда сертификат используется для специальной цели разными пользователями,
+тогда представление нужно заменить на описание этой цели, например:
+"Для подписания счетов-фактур, до 05.2019",
+"Для подписания налоговой отчетности, до 12.2015".</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Unique certificate presentation is used in selection fields on signing 
+and encrypting. It consists of last name, name, company, position, and validity term.
+For example: "Anthony Smith, 1C LLC, Developer, until 03/2017".
+
+In case a user has two certificates issued by different certificate authorities (CA), 
+the CA name is added to the certificate presentation.
+For example: "Anthony Smith, 1C LLC, Developer, until 03/2017, 1C CA".
+
+In case a certificate is used by multiple users for a certain purpose,
+the purpose description is used instead of the certificate presentation, for example:
+"For tax invoice signing, until 05/2019",
+"For tax reporting signing, until 12/2015".</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<UsualGroup name="GroupCertificateDetails" id="300">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты сертификата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Certificate attributes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="GroupCertificateDetailsExtendedTooltip" id="301"/>
+							<ChildItems>
+								<UsualGroup name="GroupCompanyIndividual" id="295">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация физическое лицо</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Company and individual</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="GroupCompanyIndividualExtendedTooltip" id="296"/>
+									<ChildItems>
+										<InputField name="Organization" id="168">
+											<DataPath>Object.Organization</DataPath>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+											<ContextMenu name="OrganizationContextMenu" id="169"/>
+											<ExtendedTooltip name="OrganizationExtendedTooltip" id="170"/>
+										</InputField>
+										<UsualGroup name="GroupInidividual" id="318">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Физическое лицо</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Individual</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="GroupInidividualExtendedTooltip" id="319"/>
+											<ChildItems>
+												<InputField name="Individual" id="287">
+													<DataPath>Object.Individual</DataPath>
+													<ContextMenu name="IndividualContextMenu" id="288"/>
+													<ExtendedTooltip name="IndividualExtendedTooltip" id="289"/>
+												</InputField>
+												<Button name="PickIndividual" id="320">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.PickIndividual</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подобрать физическое лицо</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Select individual</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="PickIndividualExtendedTooltip" id="321"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="UsersGroup2" id="293">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Users</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="UsersGroup2ExtendedTooltip" id="294"/>
+									<ChildItems>
+										<InputField name="Users" id="273">
+											<DataPath>PresentationUsers</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Используют</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Used by</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="UsersContextMenu" id="274"/>
+											<ExtendedTooltip name="UsersExtendedTooltip" id="275"/>
+											<Events>
+												<Event name="StartChoice">UsersStartChoice</Event>
+												<Event name="Opening">UsersOpening</Event>
+											</Events>
+										</InputField>
+										<InputField name="Added" id="256">
+											<DataPath>Object.Added</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ContextMenu name="AddedContextMenu" id="257"/>
+											<ExtendedTooltip name="AddedExtendedTooltip" id="258"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="KeyToSignAndDecryptSettings" id="221">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки закрытого ключа (для создания электронных подписей или расшифровки данных)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Private key settings (to create digital signatures or data decryption)</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="KeyToSignAndDecryptSettingsExtendedTooltip" id="222"/>
+					<ChildItems>
+						<InputField name="Application" id="129">
+							<DataPath>Object.Application</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CreateButton>true</CreateButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ApplicationContextMenu" id="130"/>
+							<ExtendedTooltip name="ApplicationExtendedTooltip" id="131"/>
+							<Events>
+								<Event name="OnChange">ApplicationOnChange</Event>
+								<Event name="Opening">ApplicationOpening</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="EnterPasswordInDigitalSignatureApplication" id="158">
+							<DataPath>Object.EnterPasswordInDigitalSignatureApplication</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="EnterPasswordInDigitalSignatureApplicationContextMenu" id="159"/>
+							<ExtendedTooltip name="EnterPasswordInDigitalSignatureApplicationExtendedTooltip" id="160"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.DigitalSignatureAndEncryptionKeysCertificates</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="CertificateAddress" id="3">
+			<Type/>
+		</Attribute>
+		<Attribute name="ToEncrypt" id="4">
+			<Type/>
+		</Attribute>
+		<Attribute name="AttributesParameters" id="5">
+			<Type/>
+		</Attribute>
+		<Attribute name="CertificateDataDetails" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание данных сертификата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Certificate data description</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Property" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Property</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Value" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Value</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="HasCompanies" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="OpenRequest" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="RequestFormName" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CanOpenRequest" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="BuiltinCryptoprovider" id="2">
+			<Type>
+				<v8:Type>cfg:CatalogRef.DigitalSignatureAndEncryptionApplications</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CloudSignatureCertificate" id="11">
+			<Type/>
+		</Attribute>
+		<Attribute name="PresentationUsers" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используют</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Used by</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="RemindAboutReissue" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить о перевыпуске</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remind me to reissue</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrentDate" id="16">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IssuedCertificates" id="17">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="SigningAllowed" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить подписание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Allow signing</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CertificateRevoked" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификат отозван</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Certificate revoked</v8:content>
+				</v8:item>
+			</Title>
+			<Action>CertificateRevoked</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CheckCertificate" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>CheckCertificate</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ShowCertificateData" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать данные сертификата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show certificate data</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать данные сертификата, которые сохраняются в файле</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show certificate data which is saved in the file</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.KeyCertificate</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowCertificateData</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ShowAutoPopulatedAttributes" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать автозаполняемые реквизиты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show autofilled attributes</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ShowAutoPopulatedAttributes</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="SaveCertificateDataToFile" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save to file…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SaveCertificateDataToFile</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ShowCertificateApplication" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать заявление, по которому был получен сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show application for this certificate issuance</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать заявление, по которому был получен сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show application for this certificate issuance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ApplicationForKeyCertificateIssue</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowCertificateApplication</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Copy" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F9</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Copy</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ChangePIN" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить пин-код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Change PIN</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить пин код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Change PIN</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ChangePIN</Action>
+		</Command>
+		<Command name="ResetPassword" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить пароль в памяти</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reset password in memory</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reset password</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ResetPassword</Action>
+		</Command>
+		<Command name="EditFirstNameAndPatronymic" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать имя и отчество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit first name and middle name</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>EditFirstNameAndPatronymic</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="PickIndividual" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать физическое лицо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Select an individual</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать физическое лицо по наименованию из поля сертификата "Кому выдан"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Select an individual by name from the "Owner" certificate field</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>PickIndividual</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.PathsToDigitalSignatureAndEncryptionApplicationsOnLinuxServers.Command.PathToApplicationOnLinuxServers</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

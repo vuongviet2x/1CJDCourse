@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="10858a39-fe20-4889-a236-6d2ac672bdab">
+		<Properties>
+			<Name>Setting</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Setting</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка профилей и групп доступа.
+Настройка значений доступа и групп значений доступа для использования в ограничении прав доступа по видам доступа.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Profile and access group setting.
+ Access values and access groups values setting to use in access rights restriction by access kinds.</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoPartnersAccessGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoStorageLocations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoPartners</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCompanies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProductAccessGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProducts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FilesFolders</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoIndividuals</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._DemoRestrictAccessByIndividuals</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._DemoRestrictAccessByProducts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._DemoRestrictAccessByProducts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._DemoRestrictAccessByPartners</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._DemoRestrictAccessByPartners</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCashRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoCashAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum._DemoBusinessOperations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.AdditionalAttributesAndInfo</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._DemoProductsKinds</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalUsers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalUsersGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.UserGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Users</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TaskPerformersGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AdditionalReportsAndDataProcessors</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EmailAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.AccessRightsAnalysis</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.RolesRights</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

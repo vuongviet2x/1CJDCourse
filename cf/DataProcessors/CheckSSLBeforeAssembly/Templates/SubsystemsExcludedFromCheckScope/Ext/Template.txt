@@ -1,0 +1,4 @@
+﻿Subsystem.StandardSubsystems.Subsystem.DataExchange
+Subsystem.StandardSubsystems.Subsystem.SaaSOperations.Subsystem.DataExchangeSaaS
+Subsystem.CloudTechnology
+Subsystem.OnlineUserSupport

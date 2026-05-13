@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="653a7fd8-91c7-49aa-aa63-45da087e0d0a">
+		<Properties>
+			<Name>DataExchangeSaaS</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен данными в модели сервиса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data exchange SaaS</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesMessageHandler</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.RemoteAdministrationOfExchange</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.DataChangesRecorded</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeSaaSCached</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.DataChangesRecorded</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseDataSynchronizationSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.RemoteAdministrationOfExchange_2_0_1_6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.RemoteAccessDataExchangeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.StandaloneWorkstationCreationWizard</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.StandaloneModeInternal</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeSaaSOverridable</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.StandaloneModeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.StandaloneModeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.StandaloneWorkstationDisconnection</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.StandaloneMode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.StandaloneMode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.DataSynchronizationWithWebApplication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.SynchronizeDataWithInternetApplicationsOnStart</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.SynchronizeDataWithInternetApplicationsOnExit</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeSaaSClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.LastStandaloneWorkstationPrefix</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseOfflineModeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeAdministrationManagement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeAdministrationControl</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.DataSynchronizationBetweenWebApplicationsSetupWizard</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.DataSynchronizationSettingsSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeManagement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeControl</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataAreasExchangeTransportSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataAreaExchangeTransportSettings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.SystemMessageExchangeSessions</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.InteractiveDataExchangeWizardSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseDataSynchronizationSaaSWithLocalApplication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseDataSynchronizationSaaSWithWebApplication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseOfflineModeSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseDataSynchronizationSaaSWithLocalApplication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseDataSynchronizationSaaSWithWebApplication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationControlInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationControlMessageHandler_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationManagementInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationManagementMessageHandler_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesControlInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesControlMessageHandler_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesManagementInterface</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesManagementMessageHandler_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.StandaloneMode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataAreaDataExchangeStates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataAreasSuccessfulDataExchangeStates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataAreasDataExchangeMessages</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.DataSynchronizationMonitorSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.AccountPasswordRecoveryAddress</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeAdministration</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.RemoteAdministrationOfExchange_2_1_6_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.StandaloneModeInternalClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.SSLAdministrationPanelSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeAdministration_2_4_5_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.RemoteAdministrationOfExchange_2_4_5_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeManagement_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesManagementMessageHandler_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeMessagesManagementTranslationHandler_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.MessagesQueueEndpoint</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseDataSynchronizationSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseStandaloneModeInLocalMode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataExchangeTasksInternalPublication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeInternalPublication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationManagementMessageHandler_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.MessagesDataExchangeAdministrationManagementTranslation_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DataExchangeAdministrationManagement_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ActionsAtCancelInternalPublication</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseScenariosInSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseConnectionsSettingsInSaaS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOptionsParameter.GeneralSettingsNodes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeInternalPublicationClient</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.DataExchangeInternalPublicationServerCall</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.UseOptimizedStandaloneWorkstationCreationWriting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.UseOptimizedStandaloneWorkstationCreationWriting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ControlSharedRecordSetsUponSavingDSL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ControlSharedObjectsUponSavingDSL</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

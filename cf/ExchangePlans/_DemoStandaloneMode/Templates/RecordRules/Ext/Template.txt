@@ -1,0 +1,8 @@
+﻿<RecordRules>
+	<FormatVersion>2.01</FormatVersion>
+	<ID_SSLy>8000e4c6-8ae9-11e1-b42f-20cf30c960b6</ID_SSLy>
+	<Description>Demo: Standalone mode</Description>
+	<CreationDateTime>2012-07-10T16:38:01</CreationDateTime>
+	<ExchangePlan Name="DemoStandaloneMode">ExchangePlanRef.DemoStandaloneMode</ExchangePlan>
+	<Configuration PlatformVersion="8.2" ConfigurationVersion="" ConfigurationSynonym="Standard Subsystems Library (demo configuration), version 3.1">Standard Subsystems Library (demo configuration), version 3.1</Configuration>
+</RecordRules>
