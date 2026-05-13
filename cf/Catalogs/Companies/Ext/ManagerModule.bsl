@@ -1,23 +1,21 @@
 ﻿
-Function CompanyLogo(Company) Export
-	
+Function DefaultCompany() Export
+
 	Query = New Query;
 	Query.Text = 
-	"SELECT
-	|	Companies.LogoPicture AS LogoPicture
+	"SELECT TOP 2
+	|	Companies.Ref AS Company
 	|FROM
 	|	Catalog.Companies AS Companies
 	|WHERE
-	|	Companies.Ref = &Ref";
-	
-	Query.SetParameter("Ref", Company);
+	|	NOT Companies.DeletionMark";
 	
 	Selection = Query.Execute().Select();
-	If Selection.Next() Then
-		Return Selection.LogoPicture.Get();
+	If Selection.Count() = 1 Then
+		Selection.Next();
+		Return Selection.Company;
 	Else
-		Return Undefined;
+		Return Catalogs.Companies.EmptyRef();
 	EndIf;
 	
 EndFunction
-
