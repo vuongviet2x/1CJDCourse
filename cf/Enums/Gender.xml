@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Enum uuid="9a21d8e2-b575-43eb-8dd0-12a9df0fadbf">
+	<Enum uuid="b1a8fd37-924f-492a-843e-cd2460baee7c">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.ProductsTypes" category="Ref">
-				<xr:TypeId>e031ee60-bc24-4c8b-89c2-a4e225895d62</xr:TypeId>
-				<xr:ValueId>acfd9cb3-b23c-495d-a237-6430d39eb08d</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.Gender" category="Ref">
+				<xr:TypeId>4d9a0ea1-a3c1-4383-8dd8-65097277a2c7</xr:TypeId>
+				<xr:ValueId>d32bce15-759e-407d-ac98-357482469a44</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.ProductsTypes" category="Manager">
-				<xr:TypeId>3c0bf23a-f8c0-4986-8340-2dd3fcdf1125</xr:TypeId>
-				<xr:ValueId>47605d5a-111b-46a8-ae9f-b590ae9c8bc5</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.Gender" category="Manager">
+				<xr:TypeId>18a58c24-e0bf-4a3f-b6ef-709991b45623</xr:TypeId>
+				<xr:ValueId>05c53127-9693-4747-aabf-3ef5942422d7</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.ProductsTypes" category="List">
-				<xr:TypeId>7bfd65c2-c2ae-4167-b6c1-c90c94075466</xr:TypeId>
-				<xr:ValueId>a2b9a8de-0e22-41ff-9ae8-c84772e416bf</xr:ValueId>
+			<xr:GeneratedType name="EnumList.Gender" category="List">
+				<xr:TypeId>fd327315-8dd1-43e8-84db-1203e9dbf980</xr:TypeId>
+				<xr:ValueId>ff957e95-f462-4dc7-877e-4ba2e59dff02</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ProductsTypes</Name>
+			<Name>Gender</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Products types</v8:content>
+					<v8:content>Gender</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<Characteristics/>
 			<QuickChoice>true</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
@@ -38,37 +38,25 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="2fdf371d-19f7-4323-93c7-575d10b5992b">
+			<EnumValue uuid="31803a54-74be-4594-8197-641d7e06d888">
 				<Properties>
-					<Name>InventoryItem</Name>
+					<Name>Male</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Inventory item</v8:content>
+							<v8:content>Male</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="c6a49857-df5a-4114-a35f-42fb177894ca">
+			<EnumValue uuid="169683d4-3db4-445f-9efc-21d99e22ae17">
 				<Properties>
-					<Name>Service</Name>
+					<Name>Female</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Service</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="09664ad1-6a35-4bf8-a907-bd3f0259e51c">
-				<Properties>
-					<Name>ContractWork</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Contract work</v8:content>
+							<v8:content>Female</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
