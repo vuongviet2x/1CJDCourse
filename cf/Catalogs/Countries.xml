@@ -1,47 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="85839743-9cfe-41af-8db8-0742881330b6">
+	<Catalog uuid="b89ff569-048e-4854-9bf3-1dbfd57ab566">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Cities" category="Object">
-				<xr:TypeId>9cfb2e43-1a8d-44e6-86a0-a8b772de4af7</xr:TypeId>
-				<xr:ValueId>3046c0fd-6b8b-43e8-98ae-7f10c278c7cb</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Countries" category="Object">
+				<xr:TypeId>f69a7eaf-72d0-4823-8198-305b31ded4e8</xr:TypeId>
+				<xr:ValueId>36946e61-40cc-4e98-9d78-16ff2c9ca9ae</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Cities" category="Ref">
-				<xr:TypeId>f1ded184-0f13-4559-9a85-36fffbe35e27</xr:TypeId>
-				<xr:ValueId>e58fb15c-fc12-4b07-9807-39442dff0dbd</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Countries" category="Ref">
+				<xr:TypeId>799d1331-87be-4714-b643-99bfbc38b6db</xr:TypeId>
+				<xr:ValueId>12e7f8bc-bb1b-4da3-9f80-b317fb6aff3e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Cities" category="Selection">
-				<xr:TypeId>d008a535-a585-4ed5-8cdd-03e4802b7436</xr:TypeId>
-				<xr:ValueId>988fa61e-e70f-47be-8a79-ef24e1722954</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Countries" category="Selection">
+				<xr:TypeId>90f99e51-9552-4784-b8c7-a1f70fba47ac</xr:TypeId>
+				<xr:ValueId>710ede6f-a158-4217-8ebc-27fdb729984e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Cities" category="List">
-				<xr:TypeId>424762ed-36d2-4847-9f3f-b5ca53dd0680</xr:TypeId>
-				<xr:ValueId>55dd9dee-e065-4c90-be1c-e45d6ad4edf2</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Countries" category="List">
+				<xr:TypeId>40ec8eb8-e8dd-4a67-89c1-90c54bed7010</xr:TypeId>
+				<xr:ValueId>14cee6e2-bd07-4135-9be1-32b8146706f5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Cities" category="Manager">
-				<xr:TypeId>a78a73fa-313b-4413-84e5-67b4d9a60329</xr:TypeId>
-				<xr:ValueId>b9f31f91-fefe-4b6f-b158-5180345c6f18</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Countries" category="Manager">
+				<xr:TypeId>24eadce9-948c-46f8-b5c1-262ae9bd5238</xr:TypeId>
+				<xr:ValueId>e519c323-557b-43b2-b41a-457f751c1448</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Cities</Name>
+			<Name>Countries</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Cities</v8:content>
+					<v8:content>Countries</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Hierarchical>true</Hierarchical>
+			<Hierarchical>false</Hierarchical>
 			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
-			<LimitLevelCount>true</LimitLevelCount>
-			<LevelCount>3</LevelCount>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>100</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Cities.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Cities.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Countries.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Countries.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
