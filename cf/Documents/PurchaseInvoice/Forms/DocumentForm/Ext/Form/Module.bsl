@@ -1,113 +1,116 @@
 ﻿
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-
+&AtClientAtServerNoContext
+Procedure CalculateAmountAtRow(ProductsRow)
 	
-EndProcedure
-
-&AtClient
-Procedure CustomerOnChange(Item)
+	ProductsRow.Amount = ProductsRow.Quantity * ProductsRow.Price;
 	
-	FillMainContractAtServer();
-	
-EndProcedure
-
-&AtServer
-Procedure FillMainContractAtServer()
-
-	DocumentObject = FormAttributeToValue("Object");
-	DocumentObject.FillMainContract();
-	
-	ValueToFormAttribute(DocumentObject, "Object");
-
 EndProcedure
 
 &AtClient
 Procedure ProductsQuantityOnChange(Item)
 	
-	FillAmountInProductsRow();
-
-	OnProductOrQuantityChangeAtServer();
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Products.CurrentData);
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsPriceOnChange(Item)
-	FillAmountInProductsRow();
-EndProcedure
-
-&AtClient
-Procedure FillAmountInProductsRow()
-
-	CurrentData = Items.Products.CurrentData;
-	If CurrentData = Undefined Then
-		Return;
-	EndIf;
 	
-	CurrentData.Amount = CurrentData.Price * CurrentData.Quantity;
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Products.CurrentData);
 	
 EndProcedure
 
 &AtClient
-Procedure ProductsProductOnChange(Item)
-		
-	OnProductOrQuantityChangeAtServer();
-	
-EndProcedure
+Procedure ServicesQuantityOnChange(Item)
 
-&AtServer
-Procedure OnProductOrQuantityChangeAtServer()
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Services.CurrentData);
 
-	CalculateWeightAtServer();
-		
-EndProcedure
-
-&AtServer
-Procedure CalculateWeightAtServer()
-
-	TotalWeight = 0;
-	For Each ProductsRow In Object.Products Do
-	
-		TotalWeight = TotalWeight + WeightOfProduct(ProductsRow.Product) * ProductsRow.Quantity;
-	
-	EndDo;
-
-EndProcedure
-
-&AtServerNoContext
-Function WeightOfProduct(Product)
-
-	Return Product.Weight;
-
-EndFunction
-
-&AtClient
-Procedure Pick(Command)
-	
-	FormOpenParameters = New Structure("ChoiceMode, CloseOnChoice", True, False);
-	OpenForm("Catalog.Products.ChoiceForm", FormOpenParameters, Items.Products);
-	
 EndProcedure
 
 &AtClient
-Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
+Procedure ServicesPriceOnChange(Item)
 	
-	If ValueIsFilled(SelectedValue) Then
-		
-		FindRows = Object.Products.FindRows(New Structure("Product", SelectedValue));
-		If FindRows.Count() = 0 Then
-		
-			NewRow = Object.Products.Add();
-			NewRow.Product = SelectedValue;
-			NewRow.Quantity = 1;
-		
-		EndIf;
-		
-	EndIf;
+	ProductsInDocumentsClientServer.CalculateAmountAtRow(Items.Services.CurrentData);
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsOnChange(Item)
-	Message("On change");
+
+	RecalculateDocumentTotalAtServer();
+	
 EndProcedure
+
+&AtClient
+Procedure ServicesOnChange(Item)
+
+	RecalculateDocumentTotalAtServer();
+	
+EndProcedure
+
+&AtServer
+Procedure RecalculateDocumentTotalAtServer()
+
+	DocumentTotal = 0;
+	For Each ProductsRow In Object.Products Do
+	
+		ProductsInDocumentsClientServer.CalculateAmountAtRow(ProductsRow);	
+		DocumentTotal = DocumentTotal + ProductsRow.Amount;
+	
+	EndDo;
+	For Each ServicesRow In Object.Services Do
+	
+		ProductsInDocumentsClientServer.CalculateAmountAtRow(ServicesRow);	
+		DocumentTotal = DocumentTotal + ServicesRow.Amount;
+	
+	EndDo;
+	
+	Object.DocumentTotal = DocumentTotal;
+	
+EndProcedure
+
+&AtClient
+Procedure PickProducts(Command)
+	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductsTypes.InventoryItem"));
+EndProcedure
+
+&AtClient
+Procedure PickServices(Command)
+	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductsTypes.Service"));
+EndProcedure
+
+&AtClient
+Procedure PickProductsToTable(TableItem, ProductType)
+
+	OpenForm(
+		"Catalog.Products.ChoiceForm",
+		New Structure("MultipleChoice, CloseOnChoice, Filter", False, False, New Structure("ProductType", ProductType)),
+		TableItem
+	);
+
+EndProcedure
+
+&AtClient
+Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
+	
+	FoundRows = Object.Products.FindRows(New Structure("Product", SelectedValue));
+	If FoundRows.Count() = 0 Then
+		NewRow = Object.Products.Add();
+		NewRow.Product = SelectedValue;
+		NewRow.Quantity = 1;
+	EndIf;
+	
+EndProcedure
+
+&AtClient
+Procedure ServicesChoiceProcessing(Item, SelectedValue, StandardProcessing)
+	
+	FoundRows = Object.Services.FindRows(New Structure("Product", SelectedValue));
+	If FoundRows.Count() = 0 Then
+		NewRow = Object.Services.Add();
+		NewRow.Product = SelectedValue;
+		NewRow.Quantity = 1;
+	EndIf;
+	
+EndProcedure
+
