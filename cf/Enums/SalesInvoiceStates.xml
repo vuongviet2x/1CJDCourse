@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Enum uuid="f0fc1448-358b-45b6-b140-8b9ab3b9538f">
+	<Enum uuid="8ecbbb6f-cbfd-4eb8-8cf5-9fd385e36803">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.SalesInvoiceStates" category="Ref">
-				<xr:TypeId>494e528b-3309-49f3-aeea-90ac3c7ca4f7</xr:TypeId>
-				<xr:ValueId>aa480745-039a-408a-a2b0-1c1d7d72a026</xr:ValueId>
+				<xr:TypeId>0585a8ca-961b-4f85-a732-64cd1d4489d5</xr:TypeId>
+				<xr:ValueId>406b0fbe-9fb1-4ac6-be41-34ec939c16b6</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumManager.SalesInvoiceStates" category="Manager">
-				<xr:TypeId>9013c924-9468-44f8-8d64-f21d4b028f52</xr:TypeId>
-				<xr:ValueId>7f8d08e6-bf6f-4404-ab1c-3048373cb0d0</xr:ValueId>
+				<xr:TypeId>03767968-bfd5-4d6d-989f-a11cc13abdd5</xr:TypeId>
+				<xr:ValueId>c9845877-eec5-4f6e-998a-18b757fd559c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumList.SalesInvoiceStates" category="List">
-				<xr:TypeId>84b1e388-4d0d-4abd-9bb6-727e75571c14</xr:TypeId>
-				<xr:ValueId>7965f462-9449-4468-b8c9-b54229fe03ea</xr:ValueId>
+				<xr:TypeId>10f65e66-33fb-4bf2-83d8-ef7298f73214</xr:TypeId>
+				<xr:ValueId>285be594-1737-49e9-be9b-ba8d8e704eb2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -25,6 +25,62 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<Characteristics/>
 			<QuickChoice>true</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
@@ -38,7 +94,7 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="71853b5b-3b43-40d9-8f86-d3850274811f">
+			<EnumValue uuid="2202b856-d929-4b11-ba87-6f757e373f2d">
 				<Properties>
 					<Name>Planned</Name>
 					<Synonym>
@@ -50,7 +106,7 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="8079a4a4-eaa5-4ee8-ac92-5bf83489d966">
+			<EnumValue uuid="ce712bf3-7197-4e60-8a1c-cb4b2b52f788">
 				<Properties>
 					<Name>InDelivery</Name>
 					<Synonym>
@@ -62,13 +118,13 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="602880d7-14ba-4a31-ad88-dac53c267faf">
+			<EnumValue uuid="7daaecca-7a46-4255-8641-3ed7b03c66f3">
 				<Properties>
-					<Name>Finished</Name>
+					<Name>Completed</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Finished</v8:content>
+							<v8:content>Completed</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
