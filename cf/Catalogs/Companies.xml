@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="d1616d57-e3ea-4939-aa83-8d680b7d585a">
+	<Catalog uuid="1b40cec3-79d7-44c8-9a84-ba13e3f56e98">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Companies" category="Object">
-				<xr:TypeId>31bb0839-a7ba-43a2-9b65-f19cb9114c9e</xr:TypeId>
-				<xr:ValueId>d1177017-0882-44c2-b374-c476814efb73</xr:ValueId>
+				<xr:TypeId>0b763cfb-788e-4b96-ba39-7a834cb12ffb</xr:TypeId>
+				<xr:ValueId>4aa4af3d-90ef-4083-bf12-e9521533208c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Companies" category="Ref">
-				<xr:TypeId>72b34f46-5edf-4979-83a8-dffce1f54ad9</xr:TypeId>
-				<xr:ValueId>b4a2de46-f6ae-40b1-94e5-acc3299c18a0</xr:ValueId>
+				<xr:TypeId>49aa9f51-ec91-4b1a-89be-ed91d80d3eb1</xr:TypeId>
+				<xr:ValueId>5ecc4d64-eefc-4793-acca-91faa09750cf</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Companies" category="Selection">
-				<xr:TypeId>b0ddbdaf-007b-403f-ac8e-25269eefdf87</xr:TypeId>
-				<xr:ValueId>28271513-b3a7-4f5a-b56f-11449e806e4b</xr:ValueId>
+				<xr:TypeId>bc971058-e617-482c-9a3f-44ef453944f6</xr:TypeId>
+				<xr:ValueId>49159915-e699-4905-aea8-d8cdd0233f67</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Companies" category="List">
-				<xr:TypeId>62fe8efb-5c31-4e9d-98e8-807e0bc460d2</xr:TypeId>
-				<xr:ValueId>a888b78f-5bd9-4c73-a47a-275d24a0a5c9</xr:ValueId>
+				<xr:TypeId>2a4257b4-e2d2-4246-ae23-eadc9d271f2f</xr:TypeId>
+				<xr:ValueId>3955392c-6678-46cb-9000-fc6dae8b11e0</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Companies" category="Manager">
-				<xr:TypeId>970f357f-8b24-4316-a80d-ed6c8833fc3a</xr:TypeId>
-				<xr:ValueId>9de26f75-e3d7-4568-b03c-3563d72c615d</xr:ValueId>
+				<xr:TypeId>9a914f2e-dffd-4f6e-9982-9d07a508b84e</xr:TypeId>
+				<xr:ValueId>1b03d9b0-d8dd-4c66-aba3-a0e8d82ef8ca</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>100</DescriptionLength>
+			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -77,7 +77,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Catalog.Companies.Form.ItemForm</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -92,12 +92,7 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Company</v8:content>
-				</v8:item>
-			</ObjectPresentation>
+			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -108,6 +103,8 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ItemForm</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

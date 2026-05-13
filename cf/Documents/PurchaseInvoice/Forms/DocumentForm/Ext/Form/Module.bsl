@@ -1,116 +1,104 @@
 ﻿
-&AtClientAtServerNoContext
-Procedure CalculateAmountAtRow(ProductsRow)
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+
+EndProcedure
+
+&AtClient
+Procedure CustomerOnChange(Item)
 	
-	ProductsRow.Amount = ProductsRow.Quantity * ProductsRow.Price;
+	FillMainContractAtServer();
 	
+EndProcedure
+
+&AtServer
+Procedure FillMainContractAtServer()
+
+	DocumentObject = FormAttributeToValue("Object");
+	DocumentObject.FillMainContract();
+	
+	ValueToFormAttribute(DocumentObject, "Object");
+
 EndProcedure
 
 &AtClient
 Procedure ProductsQuantityOnChange(Item)
 	
-	CalculateAmountAtRow(Items.Products.CurrentData);
+	FillAmountInProductsRow();
+
+	OnProductOrQuantityChangeAtServer();
 	
 EndProcedure
 
 &AtClient
 Procedure ProductsPriceOnChange(Item)
+	FillAmountInProductsRow();
+EndProcedure
+
+&AtClient
+Procedure FillAmountInProductsRow()
+
+	CurrentData = Items.Products.CurrentData;
+	If CurrentData = Undefined Then
+		Return;
+	EndIf;
 	
-	CalculateAmountAtRow(Items.Products.CurrentData);
+	CurrentData.Amount = CurrentData.Price * CurrentData.Quantity;
 	
 EndProcedure
 
 &AtClient
-Procedure ServicesQuantityOnChange(Item)
-
-	CalculateAmountAtRow(Items.Services.CurrentData);
-
-EndProcedure
-
-&AtClient
-Procedure ServicesPriceOnChange(Item)
-	
-	CalculateAmountAtRow(Items.Services.CurrentData);
-	
-EndProcedure
-
-&AtClient
-Procedure ProductsOnChange(Item)
-
-	RecalculateDocumentTotalAtServer();
-	
-EndProcedure
-
-&AtClient
-Procedure ServicesOnChange(Item)
-
-	RecalculateDocumentTotalAtServer();
+Procedure ProductsProductOnChange(Item)
+		
+	OnProductOrQuantityChangeAtServer();
 	
 EndProcedure
 
 &AtServer
-Procedure RecalculateDocumentTotalAtServer()
+Procedure OnProductOrQuantityChangeAtServer()
 
-	DocumentTotal = 0;
+	CalculateWeightAtServer();
+		
+EndProcedure
+
+&AtServer
+Procedure CalculateWeightAtServer()
+
+	TotalWeight = 0;
 	For Each ProductsRow In Object.Products Do
 	
-		CalculateAmountAtRow(ProductsRow);	
-		DocumentTotal = DocumentTotal + ProductsRow.Amount;
+		TotalWeight = TotalWeight + WeightOfProduct(ProductsRow.Product) * ProductsRow.Quantity;
 	
 	EndDo;
-	For Each ServicesRow In Object.Services Do
-	
-		CalculateAmountAtRow(ServicesRow);	
-		DocumentTotal = DocumentTotal + ServicesRow.Amount;
-	
-	EndDo;
-	
-	Object.DocumentTotal = DocumentTotal;
-	
+
 EndProcedure
 
-&AtClient
-Procedure PickProducts(Command)
-	PickProductsToTable(Items.Products, PredefinedValue("Enum.ProductsTypes.InventoryItem"));
-EndProcedure
+&AtServerNoContext
+Function WeightOfProduct(Product)
+
+	Return Product.Weight;
+
+EndFunction
 
 &AtClient
-Procedure PickServices(Command)
-	PickProductsToTable(Items.Services, PredefinedValue("Enum.ProductsTypes.Service"));
-EndProcedure
-
-&AtClient
-Procedure PickProductsToTable(TableItem, ProductType)
-
-	OpenForm(
-		"Catalog.Products.ChoiceForm",
-		New Structure("MultipleChoice, CloseOnChoice, Filter", False, False, New Structure("ProductType", ProductType)),
-		TableItem
-	);
-
+Procedure Pick(Command)
+	OpenForm("Catalog.Products.ChoiceForm", New Structure("ChoiceMode, CloseOnChoice", True, False), Items.Products);
 EndProcedure
 
 &AtClient
 Procedure ProductsChoiceProcessing(Item, SelectedValue, StandardProcessing)
 	
-	FoundRows = Object.Products.FindRows(New Structure("Product", SelectedValue));
-	If FoundRows.Count() = 0 Then
-		NewRow = Object.Products.Add();
-		NewRow.Product = SelectedValue;
-		NewRow.Quantity = 1;
+	If ValueIsFilled(SelectedValue) Then
+		
+		FindRows = Object.Products.FindRows(New Structure("Product", SelectedValue));
+		If FindRows.Count() = 0 Then
+		
+			NewRow = Object.Products.Add();
+			NewRow.Product = SelectedValue;
+			NewRow.Quantity = 1;
+		
+		EndIf;
+		
 	EndIf;
 	
 EndProcedure
-
-&AtClient
-Procedure ServicesChoiceProcessing(Item, SelectedValue, StandardProcessing)
-	
-	FoundRows = Object.Services.FindRows(New Structure("Product", SelectedValue));
-	If FoundRows.Count() = 0 Then
-		NewRow = Object.Services.Add();
-		NewRow.Product = SelectedValue;
-		NewRow.Quantity = 1;
-	EndIf;
-	
-EndProcedure
-

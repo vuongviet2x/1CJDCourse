@@ -50,8 +50,8 @@ Function CharacteristicsObjectType()
 		Result = Enums.CharacteristicsObjectTypes.Companies;
 	ElsIf TypeOfObject = Type("CatalogRef.Counterparties") Then
 		Result = Enums.CharacteristicsObjectTypes.Counterparties;
-	ElsIf TypeOfObject = Type("CatalogRef.CounterpartyContracts") Then
-		Result = Enums.CharacteristicsObjectTypes.Contracts;
+	ElsIf TypeOfObject = Type("CatalogRef.Employees") Then
+		Result = Enums.CharacteristicsObjectTypes.Employees;
 	ElsIf TypeOfObject = Type("CatalogRef.Products") Then
 		Result = Enums.CharacteristicsObjectTypes.Products;
 	ElsIf TypeOfObject = Type("CatalogRef.Warehouses") Then

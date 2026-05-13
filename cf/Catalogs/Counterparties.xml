@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<Catalog uuid="30dfeae3-f160-4b27-a695-2b0467e0a20f">
+	<Catalog uuid="da448e45-47af-4134-8c13-6687bd2c9299">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Counterparties" category="Object">
-				<xr:TypeId>cfa07e5d-a73f-4e25-8837-c09f14897df8</xr:TypeId>
-				<xr:ValueId>71028880-220a-4d68-a218-2a176a0de5db</xr:ValueId>
+				<xr:TypeId>0ba6f29d-dc25-48fa-b7dc-74cda673f16d</xr:TypeId>
+				<xr:ValueId>519ebe81-5366-4025-9e11-e34d5aa1bc76</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Counterparties" category="Ref">
-				<xr:TypeId>ea50bfa6-6240-4d0a-ba00-b09516117a39</xr:TypeId>
-				<xr:ValueId>bab8d2bf-08be-4098-950f-7f75730c7c0a</xr:ValueId>
+				<xr:TypeId>c8797bff-ca13-44f8-89c4-9d1d014b3306</xr:TypeId>
+				<xr:ValueId>de78c0ea-8b81-4771-8eb1-5e4d928b43ff</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Counterparties" category="Selection">
-				<xr:TypeId>066bc732-f417-4b5d-a2f1-ff50c9be2907</xr:TypeId>
-				<xr:ValueId>859c3981-eb02-4510-9f9f-56a5d447391f</xr:ValueId>
+				<xr:TypeId>b540ad2e-6b70-496a-9eb3-a85f785783e9</xr:TypeId>
+				<xr:ValueId>fea3a5b9-a013-40df-96d0-a80ac0e7110c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Counterparties" category="List">
-				<xr:TypeId>e2fc58a6-c31d-4171-bc73-fc301e720100</xr:TypeId>
-				<xr:ValueId>6dfc74a3-6647-4e8b-8c7c-554774a9d7e0</xr:ValueId>
+				<xr:TypeId>a712a512-ab3d-4f5e-87f1-0a85607c9442</xr:TypeId>
+				<xr:ValueId>2937153a-5f2b-4c6e-b2a5-659f3494a835</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Counterparties" category="Manager">
-				<xr:TypeId>fc1fc5ed-5dd3-4538-bea2-0b83fe1882d5</xr:TypeId>
-				<xr:ValueId>92991331-c738-4663-9dbe-37bdde001025</xr:ValueId>
+				<xr:TypeId>001ff0da-5449-4f03-b086-b34473aa9dca</xr:TypeId>
+				<xr:ValueId>e934f720-1fe6-4450-8050-8a8348e505d6</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>100</DescriptionLength>
+			<DescriptionLength>50</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -77,7 +77,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Counterparties.Form.ItemForm</DefaultObjectForm>
+			<DefaultObjectForm/>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -92,12 +92,7 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Counterparty</v8:content>
-				</v8:item>
-			</ObjectPresentation>
+			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -109,20 +104,61 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="6e1f1d7a-4aa6-45ef-85f5-ec7594940d15">
+			<Attribute uuid="82e8da7f-9e89-46d7-878c-6a7b160d13b6">
 				<Properties>
-					<Name>TIN</Name>
+					<Name>MainContract</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>TIN</v8:content>
+							<v8:content>Main contract</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
+						<v8:Type>cfg:CatalogRef.CounterpartyContracts</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="27776760-facb-4b29-a592-77dcafeb7951">
+				<Properties>
+					<Name>Contact</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contact</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Contacts</v8:Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>12</v8:Length>
+							<v8:Length>100</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -153,49 +189,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="3517f8d1-f7fe-462b-97d0-7878aab3638c">
+			<Attribute uuid="a1ac0902-a476-4211-bb3c-5898e2f286f1">
 				<Properties>
-					<Name>RegistrationCountry</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Registration country</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Countries</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">Catalog.Countries.Vietnam</FillValue>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="d961b9b8-f53e-4463-add1-3404edb76cd0">
-				<Properties>
-					<Name>Vendor</Name>
+					<Name>IsVendor</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -233,9 +229,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="6a743287-b9e4-46ad-a186-43ce4f803f23">
+			<Attribute uuid="d995c1db-76cc-4fee-a54c-0ed7d8200013">
 				<Properties>
-					<Name>Customer</Name>
+					<Name>IsCustomer</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -273,9 +269,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ef112f43-b236-463f-9d40-57afaca60bc5">
+			<Attribute uuid="429a94bb-fb7f-4af9-ba61-933d083b8bc3">
 				<Properties>
-					<Name>Other</Name>
+					<Name>IsOther</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -313,7 +309,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ItemForm</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
