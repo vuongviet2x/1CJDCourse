@@ -46,6 +46,11 @@ Mỗi bài có hai branch: `theory` (lý thuyết) và `practice` (thực hành)
 
 **[`lesson/university-summary`](../../tree/lesson/university-summary)** = snapshot riêng từ `FullProgram_University_Study_Program`. Base này có Language với tên chứa `:` (không hợp lệ trong tên file Windows) nên không dump được XML — được lưu dạng `.cf` binary. Thực ra chỉ có 3 đối tượng (Catalog.Products, Document.Purchases, Document.Sales), không phải "tổng kết toàn khóa".
 
+## Tài liệu kèm trên master
+
+- `docs/video-junior-course.md`, `docs/1C_Junior_Course_Video_Mapping_v2.xlsx` — 49 video playlist "Junior Developer Course" (khóa cũ, kênh 1C Vietnam Academy) nối với 24 bài + Extensions; link đã kiểm tra theo mã video thật.
+- `tools/v8unpack.py` — giải nén container 1C (`.cf`/`.cfe`/`.epf`) để đọc module BSL: `python3 tools/v8unpack.py <file> <thư_mục_ra>`.
+
 ## Cách sử dụng
 
 ### Xem code một bài cụ thể
