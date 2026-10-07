@@ -343,3 +343,19 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 
 - [Các module và tương tác Client-Server](https://www.youtube.com/watch?v=oD8pK7RvuYw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=29) (6:16) — Bài 7 — compilation directives, loại module, context / non-context call _(mã nội bộ JC-30)_
 - [Trò chuyện với người dùng](https://www.youtube.com/watch?v=s0MHq7d_nVc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=38) (9:26) — Bài 9 — ShowQueryBox + CallbackDescription (code mẫu); Bài 7 — dialog không chặn (CallbackDescription); Bài 21 — ShowUserNotification _(mã nội bộ JC-39)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Tự động lấy đơn vị tính của sản phẩm](https://www.youtube.com/watch?v=RKAGi62Vy5E&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=12) (8:16) — điền thuộc tính sản phẩm vào dòng chứng từ (giải đáp tình huống; Bài 7 chính) _(mã nội bộ QA-12)_
+- [Lấy giá tự động](https://www.youtube.com/watch?v=oMowT1e019k&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=5) (8:32) — tự điền giá theo bảng giá (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-5)_
+- [Tạo chức năng sửa password với vai trò người dùng](https://www.youtube.com/watch?v=taKIdmcCmIQ&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=9) (26:39) — cho người dùng tự đổi mật khẩu (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-9)_
+- [Kiểm tra dữ liệu trùng lặp](https://www.youtube.com/watch?v=603j21ItABk&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=11) (8:55) — cảnh báo dữ liệu trùng (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-11)_
+- [Kết nhập file excel vào danh mục sản phẩm](https://www.youtube.com/watch?v=DlXBXRzBJGw&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=13) (38:42) — nhập dữ liệu từ Excel (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-13)_
+- [Truy vấn tồn kho trong chứng từ bán hàng](https://www.youtube.com/watch?v=13817kAvhwQ&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=17) (9:53) — hiển thị tồn kho khi chọn hàng (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-17)_
+- [Hướng dẫn publish Infobase 1C:Enterprise lên web server](https://www.youtube.com/watch?v=P_bwSfxAV8I&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=28) (7:21) — publish infobase lên web server (IIS) (giải đáp tình huống; Bài 7 liên quan) _(mã nội bộ QA-28)_
+- [Giới thiệu nền tảng 1C:Enterprise](https://www.youtube.com/watch?v=Dahr2ACNN74&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=2) (13:59) — tổng quan nền tảng 1C:Enterprise (thực hành case study; Bài 7 liên quan) _(mã nội bộ P1-1)_
+- [Bắt lần khởi động đầu tiên](https://www.youtube.com/watch?v=Q9op8HgLMtM&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=9) (9:05) — xử lý lần chạy đầu tiên của ứng dụng (thực hành case study; Bài 7 liên quan) _(mã nội bộ P2-9)_
+
+<!-- video-qa-thuchanh:end -->

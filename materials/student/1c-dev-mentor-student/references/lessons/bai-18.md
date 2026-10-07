@@ -496,3 +496,20 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Khuôn mẫu và trình soạn thảo dữ liệu](https://www.youtube.com/watch?v=It9J9M69Tl8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=47) (8:13) — Bài 18 — data composition schema, data fields, resources _(mã nội bộ JC-48)_
 - [Bộ dữ liệu (data set)](https://www.youtube.com/watch?v=HLvgcgPFRq0&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=48) (5:59) — Bài 18 — data sets: Query, Object, Union _(mã nội bộ JC-49)_
 - [Thiết lập (setting)](https://www.youtube.com/watch?v=rq_qf0e3is8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=49) (8:31) — Bài 18 — settings: grouping, selected fields, filters, sorting _(mã nội bộ JC-50)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Báo cáo lợi nhuận theo kỳ](https://www.youtube.com/watch?v=98gDiVV8jx0&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=8) (9:16) — báo cáo DCS theo kỳ (giải đáp tình huống; Bài 18 chính) _(mã nội bộ QA-8)_
+- [Lưu trữ và báo cáo kết quả học tập của sinh viên](https://www.youtube.com/watch?v=NhFE1uwi7Hw&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=3) (14:56) — chấm điểm qua chứng từ và báo cáo trung bình có tô màu (thực hành case study; Bài 18 chính) _(mã nội bộ P2-3)_
+- [Xây dựng cơ chế tích điểm thưởng](https://www.youtube.com/watch?v=0aAaQQP9fXI&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=14) (23:35) — tích và trừ điểm thưởng qua register (giải đáp tình huống; Bài 18 liên quan) _(mã nội bộ QA-14)_
+- [Extension (Phần mở rộng) trong 1C:Enterprise](https://www.youtube.com/watch?v=T_DEaA1p_bA&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=22) (6:33) — thêm báo cáo bằng extension mà không sửa cấu hình gốc (giải đáp tình huống; Bài 18 liên quan) _(mã nội bộ QA-22)_
+- [Thực hiện tính toán đơn giản với SQL trong 1C](https://www.youtube.com/watch?v=dP21dfHxkCo&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=23) (2:59) — tính toán ngay trong query (giải đáp tình huống; Bài 18 liên quan) _(mã nội bộ QA-23)_
+- [Lưu trữ thông tin sinh viên và môn học](https://www.youtube.com/watch?v=UGXVLOKRaGw&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=4) (12:19) — Catalog, phân cấp và tabular section (thực hành case study; Bài 18 liên quan) _(mã nội bộ P1-3)_
+- [Lưu trữ thông tin các chuyến du lịch](https://www.youtube.com/watch?v=PwqP4GODNrY&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=6) (13:15) — tạo chứng từ trên cơ sở chứng từ khác (Input on basis) (thực hành case study; Bài 18 liên quan) _(mã nội bộ P1-5)_
+- [Ghi nhận thay đổi tỷ giá hối đoái](https://www.youtube.com/watch?v=9_m7XqHPZlA&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=1) (9:04) — information register theo ngày và biểu đồ (thực hành case study; Bài 18 liên quan) _(mã nội bộ P2-1)_
+- [Hệ thống cho thuê xe điện](https://www.youtube.com/watch?v=wWGXT2KSul8&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=4) (10:40) — một chứng từ ghi vào hai register (thực hành case study; Bài 18 liên quan) _(mã nội bộ P2-4)_
+- [Hạch toán hàng hóa - Bài toán đơn giản nhất](https://www.youtube.com/watch?v=SwgfC-uA6Eg&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=10) (16:55) — nhập – xuất – tồn và chặn âm kho (thực hành case study; Bài 18 liên quan) _(mã nội bộ P2-10)_
+
+<!-- video-qa-thuchanh:end -->

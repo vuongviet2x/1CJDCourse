@@ -546,3 +546,25 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Biểu ghi tích lũy](https://www.youtube.com/watch?v=wbF-aWunEdc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=22) (13:46) — Bài 11 — Accumulation register Balances/Turnovers, dimensions, resources, virtual tables _(mã nội bộ JC-23)_
 - [Truy vấn SQL và cấu trúc truy vấn](https://www.youtube.com/watch?v=E3EJ6WRG8Sk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=40) (4:32) — Bài 10 — cấu trúc query; Bài 11 — virtual tables _(mã nội bộ JC-41)_
 - [FROM và WHERE](https://www.youtube.com/watch?v=PtCdTq0a1nM&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=42) (5:58) — Bài 10 — FROM, WHERE; Bài 11 — lọc trong tham số virtual table _(mã nội bộ JC-43)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Xây dựng cơ chế tích điểm thưởng](https://www.youtube.com/watch?v=0aAaQQP9fXI&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=14) (23:35) — tích và trừ điểm thưởng qua register (giải đáp tình huống; Bài 11 chính) _(mã nội bộ QA-14)_
+- [Chặn kết chuyển khi phát hiện tồn kho âm](https://www.youtube.com/watch?v=k2uht5J1f3c&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=25) (10:03) — kiểm soát âm kho khi posting (giải đáp tình huống; Bài 11 chính) _(mã nội bộ QA-25)_
+- [Ghi nhận luân chuyển dòng tiền](https://www.youtube.com/watch?v=YzhM76Wy9fk&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=7) (18:29) — quỹ tiền mặt: thu/chi, posting, số dư trên form và đánh số chứng từ (thực hành case study; Bài 11 chính) _(mã nội bộ P1-6)_
+- [Hệ thống cho thuê xe điện](https://www.youtube.com/watch?v=wWGXT2KSul8&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=4) (10:40) — một chứng từ ghi vào hai register (thực hành case study; Bài 11 chính) _(mã nội bộ P2-4)_
+- [Tạo lập hệ thống thông tin thư viện](https://www.youtube.com/watch?v=3DMFgUjg2Js&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=5) (24:38) — mượn – trả và tạo phiếu trả từ phiếu mượn (thực hành case study; Bài 11 chính) _(mã nội bộ P2-5)_
+- [Hạch toán hàng hóa - Bài toán đơn giản nhất](https://www.youtube.com/watch?v=SwgfC-uA6Eg&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=10) (16:55) — nhập – xuất – tồn và chặn âm kho (thực hành case study; Bài 11 chính) _(mã nội bộ P2-10)_
+- [Hạch toán hàng hóa - Hạch toán một kho](https://www.youtube.com/watch?v=BD370AtszHI&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=11) (20:57) — tồn kho theo từng kho (kho trên đầu chứng từ) (thực hành case study; Bài 11 chính) _(mã nội bộ P2-11)_
+- [Hạch toán hàng hóa nhiều kho (Full)](https://www.youtube.com/watch?v=HIAYMOepPw4&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=12) (18:40) — kho trên từng dòng hàng và chặn âm theo từng kho (thực hành case study; Bài 11 chính) _(mã nội bộ P2-12)_
+- [Hạch toán hàng hóa nhiều kho (Short)](https://www.youtube.com/watch?v=sHl70mbjk4c&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=13) (14:51) — sửa cấu trúc chứng từ đang có dữ liệu (thực hành case study; Bài 11 chính) _(mã nội bộ P2-13)_
+- [Hạch toán hàng hóa - Theo hạn sử dụng](https://www.youtube.com/watch?v=TBgeOMXYp0w&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=14) (13:24) — tồn kho theo hạn sử dụng và xuất dần theo lô (thực hành case study; Bài 11 chính) _(mã nội bộ P2-14)_
+- [Cách hiển thị biểu ghi tích lũy lên phân hệ](https://www.youtube.com/watch?v=DBJeS7LfUpY&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=4) (1:53) — cách hiện register lên phân hệ (giải đáp tình huống; Bài 11 liên quan) _(mã nội bộ QA-4)_
+- [Báo cáo lợi nhuận theo kỳ](https://www.youtube.com/watch?v=98gDiVV8jx0&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=8) (9:16) — báo cáo DCS theo kỳ (giải đáp tình huống; Bài 11 liên quan) _(mã nội bộ QA-8)_
+- [Truy vấn tồn kho trong chứng từ bán hàng](https://www.youtube.com/watch?v=13817kAvhwQ&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=17) (9:53) — hiển thị tồn kho khi chọn hàng (giải đáp tình huống; Bài 11 liên quan) _(mã nội bộ QA-17)_
+- [Lưu trữ và báo cáo kết quả học tập của sinh viên](https://www.youtube.com/watch?v=NhFE1uwi7Hw&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=3) (14:56) — chấm điểm qua chứng từ và báo cáo trung bình có tô màu (thực hành case study; Bài 11 liên quan) _(mã nội bộ P2-3)_
+- [Hạch toán thu nhập theo doanh số](https://www.youtube.com/watch?v=QRAzQKBCtds&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=8) (20:00) — quy đổi tỷ giá khi posting bằng SliceLast (thực hành case study; Bài 11 liên quan) _(mã nội bộ P2-8)_
+
+<!-- video-qa-thuchanh:end -->

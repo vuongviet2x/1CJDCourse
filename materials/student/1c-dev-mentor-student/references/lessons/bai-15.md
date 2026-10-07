@@ -411,3 +411,11 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Đối tượng và tập hợp bản ghi](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager _(mã nội bộ JC-17)_
 - [Tính toàn vẹn tham chiếu](https://www.youtube.com/watch?v=e-C_yERp2sE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=17) (7:49) — Bài 15 — referential integrity, deletion mark, xóa object _(mã nội bộ JC-18)_
 - [Tùy chọn chức năng](https://www.youtube.com/watch?v=RF55RDNLgks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=37) (7:02) — Bài 15 — Functional options _(mã nội bộ JC-38)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Hạch toán sản phẩm dịch vụ](https://www.youtube.com/watch?v=GFsS9x1bOTQ&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=7) (15:54) — tách hàng hóa/dịch vụ và bật tắt tính năng bằng Functional option (thực hành case study; Bài 15 chính) _(mã nội bộ P2-7)_
+
+<!-- video-qa-thuchanh:end -->

@@ -1,7 +1,7 @@
 # 1C Dev Mentor — Notice of Ownership and Terms of Use
 # 1C Dev Mentor — Thông tin sở hữu và phạm vi sử dụng
 
-**Version / Phiên bản:** 1.5-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-07
+**Version / Phiên bản:** 1.6-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-07
 **Author & maintainer / Tác giả và người duy trì:** Phạm Viết Quý (Pham Viet Quy) — quypv@1c.com.vn
 **Organization / Đơn vị:** 1C Vietnam
 
@@ -16,6 +16,7 @@
 - **Extension code** for the Extensions lesson is extracted from the instructor's `.cfe` files (theory demos only) (repository `1CJDCourse`, branches `lesson/extensions-*`).
 - **ERP_Practice code** in `references/erp-practice/` is quoted from repository `vuongviet2x/ERP_Practice` (commit `de6ec9d`), the worked configuration of the *1C:Enterprise 8.3 Practical Developer's Guide*, used with the instructor's permission for teaching.
 - **Junior Course video map** in `references/video-junior-course.md` links the 49 videos of the YouTube playlist "Junior Developer Course" (1C Vietnam Academy) to the course lessons, based on the instructor's mapping table (video IDs re-read from the playlist on 2026-10-07).
+- **Q&A and practice video maps** in `references/video-qa-thuc-chien.md` and `references/video-thuc-hanh.md` link 48 videos of three YouTube playlists of the 1C Vietnam training centre ("Giải đáp câu hỏi…", "Tuyển tập các bài tập thực hành…" parts 1–2) to symptoms, lessons, learner paths and Jet project topics. Video content was checked against the videos' automatic transcripts on 2026-10-07; learner paths follow the instructor's recommendations.
 - **Course demo code** in `references/lessons/` is excerpted from the lecture demo configuration of the course (repository `1CJDCourse`, `lesson/NN-theory` branches) for teaching purposes.
 - **Student edition:** this edition does not contain solutions to the course Practice exercises. It contains hint cards only, and the assistant is instructed to guide rather than solve. Official solutions are held by the instructors.
 - **1C:Jet code** in `references/jet/` is quoted verbatim from the open-source project 1C:Jet (github.com/1Ci-Company/Jet, branch `community`, commit `80884de`), Copyright (c) 2025 1Ci (1C International), released under the MIT License. The full license text is in `LICENSE-Jet-MIT.txt`. The MIT License applies only to the quoted Jet code, not to the rest of this skill.
@@ -46,6 +47,7 @@ Feedback, bug reports and permission requests: Phạm Viết Quý — quypv@1c.c
 - **Code extension** của bài Extensions được trích từ các file `.cfe` của giảng viên (chỉ demo lý thuyết) (repo `1CJDCourse`, các nhánh `lesson/extensions-*`).
 - **Code ERP_Practice** trong `references/erp-practice/` được trích từ repo `vuongviet2x/ERP_Practice` (commit `de6ec9d`) — cấu hình làm theo sách *1C:Enterprise 8.3 Practical Developer's Guide*, dùng cho giảng dạy với sự đồng ý của giảng viên.
 - **Bảng video khóa Junior** trong `references/video-junior-course.md` nối 49 video của playlist YouTube "Junior Developer Course" (1C Vietnam Academy) với các bài của giáo trình, dựa trên bảng ánh xạ của giảng viên (mã video đọc lại từ playlist ngày 07/10/2026).
+- **Bảng video giải đáp và video thực hành** trong `references/video-qa-thuc-chien.md` và `references/video-thuc-hanh.md` nối 48 video của ba playlist YouTube của Trung tâm đào tạo lập trình 1C Việt Nam ("Giải đáp câu hỏi…", "Tuyển tập các bài tập thực hành…" phần 1–2) với triệu chứng, bài giáo trình, lộ trình người học và đề BTL Jet. Nội dung video được kiểm chứng bằng transcript tự động ngày 07/10/2026; lộ trình theo khuyến nghị của giảng viên.
 - **Bản dành cho sinh viên:** bản này không chứa lời giải các bài thực hành (Practice) của giáo trình, chỉ có thẻ gợi ý; trợ lý được hướng dẫn để gợi ý chứ không giải hộ. Lời giải chính thức do giảng viên nắm giữ.
 - **Code của 1C:Jet** trong `references/jet/` được trích nguyên văn từ dự án mã nguồn mở 1C:Jet (github.com/1Ci-Company/Jet, nhánh `community`, commit `80884de`), Copyright (c) 2025 1Ci (1C International), phát hành theo giấy phép MIT. Toàn văn giấy phép (bản tiếng Anh có hiệu lực pháp lý): `LICENSE-Jet-MIT.txt`. Giấy phép MIT chỉ áp dụng cho phần code Jet được trích, không áp dụng cho phần còn lại của skill.
 

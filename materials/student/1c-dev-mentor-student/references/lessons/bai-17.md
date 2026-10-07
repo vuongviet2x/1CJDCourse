@@ -540,3 +540,12 @@ EndFunction
 Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
 - [Báo cáo dựa trên khuôn mẫu](https://www.youtube.com/watch?v=WVqrshBBH-E&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=46) (6:34) — Bài 18 — DCS (theo mô tả của bảng gốc); nếu video nói về report điền template bằng code thì là Bài 17. Lưu ý: Tên video "báo cáo dựa trên khuôn mẫu" trùng tên Bài 17 (template-based reports) nhưng mô tả của bảng gốc là giới thiệu DCS — cần xem video để chốt. _(mã nội bộ JC-47)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Thêm ảnh cho các đối tượng](https://www.youtube.com/watch?v=TQNa4cveOdc&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=6) (10:04) — lưu và hiển thị ảnh cho sản phẩm (giải đáp tình huống; Bài 17 chính) _(mã nội bộ QA-6)_
+- [Tạo chức năng in hóa đơn chứng từ](https://www.youtube.com/watch?v=uwEBQJZG6t4&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=7) (5:31) — tạo mẫu in chứng từ bằng Print wizard (giải đáp tình huống; Bài 17 chính) _(mã nội bộ QA-7)_
+
+<!-- video-qa-thuchanh:end -->

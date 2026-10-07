@@ -530,3 +530,15 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Homepage, form và command](https://www.youtube.com/watch?v=DDk5kS4BRow&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=8) (5:11) — Bài 9 — Home page, form; Bài 14 — Commands, Command interface _(mã nội bộ JC-9)_
 - [Làm việc với bối cảnh toàn cục (Global Context)](https://www.youtube.com/watch?v=cqwM140spEs&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=25) (5:16) — Bài 5-6 — Syntax assistant nhánh Global context, `Message()`; Bài 14 — common module Global _(mã nội bộ JC-26)_
 - [Giao diện lệnh (command) trên biểu mẫu (form)](https://www.youtube.com/watch?v=4sYHynvvbls&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=34) (6:29) — Bài 9 — form commands, command bar; Bài 14 — commands. Ngoài giáo trình: gán phím tắt cho command không có trong giáo trình _(mã nội bộ JC-35)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Hiển thị đối tượng Siêu dữ liệu lên Quick menu](https://www.youtube.com/watch?v=rPSNKvFEQ8E&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=21) (2:23) — bật lệnh cho phân hệ đang trống (giải đáp tình huống; Bài 14 chính) _(mã nội bộ QA-21)_
+- [Hệ thống thông tin cửa hàng nhỏ](https://www.youtube.com/watch?v=zXa4pQv0LHE&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=6) (12:28) — xử lý nhiều đơn hàng bằng một lệnh (thực hành case study; Bài 14 chính) _(mã nội bộ P2-6)_
+- [Bắt lần khởi động đầu tiên](https://www.youtube.com/watch?v=Q9op8HgLMtM&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=9) (9:05) — xử lý lần chạy đầu tiên của ứng dụng (thực hành case study; Bài 14 chính) _(mã nội bộ P2-9)_
+- [Cách hiển thị biểu ghi tích lũy lên phân hệ](https://www.youtube.com/watch?v=DBJeS7LfUpY&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=4) (1:53) — cách hiện register lên phân hệ (giải đáp tình huống; Bài 14 liên quan) _(mã nội bộ QA-4)_
+- [Tạo chức năng in hóa đơn chứng từ](https://www.youtube.com/watch?v=uwEBQJZG6t4&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=7) (5:31) — tạo mẫu in chứng từ bằng Print wizard (giải đáp tình huống; Bài 14 liên quan) _(mã nội bộ QA-7)_
+
+<!-- video-qa-thuchanh:end -->

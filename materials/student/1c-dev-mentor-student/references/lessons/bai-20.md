@@ -596,4 +596,17 @@ Nguồn: nhánh lesson/20-theory — cf/Roles/SalesManager/Ext/Rights.xml
 
 Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-Không có video tương ứng — chỉ dẫn tài liệu Theory/Practice của bài.
+Không có video bài giảng tương ứng — chỉ dẫn tài liệu Theory/Practice của bài.
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Hướng dẫn thiết lập vai trò người dùng](https://www.youtube.com/watch?v=senxXwfjFxU&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=3) (3:38) — tạo role và user đầu tiên (giải đáp tình huống; Bài 20 chính) _(mã nội bộ QA-3)_
+- [Tạo chức năng sửa password với vai trò người dùng](https://www.youtube.com/watch?v=taKIdmcCmIQ&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=9) (26:39) — cho người dùng tự đổi mật khẩu (giải đáp tình huống; Bài 20 chính) _(mã nội bộ QA-9)_
+- [Tùy chỉnh ngôn ngữ theo người dùng](https://www.youtube.com/watch?v=wo7G7jSPtBE&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=26) (4:30) — hiển thị ngôn ngữ khác nhau cho từng người dùng (giải đáp tình huống; Bài 20 chính) _(mã nội bộ QA-26)_
+- [Lưu bộ xử lý ngoài](https://www.youtube.com/watch?v=DTRivJSbAoI&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=15) (1:40) — bộ xử lý ngoài (.epf) (giải đáp tình huống; Bài 20 liên quan) _(mã nội bộ QA-15)_
+- [Lọc dữ liệu chọn sản phẩm theo hãng](https://www.youtube.com/watch?v=EfF2acfP2Y8&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=19) (6:30) — lọc danh sách chọn theo một trường khác (giải đáp tình huống; Bài 20 liên quan) _(mã nội bộ QA-19)_
+- [Hướng dẫn publish Infobase 1C:Enterprise lên web server](https://www.youtube.com/watch?v=P_bwSfxAV8I&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=28) (7:21) — publish infobase lên web server (IIS) (giải đáp tình huống; Bài 20 liên quan) _(mã nội bộ QA-28)_
+
+<!-- video-qa-thuchanh:end -->

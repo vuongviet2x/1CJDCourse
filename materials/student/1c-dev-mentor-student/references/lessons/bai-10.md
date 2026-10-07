@@ -1081,3 +1081,22 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [JOIN](https://www.youtube.com/watch?v=Ukd1zPxIJqE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=43) (7:23) — Bài 10 — LEFT / INNER / FULL JOIN _(mã nội bộ JC-44)_
 - [GROUP BY và HAVING](https://www.youtube.com/watch?v=cCC-HVpGhJk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=44) (5:10) — Bài 10 — GROUP BY, hàm tổng hợp, HAVING _(mã nội bộ JC-45)_
 - [Query trong ngôn ngữ 1C Script](https://www.youtube.com/watch?v=Mws4QN1CdQY&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=45) (4:28) — Bài 10 — `New Query`, `.Text`, `SetParameter()`, `Execute()`, `Select()` / `Next()`, `Unload()` _(mã nội bộ JC-46)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Truy vấn tồn kho trong chứng từ bán hàng](https://www.youtube.com/watch?v=13817kAvhwQ&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=17) (9:53) — hiển thị tồn kho khi chọn hàng (giải đáp tình huống; Bài 10 chính) _(mã nội bộ QA-17)_
+- [Thực hiện tính toán đơn giản với SQL trong 1C](https://www.youtube.com/watch?v=dP21dfHxkCo&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=23) (2:59) — tính toán ngay trong query (giải đáp tình huống; Bài 10 chính) _(mã nội bộ QA-23)_
+- [Báo cáo lợi nhuận theo kỳ](https://www.youtube.com/watch?v=98gDiVV8jx0&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=8) (9:16) — báo cáo DCS theo kỳ (giải đáp tình huống; Bài 10 liên quan) _(mã nội bộ QA-8)_
+- [Xây dựng cơ chế tích điểm thưởng](https://www.youtube.com/watch?v=0aAaQQP9fXI&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=14) (23:35) — tích và trừ điểm thưởng qua register (giải đáp tình huống; Bài 10 liên quan) _(mã nội bộ QA-14)_
+- [Báo động tồn kho thấp với màu chữ hiển thị](https://www.youtube.com/watch?v=0JbOMl80lnY&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=18) (13:09) — tô màu cảnh báo tồn kho thấp (giải đáp tình huống; Bài 10 liên quan) _(mã nội bộ QA-18)_
+- [Chặn kết chuyển khi phát hiện tồn kho âm](https://www.youtube.com/watch?v=k2uht5J1f3c&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=25) (10:03) — kiểm soát âm kho khi posting (giải đáp tình huống; Bài 10 liên quan) _(mã nội bộ QA-25)_
+- [Hạch toán thu nhập theo doanh số](https://www.youtube.com/watch?v=QRAzQKBCtds&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=8) (20:00) — quy đổi tỷ giá khi posting bằng SliceLast (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-8)_
+- [Hạch toán hàng hóa - Bài toán đơn giản nhất](https://www.youtube.com/watch?v=SwgfC-uA6Eg&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=10) (16:55) — nhập – xuất – tồn và chặn âm kho (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-10)_
+- [Hạch toán hàng hóa - Hạch toán một kho](https://www.youtube.com/watch?v=BD370AtszHI&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=11) (20:57) — tồn kho theo từng kho (kho trên đầu chứng từ) (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-11)_
+- [Hạch toán hàng hóa nhiều kho (Full)](https://www.youtube.com/watch?v=HIAYMOepPw4&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=12) (18:40) — kho trên từng dòng hàng và chặn âm theo từng kho (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-12)_
+- [Hạch toán hàng hóa nhiều kho (Short)](https://www.youtube.com/watch?v=sHl70mbjk4c&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=13) (14:51) — sửa cấu trúc chứng từ đang có dữ liệu (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-13)_
+- [Hạch toán hàng hóa - Theo hạn sử dụng](https://www.youtube.com/watch?v=TBgeOMXYp0w&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=14) (13:24) — tồn kho theo hạn sử dụng và xuất dần theo lô (thực hành case study; Bài 10 liên quan) _(mã nội bộ P2-14)_
+
+<!-- video-qa-thuchanh:end -->

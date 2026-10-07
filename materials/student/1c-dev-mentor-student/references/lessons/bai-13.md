@@ -318,3 +318,12 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 
 - [Hằng số (Constant)](https://www.youtube.com/watch?v=0Ru2FzltA4k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=15) (7:28) — Bài 13 — Constants _(mã nội bộ JC-16)_
 - [Dữ liệu xác định trước](https://www.youtube.com/watch?v=EQLuZq69Nmw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=20) (8:02) — Bài 4 — Predefined data; Bài 13 / 24 — predefined của Chart of characteristic types, Chart of accounts _(mã nội bộ JC-21)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Ghi nhận luân chuyển dòng tiền](https://www.youtube.com/watch?v=YzhM76Wy9fk&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=7) (18:29) — quỹ tiền mặt: thu/chi, posting, số dư trên form và đánh số chứng từ (thực hành case study; Bài 13 liên quan) _(mã nội bộ P1-6)_
+- [Bắt lần khởi động đầu tiên](https://www.youtube.com/watch?v=Q9op8HgLMtM&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=9) (9:05) — xử lý lần chạy đầu tiên của ứng dụng (thực hành case study; Bài 13 liên quan) _(mã nội bộ P2-9)_
+
+<!-- video-qa-thuchanh:end -->

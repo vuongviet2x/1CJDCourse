@@ -605,3 +605,21 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Thẩm định dữ liệu](https://www.youtube.com/watch?v=DVdxgqJrd14&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=12) (14:16) — Bài 12 — Data validation, FillCheckProcessing, CheckFilling() _(mã nội bộ JC-13)_
 - [Đối tượng và tập hợp bản ghi](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager _(mã nội bộ JC-17)_
 - [Biểu ghi thông tin](https://www.youtube.com/watch?v=2opmwhrnU2A&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=23) (7:54) — Bài 12 — Information register, periodic, SliceLast/SliceFirst, RecordSet/RecordManager _(mã nội bộ JC-24)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Lấy giá tự động](https://www.youtube.com/watch?v=oMowT1e019k&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=5) (8:32) — tự điền giá theo bảng giá (giải đáp tình huống; Bài 12 chính) _(mã nội bộ QA-5)_
+- [Ghi nhận thay đổi tỷ giá hối đoái](https://www.youtube.com/watch?v=9_m7XqHPZlA&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=1) (9:04) — information register theo ngày và biểu đồ (thực hành case study; Bài 12 chính) _(mã nội bộ P2-1)_
+- [Ghi nhận thay đổi giá mua tiền tệ](https://www.youtube.com/watch?v=lYPmr3Rxi3g&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=2) (8:11) — information register nhiều dimension (thực hành case study; Bài 12 chính) _(mã nội bộ P2-2)_
+- [Hạch toán thu nhập theo doanh số](https://www.youtube.com/watch?v=QRAzQKBCtds&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=8) (20:00) — quy đổi tỷ giá khi posting bằng SliceLast (thực hành case study; Bài 12 chính) _(mã nội bộ P2-8)_
+- [Kiểm tra dữ liệu trùng lặp](https://www.youtube.com/watch?v=603j21ItABk&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=11) (8:55) — cảnh báo dữ liệu trùng (giải đáp tình huống; Bài 12 liên quan) _(mã nội bộ QA-11)_
+- [Kết nhập file excel vào danh mục sản phẩm](https://www.youtube.com/watch?v=DlXBXRzBJGw&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=13) (38:42) — nhập dữ liệu từ Excel (giải đáp tình huống; Bài 12 liên quan) _(mã nội bộ QA-13)_
+- [Hủy sự kiện đang thực thi](https://www.youtube.com/watch?v=rW40s85Gtc4&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=16) (3:18) — chặn ghi bằng Cancel = True (giải đáp tình huống; Bài 12 liên quan) _(mã nội bộ QA-16)_
+- [Chặn kết chuyển khi phát hiện tồn kho âm](https://www.youtube.com/watch?v=k2uht5J1f3c&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=25) (10:03) — kiểm soát âm kho khi posting (giải đáp tình huống; Bài 12 liên quan) _(mã nội bộ QA-25)_
+- [Lưu trữ thông tin nhân viên](https://www.youtube.com/watch?v=WF19J3tct0I&list=PLp-gQ5Mgw0ZybnANjTWo69eHYBDWgE-r2&index=5) (9:37) — catalog cấp dưới và lịch sử lương theo tháng (thực hành case study; Bài 12 liên quan) _(mã nội bộ P1-4)_
+- [Hạch toán hàng hóa - Hạch toán một kho](https://www.youtube.com/watch?v=BD370AtszHI&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=11) (20:57) — tồn kho theo từng kho (kho trên đầu chứng từ) (thực hành case study; Bài 12 liên quan) _(mã nội bộ P2-11)_
+- [Hạch toán hàng hóa nhiều kho (Full)](https://www.youtube.com/watch?v=HIAYMOepPw4&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=12) (18:40) — kho trên từng dòng hàng và chặn âm theo từng kho (thực hành case study; Bài 12 liên quan) _(mã nội bộ P2-12)_
+
+<!-- video-qa-thuchanh:end -->

@@ -652,3 +652,20 @@ Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn
 - [Hiển thị có điều kiện](https://www.youtube.com/watch?v=a6kSspz-wo4&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=35) (10:29) — Bài 9 — conditional appearance trên form; Bài 18 — conditional appearance trong DCS _(mã nội bộ JC-36)_
 - [Danh sách động (Dynamic list)](https://www.youtube.com/watch?v=rr_ohZ13H6k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=36) (4:53) — Bài 9 — Dynamic list (bảng hoặc query tùy ý); Bài 10 — query language _(mã nội bộ JC-37)_
 - [Trò chuyện với người dùng](https://www.youtube.com/watch?v=s0MHq7d_nVc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=38) (9:26) — Bài 9 — ShowQueryBox + CallbackDescription (code mẫu); Bài 7 — dialog không chặn (CallbackDescription); Bài 21 — ShowUserNotification _(mã nội bộ JC-39)_
+
+<!-- video-qa-thuchanh:start -->
+
+Video giải đáp tình huống thực chiến và video thực hành từng bước liên quan tới bài này (thẻ chi tiết, triệu chứng, lưu ý khi giới thiệu: `references/video-qa-thuc-chien.md`, `references/video-thuc-hanh.md`; cùng mẫu câu dẫn ở trên):
+
+- [Cách hiển thị biểu ghi tích lũy lên phân hệ](https://www.youtube.com/watch?v=DBJeS7LfUpY&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=4) (1:53) — cách hiện register lên phân hệ (giải đáp tình huống; Bài 9 chính) _(mã nội bộ QA-4)_
+- [Báo động tồn kho thấp với màu chữ hiển thị](https://www.youtube.com/watch?v=0JbOMl80lnY&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=18) (13:09) — tô màu cảnh báo tồn kho thấp (giải đáp tình huống; Bài 9 chính) _(mã nội bộ QA-18)_
+- [Lọc dữ liệu chọn sản phẩm theo hãng](https://www.youtube.com/watch?v=EfF2acfP2Y8&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=19) (6:30) — lọc danh sách chọn theo một trường khác (giải đáp tình huống; Bài 9 chính) _(mã nội bộ QA-19)_
+- [Thay đổi Style (màu sắc) của chương trình](https://www.youtube.com/watch?v=cgmDdh6bHMg&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=24) (2:47) — đổi màu giao diện bằng Style (giải đáp tình huống; Bài 9 chính) _(mã nội bộ QA-24)_
+- [Fix lỗi không tính toán Thành tiền khi thay đổi Số lượng](https://www.youtube.com/watch?v=LRRNf8MxoQw&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=1) (4:24) — cách tìm lỗi sự kiện OnChange không chạy (giải đáp tình huống; Bài 9 liên quan) _(mã nội bộ QA-1)_
+- [Thêm ảnh cho các đối tượng](https://www.youtube.com/watch?v=TQNa4cveOdc&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=6) (10:04) — lưu và hiển thị ảnh cho sản phẩm (giải đáp tình huống; Bài 9 liên quan) _(mã nội bộ QA-6)_
+- [Hiển thị đối tượng Siêu dữ liệu lên Quick menu](https://www.youtube.com/watch?v=rPSNKvFEQ8E&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=21) (2:23) — bật lệnh cho phân hệ đang trống (giải đáp tình huống; Bài 9 liên quan) _(mã nội bộ QA-21)_
+- [Extension (Phần mở rộng) trong 1C:Enterprise](https://www.youtube.com/watch?v=T_DEaA1p_bA&list=PLp-gQ5Mgw0ZyRJw4qEFKcUz4cCagjYG6r&index=22) (6:33) — thêm báo cáo bằng extension mà không sửa cấu hình gốc (giải đáp tình huống; Bài 9 liên quan) _(mã nội bộ QA-22)_
+- [Tạo lập hệ thống thông tin thư viện](https://www.youtube.com/watch?v=3DMFgUjg2Js&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=5) (24:38) — mượn – trả và tạo phiếu trả từ phiếu mượn (thực hành case study; Bài 9 liên quan) _(mã nội bộ P2-5)_
+- [Hệ thống thông tin cửa hàng nhỏ](https://www.youtube.com/watch?v=zXa4pQv0LHE&list=PLp-gQ5Mgw0ZwiR39KPVCIVuUKhfEAD0KM&index=6) (12:28) — xử lý nhiều đơn hàng bằng một lệnh (thực hành case study; Bài 9 liên quan) _(mã nội bộ P2-6)_
+
+<!-- video-qa-thuchanh:end -->
