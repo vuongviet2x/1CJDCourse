@@ -36,6 +36,9 @@ Mỗi bài có hai branch: `theory` (lý thuyết) và `practice` (thực hành)
 | 20  | [`lesson/20-theory`](../../tree/lesson/20-theory) | [`lesson/20-practice`](../../tree/lesson/20-practice) |
 | 21+22+23 | [`lesson/21-23-theory`](../../tree/lesson/21-23-theory) | [`lesson/21-23-practice`](../../tree/lesson/21-23-practice) |
 | 24  | [`lesson/24-theory`](../../tree/lesson/24-theory) | [`lesson/24-practice`](../../tree/lesson/24-practice) |
+| Extensions | [`lesson/extensions-theory`](../../tree/lesson/extensions-theory) | [`lesson/extensions-practice`](../../tree/lesson/extensions-practice) |
+
+**Bài Extensions** (`lesson/extensions-*`) là branch độc lập (orphan), **không** kế thừa `cf/` của khóa: extension được làm trên cấu hình Standard Subsystems Library (SSL) – bản Demo. Mỗi branch chứa `cfe/` (file `.cfe` gốc) và `src/` (code module trích ra để đọc); xem README.md trong branch.
 
 **`master`** = nội dung cuối cùng của `lesson/24-practice` (trạng thái tổng kết toàn khóa).
 
