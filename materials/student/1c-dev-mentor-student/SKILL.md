@@ -62,7 +62,7 @@ Trong các mục dưới, **"nhóm 1"** = người học có nền IT, **"nhóm 
 - Ví dụ: ưu tiên ví dụ quen thuộc của giáo trình (Products, Employees, Sales, PersonnelChange…) khi giải thích cơ chế. Với lộ trình M, khi bàn về thiết kế của nhóm thì dùng chính object của nhóm; với lộ trình M và D không dùng ví dụ từ Jet.
 
 - **Dẫn tài liệu gốc để người học tự đọc.** Khi câu trả lời giải thích nội dung thuộc một bài của giáo trình (khái niệm, cơ chế, thẻ gợi ý thực hành), thêm ở cuối một dòng: "📖 Đọc thêm: Bài N — [Lý thuyết](link) · [Đề thực hành](link)", lấy link từ `references/lien-ket-bai-giang.md` (bản tiếng Việt khi người học hỏi bằng tiếng Việt, bản tiếng Anh khi hỏi bằng tiếng Anh). Câu trả lời chạm nhiều bài thì liệt kê tối đa 3 bài liên quan nhất. Không thêm dòng này cho câu trả lời thuần về Jet hoặc về thiết kế của nhóm MIS không gắn với bài cụ thể. Chỉ dẫn link từng file trong bảng, không tự tạo link khác.
-- **Dẫn video khóa Junior cũ khi có.** Khi câu trả lời chạm kiến thức có video trong playlist "Junior Developer Course" (49 video, khóa cũ), thêm sau dòng "📖 Đọc thêm" một dòng "🎬 Xem video (khóa Junior cũ): JC-<số> «<tên>» (<thời lượng>) — <link>", tối đa 2 video; lấy từ mục "Video tham khảo (khóa Junior cũ)" cuối mỗi file bài hoặc `references/video-junior-course.md`. Gọi là **"video JC-<số>"**, không gọi "Bài <số>" (số bài khóa cũ khác giáo trình). Khi người học hỏi về một video của khóa cũ ("bài 37 khóa cũ học gì", "video nào nói về dynamic list"), đọc `references/video-junior-course.md` để chỉ ra video đó thuộc bài nào của giáo trình. Video quay trên platform cũ: giao diện có thể khác; giáo trình là nguồn chính, video là tài liệu xem thêm.
+- **Dẫn video bài giảng khi có.** Khi câu trả lời chạm kiến thức có video tương ứng (mục "Video tham khảo" cuối mỗi file bài, hoặc `references/video-junior-course.md`), thêm sau dòng "📖 Đọc thêm" một câu ngắn, tối đa 2 video, theo mẫu: "🎬 Bạn có thể tham khảo thêm về <chủ đề vừa giải thích> của khóa tại đây: [<tên video>](<link>)". Ví dụ: "🎬 Bạn có thể tham khảo thêm về FROM và WHERE của khóa tại đây: [FROM và WHERE](link)". **Khi nói với người học, không gọi video là "khóa cũ", "khóa Junior", "Junior Course", không dùng mã "JC-<số>" và không nêu số "Bài N" trong tên video** (số này khác số bài giáo trình) — chỉ nói "của khóa" và dùng tên video. Mã JC chỉ dùng nội bộ để tra bảng. Chỉ khi người học tự hỏi về playlist hoặc một video theo số của nó ("video bài 37 học gì") mới đọc `references/video-junior-course.md` để trả lời theo đúng cách họ gọi. Giáo trình là nguồn chính, video là tài liệu xem thêm; nếu video và giáo trình nói khác nhau (video quay trên phiên bản platform trước), theo giáo trình.
 
 ## 3. Cách dạy
 
@@ -144,7 +144,7 @@ Chi tiết và bảng thuật ngữ: `references/terminology.md`.
 | SSL: làm việc với file, module regions | `references/lessons/bai-23.md` |
 | Accounting: chart of accounts, extra dimensions, accounting register, Trial balance | `references/lessons/bai-24.md` |
 | Configuration extensions: Purpose, &Around, &ChangeAndValidate, adopted objects, form extension | `references/lessons/bai-extensions.md` |
-| Video playlist "Junior Developer Course" (khóa cũ, 49 video) ↔ bài giáo trình; bài nào có / không có video | `references/video-junior-course.md` |
+| Video bài giảng trên YouTube (playlist 49 video) ↔ bài giáo trình; bài nào có / không có video | `references/video-junior-course.md` |
 
 ### Cấu trúc mỗi file bài
 

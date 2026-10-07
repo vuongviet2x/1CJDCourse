@@ -523,10 +523,10 @@ Nguồn: nhánh lesson/14-theory — cf/CommandGroups/SalesCalculations.xml và 
 - Command group category `NavigationPanel`; common commands `CalculateCost` và `CalculateFinancialResult` đặt property Group = `CommandGroup.SalesCalculations` — đúng ví dụ "Sales Calculations" của lý thuyết.
 - Command module của hai common commands chỉ là template mặc định (handler `CommandProcessing` với nội dung bị comment) — demo tập trung vào vị trí trong command interface.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-9 «Homepage, form và command»](https://www.youtube.com/watch?v=DDk5kS4BRow&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=8) (5:11) — Bài 9 — Home page, form; Bài 14 — Commands, Command interface
-- [JC-26 «Làm việc với bối cảnh toàn cục (Global Context)»](https://www.youtube.com/watch?v=cqwM140spEs&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=25) (5:16) — Bài 5-6 — Syntax assistant nhánh Global context, `Message()`; Bài 14 — common module Global
-- [JC-35 «Giao diện lệnh (command) trên biểu mẫu (form)»](https://www.youtube.com/watch?v=4sYHynvvbls&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=34) (6:29) — Bài 9 — form commands, command bar; Bài 14 — commands. Ngoài giáo trình: gán phím tắt cho command không có trong giáo trình
+- [Homepage, form và command](https://www.youtube.com/watch?v=DDk5kS4BRow&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=8) (5:11) — Bài 9 — Home page, form; Bài 14 — Commands, Command interface _(mã nội bộ JC-9)_
+- [Làm việc với bối cảnh toàn cục (Global Context)](https://www.youtube.com/watch?v=cqwM140spEs&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=25) (5:16) — Bài 5-6 — Syntax assistant nhánh Global context, `Message()`; Bài 14 — common module Global _(mã nội bộ JC-26)_
+- [Giao diện lệnh (command) trên biểu mẫu (form)](https://www.youtube.com/watch?v=4sYHynvvbls&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=34) (6:29) — Bài 9 — form commands, command bar; Bài 14 — commands. Ngoài giáo trình: gán phím tắt cho command không có trong giáo trình _(mã nội bộ JC-35)_

@@ -613,8 +613,8 @@ EndProcedure
 - Đúng tên subscription trong ảnh của bài: Source = `DocumentObject`, Event = `Filling`, Handler trỏ tới export procedure trong common module.
 - Lưu ý: bản demo gán thẳng `Constants.DefaultCompany.Get()` và **không** kiểm tra `ValueIsFilled(Source.Company)`, nên ghi đè cả giá trị do Filling riêng của document điền trước đó (subscription chạy sau handler của object). Bài Practice 16 yêu cầu chỉ điền khi Company còn trống → xem Thẻ gợi ý bài tập 3.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-11 «Sự kiện và trình xử lý sự kiện»](https://www.youtube.com/watch?v=FAkymD2Zqks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=10) (9:29) — Bài 9 — form events; Bài 16 — form & form element events, thứ tự events
+- [Sự kiện và trình xử lý sự kiện](https://www.youtube.com/watch?v=FAkymD2Zqks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=10) (9:29) — Bài 9 — form events; Bài 16 — form & form element events, thứ tự events _(mã nội bộ JC-11)_

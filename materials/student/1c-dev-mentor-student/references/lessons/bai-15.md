@@ -404,10 +404,10 @@ Nguồn: nhánh lesson/15-theory — cf/FunctionalOptions/CompanyPrefix.xml và 
 - Property **Use** của parameter `Company` trỏ tới dimension `Company` của `CompanyAccountingSettings`.
 - [ghi chú ngoài nguồn] Lý thuyết nói parameter `Company` chọn cả reference catalog Companies (cho `CompanyPrefix`); trong nhánh lesson/15-theory, **Use** chỉ có dimension của register.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-17 «Đối tượng và tập hợp bản ghi»](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager
-- [JC-18 «Tính toàn vẹn tham chiếu»](https://www.youtube.com/watch?v=e-C_yERp2sE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=17) (7:49) — Bài 15 — referential integrity, deletion mark, xóa object
-- [JC-38 «Tùy chọn chức năng»](https://www.youtube.com/watch?v=RF55RDNLgks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=37) (7:02) — Bài 15 — Functional options
+- [Đối tượng và tập hợp bản ghi](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager _(mã nội bộ JC-17)_
+- [Tính toàn vẹn tham chiếu](https://www.youtube.com/watch?v=e-C_yERp2sE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=17) (7:49) — Bài 15 — referential integrity, deletion mark, xóa object _(mã nội bộ JC-18)_
+- [Tùy chọn chức năng](https://www.youtube.com/watch?v=RF55RDNLgks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=37) (7:02) — Bài 15 — Functional options _(mã nội bộ JC-38)_

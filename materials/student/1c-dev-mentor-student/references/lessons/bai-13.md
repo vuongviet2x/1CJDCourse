@@ -312,9 +312,9 @@ EndFunction
 - Function này nằm trong record form của register; cùng module còn có `OnCreateAtServer` (ẩn field Object khi đã điền), `ObjectOnChange` (so với biến `PreviousObjectType`, xóa CharacteristicType/CharacteristicValue khi loại object đổi) và `SetChoiceParametersForCharacteristicType` (đặt choice parameter `Filter.CharacteristicsObjectType`) — đúng các bước mô tả ở mục Charts of characteristic types; tự viết các procedure đó theo Thẻ gợi ý bài thực hành, Bài tập 3.
 - Bản demo xử lý đúng 5 giá trị enumeration của lý thuyết (Companies, Counterparties, **Employees**, Products, Warehouses). [ghi chú ngoài nguồn] Danh sách object của 13. Practice khác (có CounterpartyContracts và hai documents, không có Employees) → phải sửa cả enumeration lẫn function này.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-16 «Hằng số (Constant)»](https://www.youtube.com/watch?v=0Ru2FzltA4k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=15) (7:28) — Bài 13 — Constants
-- [JC-21 «Dữ liệu xác định trước»](https://www.youtube.com/watch?v=EQLuZq69Nmw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=20) (8:02) — Bài 4 — Predefined data; Bài 13 / 24 — predefined của Chart of characteristic types, Chart of accounts
+- [Hằng số (Constant)](https://www.youtube.com/watch?v=0Ru2FzltA4k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=15) (7:28) — Bài 13 — Constants _(mã nội bộ JC-16)_
+- [Dữ liệu xác định trước](https://www.youtube.com/watch?v=EQLuZq69Nmw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=20) (8:02) — Bài 4 — Predefined data; Bài 13 / 24 — predefined của Chart of characteristic types, Chart of accounts _(mã nội bộ JC-21)_

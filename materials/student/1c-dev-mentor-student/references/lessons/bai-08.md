@@ -338,8 +338,8 @@ EndFunction
 - Performance snapshot: dòng `CalculateWeightAtServer();` trong `OnProductOrQuantityChange` là **Direct server call**; dòng gọi `OnProductOrQuantityChange()` trong handler là **Nested server call**. `WeightOfProduct` được gọi từ server nên không tạo thêm server call.
 - [ghi chú ngoài nguồn] `TotalWeight` chỉ là biến local, không được ghi vào attribute nào — code demo phục vụ debug, không phải nghiệp vụ hoàn chỉnh.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-Không có video tương ứng trong playlist khóa cũ — chỉ dẫn tài liệu Theory/Practice của bài.
+Không có video tương ứng — chỉ dẫn tài liệu Theory/Practice của bài.

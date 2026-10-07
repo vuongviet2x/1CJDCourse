@@ -289,8 +289,8 @@ Nguồn: nhánh lesson/19-theory — cf/Documents/SalesInvoice.xml
 - Nhánh lesson/19-theory có attribute `PriceType` (kiểu `CatalogRef.PriceTypes`, `FillChecking` = `ShowError`) — đúng thay đổi làm document cũ không post được, lý do cần external data processor trong bài.
 - Bản thân external data processor (.epf) điền PriceType theo period **không** có trong nhánh (repo chỉ chứa dump configuration cf/, external data processor là file riêng).
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-Không có video tương ứng trong playlist khóa cũ — chỉ dẫn tài liệu Theory/Practice của bài.
+Không có video tương ứng — chỉ dẫn tài liệu Theory/Practice của bài.

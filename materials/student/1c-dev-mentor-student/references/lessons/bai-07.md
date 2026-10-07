@@ -337,9 +337,9 @@ EndProcedure
   - `CommonServer`: Server = true, Server call = false (chỉ gọi từ server).
 - [ghi chú ngoài nguồn] Nhánh lesson/07-theory không có ví dụ preprocessor commands (`#If ... #EndIf`) và không có ví dụ FileDialog.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-30 «Các module và tương tác Client-Server»](https://www.youtube.com/watch?v=oD8pK7RvuYw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=29) (6:16) — Bài 7 — compilation directives, loại module, context / non-context call
-- [JC-39 «Trò chuyện với người dùng»](https://www.youtube.com/watch?v=s0MHq7d_nVc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=38) (9:26) — Bài 9 — ShowQueryBox + CallbackDescription (code mẫu); Bài 7 — dialog không chặn (CallbackDescription); Bài 21 — ShowUserNotification
+- [Các module và tương tác Client-Server](https://www.youtube.com/watch?v=oD8pK7RvuYw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=29) (6:16) — Bài 7 — compilation directives, loại module, context / non-context call _(mã nội bộ JC-30)_
+- [Trò chuyện với người dùng](https://www.youtube.com/watch?v=s0MHq7d_nVc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=38) (9:26) — Bài 9 — ShowQueryBox + CallbackDescription (code mẫu); Bài 7 — dialog không chặn (CallbackDescription); Bài 21 — ShowUserNotification _(mã nội bộ JC-39)_

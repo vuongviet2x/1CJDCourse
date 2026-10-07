@@ -598,10 +598,10 @@ EndProcedure
 - `CreateRecordManager()` dùng được vì register là independent; `Write(True)` (Replace = True) ghi đè record cùng Company + Period nếu đổi người chịu trách nhiệm nhiều lần trong ngày.
 - `ErrorProcessing.BriefErrorDescription(ErrorInfo())` cho mô tả ngắn để hiện cho user; khi cần ghi Event log thì dùng `DetailErrorDescription` như ví dụ Explicit transaction ở mục "Cú pháp & ví dụ code".
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-13 «Thẩm định dữ liệu»](https://www.youtube.com/watch?v=DVdxgqJrd14&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=12) (14:16) — Bài 12 — Data validation, FillCheckProcessing, CheckFilling()
-- [JC-17 «Đối tượng và tập hợp bản ghi»](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager
-- [JC-24 «Biểu ghi thông tin»](https://www.youtube.com/watch?v=2opmwhrnU2A&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=23) (7:54) — Bài 12 — Information register, periodic, SliceLast/SliceFirst, RecordSet/RecordManager
+- [Thẩm định dữ liệu](https://www.youtube.com/watch?v=DVdxgqJrd14&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=12) (14:16) — Bài 12 — Data validation, FillCheckProcessing, CheckFilling() _(mã nội bộ JC-13)_
+- [Đối tượng và tập hợp bản ghi](https://www.youtube.com/watch?v=L4OkNedrIeQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=16) (5:26) — Bài 15 — object vs non-object entities; Bài 12 — RecordSet / RecordManager _(mã nội bộ JC-17)_
+- [Biểu ghi thông tin](https://www.youtube.com/watch?v=2opmwhrnU2A&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=23) (7:54) — Bài 12 — Information register, periodic, SliceLast/SliceFirst, RecordSet/RecordManager _(mã nội bộ JC-24)_

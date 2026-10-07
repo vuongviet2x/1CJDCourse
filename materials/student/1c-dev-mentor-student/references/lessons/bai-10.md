@@ -1068,16 +1068,16 @@ EndFunction
 - [ghi chú ngoài nguồn] Query 2 không có `TOTALS`, nên selection không thực sự có nhóm (muốn có nhóm thật phải thêm `TOTALS` và duyệt bằng `QueryResultIteration.ByGroups` — xem mục Query result iteration methods và Bài tập T5 trong Thẻ gợi ý bài thực hành); function cũng không có `Return` — đây là code demo để quan sát trong debugger.
 - [ghi chú ngoài nguồn] Nhánh lesson/10-theory không có code cho HAVING, CAST, query hợp đồng còn hiệu lực theo counterparty và temporary table từ external source.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-14 «Cơ bản về ngôn ngữ Query 1»](https://www.youtube.com/watch?v=wgEsimf_2ks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=13) (11:42) — Bài 10 — SELECT, FROM, Query wizard
-- [JC-37 «Danh sách động (Dynamic list)»](https://www.youtube.com/watch?v=rr_ohZ13H6k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=36) (4:53) — Bài 9 — Dynamic list (bảng hoặc query tùy ý); Bài 10 — query language
-- [JC-40 «Cơ bản về ngôn ngữ truy vấn 2»](https://www.youtube.com/watch?v=HJ2nTpet2yo&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=39) (5:33) — Bài 10 — parameters, Query wizard
-- [JC-41 «Truy vấn SQL và cấu trúc truy vấn»](https://www.youtube.com/watch?v=E3EJ6WRG8Sk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=40) (4:32) — Bài 10 — cấu trúc query; Bài 11 — virtual tables
-- [JC-42 «Mệnh đề SELECT»](https://www.youtube.com/watch?v=gcvHm8ER72o&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=41) (6:34) — Bài 10 — SELECT, ISNULL, CASE, DISTINCT
-- [JC-43 «FROM và WHERE»](https://www.youtube.com/watch?v=PtCdTq0a1nM&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=42) (5:58) — Bài 10 — FROM, WHERE; Bài 11 — lọc trong tham số virtual table
-- [JC-44 «JOIN»](https://www.youtube.com/watch?v=Ukd1zPxIJqE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=43) (7:23) — Bài 10 — LEFT / INNER / FULL JOIN
-- [JC-45 «GROUP BY và HAVING»](https://www.youtube.com/watch?v=cCC-HVpGhJk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=44) (5:10) — Bài 10 — GROUP BY, hàm tổng hợp, HAVING
-- [JC-46 «Query trong ngôn ngữ 1C Script»](https://www.youtube.com/watch?v=Mws4QN1CdQY&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=45) (4:28) — Bài 10 — `New Query`, `.Text`, `SetParameter()`, `Execute()`, `Select()` / `Next()`, `Unload()`
+- [Cơ bản về ngôn ngữ Query 1](https://www.youtube.com/watch?v=wgEsimf_2ks&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=13) (11:42) — Bài 10 — SELECT, FROM, Query wizard _(mã nội bộ JC-14)_
+- [Danh sách động (Dynamic list)](https://www.youtube.com/watch?v=rr_ohZ13H6k&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=36) (4:53) — Bài 9 — Dynamic list (bảng hoặc query tùy ý); Bài 10 — query language _(mã nội bộ JC-37)_
+- [Cơ bản về ngôn ngữ truy vấn 2](https://www.youtube.com/watch?v=HJ2nTpet2yo&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=39) (5:33) — Bài 10 — parameters, Query wizard _(mã nội bộ JC-40)_
+- [Truy vấn SQL và cấu trúc truy vấn](https://www.youtube.com/watch?v=E3EJ6WRG8Sk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=40) (4:32) — Bài 10 — cấu trúc query; Bài 11 — virtual tables _(mã nội bộ JC-41)_
+- [Mệnh đề SELECT](https://www.youtube.com/watch?v=gcvHm8ER72o&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=41) (6:34) — Bài 10 — SELECT, ISNULL, CASE, DISTINCT _(mã nội bộ JC-42)_
+- [FROM và WHERE](https://www.youtube.com/watch?v=PtCdTq0a1nM&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=42) (5:58) — Bài 10 — FROM, WHERE; Bài 11 — lọc trong tham số virtual table _(mã nội bộ JC-43)_
+- [JOIN](https://www.youtube.com/watch?v=Ukd1zPxIJqE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=43) (7:23) — Bài 10 — LEFT / INNER / FULL JOIN _(mã nội bộ JC-44)_
+- [GROUP BY và HAVING](https://www.youtube.com/watch?v=cCC-HVpGhJk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=44) (5:10) — Bài 10 — GROUP BY, hàm tổng hợp, HAVING _(mã nội bộ JC-45)_
+- [Query trong ngôn ngữ 1C Script](https://www.youtube.com/watch?v=Mws4QN1CdQY&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=45) (4:28) — Bài 10 — `New Query`, `.Text`, `SetParameter()`, `Execute()`, `Select()` / `Next()`, `Unload()` _(mã nội bộ JC-46)_

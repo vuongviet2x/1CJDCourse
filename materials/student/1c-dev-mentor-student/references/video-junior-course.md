@@ -1,4 +1,4 @@
-# Playlist video "Junior Developer Course" (khóa cũ) ↔ giáo trình 24 bài
+# Video bài giảng trên YouTube (playlist "Junior Developer Course") ↔ giáo trình 24 bài
 
 > **Khi nào đọc file này:** khi người học hỏi về một kiến thức có video tương ứng trong playlist cũ, muốn "xem video" thay vì đọc, hỏi "video nào nói về X", hoặc hỏi về một video của khóa cũ ("video bài 23 nói gì", "bài 37 khóa cũ thuộc phần nào"). Dùng để **dẫn người học tới đúng video** và **nối video với bài trong giáo trình 24 bài**.
 
@@ -9,12 +9,12 @@
 - Cột "Phạm vi trong giáo trình" đã được đối chiếu với các file bài của skill; những chỗ bảng gốc ghi lệch đã sửa và ghi ở mục cuối.
 - **Mô tả nội dung từng video lấy từ bảng gốc, chưa đối chiếu bằng cách xem video.** Khi trả lời, dùng video như tài liệu xem thêm; kiến thức chính vẫn lấy từ file bài của giáo trình.
 
-## Quy ước khi dẫn video
+## Quy ước khi dẫn video (bắt buộc)
 
-- Tên video trong playlist đánh số **"Bài 2 … Bài 50"** của khóa cũ — **khác** số bài của giáo trình 24 bài. Luôn gọi là **"video JC-<số>"** (JC = Junior Course), ví dụ "video JC-23 «Biểu ghi tích lũy»", không gọi trần "Bài 23".
-- Dòng dẫn video đặt sau dòng "📖 Đọc thêm" (nếu có), tối đa 2 video liên quan nhất:
-  `🎬 Xem video (khóa Junior cũ): JC-23 «Biểu ghi tích lũy» (13:46) — <link>`
-- Chỉ dùng link trong bảng dưới (link đã sửa theo mã video thật). Video cũ quay trên phiên bản platform cũ hơn — giao diện có thể khác; nếu video và giáo trình nói khác nhau, theo giáo trình và nói rõ.
+- **Cách nói với người học:** "🎬 Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](<link>)" — ví dụ "🎬 Bạn có thể tham khảo thêm về JOIN của khóa tại đây: [JOIN](https://www.youtube.com/watch?v=Ukd1zPxIJqE&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=43)". Đặt sau dòng "📖 Đọc thêm" (nếu có), tối đa 2 video liên quan nhất.
+- **Không** gọi là "khóa cũ", "khóa Junior", "Junior Course"; **không** dùng mã "JC-<số>" và **không** nêu số "Bài N" trong tên video (số đó khác số bài giáo trình). Tên video dùng phần sau "Bài N:" (cột "Tên video" bên dưới, bỏ chữ «»).
+- Mã **JC-<số>** (= số "Bài N" trong tên video trên YouTube) chỉ dùng **nội bộ** để tra bảng. Chỉ khi người học tự hỏi theo số video ("video bài 37 học gì") mới trả lời theo đúng cách họ gọi.
+- Chỉ dùng link trong bảng dưới (link đã kiểm tra theo mã video thật). Video quay trên phiên bản platform trước — giao diện có thể khác; nếu video và giáo trình nói khác nhau, theo giáo trình và nói rõ.
 - Phần đánh dấu **ngoài giáo trình** (ví dụ FormattedDocument, trường HTML) dẫn được cho người học muốn tìm hiểu thêm, nhưng không dùng để trả lời câu hỏi về nội dung kiểm tra của giáo trình.
 
 ## Bảng 1 — Từng video → bài trong giáo trình
@@ -73,7 +73,7 @@
 
 ## Bảng 2 — Bài trong giáo trình → video tham khảo
 
-| Bài giáo trình | Video (khóa Junior cũ) |
+| Bài giáo trình | Video |
 |---|---|
 | Bài 1 (Giới thiệu nền tảng) | [JC-2](https://www.youtube.com/watch?v=hclmzfC2Lak&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=1) «Hướng dẫn cài đặt nền tảng 1C:Enterprise»; [JC-3](https://www.youtube.com/watch?v=BBmgzkbdcG8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=2) «Hello world với 1C:Enterprise»; [JC-4](https://www.youtube.com/watch?v=Q3j_VFjTakc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=3) «Infobase - Cơ sở thông tin»; [JC-5](https://www.youtube.com/watch?v=tQQjrh3gBJk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=4) «Metadata class»; [JC-25](https://www.youtube.com/watch?v=opQkqATP8oA&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=24) «Làm việc với đối tượng Metadata» |
 | Bài 2 (Metadata, primitive types) | [JC-5](https://www.youtube.com/watch?v=tQQjrh3gBJk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=4) «Metadata class»; [JC-15](https://www.youtube.com/watch?v=ZBmyFnjNP-s&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=14) «Những thuộc tính chính của đối tượng Siêu dữ liệu»; [JC-25](https://www.youtube.com/watch?v=opQkqATP8oA&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=24) «Làm việc với đối tượng Metadata»; [JC-27](https://www.youtube.com/watch?v=jdO9y_nXLIQ&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=26) «Các kiểu dữ liệu cơ sở» |
@@ -100,7 +100,7 @@
 | Bài 24 (Accounting) | [JC-21](https://www.youtube.com/watch?v=EQLuZq69Nmw&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=20) «Dữ liệu xác định trước» |
 | Extensions (Configuration extensions) | — |
 
-**Bài không có video trong playlist cũ:** Bài 8 (Debugging), Bài 19 (Data processors), Bài 20 (Roles, access rights), Bài 22 (SSL: Print), Bài 23 (SSL: files), Extensions (Configuration extensions). Với các bài này chỉ dẫn tài liệu Theory/Practice.
+**Bài không có video trong playlist:** Bài 8 (Debugging), Bài 19 (Data processors), Bài 20 (Roles, access rights), Bài 22 (SSL: Print), Bài 23 (SSL: files), Extensions (Configuration extensions). Với các bài này chỉ dẫn tài liệu Theory/Practice.
 
 ## Các chỗ đã sửa so với bảng gốc
 

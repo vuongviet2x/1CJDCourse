@@ -537,12 +537,12 @@ EndProcedure
 - `Items.List.CurrentRow` của dynamic list là reference document đang chọn; `Copy()` trả về DocumentObject mới, chưa ghi.
 - Phải gọi `Write(DocumentWriteMode.Posting, DocumentPostingMode.RealTime)`, nếu không bản copy bị mất; sau đó `Items.List.Refresh()` để list hiện document mới.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-7 «Chứng từ và biểu ghi tích lũy»](https://www.youtube.com/watch?v=dQt7_Ln8zVI&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=6) (4:50) — Bài 3 — Document; Bài 11 — Accumulation register, posting
-- [JC-22 «Kết chuyển chứng từ»](https://www.youtube.com/watch?v=fsu3Wqn9wz8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=21) (8:01) — Bài 11 — Document posting, event Posting, RegisterRecords, posting mode
-- [JC-23 «Biểu ghi tích lũy»](https://www.youtube.com/watch?v=wbF-aWunEdc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=22) (13:46) — Bài 11 — Accumulation register Balances/Turnovers, dimensions, resources, virtual tables
-- [JC-41 «Truy vấn SQL và cấu trúc truy vấn»](https://www.youtube.com/watch?v=E3EJ6WRG8Sk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=40) (4:32) — Bài 10 — cấu trúc query; Bài 11 — virtual tables
-- [JC-43 «FROM và WHERE»](https://www.youtube.com/watch?v=PtCdTq0a1nM&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=42) (5:58) — Bài 10 — FROM, WHERE; Bài 11 — lọc trong tham số virtual table
+- [Chứng từ và biểu ghi tích lũy](https://www.youtube.com/watch?v=dQt7_Ln8zVI&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=6) (4:50) — Bài 3 — Document; Bài 11 — Accumulation register, posting _(mã nội bộ JC-7)_
+- [Kết chuyển chứng từ](https://www.youtube.com/watch?v=fsu3Wqn9wz8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=21) (8:01) — Bài 11 — Document posting, event Posting, RegisterRecords, posting mode _(mã nội bộ JC-22)_
+- [Biểu ghi tích lũy](https://www.youtube.com/watch?v=wbF-aWunEdc&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=22) (13:46) — Bài 11 — Accumulation register Balances/Turnovers, dimensions, resources, virtual tables _(mã nội bộ JC-23)_
+- [Truy vấn SQL và cấu trúc truy vấn](https://www.youtube.com/watch?v=E3EJ6WRG8Sk&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=40) (4:32) — Bài 10 — cấu trúc query; Bài 11 — virtual tables _(mã nội bộ JC-41)_
+- [FROM và WHERE](https://www.youtube.com/watch?v=PtCdTq0a1nM&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=42) (5:58) — Bài 10 — FROM, WHERE; Bài 11 — lọc trong tham số virtual table _(mã nội bộ JC-43)_

@@ -487,12 +487,12 @@ FROM
 - Periodicity `Auto` để chọn được `Recorder`; field `SecondPeriod` được chọn để platform gán role "Period, 2" (Recorder là "Period, 1") → opening/closing balance trong grouping tính đúng.
 - Các field được gom bằng Path dạng `OpeningBalance.Quantity`, `Receipt.Amount`... trong schema (tab Data sets) — ví dụ "Path nhóm field" của bài.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-- [JC-36 «Hiển thị có điều kiện»](https://www.youtube.com/watch?v=a6kSspz-wo4&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=35) (10:29) — Bài 9 — conditional appearance trên form; Bài 18 — conditional appearance trong DCS
-- [JC-47 «Báo cáo dựa trên khuôn mẫu»](https://www.youtube.com/watch?v=WVqrshBBH-E&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=46) (6:34) — Bài 18 — DCS (theo mô tả của bảng gốc); nếu video nói về report điền template bằng code thì là Bài 17. Lưu ý: Tên video "báo cáo dựa trên khuôn mẫu" trùng tên Bài 17 (template-based reports) nhưng mô tả của bảng gốc là giới thiệu DCS — cần xem video để chốt.
-- [JC-48 «Khuôn mẫu và trình soạn thảo dữ liệu»](https://www.youtube.com/watch?v=It9J9M69Tl8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=47) (8:13) — Bài 18 — data composition schema, data fields, resources
-- [JC-49 «Bộ dữ liệu (data set)»](https://www.youtube.com/watch?v=HLvgcgPFRq0&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=48) (5:59) — Bài 18 — data sets: Query, Object, Union
-- [JC-50 «Thiết lập (setting)»](https://www.youtube.com/watch?v=rq_qf0e3is8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=49) (8:31) — Bài 18 — settings: grouping, selected fields, filters, sorting
+- [Hiển thị có điều kiện](https://www.youtube.com/watch?v=a6kSspz-wo4&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=35) (10:29) — Bài 9 — conditional appearance trên form; Bài 18 — conditional appearance trong DCS _(mã nội bộ JC-36)_
+- [Báo cáo dựa trên khuôn mẫu](https://www.youtube.com/watch?v=WVqrshBBH-E&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=46) (6:34) — Bài 18 — DCS (theo mô tả của bảng gốc); nếu video nói về report điền template bằng code thì là Bài 17. Lưu ý: Tên video "báo cáo dựa trên khuôn mẫu" trùng tên Bài 17 (template-based reports) nhưng mô tả của bảng gốc là giới thiệu DCS — cần xem video để chốt. _(mã nội bộ JC-47)_
+- [Khuôn mẫu và trình soạn thảo dữ liệu](https://www.youtube.com/watch?v=It9J9M69Tl8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=47) (8:13) — Bài 18 — data composition schema, data fields, resources _(mã nội bộ JC-48)_
+- [Bộ dữ liệu (data set)](https://www.youtube.com/watch?v=HLvgcgPFRq0&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=48) (5:59) — Bài 18 — data sets: Query, Object, Union _(mã nội bộ JC-49)_
+- [Thiết lập (setting)](https://www.youtube.com/watch?v=rq_qf0e3is8&list=PLp-gQ5Mgw0Zyp6VM4w9hZZQBtYrBpP5_P&index=49) (8:31) — Bài 18 — settings: grouping, selected fields, filters, sorting _(mã nội bộ JC-50)_

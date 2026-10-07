@@ -477,8 +477,8 @@ EndProcedure
 - Trong `AddPrintCommands` các form này được gọi dạng `DataProcessor.PrintGoodsReceipt2.GoodsReceipt2` — tên print manager thay thế + ID print form.
 - Template vẫn nằm trong document `_DemoGoodsReceipt` (`PF_MXL_GoodsReceipt1..3`), data processor chỉ chứa code điền.
 
-## Video tham khảo (khóa Junior cũ)
+## Video tham khảo
 
-Video trong playlist "Junior Developer Course" (1C Vietnam Academy, khóa cũ) có phạm vi trùng với bài này. Gọi là "video JC-<số>" (số bài của khóa cũ, khác số bài giáo trình); quy ước dẫn và độ tin cậy: `references/video-junior-course.md`.
+Video bài giảng trên YouTube có phạm vi trùng với bài này. Khi dẫn cho người học, nói "Bạn có thể tham khảo thêm về <chủ đề> của khóa tại đây: [<tên video>](link)" — không nói "khóa cũ/Junior", không dùng mã JC (mã JC trong danh sách chỉ để tra nội bộ). Quy ước đầy đủ: `references/video-junior-course.md`.
 
-Không có video tương ứng trong playlist khóa cũ — chỉ dẫn tài liệu Theory/Practice của bài.
+Không có video tương ứng — chỉ dẫn tài liệu Theory/Practice của bài.
