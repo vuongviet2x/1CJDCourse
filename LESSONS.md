@@ -50,6 +50,7 @@ Mỗi bài có hai branch: `theory` (lý thuyết) và `practice` (thực hành)
 
 - `docs/video-junior-course.md`, `docs/1C_Junior_Course_Video_Mapping_v2.xlsx` — 49 video playlist "Junior Developer Course" (khóa cũ, kênh 1C Vietnam Academy) nối với 24 bài + Extensions; link đã kiểm tra theo mã video thật.
 - `tools/v8unpack.py` — giải nén container 1C (`.cf`/`.cfe`/`.epf`) để đọc module BSL: `python3 tools/v8unpack.py <file> <thư_mục_ra>`.
+- `materials/student/` — skill "1C Dev Mentor" bản sinh viên (không có lời giải) và bảng link tài liệu bài giảng cho sinh viên.
 
 ## Cách sử dụng
 
