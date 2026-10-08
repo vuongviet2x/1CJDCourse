@@ -62,6 +62,9 @@ Procedure Posting(Cancel, Mode)
 	
 	WriteOffOrder = Constants.WriteOffOrder.Get();
 	
+	// Lock balances before reading them (DataLockControlMode = Managed)
+	ProductsInDocuments.LockGoodsInWarehouses(Products, Warehouse);
+	
 	Query = New Query;
 	Query.SetParameter("Ref", 			Ref);	
 	Query.SetParameter("PointInTime", 	PointInTime());
@@ -98,6 +101,7 @@ Procedure Posting(Cancel, Mode)
 		|	ProductsOfDocument.Quantity AS Quantity,
 		|	ProductsOfDocument.Amount AS Amount,
 		|	ISNULL(GoodsInWarehousesBalance.QuantityBalance, 0) AS QuantityBalance,
+		|	ISNULL(GoodsInWarehousesBalance.AmountBalance, 0) AS AmountBalance,
 		|	CASE
 		|		WHEN ISNULL(GoodsInWarehousesBalance.QuantityBalance, 0) = 0
 		|			THEN 0
@@ -110,10 +114,11 @@ Procedure Posting(Cancel, Mode)
 		|				Product IN (&Products)
 		|					AND Warehouse = &Warehouse) AS GoodsInWarehousesBalance
 		|		ON ProductsOfDocument.Product = GoodsInWarehousesBalance.Product
+		|			AND GoodsInWarehousesBalance.QuantityBalance > 0
 		|
 		|ORDER BY
 		|	ProductsOfDocument.Product,
-		|	GoodsInWarehousesBalance.Batch.Date";
+		|	GoodsInWarehousesBalance.Batch.PointInTime";
 		
 		Query.Text = Query.Text + BatchOrder;
 		
@@ -140,6 +145,16 @@ Procedure Posting(Cancel, Mode)
 			Price = SelectionProducts.Price;
 			
 			Quantity = Min(QuantityLeft, SelectionProducts.QuantityBalance);
+			If Quantity <= 0 Then
+				Continue; // no positive balance: no record, the shortage is reported below
+			EndIf;
+			
+			// The whole batch is taken -> take its whole amount (no rounding remainder left in the batch)
+			If Quantity = SelectionProducts.QuantityBalance Then
+				Amount = SelectionProducts.AmountBalance;
+			Else
+				Amount = Round(Quantity * Price, 2);
+			EndIf;
 
 			Record = RegisterRecords.GoodsInWarehouses.Add();
 			Record.RecordType 	= AccumulationRecordType.Expense;
@@ -147,7 +162,7 @@ Procedure Posting(Cancel, Mode)
 			Record.Product 		= SelectionProducts.Product;
 			Record.Warehouse 	= Warehouse;
 			Record.Quantity 	= Quantity;
-			Record.Amount 		= Quantity * Price;
+			Record.Amount 		= Amount;
 			Record.Batch 		= SelectionProducts.Batch;
 			
 			QuantityLeft = QuantityLeft - Quantity;

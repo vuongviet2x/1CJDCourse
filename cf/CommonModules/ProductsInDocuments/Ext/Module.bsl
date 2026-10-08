@@ -1,4 +1,19 @@
 ﻿
+// Managed lock on GoodsInWarehouses for the products of the document in one warehouse.
+// Call at the start of Posting, before reading balances, so that two documents posted
+// at the same time cannot allocate the same batch balance.
+Procedure LockGoodsInWarehouses(Products, Warehouse) Export
+
+	Lock = New DataLock;
+	LockItem = Lock.Add("AccumulationRegister.GoodsInWarehouses");
+	LockItem.Mode = DataLockMode.Exclusive;
+	LockItem.SetValue("Warehouse", Warehouse);
+	LockItem.DataSource = Products.Unload(, "Product");
+	LockItem.UseFromDataSource("Product", "Product");
+	Lock.Lock();
+
+EndProcedure
+
 Procedure CheckGoodsInWarehouseBalance(Products, Warehouse, Date, Cancel, Company = Undefined) Export
 
 	If Company <> Undefined Then

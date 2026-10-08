@@ -1,5 +1,5 @@
 ﻿
-Procedure Filling(FillingData, StandardProcessing)
+Procedure Filling(FillingData, FillingText, StandardProcessing)
 
 	If TypeOf(FillingData) = Type("DocumentRef.SalesInvoice") Then
 		// Filling the headline
@@ -7,7 +7,7 @@ Procedure Filling(FillingData, StandardProcessing)
 		Contract = FillingData.Contract;
 		Customer = FillingData.Customer;
 		DocumentTotal = FillingData.DocumentTotal;
-		SalesDocument = FillingData.Ref;
+		SalesDocument = FillingData; // FillingData is already the reference
 		Warehouse = FillingData.Warehouse;
 		BankAccount = FillingData.BankAccount;
 		Discount = FillingData.Discount;
@@ -36,6 +36,16 @@ EndProcedure
 
 Procedure Posting(Cancel, Mode)
 
+	If Not ValueIsFilled(SalesDocument) Then
+		UserMessage = New UserMessage;
+		UserMessage.Text = "Fill in the sales document: returned goods are valued by its records";
+		UserMessage.Field = "SalesDocument";
+		UserMessage.SetData(ThisObject);
+		UserMessage.Message();
+		Cancel = True;
+		Return;
+	EndIf;
+	
 	WriteOffOrder = Constants.WriteOffOrder.Get();
 				
 	Query = New Query;
@@ -104,6 +114,7 @@ Procedure Posting(Cancel, Mode)
 		While SelectionProducts.Next() Do
 			
 			If SelectionProducts.Product <> CurrentProduct Then
+				ReportExcessReturn(CurrentProduct, QuantityLeft, Cancel);
 				CurrentProduct 	= SelectionProducts.Product;
 				QuantityLeft 	= SelectionProducts.Quantity;
 			ElsIf QuantityLeft <= 0 Then
@@ -113,12 +124,14 @@ Procedure Posting(Cancel, Mode)
 			Price = SelectionProducts.Price;
 			
 			Quantity = Min(QuantityLeft, SelectionProducts.QuantityExpense);
+			If Quantity <= 0 Then
+				Continue; // nothing of this product was sold by the sales document
+			EndIf;
 
 			Record = RegisterRecords.GoodsInWarehouses.Add();
 			Record.RecordType 	= AccumulationRecordType.Expense;
 			Record.Period 		= Date;
 			Record.Product 		= SelectionProducts.Product;
-			Record.Warehouse 	= Warehouse;
 			Record.Warehouse 	= Warehouse;
 			Record.Quantity 	= - Quantity;
 			Record.Amount 		= - Quantity * Price;
@@ -126,6 +139,8 @@ Procedure Posting(Cancel, Mode)
 			
 			QuantityLeft = QuantityLeft - Quantity;
 		EndDo;
+		
+		ReportExcessReturn(CurrentProduct, QuantityLeft, Cancel);
 		
 	Else
 		Query.Text =
@@ -217,4 +232,20 @@ Procedure Posting(Cancel, Mode)
 		Record.Amount = -CurRowServices.Amount;
 	EndDo;
 
+EndProcedure
+
+// The returned quantity of a product is more than the sales document sold
+Procedure ReportExcessReturn(Product, QuantityLeft, Cancel)
+	
+	If Product = Undefined Or QuantityLeft <= 0 Then
+		Return;
+	EndIf;
+	
+	UserMessage = New UserMessage;
+	UserMessage.Text = StrTemplate("Returned quantity of %1 exceeds the quantity sold by %2 by %3 units",
+		Product, SalesDocument, QuantityLeft);
+	UserMessage.SetData(ThisObject);
+	UserMessage.Message();
+	Cancel = True;
+	
 EndProcedure

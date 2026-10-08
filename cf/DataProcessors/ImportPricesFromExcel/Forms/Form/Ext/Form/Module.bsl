@@ -88,7 +88,7 @@ Procedure LoadPricesAtServer()
 	
 	// Rx - row #x, Cx - column #x
 	For i = 1 To ColumnsCount Do
-		ColumnNameArea = SpreadsheetDocument.Area("R1C" + i);
+		ColumnNameArea = SpreadsheetDocument.Area(1, i, 1, i);
 		ColumnName = TrimAll(ColumnNameArea.Text);
 		// Searching name of excel file column at structure with column numbers
 		If ColumnNumbers.Property(ColumnName) Then
@@ -115,19 +115,34 @@ Procedure LoadPricesAtServer()
 	Prices.Columns.Add("Product", New TypeDescription("CatalogRef.Products"));
 	Prices.Columns.Add("Price", New TypeDescription("Number"));
 	
+	// Cells are addressed by numbers: "R" + i breaks from row 1000 ("R1 000C2" / "R1,000C2" depending on locale)
+	Descriptions = New Array;
+	For i = 2 To RowsCount Do
+		Descriptions.Add(TrimAll(SpreadsheetDocument.Area(i, ColumnNumbers.Product, i, ColumnNumbers.Product).Text));
+	EndDo;
+	// One query for all products instead of FindByDescription on every row
+	ProductsByDescription = ProductsByDescriptions(Descriptions);
+	
 	UnsuccessfulDates = New Array;
 	UniqueDates = New Array;
 	For i = 2 To RowsCount Do
-		Date 				= SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Date).Value;
-		ProductDescription 	= TrimAll(SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Product).Text);
-		ProductPrice 		= SpreadsheetDocument.Area("R" + i + "C" + ColumnNumbers.Price).Value;
+		Date 				= SpreadsheetDocument.Area(i, ColumnNumbers.Date, i, ColumnNumbers.Date).Value;
+		ProductDescription 	= Descriptions[i - 2];
+		ProductPrice 		= SpreadsheetDocument.Area(i, ColumnNumbers.Price, i, ColumnNumbers.Price).Value;
 		
-		If Not ValueIsFilled(Date) Then
-			Message(StrTemplate("There is an empty date at %1 row, it is skipped", i));
+		If TypeOf(Date) <> Type("Date") Or Not ValueIsFilled(Date) Then
+			Message(StrTemplate("There is an empty or invalid date at %1 row, it is skipped", i));
+			Continue;
+		EndIf;
+		// Documents are matched by day (see ExistingDocumentsByDates)
+		Date = BegOfDay(Date);
+		
+		If TypeOf(ProductPrice) <> Type("Number") Then
+			Message(StrTemplate("The price at %1 row is not a number, the row is skipped", i));
 			Continue;
 		EndIf;
 		
-		Product = Catalogs.Products.FindByDescription(ProductDescription, True);
+		Product = ProductsByDescription.Get(Upper(ProductDescription));
 		If ValueIsFilled(Product) Then
 			NewRow = Prices.Add();
 			NewRow.Date 	= Date;
@@ -198,6 +213,9 @@ Procedure LoadPricesAtServer()
 						EventLogLevel.Error,,,
 						DetailErrorDescription(ErrorInfo())
 					);
+					// Tell the user too, not only the event log
+					Message(StrTemplate("Prices for %1 were not saved: %2",
+						Format(Date, "DLF=D"), BriefErrorDescription(ErrorInfo())));
 				EndTry;
 			Else	
 				Message(
@@ -228,7 +246,7 @@ Function ExistingDocumentsByDates(Dates)
 	Query.Text =
 	"SELECT DISTINCT
 	|	PriceSetup.Ref AS Ref,
-	|	PriceSetup.Date AS Date
+	|	BEGINOFPERIOD(PriceSetup.Date, DAY) AS Date
 	|FROM
 	|	Document.PriceSetup AS PriceSetup
 	|WHERE
@@ -239,4 +257,30 @@ Function ExistingDocumentsByDates(Dates)
 	
 	Return Query.Execute().Unload();
 	
+EndFunction
+
+// Map: upper-case description -> product reference (one query for the whole file)
+&AtServerNoContext
+Function ProductsByDescriptions(Descriptions)
+
+	Query = New Query;
+	Query.Text =
+	"SELECT
+	|	Products.Ref AS Ref,
+	|	Products.Description AS Description
+	|FROM
+	|	Catalog.Products AS Products
+	|WHERE
+	|	Products.Description IN (&Descriptions)
+	|	AND NOT Products.DeletionMark";
+	Query.SetParameter("Descriptions", Descriptions);
+	
+	Result = New Map;
+	Selection = Query.Execute().Select();
+	While Selection.Next() Do
+		Result.Insert(Upper(TrimAll(Selection.Description)), Selection.Ref);
+	EndDo;
+	
+	Return Result;
+
 EndFunction

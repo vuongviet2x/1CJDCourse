@@ -1,6 +1,12 @@
 ﻿
 Procedure Posting(Cancel, Mode)
-WriteOffOrder = Constants.WriteOffOrder.Get();
+	
+	WriteOffOrder = Constants.WriteOffOrder.Get();
+	
+	// Lock balances before reading them (DataLockControlMode = Managed).
+	// Old records of this document are removed before posting (Delete records = Automatically),
+	// so a repost with a later date does not count them twice.
+	ProductsInDocuments.LockGoodsInWarehouses(Products, WarehouseSender);
 	
 	Query = New Query;
 	Query.SetParameter("Ref", 			Ref);	
@@ -38,6 +44,7 @@ WriteOffOrder = Constants.WriteOffOrder.Get();
 		|	ProductsOfDocument.Quantity AS Quantity,
 		|	ProductsOfDocument.Amount AS Amount,
 		|	ISNULL(GoodsInWarehousesBalance.QuantityBalance, 0) AS QuantityBalance,
+		|	ISNULL(GoodsInWarehousesBalance.AmountBalance, 0) AS AmountBalance,
 		|	CASE
 		|		WHEN ISNULL(GoodsInWarehousesBalance.QuantityBalance, 0) = 0
 		|			THEN 0
@@ -50,10 +57,11 @@ WriteOffOrder = Constants.WriteOffOrder.Get();
 		|				Product IN (&Products)
 		|					AND Warehouse = &Warehouse) AS GoodsInWarehousesBalance
 		|		ON ProductsOfDocument.Product = GoodsInWarehousesBalance.Product
+		|			AND GoodsInWarehousesBalance.QuantityBalance > 0
 		|
 		|ORDER BY
 		|	ProductsOfDocument.Product,
-		|	GoodsInWarehousesBalance.Batch.Date";
+		|	GoodsInWarehousesBalance.Batch.PointInTime";
 		
 		Query.Text = Query.Text + BatchOrder;
 		
@@ -84,6 +92,16 @@ WriteOffOrder = Constants.WriteOffOrder.Get();
 			Price = SelectionProducts.Price;
 			
 			Quantity = Min(QuantityLeft, SelectionProducts.QuantityBalance);
+			If Quantity <= 0 Then
+				Continue; // no positive balance: no record, the shortage is reported below
+			EndIf;
+			
+			// The whole batch is taken -> take its whole amount (no rounding remainder left in the batch)
+			If Quantity = SelectionProducts.QuantityBalance Then
+				Amount = SelectionProducts.AmountBalance;
+			Else
+				Amount = Round(Quantity * Price, 2);
+			EndIf;
 
 			Record = RegisterRecords.GoodsInWarehouses.Add();
 			Record.RecordType 	= AccumulationRecordType.Expense;
@@ -91,7 +109,7 @@ WriteOffOrder = Constants.WriteOffOrder.Get();
 			Record.Product 		= SelectionProducts.Product;
 			Record.Warehouse 	= WarehouseSender;
 			Record.Quantity 	= Quantity;
-			Record.Amount 		= Quantity * Price;
+			Record.Amount 		= Amount;
 			Record.Batch 		= SelectionProducts.Batch;
 
 			Record = RegisterRecords.GoodsInWarehouses.Add();
@@ -100,7 +118,7 @@ WriteOffOrder = Constants.WriteOffOrder.Get();
 			Record.Product 		= SelectionProducts.Product;
 			Record.Warehouse 	= WarehouseRecipient;
 			Record.Quantity 	= Quantity;
-			Record.Amount 		= Quantity * Price;
+			Record.Amount 		= Amount;
 			Record.Batch 		= SelectionProducts.Batch;
 			
 			QuantityLeft = QuantityLeft - Quantity;
@@ -200,10 +218,14 @@ EndProcedure
 
 Procedure FillCheckProcessing(Cancel, CheckedAttributes)
 	
-	If WarehouseRecipient = WarehouseSender Then
+	If ValueIsFilled(WarehouseSender) And WarehouseRecipient = WarehouseSender Then
 	
 		Cancel = True;
-		Message("The warehouse-sender can't have the same value that the warehouse-recipient has");
+		UserMessage = New UserMessage;
+		UserMessage.Text = "The warehouse-sender can't have the same value that the warehouse-recipient has";
+		UserMessage.Field = "WarehouseRecipient";
+		UserMessage.SetData(ThisObject);
+		UserMessage.Message();
 	
 	EndIf;
 	

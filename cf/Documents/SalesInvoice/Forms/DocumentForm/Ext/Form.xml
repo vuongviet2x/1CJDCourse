@@ -215,7 +215,6 @@
 									<ExtendedTooltip name="ProductsBatchExtendedTooltip" id="112"/>
 									<Events>
 										<Event name="StartChoice">ProductsBatchStartChoice</Event>
-										<Event name="ChoiceProcessing">ProductsBatchChoiceProcessing</Event>
 									</Events>
 								</InputField>
 							</ChildItems>
