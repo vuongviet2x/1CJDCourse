@@ -6,6 +6,8 @@
 > - Lộ trình **J**: phân tích theo kiểu "đối chiếu với chuẩn" trên Jet (mục 2b), theo đề `btl/de-bai-btl.md`.
 > - Lộ trình **D**: phân tích một yêu cầu thay đổi trên cấu hình có sẵn (mục 2c).
 
+> Công cụ thu thập thông tin (bảng câu hỏi "7 + 2", ma trận fit-gap) và case doanh nghiệp thật đã ẩn danh theo ngành: `erp-cases/khung-khao-sat.md`, `erp-cases/case-doanh-nghiep.md`.
+
 ## 1. Tám bước — khung chung
 
 Thứ tự từ nghiệp vụ tới phần mềm. Được quay lại bước trước khi phát hiện mâu thuẫn; ghi lại quyết định và lý do vào **nhật ký quyết định**.

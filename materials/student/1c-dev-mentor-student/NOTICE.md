@@ -1,7 +1,7 @@
 # 1C Dev Mentor — Notice of Ownership and Terms of Use
 # 1C Dev Mentor — Thông tin sở hữu và phạm vi sử dụng
 
-**Version / Phiên bản:** 1.9-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-09
+**Version / Phiên bản:** 1.10-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-09
 **Author & maintainer / Tác giả và người duy trì:** Phạm Viết Quý (Pham Viet Quy) — quypv@1c.com.vn
 **Organization / Đơn vị:** 1C Vietnam
 
@@ -24,6 +24,7 @@
 - **SSL API names and signatures** in `references/code-review/ssl-api-en.md` are taken from the Standard Subsystems Library 3.1 World edition (mirror github.com/1c-syntax/ssl_3_1_eng, labelled CC BY 4.0). The Standard Subsystems Library is a product of 1C; only names and signatures are quoted.
 - **Static-analysis rule names** cited in `references/code-review/` come from BSL Language Server (github.com/1c-syntax/bsl-language-server, LGPL-3.0) and 1C:Code style V8 (github.com/1C-Company/v8-code-style, EPL-2.0); only rule names are cited, no code is included.
 - **External source catalog** in `references/code-review/nguon-ngoai.md` lists third-party repositories by link only; their code is not included in this skill.
+- **Business case material** in `references/erp-cases/` is distilled from internal survey templates and solution documents of 1C Vietnam. All customer names, figures and identifying details have been removed and replaced with aliases; no original customer file is included.
 
 ### Terms of use
 
@@ -58,6 +59,7 @@ Feedback, bug reports and permission requests: Phạm Viết Quý — quypv@1c.c
 - **Tên và chữ ký API của SSL** trong `references/code-review/ssl-api-en.md` lấy từ Standard Subsystems Library 3.1 World edition (bản mirror github.com/1c-syntax/ssl_3_1_eng, ghi giấy phép CC BY 4.0). SSL là sản phẩm của 1C; skill chỉ trích tên và chữ ký hàm.
 - **Tên quy tắc phân tích tĩnh** trong `references/code-review/` lấy từ BSL Language Server (LGPL-3.0) và 1C:Code style V8 (EPL-2.0); chỉ dẫn tên, không chứa code của các dự án này.
 - **Danh mục nguồn bên ngoài** trong `references/code-review/nguon-ngoai.md` chỉ dẫn link; code của các repo đó không có trong skill.
+- **Tư liệu tình huống doanh nghiệp** trong `references/erp-cases/` được rút từ mẫu khảo sát và tài liệu giải pháp nội bộ của 1C Vietnam. Mọi tên khách hàng, số liệu và chi tiết nhận diện đã được bỏ và thay bằng bí danh; skill không chứa file gốc nào của khách hàng.
 
 ### Tóm tắt giấy phép MIT của Jet (tham khảo, không thay thế bản gốc)
 

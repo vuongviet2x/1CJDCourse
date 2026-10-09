@@ -1,6 +1,6 @@
 # Tài liệu cho sinh viên — khóa 1C:Enterprise (JD Course)
 
-- `1c-dev-mentor-student/` + `1c-dev-mentor-student.skill` — skill Claude "1C Dev Mentor" **bản sinh viên** 1.9 (gợi ý bài thực hành, không có lời giải). Cài: claude.ai → Settings → Capabilities → Skills → Upload skill → chọn file `.skill`. Phạm vi sử dụng: `1c-dev-mentor-student/NOTICE.md`.
+- `1c-dev-mentor-student/` + `1c-dev-mentor-student.skill` — skill Claude "1C Dev Mentor" **bản sinh viên** 1.10 (gợi ý bài thực hành, không có lời giải; 1.10 thêm khung khảo sát doanh nghiệp "7 + 2", tình huống doanh nghiệp đã ẩn danh và 14 đề BTL mới E1–E14). Cài: claude.ai → Settings → Capabilities → Skills → Upload skill → chọn file `.skill`. Phạm vi sử dụng: `1c-dev-mentor-student/NOTICE.md`.
 - `onec-dev-mentor-student-gemini.zip` — cùng nội dung, đóng gói cho Gemini (tải ở phần Skill của Gemini; SKILL.md ở gốc gói, hướng dẫn trong `CAI-DAT.md`).
 - `Lien_ket_bai_giang_JDCourse_student.xlsx` — link tài liệu Lý thuyết và Đề thực hành (VI/EN) của 24 bài + Extensions.
 - Bảng video bài giảng trên YouTube ↔ giáo trình: `../../docs/video-junior-course.md`.

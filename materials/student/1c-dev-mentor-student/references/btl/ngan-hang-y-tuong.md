@@ -16,6 +16,7 @@ Khi nào đọc file này: khi nhóm muốn **tự đề xuất đề tài** ho�
   - [1.4. CashManagement (Tiền) — C1–C7](#14-cashmanagement-tiền--c1c7)
   - [1.5. Liên phân hệ / Logistics — L1–L8](#15-liên-phân-hệ--logistics--l1l8)
   - [1.6. Tích hợp, di động, phân tích — I1–I3](#16-tích-hợp-di-động-phân-tích--i1i3-ngoài-24-bài-cho-nhóm-khá)
+  - [1.7. Từ case doanh nghiệp thật — E1–E14](#17-từ-case-doanh-nghiệp-thật-đã-ẩn-danh--e1e14)
 - [2. Bảng chọn đề nhanh](#2-bảng-chọn-đề-nhanh)
 - [3. Nguồn để tìm thêm ý tưởng](#3-nguồn-để-tìm-thêm-ý-tưởng)
 - [4. Hướng dẫn tự phát triển ý tưởng](#4-hướng-dẫn-tự-phát-triển-ý-tưởng)
@@ -517,6 +518,69 @@ Quy ước mức (theo `de-bai-btl.md` 2.3): **M2** = Catalog, Enumeration, attr
 - **Đối tượng thêm:** ứng dụng di động riêng (cấu hình *Mobile device*) quét mã vạch bằng camera, đếm số lượng, gửi kết quả về Jet qua HTTP service — **M3+** (ngoài giáo trình: nền tảng di động, `MultimediaTools`, đồng bộ dữ liệu). Mẫu tham khảo: MobileScanner của 1C Developer Network (`nguon-ngoai.md`) — chỉ đọc để hiểu, không chép (repo không ghi giấy phép, có chỗ viết kiểu cũ).
 - **Phù hợp:** nhóm có thành viên IT, sau khi xong W7 hoặc Đề 9.
 - **Khả thi:** Cao; cần điện thoại Android và bản platform di động. Có thể làm phiên bản rút gọn: form nhập mã vạch trên web client thay cho điện thoại.
+
+### 1.7. Từ case doanh nghiệp thật (đã ẩn danh) — E1–E14
+
+> Rút từ hồ sơ khảo sát, file vận hành và tài liệu giải pháp của 1C Việt Nam; bối cảnh từng ngành: `erp-cases/case-doanh-nghiep.md`. Một số ý tưởng gần với thẻ đã có (ghi "gần") — chọn một, không làm trùng. Phần "Jet đang có" xem các file `jet/`.
+
+**Hợp lộ trình J (trên Jet):**
+
+#### E1 — Kho 2 pha: phiếu kho tách khỏi hóa đơn
+- **Bài toán:** kế toán xuất hóa đơn, thủ kho xuất hàng vào lúc khác → tồn sổ và tồn thực lệch, hai bên đổ lỗi cho nhau.
+- **Đối tượng thêm:** thuộc tính `TwoPhase` của kho — **M2**; `Document.GoodsIssue` tạo trên cơ sở SalesInvoice (chưa ghi sổ) — **M2**; register `GoodsToShip` (hàng phải xuất theo hóa đơn) và sửa posting để kho 2 pha chỉ trừ tồn khi có phiếu xuất — **M3**; báo cáo chênh lệch hóa đơn – phiếu xuất — **M3**.
+- **Phù hợp:** nhóm Logistics; câu hỏi thiết kế hay: register nào "biết" hàng đã bán nhưng chưa rời kho?
+
+#### E2 — Gửi hàng cho đại lý bán hộ (ký gửi) + hoa hồng
+- **Bài toán:** hàng nằm ở đại lý vẫn là hàng của công ty, nhưng sổ sách coi như đã bán.
+- **Đối tượng thêm:** Catalog `Contracts` (loại hợp đồng ký gửi, cách tính hoa hồng) — **M2**; `ConsignmentTransfer`, `ConsigneeReport` — **M2**; register `GoodsAtConsignees` — **M3**; báo cáo đại lý ghi doanh số và công nợ (trừ hoa hồng) — **M3** (chạm register dùng chung).
+
+#### E3 — Kho dịch vụ 3PL: nhận giữ hộ hàng của chủ hàng
+- **Bài toán:** công ty logistics giữ hàng cho nhiều chủ hàng, tính phí lưu kho theo pallet-ngày; hàng giữ hộ không phải tài sản của mình.
+- **Đối tượng thêm:** `SafekeepingReceipt`, `SafekeepingRelease` — **M2**; register `GoodsInSafekeeping` (chủ hàng, kho, sản phẩm) — **M3**; InformationRegister `StorageTariffs` + báo cáo phí lưu kho — **M2/M3**.
+- **Phù hợp:** **rất sát ngành Logistics**; không chạm register tồn kho của Jet (đúng bản chất: không phải hàng của công ty).
+
+#### E4 — Đóng bộ / tách bộ (giỏ quà, combo)
+- **Đối tượng thêm:** Catalog `KitSpecifications` (thành phần) — **M2**; `Document.KitAssembly` (đóng bộ / tách bộ) xuất thành phần, nhập bộ, giá vốn bộ = tổng giá vốn thành phần — **M3**.
+- **Phù hợp:** dịch vụ giá trị gia tăng trong kho; câu hỏi hay: giá vốn của bộ tính thế nào?
+
+#### E5 — Lương khoán bốc xếp / soạn hàng theo kiện
+- **Đối tượng thêm:** Catalog `WarehouseOperations` (bốc, xếp, soạn; đơn giá) — **M2**; `PieceWorkSheet` (tổ, người, số lượng, hệ số chia) — **M2**; register `PayrollAccrued` (Turnovers) — **M3**.
+- **Phù hợp:** năng suất kho — nhóm Logistics.
+
+#### E6 — Cổng nhà máy: chuyến xe, cân 2 lần, xuất hàng (gần L1, L8)
+- **Bài toán:** xe đợi nhiều giờ, cân và xuất hàng ghi tay, sai lệch khối lượng.
+- **Đối tượng thêm:** `Document.Trip`, `WeighingTicket` — **M2**; InformationRegister lịch sử trạng thái chuyến (đăng ký → cân vào → xếp hàng → cân ra → rời cổng) — **M2**; chặn xuất khi lệch cân quá ngưỡng, mô phỏng đầu cân bằng data processor — **M3**.
+
+#### E7 — Hạn mức tín dụng đại lý + duyệt vượt hạn mức
+- **Đối tượng thêm:** InformationRegister `CreditLimits` (periodic theo khách) — **M2**; kiểm số dư `CustomerBalance` khi post SalesInvoice, vượt thì chặn hoặc chờ duyệt — **M3**; role người duyệt — **M2**.
+- **Câu hỏi thiết kế hay:** phê duyệt có cần là Document không, hay chỉ là trạng thái / nhiệm vụ?
+
+#### E8 — Cấp phát công cụ, đồ bảo hộ cho bộ phận
+- **Đối tượng thêm:** Catalog `Departments` — **M2**; `IssueToUse` / `ReturnFromUse` — **M2**; register `ItemsInUse` (bộ phận, người, sản phẩm) — **M3**.
+
+#### E9 — Case trọn vẹn: doanh nghiệp vật liệu trang trí nhỏ (PU-D)
+- **Bài toán:** 3 kho, 4 mức giá cho một sản phẩm theo kiểu hoàn thiện, giá cố định theo từng khách, chiết khấu cuối năm theo doanh thu, thuê gia công hoàn thiện.
+- **Đối tượng thêm:** dùng dạng giá của Jet cho 4 mức giá + InformationRegister giá riêng theo khách — **M2**; chiết khấu bậc thang cuối năm (query lũy kế doanh số) — **M3** (gần Đề 5); register hàng đang ở đơn vị gia công — **M3**.
+- **Phù hợp:** **đề tài trọn vẹn cho một nhóm J** — đủ mua, bán, kho, tiền.
+
+#### E10 — Kho giấy theo khổ cho xưởng carton (CARTON-C)
+- **Đối tượng thêm:** thuộc tính khổ / định lượng của sản phẩm giấy, báo cáo nhập – xuất – tồn theo khổ — **M2**; đề xuất đặt giấy theo đơn và cơ cấu lớp (data processor) — **M3**; phần sản xuất chỉ phân tích ở M1.
+
+**Hợp lộ trình M (cấu hình trống) hoặc nhóm khá:**
+
+#### E11 — Xưởng may mini (MAY-A)
+- Thiết kế đầy đủ: mã hàng (công đoạn + thời gian chuẩn), đơn hàng theo màu × size, định mức hai phiên bản, nhập vải theo cây, phiếu trải cắt, bán thành phẩm theo công đoạn, sản lượng theo giờ (InformationRegister), báo cáo cân đối vải, tiến độ đơn, hiệu suất chuyền, quyết toán mã hàng. Bối cảnh và KPI: `case-doanh-nghiep.md` mục 1.1.
+
+#### E12 — Bảo trì thiết bị (mini-CMMS)
+- Thiết bị theo cây khu vực, InformationRegister vị trí / tình trạng (periodic), yêu cầu sửa chữa → phiếu công việc → xuất phụ tùng, kế hoạch bảo trì định kỳ, scheduled job sinh phiếu đến hạn, báo cáo chi phí và thiết bị hỏng nhiều. Nhóm J: đổi bối cảnh sang xe nâng, băng tải của kho.
+
+#### E13 — Kho nguyên liệu dược theo lô, hạn dùng, trạng thái QC (DƯỢC-E, gần Đề 1)
+- Lô (hạn dùng), register tồn theo lô và vị trí, InformationRegister trạng thái lô, phiếu kiểm nghiệm; posting chặn xuất lô biệt trữ, gợi ý xuất FEFO.
+
+**Đề phương pháp (ghép với bất kỳ đề nào, phần M1):**
+
+#### E14 — Từ file Excel đến ma trận fit-gap
+- Nhận 2–3 file Excel vận hành **đã ẩn danh / sinh lại** → kiểm kê file (ai cập nhật, tần suất, nguồn số) → vẽ quy trình as-is → ma trận fit-gap với Jet theo `erp-cases/khung-khao-sat.md` → danh sách lỗi Excel (hằng số trong công thức, liên kết ngoài, ngày đảo) và cách hệ thống kiểm soát. Biến thể: làm sạch danh mục (tách tên hàng dài thành thuộc tính) trước khi nhập.
 
 ## 2. Bảng chọn đề nhanh
 

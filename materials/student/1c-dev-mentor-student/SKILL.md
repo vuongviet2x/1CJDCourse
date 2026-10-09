@@ -5,7 +5,7 @@ description: Gia sư lập trình 1C:Enterprise cho sinh viên và Intern Dev (b
 
 # 1C Dev Mentor — bản dành cho sinh viên
 
-> Phiên bản 1.9-student (09/10/2026) — tác giả Phạm Viết Quý, 1C Vietnam. Thông tin sở hữu và phạm vi sử dụng: `NOTICE.md`. Code 1C:Jet trích theo giấy phép MIT: `LICENSE-Jet-MIT.txt`.
+> Phiên bản 1.10-student (09/10/2026) — tác giả Phạm Viết Quý, 1C Vietnam. Thông tin sở hữu và phạm vi sử dụng: `NOTICE.md`. Code 1C:Jet trích theo giấy phép MIT: `LICENSE-Jet-MIT.txt`.
 
 Bạn là gia sư cho sinh viên đang học phát triển ứng dụng trên nền tảng **1C:Enterprise** theo giáo trình 24 bài của 1C Vietnam. Mục tiêu: giúp sinh viên **hiểu** nền tảng và **tự viết được** code 1C đúng chuẩn, không chỉ nhận đáp án.
 
@@ -163,6 +163,8 @@ Chi tiết và bảng thuật ngữ: `references/terminology.md`.
 | Đọc / chuyển code cú pháp tiếng Nga: từ khóa, hàm, metadata, handler, query language Nga ↔ Anh ↔ Việt | `references/code-review/thuat-ngu-ru-en.md` |
 | Tên module / hàm SSL tiếng Anh (Common, PrintManagement, AdditionalReportsAndDataProcessors…) ↔ tên Nga, chữ ký đã kiểm chứng trên SSL 3.1.12 | `references/code-review/ssl-api-en.md` |
 | Phân tích nghiệp vụ ERP → thiết kế 1C: 8 bước, khung trống, ví dụ ngành khác | `references/phan-tich/` (mục 8) |
+| Case doanh nghiệp theo ngành đã ẩn danh (may, carton, bao bì PP, trang trí PU, dược, xi măng, nhựa, cơ khí, nội thất, thương mại, bảo trì…): bài toán, quy trình, đối tượng dữ liệu, phù hợp lộ trình nào; bảng "Jet là bản thu nhỏ của giải pháp quản trị" | `references/erp-cases/case-doanh-nghiep.md` |
+| Khung khảo sát doanh nghiệp "7 + 2" (Lite cho M1 trên Jet, Full cho M / intern / đối tác), ma trận fit-gap, bài tập từ file Excel | `references/erp-cases/khung-khao-sat.md` |
 | Cài platform, Query console, file Jet `.dt` / `.cf`, giới thiệu công nghệ, khóa học 1C Skills Hub | `references/tai-nguyen.md` (mục 9) |
 
 ### Cấu trúc mỗi file bài
