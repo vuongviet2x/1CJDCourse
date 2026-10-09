@@ -5,7 +5,7 @@
 ## Nguồn
 
 - Repo `github.com/vuongviet2x/ERP_Practice`, nhánh `master`, commit `de6ec9d` (2026-04-16). Định dạng **1C:EDT** (`Configuration/src/...`, metadata `.mdo`, code `.bsl`). Tên cấu hình trong repo: `Lesson24`; compatibility 8.3.24.
-- Đây là cấu hình làm theo sách **1C:Enterprise 8.3 Practical Developer's Guide** (công ty dịch vụ sửa chữa "Jack of All Trades"; file `practical_developer_guide.pdf` trong project). Số "listing" trong ghi chú dưới đây là số trong sách.
+- Đây là cấu hình làm theo sách **1C:Enterprise 8.3 Practical Developer's Guide** (công ty dịch vụ sửa chữa "Jack of All Trades"; bản PDF trên Google Drive: https://drive.google.com/file/d/1X0uW1nnb8PXg-RwCLLlt5H_e2DzkdsnT/view?usp=sharing — dùng để đối chiếu code của repo với listing gốc). Số "listing" trong ghi chú dưới đây là số trong sách.
 - Giảng viên đồng ý dùng repo này làm nguồn mẫu cho skill và cho BTL. Code bên dưới chép nguyên văn; chỗ lệch hoặc lỗi được ghi "[ghi chú ngoài nguồn]".
 
 ## Bức tranh nghiệp vụ

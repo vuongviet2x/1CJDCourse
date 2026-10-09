@@ -15,7 +15,7 @@
 
 - Mọi khẳng định về Jet dựa trên dump `cf/` nhánh `community`, commit `80884de` (xem `references/jet/jet-overview.md`). Bản Jet khác có thể lệch — đối chiếu trong Designer.
 - **Nhóm 2 (trái ngành):** đi theo thứ tự "nghiệp vụ trước, thuật ngữ sau" và "khai báo → nhập liệu → quan sát hệ quả". Mục "code minh họa" cho M3 được phép đưa nguyên vẹn, có giảng viên kèm.
-- **Nhóm 1 (HTTT, IT đối tác):** M3 là phần nhóm **tự xây**. Chỉ dùng thang gợi ý (hướng đi → dùng gì, đặt ở đâu → khung có `___`), mỗi lần một bậc. **Không** đưa cho nhóm 1 phần "Recipe M3 cho nhóm 2" của cùng đề.
+- **Nhóm 1 (thành viên có nền IT):** từ bản 1.8, mọi thành viên nhóm J đều được **code hoàn chỉnh** cho M3 (`references/chinh-sach-code.md`); với nhóm 1 giải thích theo khối thay vì từng dòng. Phần recipe / code minh họa M3 của đề dùng được cho cả nhóm. Mục "Thang gợi ý M3 cho nhóm 1" giữ làm **lối tự xây** khi thành viên muốn tự viết — khi đó gợi ý mỗi lần một bậc. Phần trùng bài thực hành của giáo trình vẫn chỉ gợi ý.
 - Tên object mới trong file (Regions, SalesReps, PaymentTerms, ExpenseItems, InventoryCount…) là **gợi ý**, nhóm được đặt tên khác; Synonym ghi tiếng Việt.
 - Thao tác Designer lấy theo ghi chú bài học (`references/lessons/`). Nhãn nào không có trong ghi chú được đánh dấu "(tên nút/menu có thể khác theo phiên bản — kiểm tra trên máy)".
 - Chiến lược: với đồ án một học kỳ, sửa trực tiếp configuration Jet trên bản fork của nhóm là đơn giản nhất; extension khó hơn (adopted object, safe mode) — xem `references/jet/jet-extending.md` mục 4.

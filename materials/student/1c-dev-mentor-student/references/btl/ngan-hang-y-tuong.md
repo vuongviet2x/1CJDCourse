@@ -15,6 +15,7 @@ Khi nào đọc file này: khi nhóm muốn **tự đề xuất đề tài** ho�
   - [1.3. Sales (Bán hàng) — S1–S7](#13-sales-bán-hàng--s1s7)
   - [1.4. CashManagement (Tiền) — C1–C7](#14-cashmanagement-tiền--c1c7)
   - [1.5. Liên phân hệ / Logistics — L1–L8](#15-liên-phân-hệ--logistics--l1l8)
+  - [1.6. Tích hợp, di động, phân tích — I1–I3](#16-tích-hợp-di-động-phân-tích--i1i3-ngoài-24-bài-cho-nhóm-khá)
 - [2. Bảng chọn đề nhanh](#2-bảng-chọn-đề-nhanh)
 - [3. Nguồn để tìm thêm ý tưởng](#3-nguồn-để-tìm-thêm-ý-tưởng)
 - [4. Hướng dẫn tự phát triển ý tưởng](#4-hướng-dẫn-tự-phát-triển-ý-tưởng)
@@ -483,6 +484,39 @@ Quy ước mức (theo `de-bai-btl.md` 2.3): **M2** = Catalog, Enumeration, attr
 - **Khả thi:** Thấp–Vừa; không chạm register.
 
 ---
+
+### 1.6. Tích hợp, di động, phân tích — I1–I3 (ngoài 24 bài, cho nhóm khá)
+
+> Các ý tưởng này dùng kỹ thuật **ngoài giáo trình** (HTTP service, nền tảng di động) hoặc phân tích nâng cao — chỉ nên chọn khi nhóm có thành viên nền IT và giảng viên đồng ý. Nguồn tham khảo: `code-review/nguon-ngoai.md`.
+
+#### I1 — Tra cứu tồn kho qua HTTP service (JSON)
+- **Bài toán:** Website / ứng dụng bán hàng của công ty phải gọi điện hỏi kho "còn hàng không" — thông tin chậm, bán hàng không có sẵn.
+- **Jet đang có:** register tồn kho theo kho và sản phẩm (xem `jet-warehouse.md`); chưa có HTTP service nào cho bên ngoài.
+- **Khoảng trống:** hệ thống ngoài không đọc được tồn kho tức thời.
+- **Đối tượng thêm:**
+  - `HTTPService.Stock` với template `/stock/{ProductCode}` trả JSON `{ product, warehouse, quantity }`, đọc `.Balance` với điều kiện trong tham số virtual table — **M3** (ngoài giáo trình: HTTP service, `JSONWriter`; cần publish lên web server).
+  - Role riêng chỉ đọc tồn kho cho tài khoản tích hợp — **M2** (Bài 20).
+- **Phù hợp:** nhóm 1 (code) — nhóm 2 thiết kế dữ liệu trả về.
+- **Khả thi:** Vừa; không ghi register. Thử bằng trình duyệt / Postman. Tham khảo phía gọi: thư viện Connector (`nguon-ngoai.md`).
+
+#### I2 — Phân tích ABC / XYZ và vòng quay hàng tồn
+- **Bài toán:** Cửa hàng không biết mặt hàng nào mang lại phần lớn doanh thu (A) và mặt hàng nào bán thất thường (Z) để đặt hàng hợp lý.
+- **Jet đang có:** register doanh số / giá vốn và tồn kho; báo cáo lãi bán hàng (xem `jet-sales.md`, `jet-warehouse.md`).
+- **Khoảng trống:** không có phân loại mặt hàng, không đo số ngày tồn.
+- **Đối tượng thêm:**
+  - Báo cáo DCS ABC theo doanh thu kỳ (cột tỷ trọng lũy kế, nhóm A/B/C bằng calculated field) — **M2**.
+  - Báo cáo vòng quay = giá vốn kỳ / tồn bình quân, số ngày tồn — **M2**.
+  - `InformationRegister.ProductClasses` (periodic Month) lưu kết quả phân loại do data processor tính hằng tháng — **M3**.
+- **Phù hợp:** nhóm 2 (Logistics) — mạnh về nghiệp vụ, ít code.
+- **Khả thi:** Thấp–Vừa; chỉ đọc dữ liệu. Câu hỏi thiết kế hay: phân loại tính lúc xem báo cáo hay lưu lại theo tháng?
+
+#### I3 — Kiểm kê bằng điện thoại (quét mã vạch)
+- **Bài toán:** Kiểm kê cuối tháng ghi giấy rồi nhập lại, sai sót nhiều.
+- **Jet đang có:** chưa có mã vạch (xem W7); kiểm kê là Đề 9 chính thức.
+- **Khoảng trống:** nhập liệu kiểm kê thủ công.
+- **Đối tượng thêm:** ứng dụng di động riêng (cấu hình *Mobile device*) quét mã vạch bằng camera, đếm số lượng, gửi kết quả về Jet qua HTTP service — **M3+** (ngoài giáo trình: nền tảng di động, `MultimediaTools`, đồng bộ dữ liệu). Mẫu tham khảo: MobileScanner của 1C Developer Network (`nguon-ngoai.md`) — chỉ đọc để hiểu, không chép (repo không ghi giấy phép, có chỗ viết kiểu cũ).
+- **Phù hợp:** nhóm có thành viên IT, sau khi xong W7 hoặc Đề 9.
+- **Khả thi:** Cao; cần điện thoại Android và bản platform di động. Có thể làm phiên bản rút gọn: form nhập mã vạch trên web client thay cho điện thoại.
 
 ## 2. Bảng chọn đề nhanh
 

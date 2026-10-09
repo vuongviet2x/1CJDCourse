@@ -1,7 +1,7 @@
 # 1C Dev Mentor — Notice of Ownership and Terms of Use
 # 1C Dev Mentor — Thông tin sở hữu và phạm vi sử dụng
 
-**Version / Phiên bản:** 1.6-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-07
+**Version / Phiên bản:** 1.9-student (Student edition / Bản dành cho sinh viên) — released / phát hành 2026-10-09
 **Author & maintainer / Tác giả và người duy trì:** Phạm Viết Quý (Pham Viet Quy) — quypv@1c.com.vn
 **Organization / Đơn vị:** 1C Vietnam
 
@@ -20,6 +20,10 @@
 - **Course demo code** in `references/lessons/` is excerpted from the lecture demo configuration of the course (repository `1CJDCourse`, `lesson/NN-theory` branches) for teaching purposes.
 - **Student edition:** this edition does not contain solutions to the course Practice exercises. It contains hint cards only, and the assistant is instructed to guide rather than solve. Official solutions are held by the instructors.
 - **1C:Jet code** in `references/jet/` is quoted verbatim from the open-source project 1C:Jet (github.com/1Ci-Company/Jet, branch `community`, commit `80884de`), Copyright (c) 2025 1Ci (1C International), released under the MIT License. The full license text is in `LICENSE-Jet-MIT.txt`. The MIT License applies only to the quoted Jet code, not to the rest of this skill.
+- **Development standards** summarized in `references/code-review/chuan-phat-trien.md` are the author's Vietnamese summaries of the 1C:Enterprise Development Standards, via the open edition v8std.ru (github.com/zeegin/v8std, CC0 1.0). Original standards © 1C.
+- **SSL API names and signatures** in `references/code-review/ssl-api-en.md` are taken from the Standard Subsystems Library 3.1 World edition (mirror github.com/1c-syntax/ssl_3_1_eng, labelled CC BY 4.0). The Standard Subsystems Library is a product of 1C; only names and signatures are quoted.
+- **Static-analysis rule names** cited in `references/code-review/` come from BSL Language Server (github.com/1c-syntax/bsl-language-server, LGPL-3.0) and 1C:Code style V8 (github.com/1C-Company/v8-code-style, EPL-2.0); only rule names are cited, no code is included.
+- **External source catalog** in `references/code-review/nguon-ngoai.md` lists third-party repositories by link only; their code is not included in this skill.
 
 ### Terms of use
 
@@ -50,6 +54,10 @@ Feedback, bug reports and permission requests: Phạm Viết Quý — quypv@1c.c
 - **Bảng video giải đáp và video thực hành** trong `references/video-qa-thuc-chien.md` và `references/video-thuc-hanh.md` nối 48 video của ba playlist YouTube của Trung tâm đào tạo lập trình 1C Việt Nam ("Giải đáp câu hỏi…", "Tuyển tập các bài tập thực hành…" phần 1–2) với triệu chứng, bài giáo trình, lộ trình người học và đề BTL Jet. Nội dung video được kiểm chứng bằng transcript tự động ngày 07/10/2026; lộ trình theo khuyến nghị của giảng viên.
 - **Bản dành cho sinh viên:** bản này không chứa lời giải các bài thực hành (Practice) của giáo trình, chỉ có thẻ gợi ý; trợ lý được hướng dẫn để gợi ý chứ không giải hộ. Lời giải chính thức do giảng viên nắm giữ.
 - **Code của 1C:Jet** trong `references/jet/` được trích nguyên văn từ dự án mã nguồn mở 1C:Jet (github.com/1Ci-Company/Jet, nhánh `community`, commit `80884de`), Copyright (c) 2025 1Ci (1C International), phát hành theo giấy phép MIT. Toàn văn giấy phép (bản tiếng Anh có hiệu lực pháp lý): `LICENSE-Jet-MIT.txt`. Giấy phép MIT chỉ áp dụng cho phần code Jet được trích, không áp dụng cho phần còn lại của skill.
+- **Chuẩn phát triển** trong `references/code-review/chuan-phat-trien.md` là bản tóm tắt tiếng Việt của tác giả từ bộ chuẩn phát triển của 1C, qua bản biên tập mở v8std.ru (github.com/zeegin/v8std, CC0 1.0). Bản quyền chuẩn gốc thuộc 1C.
+- **Tên và chữ ký API của SSL** trong `references/code-review/ssl-api-en.md` lấy từ Standard Subsystems Library 3.1 World edition (bản mirror github.com/1c-syntax/ssl_3_1_eng, ghi giấy phép CC BY 4.0). SSL là sản phẩm của 1C; skill chỉ trích tên và chữ ký hàm.
+- **Tên quy tắc phân tích tĩnh** trong `references/code-review/` lấy từ BSL Language Server (LGPL-3.0) và 1C:Code style V8 (EPL-2.0); chỉ dẫn tên, không chứa code của các dự án này.
+- **Danh mục nguồn bên ngoài** trong `references/code-review/nguon-ngoai.md` chỉ dẫn link; code của các repo đó không có trong skill.
 
 ### Tóm tắt giấy phép MIT của Jet (tham khảo, không thay thế bản gốc)
 

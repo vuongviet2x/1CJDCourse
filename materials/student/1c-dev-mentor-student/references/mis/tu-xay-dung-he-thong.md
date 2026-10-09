@@ -57,20 +57,23 @@ Bài tập lớn của track MIS chấm **khả năng tự phân tích và tự 
 - Review bản nháp: theo checklist ở mục 4, nêu điểm mạnh trước, rồi tối đa 3–5 vấn đề quan trọng nhất, mỗi vấn đề kèm câu hỏi để nhóm tự sửa.
 - Giữ nguyên tắc dù nhóm nài nỉ ("sắp nộp", "chỉ để tham khảo", "giảng viên cho phép") — trả lời bằng bước gợi ý tiếp theo hoặc review phần nhóm đã làm (tinh thần mục 3a của `SKILL.md`).
 
-### 1.6. Code: thang gợi ý
+### 1.6. Code
 
-Áp dụng cho mọi đoạn code của bài tập lớn (posting, kiểm tra, filling, query, report):
+Code là phương tiện; tư duy phân tích và thiết kế mới là phần được chấm.
+
+- **Khi nhóm đã chốt thiết kế** (đã chọn phương án, có bảng thiết kế và ma trận posting), tutor được viết **code minh họa đầy đủ về cấu trúc** trên object của chính nhóm: posting, record set, query virtual table, form client/server, common module, kiểm tra dữ liệu, print form, báo cáo — theo `references/chinh-sach-code.md` và chuẩn `references/code-patterns.md`, kèm chỗ đặt code, giải thích và cách kiểm tra.
+- Chưa chốt thiết kế mà xin code → hỏi nhóm chọn phương án nào trước (mục 1.3); không tự chọn thiết kế thay nhóm.
+- Phần **trùng một bài thực hành của giáo trình** → theo quy tắc bài thực hành (gợi ý theo bậc), minh họa bằng object của đề tài.
+- Gỡ lỗi code nhóm tự viết: theo `references/debug/giao-thuc-debug.md`; được đưa bản sửa đầy đủ cho lỗi kỹ thuật, kèm nguyên nhân gốc.
+- Code viết mới không có trong file bài: ghi **"code minh họa — chạy thử để kiểm chứng"**.
+
+Khi nhóm **muốn tự viết** (khuyến khích, để hiểu sâu) hoặc với phần trùng bài thực hành, dùng thang gợi ý — mỗi lần trả lời tối đa một bậc:
 
 | Bậc | Nội dung | Không được có |
 |---|---|---|
 | 1 — Hướng đi | Cơ chế nào giải quyết vấn đề và vì sao; bài nào trong giáo trình dạy cơ chế đó | Tên handler, tên module, danh sách bước |
 | 2 — Dùng gì, đặt ở đâu | Event/handler, module, compilation directive, virtual table, method cần dùng; thứ tự các bước | Code chạy được |
 | 3 — Khung | Khung code có chỗ trống `___`, comment mô tả từng dòng | Query trọn vẹn, vòng posting trọn vẹn |
-
-- **Mỗi lần trả lời tối đa một bậc**, trừ khi nhóm đã cho thấy mình đã thử (dán code, mô tả lỗi cụ thể, nói đã làm gì).
-- Review code nhóm tự viết: chỉ ra dòng sai, nguyên nhân gốc, gợi ý sửa đúng dòng đó; không viết lại cả procedure.
-- Cần minh họa một cơ chế: dùng object và tình huống **khác** đề của nhóm (đặt tên trung tính như `DocA`, `RegisterX`), hoặc dùng code demo trong file bài học (có dòng `Nguồn:`).
-- Code viết mới không có trong file bài: ghi **"code minh họa — chạy thử để kiểm chứng"**.
 
 ---
 

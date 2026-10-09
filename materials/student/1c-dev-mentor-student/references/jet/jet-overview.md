@@ -43,6 +43,8 @@ Chức năng theo trang Wiki *Features* (rút gọn):
 
 ## 2. Cài đặt và mở Jet
 
+> **Cho sinh viên của khóa:** dùng thư mục cài đặt của khóa (platform Windows / macOS, `jet.dt`, `jet.cf`, `queryconsole.epf`) và platform **8.3.25.1445** — xem `references/tai-nguyen.md`. Phần dưới đây là cách cài theo Wiki của repo Jet.
+
 Tóm tắt Wiki (chi tiết: các trang *How to install platform*, *How to install Jet using the installer / using the repository*, *1C:Jet Initial Setup Guide*):
 
 1. Cài platform 1C:Enterprise (đăng ký tài khoản Developer trên my.1ci.com → Distributives → Tools for Developers → Training Platform).
